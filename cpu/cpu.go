@@ -2,6 +2,7 @@ package main
 
 import (
 	"github.com/sisoputnfrba/tp-golang/cpu/globals"
+	"log"
 	"os"
 	"path/filepath"
 
@@ -18,4 +19,8 @@ func main() {
 	}
 
 	globals.CConfig = configs.IniciarConfiguracion(filepath.Join(path, "config.json"), &globals.Config{}).(*globals.Config)
+
+	if globals.CConfig == nil {
+		log.Fatalln("Error al cargar la configuración")
+	}
 }
