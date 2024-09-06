@@ -1,8 +1,8 @@
 package main
 
 import (
-	//"github.com/sisoputnfrba/tp-golang/utils/cliente"
 	"github.com/sisoputnfrba/tp-golang/kernel/globals"
+	"github.com/sisoputnfrba/tp-golang/utils/cliente"
 	"github.com/sisoputnfrba/tp-golang/utils/config"
 	"log"
 	"os"
@@ -22,4 +22,6 @@ func main() {
 	if globals.KConfig == nil {
 		log.Fatalln("Error al cargar la configuración")
 	}
+
+	cliente.EnviarMensaje(globals.KConfig.IpMemoria, globals.KConfig.PuertoMemoria, "hola")
 }
