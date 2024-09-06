@@ -1,8 +1,12 @@
 package main
 
 import (
+	"fmt"
 	"github.com/sisoputnfrba/tp-golang/cpu/globals"
+	"github.com/sisoputnfrba/tp-golang/utils/cliente"
+	"github.com/sisoputnfrba/tp-golang/utils/servidor"
 	"log"
+	"net/http"
 	"os"
 	"path/filepath"
 
@@ -26,5 +30,19 @@ func main() {
 
 	configs.ConfigurarLogger()
 
-	log.Println(globals.CConfig.IpMemory)
+	cliente.EnviarMensaje(globals.CConfig.IpMemory, globals.CConfig.PortMemory, "hola, soy cpu")
+
+	port := fmt.Sprintf(":%d", globals.CConfig.Port)
+
+	log.Printf("El módulo memoria está a la escucha en el puerto %s", port)
+
+	http.HandleFunc("GET /mensaje", servidor.RecibirMensaje)
+
+	err = http.ListenAndServe(port, nil)
+
+	if err != nil {
+		panic(err)
+	}
+
+	//cliente.EnviarMensaje(globals.CConfig.IpKernel, globals.CConfig.PortKernel, "hola, soy cpu")
 }
