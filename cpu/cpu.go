@@ -23,4 +23,8 @@ func main() {
 	if globals.CConfig == nil {
 		log.Fatalln("Error al cargar la configuración")
 	}
+
+	configs.ConfigurarLogger()
+
+	log.Println(globals.CConfig.IpMemory)
 }
