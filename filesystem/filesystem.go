@@ -2,20 +2,17 @@ package main
 
 import (
 	"fmt"
-	"github.com/sisoputnfrba/tp-golang/utils/servidor"
-	"net/http"
-
-	//"github.com/sisoputnfrba/tp-golang/utils/cliente"
 	"github.com/sisoputnfrba/tp-golang/filesystem/globals"
-	"github.com/sisoputnfrba/tp-golang/utils/cliente"
+	"github.com/sisoputnfrba/tp-golang/utils/commons"
 	"github.com/sisoputnfrba/tp-golang/utils/config"
 	"log"
+	"net/http"
 	"os"
 	"path/filepath"
 )
 
 func main() {
-	// Iniciar configuracion
+	//// Configuracion ////
 	path, err := os.Getwd()
 
 	if err != nil {
@@ -28,16 +25,18 @@ func main() {
 		log.Fatalln("Error al cargar la configuración")
 	}
 
-	cliente.EnviarMensaje(globals.FSConfig.IpMemory, globals.FSConfig.PortMemory, "hola, soy filesystem")
+	//// Logger ////
+	configs.ConfigurarLogger("filesystem")
+
+	//// Conexión ////
+	mux := http.NewServeMux()
+	mux.HandleFunc("/mensaje", commons.RecibirMensaje)
 
 	port := fmt.Sprintf(":%d", globals.FSConfig.Port)
 
-	log.Printf("El módulo memoria está a la escucha en el puerto %s", port)
+	log.Printf("El módulo filesystem está a la escucha en el puerto %s", port)
 
-	http.HandleFunc("GET /mensaje", servidor.RecibirMensaje)
-
-	err = http.ListenAndServe(port, nil)
-
+	err = http.ListenAndServe(port, mux)
 	if err != nil {
 		panic(err)
 	}

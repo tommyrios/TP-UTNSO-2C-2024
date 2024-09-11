@@ -25,8 +25,8 @@ func IniciarConfiguracion(filePath string, moduloConfig interface{}) interface{}
 	return moduloConfig
 }
 
-func ConfigurarLogger() {
-	logFile, err := os.OpenFile("tp0.log", os.O_CREATE|os.O_APPEND|os.O_RDWR, 0666)
+func ConfigurarLogger(modulo string) {
+	logFile, err := os.OpenFile(modulo+".log", os.O_CREATE|os.O_APPEND|os.O_RDWR, 0666)
 	if err != nil {
 		panic(err)
 	}
