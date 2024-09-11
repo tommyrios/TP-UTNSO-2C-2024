@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 	"github.com/sisoputnfrba/tp-golang/memoria/globals"
+	"github.com/sisoputnfrba/tp-golang/utils/commons"
 	"github.com/sisoputnfrba/tp-golang/utils/config"
-	"github.com/sisoputnfrba/tp-golang/utils/servidor"
 	"log"
 	"net/http"
 	"os"
@@ -12,7 +12,7 @@ import (
 )
 
 func main() {
-	// Iniciar configuracion
+	//// Configuración ////
 	path, err := os.Getwd()
 
 	if err != nil {
@@ -25,21 +25,19 @@ func main() {
 		log.Fatalln("Error al cargar la configuración")
 	}
 
-	// Iniciar conexión
+	//// Logger ////
+	configs.ConfigurarLogger("memoria")
+
+	//// Conexión ////
+	mux := http.NewServeMux()
+	mux.HandleFunc("/mensaje", commons.RecibirMensaje)
 
 	port := fmt.Sprintf(":%d", globals.MConfig.Port)
 
 	log.Printf("El módulo memoria está a la escucha en el puerto %s", port)
 
-	http.HandleFunc("GET /mensaje", servidor.RecibirMensaje)
-
-	err = http.ListenAndServe(port, nil)
-
+	err = http.ListenAndServe(port, mux)
 	if err != nil {
 		panic(err)
 	}
-
-	// cliente.EnviarMensaje(globals.MConfig.IpFileSystem, globals.MConfig.PortFileSystem, "hola, soy memoria")
-	// cliente.EnviarMensaje(globals.MConfig.IpKernel, globals.MConfig.PortKernel, "hola, soy memoria")
-	// cliente.EnviarMensaje(globals.MConfig.IpCpu, globals.MConfig.PortCpu, "hola, soy memoria")
 }

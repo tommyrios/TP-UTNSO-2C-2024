@@ -3,17 +3,17 @@ package main
 import (
 	"fmt"
 	"github.com/sisoputnfrba/tp-golang/kernel/globals"
-	"github.com/sisoputnfrba/tp-golang/utils/cliente"
-	"github.com/sisoputnfrba/tp-golang/utils/config"
-	"github.com/sisoputnfrba/tp-golang/utils/servidor"
-	"log"
+	"github.com/sisoputnfrba/tp-golang/utils/commons"
+	configs "github.com/sisoputnfrba/tp-golang/utils/config"
 	"net/http"
+
+	"log"
 	"os"
 	"path/filepath"
 )
 
 func main() {
-	// Iniciar configuracion
+	//// Configuración ////
 	path, err := os.Getwd()
 
 	if err != nil {
@@ -26,20 +26,18 @@ func main() {
 		log.Fatalln("Error al cargar la configuración")
 	}
 
-	// Iniciar conexión
+	//// Logger ////
+	configs.ConfigurarLogger("kernel")
 
-	cliente.EnviarMensaje(globals.KConfig.IpMemory, globals.KConfig.PortMemory, "hola, soy kernel")
-
-	cliente.EnviarMensaje(globals.KConfig.IpCpu, globals.KConfig.PortCpu, "hola, soy kernel")
+	//// Conexión ////
+	mux := http.NewServeMux()
+	mux.HandleFunc("/mensaje", commons.RecibirMensaje)
 
 	port := fmt.Sprintf(":%d", globals.KConfig.Port)
 
-	log.Printf("El módulo memoria está a la escucha en el puerto %s", port)
+	log.Printf("El módulo kernel está a la escucha en el puerto %s", port)
 
-	http.HandleFunc("GET /mensaje", servidor.RecibirMensaje)
-
-	err = http.ListenAndServe(port, nil)
-
+	err = http.ListenAndServe(port, mux)
 	if err != nil {
 		panic(err)
 	}

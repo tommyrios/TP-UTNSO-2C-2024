@@ -1,40 +1,45 @@
 package cliente
 
 import (
+	"bytes"
 	"fmt"
-	"io"
-	_ "io"
+	"io/ioutil"
+	"log"
 	"net/http"
 )
 
-func EnviarMensaje(ip string, puerto int, mensajeTxt string) {
-	cliente := &http.Client{}
-	url := fmt.Sprintf("http://%s:%d/mensaje", ip, puerto)
-	req, err := http.NewRequest("GET", url, nil)
+func Post(ip string, port int, ruta string, jsonData []byte) *http.Response {
+	url := fmt.Sprintf("http://%s:%d/%s", ip, port, ruta)
+
+	response, err := http.Post(url, "application/json", bytes.NewBuffer(jsonData))
 
 	if err != nil {
-		return
+		panic(err)
 	}
 
-	q := req.URL.Query()
-	q.Add("mensaje", mensajeTxt)
-	req.URL.RawQuery = q.Encode()
+	defer response.Body.Close()
 
-	req.Header.Set("Content-Type", "application/json")
-	respuesta, err := cliente.Do(req)
+	body, _ := ioutil.ReadAll(response.Body)
+
+	log.Println("Respuesta POST:", string(body))
+
+	return response
+}
+
+func Get(ip string, port int, ruta string) *http.Response {
+	url := fmt.Sprintf("https://%s:%d/%s", ip, port, ruta)
+
+	response, err := http.Get(url)
+
 	if err != nil {
-		return
+		panic(err)
 	}
 
-	// Verificar el código de estado de la respuesta
-	if respuesta.StatusCode != http.StatusOK {
-		return
-	}
+	defer response.Body.Close()
 
-	bodyBytes, err := io.ReadAll(respuesta.Body)
-	if err != nil {
-		return
-	}
+	body, _ := ioutil.ReadAll(response.Body)
 
-	fmt.Println(string(bodyBytes))
+	log.Println("Respuesta GET:", string(body))
+
+	return response
 }
