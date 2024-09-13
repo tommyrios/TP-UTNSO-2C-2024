@@ -5,11 +5,36 @@ import (
 	"io"
 	"log"
 	"net/http"
+	"sync"
 )
 
 type Mensaje struct {
 	Mensaje string `json:"mensaje"`
 }
+
+type PCB struct {
+	Pid     int    `json:"pid"`
+	Tid     []int  `json:"tid"`
+	Estado  string `json:"estado"`
+	Tamanio int    `json:"tamanio"`
+	Cola    *Colas `json:"cola"`
+}
+
+type TCB struct {
+	Tid       int `json:"tid"`
+	Prioridad int `json:"prioridad"`
+}
+
+type Colas struct {
+	mutex    sync.Mutex
+	Procesos []PCB
+}
+
+var ColaNew *Colas
+var ColaReady *Colas
+var ColaBlocked *Colas
+
+var PidCounter int = 1
 
 func RecibirMensaje(w http.ResponseWriter, r *http.Request) {
 	log.Printf("Método: %s", r.Method)

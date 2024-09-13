@@ -32,6 +32,7 @@ func main() {
 	//// Conexión ////
 	mux := http.NewServeMux()
 	mux.HandleFunc("/mensaje", commons.RecibirMensaje)
+	mux.HandleFunc("/process", globals.IniciarProceso)
 
 	port := fmt.Sprintf(":%d", globals.KConfig.Port)
 
