@@ -2,13 +2,14 @@ package main
 
 import (
 	"fmt"
-	"github.com/sisoputnfrba/tp-golang/cpu/globals"
-	"github.com/sisoputnfrba/tp-golang/utils/commons"
-	"github.com/sisoputnfrba/tp-golang/utils/config"
 	"log"
 	"net/http"
 	"os"
 	"path/filepath"
+
+	"github.com/sisoputnfrba/tp-golang/cpu/globals"
+	"github.com/sisoputnfrba/tp-golang/utils/commons"
+	configs "github.com/sisoputnfrba/tp-golang/utils/config"
 )
 
 func main() {
@@ -19,6 +20,7 @@ func main() {
 		panic(err)
 	}
 
+	globals.Registros = &commons.Registros{}
 	globals.CConfig = configs.IniciarConfiguracion(filepath.Join(path, "config.json"), &globals.Config{}).(*globals.Config)
 
 	if globals.CConfig == nil {

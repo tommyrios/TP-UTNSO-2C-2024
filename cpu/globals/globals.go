@@ -2,6 +2,8 @@ package globals
 
 import (
 	"sync"
+
+	"github.com/sisoputnfrba/tp-golang/utils/commons"
 )
 
 type Config struct {
@@ -28,3 +30,5 @@ type Process struct {
 var CConfig *Config
 
 var ColaNEW []Process
+
+var Registros *commons.Registros

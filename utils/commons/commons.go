@@ -61,3 +61,9 @@ type Registros struct {
 	GX uint32 `json:"gx"`
 	HX uint32 `json:"hx"`
 }
+
+type PCB struct {
+	Pid     int `json:"pid"`
+	Pc      int `json:"pc"`
+	Quantum int `json:"quantum"`
+}
