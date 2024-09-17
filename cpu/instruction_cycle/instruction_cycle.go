@@ -1,9 +1,11 @@
 package instruction_cycle
 
 import (
-	//"log"
+	"log"
 	"net/http"
+
 	//"github.com/sisoputnfrba/tp-golang/cpu/globals"
+	"github.com/sisoputnfrba/tp-golang/cpu/general"
 	"github.com/sisoputnfrba/tp-golang/cpu/globals"
 	"github.com/sisoputnfrba/tp-golang/utils/commons"
 )
@@ -24,10 +26,6 @@ func Ejecutar(w http.ResponseWriter, r *http.Request) {
 	go EjecutarInstrucciones(&pcbUsada)
 }
 
-/////////////////////
-///CARGAR CONTEXTO///
-/////////////////////
-
 func EjecutarInstrucciones(pcbUsada *commons.PCB) {
 
 	*globals.Registros = pcbUsada.Registros
@@ -41,13 +39,38 @@ func EjecutarInstrucciones(pcbUsada *commons.PCB) {
 	for {
 
 		//Fetch
-
+		fetch()
 		//Decode
-
+		decode()
 		//Execute
-
+		execute()
 		//Check Interruption
+		if Interrupcion() {
+			break
+		}
 
 	}
 
+}
+
+func fetch() {
+	resp, err := general.GetInstruction()
+
+	if err != nil || resp == nil {
+		log.Fatal("Error al buscar instruccion en memoria")
+		return
+	}
+
+}
+
+func decode() {
+
+}
+
+func execute() {
+
+}
+
+func Interrupcion() bool {
+	return true
 }

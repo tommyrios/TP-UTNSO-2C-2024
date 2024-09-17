@@ -68,3 +68,8 @@ type PCB struct {
 	Quantum        int       `json:"quantum"`
 	Registros      Registros `json:"registros"`
 }
+
+type PedidoInstruccion struct {
+	Pid int    `json:"pid"`
+	PC  uint32 `json:"pc"`
+}
