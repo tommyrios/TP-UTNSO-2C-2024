@@ -63,7 +63,8 @@ type Registros struct {
 }
 
 type PCB struct {
-	Pid     int `json:"pid"`
-	Pc      int `json:"pc"`
-	Quantum int `json:"quantum"`
+	Pid            int       `json:"pid"`
+	ProgramCounter int       `json:"ProgramCounter"`
+	Quantum        int       `json:"quantum"`
+	Registros      Registros `json:"registros"`
 }
