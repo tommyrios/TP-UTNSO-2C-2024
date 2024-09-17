@@ -13,28 +13,40 @@ type Mensaje struct {
 }
 
 type PCB struct {
-	Pid     int    `json:"pid"`
-	Tid     []int  `json:"tid"`
-	Estado  string `json:"estado"`
-	Tamanio int    `json:"tamanio"`
-	Cola    *Colas `json:"cola"`
+	Pid           int    `json:"pid"`
+	Tid           []int  `json:"tid"`
+	ContadorHilos int    `json:"contador_hilos"`
+	Estado        string `json:"estado"`
+	Tamanio       int    `json:"tamanio"`
 }
 
 type TCB struct {
+	Pid       int `json:"pid"`
 	Tid       int `json:"tid"`
 	Prioridad int `json:"prioridad"`
 }
 
 type Colas struct {
-	mutex    sync.Mutex
+	Mutex    sync.Mutex
 	Procesos []PCB
+	Hilos    []TCB
 }
 
-var ColaNew *Colas
-var ColaReady *Colas
-var ColaBlocked *Colas
+var ColaNew = &Colas{
+	Procesos: []PCB{},
+	Hilos:    []TCB{},
+}
+var ColaReady = &Colas{
+	Procesos: []PCB{},
+	Hilos:    []TCB{},
+}
+var ColaBlocked = &Colas{
+	Procesos: []PCB{},
+	Hilos:    []TCB{},
+}
 
 var PidCounter int = 1
+var MutexPidCounter sync.Mutex
 
 func RecibirMensaje(w http.ResponseWriter, r *http.Request) {
 	log.Printf("Método: %s", r.Method)

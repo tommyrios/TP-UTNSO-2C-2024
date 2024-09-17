@@ -6,28 +6,35 @@ import (
 )
 
 func IniciarProceso(w http.ResponseWriter, r *http.Request) {
+
 	pcb := commons.PCB{
-		Pid:    commons.PidCounter,
-		Tid:    []int{},
-		Estado: "NEW",
+		Pid:           commons.PidCounter,
+		Tid:           []int{},
+		ContadorHilos: 1,
+		Estado:        "NEW",
 	}
 
-	// TODO: Agregar mutex para incrementar el contador de Pid porque se puede interrumpir
+	commons.MutexPidCounter.Lock()
 	commons.PidCounter++
+	commons.MutexPidCounter.Unlock()
 
-	tcbMain := commons.TCB{
-		Tid:       0,
-		Prioridad: 0,
-	}
+	tcbMain := IniciarHilo(pcb.Pid, 0, 0)
 
 	pcb.Tid = append(pcb.Tid, tcbMain.Tid)
 
+	commons.ColaNew.Mutex.Lock()
 	AgregarProceso(pcb, commons.ColaNew)
+	commons.ColaNew.Mutex.Unlock()
+
 	// TODO: Verificar que hay espacio en memoria para poner el proceso en READY
 }
 
-func IniciarHilo(pid int, prioridad int) {
-
+func IniciarHilo(pid int, prioridad int, tid int) commons.TCB {
+	return commons.TCB{
+		Pid:       pid,
+		Tid:       tid,
+		Prioridad: prioridad,
+	}
 }
 
 func AgregarProceso(pcb commons.PCB, cola *commons.Colas) {
