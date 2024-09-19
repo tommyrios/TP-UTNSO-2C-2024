@@ -27,6 +27,8 @@ func Ejecutar(w http.ResponseWriter, r *http.Request) {
 
 func EjecutarInstrucciones(pcbUsada *commons.PCB) {
 
+	log.Printf("TID: %d - Solicito Contexto Ejecución", pcbUsada.Tid)
+
 	*globals.Registros = pcbUsada.Registros
 	*globals.Pid = pcbUsada.Pid
 	globals.Registros.PC = uint32(pcbUsada.ProgramCounter)
@@ -37,14 +39,18 @@ func EjecutarInstrucciones(pcbUsada *commons.PCB) {
 
 	for {
 
-		//Fetch
-		fetch()
-		//Decode
-		decode()
-		//Execute
-		execute()
+		//Fetch: Recibe la instruccion
+		Fetch()
+
+		//Decode: Traduce
+		Decode()
+
+		//Execute: Puede ejecutar y seguir, ejecutar y hacer un salto con JNZ o Terminar su ejecucion tras hecha la instruccion
+		Execute()
+
 		//Check Interruption
 		if Interrupcion() {
+			//Log de por que se cortó la ejecucion
 			break
 		}
 
@@ -52,21 +58,26 @@ func EjecutarInstrucciones(pcbUsada *commons.PCB) {
 
 }
 
-func fetch() {
+func Fetch() {
 	resp, err := generalCPU.ObtenerInstruction()
 
 	if err != nil || resp == nil {
 		log.Fatal("Error al buscar instruccion en memoria")
 		return
 	}
+	var respuestaInstruccion commons.GetRespuestaInstruccion
+	commons.DecodificarJSON(resp.Body, &respuestaInstruccion)
+
+	log.Printf("TID: %d - FETCH - Program Counter: %d", *globals.Pid, globals.Registros.PC)
 
 }
 
-func decode() {
-
+func Decode() {
+	//TRADUCCION CON MMU (LOGICO A FISICO)
 }
 
-func execute() {
+func Execute() {
+	//Instrucciones que no requieren Decode:SET, SUM, SUB, JNZ, LOG.
 
 }
 

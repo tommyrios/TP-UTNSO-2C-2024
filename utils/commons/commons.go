@@ -13,12 +13,14 @@ type Mensaje struct {
 }
 
 type PCB struct {
-	Pid           int          `json:"pid"`
-	Tid           []int        `json:"tid"`
-	Mutex         []sync.Mutex `json:"mutex"`
-	ContadorHilos int          `json:"contador_hilos"`
-	Estado        string       `json:"estado"`
-	Tamanio       int          `json:"tamanio"`
+	Pid            int          `json:"pid"`
+	Tid            []int        `json:"tid"`
+	Mutex          []sync.Mutex `json:"mutex"`
+	ContadorHilos  int          `json:"contador_hilos"`
+	Estado         string       `json:"estado"`
+	Tamanio        int          `json:"tamanio"`
+	Registros      Registros    `json:"registros"`
+	ProgramCounter int          `json:"program_counter"`
 }
 
 type TCB struct {
@@ -44,6 +46,27 @@ var ColaReady = &Colas{
 var ColaBlocked = &Colas{
 	Procesos: []PCB{},
 	Hilos:    []TCB{},
+}
+
+type Registros struct {
+	PC uint32 `json:"pc"`
+	AX uint32 `json:"ax"`
+	BX uint32 `json:"bx"`
+	CX uint32 `json:"cx"`
+	DX uint32 `json:"dx"`
+	EX uint32 `json:"ex"`
+	FX uint32 `json:"fx"`
+	GX uint32 `json:"gx"`
+	HX uint32 `json:"hx"`
+}
+
+type GetPedidoInstruccion struct {
+	Pid int    `json:"pid"`
+	PC  uint32 `json:"pc"`
+}
+
+type GetRespuestaInstruccion struct {
+	Instruccion string `json:"instruccion"`
 }
 
 var PidCounter int = 1
@@ -89,28 +112,4 @@ func CodificarJSON(responseStruct interface{}) ([]byte, error) {
 		log.Printf("Error al codificar JSON: %s\n", err.Error())
 	}
 	return requestCodificada, err
-}
-
-type Registros struct {
-	PC uint32 `json:"pc"`
-	AX uint32 `json:"ax"`
-	BX uint32 `json:"bx"`
-	CX uint32 `json:"cx"`
-	DX uint32 `json:"dx"`
-	EX uint32 `json:"ex"`
-	FX uint32 `json:"fx"`
-	GX uint32 `json:"gx"`
-	HX uint32 `json:"hx"`
-}
-
-type PCB struct {
-	Pid            int       `json:"pid"`
-	ProgramCounter int       `json:"ProgramCounter"`
-	Quantum        int       `json:"quantum"`
-	Registros      Registros `json:"registros"`
-}
-
-type PedidoInstruccion struct {
-	Pid int    `json:"pid"`
-	PC  uint32 `json:"pc"`
 }
