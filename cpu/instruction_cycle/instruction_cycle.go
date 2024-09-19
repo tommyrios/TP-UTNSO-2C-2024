@@ -4,8 +4,7 @@ import (
 	"log"
 	"net/http"
 
-	//"github.com/sisoputnfrba/tp-golang/cpu/globals"
-	"github.com/sisoputnfrba/tp-golang/cpu/general"
+	generalCPU "github.com/sisoputnfrba/tp-golang/cpu/general"
 	"github.com/sisoputnfrba/tp-golang/cpu/globals"
 	"github.com/sisoputnfrba/tp-golang/utils/commons"
 )
@@ -54,7 +53,7 @@ func EjecutarInstrucciones(pcbUsada *commons.PCB) {
 }
 
 func fetch() {
-	resp, err := general.GetInstruction()
+	resp, err := generalCPU.ObtenerInstruction()
 
 	if err != nil || resp == nil {
 		log.Fatal("Error al buscar instruccion en memoria")

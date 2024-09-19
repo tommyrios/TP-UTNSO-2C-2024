@@ -11,7 +11,7 @@ import (
 	"github.com/sisoputnfrba/tp-golang/utils/commons"
 )
 
-func GetInstruction() (*http.Response, error) {
+func ObtenerInstruction() (*http.Response, error) {
 	//Hay que crear el json de la instruccion con el PID y el PC de la PCB
 
 	var requestBody bytes.Buffer
