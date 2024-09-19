@@ -2,10 +2,11 @@ package main
 
 import (
 	"fmt"
+	"net/http"
+
 	"github.com/sisoputnfrba/tp-golang/kernel/globals"
 	"github.com/sisoputnfrba/tp-golang/utils/commons"
 	configs "github.com/sisoputnfrba/tp-golang/utils/config"
-	"net/http"
 
 	"log"
 	"os"
@@ -32,6 +33,7 @@ func main() {
 	//// Conexión ////
 	mux := http.NewServeMux()
 	mux.HandleFunc("/mensaje", commons.RecibirMensaje)
+	mux.HandleFunc("/process", globals.IniciarProceso)
 
 	port := fmt.Sprintf(":%d", globals.KConfig.Port)
 

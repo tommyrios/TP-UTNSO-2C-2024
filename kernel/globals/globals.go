@@ -11,4 +11,9 @@ type Config struct {
 	LogLevel           string `json:"log_level"`
 }
 
+type RequestProceso struct {
+	Pseudocodigo   string `json:"pseudocodigo"`
+	TamanioMemoria int    `json:"tamanio_memoria"`
+}
+
 var KConfig *Config
