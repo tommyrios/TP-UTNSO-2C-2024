@@ -19,6 +19,7 @@ type PCB struct {
 	ContadorHilos int          `json:"contador_hilos"`
 	Estado        string       `json:"estado"`
 	Tamanio       int          `json:"tamanio"`
+	PseudoCodigo  string       `json:"pseudocodigo"`
 }
 
 type TCB struct {
