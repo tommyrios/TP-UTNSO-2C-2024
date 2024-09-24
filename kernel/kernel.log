@@ -1,0 +1,55 @@
+2024/09/24 12:03:52 algo.txt 30
+2024/09/24 12:03:52 El módulo kernel está a la escucha en el puerto :8001
+2024/09/24 12:11:08 Cola NEW no está vacía, proceso se encola en NEW.
+2024/09/24 12:11:08 El módulo kernel está a la escucha en el puerto :8001
+2024/09/24 12:14:09 Cola NEW no está vacía, proceso se encola en NEW.
+2024/09/24 12:14:09 El módulo kernel está a la escucha en el puerto :8001
+2024/09/24 12:16:37 1 [{1 [] [] 0 NEW 30 gofdb 5}] Cola NEW no está vacía, proceso se encola en NEW.
+2024/09/24 12:16:37 gofdb 30 5
+2024/09/24 12:16:37 El módulo kernel está a la escucha en el puerto :8001
+2024/09/24 12:21:20 Cola NEW está vacía, solicitando memoria.
+2024/09/24 12:22:29 Cola NEW está vacía, solicitando memoria.
+2024/09/24 12:22:29 Respuesta POST: 404 page not found
+
+2024/09/24 12:22:29 Memoria no tiene suficiente espacio. Proceso en espera.
+2024/09/24 12:22:29 gofdb 30 5
+2024/09/24 12:22:29 El módulo kernel está a la escucha en el puerto :8001
+2024/09/24 12:24:46 Cola NEW está vacía, solicitando memoria.
+2024/09/24 12:24:46 Respuesta POST: 404 page not found
+
+2024/09/24 12:24:46 Memoria no tiene suficiente espacio. Proceso en espera.
+2024/09/24 12:24:46 gofdb 30 5
+2024/09/24 12:24:46 El módulo kernel está a la escucha en el puerto :8001
+2024/09/24 12:25:45 Cola NEW está vacía, solicitando memoria.
+2024/09/24 12:25:45 Respuesta POST: 404 page not found
+
+2024/09/24 12:25:45 Memoria no tiene suficiente espacio. Proceso en espera.
+2024/09/24 12:25:45 1 NEW
+2024/09/24 12:25:45 gofdb 30 5
+2024/09/24 12:25:45 El módulo kernel está a la escucha en el puerto :8001
+2024/09/24 12:26:29 Cola NEW está vacía, solicitando memoria.
+2024/09/24 12:26:29 Respuesta POST: 404 page not found
+
+2024/09/24 12:26:29 Memoria no tiene suficiente espacio. Proceso en espera.
+2024/09/24 12:26:29 1 NEW
+2024/09/24 12:26:29 gofdb 30 5
+2024/09/24 12:26:29 Cola NEW no está vacía, proceso se encola en NEW.
+2024/09/24 12:26:29 El módulo kernel está a la escucha en el puerto :8001
+2024/09/24 12:27:09 Cola NEW está vacía, solicitando memoria.
+2024/09/24 12:27:09 Respuesta POST: 404 page not found
+
+2024/09/24 12:27:09 Memoria no tiene suficiente espacio. Proceso en espera.
+2024/09/24 12:27:09 1 NEW
+2024/09/24 12:27:09 gofdb 30 5
+2024/09/24 12:27:09 Cola NEW no está vacía, proceso se encola en NEW.
+2024/09/24 12:27:09 2 NEW [{1 [] [] 0 NEW 30 gofdb 5} {2 [] [] 0 NEW 30 pepito 0}]
+2024/09/24 12:27:09 El módulo kernel está a la escucha en el puerto :8001
+2024/09/24 12:33:59 Cola NEW está vacía, solicitando memoria.
+2024/09/24 12:33:59 Respuesta POST: 404 page not found
+
+2024/09/24 12:33:59 Memoria no tiene suficiente espacio. Proceso en espera.
+2024/09/24 12:33:59 ## (1:0) Se crea el proceso - Estado: NEW
+2024/09/24 12:33:59 gofdb 30 5
+2024/09/24 12:33:59 Cola NEW no está vacía, proceso se encola en NEW.
+2024/09/24 12:33:59 ## (2:0) Se crea el proceso - Estado: NEW
+2024/09/24 12:33:59 El módulo kernel está a la escucha en el puerto :8001

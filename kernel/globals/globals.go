@@ -1,8 +1,9 @@
 package globals
 
 import (
-	"github.com/sisoputnfrba/tp-golang/utils/commons"
 	"net/http"
+
+	"github.com/sisoputnfrba/tp-golang/utils/commons"
 )
 
 type Config struct {
@@ -29,6 +30,7 @@ type Syscall struct {
 	PrioridadTID0  int    `json:"prioridad"`
 	TID            int    `json:"tid"`
 	Recurso        string `json:"recurso"`
+	PID            int    `json:"pid"`
 }
 
 var KConfig *Config
@@ -55,7 +57,7 @@ func Syscalls(w http.ResponseWriter, r *http.Request) {
 	case "PROCESS_EXIT":
 
 	case "THREAD_CREATE":
-
+		CrearHilo(syscall.PID, syscall.PrioridadTID0, syscall.Pseudocodigo)
 	case "THREAD_EXIT":
 
 	case "THREAD_JOIN":

@@ -20,12 +20,14 @@ type PCB struct {
 	Estado        string       `json:"estado"`
 	Tamanio       int          `json:"tamanio"`
 	PseudoCodigo  string       `json:"pseudocodigo"`
+	PrioridadTID0 int          `json:"prioridadtid0"`
 }
 
 type TCB struct {
-	Pid       int `json:"pid"`
-	Tid       int `json:"tid"`
-	Prioridad int `json:"prioridad"`
+	Pid           int    `json:"pid"`
+	Tid           int    `json:"tid"`
+	Prioridad     int    `json:"prioridad"`
+	Instrucciones string `json:"instrucciones"`
 }
 
 type Colas struct {
