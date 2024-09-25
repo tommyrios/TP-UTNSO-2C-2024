@@ -27,6 +27,12 @@ type Process struct {
 	PCB    PCB    `json:"pcb"`
 }
 
+type InstruccionStruct struct {
+	Partes            []string
+	CodigoInstruccion string
+	Operandos         []string
+}
+
 var CConfig *Config
 
 var ColaNEW []Process
@@ -34,3 +40,21 @@ var ColaNEW []Process
 var Registros *commons.Registros
 
 var Pid *int
+
+var Instruccion *InstruccionStruct
+
+var Regis map[string]interface{}
+
+func CargarRegistros() {
+	Regis = map[string]interface{}{
+		"PC": &Registros.PC,
+		"AX": &Registros.AX,
+		"BX": &Registros.BX,
+		"CX": &Registros.CX,
+		"DX": &Registros.DX,
+		"EX": &Registros.EX,
+		"FX": &Registros.FX,
+		"GX": &Registros.GX,
+		"HX": &Registros.HX,
+	}
+}

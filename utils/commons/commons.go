@@ -69,6 +69,10 @@ type GetRespuestaInstruccion struct {
 	Instruccion string `json:"instruccion"`
 }
 
+type DespachoProceso struct {
+	Pcb PCB `json:"pcb"`
+}
+
 var PidCounter int = 1
 var MutexPidCounter sync.Mutex
 

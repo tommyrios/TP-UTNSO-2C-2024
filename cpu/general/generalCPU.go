@@ -13,6 +13,5 @@ func ObtenerInstruction() (*http.Response, error) {
 	if err != nil {
 		return nil, err
 	}
-
 	return cliente.Post(globals.CConfig.IpMemory, globals.CConfig.PortMemory, "process", requestBody), nil
 }
