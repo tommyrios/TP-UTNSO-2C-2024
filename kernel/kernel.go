@@ -2,16 +2,15 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"net/http"
+	"os"
+	"path/filepath"
 	"strconv"
 
 	"github.com/sisoputnfrba/tp-golang/kernel/globals"
-	"github.com/sisoputnfrba/tp-golang/utils/commons"
+	"github.com/sisoputnfrba/tp-golang/kernel/handlers"
 	configs "github.com/sisoputnfrba/tp-golang/utils/config"
-
-	"log"
-	"os"
-	"path/filepath"
 )
 
 func main() {
@@ -40,11 +39,15 @@ func main() {
 
 	log.Println(pseudocodigo, tamanio, prioridadHiloMain)
 
-	globals.CrearProceso("pepito", 30, 0)
 	//// Conexión ////
 	mux := http.NewServeMux()
-	mux.HandleFunc("POST /mensaje", commons.RecibirMensaje)
-	//mux.HandleFunc("POST /process", globals.IniciarProceso)
+	http.HandleFunc("/syscall/process_create", handlers.HandleProcessCreate)
+	http.HandleFunc("/syscall/thread_create", handlers.HandleThreadCreate)
+	http.HandleFunc("/syscall/process_exit", handlers.HandleProcessExit)
+	http.HandleFunc("/syscall/thread_exit", handlers.HandleThreadExit)
+	http.HandleFunc("/syscall/mutex_create", handlers.HandleMutexCreate)
+	http.HandleFunc("/syscall/mutex_lock", handlers.HandleMutexLock)
+	http.HandleFunc("/syscall/mutex_unlock", handlers.HandleMutexUnlock)
 
 	port := fmt.Sprintf(":%d", globals.KConfig.Port)
 

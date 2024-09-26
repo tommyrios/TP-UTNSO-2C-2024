@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"sync"
 
-	"github.com/sisoputnfrba/tp-golang/utils/cliente"
+	"github.com/sisoputnfrba/tp-golang/handlers/request"
 	"github.com/sisoputnfrba/tp-golang/utils/commons"
 )
 
@@ -16,7 +16,7 @@ func CrearProceso(pseudocodigo string, tamanioMemoria int, prioridad int) {
 		log.Println("Cola NEW está vacía, solicitando memoria.")
 
 		// Solicitar espacio en memoria
-		respuestaMemoria, err := SolicitarProcesoMemoria(pseudocodigo, tamanioMemoria)
+		respuestaMemoria, err := request.SolicitarProcesoMemoria(pseudocodigo, tamanioMemoria)
 
 		if err != nil {
 			log.Println("Error al solicitar espacio en memoria.")
@@ -43,21 +43,6 @@ func CrearProceso(pseudocodigo string, tamanioMemoria int, prioridad int) {
 		AgregarProcesoACola(pcb, commons.ColaNew)
 	}
 	log.Printf("## (%d:0) Se crea el proceso - Estado: NEW", pcb.Pid)
-}
-
-func SolicitarProcesoMemoria(pseudocodigo string, tamanio int) (*http.Response, error) {
-	request := RequestProceso{
-		Pseudocodigo:   pseudocodigo,
-		TamanioMemoria: tamanio,
-	}
-
-	solicitudCodificada, err := commons.CodificarJSON(request)
-
-	if err != nil {
-		return nil, err
-	}
-
-	return cliente.Post(KConfig.IpMemory, KConfig.PortMemory, "process", solicitudCodificada), nil
 }
 
 func CrearPCB(pseudocodigo string, tamanio int, prioridad int) commons.PCB {
