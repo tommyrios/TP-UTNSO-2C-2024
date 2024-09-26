@@ -30,28 +30,6 @@ type TCB struct {
 	Instrucciones string `json:"instrucciones"`
 }
 
-type Colas struct {
-	Mutex    sync.Mutex
-	Procesos []PCB
-	Hilos    []TCB
-}
-
-var ColaNew = &Colas{
-	Procesos: []PCB{},
-	Hilos:    []TCB{},
-}
-var ColaReady = &Colas{
-	Procesos: []PCB{},
-	Hilos:    []TCB{},
-}
-var ColaBlocked = &Colas{
-	Procesos: []PCB{},
-	Hilos:    []TCB{},
-}
-
-var PidCounter int = 1
-var MutexPidCounter sync.Mutex
-
 // w es el cuerpo de la respuesta y r es el cuerpo de la solicitud
 func RecibirMensaje(w http.ResponseWriter, r *http.Request) {
 	log.Printf("Método: %s", r.Method)

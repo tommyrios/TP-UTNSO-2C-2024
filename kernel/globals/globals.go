@@ -1,5 +1,7 @@
 package globals
 
+import "sync"
+
 type Config struct {
 	Port               int    `json:"port"`
 	IpMemory           string `json:"ip_memory"`
@@ -12,3 +14,7 @@ type Config struct {
 }
 
 var KConfig *Config
+
+var PidCounter int = 1
+
+var MutexPidCounter sync.Mutex

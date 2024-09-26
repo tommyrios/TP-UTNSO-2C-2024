@@ -16,6 +16,7 @@ type RequestProceso struct {
 }
 
 type RequestThreadCreate struct {
+	Pid          int    `json:"pid"`
 	Pseudocodigo string `json:"pseudocodigo"`
 	Prioridad    int    `json:"prioridad"`
 }
