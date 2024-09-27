@@ -1,6 +1,9 @@
 package globals
 
-import "sync"
+import (
+	"github.com/sisoputnfrba/tp-golang/utils/commons"
+	"sync"
+)
 
 type Config struct {
 	Port               int    `json:"port"`
@@ -13,8 +16,28 @@ type Config struct {
 	LogLevel           string `json:"log_level"`
 }
 
+type Kernel struct {
+	procesos       map[int]*commons.PCB // Mapa de procesos activos
+	colaNew        []*commons.PCB       // Cola de hilos nuevo
+	colaReady      []*commons.TCB       // Cola de hilos listos para ejecución
+	colaBloqueados []*commons.TCB       // Cola de hilos bloqueados
+	hiloExecute    *commons.TCB         // Hilo en ejecución
+
+	contadorPid int // PID autoincremental
+
+	mutexContador  sync.Mutex
+	mutexProcesos  sync.Mutex
+	mutexColaNew   sync.Mutex
+	mutexReady     sync.Mutex
+	mutexBloqueado sync.Mutex
+}
+
+var Estructura = &Kernel{
+	procesos:       make(map[int]*commons.PCB),
+	colaReady:      []*commons.TCB{},
+	colaBloqueados: []*commons.TCB{},
+	hiloExecute:    nil,
+	contadorPid:    1,
+}
+
 var KConfig *Config
-
-var PidCounter int = 1
-
-var MutexPidCounter sync.Mutex
