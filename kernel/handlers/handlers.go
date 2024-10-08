@@ -32,11 +32,51 @@ func HandleThreadCreate(w http.ResponseWriter, r *http.Request) {
 	globals.CrearHilo(hilo.Pid, hilo.Prioridad, hilo.Pseudocodigo)
 }
 
-func HandleProcessExit(w http.ResponseWriter, r *http.Request) {
+func HandleProcessExit(w http.ResponseWriter, r *http.Request) {}
 
+func HandleThreadExit(w http.ResponseWriter, r *http.Request) {}
+
+func HandleThreadJoin(w http.ResponseWriter, r *http.Request) {}
+
+func HandleThreadCancel(w http.ResponseWriter, r *http.Request) {}
+
+func HandleMutexCreate(w http.ResponseWriter, r *http.Request) {
+	var mutex request.RequestMutex
+
+	err := commons.DecodificarJSON(r.Body, &mutex)
+
+	if err != nil {
+		http.Error(w, "Error al decodificar el JSON", http.StatusBadRequest)
+		return
+	}
+
+	globals.CrearMutex(mutex.Nombre, mutex.Pid)
 }
 
-func HandleThreadExit(w http.ResponseWriter, r *http.Request)  {}
-func HandleMutexCreate(w http.ResponseWriter, r *http.Request) {}
-func HandleMutexLock(w http.ResponseWriter, r *http.Request)   {}
-func HandleMutexUnlock(w http.ResponseWriter, r *http.Request) {}
+func HandleMutexLock(w http.ResponseWriter, r *http.Request) {
+	var mutex request.RequestMutex
+
+	err := commons.DecodificarJSON(r.Body, &mutex)
+
+	if err != nil {
+		http.Error(w, "Error al decodificar el JSON", http.StatusBadRequest)
+		return
+	}
+
+	globals.BloquearMutex(mutex.Nombre, mutex.Pid, mutex.Tid)
+}
+
+func HandleMutexUnlock(w http.ResponseWriter, r *http.Request) {
+	var mutex request.RequestMutex
+
+	err := commons.DecodificarJSON(r.Body, &mutex)
+
+	if err != nil {
+		http.Error(w, "Error al decodificar el JSON", http.StatusBadRequest)
+		return
+	}
+
+	globals.DesbloquearMutex(mutex.Nombre, mutex.Pid, mutex.Tid)
+}
+
+func HandleDumpMemory(w http.ResponseWriter, r *http.Request) {}

@@ -45,6 +45,8 @@ func main() {
 	http.HandleFunc("/syscall/thread_create", handlers.HandleThreadCreate)
 	http.HandleFunc("/syscall/process_exit", handlers.HandleProcessExit)
 	http.HandleFunc("/syscall/thread_exit", handlers.HandleThreadExit)
+	http.HandleFunc("/syscall/thread_join", handlers.HandleThreadJoin)
+	http.HandleFunc("/syscall/thread_cancel", handlers.HandleThreadCancel)
 	http.HandleFunc("/syscall/mutex_create", handlers.HandleMutexCreate)
 	http.HandleFunc("/syscall/mutex_lock", handlers.HandleMutexLock)
 	http.HandleFunc("/syscall/mutex_unlock", handlers.HandleMutexUnlock)

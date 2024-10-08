@@ -5,7 +5,6 @@ import (
 	"io"
 	"log"
 	"net/http"
-	"sync"
 )
 
 type Mensaje struct {
@@ -13,21 +12,29 @@ type Mensaje struct {
 }
 
 type PCB struct {
-	Pid           int          `json:"pid"`
-	Tid           []TCB        `json:"tid"`
-	Mutex         []sync.Mutex `json:"mutex"`
-	ContadorHilos int          `json:"contador_hilos"`
-	Estado        string       `json:"estado"`
-	Tamanio       int          `json:"tamanio"`
-	PseudoCodigo  string       `json:"pseudocodigo"`
-	PrioridadTID0 int          `json:"prioridadtid0"`
+	Pid           int     `json:"pid"`
+	Tid           []TCB   `json:"tid"`
+	Mutex         []Mutex `json:"mutex"`
+	ContadorHilos int     `json:"contador_hilos"`
+	Estado        string  `json:"estado"`
+	Tamanio       int     `json:"tamanio"`
+	PseudoCodigo  string  `json:"pseudocodigo"`
+	PrioridadTID0 int     `json:"prioridadtid0"`
 }
 
 type TCB struct {
 	Pid           int    `json:"pid"`
 	Tid           int    `json:"tid"`
+	Estado        string `json:"estado"`
 	Prioridad     int    `json:"prioridad"`
 	Instrucciones string `json:"instrucciones"`
+	Mutex         Mutex  `json:"mutex"`
+}
+
+type Mutex struct {
+	Nombre          string `json:"nombre"`
+	Valor           int    `json:"valor"`
+	HilosBloqueados []*TCB `json:"hilos_bloqueados"`
 }
 
 // w es el cuerpo de la respuesta y r es el cuerpo de la solicitud

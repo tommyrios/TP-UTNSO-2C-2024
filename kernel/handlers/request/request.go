@@ -21,6 +21,17 @@ type RequestThreadCreate struct {
 	Prioridad    int    `json:"prioridad"`
 }
 
+type RequestInterrupcion struct {
+	Razon string `json:"razon"`
+	Pid   int    `json:"pid"`
+}
+
+type RequestMutex struct {
+	Nombre string `json:"nombre"`
+	Pid    int    `json:"pid"`
+	Tid    int    `json:"tid"`
+}
+
 func SolicitarProcesoMemoria(pseudocodigo string, tamanio int) (*http.Response, error) {
 	request := RequestProceso{
 		Pseudocodigo:   pseudocodigo,
@@ -35,4 +46,22 @@ func SolicitarProcesoMemoria(pseudocodigo string, tamanio int) (*http.Response, 
 	}
 
 	return cliente.Post(globals.KConfig.IpMemory, globals.KConfig.PortMemory, "process", solicitudCodificada), nil
+}
+
+func Dispatch(pcb commons.PCB) (*http.Response, error) {
+	requestBody, err := commons.CodificarJSON(pcb)
+	if err != nil {
+		return nil, err
+	}
+
+	return cliente.Post(globals.KConfig.IpCpu, globals.KConfig.PortCpu, "dispatch", requestBody), err
+}
+
+func Interrupt(interruption string, pid int) (*http.Response, error) {
+	requestBody, err := commons.CodificarJSON(RequestInterrupcion{Razon: interruption, Pid: pid})
+	if err != nil {
+		return nil, err
+	}
+
+	return cliente.Post(globals.KConfig.IpCpu, globals.KConfig.PortCpu, "interrupt", requestBody), err
 }

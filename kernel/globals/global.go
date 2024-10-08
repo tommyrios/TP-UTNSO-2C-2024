@@ -2,7 +2,6 @@ package globals
 
 import (
 	"github.com/sisoputnfrba/tp-golang/utils/commons"
-	"sync"
 )
 
 type Config struct {
@@ -24,12 +23,6 @@ type Kernel struct {
 	hiloExecute    *commons.TCB         // Hilo en ejecución
 
 	contadorPid int // PID autoincremental
-
-	mutexContador  sync.Mutex
-	mutexProcesos  sync.Mutex
-	mutexColaNew   sync.Mutex
-	mutexReady     sync.Mutex
-	mutexBloqueado sync.Mutex
 }
 
 var Estructura = &Kernel{
