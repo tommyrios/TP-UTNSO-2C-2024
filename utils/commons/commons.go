@@ -13,20 +13,31 @@ type Mensaje struct {
 }
 
 type PCB struct {
-	Pid            int          `json:"pid"`
-	Tid            []int        `json:"tid"`
-	Mutex          []sync.Mutex `json:"mutex"`
-	ContadorHilos  int          `json:"contador_hilos"`
-	Estado         string       `json:"estado"`
-	Tamanio        int          `json:"tamanio"`
-	Registros      Registros    `json:"registros"`
-	ProgramCounter int          `json:"program_counter"`
+	Pid            int       `json:"pid"`
+	Tid            []TCB     `json:"tid"`
+	Mutex          []Mutex   `json:"mutex"`
+	ContadorHilos  int       `json:"contador_hilos"`
+	Estado         string    `json:"estado"`
+	Tamanio        int       `json:"tamanio"`
+	PseudoCodigo   string    `json:"pseudocodigo"`
+	PrioridadTID0  int       `json:"prioridadtid0"`
+	Registros      Registros `json:"registros"`
+	ProgramCounter int       `json:"program_counter"`
 }
 
 type TCB struct {
-	Pid       int `json:"pid"`
-	Tid       int `json:"tid"`
-	Prioridad int `json:"prioridad"`
+	Pid           int    `json:"pid"`
+	Tid           int    `json:"tid"`
+	Estado        string `json:"estado"`
+	Prioridad     int    `json:"prioridad"`
+	Instrucciones string `json:"instrucciones"`
+	Mutex         Mutex  `json:"mutex"`
+}
+
+type Mutex struct {
+	Nombre          string `json:"nombre"`
+	Valor           int    `json:"valor"`
+	HilosBloqueados []*TCB `json:"hilos_bloqueados"`
 }
 
 type Colas struct {
