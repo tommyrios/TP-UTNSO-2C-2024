@@ -26,15 +26,20 @@ func CrearHilo(pid int, prioridad int, instrucciones string) {
 
 func FinalizarHilo(pid int, tid int) {
 	pcb := BuscarPCBEnColas(pid)
+	tcb := BuscarHiloEnPCB(pid, tid)
 
-	for i, tcb := range pcb.Tid {
-		if tcb.Tid == tid {
+	defer SacarHiloDeCola(tid, BuscarColaDeHilo(tcb))
+
+	tcb.Estado = "EXIT"
+
+	for i, thread := range pcb.Tid {
+		if thread.Tid == tid {
 			pcb.Tid = append(pcb.Tid[:i], pcb.Tid[i+1:]...)
 			break
 		}
 	}
 
-	// Pasarlo de cola
+	// Y avisarle a memoria que no está más este hilo!!!!
 
 	log.Printf("## (%d:%d) Finaliza el hilo", pid, tid)
 }
@@ -65,3 +70,20 @@ func BloquearHilo(tcb *commons.TCB) {
 	AgregarHiloACola(tcb, &Estructura.colaBloqueados)
 	// VER que onda la CPU, cómo le avisamos o qué hace
 }
+
+/*
+func CancelarHilo(pid int, tid int) {
+	tcb := BuscarHiloEnPCB(pid, tid)
+	if tcb == nil {
+		log.Pritf("## No se encontro el hilo con Tid %d en el PCB de Pid %d", pid, tid)
+		return
+	}
+
+	if tcb.Estado == "EXIT" {
+		log.Printf("## El hilo con ya fue finalizado ")
+		return
+	}
+
+	FinalizarHilo(pid, tid)
+}
+*/

@@ -39,26 +39,6 @@ type Mutex struct {
 	Valor           int    `json:"valor"`
 	HilosBloqueados []*TCB `json:"hilos_bloqueados"`
 }
-
-type Colas struct {
-	Mutex    sync.Mutex
-	Procesos []PCB
-	Hilos    []TCB
-}
-
-var ColaNew = &Colas{
-	Procesos: []PCB{},
-	Hilos:    []TCB{},
-}
-var ColaReady = &Colas{
-	Procesos: []PCB{},
-	Hilos:    []TCB{},
-}
-var ColaBlocked = &Colas{
-	Procesos: []PCB{},
-	Hilos:    []TCB{},
-}
-
 type Registros struct {
 	PC uint32 `json:"pc"`
 	AX uint32 `json:"ax"`

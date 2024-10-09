@@ -20,6 +20,7 @@ type Kernel struct {
 	colaNew        []*commons.PCB       // Cola de hilos nuevo
 	colaReady      []*commons.TCB       // Cola de hilos listos para ejecución
 	colaBloqueados []*commons.TCB       // Cola de hilos bloqueados
+	colaExit       []*commons.TCB       // Cola de hilos finalizados
 	hiloExecute    *commons.TCB         // Hilo en ejecución
 
 	contadorPid int // PID autoincremental

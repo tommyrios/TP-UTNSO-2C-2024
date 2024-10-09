@@ -9,7 +9,7 @@ import (
 )
 
 // STRUCTS SYSCALLS
-type RequestProceso struct {
+type RequestProcessCreate struct {
 	Pseudocodigo   string `json:"pseudocodigo"`
 	TamanioMemoria int    `json:"tamanio_memoria"`
 	Prioridad      int    `json:"prioridad"`
@@ -26,14 +26,44 @@ type RequestInterrupcion struct {
 	Pid   int    `json:"pid"`
 }
 
+type RequestProcessExit struct {
+	Pid int `json:"pid"`
+	Tid int `json:"tid"`
+}
+
+type RequestThreadExit struct {
+	Pid int `json:"pid"`
+	Tid int `json:"tid"`
+}
+
+type RequestThreadJoin struct {
+	Tid          int `json:"tid"`
+	TidParametro int `json:"tidparametro"`
+}
+
+type RequestThreadCancel struct {
+	TidAEliminar int `json:"tid"`
+	Pid          int `json:"pid"`
+}
+
 type RequestMutex struct {
 	Nombre string `json:"nombre"`
 	Pid    int    `json:"pid"`
 	Tid    int    `json:"tid"`
 }
 
+type RequestDumpMemory struct {
+	Pid int `json:"pid"`
+	Tid int `json:"tid"`
+}
+
+type RequestIO struct {
+	Tid    int `json:"tid"`
+	Tiempo int `json:"tiempo"`
+}
+
 func SolicitarProcesoMemoria(pseudocodigo string, tamanio int) (*http.Response, error) {
-	request := RequestProceso{
+	request := RequestProcessCreate{
 		Pseudocodigo:   pseudocodigo,
 		TamanioMemoria: tamanio,
 		// VER SI HAY QUE PASAR LA PRIORIDAD O NO HACE FALTA

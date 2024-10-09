@@ -2,15 +2,13 @@ package main
 
 import (
 	"fmt"
+	"github.com/sisoputnfrba/tp-golang/kernel/globals"
+	"github.com/sisoputnfrba/tp-golang/kernel/handlers"
+	configs "github.com/sisoputnfrba/tp-golang/utils/config"
 	"log"
 	"net/http"
 	"os"
 	"path/filepath"
-	"strconv"
-
-	"github.com/sisoputnfrba/tp-golang/kernel/globals"
-	"github.com/sisoputnfrba/tp-golang/kernel/handlers"
-	configs "github.com/sisoputnfrba/tp-golang/utils/config"
 )
 
 func main() {
@@ -31,13 +29,7 @@ func main() {
 	configs.ConfigurarLogger("kernel")
 
 	//// Proceso Inicial ////
-	pseudocodigo := os.Args[1]
-	tamanio, _ := strconv.Atoi(os.Args[2])
-	prioridadHiloMain, _ := strconv.Atoi(os.Args[3])
-
-	globals.CrearProceso(pseudocodigo, tamanio, prioridadHiloMain)
-
-	log.Println(pseudocodigo, tamanio, prioridadHiloMain)
+	globals.ProcesoInicial(os.Args)
 
 	//// Conexión ////
 	mux := http.NewServeMux()
