@@ -1,6 +1,8 @@
 package instrucciones
 
 import (
+	"log"
+
 	"github.com/sisoputnfrba/tp-golang/cpu/globals"
 	"github.com/sisoputnfrba/tp-golang/cpu/utils"
 )
@@ -43,6 +45,13 @@ func Jnz() bool {
 	}
 
 	return registro != 0
+}
+
+func Log() {
+	registro := globals.Instruccion.Operandos[0]
+	valor := utils.ValorRegistros(registro)
+
+	log.Printf("TID: %d - LOG - Registro: %s - Valor: %d", *globals.Pid, registro, valor)
 }
 
 func aplicarCambio(registro string, valor uint32) {

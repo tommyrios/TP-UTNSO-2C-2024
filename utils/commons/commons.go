@@ -70,7 +70,16 @@ type GetRespuestaInstruccion struct {
 }
 
 type DespachoProceso struct {
-	Pcb PCB `json:"pcb"`
+	Pcb      PCB        `json:"pcb"`
+	Reason   string     `json:"reason"`
+	Io       IoDispatch `json:"io"`
+	Resource string     `json:"resource"`
+}
+
+type IoDispatch struct {
+	Io          string   `json:"reason"`
+	Instruction string   `json:"instruction"`
+	Params      []string `json:"params"`
 }
 
 var PidCounter int = 1
