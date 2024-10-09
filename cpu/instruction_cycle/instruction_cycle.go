@@ -3,6 +3,7 @@ package instruction_cycle
 import (
 	"log"
 	"net/http"
+	"strings"
 
 	generalCPU "github.com/sisoputnfrba/tp-golang/cpu/general"
 	"github.com/sisoputnfrba/tp-golang/cpu/globals"
@@ -51,7 +52,7 @@ func Ejecutar(w http.ResponseWriter, r *http.Request) {
 func EjecutarInstrucciones(pcbUsada commons.PCB) {
 	var despacho commons.DespachoProceso
 
-	log.Printf("TID: %d - Solicito Contexto Ejecución", pcbUsada.Tid)
+	log.Printf("TID: %d - Solicito Contexto Ejecución", pcbUsada.Tid[0].Tid)
 
 	*globals.Registros = pcbUsada.Registros
 	*globals.Pid = pcbUsada.Pid
@@ -115,7 +116,13 @@ func Fetch() string {
 }
 
 func Decode(instruccion string) {
-	//TRADUCCION CON MMU (LOGICO A FISICO)
+	// Separar la instrucción en partes: Opcode y operandos
+	parts := strings.Split(instruccion, " ")
+	opCode := parts[0]
+	operands := parts[1:]
+
+	globals.Instruccion.CodigoInstruccion = opCode
+	globals.Instruccion.Operandos = operands
 }
 
 func Execute(respuesta *commons.DespachoProceso) (bool, bool) {
@@ -142,7 +149,7 @@ func Execute(respuesta *commons.DespachoProceso) (bool, bool) {
 	case DUMP_MEMORY, IO, PROCESS_CREATE, THREAD_CREATE,
 		THREAD_JOIN, THREAD_CANCEL, MUTEX_CREATE,
 		MUTEX_LOCK, MUTEX_UNLOCK, THREAD_EXIT, PROCESS_EXIT:
-		generalCPU.HandleSyscall(respuesta)
+		instrucciones.HandleSyscall(respuesta)
 		continuarEjecucion = false
 	default:
 		continuarEjecucion = false
