@@ -11,7 +11,7 @@ import (
 func ProcesoInicial(argumentos []string) {
 	pseudocodigo := argumentos[1]
 	tamanio, _ := strconv.Atoi(argumentos[2])
-	prioridadHiloMain, _ := strconv.Atoi(argumentos[3])
+	prioridadHiloMain := 0
 
 	CrearProceso(pseudocodigo, tamanio, prioridadHiloMain)
 
@@ -82,7 +82,7 @@ func FinalizarProceso(pid int) {
 
 	pcb.Estado = "EXIT"
 
-	// Liberar memoria VER!!!!
+	// esperar el ok de memoria. generar aviso de que se finaliza proceso
 
 	log.Printf("## Finaliza el proceso %d", pid)
 }

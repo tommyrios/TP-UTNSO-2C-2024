@@ -28,10 +28,18 @@ type Kernel struct {
 
 var Estructura = &Kernel{
 	procesos:       make(map[int]*commons.PCB),
+	colaNew:        []*commons.PCB{},
 	colaReady:      []*commons.TCB{},
 	colaBloqueados: []*commons.TCB{},
+	colaExit:       []*commons.TCB{},
 	hiloExecute:    nil,
 	contadorPid:    1,
 }
 
 var KConfig *Config
+
+var CpuLibre chan bool
+
+func init() {
+	CpuLibre = make(chan bool, 1)
+}

@@ -32,8 +32,8 @@ func main() {
 	globals.ProcesoInicial(os.Args)
 
 	//// Rutinas ////
-	go ManejarColaReady()
-	go ManejarHiloRunning()
+	globals.CpuLibre <- true
+	go globals.ManejarColaReady()
 
 	//// Conexión ////
 	mux := http.NewServeMux()

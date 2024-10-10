@@ -66,7 +66,6 @@ func SolicitarProcesoMemoria(pseudocodigo string, tamanio int) (*http.Response, 
 	request := RequestProcessCreate{
 		Pseudocodigo:   pseudocodigo,
 		TamanioMemoria: tamanio,
-		// VER SI HAY QUE PASAR LA PRIORIDAD O NO HACE FALTA
 	}
 
 	solicitudCodificada, err := commons.CodificarJSON(request)
