@@ -78,6 +78,16 @@ func SolicitarProcesoMemoria(pseudocodigo string, tamanio int) (*http.Response, 
 	return cliente.Post(globals.KConfig.IpMemory, globals.KConfig.PortMemory, "process", solicitudCodificada), nil
 }
 
+func SolicitarDumpMemory(pid int, tid int) (*http.Response, error) {
+	request := RequestDumpMemory{
+		Pid: pid,
+		Tid: tid,
+	}
+	requestCodificado, _ := commons.CodificarJSON(request)
+	cliente.Post(globals.KConfig.IpMemory, globals.KConfig.PortMemory, "dump", requestCodificado)
+	return nil, nil
+}
+
 func Dispatch(pcb commons.PCB) (*http.Response, error) {
 	requestBody, err := commons.CodificarJSON(pcb)
 	if err != nil {

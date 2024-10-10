@@ -31,6 +31,10 @@ func main() {
 	//// Proceso Inicial ////
 	globals.ProcesoInicial(os.Args)
 
+	//// Rutinas ////
+	go ManejarColaReady()
+	go ManejarHiloRunning()
+
 	//// Conexión ////
 	mux := http.NewServeMux()
 	http.HandleFunc("/syscall/process_create", handlers.HandleProcessCreate)
@@ -42,6 +46,8 @@ func main() {
 	http.HandleFunc("/syscall/mutex_create", handlers.HandleMutexCreate)
 	http.HandleFunc("/syscall/mutex_lock", handlers.HandleMutexLock)
 	http.HandleFunc("/syscall/mutex_unlock", handlers.HandleMutexUnlock)
+	http.HandleFunc("/syscall/dump_memory", handlers.HandleDumpMemory)
+	http.HandleFunc("/syscall/io", handlers.HandleIO)
 
 	port := fmt.Sprintf(":%d", globals.KConfig.Port)
 

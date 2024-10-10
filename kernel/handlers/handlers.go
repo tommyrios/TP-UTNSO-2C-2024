@@ -64,8 +64,8 @@ func HandleThreadExit(w http.ResponseWriter, r *http.Request) {
 }
 
 func HandleThreadJoin(w http.ResponseWriter, r *http.Request) {
-	var request request.RequestThreadJoin
-	err := commons.DecodificarJSON(r.Body, &request)
+	var hilo request.RequestThreadJoin
+	err := commons.DecodificarJSON(r.Body, &hilo)
 
 	if err != nil {
 		http.Error(w, "Error al decodificar el JSON", http.StatusBadRequest)
@@ -129,7 +129,31 @@ func HandleMutexUnlock(w http.ResponseWriter, r *http.Request) {
 	globals.DesbloquearMutex(mutex.Nombre, mutex.Pid, mutex.Tid)
 }
 
-func HandleDumpMemory(w http.ResponseWriter, r *http.Request) {}
+func HandleDumpMemory(w http.ResponseWriter, r *http.Request) {
+	var req request.RequestDumpMemory
+	err := commons.DecodificarJSON(r.Body, &req)
+	if err != nil {
+		http.Error(w, "Error al decodificar el JSON", http.StatusBadRequest)
+		return
+	}
+
+	tcb := globals.BuscarHiloEnPCB(req.Pid, req.Tid)
+	if tcb == nil {
+		http.Error(w, "No se encontró el hilo", http.StatusNotFound)
+		return
+	}
+	globals.BloquearHilo(tcb)
+
+	//mutex!!
+	response, err := request.SolicitarDumpMemory(req.Pid, req.Tid)
+
+	if err != nil || response.StatusCode != http.StatusOK {
+		http.Error(w, "Error al solicitar el dump de memoria", http.StatusInternalServerError)
+		return
+	}
+
+	globals.DesbloquearHilo(tcb)
+}
 
 func HandleIO(w http.ResponseWriter, r *http.Request) {
 	var io request.RequestIO
