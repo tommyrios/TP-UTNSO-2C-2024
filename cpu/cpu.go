@@ -34,7 +34,7 @@ func main() {
 
 	//// Conexiones ////
 	mux := http.NewServeMux()
-	mux.HandleFunc("POST /dispatch", instruction_cycle.Ejecutar)
+	mux.HandleFunc("/dispatch", instruction_cycle.Ejecutar)
 
 	port := fmt.Sprintf(":%d", globals.CConfig.Port)
 

@@ -8,20 +8,20 @@ import (
 	"github.com/sisoputnfrba/tp-golang/utils/commons"
 )
 
-func ObtenerInstruction() (*http.Response, error) {
+/*func ObtenerInstruction() (*http.Response, error) {
 	requestBody, err := commons.CodificarJSON(commons.GetPedidoInstruccion{Pid: *globals.Pid, PC: globals.Registros.PC})
 	if err != nil {
 		return nil, err
 	}
 	return cliente.Post(globals.CConfig.IpMemory, globals.CConfig.PortMemory, "process", requestBody), nil
-}
+}*/
 
-func NotifyKernel(respuesta *commons.DespachoProceso) (*http.Response, error) {
+func NotifyKernel(respuesta *commons.DespachoProceso, ruta string) (*http.Response, error) {
 	// Codificar el contexto de ejecución en JSON
 	requestBody, err := commons.CodificarJSON(respuesta)
 	if err != nil {
 		return nil, err
 	}
 
-	return cliente.Post(globals.CConfig.IpKernel, globals.CConfig.PortKernel, "syscall", requestBody), nil
+	return cliente.Post(globals.CConfig.IpKernel, globals.CConfig.PortKernel, ruta, requestBody), nil
 }

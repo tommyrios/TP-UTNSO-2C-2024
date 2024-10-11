@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"strings"
 
-	generalCPU "github.com/sisoputnfrba/tp-golang/cpu/general"
+	//generalCPU "github.com/sisoputnfrba/tp-golang/cpu/general"
 	"github.com/sisoputnfrba/tp-golang/cpu/globals"
 	"github.com/sisoputnfrba/tp-golang/cpu/instrucciones"
 	"github.com/sisoputnfrba/tp-golang/utils/cliente"
@@ -65,7 +65,7 @@ func EjecutarInstrucciones(pcbUsada commons.PCB) {
 	for {
 
 		//Fetch: Recibe la instruccion
-		instruccion := Fetch()
+		instruccion := Fetch(pcbUsada.PseudoCodigo)
 
 		//Decode: Traduce
 		Decode(instruccion)
@@ -99,20 +99,18 @@ func EjecutarInstrucciones(pcbUsada commons.PCB) {
 
 }
 
-func Fetch() string {
-	resp, err := generalCPU.ObtenerInstruction()
+func Fetch(pseudoCodigo string) string {
+	instrucciones := strings.Split(pseudoCodigo, "\n")
 
-	if err != nil || resp == nil {
-		log.Fatal("Error al buscar instruccion en memoria")
-		return "ERROR"
+	if int(globals.Registros.PC) >= len(instrucciones) {
+		log.Printf("TID: %d - No hay más instrucciones para ejecutar. PC: %d", *globals.Pid, globals.Registros.PC)
+		return "FINISHED"
 	}
-	var respuestaInstruccion commons.GetRespuestaInstruccion
-	commons.DecodificarJSON(resp.Body, &respuestaInstruccion)
 
-	log.Printf("TID: %d - FETCH - Program Counter: %d", *globals.Pid, globals.Registros.PC)
+	instruccion := instrucciones[globals.Registros.PC]
+	log.Printf("TID: %d - FETCH - Program Counter: %d - Instrucción: %s", *globals.Pid, globals.Registros.PC, instruccion)
 
-	return respuestaInstruccion.Instruccion
-
+	return instruccion
 }
 
 func Decode(instruccion string) {
