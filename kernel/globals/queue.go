@@ -37,3 +37,15 @@ func BuscarPCBEnColas(pid int) *commons.PCB {
 
 	return nil
 }
+
+func BuscarColaDeHilo(tcbBuscado *commons.TCB) *[]*commons.TCB {
+	switch tcbBuscado.Estado {
+	case "READY":
+		return &Estructura.colaReady
+	case "BLOCKED":
+		return &Estructura.colaBloqueados
+	case "EXIT":
+		return &Estructura.colaExit
+	}
+	return nil
+}

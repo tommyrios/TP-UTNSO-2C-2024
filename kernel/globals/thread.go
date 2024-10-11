@@ -21,20 +21,28 @@ func CrearHilo(pid int, prioridad int, instrucciones string) {
 
 	AgregarHiloACola(&tcb, &Estructura.colaReady)
 
+	//Avisar a memoria creacion de hilo!!! no hace falta la respuesta
+
 	log.Printf("## (%d:%d) Se crea el Hilo - Estado: READY", pcb.Pid, tcb.Tid)
 }
 
 func FinalizarHilo(pid int, tid int) {
 	pcb := BuscarPCBEnColas(pid)
+	tcb := BuscarHiloEnPCB(pid, tid)
 
-	for i, tcb := range pcb.Tid {
-		if tcb.Tid == tid {
+	defer SacarHiloDeCola(tid, BuscarColaDeHilo(tcb))
+
+	tcb.Estado = "EXIT"
+
+	for i, thread := range pcb.Tid {
+		if thread.Tid == tid {
 			pcb.Tid = append(pcb.Tid[:i], pcb.Tid[i+1:]...)
 			break
 		}
 	}
 
-	// Pasarlo de cola
+	// Y avisarle a memoria que no está más este hilo!!!!
+	// Liberar todos los hilos bloqueados por culpa del hilo a finalizar
 
 	log.Printf("## (%d:%d) Finaliza el hilo", pid, tid)
 }

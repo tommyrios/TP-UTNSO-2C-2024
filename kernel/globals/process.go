@@ -5,7 +5,19 @@ import (
 	"github.com/sisoputnfrba/tp-golang/utils/commons"
 	"log"
 	"net/http"
+	"strconv"
 )
+
+func ProcesoInicial(argumentos []string) {
+	pseudocodigo := argumentos[1]
+	tamanio, _ := strconv.Atoi(argumentos[2])
+	prioridadHiloMain := 0
+
+	CrearProceso(pseudocodigo, tamanio, prioridadHiloMain)
+
+	log.Println(pseudocodigo, tamanio, prioridadHiloMain)
+
+}
 
 func CrearProceso(pseudocodigo string, tamanioMemoria int, prioridad int) {
 	pcb := CrearPCB(pseudocodigo, tamanioMemoria, prioridad)
@@ -70,7 +82,7 @@ func FinalizarProceso(pid int) {
 
 	pcb.Estado = "EXIT"
 
-	// Liberar memoria
+	// esperar el ok de memoria. generar aviso de que se finaliza proceso
 
 	log.Printf("## Finaliza el proceso %d", pid)
 }

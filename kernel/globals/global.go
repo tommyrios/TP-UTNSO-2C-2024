@@ -20,6 +20,7 @@ type Kernel struct {
 	colaNew        []*commons.PCB       // Cola de hilos nuevo
 	colaReady      []*commons.TCB       // Cola de hilos listos para ejecución
 	colaBloqueados []*commons.TCB       // Cola de hilos bloqueados
+	colaExit       []*commons.TCB       // Cola de hilos finalizados
 	hiloExecute    *commons.TCB         // Hilo en ejecución
 
 	contadorPid int // PID autoincremental
@@ -27,10 +28,18 @@ type Kernel struct {
 
 var Estructura = &Kernel{
 	procesos:       make(map[int]*commons.PCB),
+	colaNew:        []*commons.PCB{},
 	colaReady:      []*commons.TCB{},
 	colaBloqueados: []*commons.TCB{},
+	colaExit:       []*commons.TCB{},
 	hiloExecute:    nil,
 	contadorPid:    1,
 }
 
 var KConfig *Config
+
+var CpuLibre chan bool
+
+func init() {
+	CpuLibre = make(chan bool, 1)
+}
