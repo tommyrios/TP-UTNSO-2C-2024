@@ -25,13 +25,14 @@ type PCB struct {
 }
 
 type TCB struct {
-	Pid           int       `json:"pid"`
-	Tid           int       `json:"tid"`
-	Estado        string    `json:"estado"`
-	Prioridad     int       `json:"prioridad"`
-	Instrucciones string    `json:"instrucciones"`
-	Mutex         Mutex     `json:"mutex"`
-	Registros     Registros `json:"registros"`
+	Pid            int       `json:"pid"`
+	Tid            int       `json:"tid"`
+	Estado         string    `json:"estado"`
+	Prioridad      int       `json:"prioridad"`
+	Instrucciones  string    `json:"instrucciones"`
+	Mutex          Mutex     `json:"mutex"`
+	Registros      Registros `json:"registros"`
+	ProgramCounter int       `json:"program_counter"`
 }
 
 type Mutex struct {

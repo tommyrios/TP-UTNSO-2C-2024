@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"strings"
 
-	//generalCPU "github.com/sisoputnfrba/tp-golang/cpu/general"
+	generalCPU "github.com/sisoputnfrba/tp-golang/cpu/general"
 	"github.com/sisoputnfrba/tp-golang/cpu/globals"
 	"github.com/sisoputnfrba/tp-golang/cpu/instrucciones"
 	"github.com/sisoputnfrba/tp-golang/utils/cliente"
@@ -52,10 +52,12 @@ func Ejecutar(w http.ResponseWriter, r *http.Request) {
 func EjecutarInstrucciones(pcbUsada commons.PCB) {
 	var despacho commons.DespachoProceso
 
-	log.Printf("TID: %d - Solicito Contexto Ejecución", pcbUsada.Tid[0].Tid)
+	tcbUsado := pcbUsada.Tid[0]
 
-	*globals.Registros = pcbUsada.Registros
-	*globals.Pid = pcbUsada.Pid
+	log.Printf("TID: %d - Solicito Contexto Ejecución", tcbUsado.Tid)
+
+	*globals.Registros = tcbUsado.Registros
+	*globals.Tid = pcbUsada.Tid[0].Tid
 	globals.Registros.PC = uint32(pcbUsada.ProgramCounter)
 
 	///////////////////////
@@ -65,7 +67,7 @@ func EjecutarInstrucciones(pcbUsada commons.PCB) {
 	for {
 
 		//Fetch: Recibe la instruccion
-		instruccion := Fetch(pcbUsada.PseudoCodigo)
+		instruccion := Fetch()
 
 		//Decode: Traduce
 		Decode(instruccion)
@@ -87,7 +89,7 @@ func EjecutarInstrucciones(pcbUsada commons.PCB) {
 	}
 
 	despacho.Pcb = pcbUsada
-	despacho.Pcb.Registros = *globals.Registros
+	despacho.Pcb.Tid[0] = tcbUsado
 	despacho.Pcb.ProgramCounter = int(globals.Registros.PC)
 
 	resp, err := commons.CodificarJSON(despacho)
@@ -99,18 +101,20 @@ func EjecutarInstrucciones(pcbUsada commons.PCB) {
 
 }
 
-func Fetch(pseudoCodigo string) string {
-	instrucciones := strings.Split(pseudoCodigo, "\n")
+func Fetch() string {
+	resp, err := generalCPU.ObtenerInstruction()
 
-	if int(globals.Registros.PC) >= len(instrucciones) {
-		log.Printf("TID: %d - No hay más instrucciones para ejecutar. PC: %d", *globals.Pid, globals.Registros.PC)
-		return "FINISHED"
+	if err != nil || resp == nil {
+		log.Fatal("Error al buscar instruccion en memoria")
+		return "ERROR"
 	}
+	var respuestaInstruccion commons.GetRespuestaInstruccion
+	commons.DecodificarJSON(resp.Body, &respuestaInstruccion)
 
-	instruccion := instrucciones[globals.Registros.PC]
-	log.Printf("TID: %d - FETCH - Program Counter: %d - Instrucción: %s", *globals.Pid, globals.Registros.PC, instruccion)
+	log.Printf("TID: %d - FETCH - Program Counter: %d", *globals.Tid, globals.Registros.PC)
 
-	return instruccion
+	return respuestaInstruccion.Instruccion
+
 }
 
 func Decode(instruccion string) {

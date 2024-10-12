@@ -51,7 +51,7 @@ func Log() {
 }
 
 func HandleSyscall(respuesta *commons.DespachoProceso) {
-	respuesta.Pcb.Registros = *globals.Registros
+	respuesta.Pcb.Tid[0].Registros = *globals.Registros
 	respuesta.Pcb.ProgramCounter = int(globals.Registros.PC)
 
 	switch globals.Instruccion.CodigoInstruccion {

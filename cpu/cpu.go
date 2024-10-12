@@ -23,6 +23,7 @@ func main() {
 
 	globals.Registros = new(commons.Registros)
 	globals.Pid = new(int)
+	globals.Tid = new(int)
 	globals.CConfig = configs.IniciarConfiguracion(filepath.Join(path, "config.json"), &globals.Config{}).(*globals.Config)
 
 	if globals.CConfig == nil {
