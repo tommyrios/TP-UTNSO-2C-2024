@@ -2,13 +2,14 @@ package main
 
 import (
 	"fmt"
-	"github.com/sisoputnfrba/tp-golang/memoria/globals"
-	"github.com/sisoputnfrba/tp-golang/utils/commons"
-	"github.com/sisoputnfrba/tp-golang/utils/config"
 	"log"
 	"net/http"
 	"os"
 	"path/filepath"
+
+	"github.com/sisoputnfrba/tp-golang/memoria/globals"
+	"github.com/sisoputnfrba/tp-golang/memoria/handlers"
+	configs "github.com/sisoputnfrba/tp-golang/utils/config"
 )
 
 func main() {
@@ -28,9 +29,14 @@ func main() {
 	//// Logger ////
 	configs.ConfigurarLogger("memoria")
 
+	//// Inicialización ////
+	globals.InicializarMemoria()
+
 	//// Conexión ////
 	mux := http.NewServeMux()
-	mux.HandleFunc("/mensaje", commons.RecibirMensaje)
+	mux.HandleFunc("/contexto_de_ejecucion", handlers.HandleDevolverContexto)
+	mux.HandleFunc("/actualizar_contexto", handlers.HandleActualizarContexto)
+	mux.HandleFunc("/process", handlers.HandleSolicitarProceso)
 
 	port := fmt.Sprintf(":%d", globals.MConfig.Port)
 

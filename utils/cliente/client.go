@@ -3,7 +3,7 @@ package cliente
 import (
 	"bytes"
 	"fmt"
-	"io/ioutil"
+	"io"
 	"log"
 	"net/http"
 )
@@ -19,7 +19,7 @@ func Post(ip string, port int, ruta string, jsonData []byte) *http.Response {
 
 	defer response.Body.Close()
 
-	body, _ := ioutil.ReadAll(response.Body)
+	body, _ := io.ReadAll(response.Body)
 
 	log.Println("Respuesta POST:", string(body))
 
@@ -27,7 +27,7 @@ func Post(ip string, port int, ruta string, jsonData []byte) *http.Response {
 }
 
 func Get(ip string, port int, ruta string) *http.Response {
-	url := fmt.Sprintf("https://%s:%d/%s", ip, port, ruta)
+	url := fmt.Sprintf("http://%s:%d/%s", ip, port, ruta)
 
 	response, err := http.Get(url)
 
@@ -37,7 +37,7 @@ func Get(ip string, port int, ruta string) *http.Response {
 
 	defer response.Body.Close()
 
-	body, _ := ioutil.ReadAll(response.Body)
+	body, _ := io.ReadAll(response.Body)
 
 	log.Println("Respuesta GET:", string(body))
 

@@ -2,14 +2,14 @@ package main
 
 import (
 	"fmt"
-	"github.com/sisoputnfrba/tp-golang/kernel/globals"
-	"github.com/sisoputnfrba/tp-golang/utils/commons"
-	configs "github.com/sisoputnfrba/tp-golang/utils/config"
-	"net/http"
-
 	"log"
+	"net/http"
 	"os"
 	"path/filepath"
+
+	"github.com/sisoputnfrba/tp-golang/kernel/globals"
+	"github.com/sisoputnfrba/tp-golang/kernel/handlers"
+	configs "github.com/sisoputnfrba/tp-golang/utils/config"
 )
 
 func main() {
@@ -29,9 +29,22 @@ func main() {
 	//// Logger ////
 	configs.ConfigurarLogger("kernel")
 
-	//// Conexión ////
+	//// Proceso Inicial ////
+	globals.ProcesoInicial(os.Args)
+
+	//// Rutinas ////
+	globals.CpuLibre <- true
+	go globals.ManejarColaReady()
+
 	mux := http.NewServeMux()
-	mux.HandleFunc("/mensaje", commons.RecibirMensaje)
+	http.HandleFunc("/syscall/thread_exit", handlers.HandleThreadExit)
+	http.HandleFunc("/syscall/thread_join", handlers.HandleThreadJoin)
+	http.HandleFunc("/syscall/thread_cancel", handlers.HandleThreadCancel)
+	http.HandleFunc("/syscall/mutex_create", handlers.HandleMutexCreate)
+	http.HandleFunc("/syscall/mutex_lock", handlers.HandleMutexLock)
+	http.HandleFunc("/syscall/mutex_unlock", handlers.HandleMutexUnlock)
+	http.HandleFunc("/syscall/dump_memory", handlers.HandleDumpMemory)
+	http.HandleFunc("/syscall/io", handlers.HandleIO)
 
 	port := fmt.Sprintf(":%d", globals.KConfig.Port)
 

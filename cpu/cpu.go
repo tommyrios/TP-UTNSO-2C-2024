@@ -2,13 +2,15 @@ package main
 
 import (
 	"fmt"
-	"github.com/sisoputnfrba/tp-golang/cpu/globals"
-	"github.com/sisoputnfrba/tp-golang/utils/commons"
-	"github.com/sisoputnfrba/tp-golang/utils/config"
 	"log"
 	"net/http"
 	"os"
 	"path/filepath"
+
+	"github.com/sisoputnfrba/tp-golang/cpu/globals"
+	"github.com/sisoputnfrba/tp-golang/cpu/instruction_cycle"
+	"github.com/sisoputnfrba/tp-golang/utils/commons"
+	configs "github.com/sisoputnfrba/tp-golang/utils/config"
 )
 
 func main() {
@@ -19,6 +21,9 @@ func main() {
 		panic(err)
 	}
 
+	globals.Registros = new(commons.Registros)
+	globals.Pid = new(int)
+	globals.Tid = new(int)
 	globals.CConfig = configs.IniciarConfiguracion(filepath.Join(path, "config.json"), &globals.Config{}).(*globals.Config)
 
 	if globals.CConfig == nil {
@@ -30,7 +35,7 @@ func main() {
 
 	//// Conexiones ////
 	mux := http.NewServeMux()
-	mux.HandleFunc("/mensaje", commons.RecibirMensaje)
+	mux.HandleFunc("/dispatch", instruction_cycle.Ejecutar)
 
 	port := fmt.Sprintf(":%d", globals.CConfig.Port)
 
