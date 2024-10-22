@@ -13,15 +13,15 @@ type Mensaje struct {
 }
 
 type PCB struct {
-	Pid            int     `json:"pid"`
-	Tid            []TCB   `json:"tid"`
-	Mutex          []Mutex `json:"mutex"`
-	ContadorHilos  int     `json:"contador_hilos"`
-	Estado         string  `json:"estado"`
-	Tamanio        int     `json:"tamanio"`
-	PseudoCodigo   string  `json:"pseudocodigo"`
-	PrioridadTID0  int     `json:"prioridadtid0"`
-	ProgramCounter int     `json:"program_counter"`
+	Pid               int     `json:"pid"`
+	Tid               []TCB   `json:"tid"`
+	Mutex             []Mutex `json:"mutex"`
+	ContadorHilos     int     `json:"contador_hilos"`
+	Estado            string  `json:"estado"`
+	Tamanio           int     `json:"tamanio"`
+	PseudoCodigoHilo0 string  `json:"pseudocodigo_hilo_0"`
+	PrioridadTID0     int     `json:"prioridadtid0"`
+	ProgramCounter    int     `json:"program_counter"`
 }
 
 type TCB struct {
@@ -29,7 +29,7 @@ type TCB struct {
 	Tid            int       `json:"tid"`
 	Estado         string    `json:"estado"`
 	Prioridad      int       `json:"prioridad"`
-	Instrucciones  string    `json:"instrucciones"`
+	Pseudocodigo   string    `json:"pseudocodigo"`
 	Mutex          Mutex     `json:"mutex"`
 	Registros      Registros `json:"registros"`
 	ProgramCounter int       `json:"program_counter"`
@@ -78,7 +78,6 @@ type ContextoDeEjecucion struct {
 	Pid       int        `json:"pid"`
 	Tid       int        `json:"tid"`
 	Registros *Registros `json:"registros"`
-	// memoria que ocupa?
 }
 
 var PidCounter int = 1

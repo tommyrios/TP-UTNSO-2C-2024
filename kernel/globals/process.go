@@ -56,14 +56,14 @@ func CrearProceso(pseudocodigo string, tamanioMemoria int, prioridad int) {
 
 func CrearPCB(pseudocodigo string, tamanio int, prioridad int) *commons.PCB {
 	pcb := commons.PCB{
-		Pid:           Estructura.contadorPid,
-		Estado:        "NEW",
-		Tid:           []commons.TCB{},
-		ContadorHilos: 0,
-		Tamanio:       tamanio,
-		PseudoCodigo:  pseudocodigo,
-		PrioridadTID0: prioridad,
-		Mutex:         []commons.Mutex{},
+		Pid:               Estructura.contadorPid,
+		Estado:            "NEW",
+		Tid:               []commons.TCB{},
+		ContadorHilos:     0,
+		Tamanio:           tamanio,
+		PseudoCodigoHilo0: pseudocodigo,
+		PrioridadTID0:     prioridad,
+		Mutex:             []commons.Mutex{},
 	}
 
 	Estructura.contadorPid++
@@ -82,7 +82,7 @@ func FinalizarProceso(pid int) {
 
 	pcb.Estado = "EXIT"
 
-	// esperar el ok de memoria. generar aviso de que se finaliza proceso
+	// esperar el ok de memoria. generar aviso de que se finaliza proceso. Liberar en memoria y avisar al planificador x si alguno en new
 
 	log.Printf("## Finaliza el proceso %d", pid)
 }

@@ -5,14 +5,14 @@ import (
 	"log"
 )
 
-func CrearHilo(pid int, prioridad int, instrucciones string) {
+func CrearHilo(pid int, prioridad int, pseudocodigo string) {
 	pcb := BuscarPCBEnColas(pid)
 
 	tcb := commons.TCB{
-		Pid:           pcb.Pid,
-		Tid:           pcb.ContadorHilos,
-		Prioridad:     prioridad,
-		Instrucciones: instrucciones,
+		Pid:          pcb.Pid,
+		Tid:          pcb.ContadorHilos,
+		Prioridad:    prioridad,
+		Pseudocodigo: pseudocodigo,
 	}
 
 	pcb.ContadorHilos++
