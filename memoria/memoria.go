@@ -30,7 +30,7 @@ func main() {
 	configs.ConfigurarLogger("memoria")
 
 	//// Inicialización ////
-	globals.InicializarMemoria()
+	globals.MemoriaUsuario = make([]byte, globals.MConfig.MemorySize)
 
 	//// Conexión ////
 	mux := http.NewServeMux()

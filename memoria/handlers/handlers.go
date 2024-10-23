@@ -4,13 +4,17 @@ import (
 	"fmt"
 	request2 "github.com/sisoputnfrba/tp-golang/kernel/handlers/request"
 	"github.com/sisoputnfrba/tp-golang/memoria/globals"
+	request3 "github.com/sisoputnfrba/tp-golang/memoria/handlers/request"
 	"github.com/sisoputnfrba/tp-golang/utils/cliente"
 	"github.com/sisoputnfrba/tp-golang/utils/commons"
 	"net/http"
 )
 
+// ¡¡¡¡¡HANDLERS CPU!!!!!
+//Agregar retardo en peticiones!!
+
 func HandleDevolverContexto(w http.ResponseWriter, r *http.Request) {
-	var request commons.ContextoDeEjecucion
+	var request request3.RequestContexto
 
 	err := commons.DecodificarJSON(r.Body, &request)
 
@@ -19,11 +23,19 @@ func HandleDevolverContexto(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	var registros = ObtenerRegistros(request.Pid, request.Tid) // ¡¡¡Falta implementar esta función!!!!
+	registros := globals.ObtenerRegistros(request.Pid, request.Tid)
 
-	request.Registros = registros
+	var response request3.ResponseContexto
+	response.Registros = registros
+	response.Pid = request.Pid
+	response.Tid = request.Tid
 
-	responseCodificada, err := commons.CodificarJSON(request)
+	base, limite := globals.ObtenerBaseLimite(request.Pid, request.Tid) // ¡¡¡Falta implementar esta función!!!!
+
+	response.Base = base
+	response.Limite = limite
+
+	responseCodificada, err := commons.CodificarJSON(response)
 
 	if err != nil {
 		http.Error(w, "Error al codificar el JSON", http.StatusBadRequest)
@@ -34,7 +46,7 @@ func HandleDevolverContexto(w http.ResponseWriter, r *http.Request) {
 }
 
 func HandleActualizarContexto(w http.ResponseWriter, r *http.Request) {
-	var request commons.ContextoDeEjecucion
+	var request request3.RequestActualizarContexto
 
 	err := commons.DecodificarJSON(r.Body, &request)
 
@@ -43,7 +55,7 @@ func HandleActualizarContexto(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	err = ActualizarRegistros(request.Pid, request.Tid, *request.Registros) // ¡¡¡Falta implementar esta función!!!!
+	err = globals.ActualizarRegistros(request.Pid, request.Tid, request.Registros)
 
 	if err != nil {
 		http.Error(w, "Error actualizando los registros", http.StatusInternalServerError)
@@ -52,37 +64,85 @@ func HandleActualizarContexto(w http.ResponseWriter, r *http.Request) {
 
 	// Responder con éxito si se actualizaron correctamente
 	w.WriteHeader(http.StatusOK)
-	w.Write([]byte("Contexto actualizado correctamente"))
+	w.Write([]byte("OK"))
 }
 
-func ObtenerRegistros(pid int, tid int) *commons.Registros {
-	// Buscar los registros guardados en memoria
-	// TODO
-	registros := &commons.Registros{}
+func HandleObtenerInstruccion(w http.ResponseWriter, r *http.Request) {
+	var request request3.RequestObtenerInstruccion
 
-	return registros
-}
+	err := commons.DecodificarJSON(r.Body, &request)
 
-func ActualizarRegistros(pid int, tid int, registrosActualizados commons.Registros) error {
-	// Obtener el puntero a los registros actuales desde la memoria
-	var registrosAActualizar = ObtenerRegistros(pid, tid) // ¡¡¡Falta implementar esta función!!!!
-
-	if registrosAActualizar == nil {
-		return fmt.Errorf("Registros no encontrados para PID %d y TID %d", pid, tid)
+	if err != nil {
+		http.Error(w, "Error al decodificar el JSON", http.StatusBadRequest)
+		return
 	}
 
-	registrosAActualizar.PC = registrosActualizados.PC
-	registrosAActualizar.AX = registrosActualizados.AX
-	registrosAActualizar.BX = registrosActualizados.BX
-	registrosAActualizar.CX = registrosActualizados.CX
-	registrosAActualizar.DX = registrosActualizados.DX
-	registrosAActualizar.EX = registrosActualizados.EX
-	registrosAActualizar.FX = registrosActualizados.FX
-	registrosAActualizar.GX = registrosActualizados.GX
-	registrosAActualizar.HX = registrosActualizados.HX
+	instruccion, err := globals.ObtenerInstruccion(request.Pid, request.Tid, request.PC)
 
-	return nil
+	if err != nil {
+		http.Error(w, fmt.Sprintf("Error al obtener la instrucción: %s", err.Error()), http.StatusInternalServerError)
+		return
+	}
+
+	responseCodificada, err := commons.CodificarJSON(instruccion)
+
+	if err != nil {
+		http.Error(w, "Error al codificar el JSON", http.StatusBadRequest)
+		return
+	}
+
+	cliente.Post(globals.MConfig.IpCpu, globals.MConfig.PortCpu, "/instruccion", responseCodificada)
 }
+
+func HandleReadMemory(w http.ResponseWriter, r *http.Request) {
+	var request request3.RequestMemory
+
+	err := commons.DecodificarJSON(r.Body, &request)
+
+	if err != nil {
+		http.Error(w, "Error al decodificar el JSON", http.StatusBadRequest)
+		return
+	}
+
+	response, err := globals.LeerMemoria(request.Byte)
+
+	if err != nil {
+		http.Error(w, fmt.Sprintf("Error al leer la memoria: %s", err.Error()), http.StatusInternalServerError)
+		return
+	}
+
+	responseCodificada, err := commons.CodificarJSON(response)
+
+	if err != nil {
+		http.Error(w, "Error al codificar el JSON", http.StatusBadRequest)
+		return
+	}
+
+	cliente.Post(globals.MConfig.IpCpu, globals.MConfig.PortCpu, "/lectura_memoria", responseCodificada)
+}
+
+func HandleWriteMemory(w http.ResponseWriter, r *http.Request) {
+	var request request3.RequestMemory
+
+	err := commons.DecodificarJSON(r.Body, &request)
+
+	if err != nil {
+		http.Error(w, "Error al decodificar el JSON", http.StatusBadRequest)
+		return
+	}
+
+	err = globals.EscribirMemoria(request.Byte, request.Pid, request.Datos)
+
+	if err != nil {
+		http.Error(w, fmt.Sprintf("Error al escribir la memoria: %s", err.Error()), http.StatusInternalServerError)
+		return
+	}
+
+	w.WriteHeader(http.StatusOK)
+	w.Write([]byte("OK"))
+}
+
+// ¡¡¡¡¡HANDLERS KERNEL!!!!!
 
 func HandleSolicitarProceso(w http.ResponseWriter, r *http.Request) {
 	var req request2.RequestProcessCreate

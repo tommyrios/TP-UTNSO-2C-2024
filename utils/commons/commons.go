@@ -74,12 +74,6 @@ type IoDispatch struct {
 	Params      []string `json:"params"`
 }
 
-type ContextoDeEjecucion struct {
-	Pid       int        `json:"pid"`
-	Tid       int        `json:"tid"`
-	Registros *Registros `json:"registros"`
-}
-
 var PidCounter int = 1
 var MutexPidCounter sync.Mutex
 
