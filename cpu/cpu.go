@@ -36,6 +36,7 @@ func main() {
 	//// Conexiones ////
 	mux := http.NewServeMux()
 	mux.HandleFunc("/dispatch", instruction_cycle.Ejecutar)
+	mux.HandleFunc("/interrupt", instruction_cycle.RecibirInterrupcion)
 
 	port := fmt.Sprintf(":%d", globals.CConfig.Port)
 

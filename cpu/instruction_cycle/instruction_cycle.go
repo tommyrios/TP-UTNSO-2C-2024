@@ -8,6 +8,7 @@ import (
 	generalCPU "github.com/sisoputnfrba/tp-golang/cpu/general"
 	"github.com/sisoputnfrba/tp-golang/cpu/globals"
 	"github.com/sisoputnfrba/tp-golang/cpu/instrucciones"
+	"github.com/sisoputnfrba/tp-golang/cpu/interrupciones"
 	"github.com/sisoputnfrba/tp-golang/utils/cliente"
 	"github.com/sisoputnfrba/tp-golang/utils/commons"
 )
@@ -32,6 +33,16 @@ const (
 	THREAD_EXIT    = "THREAD_EXIT"
 	PROCESS_EXIT   = "PROCESS_EXIT"
 )
+
+func RecibirInterrupcion(w http.ResponseWriter, r *http.Request) {
+	var interrupcion commons.InterrupcionRecibida
+
+	err := commons.DecodificarJSON(r.Body, &interrupcion)
+	if err != nil {
+		return
+	}
+
+}
 
 // Similar a Recibir Mensaje
 func Ejecutar(w http.ResponseWriter, r *http.Request) {
@@ -82,7 +93,6 @@ func EjecutarInstrucciones(pcbUsada commons.PCB) {
 
 		//Check Interruption
 		if !continuarEjecucion || Interrupcion(&despacho) {
-			//Log de por que se cortó la ejecucion
 			break
 		}
 
@@ -161,5 +171,34 @@ func Execute(respuesta *commons.DespachoProceso) (bool, bool) {
 }
 
 func Interrupcion(respuesta *commons.DespachoProceso) bool {
-	return true
+	// Chequear si hubo una interrupción
+	status, reason, tid := interrupciones.ObtenerYResetearInterrupcion()
+
+	if status && tid == *globals.Tid {
+		// Si hay interrupción => actualizar contexto en mem
+		tcbActual := commons.TCB{
+			Pid:       *globals.Pid,
+			Tid:       *globals.Tid,
+			Registros: *globals.Registros,
+		}
+
+		_, err := generalCPU.NotifyMemory(tcbActual)
+		if err != nil {
+			log.Fatal("Error al actualizar el contexto en memoria")
+		}
+
+		// Notificar al Kernel el motivo de la interrupción
+		respuesta.Reason = reason
+		respuesta.Pcb.Tid[0].Registros = *globals.Registros
+		respuesta.Pcb.ProgramCounter = int(globals.Registros.PC)
+
+		_, err = generalCPU.NotifyKernel(respuesta, "/syscall/interruption")
+		if err != nil {
+			log.Fatal("Error al notificar la interrupción al Kernel")
+		}
+
+		return true
+	}
+
+	return false
 }

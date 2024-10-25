@@ -81,6 +81,11 @@ type ContextoDeEjecucion struct {
 	// memoria que ocupa?
 }
 
+type InterrupcionRecibida struct {
+	Tid    int    `json:"tid"`
+	Reason string `json:"reason"`
+}
+
 var PidCounter int = 1
 var MutexPidCounter sync.Mutex
 

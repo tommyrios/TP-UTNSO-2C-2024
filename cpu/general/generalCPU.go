@@ -25,3 +25,12 @@ func NotifyKernel(respuesta *commons.DespachoProceso, ruta string) (*http.Respon
 
 	return cliente.Post(globals.CConfig.IpKernel, globals.CConfig.PortKernel, ruta, requestBody), nil
 }
+
+func NotifyMemory(tcb commons.TCB) (*http.Response, error) {
+	requestBody, err := commons.CodificarJSON(tcb)
+	if err != nil {
+		return nil, err
+	}
+
+	return cliente.Post(globals.CConfig.IpMemory, globals.CConfig.PortMemory, "contexto actualizado", requestBody), nil
+}
