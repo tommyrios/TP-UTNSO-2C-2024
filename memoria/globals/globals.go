@@ -31,10 +31,14 @@ type ContextoProceso struct {
 type ContextoHilo commons.Registros //typedef de C!!
 
 type InstruccionesHilo struct {
-	Instructiones []string // Instrucciones leídas del pseudocódigo
+	Instrucciones []string // Instrucciones leídas del pseudocódigo
 }
 
-var MemoriaSistema MemSistema
+var MemoriaSistema = MemSistema{
+	TablaProcesos: make(map[int]ContextoProceso),
+	TablaHilos:    make(map[int]map[int]ContextoHilo),
+	Pseudocodigos: make(map[int]map[int]InstruccionesHilo),
+}
 
 type MemSistema struct {
 	TablaProcesos map[int]ContextoProceso           // Tabla de procesos (PID -> Contexto de proceso)

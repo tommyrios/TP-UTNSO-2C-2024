@@ -10,6 +10,7 @@ import (
 
 // STRUCTS SYSCALLS
 type RequestProcessCreate struct {
+	Pid            int    `json:"pid"`
 	Pseudocodigo   string `json:"pseudocodigo"`
 	TamanioMemoria int    `json:"tamanio_memoria"`
 	Prioridad      int    `json:"prioridad"`
@@ -62,8 +63,9 @@ type RequestIO struct {
 	Tiempo int `json:"tiempo"`
 }
 
-func SolicitarProcesoMemoria(pseudocodigo string, tamanio int) (*http.Response, error) {
+func SolicitarProcesoMemoria(pid int, pseudocodigo string, tamanio int) (*http.Response, error) {
 	request := RequestProcessCreate{
+		Pid:            pid,
 		Pseudocodigo:   pseudocodigo,
 		TamanioMemoria: tamanio,
 	}

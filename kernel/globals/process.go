@@ -26,7 +26,7 @@ func CrearProceso(pseudocodigo string, tamanioMemoria int, prioridad int) {
 		log.Println("Cola NEW está vacía, solicitando memoria.")
 
 		// Solicitar espacio en memoria
-		respuestaMemoria, err := request.SolicitarProcesoMemoria(pseudocodigo, tamanioMemoria)
+		respuestaMemoria, err := request.SolicitarProcesoMemoria(pcb.Pid, pseudocodigo, tamanioMemoria)
 
 		if err != nil {
 			log.Println("Error al solicitar espacio en memoria.")

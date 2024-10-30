@@ -47,7 +47,7 @@ func ActualizarRegistros(pid int, tid int, registrosActualizados commons.Registr
 
 func ObtenerInstruccion(pid int, tid int, pc uint32) (string, error) {
 
-	instruccion := MemoriaSistema.Pseudocodigos[pid][tid].Instructiones[pc]
+	instruccion := MemoriaSistema.Pseudocodigos[pid][tid].Instrucciones[pc]
 
 	if instruccion == "" {
 		return "", fmt.Errorf("Instrucción no encontrada para PID %d, TID %d y PC %d", pid, tid, pc)

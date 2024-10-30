@@ -36,7 +36,10 @@ func main() {
 	mux := http.NewServeMux()
 	mux.HandleFunc("/contexto_de_ejecucion", handlers.HandleDevolverContexto)
 	mux.HandleFunc("/actualizar_contexto", handlers.HandleActualizarContexto)
-	mux.HandleFunc("/process", handlers.HandleSolicitarProceso)
+	mux.HandleFunc("/obtener_instruccion", handlers.HandleObtenerInstruccion)
+	mux.HandleFunc("/read_mem", handlers.HandleReadMemory)
+	mux.HandleFunc("/write_mem", handlers.HandleWriteMemory)
+	mux.HandleFunc("/proceso", handlers.HandleSolicitarProceso)
 
 	port := fmt.Sprintf(":%d", globals.MConfig.Port)
 
