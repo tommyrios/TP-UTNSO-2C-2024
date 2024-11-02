@@ -35,6 +35,7 @@ const (
 )
 
 func RecibirInterrupcion(w http.ResponseWriter, r *http.Request) {
+	log.Println("## Llega interrupcion al puerto Interrupt")
 	var interrupcion commons.InterrupcionRecibida
 
 	err := commons.DecodificarJSON(r.Body, &interrupcion)
@@ -98,6 +99,8 @@ func EjecutarInstrucciones(pcbUsada commons.PCB) {
 
 	}
 
+	log.Printf("## TID: %d - Actualizo Contexto Ejecución", *globals.Tid)
+
 	despacho.Pcb = pcbUsada
 	despacho.Pcb.Tid[0] = tcbUsado
 	despacho.Pcb.ProgramCounter = int(globals.Registros.PC)
@@ -153,9 +156,9 @@ func Execute(respuesta *commons.DespachoProceso) (bool, bool) {
 	case JNZ:
 		salto = instrucciones.Jnz()
 	case READ_MEM:
-		//instrucciones.ReadMem()
+		instrucciones.ReadMem()
 	case WRITE_MEM:
-		//instrucciones.WriteMem()
+		instrucciones.WriteMem()
 	case LOG:
 		instrucciones.Log()
 	case DUMP_MEMORY, IO, PROCESS_CREATE, THREAD_CREATE,
@@ -167,6 +170,8 @@ func Execute(respuesta *commons.DespachoProceso) (bool, bool) {
 		continuarEjecucion = false
 	}
 
+	log.Printf("## TID: %d - Ejecutando: %s - %v", *globals.Tid, globals.Instruccion.CodigoInstruccion, globals.Instruccion.Operandos)
+
 	return continuarEjecucion, salto
 }
 
@@ -175,6 +180,7 @@ func Interrupcion(respuesta *commons.DespachoProceso) bool {
 	status, reason, tid := interrupciones.ObtenerYResetearInterrupcion()
 
 	if status && tid == *globals.Tid {
+		log.Printf("## TID: %d - Actualizo Contexto Ejecución", *globals.Tid)
 		// Si hay interrupción => actualizar contexto en mem
 		tcbActual := commons.TCB{
 			Pid:       *globals.Pid,

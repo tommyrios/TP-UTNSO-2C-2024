@@ -49,14 +49,16 @@ var Regis map[string]interface{}
 
 func CargarRegistros() {
 	Regis = map[string]interface{}{
-		"PC": &Registros.PC,
-		"AX": &Registros.AX,
-		"BX": &Registros.BX,
-		"CX": &Registros.CX,
-		"DX": &Registros.DX,
-		"EX": &Registros.EX,
-		"FX": &Registros.FX,
-		"GX": &Registros.GX,
-		"HX": &Registros.HX,
+		"PC":     &Registros.PC,
+		"AX":     &Registros.AX,
+		"BX":     &Registros.BX,
+		"CX":     &Registros.CX,
+		"DX":     &Registros.DX,
+		"EX":     &Registros.EX,
+		"FX":     &Registros.FX,
+		"GX":     &Registros.GX,
+		"HX":     &Registros.HX,
+		"Base":   &Registros.Base,
+		"Limite": &Registros.Limite,
 	}
 }

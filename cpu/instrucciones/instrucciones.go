@@ -5,7 +5,9 @@ import (
 
 	"github.com/sisoputnfrba/tp-golang/cpu/general"
 	"github.com/sisoputnfrba/tp-golang/cpu/globals"
+	"github.com/sisoputnfrba/tp-golang/cpu/mmu"
 	"github.com/sisoputnfrba/tp-golang/cpu/utils"
+	"github.com/sisoputnfrba/tp-golang/utils/cliente"
 	"github.com/sisoputnfrba/tp-golang/utils/commons"
 )
 
@@ -48,6 +50,62 @@ func Log() {
 	valor := utils.ValorRegistros(registro)
 
 	log.Printf("TID: %d - LOG - Registro: %s - Valor: %d", *globals.Pid, registro, valor)
+}
+
+func ReadMem() {
+	registroDatos := globals.Instruccion.Operandos[0]
+	registroDireccion := globals.Instruccion.Operandos[1]
+
+	direccionLogica := utils.ValorRegistros(registroDireccion)
+
+	valor, err := mmu.LeerMemoria(direccionLogica)
+	if err != nil {
+		log.Printf("## TID: %d - Segmentation Fault al leer memoria", *globals.Tid)
+		SegmentationFault()
+		return
+	}
+
+	aplicarCambio(registroDatos, valor)
+}
+
+func WriteMem() {
+	registroDatos := globals.Instruccion.Operandos[0]
+	registroDireccion := globals.Instruccion.Operandos[1]
+
+	direccionLogica := utils.ValorRegistros(registroDireccion)
+	valor := utils.ValorRegistros(registroDatos)
+
+	err := mmu.EscribirMemoria(direccionLogica, valor)
+	if err != nil {
+		log.Printf("## TID: %d - Segmentation Fault al escribir memoria", *globals.Tid)
+		SegmentationFault()
+		return
+	}
+
+}
+
+func SegmentationFault() {
+	tcbActual := commons.TCB{
+		Pid:       *globals.Pid,
+		Tid:       *globals.Tid,
+		Registros: *globals.Registros,
+	}
+
+	despacho := commons.DespachoProceso{
+		Pcb: commons.PCB{
+			Pid:            *globals.Pid,
+			Tid:            []commons.TCB{tcbActual},
+			ProgramCounter: int(globals.Registros.PC),
+		},
+		Reason: "Segmentation Fault",
+	}
+
+	resp, err := commons.CodificarJSON(despacho)
+	if err != nil {
+		return
+	}
+
+	cliente.Post(globals.CConfig.IpKernel, globals.CConfig.PortKernel, "pcb", resp)
 }
 
 func HandleSyscall(respuesta *commons.DespachoProceso) {
