@@ -40,6 +40,8 @@ func main() {
 	mux.HandleFunc("/read_mem", handlers.HandleReadMemory)
 	mux.HandleFunc("/write_mem", handlers.HandleWriteMemory)
 	mux.HandleFunc("/proceso", handlers.HandleSolicitarProceso)
+	mux.HandleFunc("/finalizar_proceso", handlers.HandleFinalizarProceso)
+	mux.HandleFunc("/finalizar_hilo", handlers.HandleFinalizarHilo)
 
 	port := fmt.Sprintf(":%d", globals.MConfig.Port)
 

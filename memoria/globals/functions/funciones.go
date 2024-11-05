@@ -23,6 +23,10 @@ func ObtenerBaseLimite(pid int, tid int) (int, int) {
 	return base, limite
 }
 
+func ObtenerTamanioMemoria(base int, limite int) int {
+	return limite - base
+}
+
 func ActualizarRegistros(pid int, tid int, registrosActualizados commons.Registros) error {
 
 	registrosAActualizar := globals.MemoriaSistema.TablaHilos[pid][tid]
@@ -156,4 +160,16 @@ func SolicitarCompactacion() bool {
 func NotificarFinalizacionCompactacion() {
 	// Notificar al Kernel que la compactación ha finalizado
 	http.Post(fmt.Sprintf("http://%s:%d/compactacion_finalizada", globals.MConfig.IpKernel, globals.MConfig.PortKernel), "application/json", nil)
+}
+
+func ObtenerContenidoMemoria(base, limite int) []byte {
+	if base < 0 || limite >= len(globals.MemoriaUsuario) || base > limite {
+		return nil
+	}
+
+	tamanio := limite - base + 1
+	contenido := make([]byte, tamanio)
+	copy(contenido, globals.MemoriaUsuario[base:limite+1])
+
+	return contenido
 }

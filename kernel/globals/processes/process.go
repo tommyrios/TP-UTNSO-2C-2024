@@ -47,8 +47,6 @@ func CrearProceso(pseudocodigo string, tamanioMemoria int, prioridad int) {
 		} else {
 			if respuestaMemoria.StatusCode == http.StatusConflict {
 				log.Println("Memoria no tiene suficiente espacio. Proceso en espera.")
-			} else {
-				aceptarCompactación()
 			}
 			queues.AgregarProcesoACola(pcb, globals.Estructura.ColaNew)
 		}
@@ -79,29 +77,44 @@ func CrearPCB(pseudocodigo string, tamanio int, prioridad int) *commons.PCB {
 }
 
 func FinalizarProceso(pid int) {
-	pcb := queues.BuscarPCBEnColas(pid)
-
-	defer delete(globals.Estructura.Procesos, pid)
-
-	for _, tcb := range pcb.Tid {
-		threads.FinalizarHilo(pid, tcb.Tid)
+	req := request.RequestFinalizarProceso{
+		Pid: pid,
 	}
 
-	pcb.Estado = "EXIT"
+	solicitudCodificada, err := commons.CodificarJSON(req)
 
-	// esperar el ok de memoria. generar aviso de que se finaliza proceso. Liberar en memoria y avisar al planificador x si alguno en new
+	if err != nil {
+		log.Println("Error al codificar la solicitud de finalización de proceso")
+		return
+	}
 
-	log.Printf("## Finaliza el proceso %d", pid)
+	response := cliente.Post(globals.KConfig.IpMemory, globals.KConfig.PortMemory, "finalizar_proceso", solicitudCodificada)
+
+	if response.StatusCode == http.StatusOK {
+		pcb := queues.BuscarPCBEnColas(pid)
+
+		defer delete(globals.Estructura.Procesos, pid)
+
+		for _, tcb := range pcb.Tid {
+			threads.FinalizarHilo(pid, tcb.Tid)
+		}
+
+		pcb.Estado = "EXIT"
+
+		log.Printf("## Finaliza el proceso %d", pid)
+	} else {
+		log.Printf("## Error al finalizar el proceso %d", pid)
+	}
 }
 
 func SolicitarProcesoMemoria(pid int, pseudocodigo string, tamanio int) (*http.Response, error) {
-	request := request.RequestProcessCreate{
+	req := request.RequestProcessCreate{
 		Pid:            pid,
 		Pseudocodigo:   pseudocodigo,
 		TamanioMemoria: tamanio,
 	}
 
-	solicitudCodificada, err := commons.CodificarJSON(request)
+	solicitudCodificada, err := commons.CodificarJSON(req)
 
 	if err != nil {
 		return nil, err

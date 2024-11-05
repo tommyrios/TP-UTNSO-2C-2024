@@ -166,7 +166,7 @@ func HandleSolicitarProceso(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	esquemaFijo := globals.MConfig.Scheme == "fijo"
+	esquemaFijo := globals.MConfig.Scheme == "FIJAS"
 
 	// Lógica de asignación de espacio
 	if esquemaFijo {
@@ -176,10 +176,100 @@ func HandleSolicitarProceso(w http.ResponseWriter, r *http.Request) {
 		}
 	} else {
 		if !schemes.AsignarParticionDinamica(req.Pid, req.TamanioMemoria) {
-			http.Error(w, "No hay espacio en particiones dinámicas, compactación requerida", http.StatusConflict)
+			http.Error(w, "No hay espacio en particiones dinámicas", http.StatusConflict)
 			return
 		}
 	}
 
 	w.WriteHeader(http.StatusOK)
+}
+
+func HandleFinalizarProceso(w http.ResponseWriter, r *http.Request) {
+	var req request3.RequestFinalizarProceso
+
+	err := commons.DecodificarJSON(r.Body, &req)
+	if err != nil {
+		http.Error(w, "Error al decodificar el JSON", http.StatusBadRequest)
+		return
+	}
+
+	proceso, existe := globals.MemoriaSistema.TablaProcesos[req.Pid]
+	if !existe {
+		http.Error(w, "Proceso no encontrado", http.StatusNotFound)
+		return
+	}
+
+	// Marcar la partición ocupada por el proceso como libre
+	for i := proceso.Base; i <= proceso.Limite; i++ {
+		globals.MemoriaUsuario[i] = 0 // 0 indica espacio libre
+	}
+
+	// Eliminar las estructuras correspondientes del proceso en la Memoria del Sistema
+	delete(globals.MemoriaSistema.TablaProcesos, req.Pid)
+	delete(globals.MemoriaSistema.TablaHilos, req.Pid)
+	delete(globals.MemoriaSistema.Pseudocodigos, req.Pid)
+
+	w.WriteHeader(http.StatusOK)
+	w.Write([]byte("OK"))
+}
+
+func HandleFinalizarHilo(w http.ResponseWriter, r *http.Request) {
+	var req request3.RequestFinalizarHilo
+
+	err := commons.DecodificarJSON(r.Body, &req)
+	if err != nil {
+		http.Error(w, "Error al decodificar el JSON", http.StatusBadRequest)
+		return
+	}
+
+	_, existe := globals.MemoriaSistema.TablaHilos[req.Pid][req.Tid]
+	if !existe {
+		http.Error(w, "Hilo no encontrado", http.StatusNotFound)
+		return
+	}
+
+	// Eliminar las estructuras correspondientes del hilo en la Memoria del Sistema
+	delete(globals.MemoriaSistema.TablaHilos[req.Pid], req.Tid)
+	delete(globals.MemoriaSistema.Pseudocodigos[req.Pid], req.Tid)
+
+	w.WriteHeader(http.StatusOK)
+	w.Write([]byte("OK"))
+}
+
+func HandleMemoryDump(w http.ResponseWriter, r *http.Request) {
+	var req request3.RequestDumpMemory
+
+	err := commons.DecodificarJSON(r.Body, &req)
+	if err != nil {
+		http.Error(w, "Error al decodificar el JSON", http.StatusBadRequest)
+		return
+	}
+	base, limite := functions.ObtenerBaseLimite(req.Pid, req.Tid)
+	// Obtener el contenido de la memoria del proceso
+	TamanioMemoriaProceso := functions.ObtenerTamanioMemoria(base, limite)
+	ContenidoProceso := functions.ObtenerContenidoMemoria(base, limite)
+
+	// Solicitar al FileSystem la creación del archivo y escribir el contenido
+
+	solicitud := request3.DumpMemoryFS{
+		Pid:       req.Pid,
+		Tid:       req.Tid,
+		Tamanio:   TamanioMemoriaProceso,
+		Contenido: ContenidoProceso,
+	}
+
+	solicitudCodificada, err := commons.CodificarJSON(solicitud)
+
+	if err != nil {
+		http.Error(w, "Error al codificar JSON", http.StatusBadRequest)
+	}
+
+	response := cliente.Post(globals.MConfig.IpFileSystem, globals.MConfig.PortFileSystem, "/dump_memory", solicitudCodificada)
+
+	if response != nil && response.StatusCode == http.StatusOK {
+		w.WriteHeader(http.StatusOK)
+		w.Write([]byte("OK"))
+	} else {
+		http.Error(w, "Error al solicitar el dump de memoria al FileSystem", http.StatusInternalServerError)
+	}
 }

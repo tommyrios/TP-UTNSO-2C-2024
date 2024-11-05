@@ -54,3 +54,12 @@ type RequestIO struct {
 	Tid    int `json:"tid"`
 	Tiempo int `json:"tiempo"`
 }
+
+type RequestFinalizarProceso struct {
+	Pid int `json:"pid"`
+}
+
+type RequestFinalizarHilo struct {
+	Pid int `json:"pid"`
+	Tid int `json:"tid"`
+}

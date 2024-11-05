@@ -2,7 +2,6 @@ package schemes
 
 import (
 	"errors"
-	"fmt"
 	_ "github.com/sisoputnfrba/tp-golang/kernel/globals"
 	"github.com/sisoputnfrba/tp-golang/memoria/globals"
 	"github.com/sisoputnfrba/tp-golang/memoria/globals/functions"
@@ -83,11 +82,6 @@ func AsignarParticionDinamica(pid int, tamanioProceso int) bool {
 }
 
 func compactarMemoria() {
-	// Código que realiza la compactación de la memoria
-	// Se debe mover todo el contenido de la memoria a la izquierda
-	// y actualizar las posiciones de los procesos en memoria
-	// Se debe notificar al Kernel que la compactación ha finalizado
-
 	nuevaPosicion := 0
 
 	for pid, proceso := range globals.MemoriaSistema.TablaProcesos {
@@ -112,8 +106,6 @@ func compactarMemoria() {
 		// Actualizar la nueva posición
 		nuevaPosicion += tamanio
 	}
-
-	fmt.Println("Memoria compactada")
 }
 
 func asignarParticionFirstFit(pid int, tamanioParticion int) error {

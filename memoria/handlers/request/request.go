@@ -37,3 +37,24 @@ type RequestProcesoMemoria struct {
 	Pid            int `json:"pid"`
 	TamanioMemoria int `json:"tamanio_memoria"`
 }
+
+type RequestFinalizarProceso struct {
+	Pid int `json:"pid"`
+}
+
+type RequestFinalizarHilo struct {
+	Pid int `json:"pid"`
+	Tid int `json:"tid"`
+}
+
+type RequestDumpMemory struct {
+	Pid int `json:"pid"`
+	Tid int `json:"tid"`
+}
+
+type DumpMemoryFS struct {
+	Pid       int    `json:"pid"`
+	Tid       int    `json:"tid"`
+	Tamanio   int    `json:"tamanio"`
+	Contenido []byte `json:"contenido"`
+}

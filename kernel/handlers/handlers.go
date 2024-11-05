@@ -51,9 +51,6 @@ func HandleProcessExit(w http.ResponseWriter, r *http.Request) {
 	} else {
 		http.Error(w, "La finalizacion de un proceso solo puede ser solicitada por el TID 0", http.StatusBadRequest)
 	}
-
-	//Falta avisar a memoria la finalizacion del proceso
-
 }
 
 // THREAD_EXIT Finaliza el hilo que la invoca (el tid que se manda es del propio hilo)

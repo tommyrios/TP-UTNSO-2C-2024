@@ -3,8 +3,11 @@ package threads
 import (
 	"github.com/sisoputnfrba/tp-golang/kernel/globals"
 	"github.com/sisoputnfrba/tp-golang/kernel/globals/queues"
+	"github.com/sisoputnfrba/tp-golang/kernel/handlers/request"
+	"github.com/sisoputnfrba/tp-golang/utils/cliente"
 	"github.com/sisoputnfrba/tp-golang/utils/commons"
 	"log"
+	"net/http"
 )
 
 func CrearHilo(pid int, prioridad int, pseudocodigo string) {
@@ -29,21 +32,36 @@ func CrearHilo(pid int, prioridad int, pseudocodigo string) {
 }
 
 func FinalizarHilo(pid int, tid int) {
-	pcb := queues.BuscarPCBEnColas(pid)
-	tcb := BuscarHiloEnPCB(pid, tid)
+	req := request.RequestFinalizarHilo{
+		Pid: pid,
+		Tid: tid,
+	}
 
-	defer queues.SacarHiloDeCola(tid, queues.BuscarColaDeHilo(tcb))
+	solicitudCodificada, err := commons.CodificarJSON(req)
 
-	tcb.Estado = "EXIT"
+	if err != nil {
+		log.Println("Error al codificar la solicitud de finalización de proceso")
+		return
+	}
 
-	for i, thread := range pcb.Tid {
-		if thread.Tid == tid {
-			pcb.Tid = append(pcb.Tid[:i], pcb.Tid[i+1:]...)
-			break
+	response := cliente.Post(globals.KConfig.IpMemory, globals.KConfig.PortMemory, "finalizar_hilo", solicitudCodificada)
+
+	if response.StatusCode == http.StatusOK {
+		pcb := queues.BuscarPCBEnColas(pid)
+		tcb := BuscarHiloEnPCB(pid, tid)
+
+		defer queues.SacarHiloDeCola(tid, queues.BuscarColaDeHilo(tcb))
+
+		tcb.Estado = "EXIT"
+
+		for i, thread := range pcb.Tid {
+			if thread.Tid == tid {
+				pcb.Tid = append(pcb.Tid[:i], pcb.Tid[i+1:]...)
+				break
+			}
 		}
 	}
 
-	// Y avisarle a memoria que no está más este hilo!!!!
 	// Liberar todos los hilos bloqueados por culpa del hilo a finalizar
 
 	log.Printf("## (%d:%d) Finaliza el hilo", pid, tid)
