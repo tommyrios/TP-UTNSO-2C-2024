@@ -3,6 +3,8 @@ package handlers
 import (
 	"fmt"
 	"github.com/sisoputnfrba/tp-golang/memoria/globals"
+	"github.com/sisoputnfrba/tp-golang/memoria/globals/functions"
+	"github.com/sisoputnfrba/tp-golang/memoria/globals/schemes"
 	request3 "github.com/sisoputnfrba/tp-golang/memoria/handlers/request"
 	"github.com/sisoputnfrba/tp-golang/utils/cliente"
 	"github.com/sisoputnfrba/tp-golang/utils/commons"
@@ -25,14 +27,14 @@ func HandleDevolverContexto(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	registros := globals.ObtenerRegistros(request.Pid, request.Tid)
+	registros := functions.ObtenerRegistros(request.Pid, request.Tid)
 
 	var response request3.ResponseContexto
 	response.Registros = registros
 	response.Pid = request.Pid
 	response.Tid = request.Tid
 
-	base, limite := globals.ObtenerBaseLimite(request.Pid, request.Tid) // ¡¡¡Falta implementar esta función!!!!
+	base, limite := functions.ObtenerBaseLimite(request.Pid, request.Tid) // ¡¡¡Falta implementar esta función!!!!
 
 	response.Base = base
 	response.Limite = limite
@@ -59,7 +61,7 @@ func HandleActualizarContexto(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	err = globals.ActualizarRegistros(request.Pid, request.Tid, request.Registros)
+	err = functions.ActualizarRegistros(request.Pid, request.Tid, request.Registros)
 
 	if err != nil {
 		http.Error(w, "Error actualizando los registros", http.StatusInternalServerError)
@@ -83,7 +85,7 @@ func HandleObtenerInstruccion(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	instruccion, err := globals.ObtenerInstruccion(request.Pid, request.Tid, request.PC)
+	instruccion, err := functions.ObtenerInstruccion(request.Pid, request.Tid, request.PC)
 
 	if err != nil {
 		http.Error(w, fmt.Sprintf("Error al obtener la instrucción: %s", err.Error()), http.StatusInternalServerError)
@@ -112,7 +114,7 @@ func HandleReadMemory(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	response, err := globals.LeerMemoria(request.Byte)
+	response, err := functions.LeerMemoria(request.Byte)
 
 	if err != nil {
 		http.Error(w, fmt.Sprintf("Error al leer la memoria: %s", err.Error()), http.StatusInternalServerError)
@@ -141,7 +143,7 @@ func HandleWriteMemory(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	err = globals.EscribirMemoria(request.Byte, request.Pid, request.Datos)
+	err = functions.EscribirMemoria(request.Byte, request.Pid, request.Datos)
 
 	if err != nil {
 		http.Error(w, fmt.Sprintf("Error al escribir la memoria: %s", err.Error()), http.StatusInternalServerError)
@@ -168,12 +170,12 @@ func HandleSolicitarProceso(w http.ResponseWriter, r *http.Request) {
 
 	// Lógica de asignación de espacio
 	if esquemaFijo {
-		if !globals.AsignarParticionFija(req.Pid, req.TamanioMemoria) {
+		if !schemes.AsignarParticionFija(req.Pid, req.TamanioMemoria) {
 			http.Error(w, "No hay espacio en particiones fijas", http.StatusConflict)
 			return
 		}
 	} else {
-		if !globals.AsignarParticionDinamica(req.Pid, req.TamanioMemoria) {
+		if !schemes.AsignarParticionDinamica(req.Pid, req.TamanioMemoria) {
 			http.Error(w, "No hay espacio en particiones dinámicas, compactación requerida", http.StatusConflict)
 			return
 		}

@@ -5,6 +5,7 @@ import (
 	"github.com/sisoputnfrba/tp-golang/kernel/globals/processes"
 	"github.com/sisoputnfrba/tp-golang/kernel/globals/threads"
 	"github.com/sisoputnfrba/tp-golang/kernel/handlers/request"
+	"github.com/sisoputnfrba/tp-golang/memoria/globals/schemes"
 	"github.com/sisoputnfrba/tp-golang/utils/cliente"
 	"net/http"
 	"time"
@@ -207,4 +208,20 @@ func Interrupt(interruption string, pid int) (*http.Response, error) {
 	}
 
 	return cliente.Post(globals.KConfig.IpCpu, globals.KConfig.PortCpu, "interrupt", requestBody), err
+}
+
+func HandleCompactacion(w http.ResponseWriter, r *http.Request) {
+	//pausarPlanificacion() // Pausar planificación de corto plazo
+
+	// Responder a Memoria para permitir la compactación
+	w.WriteHeader(http.StatusOK)
+
+	// Notificar a Memoria que puede proceder
+	schemes.CompactacionCond.L.Lock()
+	schemes.CompactacionCond.Signal() // Aviso a Memoria que puede comenzar la compactación
+	schemes.CompactacionCond.L.Unlock()
+}
+
+func HandleCompactacionFinalizada(w http.ResponseWriter, r *http.Request) {
+	//reanudarPlanificacion() // Reanudar planificación
 }

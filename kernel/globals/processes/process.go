@@ -48,7 +48,7 @@ func CrearProceso(pseudocodigo string, tamanioMemoria int, prioridad int) {
 			if respuestaMemoria.StatusCode == http.StatusConflict {
 				log.Println("Memoria no tiene suficiente espacio. Proceso en espera.")
 			} else {
-
+				aceptarCompactación()
 			}
 			queues.AgregarProcesoACola(pcb, globals.Estructura.ColaNew)
 		}

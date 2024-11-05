@@ -49,7 +49,8 @@ func main() {
 	http.HandleFunc("/syscall/mutex_lock", handlers.HandleMutexLock)
 	http.HandleFunc("/syscall/mutex_unlock", handlers.HandleMutexUnlock)
 	http.HandleFunc("/syscall/dump_memory", handlers.HandleDumpMemory)
-	http.HandleFunc("/syscall/io", handlers.HandleIO)
+	http.HandleFunc("/compactacion", handlers.HandleCompactacion)
+	http.HandleFunc("/compactacion_finalizada", handlers.HandleCompactacionFinalizada)
 
 	port := fmt.Sprintf(":%d", globals.KConfig.Port)
 
