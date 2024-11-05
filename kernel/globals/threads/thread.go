@@ -1,12 +1,14 @@
-package globals
+package threads
 
 import (
+	"github.com/sisoputnfrba/tp-golang/kernel/globals"
+	"github.com/sisoputnfrba/tp-golang/kernel/globals/queues"
 	"github.com/sisoputnfrba/tp-golang/utils/commons"
 	"log"
 )
 
 func CrearHilo(pid int, prioridad int, pseudocodigo string) {
-	pcb := BuscarPCBEnColas(pid)
+	pcb := queues.BuscarPCBEnColas(pid)
 
 	tcb := commons.TCB{
 		Pid:          pcb.Pid,
@@ -19,7 +21,7 @@ func CrearHilo(pid int, prioridad int, pseudocodigo string) {
 
 	pcb.Tid = append(pcb.Tid, tcb) // Chequear después si hay que agregar un mutex
 
-	AgregarHiloACola(&tcb, &Estructura.colaReady)
+	queues.AgregarHiloACola(&tcb, &globals.Estructura.ColaReady)
 
 	//Avisar a memoria creacion de hilo!!! no hace falta la respuesta
 
@@ -27,10 +29,10 @@ func CrearHilo(pid int, prioridad int, pseudocodigo string) {
 }
 
 func FinalizarHilo(pid int, tid int) {
-	pcb := BuscarPCBEnColas(pid)
+	pcb := queues.BuscarPCBEnColas(pid)
 	tcb := BuscarHiloEnPCB(pid, tid)
 
-	defer SacarHiloDeCola(tid, BuscarColaDeHilo(tcb))
+	defer queues.SacarHiloDeCola(tid, queues.BuscarColaDeHilo(tcb))
 
 	tcb.Estado = "EXIT"
 
@@ -48,7 +50,7 @@ func FinalizarHilo(pid int, tid int) {
 }
 
 func BuscarHiloEnPCB(pid int, tid int) *commons.TCB {
-	pcb := BuscarPCBEnColas(pid)
+	pcb := queues.BuscarPCBEnColas(pid)
 
 	for _, tcb := range pcb.Tid {
 		if tcb.Tid == tid {
@@ -62,14 +64,14 @@ func BuscarHiloEnPCB(pid int, tid int) *commons.TCB {
 func DesbloquearHilo(tcb *commons.TCB) {
 	tcb.Estado = "READY"
 
-	SacarHiloDeCola(tcb.Tid, &Estructura.colaBloqueados)
+	queues.SacarHiloDeCola(tcb.Tid, &globals.Estructura.ColaBloqueados)
 
-	AgregarHiloACola(tcb, &Estructura.colaReady)
+	queues.AgregarHiloACola(tcb, &globals.Estructura.ColaReady)
 }
 
 func BloquearHilo(tcb *commons.TCB) {
 	tcb.Estado = "BLOCKED"
-	Estructura.hiloExecute = nil
-	AgregarHiloACola(tcb, &Estructura.colaBloqueados)
+	globals.Estructura.HiloExecute = nil
+	queues.AgregarHiloACola(tcb, &globals.Estructura.ColaBloqueados)
 	// VER que onda la CPU, cómo le avisamos o qué hace
 }

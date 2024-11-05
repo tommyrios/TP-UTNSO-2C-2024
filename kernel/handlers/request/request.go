@@ -1,13 +1,5 @@
 package request
 
-import (
-	"net/http"
-
-	"github.com/sisoputnfrba/tp-golang/kernel/globals"
-	"github.com/sisoputnfrba/tp-golang/utils/cliente"
-	"github.com/sisoputnfrba/tp-golang/utils/commons"
-)
-
 // STRUCTS SYSCALLS
 type RequestProcessCreate struct {
 	Pid            int    `json:"pid"`
@@ -61,48 +53,4 @@ type RequestDumpMemory struct {
 type RequestIO struct {
 	Tid    int `json:"tid"`
 	Tiempo int `json:"tiempo"`
-}
-
-func SolicitarProcesoMemoria(pid int, pseudocodigo string, tamanio int) (*http.Response, error) {
-	request := RequestProcessCreate{
-		Pid:            pid,
-		Pseudocodigo:   pseudocodigo,
-		TamanioMemoria: tamanio,
-	}
-
-	solicitudCodificada, err := commons.CodificarJSON(request)
-
-	if err != nil {
-		return nil, err
-	}
-
-	return cliente.Post(globals.KConfig.IpMemory, globals.KConfig.PortMemory, "process", solicitudCodificada), nil
-}
-
-func SolicitarDumpMemory(pid int, tid int) (*http.Response, error) {
-	request := RequestDumpMemory{
-		Pid: pid,
-		Tid: tid,
-	}
-	requestCodificado, _ := commons.CodificarJSON(request)
-	cliente.Post(globals.KConfig.IpMemory, globals.KConfig.PortMemory, "dump", requestCodificado)
-	return nil, nil
-}
-
-func Dispatch(pcb commons.PCB) (*http.Response, error) {
-	requestBody, err := commons.CodificarJSON(pcb)
-	if err != nil {
-		return nil, err
-	}
-
-	return cliente.Post(globals.KConfig.IpCpu, globals.KConfig.PortCpu, "dispatch", requestBody), err
-}
-
-func Interrupt(interruption string, pid int) (*http.Response, error) {
-	requestBody, err := commons.CodificarJSON(RequestInterrupcion{Razon: interruption, Pid: pid})
-	if err != nil {
-		return nil, err
-	}
-
-	return cliente.Post(globals.KConfig.IpCpu, globals.KConfig.PortCpu, "interrupt", requestBody), err
 }

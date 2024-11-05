@@ -1,7 +1,11 @@
 package handlers
 
 import (
+	"github.com/sisoputnfrba/tp-golang/kernel/globals/mutexes"
+	"github.com/sisoputnfrba/tp-golang/kernel/globals/processes"
+	"github.com/sisoputnfrba/tp-golang/kernel/globals/threads"
 	"github.com/sisoputnfrba/tp-golang/kernel/handlers/request"
+	"github.com/sisoputnfrba/tp-golang/utils/cliente"
 	"net/http"
 	"time"
 
@@ -18,7 +22,7 @@ func HandleProcessCreate(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	globals.CrearProceso(req.Pseudocodigo, req.TamanioMemoria, req.Prioridad)
+	processes.CrearProceso(req.Pseudocodigo, req.TamanioMemoria, req.Prioridad)
 }
 
 func HandleThreadCreate(w http.ResponseWriter, r *http.Request) {
@@ -30,7 +34,7 @@ func HandleThreadCreate(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	globals.CrearHilo(req.Pid, req.Prioridad, req.Pseudocodigo)
+	threads.CrearHilo(req.Pid, req.Prioridad, req.Pseudocodigo)
 }
 
 func HandleProcessExit(w http.ResponseWriter, r *http.Request) {
@@ -42,7 +46,7 @@ func HandleProcessExit(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	if req.Tid == 0 {
-		globals.FinalizarProceso(req.Pid)
+		processes.FinalizarProceso(req.Pid)
 	} else {
 		http.Error(w, "La finalizacion de un proceso solo puede ser solicitada por el TID 0", http.StatusBadRequest)
 	}
@@ -62,7 +66,7 @@ func HandleThreadExit(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	globals.FinalizarHilo(req.Pid, req.Tid)
+	threads.FinalizarHilo(req.Pid, req.Tid)
 }
 
 func HandleThreadJoin(w http.ResponseWriter, r *http.Request) {
@@ -91,8 +95,8 @@ func HandleThreadCancel(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	if globals.BuscarHiloEnPCB(req.Pid, req.TidAEliminar) != nil {
-		globals.FinalizarHilo(req.Pid, req.TidAEliminar)
+	if threads.BuscarHiloEnPCB(req.Pid, req.TidAEliminar) != nil {
+		threads.FinalizarHilo(req.Pid, req.TidAEliminar)
 	}
 }
 
@@ -106,7 +110,7 @@ func HandleMutexCreate(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	globals.CrearMutex(req.Nombre, req.Pid)
+	mutexes.CrearMutex(req.Nombre, req.Pid)
 }
 
 func HandleMutexLock(w http.ResponseWriter, r *http.Request) {
@@ -119,7 +123,7 @@ func HandleMutexLock(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	globals.BloquearMutex(req.Nombre, req.Pid, req.Tid)
+	mutexes.BloquearMutex(req.Nombre, req.Pid, req.Tid)
 }
 
 func HandleMutexUnlock(w http.ResponseWriter, r *http.Request) {
@@ -132,7 +136,7 @@ func HandleMutexUnlock(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	globals.DesbloquearMutex(req.Nombre, req.Pid, req.Tid)
+	mutexes.DesbloquearMutex(req.Nombre, req.Pid, req.Tid)
 }
 
 func HandleDumpMemory(w http.ResponseWriter, r *http.Request) {
@@ -143,23 +147,23 @@ func HandleDumpMemory(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	tcb := globals.BuscarHiloEnPCB(req.Pid, req.Tid)
+	tcb := threads.BuscarHiloEnPCB(req.Pid, req.Tid)
 	if tcb == nil {
 		http.Error(w, "No se encontró el hilo", http.StatusNotFound)
 		return
 	}
-	globals.BloquearHilo(tcb)
+	threads.BloquearHilo(tcb)
 
 	//mutex!!
-	response, err := request.SolicitarDumpMemory(req.Pid, req.Tid)
+	response, err := SolicitarDumpMemory(req.Pid, req.Tid)
 
 	if err != nil || response.StatusCode != http.StatusOK {
 		http.Error(w, "Error al solicitar el dump de memoria", http.StatusInternalServerError)
-		globals.FinalizarProceso(req.Pid)
+		processes.FinalizarProceso(req.Pid)
 		return
 	}
 
-	globals.DesbloquearHilo(tcb)
+	threads.DesbloquearHilo(tcb)
 }
 
 func HandleIO(w http.ResponseWriter, r *http.Request) {
@@ -175,4 +179,32 @@ func HandleIO(w http.ResponseWriter, r *http.Request) {
 	time.Sleep(time.Duration(req.Tiempo) * time.Second)
 
 	// Desbloquear Hilo y mandarlo a la cola de Ready devuelta
+}
+
+func SolicitarDumpMemory(pid int, tid int) (*http.Response, error) {
+	request := request.RequestDumpMemory{
+		Pid: pid,
+		Tid: tid,
+	}
+	requestCodificado, _ := commons.CodificarJSON(request)
+	cliente.Post(globals.KConfig.IpMemory, globals.KConfig.PortMemory, "dump", requestCodificado)
+	return nil, nil
+}
+
+func Dispatch(pcb commons.PCB) (*http.Response, error) {
+	requestBody, err := commons.CodificarJSON(pcb)
+	if err != nil {
+		return nil, err
+	}
+
+	return cliente.Post(globals.KConfig.IpCpu, globals.KConfig.PortCpu, "dispatch", requestBody), err
+}
+
+func Interrupt(interruption string, pid int) (*http.Response, error) {
+	requestBody, err := commons.CodificarJSON(request.RequestInterrupcion{Razon: interruption, Pid: pid})
+	if err != nil {
+		return nil, err
+	}
+
+	return cliente.Post(globals.KConfig.IpCpu, globals.KConfig.PortCpu, "interrupt", requestBody), err
 }

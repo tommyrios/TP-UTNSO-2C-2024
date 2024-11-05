@@ -1,6 +1,7 @@
-package globals
+package queues
 
 import (
+	"github.com/sisoputnfrba/tp-golang/kernel/globals"
 	"github.com/sisoputnfrba/tp-golang/utils/commons"
 )
 
@@ -31,7 +32,7 @@ func SacarHiloDeCola(tid int, cola *[]*commons.TCB) {
 }
 
 func BuscarPCBEnColas(pid int) *commons.PCB {
-	if pcb := Estructura.procesos[pid]; pcb != nil {
+	if pcb := globals.Estructura.Procesos[pid]; pcb != nil {
 		return pcb
 	}
 
@@ -41,11 +42,11 @@ func BuscarPCBEnColas(pid int) *commons.PCB {
 func BuscarColaDeHilo(tcbBuscado *commons.TCB) *[]*commons.TCB {
 	switch tcbBuscado.Estado {
 	case "READY":
-		return &Estructura.colaReady
+		return &globals.Estructura.ColaReady
 	case "BLOCKED":
-		return &Estructura.colaBloqueados
+		return &globals.Estructura.ColaBloqueados
 	case "EXIT":
-		return &Estructura.colaExit
+		return &globals.Estructura.ColaExit
 	}
 	return nil
 }

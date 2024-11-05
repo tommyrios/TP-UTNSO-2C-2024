@@ -32,3 +32,8 @@ type RequestMemory struct {
 	Datos []byte `json:"datos"`
 	Pid   int    `json:"pid"`
 }
+
+type RequestProcesoMemoria struct {
+	Pid            int `json:"pid"`
+	TamanioMemoria int `json:"tamanio_memoria"`
+}
