@@ -30,7 +30,7 @@ type RequestThreadExit struct {
 }
 
 type RequestThreadJoin struct {
-	Tid          int `json:"tid"`
+	PidParametro int `json:"pidparametro"`
 	TidParametro int `json:"tidparametro"`
 }
 

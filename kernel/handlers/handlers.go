@@ -67,6 +67,9 @@ func HandleThreadExit(w http.ResponseWriter, r *http.Request) {
 	threads.FinalizarHilo(req.Pid, req.Tid)
 }
 
+//THREAD_JOIN, esta syscall recibe como parámetro un TID, mueve el hilo que la invocó al estado BLOCK hasta que el TID pasado por parámetro finalice.
+//En caso de que el TID pasado por parámetro no exista o ya haya finalizado, esta syscall no hace nada y el hilo que la invocó continuará su ejecución.
+
 func HandleThreadJoin(w http.ResponseWriter, r *http.Request) {
 	var req request.RequestThreadJoin
 	err := commons.DecodificarJSON(r.Body, &req)
@@ -76,10 +79,11 @@ func HandleThreadJoin(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	// Bloquear hilo (tid: request.tid) para darle lugar a que ejecute el hilo (tid: request.tidParametro) y luego desbloquearlo
+	threads.BloquearHilo(globals.Estructura.HiloExecute)
+	// REPLANIFICAR !!
+	tcbParametro := threads.BuscarHiloEnPCB(req.PidParametro, req.TidParametro)
 
-	//rutina con if esperando a que finalice el otro y cuando finalice el otro, desbloquear hilo
-
+	tcbParametro.TcbADesbloquear = append(tcbParametro.TcbADesbloquear, globals.Estructura.HiloExecute)
 }
 
 // THREAD_CANCEL Finaliza el hilo cuyo tid se pasa por parámetro (desde otro hilo)
@@ -173,10 +177,13 @@ func HandleIO(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	// Bloquear Hilo
+	tcb := globals.Estructura.HiloExecute
+	threads.BloquearHilo(tcb)
+	// REPLANIFICAR !!
 	time.Sleep(time.Duration(req.Tiempo) * time.Second)
 
 	// Desbloquear Hilo y mandarlo a la cola de Ready devuelta
+	threads.DesbloquearHilo(tcb)
 }
 
 func SolicitarDumpMemory(pid int, tid int) (*http.Response, error) {

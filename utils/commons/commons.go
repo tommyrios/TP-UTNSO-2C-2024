@@ -25,14 +25,15 @@ type PCB struct {
 }
 
 type TCB struct {
-	Pid            int       `json:"pid"`
-	Tid            int       `json:"tid"`
-	Estado         string    `json:"estado"`
-	Prioridad      int       `json:"prioridad"`
-	Pseudocodigo   string    `json:"pseudocodigo"`
-	Mutex          Mutex     `json:"mutex"`
-	Registros      Registros `json:"registros"`
-	ProgramCounter int       `json:"program_counter"`
+	Pid             int       `json:"pid"`
+	Tid             int       `json:"tid"`
+	Estado          string    `json:"estado"`
+	Prioridad       int       `json:"prioridad"`
+	Pseudocodigo    string    `json:"pseudocodigo"`
+	Mutex           Mutex     `json:"mutex"`
+	Registros       Registros `json:"registros"`
+	ProgramCounter  int       `json:"program_counter"`
+	TcbADesbloquear []*TCB    `json:"tcb_en_espera"`
 }
 
 type Mutex struct {

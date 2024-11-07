@@ -102,6 +102,12 @@ func FinalizarProceso(pid int) {
 		pcb.Estado = "EXIT"
 
 		log.Printf("## Finaliza el proceso %d", pid)
+
+		if len(globals.Estructura.ColaNew) != 0 {
+			procesoNuevo := globals.Estructura.ColaNew[0]
+			CrearProceso(procesoNuevo.PseudoCodigoHilo0, procesoNuevo.Tamanio, procesoNuevo.PrioridadTID0)
+			queues.SacarProcesoDeCola(procesoNuevo.Pid, &globals.Estructura.ColaNew)
+		}
 	} else {
 		log.Printf("## Error al finalizar el proceso %d", pid)
 	}

@@ -60,9 +60,11 @@ func FinalizarHilo(pid int, tid int) {
 				break
 			}
 		}
-	}
 
-	// Liberar todos los hilos bloqueados por culpa del hilo a finalizar
+		for _, tcb := range tcb.TcbADesbloquear {
+			DesbloquearHilo(tcb)
+		}
+	}
 
 	log.Printf("## (%d:%d) Finaliza el hilo", pid, tid)
 }
