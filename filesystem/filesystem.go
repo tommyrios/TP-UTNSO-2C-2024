@@ -2,13 +2,15 @@ package main
 
 import (
 	"fmt"
-	"github.com/sisoputnfrba/tp-golang/filesystem/globals"
-	"github.com/sisoputnfrba/tp-golang/utils/commons"
-	"github.com/sisoputnfrba/tp-golang/utils/config"
 	"log"
 	"net/http"
 	"os"
 	"path/filepath"
+
+	"github.com/sisoputnfrba/tp-golang/filesystem/globals"
+	"github.com/sisoputnfrba/tp-golang/filesystem/inicializacion"
+	"github.com/sisoputnfrba/tp-golang/utils/commons"
+	configs "github.com/sisoputnfrba/tp-golang/utils/config"
 )
 
 func main() {
@@ -27,6 +29,13 @@ func main() {
 
 	//// Logger ////
 	configs.ConfigurarLogger("filesystem")
+
+	//// Inicialización ////
+	err = inicializacion.IniciarFileSystem(globals.FSConfig.MountDir)
+	if err != nil {
+		log.Fatalf("Error al inicializar el File System: %v", err)
+	}
+	log.Println("Inicialización del File System completada.")
 
 	//// Conexión ////
 	mux := http.NewServeMux()
