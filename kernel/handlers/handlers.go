@@ -196,8 +196,8 @@ func SolicitarDumpMemory(pid int, tid int) (*http.Response, error) {
 	return nil, nil
 }
 
-func Dispatch(pcb commons.PCB) (*http.Response, error) {
-	requestBody, err := commons.CodificarJSON(pcb)
+func Dispatch(pcb *commons.PCB, tid int) (*http.Response, error) {
+	requestBody, err := commons.CodificarJSON(request.RequestDispatcher{PCB: pcb, Tid: tid})
 	if err != nil {
 		return nil, err
 	}

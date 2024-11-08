@@ -37,9 +37,5 @@ var Estructura = &Kernel{
 }
 
 var KConfig *Config
-
-var CpuLibre chan bool
-
-func init() {
-	CpuLibre = make(chan bool, 1)
-}
+var HilosReady = make(chan int)
+var CpuLibre = make(chan bool, 1)

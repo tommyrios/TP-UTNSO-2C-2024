@@ -37,6 +37,7 @@ func main() {
 	//// Rutinas ////
 	globals.CpuLibre <- true
 	go schedulers.ManejarColaReady()
+	go schedulers.ManejarHiloRunning()
 
 	mux := http.NewServeMux()
 	http.HandleFunc("/syscall/process_create", handlers.HandleProcessCreate)

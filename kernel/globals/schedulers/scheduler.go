@@ -2,42 +2,18 @@ package schedulers
 
 import (
 	"github.com/sisoputnfrba/tp-golang/kernel/globals"
+	"github.com/sisoputnfrba/tp-golang/kernel/globals/queues"
+	"github.com/sisoputnfrba/tp-golang/kernel/globals/threads"
+	"github.com/sisoputnfrba/tp-golang/kernel/handlers"
 	"github.com/sisoputnfrba/tp-golang/utils/commons"
+	"log"
 	"sort"
 	"time"
 )
 
-/* func PrepareProcess(pcb queues.PCB) {
-	if pcb.Quantum > 0 && pcb.Quantum < globals.Config.Quantum && globals.IsVirtualRoundRobin() {
-		ChangeState(&pcb, queues.PrioritizedReadyProcesses, "READY")
-
-		log.Printf("Cola Ready+: [%s]",
-			logs.IntArrayToString(queues.PrioritizedReadyProcesses.GetPids(), ", "))
-	} else {
-		pcb.Quantum = globals.Config.Quantum
-		ChangeState(&pcb, queues.ReadyProcesses, "READY")
-
-		log.Printf("Cola Ready: [%s]",
-			logs.IntArrayToString(queues.ReadyProcesses.GetPids(), ", "))
-	}
-
-	<-globals.Ready
-}
-
-func SetProcessToReady() {
-	for {
-		globals.New <- 0
-		globals.Multiprogramming <- 0
-
-		globals.Plan()
-
-		PrepareProcess(queues.NewProcesses.PopProcess())
-	}
-}
-*/
-
 func ManejarColaReady() {
 	for {
+		globals.CpuLibre <- true
 		switch globals.KConfig.SchedulerAlgorithm {
 		case "FIFO":
 			ManejarColaReadyFIFO()
@@ -45,6 +21,24 @@ func ManejarColaReady() {
 			ManejarColaReadyCMN()
 		case "PRIORITY":
 			ManejarColaReadyPriority()
+		}
+	}
+}
+
+func ManejarHiloRunning() {
+	for {
+		select {
+		case <-globals.CpuLibre:
+			hiloAEjecutar := globals.Estructura.ColaReady[0]
+			pcbHilo := queues.BuscarPCBEnColas(hiloAEjecutar.Pid)
+
+			// Lo asignamos al hilo en ejecución
+			globals.Estructura.HiloExecute = hiloAEjecutar
+
+			// Lo eliminamos de la cola de ready
+			globals.Estructura.ColaReady = globals.Estructura.ColaReady[1:]
+
+			executeThread(pcbHilo, hiloAEjecutar.Tid)
 		}
 	}
 }
@@ -57,9 +51,7 @@ func ManejarColaReadyFIFO() {
 
 		select {
 		case <-globals.CpuLibre:
-			globals.Estructura.HiloExecute = globals.Estructura.ColaReady[0]
-			globals.Estructura.ColaReady = globals.Estructura.ColaReady[1:]
-
+			pasarHiloAEjecutar()
 			go func() {
 				time.Sleep(time.Duration(globals.KConfig.Quantum)) // Preguntar cómo sabríamos si terminó el proceso
 
@@ -78,11 +70,6 @@ func ManejarColaReadyPriority() {
 	sort.SliceStable(globals.Estructura.ColaReady, func(i, j int) bool {
 		return globals.Estructura.ColaReady[i].Prioridad < globals.Estructura.ColaReady[j].Prioridad
 	})
-
-	globals.Estructura.HiloExecute = globals.Estructura.ColaReady[0]
-
-	globals.Estructura.ColaReady = globals.Estructura.ColaReady[1:]
-
 }
 
 func ManejarColaReadyCMN() {
@@ -110,6 +97,7 @@ func ManejarColaReadyCMN() {
 				select {
 				case <-globals.CpuLibre:
 					globals.Estructura.HiloExecute = queue[0]
+
 					queue = queue[1:]
 
 					go func() {
@@ -156,4 +144,25 @@ func tieneMasPrioridad() bool {
 func checkQuantumAgotado() bool {
 	// Lógica para determinar si el quantum ha expirado
 	return true // Modifica esta parte para que funcione según el sistema
+}
+
+func pasarHiloAEjecutar() {
+	// Agarramos el primer hilo de la cola de ready
+	hiloAEjecutar := globals.Estructura.ColaReady[0]
+	pcbHilo := queues.BuscarPCBEnColas(hiloAEjecutar.Pid)
+
+	// Lo asignamos al hilo en ejecución
+	globals.Estructura.HiloExecute = hiloAEjecutar
+
+	// Lo eliminamos de la cola de ready
+	globals.Estructura.ColaReady = globals.Estructura.ColaReady[1:]
+
+	executeThread(pcbHilo, hiloAEjecutar.Tid)
+}
+
+func executeThread(pcb *commons.PCB, tid int) {
+	if _, err := handlers.Dispatch(pcb, tid); err != nil {
+		log.Printf("Error al enviar el PCB %d al CPU.", pcb.Pid)
+		threads.FinalizarHilo(pcb.Pid, tid)
+	}
 }

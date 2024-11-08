@@ -2,6 +2,7 @@ package queues
 
 import (
 	"github.com/sisoputnfrba/tp-golang/kernel/globals"
+	"github.com/sisoputnfrba/tp-golang/kernel/globals/threads"
 	"github.com/sisoputnfrba/tp-golang/utils/commons"
 )
 
@@ -49,4 +50,13 @@ func BuscarColaDeHilo(tcbBuscado *commons.TCB) *[]*commons.TCB {
 		return &globals.Estructura.ColaExit
 	}
 	return nil
+}
+
+func ChequearColaNew() {
+	if len(globals.Estructura.ColaNew) != 0 {
+		procesoNuevo := globals.Estructura.ColaNew[0]
+		SacarProcesoDeCola(procesoNuevo.Pid, &globals.Estructura.ColaNew)
+		threads.CrearHilo(procesoNuevo.Pid, procesoNuevo.PrioridadTID0, procesoNuevo.PseudoCodigoHilo0)
+		AgregarHiloACola(threads.BuscarHiloEnPCB(procesoNuevo.Pid, 0), &globals.Estructura.ColaReady)
+	}
 }

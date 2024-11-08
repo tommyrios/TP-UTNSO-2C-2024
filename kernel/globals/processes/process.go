@@ -40,7 +40,7 @@ func CrearProceso(pseudocodigo string, tamanioMemoria int, prioridad int) {
 		// Si la memoria aceptó el proceso, crearlo y pasarlo a READY
 		if respuestaMemoria.StatusCode == http.StatusOK {
 
-			threads.CrearHilo(pcb.Pid, prioridad, pseudocodigo) // Crear el hilo TID 0
+			threads.CrearHilo(pcb.Pid, prioridad, pseudocodigo)
 
 			log.Println("Proceso creado y movido a READY")
 
@@ -103,11 +103,7 @@ func FinalizarProceso(pid int) {
 
 		log.Printf("## Finaliza el proceso %d", pid)
 
-		if len(globals.Estructura.ColaNew) != 0 {
-			procesoNuevo := globals.Estructura.ColaNew[0]
-			CrearProceso(procesoNuevo.PseudoCodigoHilo0, procesoNuevo.Tamanio, procesoNuevo.PrioridadTID0)
-			queues.SacarProcesoDeCola(procesoNuevo.Pid, &globals.Estructura.ColaNew)
-		}
+		queues.ChequearColaNew()
 	} else {
 		log.Printf("## Error al finalizar el proceso %d", pid)
 	}

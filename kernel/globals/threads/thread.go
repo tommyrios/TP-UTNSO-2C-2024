@@ -28,6 +28,8 @@ func CrearHilo(pid int, prioridad int, pseudocodigo string) {
 
 	//Avisar a memoria creacion de hilo!!! no hace falta la respuesta
 
+	<-globals.HilosReady
+
 	log.Printf("## (%d:%d) Se crea el Hilo - Estado: READY", pcb.Pid, tcb.Tid)
 }
 
