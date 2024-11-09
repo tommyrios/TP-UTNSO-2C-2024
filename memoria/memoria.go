@@ -30,13 +30,18 @@ func main() {
 	configs.ConfigurarLogger("memoria")
 
 	//// Inicialización ////
-	globals.InicializarMemoria()
+	globals.MemoriaUsuario = make([]byte, globals.MConfig.MemorySize)
 
 	//// Conexión ////
 	mux := http.NewServeMux()
 	mux.HandleFunc("/contexto_de_ejecucion", handlers.HandleDevolverContexto)
 	mux.HandleFunc("/actualizar_contexto", handlers.HandleActualizarContexto)
-	mux.HandleFunc("/process", handlers.HandleSolicitarProceso)
+	mux.HandleFunc("/obtener_instruccion", handlers.HandleObtenerInstruccion)
+	mux.HandleFunc("/read_mem", handlers.HandleReadMemory)
+	mux.HandleFunc("/write_mem", handlers.HandleWriteMemory)
+	mux.HandleFunc("/proceso", handlers.HandleSolicitarProceso)
+	mux.HandleFunc("/finalizar_proceso", handlers.HandleFinalizarProceso)
+	mux.HandleFunc("/finalizar_hilo", handlers.HandleFinalizarHilo)
 
 	port := fmt.Sprintf(":%d", globals.MConfig.Port)
 

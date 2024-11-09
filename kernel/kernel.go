@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+	"github.com/sisoputnfrba/tp-golang/kernel/globals/processes"
+	"github.com/sisoputnfrba/tp-golang/kernel/globals/schedulers"
 	"log"
 	"net/http"
 	"os"
@@ -30,13 +32,17 @@ func main() {
 	configs.ConfigurarLogger("kernel")
 
 	//// Proceso Inicial ////
-	globals.ProcesoInicial(os.Args)
+	processes.ProcesoInicial(os.Args)
 
 	//// Rutinas ////
 	globals.CpuLibre <- true
-	go globals.ManejarColaReady()
+	go schedulers.ManejarColaReady()
+	go schedulers.ManejarHiloRunning()
 
 	mux := http.NewServeMux()
+	http.HandleFunc("/syscall/process_create", handlers.HandleProcessCreate)
+	http.HandleFunc("/syscall/thread_create", handlers.HandleThreadCreate)
+	http.HandleFunc("/syscall/process_exit", handlers.HandleProcessExit)
 	http.HandleFunc("/syscall/thread_exit", handlers.HandleThreadExit)
 	http.HandleFunc("/syscall/thread_join", handlers.HandleThreadJoin)
 	http.HandleFunc("/syscall/thread_cancel", handlers.HandleThreadCancel)
@@ -44,7 +50,9 @@ func main() {
 	http.HandleFunc("/syscall/mutex_lock", handlers.HandleMutexLock)
 	http.HandleFunc("/syscall/mutex_unlock", handlers.HandleMutexUnlock)
 	http.HandleFunc("/syscall/dump_memory", handlers.HandleDumpMemory)
-	http.HandleFunc("/syscall/io", handlers.HandleIO)
+	http.HandleFunc("/syscall/handle_io", handlers.HandleIO)
+	http.HandleFunc("/compactacion", handlers.HandleCompactacion)
+	http.HandleFunc("/compactacion_finalizada", handlers.HandleCompactacionFinalizada)
 
 	port := fmt.Sprintf(":%d", globals.KConfig.Port)
 

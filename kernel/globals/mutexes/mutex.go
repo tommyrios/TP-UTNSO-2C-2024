@@ -1,6 +1,9 @@
-package globals
+package mutexes
 
 import (
+	"github.com/sisoputnfrba/tp-golang/kernel/globals"
+	"github.com/sisoputnfrba/tp-golang/kernel/globals/queues"
+	"github.com/sisoputnfrba/tp-golang/kernel/globals/threads"
 	"github.com/sisoputnfrba/tp-golang/utils/commons"
 	"log"
 )
@@ -12,7 +15,7 @@ func CrearMutex(nombre string, pid int) {
 		HilosBloqueados: make([]*commons.TCB, 0),
 	}
 
-	pcb := Estructura.procesos[pid]
+	pcb := globals.Estructura.Procesos[pid]
 
 	pcb.Mutex = append(pcb.Mutex, mutex)
 }
@@ -20,9 +23,9 @@ func CrearMutex(nombre string, pid int) {
 // MUTEX_LOCK
 
 func BloquearMutex(nombre string, pid int, tid int) {
-	tcb := BuscarHiloEnPCB(pid, tid)
+	tcb := threads.BuscarHiloEnPCB(pid, tid)
 
-	pcb := BuscarPCBEnColas(pid)
+	pcb := queues.BuscarPCBEnColas(pid)
 
 	for _, mutex := range pcb.Mutex {
 		if mutex.Nombre == nombre {
@@ -31,7 +34,7 @@ func BloquearMutex(nombre string, pid int, tid int) {
 				tcb.Mutex = mutex
 			} else {
 				mutex.HilosBloqueados = append(mutex.HilosBloqueados, tcb)
-				BloquearHilo(tcb)
+				threads.BloquearHilo(tcb)
 			}
 		} else {
 			log.Printf("No existe el mutex solicitado con el nombre: %s\n", nombre)
@@ -42,9 +45,9 @@ func BloquearMutex(nombre string, pid int, tid int) {
 // MUTEX_UNLOCK
 
 func DesbloquearMutex(nombre string, pid int, tid int) {
-	tcb := BuscarHiloEnPCB(pid, tid)
+	tcb := threads.BuscarHiloEnPCB(pid, tid)
 
-	pcb := BuscarPCBEnColas(pid)
+	pcb := queues.BuscarPCBEnColas(pid)
 
 	for _, mutex := range pcb.Mutex {
 		if mutex.Nombre == nombre {
@@ -53,7 +56,7 @@ func DesbloquearMutex(nombre string, pid int, tid int) {
 					tcbADesbloquear := mutex.HilosBloqueados[0]
 					mutex.HilosBloqueados = mutex.HilosBloqueados[1:]
 					tcbADesbloquear.Mutex = mutex
-					DesbloquearHilo(tcbADesbloquear)
+					threads.DesbloquearHilo(tcbADesbloquear)
 				}
 				mutex.Valor++
 				tcb.Mutex = commons.Mutex{} // Le saco el mutex al hilo que ejecutó la syscall

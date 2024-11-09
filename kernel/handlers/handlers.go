@@ -1,7 +1,12 @@
 package handlers
 
 import (
+	"github.com/sisoputnfrba/tp-golang/kernel/globals/mutexes"
+	"github.com/sisoputnfrba/tp-golang/kernel/globals/processes"
+	"github.com/sisoputnfrba/tp-golang/kernel/globals/threads"
 	"github.com/sisoputnfrba/tp-golang/kernel/handlers/request"
+	"github.com/sisoputnfrba/tp-golang/memoria/globals/schemes"
+	"github.com/sisoputnfrba/tp-golang/utils/cliente"
 	"net/http"
 	"time"
 
@@ -18,7 +23,7 @@ func HandleProcessCreate(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	globals.CrearProceso(req.Pseudocodigo, req.TamanioMemoria, req.Prioridad)
+	processes.CrearProceso(req.Pseudocodigo, req.TamanioMemoria, req.Prioridad)
 }
 
 func HandleThreadCreate(w http.ResponseWriter, r *http.Request) {
@@ -30,7 +35,7 @@ func HandleThreadCreate(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	globals.CrearHilo(req.Pid, req.Prioridad, req.Pseudocodigo)
+	threads.CrearHilo(req.Pid, req.Prioridad, req.Pseudocodigo)
 }
 
 func HandleProcessExit(w http.ResponseWriter, r *http.Request) {
@@ -42,13 +47,10 @@ func HandleProcessExit(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	if req.Tid == 0 {
-		globals.FinalizarProceso(req.Pid)
+		processes.FinalizarProceso(req.Pid)
 	} else {
 		http.Error(w, "La finalizacion de un proceso solo puede ser solicitada por el TID 0", http.StatusBadRequest)
 	}
-
-	//Falta avisar a memoria la finalizacion del proceso
-
 }
 
 // THREAD_EXIT Finaliza el hilo que la invoca (el tid que se manda es del propio hilo)
@@ -62,8 +64,11 @@ func HandleThreadExit(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	globals.FinalizarHilo(req.Pid, req.Tid)
+	threads.FinalizarHilo(req.Pid, req.Tid)
 }
+
+//THREAD_JOIN, esta syscall recibe como parámetro un TID, mueve el hilo que la invocó al estado BLOCK hasta que el TID pasado por parámetro finalice.
+//En caso de que el TID pasado por parámetro no exista o ya haya finalizado, esta syscall no hace nada y el hilo que la invocó continuará su ejecución.
 
 func HandleThreadJoin(w http.ResponseWriter, r *http.Request) {
 	var req request.RequestThreadJoin
@@ -74,10 +79,11 @@ func HandleThreadJoin(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	// Bloquear hilo (tid: request.tid) para darle lugar a que ejecute el hilo (tid: request.tidParametro) y luego desbloquearlo
+	threads.BloquearHilo(globals.Estructura.HiloExecute)
+	// REPLANIFICAR !!
+	tcbParametro := threads.BuscarHiloEnPCB(req.PidParametro, req.TidParametro)
 
-	//rutina con if esperando a que finalice el otro y cuando finalice el otro, desbloquear hilo
-
+	tcbParametro.TcbADesbloquear = append(tcbParametro.TcbADesbloquear, globals.Estructura.HiloExecute)
 }
 
 // THREAD_CANCEL Finaliza el hilo cuyo tid se pasa por parámetro (desde otro hilo)
@@ -91,8 +97,8 @@ func HandleThreadCancel(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	if globals.BuscarHiloEnPCB(req.Pid, req.TidAEliminar) != nil {
-		globals.FinalizarHilo(req.Pid, req.TidAEliminar)
+	if threads.BuscarHiloEnPCB(req.Pid, req.TidAEliminar) != nil {
+		threads.FinalizarHilo(req.Pid, req.TidAEliminar)
 	}
 }
 
@@ -106,7 +112,7 @@ func HandleMutexCreate(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	globals.CrearMutex(req.Nombre, req.Pid)
+	mutexes.CrearMutex(req.Nombre, req.Pid)
 }
 
 func HandleMutexLock(w http.ResponseWriter, r *http.Request) {
@@ -119,7 +125,7 @@ func HandleMutexLock(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	globals.BloquearMutex(req.Nombre, req.Pid, req.Tid)
+	mutexes.BloquearMutex(req.Nombre, req.Pid, req.Tid)
 }
 
 func HandleMutexUnlock(w http.ResponseWriter, r *http.Request) {
@@ -132,7 +138,7 @@ func HandleMutexUnlock(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	globals.DesbloquearMutex(req.Nombre, req.Pid, req.Tid)
+	mutexes.DesbloquearMutex(req.Nombre, req.Pid, req.Tid)
 }
 
 func HandleDumpMemory(w http.ResponseWriter, r *http.Request) {
@@ -143,23 +149,23 @@ func HandleDumpMemory(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	tcb := globals.BuscarHiloEnPCB(req.Pid, req.Tid)
+	tcb := threads.BuscarHiloEnPCB(req.Pid, req.Tid)
 	if tcb == nil {
 		http.Error(w, "No se encontró el hilo", http.StatusNotFound)
 		return
 	}
-	globals.BloquearHilo(tcb)
+	threads.BloquearHilo(tcb)
 
 	//mutex!!
-	response, err := request.SolicitarDumpMemory(req.Pid, req.Tid)
+	response, err := SolicitarDumpMemory(req.Pid, req.Tid)
 
 	if err != nil || response.StatusCode != http.StatusOK {
 		http.Error(w, "Error al solicitar el dump de memoria", http.StatusInternalServerError)
-		globals.FinalizarProceso(req.Pid)
+		processes.FinalizarProceso(req.Pid)
 		return
 	}
 
-	globals.DesbloquearHilo(tcb)
+	threads.DesbloquearHilo(tcb)
 }
 
 func HandleIO(w http.ResponseWriter, r *http.Request) {
@@ -171,8 +177,55 @@ func HandleIO(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	// Bloquear Hilo
+	tcb := globals.Estructura.HiloExecute
+	threads.BloquearHilo(tcb)
+	// REPLANIFICAR !!
 	time.Sleep(time.Duration(req.Tiempo) * time.Second)
 
 	// Desbloquear Hilo y mandarlo a la cola de Ready devuelta
+	threads.DesbloquearHilo(tcb)
+}
+
+func SolicitarDumpMemory(pid int, tid int) (*http.Response, error) {
+	request := request.RequestDumpMemory{
+		Pid: pid,
+		Tid: tid,
+	}
+	requestCodificado, _ := commons.CodificarJSON(request)
+	cliente.Post(globals.KConfig.IpMemory, globals.KConfig.PortMemory, "dump", requestCodificado)
+	return nil, nil
+}
+
+func Dispatch(pcb *commons.PCB, tid int) (*http.Response, error) {
+	requestBody, err := commons.CodificarJSON(request.RequestDispatcher{PCB: pcb, Tid: tid})
+	if err != nil {
+		return nil, err
+	}
+
+	return cliente.Post(globals.KConfig.IpCpu, globals.KConfig.PortCpu, "dispatch", requestBody), err
+}
+
+func Interrupt(interruption string, pid int) (*http.Response, error) {
+	requestBody, err := commons.CodificarJSON(request.RequestInterrupcion{Razon: interruption, Pid: pid})
+	if err != nil {
+		return nil, err
+	}
+
+	return cliente.Post(globals.KConfig.IpCpu, globals.KConfig.PortCpu, "interrupt", requestBody), err
+}
+
+func HandleCompactacion(w http.ResponseWriter, r *http.Request) {
+	//pausarPlanificacion() // Pausar planificación de corto plazo
+
+	// Responder a Memoria para permitir la compactación
+	w.WriteHeader(http.StatusOK)
+
+	// Notificar a Memoria que puede proceder
+	schemes.CompactacionCond.L.Lock()
+	schemes.CompactacionCond.Signal() // Aviso a Memoria que puede comenzar la compactación
+	schemes.CompactacionCond.L.Unlock()
+}
+
+func HandleCompactacionFinalizada(w http.ResponseWriter, r *http.Request) {
+	//reanudarPlanificacion() // Reanudar planificación
 }

@@ -16,30 +16,26 @@ type Config struct {
 }
 
 type Kernel struct {
-	procesos       map[int]*commons.PCB // Mapa de procesos activos
-	colaNew        []*commons.PCB       // Cola de hilos nuevo
-	colaReady      []*commons.TCB       // Cola de hilos listos para ejecución
-	colaBloqueados []*commons.TCB       // Cola de hilos bloqueados
-	colaExit       []*commons.TCB       // Cola de hilos finalizados
-	hiloExecute    *commons.TCB         // Hilo en ejecución
+	Procesos       map[int]*commons.PCB // Mapa de Procesos activos
+	ColaNew        []*commons.PCB       // Cola de hilos nuevo
+	ColaReady      []*commons.TCB       // Cola de hilos listos para ejecución
+	ColaBloqueados []*commons.TCB       // Cola de hilos bloqueados
+	ColaExit       []*commons.TCB       // Cola de hilos finalizados
+	HiloExecute    *commons.TCB         // Hilo en ejecución
 
-	contadorPid int // PID autoincremental
+	ContadorPid int // PID autoincremental
 }
 
 var Estructura = &Kernel{
-	procesos:       make(map[int]*commons.PCB),
-	colaNew:        []*commons.PCB{},
-	colaReady:      []*commons.TCB{},
-	colaBloqueados: []*commons.TCB{},
-	colaExit:       []*commons.TCB{},
-	hiloExecute:    nil,
-	contadorPid:    1,
+	Procesos:       make(map[int]*commons.PCB),
+	ColaNew:        []*commons.PCB{},
+	ColaReady:      []*commons.TCB{},
+	ColaBloqueados: []*commons.TCB{},
+	ColaExit:       []*commons.TCB{},
+	HiloExecute:    nil,
+	ContadorPid:    1,
 }
 
 var KConfig *Config
-
-var CpuLibre chan bool
-
-func init() {
-	CpuLibre = make(chan bool, 1)
-}
+var HilosReady = make(chan int)
+var CpuLibre = make(chan bool, 1)
