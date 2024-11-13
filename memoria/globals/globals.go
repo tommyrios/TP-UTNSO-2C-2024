@@ -1,6 +1,10 @@
 package globals
 
-import "github.com/sisoputnfrba/tp-golang/utils/commons"
+import (
+	"errors"
+	"fmt"
+	"github.com/sisoputnfrba/tp-golang/utils/commons"
+)
 
 type Config struct {
 	Port            int    `json:"port"`
@@ -21,8 +25,6 @@ type Config struct {
 
 var MConfig *Config
 
-var MemoriaUsuario []byte
-
 type ContextoProceso struct {
 	Base   int // Dirección base de la memoria del proceso
 	Limite int // Límite (tamaño de memoria asignada)
@@ -34,14 +36,55 @@ type InstruccionesHilo struct {
 	Instrucciones []string // Instrucciones leídas del pseudocódigo
 }
 
+type MemSistema struct {
+	TablaProcesos map[int]ContextoProceso           // Tabla de procesos (PID -> Contexto de proceso)
+	TablaHilos    map[int]map[int]ContextoHilo      // Tabla de hilos (PID -> TID -> Contexto de hilo)
+	Pseudocodigos map[int]map[int]InstruccionesHilo // Pseudocódigos (PID -> TID -> Código)
+}
+
 var MemoriaSistema = MemSistema{
 	TablaProcesos: make(map[int]ContextoProceso),
 	TablaHilos:    make(map[int]map[int]ContextoHilo),
 	Pseudocodigos: make(map[int]map[int]InstruccionesHilo),
 }
 
-type MemSistema struct {
-	TablaProcesos map[int]ContextoProceso           // Tabla de procesos (PID -> Contexto de proceso)
-	TablaHilos    map[int]map[int]ContextoHilo      // Tabla de hilos (PID -> TID -> Contexto de hilo)
-	Pseudocodigos map[int]map[int]InstruccionesHilo // Pseudocódigos (PID -> TID -> Código)
+type MemUsuario struct {
+	datos       []byte
+	particiones []Particion
+}
+
+var MemoriaUsuario = MemUsuario{
+	datos:       make([]byte, MConfig.MemorySize),
+	particiones: []Particion{},
+}
+
+type Particion struct {
+	base   int
+	limite int
+	//agregar ocupado o no
+}
+
+func inicializarMemoria() {
+	if MConfig.Scheme == "FIJAS" {
+		base := 0
+		for _, tamaño := range MConfig.Partitions {
+			if base+tamaño > MConfig.MemorySize {
+				errors.New("error: Particiones fijas exceden el tamaño total de memoria")
+			}
+
+			// Crear una nueva partición y añadirla a la lista
+			nuevaParticion := Particion{
+				base:   base,
+				limite: tamaño,
+			}
+			MemoriaUsuario.particiones = append(MemoriaUsuario.particiones, nuevaParticion)
+			base += tamaño
+		}
+
+		if base != MConfig.MemorySize {
+			fmt.Println("Advertencia: No se ha utilizado la memoria completa en particiones fijas.")
+		}
+	}
+
+	fmt.Println("Memoria inicializada con éxito.")
 }

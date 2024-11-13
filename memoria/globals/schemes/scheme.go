@@ -100,7 +100,7 @@ func compactarMemoria() {
 
 		// Limpiar la memoria antigua
 		for i := base; i <= limite; i++ {
-			globals.MemoriaUsuario[i] = 0
+			globals.MemoriaUsuario.datos[i] = 0
 		}
 
 		// Actualizar la nueva posición
@@ -109,7 +109,7 @@ func compactarMemoria() {
 }
 
 func asignarParticionFirstFit(pid int, tamanioParticion int) error {
-	for i := 0; i <= len(globals.MemoriaUsuario)-tamanioParticion; i++ {
+	for i := 0; i <= len(globals.MemoriaUsuario.datos)-tamanioParticion; i++ {
 		if functions.EsEspacioLibre(i, tamanioParticion) {
 			functions.AsignarEspacio(pid, i, tamanioParticion)
 			return nil

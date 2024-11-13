@@ -71,6 +71,7 @@ func LeerMemoria(byteDireccion byte) ([]byte, error) {
 		return nil, fmt.Errorf("Dirección de memoria inválida")
 	}
 
+	//verificar segmentation fault
 	return globals.MemoriaUsuario[direccion : direccion+4], nil
 }
 
