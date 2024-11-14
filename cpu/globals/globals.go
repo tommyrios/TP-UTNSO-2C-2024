@@ -33,6 +33,11 @@ type InstruccionStruct struct {
 	Operandos         []string
 }
 
+type InterrupcionRecibida struct {
+	Tid    int    `json:"tid"`
+	Reason string `json:"reason"`
+}
+
 var CConfig *Config
 
 var ColaNEW []Process

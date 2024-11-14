@@ -9,6 +9,7 @@ import (
 	"github.com/sisoputnfrba/tp-golang/cpu/globals"
 	"github.com/sisoputnfrba/tp-golang/cpu/instrucciones"
 	"github.com/sisoputnfrba/tp-golang/cpu/interrupciones"
+	"github.com/sisoputnfrba/tp-golang/kernel/globals/threads"
 	"github.com/sisoputnfrba/tp-golang/utils/cliente"
 	"github.com/sisoputnfrba/tp-golang/utils/commons"
 )
@@ -34,23 +35,27 @@ const (
 	PROCESS_EXIT   = "PROCESS_EXIT"
 )
 
+type requestKernel struct {
+	PCB commons.PCB `json:"pcb"`
+	Tid int         `json:"tid"`
+}
+
 func RecibirInterrupcion(w http.ResponseWriter, r *http.Request) {
 	log.Println("## Llega interrupcion al puerto Interrupt")
-	var interrupcion commons.InterrupcionRecibida
+	var interrupcion globals.InterrupcionRecibida
 
 	err := commons.DecodificarJSON(r.Body, &interrupcion)
 	if err != nil {
 		return
 	}
-
 }
 
 // Similar a Recibir Mensaje
 func Ejecutar(w http.ResponseWriter, r *http.Request) {
 
-	var pcbUsada commons.PCB
+	var req requestKernel
 
-	err := commons.DecodificarJSON(r.Body, &pcbUsada)
+	err := commons.DecodificarJSON(r.Body, &req)
 	if err != nil {
 		return
 	}
@@ -58,18 +63,17 @@ func Ejecutar(w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(http.StatusOK)
 	w.Write([]byte("Pcb OK"))
 
-	go EjecutarInstrucciones(pcbUsada)
+	go EjecutarInstrucciones(req.PCB, req.Tid)
 }
 
-func EjecutarInstrucciones(pcbUsada commons.PCB) {
+func EjecutarInstrucciones(pcbUsada commons.PCB, tid int) {
 	var despacho commons.DespachoProceso
+	tcbUsado := threads.BuscarHiloEnPCB(pcbUsada.Pid, tid)
 
-	tcbUsado := pcbUsada.Tid[0]
-
-	log.Printf("TID: %d - Solicito Contexto Ejecución", tcbUsado.Tid)
+	log.Printf("TID: %d - Solicito Contexto Ejecución", tid)
 
 	*globals.Registros = tcbUsado.Registros
-	*globals.Tid = pcbUsada.Tid[0].Tid
+	*globals.Tid = tid
 	globals.Registros.PC = uint32(pcbUsada.ProgramCounter)
 
 	///////////////////////
@@ -102,7 +106,7 @@ func EjecutarInstrucciones(pcbUsada commons.PCB) {
 	log.Printf("## TID: %d - Actualizo Contexto Ejecución", *globals.Tid)
 
 	despacho.Pcb = pcbUsada
-	despacho.Pcb.Tid[0] = tcbUsado
+	despacho.Pcb.Tid[0] = *tcbUsado
 	despacho.Pcb.ProgramCounter = int(globals.Registros.PC)
 
 	resp, err := commons.CodificarJSON(despacho)

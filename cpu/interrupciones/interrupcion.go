@@ -19,7 +19,7 @@ type Interrupcion struct {
 var InterrupcionActual *Interrupcion
 
 func RecibirInterrupcion(w http.ResponseWriter, r *http.Request) {
-	var req commons.InterrupcionRecibida
+	var req globals.InterrupcionRecibida
 
 	err := commons.DecodificarJSON(r.Body, &req)
 	if err != nil {
