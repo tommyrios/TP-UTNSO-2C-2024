@@ -49,22 +49,23 @@ var MemoriaSistema = MemSistema{
 }
 
 type MemUsuario struct {
-	datos       []byte
-	particiones []Particion
+	Datos       []byte
+	Particiones []Particion
 }
 
 var MemoriaUsuario = MemUsuario{
-	datos:       make([]byte, MConfig.MemorySize),
-	particiones: []Particion{},
+	Datos:       make([]byte, MConfig.MemorySize),
+	Particiones: []Particion{},
 }
 
 type Particion struct {
-	base   int
-	limite int
-	//agregar ocupado o no
+	Base   int
+	Limite int
+	Libre  bool
+	Pid    int
 }
 
-func inicializarMemoria() {
+func InicializarMemoria() {
 	if MConfig.Scheme == "FIJAS" {
 		base := 0
 		for _, tamaño := range MConfig.Partitions {
@@ -72,12 +73,14 @@ func inicializarMemoria() {
 				errors.New("error: Particiones fijas exceden el tamaño total de memoria")
 			}
 
-			// Crear una nueva partición y añadirla a la lista
+			// Crear una nueva partición y agregarla a la lista
 			nuevaParticion := Particion{
-				base:   base,
-				limite: tamaño,
+				Base:   base,
+				Limite: tamaño,
+				Libre:  true,
+				Pid:    -1,
 			}
-			MemoriaUsuario.particiones = append(MemoriaUsuario.particiones, nuevaParticion)
+			MemoriaUsuario.Particiones = append(MemoriaUsuario.Particiones, nuevaParticion)
 			base += tamaño
 		}
 

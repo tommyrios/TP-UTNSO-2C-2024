@@ -90,7 +90,7 @@ func compactarMemoria() {
 		tamanio := limite - base + 1
 
 		// Mover el proceso a la nueva posición
-		copy(globals.MemoriaUsuario[nuevaPosicion:], globals.MemoriaUsuario[base:limite+1])
+		copy(globals.MemoriaUsuario.Datos[nuevaPosicion:], globals.MemoriaUsuario.Datos[base:limite+1])
 
 		// Actualizar la tabla de procesos con la nueva posición
 		globals.MemoriaSistema.TablaProcesos[pid] = globals.ContextoProceso{
@@ -100,7 +100,7 @@ func compactarMemoria() {
 
 		// Limpiar la memoria antigua
 		for i := base; i <= limite; i++ {
-			globals.MemoriaUsuario.datos[i] = 0
+			globals.MemoriaUsuario.Datos[i] = 0
 		}
 
 		// Actualizar la nueva posición
@@ -109,7 +109,7 @@ func compactarMemoria() {
 }
 
 func asignarParticionFirstFit(pid int, tamanioParticion int) error {
-	for i := 0; i <= len(globals.MemoriaUsuario.datos)-tamanioParticion; i++ {
+	for i := 0; i <= len(globals.MemoriaUsuario.Datos)-tamanioParticion; i++ {
 		if functions.EsEspacioLibre(i, tamanioParticion) {
 			functions.AsignarEspacio(pid, i, tamanioParticion)
 			return nil
@@ -122,7 +122,7 @@ func asignarParticionBestFit(pid int, tamanioParticion int) error {
 	mejorInicio := -1
 	menorDesperdicio := math.MaxInt32
 
-	for i := 0; i <= len(globals.MemoriaUsuario)-tamanioParticion; i++ {
+	for i := 0; i <= len(globals.MemoriaUsuario.Datos)-tamanioParticion; i++ {
 		if functions.EsEspacioLibre(i, tamanioParticion) {
 			desperdicio := functions.CalcularDesperdicio(i, tamanioParticion)
 			if desperdicio < menorDesperdicio {
@@ -143,7 +143,7 @@ func asignarParticionWorstFit(pid int, tamanioParticion int) error {
 	peorInicio := -1
 	mayorEspacioLibre := -1
 
-	for i := 0; i <= len(globals.MemoriaUsuario)-tamanioParticion; i++ {
+	for i := 0; i <= len(globals.MemoriaUsuario.Datos)-tamanioParticion; i++ {
 		if functions.EsEspacioLibre(i, tamanioParticion) {
 			espacioLibre := functions.CalcularDesperdicio(i, tamanioParticion)
 			if espacioLibre > mayorEspacioLibre {

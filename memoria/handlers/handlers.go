@@ -193,16 +193,14 @@ func HandleFinalizarProceso(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	proceso, existe := globals.MemoriaSistema.TablaProcesos[req.Pid]
+	_, existe := globals.MemoriaSistema.TablaProcesos[req.Pid]
 	if !existe {
 		http.Error(w, "Proceso no encontrado", http.StatusNotFound)
 		return
 	}
 
-	// Marcar la partición ocupada por el proceso como libre
-	for i := proceso.Base; i <= proceso.Limite; i++ {
-		globals.MemoriaUsuario[i] = 0 // 0 indica espacio libre
-	}
+	// Liberamos la partición
+	err = functions.LiberarProceso(req.Pid)
 
 	// Eliminar las estructuras correspondientes del proceso en la Memoria del Sistema
 	delete(globals.MemoriaSistema.TablaProcesos, req.Pid)

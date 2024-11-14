@@ -1,12 +1,15 @@
 package functions
 
 import (
+	"errors"
 	"fmt"
 	"github.com/sisoputnfrba/tp-golang/memoria/globals"
 	"github.com/sisoputnfrba/tp-golang/utils/commons"
 	"math"
 	"net/http"
 )
+
+type MemUsuario globals.MemUsuario
 
 func ObtenerRegistros(pid int, tid int) commons.Registros {
 
@@ -63,16 +66,53 @@ func ObtenerInstruccion(pid int, tid int, pc uint32) (string, error) {
 	return instruccion, nil
 }
 
+func LiberarProceso(pid int) error {
+	indice := -1
+	particiones := globals.MemoriaUsuario.Particiones
+	// Buscar la partición correspondiente al PID
+	for i, particion := range particiones {
+		if particion.Pid == pid && !particion.Libre {
+			indice = i
+			break
+		}
+	}
+
+	if indice == -1 {
+		return errors.New("Proceso no encontrado o ya está liberado")
+	}
+
+	// Liberar la partición
+	particiones[indice].Pid = -1
+	particiones[indice].Libre = true
+
+	if globals.MConfig.Scheme == "DINAMICAS" {
+		// Consolidar con partición anterior si está libre
+		if indice > 0 && particiones[indice-1].Libre {
+			particiones[indice-1].Limite += particiones[indice].Limite
+			particiones = append(particiones[:indice], particiones[indice+1:]...)
+			indice-- // Actualiza índice después de la consolidación
+		}
+
+		// Consolidar con partición siguiente si está libre
+		if indice < len(particiones)-1 && particiones[indice+1].Libre {
+			particiones[indice].Limite += particiones[indice+1].Limite
+			particiones = append(particiones[:indice+1], particiones[indice+2:]...)
+		}
+	}
+
+	return nil
+}
+
 func LeerMemoria(byteDireccion byte) ([]byte, error) {
 
 	direccion := int(byteDireccion)
 
-	if direccion < 0 || direccion+4 >= len(globals.MemoriaUsuario) {
+	if direccion < 0 || direccion+4 >= len(globals.MemoriaUsuario.Datos) {
 		return nil, fmt.Errorf("Dirección de memoria inválida")
 	}
 
 	//verificar segmentation fault
-	return globals.MemoriaUsuario[direccion : direccion+4], nil
+	return globals.MemoriaUsuario.Datos[direccion : direccion+4], nil
 }
 
 func EscribirMemoria(byteDireccion byte, pid int, datos []byte) error {
@@ -89,7 +129,7 @@ func EscribirMemoria(byteDireccion byte, pid int, datos []byte) error {
 		return fmt.Errorf("Segmentation fault")
 	}
 
-	copy(globals.MemoriaUsuario[direccionFisica:direccionFisica+4], datos)
+	copy(globals.MemoriaUsuario.Datos[direccionFisica:direccionFisica+4], datos)
 
 	return nil
 }
@@ -113,7 +153,7 @@ func MejorAjuste(x int) int {
 
 func EsEspacioLibre(inicio, tamano int) bool {
 	for i := inicio; i < inicio+tamano; i++ {
-		if globals.MemoriaUsuario[i] != 0 { // 0 indica espacio libre
+		if globals.MemoriaUsuario.Datos[i] != 0 { // 0 indica espacio libre
 			return false
 		}
 	}
@@ -122,7 +162,7 @@ func EsEspacioLibre(inicio, tamano int) bool {
 
 func AsignarEspacio(pid, inicio, tamano int) {
 	for i := inicio; i < inicio+tamano; i++ {
-		globals.MemoriaUsuario[i] = 1 // 1 indica espacio ocupado
+		globals.MemoriaUsuario.Datos[i] = 1 // 1 indica espacio ocupado
 	}
 
 	globals.MemoriaSistema.TablaProcesos[pid] = globals.ContextoProceso{
@@ -133,7 +173,7 @@ func AsignarEspacio(pid, inicio, tamano int) {
 
 func CalcularDesperdicio(inicio, tamano int) int {
 	espacioLibre := 0
-	for i := inicio + tamano; i < len(globals.MemoriaUsuario) && globals.MemoriaUsuario[i] == 0; i++ {
+	for i := inicio + tamano; i < len(globals.MemoriaUsuario.Datos) && globals.MemoriaUsuario.Datos[i] == 0; i++ {
 		espacioLibre++
 	}
 	return espacioLibre
@@ -141,7 +181,7 @@ func CalcularDesperdicio(inicio, tamano int) int {
 
 func EspacioLibreTotal() int {
 	espacioLibre := 0
-	for _, byte := range globals.MemoriaUsuario {
+	for _, byte := range globals.MemoriaUsuario.Datos {
 		if byte == 0 { // 0 indica espacio libre
 			espacioLibre++
 		}
@@ -164,13 +204,13 @@ func NotificarFinalizacionCompactacion() {
 }
 
 func ObtenerContenidoMemoria(base, limite int) []byte {
-	if base < 0 || limite >= len(globals.MemoriaUsuario) || base > limite {
+	if base < 0 || limite >= len(globals.MemoriaUsuario.Datos) || base > limite {
 		return nil
 	}
 
 	tamanio := limite - base + 1
 	contenido := make([]byte, tamanio)
-	copy(contenido, globals.MemoriaUsuario[base:limite+1])
+	copy(contenido, globals.MemoriaUsuario.Datos[base:limite+1])
 
 	return contenido
 }
