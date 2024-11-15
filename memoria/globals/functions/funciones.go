@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"github.com/sisoputnfrba/tp-golang/memoria/globals"
 	"github.com/sisoputnfrba/tp-golang/utils/commons"
-	"math"
 	"net/http"
 )
 
@@ -60,7 +59,7 @@ func ObtenerInstruccion(pid int, tid int, pc uint32) (string, error) {
 	instruccion := globals.MemoriaSistema.Pseudocodigos[pid][tid].Instrucciones[pc]
 
 	if instruccion == "" {
-		return "", fmt.Errorf("Instrucción no encontrada para PID %d, TID %d y PC %d", pid, tid, pc)
+		return "", fmt.Errorf("instrucción no encontrada para PID %d, TID %d y PC %d", pid, tid, pc)
 	}
 
 	return instruccion, nil
@@ -78,7 +77,7 @@ func LiberarProceso(pid int) error {
 	}
 
 	if indice == -1 {
-		return errors.New("Proceso no encontrado o ya está liberado")
+		return errors.New("proceso no encontrado o ya está liberado")
 	}
 
 	// Liberar la partición
@@ -108,7 +107,7 @@ func LeerMemoria(byteDireccion byte) ([]byte, error) {
 	direccion := int(byteDireccion)
 
 	if direccion < 0 || direccion+4 >= len(globals.MemoriaUsuario.Datos) {
-		return nil, fmt.Errorf("Dirección de memoria inválida")
+		return nil, fmt.Errorf("dirección de memoria inválida")
 	}
 
 	//verificar segmentation fault
@@ -118,7 +117,7 @@ func LeerMemoria(byteDireccion byte) ([]byte, error) {
 func EscribirMemoria(byteDireccion byte, pid int, datos []byte) error {
 
 	if len(datos) != 4 {
-		return fmt.Errorf("Se deben proporcionar exactamente 4 bytes")
+		return fmt.Errorf("se deben proporcionar exactamente 4 bytes")
 	}
 
 	proceso := globals.MemoriaSistema.TablaProcesos[pid]
@@ -126,7 +125,7 @@ func EscribirMemoria(byteDireccion byte, pid int, datos []byte) error {
 	direccionFisica := proceso.Base + int(byteDireccion)
 
 	if direccionFisica < 0 || direccionFisica+4 >= proceso.Limite {
-		return fmt.Errorf("Segmentation fault")
+		return fmt.Errorf("segmentation fault")
 	}
 
 	copy(globals.MemoriaUsuario.Datos[direccionFisica:direccionFisica+4], datos)
@@ -134,58 +133,16 @@ func EscribirMemoria(byteDireccion byte, pid int, datos []byte) error {
 	return nil
 }
 
-func MejorAjuste(x int) int {
-	mejorTamanio := -1
-	menorDesperdicio := math.MaxInt32
-
-	for _, tam := range globals.MConfig.Partitions {
-		if tam >= x {
-			desperdicio := tam - x
-			if desperdicio < menorDesperdicio {
-				menorDesperdicio = desperdicio
-				mejorTamanio = tam
-			}
-		}
-	}
-
-	return mejorTamanio
-}
-
-func EsEspacioLibre(inicio, tamano int) bool {
-	for i := inicio; i < inicio+tamano; i++ {
-		if globals.MemoriaUsuario.Datos[i] != 0 { // 0 indica espacio libre
-			return false
-		}
-	}
-	return true
-}
-
-func AsignarEspacio(pid, inicio, tamano int) {
-	for i := inicio; i < inicio+tamano; i++ {
-		globals.MemoriaUsuario.Datos[i] = 1 // 1 indica espacio ocupado
-	}
-
-	globals.MemoriaSistema.TablaProcesos[pid] = globals.ContextoProceso{
-		Base:   inicio,
-		Limite: inicio + tamano - 1,
-	}
-}
-
-func CalcularDesperdicio(inicio, tamano int) int {
-	espacioLibre := 0
-	for i := inicio + tamano; i < len(globals.MemoriaUsuario.Datos) && globals.MemoriaUsuario.Datos[i] == 0; i++ {
-		espacioLibre++
-	}
-	return espacioLibre
-}
-
 func EspacioLibreTotal() int {
 	espacioLibre := 0
-	for _, byte := range globals.MemoriaUsuario.Datos {
-		if byte == 0 { // 0 indica espacio libre
-			espacioLibre++
+	particiones := globals.MemoriaUsuario.Particiones
+
+	for _, particion := range particiones {
+		if particion.Libre { // 0 indica espacio libre
+			espacioLibre += 1 + (particion.Limite - particion.Base)
 		}
 	}
+
 	return espacioLibre
 }
 

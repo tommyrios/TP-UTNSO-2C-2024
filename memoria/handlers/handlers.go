@@ -156,6 +156,10 @@ func HandleWriteMemory(w http.ResponseWriter, r *http.Request) {
 
 // ¡¡¡¡¡HANDLERS KERNEL!!!!!
 
+func HandleCrearHilo(w http.ResponseWriter, r *http.Request) {
+
+}
+
 func HandleSolicitarProceso(w http.ResponseWriter, r *http.Request) {
 	var req request3.RequestProcesoMemoria
 
@@ -166,20 +170,8 @@ func HandleSolicitarProceso(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	esquemaFijo := globals.MConfig.Scheme == "FIJAS"
-
 	// Lógica de asignación de espacio
-	if esquemaFijo {
-		if !schemes.AsignarParticionFija(req.Pid, req.TamanioMemoria) {
-			http.Error(w, "No hay espacio en particiones fijas", http.StatusConflict)
-			return
-		}
-	} else {
-		if !schemes.AsignarParticionDinamica(req.Pid, req.TamanioMemoria) {
-			http.Error(w, "No hay espacio en particiones dinámicas", http.StatusConflict)
-			return
-		}
-	}
+	err = schemes.AsignarParticion(req.Pid, req.TamanioMemoria)
 
 	w.WriteHeader(http.StatusOK)
 }

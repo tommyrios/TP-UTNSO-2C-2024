@@ -87,7 +87,15 @@ func InicializarMemoria() {
 		if base != MConfig.MemorySize {
 			fmt.Println("Advertencia: No se ha utilizado la memoria completa en particiones fijas.")
 		}
+	} else {
+		nuevaParticion := Particion{
+			Base:   0,
+			Limite: MConfig.MemorySize,
+			Libre:  true,
+			Pid:    -1,
+		}
+		MemoriaUsuario.Particiones = append(MemoriaUsuario.Particiones, nuevaParticion)
 	}
 
-	fmt.Println("Memoria inicializada con éxito.")
+	fmt.Println("Memoria inicializada con éxito.", nil)
 }

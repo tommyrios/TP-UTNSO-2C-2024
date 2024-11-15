@@ -11,151 +11,128 @@ import (
 
 var CompactacionCond = sync.NewCond(&sync.Mutex{})
 
-func AsignarParticionFija(pid int, tamanioProceso int) bool {
-	tamanioParticion := functions.MejorAjuste(tamanioProceso)
+func AsignarParticion(pid int, tamanioProceso int) error {
+	indice, err := buscarParticion(tamanioProceso)
+	if err != nil {
+		return err
+	}
 
-	switch globals.MConfig.SearchAlgorithm {
-	case "FIRST":
-		err := asignarParticionFirstFit(pid, tamanioParticion)
-		if err == nil {
-			return true
-		}
-	case "BEST":
-		err := asignarParticionBestFit(pid, tamanioParticion)
-		if err == nil {
-			return true
-		}
+	particion := &globals.MemoriaUsuario.Particiones[indice]
+	particion.Libre = false
+	particion.Pid = pid
 
-	case "WORST":
-		err := asignarParticionWorstFit(pid, tamanioParticion)
-		if err == nil {
-			return true
+	// Ajusta la partición si sobra espacio (solo en dinámicas)
+	if globals.MConfig.Scheme == "DINAMICAS" {
+		espacioSobrante := particion.Limite - particion.Base - tamanioProceso
+		if espacioSobrante > 0 {
+			nuevaParticion := globals.Particion{
+				Base:   particion.Base + tamanioProceso,
+				Limite: particion.Limite,
+				Libre:  true,
+				Pid:    -1,
+			}
+			particion.Limite = particion.Base + tamanioProceso - 1
+			globals.MemoriaUsuario.Particiones = append(globals.MemoriaUsuario.Particiones[:indice+1], append([]globals.Particion{nuevaParticion}, globals.MemoriaUsuario.Particiones[indice+1:]...)...)
 		}
 	}
 
-	return false
+	return nil
 }
 
-func AsignarParticionDinamica(pid int, tamanioProceso int) bool {
+func buscarParticion(tamanioProceso int) (int, error) {
+	estrategia := globals.MConfig.SearchAlgorithm
+	mejorIndice := -1
+	mejorValor := math.MaxInt32
+	peorValor := -1
 
-	tamanioParticion := tamanioProceso
+	for i, particion := range globals.MemoriaUsuario.Particiones {
+		if particion.Libre && particion.Limite-particion.Base >= tamanioProceso {
+			espacioLibre := particion.Limite - particion.Base
 
-	switch globals.MConfig.SearchAlgorithm {
-	case "FIRST":
-		err := asignarParticionFirstFit(pid, tamanioParticion)
-		if err == nil {
-			return true
+			switch estrategia {
+			case "FIRST":
+				return i, nil // Devuelve la primera partición encontrada
+			case "BEST":
+				if espacioLibre < mejorValor {
+					mejorValor = espacioLibre
+					mejorIndice = i
+				}
+			case "WORST":
+				if espacioLibre > peorValor {
+					peorValor = espacioLibre
+					mejorIndice = i
+				}
+			}
 		}
+	}
 
-	case "BEST":
-		err := asignarParticionBestFit(pid, tamanioParticion)
-		if err == nil {
-			return true
-		}
-
-	case "WORST":
-		err := asignarParticionWorstFit(pid, tamanioParticion)
-		if err == nil {
-			return true
-		}
+	if mejorIndice != -1 {
+		return mejorIndice, nil
 	}
 
 	// Caso de que haya espacio total pero no contiguo
-	if functions.EspacioLibreTotal() >= tamanioParticion {
-		if functions.SolicitarCompactacion() {
-			// Espera a que el Kernel confirme que se puede compactar
-			CompactacionCond.L.Lock()
-			CompactacionCond.Wait() // Espera hasta que Kernel confirme que puede compactar
-			CompactacionCond.L.Unlock()
+	if globals.MConfig.Scheme == "DINAMICAS" {
+		if functions.EspacioLibreTotal() >= tamanioProceso {
+			if functions.SolicitarCompactacion() {
+				// Espera a que el Kernel confirme que se puede compactar
+				CompactacionCond.L.Lock()
+				CompactacionCond.Wait() // Espera hasta que Kernel confirme que puede compactar
+				CompactacionCond.L.Unlock()
 
-			// Realiza la compactación
-			compactarMemoria()
+				// Realiza la compactación
+				compactarMemoria()
 
-			// Notifica al Kernel que la compactación ha finalizado
-			functions.NotificarFinalizacionCompactacion()
-			return true
+				// Notifica al Kernel que la compactación ha finalizado
+				functions.NotificarFinalizacionCompactacion()
+
+				particionIndice, _ := buscarParticion(tamanioProceso)
+				return particionIndice, nil
+			}
 		}
+
+		return -1, errors.New("no hay espacio suficiente en memoria")
 	}
 
-	// Caso de que no hay espacio total disponible
-	return false
+	return -1, errors.New("no se encontró una partición adecuada")
 }
 
 func compactarMemoria() {
 	nuevaPosicion := 0
+	var nuevasParticiones []globals.Particion
 
-	for pid, proceso := range globals.MemoriaSistema.TablaProcesos {
-		base := proceso.Base
-		limite := proceso.Limite
-		tamanio := limite - base + 1
+	for _, particion := range globals.MemoriaUsuario.Particiones {
+		if !particion.Libre {
+			tamanio := particion.Limite - particion.Base + 1
 
-		// Mover el proceso a la nueva posición
-		copy(globals.MemoriaUsuario.Datos[nuevaPosicion:], globals.MemoriaUsuario.Datos[base:limite+1])
+			// Mover datos al nuevo espacio
+			copy(globals.MemoriaUsuario.Datos[nuevaPosicion:], globals.MemoriaUsuario.Datos[particion.Base:particion.Limite+1])
 
-		// Actualizar la tabla de procesos con la nueva posición
-		globals.MemoriaSistema.TablaProcesos[pid] = globals.ContextoProceso{
+			// Crear una partición actualizada
+			nuevaParticion := globals.Particion{
+				Base:   nuevaPosicion,
+				Limite: nuevaPosicion + tamanio - 1,
+				Libre:  false,
+				Pid:    particion.Pid,
+			}
+			nuevasParticiones = append(nuevasParticiones, nuevaParticion)
+			nuevaPosicion += tamanio
+		}
+	}
+
+	// Crear una partición libre con el resto de la memoria
+	if nuevaPosicion < len(globals.MemoriaUsuario.Datos) {
+		nuevaParticionLibre := globals.Particion{
 			Base:   nuevaPosicion,
-			Limite: nuevaPosicion + tamanio - 1,
+			Limite: len(globals.MemoriaUsuario.Datos) - 1,
+			Libre:  true,
+			Pid:    -1,
 		}
-
-		// Limpiar la memoria antigua
-		for i := base; i <= limite; i++ {
-			globals.MemoriaUsuario.Datos[i] = 0
-		}
-
-		// Actualizar la nueva posición
-		nuevaPosicion += tamanio
-	}
-}
-
-func asignarParticionFirstFit(pid int, tamanioParticion int) error {
-	for i := 0; i <= len(globals.MemoriaUsuario.Datos)-tamanioParticion; i++ {
-		if functions.EsEspacioLibre(i, tamanioParticion) {
-			functions.AsignarEspacio(pid, i, tamanioParticion)
-			return nil
-		}
-	}
-	return errors.New("no hay espacio contiguo suficiente en memoria")
-}
-
-func asignarParticionBestFit(pid int, tamanioParticion int) error {
-	mejorInicio := -1
-	menorDesperdicio := math.MaxInt32
-
-	for i := 0; i <= len(globals.MemoriaUsuario.Datos)-tamanioParticion; i++ {
-		if functions.EsEspacioLibre(i, tamanioParticion) {
-			desperdicio := functions.CalcularDesperdicio(i, tamanioParticion)
-			if desperdicio < menorDesperdicio {
-				menorDesperdicio = desperdicio
-				mejorInicio = i
-			}
-		}
+		nuevasParticiones = append(nuevasParticiones, nuevaParticionLibre)
 	}
 
-	if mejorInicio != -1 {
-		functions.AsignarEspacio(pid, mejorInicio, tamanioParticion)
-		return nil
+	// Actualizar las particiones y limpiar los datos no usados
+	globals.MemoriaUsuario.Particiones = nuevasParticiones
+	for i := nuevaPosicion; i < len(globals.MemoriaUsuario.Datos); i++ {
+		globals.MemoriaUsuario.Datos[i] = 0
 	}
-	return errors.New("no hay espacio contiguo suficiente en memoria")
-}
-
-func asignarParticionWorstFit(pid int, tamanioParticion int) error {
-	peorInicio := -1
-	mayorEspacioLibre := -1
-
-	for i := 0; i <= len(globals.MemoriaUsuario.Datos)-tamanioParticion; i++ {
-		if functions.EsEspacioLibre(i, tamanioParticion) {
-			espacioLibre := functions.CalcularDesperdicio(i, tamanioParticion)
-			if espacioLibre > mayorEspacioLibre {
-				mayorEspacioLibre = espacioLibre
-				peorInicio = i
-			}
-		}
-	}
-
-	if peorInicio != -1 {
-		functions.AsignarEspacio(pid, peorInicio, tamanioParticion)
-		return nil
-	}
-	return errors.New("no hay espacio contiguo suficiente en memoria")
 }
