@@ -103,7 +103,13 @@ func FinalizarProceso(pid int) {
 
 		log.Printf("## Finaliza el proceso %d", pid)
 
-		queues.ChequearColaNew()
+		if len(globals.Estructura.ColaNew) != 0 {
+			procesoNuevo := globals.Estructura.ColaNew[0]
+			queues.SacarProcesoDeCola(procesoNuevo.Pid, &globals.Estructura.ColaNew)
+			threads.CrearHilo(procesoNuevo.Pid, procesoNuevo.PrioridadTID0, procesoNuevo.PseudoCodigoHilo0)
+			queues.AgregarHiloACola(threads.BuscarHiloEnPCB(procesoNuevo.Pid, 0), &globals.Estructura.ColaReady)
+		}
+
 	} else {
 		log.Printf("## Error al finalizar el proceso %d", pid)
 	}

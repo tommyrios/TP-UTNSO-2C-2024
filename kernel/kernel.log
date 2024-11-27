@@ -54,3 +54,25 @@
 2024/09/24 12:33:59 ## (2:0) Se crea el proceso - Estado: NEW
 2024/09/24 12:33:59 El módulo kernel está a la escucha en el puerto :8001
 2024/11/04 20:43:28 El módulo kernel está a la escucha en el puerto :8001
+2024/11/26 11:07:38 Cola NEW está vacía, solicitando memoria.
+2024/11/26 11:08:09 Cola NEW está vacía, solicitando memoria.
+2024/11/26 11:08:09 Respuesta POST: 404 page not found
+
+2024/11/26 11:08:09 ## (1:0) Se crea el proceso - Estado: NEW
+2024/11/26 11:08:09 prueba.txt 32 0
+2024/11/26 11:11:38 Cola NEW está vacía, solicitando memoria.
+2024/11/26 11:11:38 Respuesta POST: 404 page not found
+
+2024/11/26 11:11:38 ## (1:0) Se crea el proceso - Estado: NEW
+2024/11/26 11:11:38 prueba.txt 32 0
+2024/11/26 11:11:38 El módulo kernel está a la escucha en el puerto :8001
+2024/11/26 11:12:03 Cola NEW está vacía, solicitando memoria.
+2024/11/26 11:12:03 Respuesta POST: 404 page not found
+
+2024/11/26 11:12:03 ## (1:0) Se crea el proceso - Estado: NEW
+2024/11/26 11:12:03 prueba.txt 32 0
+2024/11/26 11:17:58 Cola NEW está vacía, solicitando memoria.
+2024/11/26 11:17:58 Respuesta POST: 404 page not found
+
+2024/11/26 11:17:58 ## (1:0) Se crea el proceso - Estado: NEW
+2024/11/26 11:17:58 prueba.txt 32 0

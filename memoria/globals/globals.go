@@ -53,9 +53,17 @@ type MemUsuario struct {
 	Particiones []Particion
 }
 
-var MemoriaUsuario = MemUsuario{
-	Datos:       make([]byte, MConfig.MemorySize),
-	Particiones: []Particion{},
+var MemoriaUsuario MemUsuario
+
+func InicializarMemoriaUsuario() {
+	if MConfig == nil {
+		panic("MConfig no está inicializado")
+	}
+
+	MemoriaUsuario = MemUsuario{
+		Datos:       make([]byte, MConfig.MemorySize),
+		Particiones: []Particion{},
+	}
 }
 
 type Particion struct {

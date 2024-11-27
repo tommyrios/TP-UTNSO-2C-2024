@@ -7,6 +7,7 @@ import (
 	"github.com/sisoputnfrba/tp-golang/kernel/handlers/request"
 	"github.com/sisoputnfrba/tp-golang/memoria/globals/schemes"
 	"github.com/sisoputnfrba/tp-golang/utils/cliente"
+	"log"
 	"net/http"
 	"time"
 
@@ -184,6 +185,7 @@ func HandleIO(w http.ResponseWriter, r *http.Request) {
 
 	// Desbloquear Hilo y mandarlo a la cola de Ready devuelta
 	threads.DesbloquearHilo(tcb)
+	log.Printf("## (%d:%d) finalizó IO y pasa a READY", tcb.Pid, tcb.Tid)
 }
 
 func SolicitarDumpMemory(pid int, tid int) (*http.Response, error) {

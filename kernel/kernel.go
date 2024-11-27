@@ -40,7 +40,7 @@ func main() {
 	go schedulers.ManejarHiloRunning()
 
 	mux := http.NewServeMux()
-	http.HandleFunc("/syscall/process_create", handlers.HandleProcessCreate)
+	http.HandleFunc("POST /syscall/process_create", handlers.HandleProcessCreate)
 	http.HandleFunc("/syscall/thread_create", handlers.HandleThreadCreate)
 	http.HandleFunc("/syscall/process_exit", handlers.HandleProcessExit)
 	http.HandleFunc("/syscall/thread_exit", handlers.HandleThreadExit)

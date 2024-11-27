@@ -8,8 +8,11 @@ import (
 	"github.com/sisoputnfrba/tp-golang/utils/commons"
 	"log"
 	"sort"
+	"sync"
 	"time"
 )
+
+var mu sync.Mutex
 
 func ManejarColaReady() {
 	for {
@@ -29,6 +32,7 @@ func ManejarHiloRunning() {
 	for {
 		select {
 		case <-globals.CpuLibre:
+			mu.Lock()
 			hiloAEjecutar := globals.Estructura.ColaReady[0]
 			pcbHilo := queues.BuscarPCBEnColas(hiloAEjecutar.Pid)
 
@@ -37,6 +41,7 @@ func ManejarHiloRunning() {
 
 			// Lo eliminamos de la cola de ready
 			globals.Estructura.ColaReady = globals.Estructura.ColaReady[1:]
+			mu.Unlock()
 
 			executeThread(pcbHilo, hiloAEjecutar.Tid)
 		}
