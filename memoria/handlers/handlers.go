@@ -157,7 +157,16 @@ func HandleWriteMemory(w http.ResponseWriter, r *http.Request) {
 // ¡¡¡¡¡HANDLERS KERNEL!!!!!
 
 func HandleCrearHilo(w http.ResponseWriter, r *http.Request) {
+	var req request3.RequestCrearHilo
 
+	err := commons.DecodificarJSON(r.Body, &req)
+
+	if err != nil {
+		http.Error(w, "Error al decodificar el JSON", http.StatusBadRequest)
+		return
+	}
+
+	functions.CrearHilo(req.Pid, req.Tid, req.Pseudocodigo)
 }
 
 func HandleSolicitarProceso(w http.ResponseWriter, r *http.Request) {

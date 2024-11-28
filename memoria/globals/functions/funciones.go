@@ -1,23 +1,24 @@
 package functions
 
 import (
+	"bufio"
 	"errors"
 	"fmt"
 	"github.com/sisoputnfrba/tp-golang/memoria/globals"
 	"github.com/sisoputnfrba/tp-golang/utils/commons"
+	"log"
 	"net/http"
+	"os"
 )
 
 type MemUsuario globals.MemUsuario
 
-func ObtenerRegistros(pid int, tid int) commons.Registros {
+func ObtenerRegistros(pid int, tid int) globals.ContextoHilo {
 
-	registros := globals.MemoriaSistema.TablaHilos[pid][tid]
-
-	return commons.Registros(registros)
+	return *globals.MemoriaSistema.TablaHilos[pid][tid]
 }
 
-func ObtenerBaseLimite(pid int, tid int) (int, int) {
+func ObtenerBaseLimite(pid int) (int, int) {
 
 	base := globals.MemoriaSistema.TablaProcesos[pid].Base
 	limite := globals.MemoriaSistema.TablaProcesos[pid].Limite
@@ -152,6 +153,7 @@ func SolicitarCompactacion() bool {
 	if err != nil || response.StatusCode != http.StatusOK {
 		return false // Falló la solicitud o el Kernel no aprobó la compactación
 	}
+	log.Println("Compactacion solicitada.")
 	return true
 }
 
@@ -170,4 +172,39 @@ func ObtenerContenidoMemoria(base, limite int) []byte {
 	copy(contenido, globals.MemoriaUsuario.Datos[base:limite+1])
 
 	return contenido
+}
+
+func CrearHilo(pid int, tid int, pseudocodigo string) {
+	// Crear hilo con pseudocódigo y agregarlo a la tabla de hilos
+	instrucciones, err := DesglosarPseudocodigo(pseudocodigo)
+
+	if err != nil {
+		log.Printf("Error al desglosar el pseudocódigo: %s\n")
+	}
+
+	globals.MemoriaSistema.Pseudocodigos[pid][tid] = &globals.InstruccionesHilo{Instrucciones: instrucciones}
+	globals.MemoriaSistema.TablaHilos[pid][tid] = &globals.ContextoHilo{AX: 0, BX: 0, CX: 0, DX: 0, EX: 0, FX: 0, GX: 0, HX: 0, PC: 0}
+}
+
+func DesglosarPseudocodigo(pseudocodigo string) ([]string, error) {
+	archivo, err := os.Open("/kernel/" + pseudocodigo)
+	if err != nil {
+		return nil, fmt.Errorf("error al abrir el archivo: %w", err)
+	}
+	defer archivo.Close()
+
+	var lineas []string
+
+	// Crear un scanner para leer línea por línea
+	scanner := bufio.NewScanner(archivo)
+	for scanner.Scan() {
+		lineas = append(lineas, scanner.Text())
+	}
+
+	// Comprobar si hubo errores durante la lectura
+	if err := scanner.Err(); err != nil {
+		return nil, fmt.Errorf("error al leer el archivo: %w", err)
+	}
+
+	return lineas, nil
 }

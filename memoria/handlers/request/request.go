@@ -58,3 +58,9 @@ type DumpMemoryFS struct {
 	Tamanio   int    `json:"tamanio"`
 	Contenido []byte `json:"contenido"`
 }
+
+type RequestCrearHilo struct {
+	Pid          int    `json:"pid"`
+	Tid          int    `json:"tid"`
+	Pseudocodigo string `json:"pseudocodigo"`
+}

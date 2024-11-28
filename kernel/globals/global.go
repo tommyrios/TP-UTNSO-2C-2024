@@ -2,6 +2,7 @@ package globals
 
 import (
 	"github.com/sisoputnfrba/tp-golang/utils/commons"
+	"sync"
 )
 
 type Config struct {
@@ -23,6 +24,7 @@ type Kernel struct {
 	ColaExit       []*commons.TCB       // Cola de hilos finalizados
 	HiloExecute    *commons.TCB         // Hilo en ejecución
 	ContadorPid    int                  // PID autoincremental
+	MtxReady       *sync.Mutex
 }
 
 var Estructura = &Kernel{
@@ -33,8 +35,9 @@ var Estructura = &Kernel{
 	ColaExit:       []*commons.TCB{},
 	HiloExecute:    nil,
 	ContadorPid:    1,
+	MtxReady:       &sync.Mutex{},
 }
 
 var KConfig *Config
-var HilosReady = make(chan int)
+var MutexPlanificacion sync.Mutex
 var Planificar = make(chan bool) // Verificar si no hay que poner

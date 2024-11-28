@@ -3,7 +3,6 @@ package globals
 import (
 	"errors"
 	"fmt"
-	"github.com/sisoputnfrba/tp-golang/utils/commons"
 )
 
 type Config struct {
@@ -30,22 +29,32 @@ type ContextoProceso struct {
 	Limite int // Límite (tamaño de memoria asignada)
 }
 
-type ContextoHilo commons.Registros //typedef de C!!
+type ContextoHilo struct {
+	PC uint32 `json:"pc"`
+	AX uint32 `json:"ax"`
+	BX uint32 `json:"bx"`
+	CX uint32 `json:"cx"`
+	DX uint32 `json:"dx"`
+	EX uint32 `json:"ex"`
+	FX uint32 `json:"fx"`
+	GX uint32 `json:"gx"`
+	HX uint32 `json:"hx"`
+}
 
 type InstruccionesHilo struct {
 	Instrucciones []string // Instrucciones leídas del pseudocódigo
 }
 
 type MemSistema struct {
-	TablaProcesos map[int]ContextoProceso           // Tabla de procesos (PID -> Contexto de proceso)
-	TablaHilos    map[int]map[int]ContextoHilo      // Tabla de hilos (PID -> TID -> Contexto de hilo)
-	Pseudocodigos map[int]map[int]InstruccionesHilo // Pseudocódigos (PID -> TID -> Código)
+	TablaProcesos map[int]*ContextoProceso           // Tabla de procesos (PID -> Contexto de proceso)
+	TablaHilos    map[int]map[int]*ContextoHilo      // Tabla de hilos (PID -> TID -> Contexto de hilo)
+	Pseudocodigos map[int]map[int]*InstruccionesHilo // Pseudocódigos (PID -> TID -> Código)
 }
 
 var MemoriaSistema = MemSistema{
-	TablaProcesos: make(map[int]ContextoProceso),
-	TablaHilos:    make(map[int]map[int]ContextoHilo),
-	Pseudocodigos: make(map[int]map[int]InstruccionesHilo),
+	TablaProcesos: make(map[int]*ContextoProceso),
+	TablaHilos:    make(map[int]map[int]*ContextoHilo),
+	Pseudocodigos: make(map[int]map[int]*InstruccionesHilo),
 }
 
 type MemUsuario struct {

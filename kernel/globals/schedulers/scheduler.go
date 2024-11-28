@@ -8,11 +8,10 @@ import (
 	"github.com/sisoputnfrba/tp-golang/utils/commons"
 	"log"
 	"sort"
-	"sync"
 	"time"
 )
 
-var mu sync.Mutex
+var mu = globals.Estructura.MtxReady
 
 func ManejarColaReady() {
 	switch globals.KConfig.SchedulerAlgorithm {
@@ -51,7 +50,9 @@ func ManejarColaReadyFIFO() {
 	for {
 		select {
 		case <-globals.Planificar:
+			mu.Lock()
 			pasarHiloAEjecutar()
+			mu.Unlock()
 		}
 	}
 }
@@ -65,9 +66,11 @@ func ManejarColaReadyPriority() {
 			}
 
 			// Ordenar la cola de ready por prioridad
+			mu.Lock()
 			sort.SliceStable(globals.Estructura.ColaReady, func(i, j int) bool {
 				return globals.Estructura.ColaReady[i].Prioridad < globals.Estructura.ColaReady[j].Prioridad
 			})
+			mu.Unlock()
 		}
 	}
 }
@@ -169,4 +172,12 @@ func executeThread(pcb *commons.PCB, tid int) {
 		log.Printf("Error al enviar el PCB %d al CPU.", pcb.Pid)
 		threads.FinalizarHilo(pcb.Pid, tid)
 	}
+}
+
+func PausarPlanificacion() {
+	globals.MutexPlanificacion.Lock()
+}
+
+func ReanudarPlanificacion() {
+	globals.MutexPlanificacion.Unlock()
 }

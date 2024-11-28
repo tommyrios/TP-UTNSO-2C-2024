@@ -70,3 +70,9 @@ type RequestDispatcher struct {
 	PCB *commons.PCB `json:"pcb"`
 	Tid int          `json:"tid"`
 }
+
+type RequestCrearHilo struct {
+	Pid          int    `json:"pid"`
+	Tid          int    `json:"tid"`
+	Pseudocodigo string `json:"pseudocodigo"`
+}

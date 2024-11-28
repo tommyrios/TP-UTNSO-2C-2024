@@ -5,6 +5,7 @@ import (
 	_ "github.com/sisoputnfrba/tp-golang/kernel/globals"
 	"github.com/sisoputnfrba/tp-golang/memoria/globals"
 	"github.com/sisoputnfrba/tp-golang/memoria/globals/functions"
+	"log"
 	"math"
 	"sync"
 )
@@ -135,4 +136,6 @@ func compactarMemoria() {
 	for i := nuevaPosicion; i < len(globals.MemoriaUsuario.Datos); i++ {
 		globals.MemoriaUsuario.Datos[i] = 0
 	}
+
+	log.Println("Compactacion finalizada.")
 }
