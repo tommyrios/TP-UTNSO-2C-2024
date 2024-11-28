@@ -24,7 +24,8 @@ func HandleProcessCreate(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	processes.CrearProceso(req.Pseudocodigo, req.TamanioMemoria, req.Prioridad)
+	w.WriteHeader(processes.CrearProceso(req.Pseudocodigo, req.TamanioMemoria, req.Prioridad))
+	w.Write([]byte("Proceso creado"))
 }
 
 func HandleThreadCreate(w http.ResponseWriter, r *http.Request) {

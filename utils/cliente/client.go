@@ -19,9 +19,7 @@ func Post(ip string, port int, ruta string, jsonData []byte) *http.Response {
 
 	defer response.Body.Close()
 
-	body, _ := io.ReadAll(response.Body)
-
-	log.Println("Respuesta POST:", string(body))
+	log.Println("Respuesta POST:", response.Status)
 
 	return response
 }

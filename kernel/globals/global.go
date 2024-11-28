@@ -22,8 +22,7 @@ type Kernel struct {
 	ColaBloqueados []*commons.TCB       // Cola de hilos bloqueados
 	ColaExit       []*commons.TCB       // Cola de hilos finalizados
 	HiloExecute    *commons.TCB         // Hilo en ejecución
-
-	ContadorPid int // PID autoincremental
+	ContadorPid    int                  // PID autoincremental
 }
 
 var Estructura = &Kernel{
@@ -38,4 +37,4 @@ var Estructura = &Kernel{
 
 var KConfig *Config
 var HilosReady = make(chan int)
-var CpuLibre = make(chan bool, 1)
+var Planificar = make(chan bool) // Verificar si no hay que poner

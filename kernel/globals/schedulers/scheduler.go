@@ -15,23 +15,22 @@ import (
 var mu sync.Mutex
 
 func ManejarColaReady() {
-	for {
-		globals.CpuLibre <- true
-		switch globals.KConfig.SchedulerAlgorithm {
-		case "FIFO":
-			ManejarColaReadyFIFO()
-		case "CMN":
-			ManejarColaReadyCMN()
-		case "PRIORITY":
-			ManejarColaReadyPriority()
-		}
+	switch globals.KConfig.SchedulerAlgorithm {
+	case "FIFO":
+
+		go ManejarColaReadyFIFO()
+	case "CMN":
+
+		go ManejarColaReadyCMN()
+	case "PRIORITY":
+		go ManejarColaReadyPriority()
 	}
 }
 
 func ManejarHiloRunning() {
 	for {
 		select {
-		case <-globals.CpuLibre:
+		case <-commons.CpuLibre:
 			mu.Lock()
 			hiloAEjecutar := globals.Estructura.ColaReady[0]
 			pcbHilo := queues.BuscarPCBEnColas(hiloAEjecutar.Pid)
@@ -50,85 +49,85 @@ func ManejarHiloRunning() {
 
 func ManejarColaReadyFIFO() {
 	for {
-		if len(globals.Estructura.ColaReady) == 0 {
-			continue
-		}
-
 		select {
-		case <-globals.CpuLibre:
+		case <-globals.Planificar:
 			pasarHiloAEjecutar()
-			go func() {
-				time.Sleep(time.Duration(globals.KConfig.Quantum)) // Preguntar cómo sabríamos si terminó el proceso
-
-				globals.CpuLibre <- true
-			}()
 		}
 	}
 }
 
 func ManejarColaReadyPriority() {
-	if len(globals.Estructura.ColaReady) == 0 {
-		return
-	}
+	for {
+		select {
+		case <-globals.Planificar:
+			if len(globals.Estructura.ColaReady) == 0 {
+				return
+			}
 
-	// Ordenar la cola de ready por prioridad
-	sort.SliceStable(globals.Estructura.ColaReady, func(i, j int) bool {
-		return globals.Estructura.ColaReady[i].Prioridad < globals.Estructura.ColaReady[j].Prioridad
-	})
+			// Ordenar la cola de ready por prioridad
+			sort.SliceStable(globals.Estructura.ColaReady, func(i, j int) bool {
+				return globals.Estructura.ColaReady[i].Prioridad < globals.Estructura.ColaReady[j].Prioridad
+			})
+		}
+	}
 }
 
 func ManejarColaReadyCMN() {
 	for {
-		if len(globals.Estructura.ColaReady) == 0 {
-			continue
-		}
+		select {
+		case <-globals.Planificar:
 
-		// Ordenar por prioridad y mantener orden FIFO para la misma prioridad
-		sort.SliceStable(globals.Estructura.ColaReady, func(i, j int) bool {
-			return globals.Estructura.ColaReady[i].Prioridad < globals.Estructura.ColaReady[j].Prioridad
-		})
+			if len(globals.Estructura.ColaReady) == 0 {
+				continue
+			}
 
-		// Crear un mapa para simular las colas por niveles de prioridad
-		priorityMap := make(map[int][]*commons.TCB)
-		for _, tcb := range globals.Estructura.ColaReady {
-			priorityMap[tcb.Prioridad] = append(priorityMap[tcb.Prioridad], tcb)
-		}
+			// Ordenar por prioridad y mantener orden FIFO para la misma prioridad
+			sort.SliceStable(globals.Estructura.ColaReady, func(i, j int) bool {
+				return globals.Estructura.ColaReady[i].Prioridad < globals.Estructura.ColaReady[j].Prioridad
+			})
 
-		// Iterar por las prioridades, de mayor a menor
-		for priority := range priorityMap {
-			queue := priorityMap[priority]
+			// Crear un mapa para simular las colas por niveles de prioridad
+			priorityMap := make(map[int][]*commons.TCB)
+			for _, tcb := range globals.Estructura.ColaReady {
+				priorityMap[tcb.Prioridad] = append(priorityMap[tcb.Prioridad], tcb)
+			}
 
-			for len(queue) > 0 {
-				select {
-				case <-globals.CpuLibre:
-					globals.Estructura.HiloExecute = queue[0]
+			// Iterar por las prioridades, de mayor a menor
+			for priority := range priorityMap {
+				queue := priorityMap[priority]
 
-					queue = queue[1:]
+				for len(queue) > 0 {
+					select {
+					case <-commons.CpuLibre:
+						globals.Estructura.HiloExecute = queue[0]
 
-					go func() {
-						quantumAgotado := false
-						for !quantumAgotado {
-							time.Sleep(time.Duration(globals.KConfig.Quantum))
+						queue = queue[1:]
 
-							if tieneMasPrioridad() {
-								// Si llega un hilo de mayor prioridad, desaloja el hilo actual
-								priorityMap[priority] = append(priorityMap[priority], globals.Estructura.HiloExecute)
-								// Notificar que la CPU está libre
-								globals.CpuLibre <- true
-								return // Termina la ejecución para dar paso al hilo de mayor prioridad
+						go func() {
+							quantumAgotado := false
+							for !quantumAgotado {
+								time.Sleep(time.Duration(globals.KConfig.Quantum))
+
+								if tieneMasPrioridad() {
+									// Si llega un hilo de mayor prioridad, desaloja el hilo actual
+									priorityMap[priority] = append(priorityMap[priority], globals.Estructura.HiloExecute)
+									// Notificar que la CPU está libre
+									commons.CpuLibre <- true
+									return // Termina la ejecución para dar paso al hilo de mayor prioridad
+								}
+
+								quantumAgotado = checkQuantumAgotado()
 							}
 
-							quantumAgotado = checkQuantumAgotado()
-						}
+							// Si el hilo terminó su quantum, se reubica al final de la cola
+							if !tieneMasPrioridad() {
+								queue = append(queue, globals.Estructura.HiloExecute)
+							}
 
-						// Si el hilo terminó su quantum, se reubica al final de la cola
-						if !tieneMasPrioridad() {
-							queue = append(queue, globals.Estructura.HiloExecute)
-						}
-
-						// Notificar que la CPU está libre
-						globals.CpuLibre <- true
-					}()
+							// Notificar que la CPU está libre
+							commons.CpuLibre <- true
+						}()
+					}
 				}
 			}
 		}

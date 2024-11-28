@@ -18,13 +18,12 @@ func ProcesoInicial(argumentos []string) {
 	prioridadHiloMain := 0
 
 	CrearProceso(pseudocodigo, tamanio, prioridadHiloMain)
-
-	log.Println(pseudocodigo, tamanio, prioridadHiloMain)
-
 }
 
-func CrearProceso(pseudocodigo string, tamanioMemoria int, prioridad int) {
+func CrearProceso(pseudocodigo string, tamanioMemoria int, prioridad int) int {
 	pcb := CrearPCB(pseudocodigo, tamanioMemoria, prioridad)
+
+	log.Printf("## (%d:0) Se crea el proceso - Estado: NEW", pcb.Pid)
 
 	if len(globals.Estructura.ColaNew) == 0 {
 		log.Println("Cola NEW está vacía, solicitando memoria.")
@@ -34,29 +33,26 @@ func CrearProceso(pseudocodigo string, tamanioMemoria int, prioridad int) {
 
 		if err != nil {
 			log.Println("Error al solicitar espacio en memoria.")
-			return
 		}
-
 		// Si la memoria aceptó el proceso, crearlo y pasarlo a READY
 		if respuestaMemoria.StatusCode == http.StatusOK {
 
 			threads.CrearHilo(pcb.Pid, prioridad, pseudocodigo)
 
-			log.Println("Proceso creado y movido a READY")
-
+			log.Printf("Proceso %d movido a READY\n", pcb.Pid)
 		} else {
 			if respuestaMemoria.StatusCode == http.StatusConflict {
 				log.Println("Memoria no tiene suficiente espacio. Proceso en espera.")
 			}
 			queues.AgregarProcesoACola(pcb, globals.Estructura.ColaNew)
 		}
-
 	} else {
 		log.Println("Cola NEW no está vacía, proceso se encola en NEW.")
 
 		queues.AgregarProcesoACola(pcb, globals.Estructura.ColaNew)
 	}
-	log.Printf("## (%d:0) Se crea el proceso - Estado: NEW", pcb.Pid)
+
+	return http.StatusOK
 }
 
 func CrearPCB(pseudocodigo string, tamanio int, prioridad int) *commons.PCB {
@@ -72,6 +68,8 @@ func CrearPCB(pseudocodigo string, tamanio int, prioridad int) *commons.PCB {
 	}
 
 	globals.Estructura.ContadorPid++
+
+	globals.Estructura.Procesos[pcb.Pid] = &pcb
 
 	return &pcb
 }

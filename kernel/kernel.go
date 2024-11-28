@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"github.com/sisoputnfrba/tp-golang/kernel/globals/processes"
 	"github.com/sisoputnfrba/tp-golang/kernel/globals/schedulers"
+	"github.com/sisoputnfrba/tp-golang/utils/commons"
 	"log"
 	"net/http"
 	"os"
@@ -35,12 +36,12 @@ func main() {
 	processes.ProcesoInicial(os.Args)
 
 	//// Rutinas ////
-	globals.CpuLibre <- true
-	go schedulers.ManejarColaReady()
+	commons.CpuLibre <- true
+	schedulers.ManejarColaReady()
 	go schedulers.ManejarHiloRunning()
 
 	mux := http.NewServeMux()
-	http.HandleFunc("POST /syscall/process_create", handlers.HandleProcessCreate)
+	http.HandleFunc("/syscall/process_create", handlers.HandleProcessCreate)
 	http.HandleFunc("/syscall/thread_create", handlers.HandleThreadCreate)
 	http.HandleFunc("/syscall/process_exit", handlers.HandleProcessExit)
 	http.HandleFunc("/syscall/thread_exit", handlers.HandleThreadExit)

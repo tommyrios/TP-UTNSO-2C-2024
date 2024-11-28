@@ -28,7 +28,7 @@ func CrearHilo(pid int, prioridad int, pseudocodigo string) {
 
 	//Avisar a memoria creacion de hilo!!! no hace falta la respuesta
 
-	<-globals.HilosReady
+	//<-globals.HilosReady
 
 	log.Printf("## (%d:%d) Se crea el Hilo - Estado: READY", pcb.Pid, tcb.Tid)
 }
@@ -69,6 +69,8 @@ func FinalizarHilo(pid int, tid int) {
 	}
 
 	log.Printf("## (%d:%d) Finaliza el hilo", pid, tid)
+
+	commons.CpuLibre <- true
 }
 
 func BuscarHiloEnPCB(pid int, tid int) *commons.TCB {

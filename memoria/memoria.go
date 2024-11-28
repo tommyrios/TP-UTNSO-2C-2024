@@ -40,7 +40,7 @@ func main() {
 	mux.HandleFunc("/obtener_instruccion", handlers.HandleObtenerInstruccion)
 	mux.HandleFunc("/read_mem", handlers.HandleReadMemory)
 	mux.HandleFunc("/write_mem", handlers.HandleWriteMemory)
-	mux.HandleFunc("GET /proceso", handlers.HandleSolicitarProceso)
+	mux.HandleFunc("/process", handlers.HandleSolicitarProceso)
 	mux.HandleFunc("/finalizar_proceso", handlers.HandleFinalizarProceso)
 	mux.HandleFunc("/finalizar_hilo", handlers.HandleFinalizarHilo)
 	mux.HandleFunc("/memory_dump", handlers.HandleMemoryDump)

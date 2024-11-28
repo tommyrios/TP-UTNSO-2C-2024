@@ -79,6 +79,7 @@ type IoDispatch struct {
 
 var PidCounter int = 1
 var MutexPidCounter sync.Mutex
+var CpuLibre = make(chan bool, 1)
 
 // w es el cuerpo de la respuesta y r es el cuerpo de la solicitud
 func RecibirMensaje(w http.ResponseWriter, r *http.Request) {
