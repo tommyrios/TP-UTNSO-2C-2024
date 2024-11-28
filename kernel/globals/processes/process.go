@@ -126,5 +126,5 @@ func SolicitarProcesoMemoria(pid int, pseudocodigo string, tamanio int) (*http.R
 		return nil, err
 	}
 
-	return cliente.Post(globals.KConfig.IpMemory, globals.KConfig.PortMemory, "process", solicitudCodificada), nil
+	return cliente.Post(globals.KConfig.IpMemory, globals.KConfig.PortMemory, "crear_proceso", solicitudCodificada), nil
 }

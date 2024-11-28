@@ -37,14 +37,14 @@ func main() {
 	mux := http.NewServeMux()
 	mux.HandleFunc("/contexto_de_ejecucion", handlers.HandleDevolverContexto)
 	mux.HandleFunc("/actualizar_contexto", handlers.HandleActualizarContexto)
-	mux.HandleFunc("/obtener_instruccion", handlers.HandleObtenerInstruccion)
+	mux.HandleFunc("/obtener_instruccion", handlers.HandleEnviarInstruccion)
 	mux.HandleFunc("/read_mem", handlers.HandleReadMemory)
 	mux.HandleFunc("/write_mem", handlers.HandleWriteMemory)
-	mux.HandleFunc("/process", handlers.HandleSolicitarProceso)
+	mux.HandleFunc("/crear_proceso", handlers.HandleCrearProceso)
 	mux.HandleFunc("/finalizar_proceso", handlers.HandleFinalizarProceso)
+	mux.HandleFunc("/crear_hilo", handlers.HandleCrearHilo)
 	mux.HandleFunc("/finalizar_hilo", handlers.HandleFinalizarHilo)
 	mux.HandleFunc("/memory_dump", handlers.HandleMemoryDump)
-	//mux.HandleFunc("/crear_hilo", handlers.HandleCrearHilo)
 
 	port := fmt.Sprintf(":%d", globals.MConfig.Port)
 

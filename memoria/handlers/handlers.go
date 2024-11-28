@@ -5,9 +5,10 @@ import (
 	"github.com/sisoputnfrba/tp-golang/memoria/globals"
 	"github.com/sisoputnfrba/tp-golang/memoria/globals/functions"
 	"github.com/sisoputnfrba/tp-golang/memoria/globals/schemes"
-	request3 "github.com/sisoputnfrba/tp-golang/memoria/handlers/request"
+	"github.com/sisoputnfrba/tp-golang/memoria/handlers/requests"
 	"github.com/sisoputnfrba/tp-golang/utils/cliente"
 	"github.com/sisoputnfrba/tp-golang/utils/commons"
+	"log"
 	"net/http"
 	"time"
 )
@@ -16,7 +17,7 @@ import (
 //Agregar retardo en peticiones!!
 
 func HandleDevolverContexto(w http.ResponseWriter, r *http.Request) {
-	var request request3.RequestContexto
+	var request requests.RequestContexto
 
 	time.Sleep(time.Duration(globals.MConfig.ResponseDelay) * time.Millisecond)
 
@@ -29,12 +30,12 @@ func HandleDevolverContexto(w http.ResponseWriter, r *http.Request) {
 
 	registros := functions.ObtenerRegistros(request.Pid, request.Tid)
 
-	var response request3.ResponseContexto
+	var response requests.ResponseContexto
 	response.Registros = registros
 	response.Pid = request.Pid
 	response.Tid = request.Tid
 
-	base, limite := functions.ObtenerBaseLimite(request.Pid, request.Tid) // ¡¡¡Falta implementar esta función!!!!
+	base, limite := functions.ObtenerBaseLimite(request.Pid)
 
 	response.Base = base
 	response.Limite = limite
@@ -46,11 +47,14 @@ func HandleDevolverContexto(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	cliente.Post(globals.MConfig.IpCpu, globals.MConfig.PortCpu, "/contexto_de_ejecucion", responseCodificada)
+	w.WriteHeader(http.StatusOK)
+	w.Write(responseCodificada)
+	log.Printf("## Contexto solicitado - (PID:TID) - (%d:%d)\n", request.Pid, request.Tid)
+
 }
 
 func HandleActualizarContexto(w http.ResponseWriter, r *http.Request) {
-	var request request3.RequestActualizarContexto
+	var request requests.RequestActualizarContexto
 
 	time.Sleep(time.Duration(globals.MConfig.ResponseDelay) * time.Millisecond)
 
@@ -65,16 +69,18 @@ func HandleActualizarContexto(w http.ResponseWriter, r *http.Request) {
 
 	if err != nil {
 		http.Error(w, "Error actualizando los registros", http.StatusInternalServerError)
+		log.Printf("Error al actualizar los registros - (PID:TID) - (%d:%d)\n", request.Pid, request.Tid)
 		return
 	}
 
 	// Responder con éxito si se actualizaron correctamente
 	w.WriteHeader(http.StatusOK)
 	w.Write([]byte("OK"))
+	log.Printf("## Contexto actualizado - (PID:TID) - (%d:%d)\n", request.Pid, request.Tid)
 }
 
-func HandleObtenerInstruccion(w http.ResponseWriter, r *http.Request) {
-	var request request3.RequestObtenerInstruccion
+func HandleEnviarInstruccion(w http.ResponseWriter, r *http.Request) {
+	var request requests.RequestObtenerInstruccion
 
 	time.Sleep(time.Duration(globals.MConfig.ResponseDelay) * time.Millisecond)
 
@@ -89,21 +95,24 @@ func HandleObtenerInstruccion(w http.ResponseWriter, r *http.Request) {
 
 	if err != nil {
 		http.Error(w, fmt.Sprintf("Error al obtener la instrucción: %s", err.Error()), http.StatusInternalServerError)
+		log.Printf("Error al obtener la instrucción - (PID:TID) - (%d:%d)\n", request.Pid, request.Tid)
 		return
 	}
 
-	responseCodificada, err := commons.CodificarJSON(instruccion)
+	instruccionCodificada, err := commons.CodificarJSON(instruccion)
 
 	if err != nil {
 		http.Error(w, "Error al codificar el JSON", http.StatusBadRequest)
 		return
 	}
 
-	cliente.Post(globals.MConfig.IpCpu, globals.MConfig.PortCpu, "/instruccion", responseCodificada)
+	w.WriteHeader(http.StatusOK)
+	w.Write(instruccionCodificada)
+	log.Printf("## Obtener instrucción - (PID:TID) - (%d:%d) - Instrucción: %s\n", request.Pid, request.Tid, instruccion)
 }
 
 func HandleReadMemory(w http.ResponseWriter, r *http.Request) {
-	var request request3.RequestMemory
+	var request requests.RequestReadMemory
 
 	time.Sleep(time.Duration(globals.MConfig.ResponseDelay) * time.Millisecond)
 
@@ -114,25 +123,28 @@ func HandleReadMemory(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	response, err := functions.LeerMemoria(request.Byte)
+	response, err := functions.LeerMemoria(request.Byte, request.Pid)
 
 	if err != nil {
 		http.Error(w, fmt.Sprintf("Error al leer la memoria: %s", err.Error()), http.StatusInternalServerError)
+		log.Printf("Error al leer la memoria - (PID:TID) - (%d:%d)\n", request.Pid, request.Tid)
 		return
 	}
 
-	responseCodificada, err := commons.CodificarJSON(response)
+	bytesSolicitados, err := commons.CodificarJSON(response)
 
 	if err != nil {
 		http.Error(w, "Error al codificar el JSON", http.StatusBadRequest)
 		return
 	}
 
-	cliente.Post(globals.MConfig.IpCpu, globals.MConfig.PortCpu, "/lectura_memoria", responseCodificada)
+	w.WriteHeader(http.StatusOK)
+	w.Write(bytesSolicitados)
+	log.Printf("## Lectura - (PID:TID) - (%d:%d) - Dir. Física: %d - Tamaño: %d\n", request.Pid, request.Tid, int(request.Byte), len(response))
 }
 
 func HandleWriteMemory(w http.ResponseWriter, r *http.Request) {
-	var request request3.RequestMemory
+	var request requests.RequestWriteMemory
 
 	time.Sleep(time.Duration(globals.MConfig.ResponseDelay) * time.Millisecond)
 
@@ -140,6 +152,7 @@ func HandleWriteMemory(w http.ResponseWriter, r *http.Request) {
 
 	if err != nil {
 		http.Error(w, "Error al decodificar el JSON", http.StatusBadRequest)
+		log.Printf("Error al escribir la memoria - (PID:TID) - (%d:%d)\n", request.Pid, request.Tid)
 		return
 	}
 
@@ -152,27 +165,15 @@ func HandleWriteMemory(w http.ResponseWriter, r *http.Request) {
 
 	w.WriteHeader(http.StatusOK)
 	w.Write([]byte("OK"))
+	log.Printf("## Escritura - (PID:TID) - (%d:%d) - Dir. Física: %d - Tamaño: %d\n", request.Pid, request.Tid, int(request.Byte), len(request.Datos))
 }
 
 // ¡¡¡¡¡HANDLERS KERNEL!!!!!
 
-func HandleCrearHilo(w http.ResponseWriter, r *http.Request) {
-	var req request3.RequestCrearHilo
+func HandleCrearProceso(w http.ResponseWriter, r *http.Request) {
+	var procesoRequest requests.RequestProcesoMemoria
 
-	err := commons.DecodificarJSON(r.Body, &req)
-
-	if err != nil {
-		http.Error(w, "Error al decodificar el JSON", http.StatusBadRequest)
-		return
-	}
-
-	functions.CrearHilo(req.Pid, req.Tid, req.Pseudocodigo)
-}
-
-func HandleSolicitarProceso(w http.ResponseWriter, r *http.Request) {
-	var req request3.RequestProcesoMemoria
-
-	err := commons.DecodificarJSON(r.Body, &req)
+	err := commons.DecodificarJSON(r.Body, &procesoRequest)
 
 	if err != nil {
 		http.Error(w, "Error al decodificar el JSON", http.StatusBadRequest)
@@ -180,13 +181,20 @@ func HandleSolicitarProceso(w http.ResponseWriter, r *http.Request) {
 	}
 
 	// Lógica de asignación de espacio
-	err = schemes.AsignarParticion(req.Pid, req.TamanioMemoria)
+	err = schemes.AsignarParticion(procesoRequest.Pid, procesoRequest.TamanioMemoria)
+
+	if err != nil {
+		w.WriteHeader(http.StatusInternalServerError)
+		log.Printf("El proceso %d no pudo ser inicializado\n", procesoRequest.Pid)
+		return
+	}
 
 	w.WriteHeader(http.StatusOK)
+	log.Printf("## Proceso creado -  PID: %d - Tamaño: %d", procesoRequest.Pid, procesoRequest.TamanioMemoria)
 }
 
 func HandleFinalizarProceso(w http.ResponseWriter, r *http.Request) {
-	var req request3.RequestFinalizarProceso
+	var req requests.RequestFinalizarProceso
 
 	err := commons.DecodificarJSON(r.Body, &req)
 	if err != nil {
@@ -194,14 +202,16 @@ func HandleFinalizarProceso(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	_, existe := globals.MemoriaSistema.TablaProcesos[req.Pid]
-	if !existe {
-		http.Error(w, "Proceso no encontrado", http.StatusNotFound)
+	// Liberamos la partición
+	err = functions.LiberarProceso(req.Pid)
+
+	if err != nil {
+		http.Error(w, "Error al liberar la partición", http.StatusInternalServerError)
+		log.Printf("El proceso %d no pudo ser destruido\n", req.Pid)
 		return
 	}
 
-	// Liberamos la partición
-	err = functions.LiberarProceso(req.Pid)
+	tamanioProceso := functions.ObtenerTamanioMemoria(req.Pid)
 
 	// Eliminar las estructuras correspondientes del proceso en la Memoria del Sistema
 	delete(globals.MemoriaSistema.TablaProcesos, req.Pid)
@@ -210,10 +220,33 @@ func HandleFinalizarProceso(w http.ResponseWriter, r *http.Request) {
 
 	w.WriteHeader(http.StatusOK)
 	w.Write([]byte("OK"))
+	log.Printf("## Proceso destruido -  PID: %d - Tamaño: %d", req.Pid, tamanioProceso)
+}
+
+func HandleCrearHilo(w http.ResponseWriter, r *http.Request) {
+	var req requests.RequestCrearHilo
+
+	err := commons.DecodificarJSON(r.Body, &req)
+
+	if err != nil {
+		http.Error(w, "Error al decodificar el JSON", http.StatusBadRequest)
+		return
+	}
+
+	err = functions.CrearHiloMemoria(req.Pid, req.Tid, req.Pseudocodigo)
+
+	if err != nil {
+		http.Error(w, "Error al crear el hilo", http.StatusInternalServerError)
+		log.Printf("El hilo %d no pudo ser creado\n", req.Tid)
+		return
+	}
+
+	w.WriteHeader(http.StatusOK)
+	log.Printf("## Hilo creado - (PID:TID) - (%d:%d)", req.Pid, req.Tid)
 }
 
 func HandleFinalizarHilo(w http.ResponseWriter, r *http.Request) {
-	var req request3.RequestFinalizarHilo
+	var req requests.RequestFinalizarHilo
 
 	err := commons.DecodificarJSON(r.Body, &req)
 	if err != nil {
@@ -224,6 +257,7 @@ func HandleFinalizarHilo(w http.ResponseWriter, r *http.Request) {
 	_, existe := globals.MemoriaSistema.TablaHilos[req.Pid][req.Tid]
 	if !existe {
 		http.Error(w, "Hilo no encontrado", http.StatusNotFound)
+		log.Printf("El hilo %d no pudo ser destruido\n", req.Tid)
 		return
 	}
 
@@ -233,24 +267,25 @@ func HandleFinalizarHilo(w http.ResponseWriter, r *http.Request) {
 
 	w.WriteHeader(http.StatusOK)
 	w.Write([]byte("OK"))
+	log.Printf("## Hilo destruido - (PID:TID) - (%d:%d)", req.Pid, req.Tid)
 }
 
 func HandleMemoryDump(w http.ResponseWriter, r *http.Request) {
-	var req request3.RequestDumpMemory
+	var req requests.RequestDumpMemory
 
 	err := commons.DecodificarJSON(r.Body, &req)
 	if err != nil {
 		http.Error(w, "Error al decodificar el JSON", http.StatusBadRequest)
 		return
 	}
-	base, limite := functions.ObtenerBaseLimite(req.Pid, req.Tid)
+	base, limite := functions.ObtenerBaseLimite(req.Pid)
 	// Obtener el contenido de la memoria del proceso
-	TamanioMemoriaProceso := functions.ObtenerTamanioMemoria(base, limite)
+	TamanioMemoriaProceso := functions.ObtenerTamanioMemoria(req.Pid)
 	ContenidoProceso := functions.ObtenerContenidoMemoria(base, limite)
 
 	// Solicitar al FileSystem la creación del archivo y escribir el contenido
 
-	solicitud := request3.DumpMemoryFS{
+	solicitud := requests.DumpMemoryFS{
 		Pid:       req.Pid,
 		Tid:       req.Tid,
 		Tamanio:   TamanioMemoriaProceso,
@@ -268,7 +303,10 @@ func HandleMemoryDump(w http.ResponseWriter, r *http.Request) {
 	if response != nil && response.StatusCode == http.StatusOK {
 		w.WriteHeader(http.StatusOK)
 		w.Write([]byte("OK"))
+		log.Printf("## Memory Dump solicitado - (PID:TID) - (%d:%d)", req.Pid, req.Tid)
 	} else {
-		http.Error(w, "Error al solicitar el dump de memoria al FileSystem", http.StatusInternalServerError)
+		w.WriteHeader(http.StatusInternalServerError)
+		w.Write([]byte("Error al realizar el dump de memoria"))
+		log.Printf("Error al realizar el dump de memoria - (PID:TID) - (%d:%d)", req.Pid, req.Tid)
 	}
 }

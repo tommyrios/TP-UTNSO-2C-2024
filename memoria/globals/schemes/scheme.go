@@ -14,6 +14,7 @@ var CompactacionCond = sync.NewCond(&sync.Mutex{})
 
 func AsignarParticion(pid int, tamanioProceso int) error {
 	indice, err := buscarParticion(tamanioProceso)
+
 	if err != nil {
 		return err
 	}

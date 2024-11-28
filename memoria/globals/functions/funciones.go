@@ -5,13 +5,14 @@ import (
 	"errors"
 	"fmt"
 	"github.com/sisoputnfrba/tp-golang/memoria/globals"
-	"github.com/sisoputnfrba/tp-golang/utils/commons"
 	"log"
 	"net/http"
 	"os"
 )
 
 type MemUsuario globals.MemUsuario
+
+// FUNCIONES CPU
 
 func ObtenerRegistros(pid int, tid int) globals.ContextoHilo {
 
@@ -26,21 +27,9 @@ func ObtenerBaseLimite(pid int) (int, int) {
 	return base, limite
 }
 
-func ObtenerTamanioMemoria(base int, limite int) int {
-	return limite - base
-}
-
-func ActualizarRegistros(pid int, tid int, registrosActualizados commons.Registros) error {
+func ActualizarRegistros(pid int, tid int, registrosActualizados globals.ContextoHilo) error {
 
 	registrosAActualizar := globals.MemoriaSistema.TablaHilos[pid][tid]
-
-	/* Chequear error de nil
-
-	if registrosAActualizar.PC == nil {
-		return fmt.Errorf("Registros no encontrados para PID %d y TID %d", pid, tid)
-	}
-
-	*/
 
 	registrosAActualizar.PC = registrosActualizados.PC
 	registrosAActualizar.AX = registrosActualizados.AX
@@ -66,6 +55,48 @@ func ObtenerInstruccion(pid int, tid int, pc uint32) (string, error) {
 	return instruccion, nil
 }
 
+func ObtenerTamanioMemoria(pid int) int {
+	return globals.MemoriaSistema.TablaProcesos[pid].Limite - globals.MemoriaSistema.TablaProcesos[pid].Base + 1
+}
+
+func LeerMemoria(byteDireccion byte, pid int) ([]byte, error) {
+
+	direccion := int(byteDireccion)
+
+	if direccion < 0 || direccion+4 >= len(globals.MemoriaUsuario.Datos) {
+		return nil, fmt.Errorf("dirección de memoria inválida")
+	}
+
+	for _, particion := range globals.MemoriaUsuario.Particiones {
+		if direccion >= particion.Base && direccion+4 <= particion.Limite && particion.Pid == pid {
+			return globals.MemoriaUsuario.Datos[direccion : direccion+4], nil
+		}
+	}
+
+	return nil, fmt.Errorf("segmentation fault")
+}
+
+func EscribirMemoria(byteDireccion byte, pid int, datos []byte) error {
+
+	if len(datos) != 4 {
+		return fmt.Errorf("se deben proporcionar exactamente 4 bytes")
+	}
+
+	direccion := int(byteDireccion)
+
+	for _, particion := range globals.MemoriaUsuario.Particiones {
+		if direccion >= particion.Base && direccion+4 <= particion.Limite && particion.Pid == pid {
+			copy(globals.MemoriaUsuario.Datos[direccion:direccion+4], datos)
+		} else {
+			return fmt.Errorf("segmentation fault")
+		}
+	}
+
+	return nil
+}
+
+// FUNCIONES KERNEL
+
 func LiberarProceso(pid int) error {
 	indice := -1
 	particiones := globals.MemoriaUsuario.Particiones
@@ -88,14 +119,14 @@ func LiberarProceso(pid int) error {
 	if globals.MConfig.Scheme == "DINAMICAS" {
 		// Consolidar con partición anterior si está libre
 		if indice > 0 && particiones[indice-1].Libre {
-			particiones[indice-1].Limite += particiones[indice].Limite
+			particiones[indice-1].Limite = particiones[indice].Limite
 			particiones = append(particiones[:indice], particiones[indice+1:]...)
 			indice-- // Actualiza índice después de la consolidación
 		}
 
 		// Consolidar con partición siguiente si está libre
 		if indice < len(particiones)-1 && particiones[indice+1].Libre {
-			particiones[indice].Limite += particiones[indice+1].Limite
+			particiones[indice].Limite = particiones[indice+1].Limite
 			particiones = append(particiones[:indice+1], particiones[indice+2:]...)
 		}
 	}
@@ -103,87 +134,19 @@ func LiberarProceso(pid int) error {
 	return nil
 }
 
-func LeerMemoria(byteDireccion byte) ([]byte, error) {
-
-	direccion := int(byteDireccion)
-
-	if direccion < 0 || direccion+4 >= len(globals.MemoriaUsuario.Datos) {
-		return nil, fmt.Errorf("dirección de memoria inválida")
-	}
-
-	//verificar segmentation fault
-	return globals.MemoriaUsuario.Datos[direccion : direccion+4], nil
-}
-
-func EscribirMemoria(byteDireccion byte, pid int, datos []byte) error {
-
-	if len(datos) != 4 {
-		return fmt.Errorf("se deben proporcionar exactamente 4 bytes")
-	}
-
-	proceso := globals.MemoriaSistema.TablaProcesos[pid]
-
-	direccionFisica := proceso.Base + int(byteDireccion)
-
-	if direccionFisica < 0 || direccionFisica+4 >= proceso.Limite {
-		return fmt.Errorf("segmentation fault")
-	}
-
-	copy(globals.MemoriaUsuario.Datos[direccionFisica:direccionFisica+4], datos)
-
-	return nil
-}
-
-func EspacioLibreTotal() int {
-	espacioLibre := 0
-	particiones := globals.MemoriaUsuario.Particiones
-
-	for _, particion := range particiones {
-		if particion.Libre { // 0 indica espacio libre
-			espacioLibre += 1 + (particion.Limite - particion.Base)
-		}
-	}
-
-	return espacioLibre
-}
-
-func SolicitarCompactacion() bool {
-	// Enviar solicitud HTTP al Kernel para compactación
-	response, err := http.Post(fmt.Sprintf("http://%s:%d/compactar", globals.MConfig.IpKernel, globals.MConfig.PortKernel), "application/json", nil)
-	if err != nil || response.StatusCode != http.StatusOK {
-		return false // Falló la solicitud o el Kernel no aprobó la compactación
-	}
-	log.Println("Compactacion solicitada.")
-	return true
-}
-
-func NotificarFinalizacionCompactacion() {
-	// Notificar al Kernel que la compactación ha finalizado
-	http.Post(fmt.Sprintf("http://%s:%d/compactacion_finalizada", globals.MConfig.IpKernel, globals.MConfig.PortKernel), "application/json", nil)
-}
-
-func ObtenerContenidoMemoria(base, limite int) []byte {
-	if base < 0 || limite >= len(globals.MemoriaUsuario.Datos) || base > limite {
-		return nil
-	}
-
-	tamanio := limite - base + 1
-	contenido := make([]byte, tamanio)
-	copy(contenido, globals.MemoriaUsuario.Datos[base:limite+1])
-
-	return contenido
-}
-
-func CrearHilo(pid int, tid int, pseudocodigo string) {
+func CrearHiloMemoria(pid int, tid int, pseudocodigo string) error {
 	// Crear hilo con pseudocódigo y agregarlo a la tabla de hilos
 	instrucciones, err := DesglosarPseudocodigo(pseudocodigo)
 
 	if err != nil {
-		log.Printf("Error al desglosar el pseudocódigo: %s\n")
+		log.Printf("Error al desglosar el pseudocódigo: %s\n", pseudocodigo)
+		return err
 	}
 
 	globals.MemoriaSistema.Pseudocodigos[pid][tid] = &globals.InstruccionesHilo{Instrucciones: instrucciones}
 	globals.MemoriaSistema.TablaHilos[pid][tid] = &globals.ContextoHilo{AX: 0, BX: 0, CX: 0, DX: 0, EX: 0, FX: 0, GX: 0, HX: 0, PC: 0}
+
+	return nil
 }
 
 func DesglosarPseudocodigo(pseudocodigo string) ([]string, error) {
@@ -207,4 +170,46 @@ func DesglosarPseudocodigo(pseudocodigo string) ([]string, error) {
 	}
 
 	return lineas, nil
+}
+
+func ObtenerContenidoMemoria(base, limite int) []byte {
+	if base < 0 || limite >= len(globals.MemoriaUsuario.Datos) || base > limite {
+		return nil
+	}
+
+	tamanio := limite - base + 1
+	contenido := make([]byte, tamanio)
+	copy(contenido, globals.MemoriaUsuario.Datos[base:limite+1])
+
+	return contenido
+}
+
+// FUNCIONES MEMORIA (PARA PARTICIONAMIENTO)
+
+func EspacioLibreTotal() int {
+	espacioLibre := 0
+	particiones := globals.MemoriaUsuario.Particiones
+
+	for _, particion := range particiones {
+		if particion.Libre { // 0 indica espacio libre
+			espacioLibre += 1 + (particion.Limite - particion.Base)
+		}
+	}
+
+	return espacioLibre
+}
+
+func SolicitarCompactacion() bool {
+	// Enviar solicitud HTTP al Kernel para compactación
+	response, err := http.Post(fmt.Sprintf("http://%s:%d/compactacion", globals.MConfig.IpKernel, globals.MConfig.PortKernel), "application/json", nil)
+	if err != nil || response.StatusCode != http.StatusOK {
+		return false // Falló la solicitud o el Kernel no aprobó la compactación
+	}
+	log.Println("Compactacion solicitada.")
+	return true
+}
+
+func NotificarFinalizacionCompactacion() {
+	// Notificar al Kernel que la compactación ha finalizado
+	http.Post(fmt.Sprintf("http://%s:%d/compactacion_finalizada", globals.MConfig.IpKernel, globals.MConfig.PortKernel), "application/json", nil)
 }
