@@ -11,4 +11,11 @@ type Config struct {
 	LogLevel         string `json:"log_level"`
 }
 
+type Metadata struct {
+	IndexBlock int `json:"index_block"`
+	Size       int `json:"size"`
+}
+
 var FSConfig *Config
+
+var FSMetadata *Metadata
