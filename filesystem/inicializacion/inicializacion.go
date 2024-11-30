@@ -75,25 +75,23 @@ func crearBloques(ruta string) error {
 	return nil
 }
 
-func crearMetadata(ruta string, pid int, tid int, tamaño int, indexBlock int) error {
-	timestamp := time.Now().Format("15:04:05.000")
+func CrearMetadata(ruta string, pid int, tid int, tamaño int, indexBlock int) (error, string) {
+	timestamp := time.Now().Format("150405.000")
 	nombreArchivo := fmt.Sprintf("%d-%d-%s.dmp", pid, tid, timestamp)
 
-	files := filepath.Join(ruta, nombreArchivo)
-	err := os.MkdirAll(files, os.ModePerm)
+	rutaArchivo := filepath.Join(ruta, nombreArchivo)
+
+	err := os.MkdirAll(ruta, os.ModePerm)
 	if err != nil {
-		return fmt.Errorf("error creando carpeta /files: %w", err)
+		return fmt.Errorf("error creando directorio %s: %w", ruta, err), ""
 	}
 
-	rutaMetadata := filepath.Join(files, nombreArchivo)
-
-	archivo, err := os.Create(rutaMetadata)
+	archivo, err := os.Create(rutaArchivo)
 	if err != nil {
-		return fmt.Errorf("error creando archivo de metadata: %w", err)
+		return fmt.Errorf("error creando archivo de metadata %s: %w", rutaArchivo, err), ""
 	}
 	defer archivo.Close()
 
-	// Crear la estructura Metadata
 	metadata := globals.Metadata{
 		IndexBlock: indexBlock,
 		Size:       tamaño,
@@ -101,13 +99,13 @@ func crearMetadata(ruta string, pid int, tid int, tamaño int, indexBlock int) e
 
 	json, err := commons.CodificarJSON(metadata)
 	if err != nil {
-		return fmt.Errorf("error codificando metadata en JSON: %w", err)
+		return fmt.Errorf("error codificando metadata a JSON: %w", err), ""
 	}
 
 	_, err = archivo.Write(json)
 	if err != nil {
-		return fmt.Errorf("error escribiendo metadata en archivo: %w", err)
+		return fmt.Errorf("error escribiendo metadata en el archivo: %w", err), ""
 	}
 
-	return nil
+	return nil, nombreArchivo
 }
