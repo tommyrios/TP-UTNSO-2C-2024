@@ -143,6 +143,8 @@ func CrearHiloMemoria(pid int, tid int, pseudocodigo string) error {
 		return err
 	}
 
+	globals.MemoriaSistema.TablaHilos[pid] = make(map[int]*globals.ContextoHilo)
+	globals.MemoriaSistema.Pseudocodigos[pid] = make(map[int]*globals.InstruccionesHilo)
 	globals.MemoriaSistema.Pseudocodigos[pid][tid] = &globals.InstruccionesHilo{Instrucciones: instrucciones}
 	globals.MemoriaSistema.TablaHilos[pid][tid] = &globals.ContextoHilo{AX: 0, BX: 0, CX: 0, DX: 0, EX: 0, FX: 0, GX: 0, HX: 0, PC: 0}
 
@@ -150,7 +152,7 @@ func CrearHiloMemoria(pid int, tid int, pseudocodigo string) error {
 }
 
 func DesglosarPseudocodigo(pseudocodigo string) ([]string, error) {
-	archivo, err := os.Open("/kernel/" + pseudocodigo)
+	archivo, err := os.Open(pseudocodigo)
 	if err != nil {
 		return nil, fmt.Errorf("error al abrir el archivo: %w", err)
 	}

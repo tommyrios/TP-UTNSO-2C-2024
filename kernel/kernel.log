@@ -157,3 +157,99 @@
 2024/11/27 21:09:12 Proceso 1 movido a READY
 2024/11/27 21:09:12 El módulo kernel está a la escucha en el puerto :8001
 2024/11/27 21:09:12 Respuesta POST: 404 Not Found
+2024/11/30 18:09:51 ## (1:0) Se crea el proceso - Estado: NEW
+2024/11/30 18:09:51 Cola NEW está vacía, solicitando memoria.
+2024/11/30 18:09:51 Respuesta POST: 500 Internal Server Error
+2024/11/30 18:12:09 ## (1:0) Se crea el proceso - Estado: NEW
+2024/11/30 18:12:09 Cola NEW está vacía, solicitando memoria.
+2024/11/30 18:12:09 Respuesta POST: 500 Internal Server Error
+2024/11/30 18:12:09 CPU libre
+2024/11/30 18:12:52 ## (1:0) Se crea el proceso - Estado: NEW
+2024/11/30 18:12:52 Cola NEW está vacía, solicitando memoria.
+2024/11/30 18:12:52 Respuesta POST: 500 Internal Server Error
+2024/11/30 18:13:14 ## (1:0) Se crea el proceso - Estado: NEW
+2024/11/30 18:13:14 Cola NEW está vacía, solicitando memoria.
+2024/11/30 18:13:14 Respuesta POST: 500 Internal Server Error
+2024/11/30 18:13:14 []
+2024/11/30 18:16:20 ## (1:0) Se crea el proceso - Estado: NEW
+2024/11/30 18:16:20 Cola NEW está vacía, solicitando memoria.
+2024/11/30 18:16:20 Respuesta POST: 500 Internal Server Error
+2024/11/30 18:16:20 []
+2024/11/30 18:16:33 ## (1:0) Se crea el proceso - Estado: NEW
+2024/11/30 18:16:33 Cola NEW está vacía, solicitando memoria.
+2024/11/30 18:16:33 Respuesta POST: 200 OK
+2024/11/30 18:16:33 Respuesta POST: 500 Internal Server Error
+2024/11/30 18:16:33 Hilo main movido a READY
+2024/11/30 18:16:33 [0xc0000000c0]
+2024/11/30 18:16:33 El módulo kernel está a la escucha en el puerto :8001
+2024/11/30 18:16:33 Respuesta POST: 404 Not Found
+2024/11/30 18:17:46 ## (1:0) Se crea el proceso - Estado: NEW
+2024/11/30 18:17:46 Cola NEW está vacía, solicitando memoria.
+2024/11/30 18:17:46 Respuesta POST: 200 OK
+2024/11/30 18:17:46 Respuesta POST: 500 Internal Server Error
+2024/11/30 18:17:46 Hilo main movido a READY
+2024/11/30 18:17:46 1
+2024/11/30 18:17:46 Respuesta POST: 404 Not Found
+2024/11/30 18:17:46 El módulo kernel está a la escucha en el puerto :8001
+2024/11/30 18:21:51 ## (1:0) Se crea el proceso - Estado: NEW
+2024/11/30 18:21:51 Cola NEW está vacía, solicitando memoria.
+2024/11/30 18:21:51 Respuesta POST: 200 OK
+2024/11/30 18:21:51 Respuesta POST: 500 Internal Server Error
+2024/11/30 18:21:51 Hilo main movido a READY
+2024/11/30 18:21:51 0
+2024/11/30 18:21:51 El módulo kernel está a la escucha en el puerto :8001
+2024/11/30 18:21:51 Respuesta POST: 404 Not Found
+2024/11/30 18:25:44 ## (1:0) Se crea el proceso - Estado: NEW
+2024/11/30 18:25:44 Cola NEW está vacía, solicitando memoria.
+2024/11/30 18:25:44 Respuesta POST: 200 OK
+2024/11/30 18:25:44 Respuesta POST: 500 Internal Server Error
+2024/11/30 18:25:44 ## Error al crear el hilo (1:0)
+2024/11/30 18:25:44 0
+2024/11/30 18:25:44 El módulo kernel está a la escucha en el puerto :8001
+2024/11/30 18:25:44 Respuesta POST: 404 Not Found
+2024/11/30 18:29:05 ## (1:0) Se crea el proceso - Estado: NEW
+2024/11/30 18:29:05 Cola NEW está vacía, solicitando memoria.
+2024/11/30 18:29:05 Respuesta POST: 200 OK
+2024/11/30 18:29:56 ## (1:0) Se crea el proceso - Estado: NEW
+2024/11/30 18:29:56 Cola NEW está vacía, solicitando memoria.
+2024/11/30 18:29:56 Respuesta POST: 200 OK
+2024/11/30 18:29:56 Respuesta POST: 500 Internal Server Error
+2024/11/30 18:29:56 Hilo main movido a READY
+2024/11/30 18:31:03 ## (1:0) Se crea el proceso - Estado: NEW
+2024/11/30 18:31:03 Cola NEW está vacía, solicitando memoria.
+2024/11/30 18:31:03 Respuesta POST: 200 OK
+2024/11/30 18:33:36 ## (1:0) Se crea el proceso - Estado: NEW
+2024/11/30 18:33:36 Cola NEW está vacía, solicitando memoria.
+2024/11/30 18:33:36 Respuesta POST: 200 OK
+2024/11/30 18:33:36 aca estamos
+2024/11/30 18:39:44 ## (1:0) Se crea el proceso - Estado: NEW
+2024/11/30 18:39:44 Cola NEW está vacía, solicitando memoria.
+2024/11/30 18:39:44 Respuesta POST: 200 OK
+2024/11/30 18:42:14 ## (1:0) Se crea el proceso - Estado: NEW
+2024/11/30 18:42:14 Cola NEW está vacía, solicitando memoria.
+2024/11/30 18:42:14 Respuesta POST: 200 OK
+2024/11/30 18:52:57 ## (1:0) Se crea el proceso - Estado: NEW
+2024/11/30 18:52:57 Cola NEW está vacía, solicitando memoria.
+2024/11/30 18:52:57 Respuesta POST: 200 OK
+2024/11/30 19:52:04 ## (1:0) Se crea el proceso - Estado: NEW
+2024/11/30 19:52:04 Cola NEW está vacía, solicitando memoria.
+2024/11/30 19:52:04 Respuesta POST: 200 OK
+2024/11/30 19:53:34 ## (1:0) Se crea el proceso - Estado: NEW
+2024/11/30 19:53:34 Cola NEW está vacía, solicitando memoria.
+2024/11/30 19:53:34 Respuesta POST: 200 OK
+2024/11/30 19:57:25 ## (1:0) Se crea el proceso - Estado: NEW
+2024/11/30 19:57:25 Cola NEW está vacía, solicitando memoria.
+2024/11/30 19:57:25 Respuesta POST: 200 OK
+2024/11/30 19:57:25 Respuesta POST: 200 OK
+2024/11/30 20:00:18 ## (1:0) Se crea el proceso - Estado: NEW
+2024/11/30 20:00:18 Cola NEW está vacía, solicitando memoria.
+2024/11/30 20:00:18 Respuesta POST: 200 OK
+2024/11/30 20:00:18 Respuesta POST: 200 OK
+2024/11/30 20:02:30 ## (1:0) Se crea el proceso - Estado: NEW
+2024/11/30 20:02:30 Cola NEW está vacía, solicitando memoria.
+2024/11/30 20:02:30 Respuesta POST: 200 OK
+2024/11/30 20:02:30 Respuesta POST: 200 OK
+2024/11/30 20:05:33 ## (1:0) Se crea el proceso - Estado: NEW
+2024/11/30 20:05:33 Cola NEW está vacía, solicitando memoria.
+2024/11/30 20:05:33 Respuesta POST: 200 OK
+2024/11/30 20:05:33 Respuesta POST: 200 OK

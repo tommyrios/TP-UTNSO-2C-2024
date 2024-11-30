@@ -23,6 +23,10 @@ func AsignarParticion(pid int, tamanioProceso int) error {
 	particion.Libre = false
 	particion.Pid = pid
 
+	if globals.MConfig.Scheme == "FIJAS" {
+		globals.MemoriaSistema.TablaProcesos[pid] = &globals.ContextoProceso{Base: particion.Base, Limite: particion.Limite}
+	}
+
 	// Ajusta la partición si sobra espacio (solo en dinámicas)
 	if globals.MConfig.Scheme == "DINAMICAS" {
 		espacioSobrante := particion.Limite - particion.Base - tamanioProceso
@@ -36,6 +40,7 @@ func AsignarParticion(pid int, tamanioProceso int) error {
 			particion.Limite = particion.Base + tamanioProceso - 1
 			globals.MemoriaUsuario.Particiones = append(globals.MemoriaUsuario.Particiones[:indice+1], append([]globals.Particion{nuevaParticion}, globals.MemoriaUsuario.Particiones[indice+1:]...)...)
 		}
+		globals.MemoriaSistema.TablaProcesos[pid] = &globals.ContextoProceso{Base: particion.Base, Limite: particion.Limite}
 	}
 
 	return nil

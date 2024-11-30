@@ -3,7 +3,6 @@ package handlers
 import (
 	"github.com/sisoputnfrba/tp-golang/kernel/globals/mutexes"
 	"github.com/sisoputnfrba/tp-golang/kernel/globals/processes"
-	"github.com/sisoputnfrba/tp-golang/kernel/globals/schedulers"
 	"github.com/sisoputnfrba/tp-golang/kernel/globals/threads"
 	"github.com/sisoputnfrba/tp-golang/kernel/handlers/request"
 	"github.com/sisoputnfrba/tp-golang/memoria/globals/schemes"
@@ -219,7 +218,7 @@ func Interrupt(interruption string, pid int) (*http.Response, error) {
 }
 
 func HandleCompactacion(w http.ResponseWriter, r *http.Request) {
-	schedulers.PausarPlanificacion() // Pausar planificación de corto plazo
+	PausarPlanificacion() // Pausar planificación de corto plazo
 
 	// Responder a Memoria para permitir la compactación
 	w.WriteHeader(http.StatusOK)
@@ -233,6 +232,14 @@ func HandleCompactacion(w http.ResponseWriter, r *http.Request) {
 }
 
 func HandleCompactacionFinalizada(w http.ResponseWriter, r *http.Request) {
-	schedulers.ReanudarPlanificacion() // Reanudar planificación
+	ReanudarPlanificacion() // Reanudar planificación
 	w.WriteHeader(http.StatusOK)
+}
+
+func PausarPlanificacion() {
+	globals.MutexPlanificacion.Lock()
+}
+
+func ReanudarPlanificacion() {
+	globals.MutexPlanificacion.Unlock()
 }

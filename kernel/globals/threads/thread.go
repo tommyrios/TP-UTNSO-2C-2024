@@ -24,8 +24,6 @@ func CrearHilo(pid int, prioridad int, pseudocodigo string) {
 
 	pcb.Tid = append(pcb.Tid, tcb) // Chequear después si hay que agregar un mutex
 
-	queues.AgregarHiloACola(&tcb, &globals.Estructura.ColaReady)
-
 	//Avisar a memoria creacion de hilo!!! no hace falta la respuesta
 
 	req := request.RequestCrearHilo{

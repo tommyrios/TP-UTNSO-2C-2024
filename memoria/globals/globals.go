@@ -3,6 +3,7 @@ package globals
 import (
 	"errors"
 	"fmt"
+	"log"
 )
 
 type Config struct {
@@ -51,11 +52,7 @@ type MemSistema struct {
 	Pseudocodigos map[int]map[int]*InstruccionesHilo // Pseudocódigos (PID -> TID -> Código)
 }
 
-var MemoriaSistema = MemSistema{
-	TablaProcesos: make(map[int]*ContextoProceso),
-	TablaHilos:    make(map[int]map[int]*ContextoHilo),
-	Pseudocodigos: make(map[int]map[int]*InstruccionesHilo),
-}
+var MemoriaSistema MemSistema
 
 type MemUsuario struct {
 	Datos       []byte
@@ -83,6 +80,12 @@ type Particion struct {
 }
 
 func InicializarMemoria() {
+	MemoriaSistema = MemSistema{
+		TablaProcesos: make(map[int]*ContextoProceso),
+		TablaHilos:    make(map[int]map[int]*ContextoHilo),
+		Pseudocodigos: make(map[int]map[int]*InstruccionesHilo),
+	}
+
 	if MConfig.Scheme == "FIJAS" {
 		base := 0
 		for _, tamaño := range MConfig.Partitions {
@@ -114,5 +117,5 @@ func InicializarMemoria() {
 		MemoriaUsuario.Particiones = append(MemoriaUsuario.Particiones, nuevaParticion)
 	}
 
-	fmt.Println("Memoria inicializada con éxito.", nil)
+	log.Println("Memoria inicializada con éxito.")
 }
