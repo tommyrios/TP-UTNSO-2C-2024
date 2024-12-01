@@ -9,11 +9,11 @@ import (
 )
 
 func ObtenerInstruction() (*http.Response, error) {
-	requestBody, err := commons.CodificarJSON(commons.GetPedidoInstruccion{Pid: *globals.Pid, PC: globals.Registros.PC})
+	requestBody, err := commons.CodificarJSON(commons.GetPedidoInstruccion{Pid: *globals.Pid, Tid: *globals.Tid, PC: globals.Registros.PC})
 	if err != nil {
 		return nil, err
 	}
-	return cliente.Post(globals.CConfig.IpMemory, globals.CConfig.PortMemory, "process", requestBody), nil
+	return cliente.Post(globals.CConfig.IpMemory, globals.CConfig.PortMemory, "obtener_instruccion", requestBody), nil
 }
 
 func NotifyKernel(respuesta *commons.DespachoProceso, ruta string) (*http.Response, error) {

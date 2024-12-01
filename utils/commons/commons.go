@@ -57,6 +57,7 @@ type Registros struct {
 
 type GetPedidoInstruccion struct {
 	Pid int    `json:"pid"`
+	Tid int    `json:"tid"`
 	PC  uint32 `json:"pc"`
 }
 

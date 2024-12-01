@@ -9,7 +9,6 @@ import (
 	"github.com/sisoputnfrba/tp-golang/cpu/globals"
 	"github.com/sisoputnfrba/tp-golang/cpu/instrucciones"
 	"github.com/sisoputnfrba/tp-golang/cpu/interrupciones"
-	"github.com/sisoputnfrba/tp-golang/kernel/globals/threads"
 	"github.com/sisoputnfrba/tp-golang/utils/cliente"
 	"github.com/sisoputnfrba/tp-golang/utils/commons"
 )
@@ -68,7 +67,7 @@ func Ejecutar(w http.ResponseWriter, r *http.Request) {
 
 func EjecutarInstrucciones(pcbUsada commons.PCB, tid int) {
 	var despacho commons.DespachoProceso
-	tcbUsado := threads.BuscarHiloEnPCB(pcbUsada.Pid, tid)
+	tcbUsado := pcbUsada.Tid[tid]
 
 	log.Printf("TID: %d - Solicito Contexto Ejecución", tid)
 
@@ -106,7 +105,7 @@ func EjecutarInstrucciones(pcbUsada commons.PCB, tid int) {
 	log.Printf("## TID: %d - Actualizo Contexto Ejecución", *globals.Tid)
 
 	despacho.Pcb = pcbUsada
-	despacho.Pcb.Tid[0] = *tcbUsado
+	despacho.Pcb.Tid[0] = tcbUsado
 	despacho.Pcb.ProgramCounter = int(globals.Registros.PC)
 
 	resp, err := commons.CodificarJSON(despacho)
@@ -125,13 +124,14 @@ func Fetch() string {
 		log.Fatal("Error al buscar instruccion en memoria")
 		return "ERROR"
 	}
+
 	var respuestaInstruccion commons.GetRespuestaInstruccion
-	commons.DecodificarJSON(resp.Body, &respuestaInstruccion)
+
+	err = commons.DecodificarJSON(resp.Body, &respuestaInstruccion)
 
 	log.Printf("TID: %d - FETCH - Program Counter: %d", *globals.Tid, globals.Registros.PC)
 
 	return respuestaInstruccion.Instruccion
-
 }
 
 func Decode(instruccion string) {
