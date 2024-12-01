@@ -16,10 +16,8 @@ var mu = globals.Estructura.MtxReady
 func ManejarColaReady() {
 	switch globals.KConfig.SchedulerAlgorithm {
 	case "FIFO":
-
 		go ManejarColaReadyFIFO()
 	case "CMN":
-
 		go ManejarColaReadyCMN()
 	case "PRIORITY":
 		go ManejarColaReadyPriority()
@@ -31,7 +29,6 @@ func ManejarHiloRunning() {
 		select {
 		case <-commons.CpuLibre:
 			mu.Lock()
-			log.Println(globals.Estructura.ColaReady[0].Tid)
 			hiloAEjecutar := globals.Estructura.ColaReady[0]
 			pcbHilo := queues.BuscarPCBEnColas(hiloAEjecutar.Pid)
 
@@ -173,4 +170,5 @@ func executeThread(pcb *commons.PCB, tid int) {
 		log.Printf("Error al enviar el PCB %d al CPU.", pcb.Pid)
 		threads.FinalizarHilo(pcb.Pid, tid)
 	}
+	return
 }

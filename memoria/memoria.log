@@ -243,3 +243,250 @@ created by net/http.(*Server).Serve in goroutine 1
 2024/11/30 20:05:30 El módulo memoria está a la escucha en el puerto :8002
 2024/11/30 20:05:33 ## Proceso creado -  PID: 1 - Tamaño: 32
 2024/11/30 20:05:33 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/01 10:31:50 Memoria inicializada con éxito.
+2024/12/01 10:31:50 El módulo memoria está a la escucha en el puerto :8002
+2024/12/01 10:32:53 Memoria inicializada con éxito.
+2024/12/01 10:32:53 El módulo memoria está a la escucha en el puerto :8002
+2024/12/01 10:33:23 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/01 10:33:23 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/01 10:35:03 Memoria inicializada con éxito.
+2024/12/01 10:35:03 El módulo memoria está a la escucha en el puerto :8002
+2024/12/01 10:35:39 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/01 10:35:39 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/01 10:46:43 Memoria inicializada con éxito.
+2024/12/01 10:46:43 El módulo memoria está a la escucha en el puerto :8002
+2024/12/01 10:46:54 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/01 10:46:54 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/01 10:47:48 Memoria inicializada con éxito.
+2024/12/01 10:47:48 El módulo memoria está a la escucha en el puerto :8002
+2024/12/01 10:47:52 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/01 10:47:52 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/01 10:48:42 Memoria inicializada con éxito.
+2024/12/01 10:48:42 El módulo memoria está a la escucha en el puerto :8002
+2024/12/01 10:48:46 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/01 10:48:46 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/01 10:49:07 Memoria inicializada con éxito.
+2024/12/01 10:49:07 El módulo memoria está a la escucha en el puerto :8002
+2024/12/01 10:49:11 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/01 10:49:11 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/01 10:49:41 Memoria inicializada con éxito.
+2024/12/01 10:49:41 El módulo memoria está a la escucha en el puerto :8002
+2024/12/01 10:49:44 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/01 10:49:45 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/01 10:50:26 Memoria inicializada con éxito.
+2024/12/01 10:50:26 El módulo memoria está a la escucha en el puerto :8002
+2024/12/01 10:50:29 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/01 10:50:29 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/01 10:50:57 Memoria inicializada con éxito.
+2024/12/01 10:50:57 El módulo memoria está a la escucha en el puerto :8002
+2024/12/01 10:50:59 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/01 10:50:59 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/01 10:51:45 Memoria inicializada con éxito.
+2024/12/01 10:51:45 El módulo memoria está a la escucha en el puerto :8002
+2024/12/01 10:51:48 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/01 10:51:48 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/01 10:52:26 Memoria inicializada con éxito.
+2024/12/01 10:52:26 El módulo memoria está a la escucha en el puerto :8002
+2024/12/01 10:52:48 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/01 10:52:48 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/01 10:54:25 Memoria inicializada con éxito.
+2024/12/01 10:54:25 El módulo memoria está a la escucha en el puerto :8002
+2024/12/01 10:54:27 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/01 10:54:27 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/01 10:55:25 Memoria inicializada con éxito.
+2024/12/01 10:55:25 El módulo memoria está a la escucha en el puerto :8002
+2024/12/01 10:55:31 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/01 10:55:31 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/01 10:56:34 Memoria inicializada con éxito.
+2024/12/01 10:56:34 El módulo memoria está a la escucha en el puerto :8002
+2024/12/01 10:56:36 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/01 10:56:36 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/01 10:57:01 Memoria inicializada con éxito.
+2024/12/01 10:57:01 El módulo memoria está a la escucha en el puerto :8002
+2024/12/01 10:57:05 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/01 10:57:05 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/01 10:57:15 Memoria inicializada con éxito.
+2024/12/01 10:57:15 El módulo memoria está a la escucha en el puerto :8002
+2024/12/01 10:57:17 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/01 10:57:17 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/01 10:58:37 Memoria inicializada con éxito.
+2024/12/01 10:58:37 El módulo memoria está a la escucha en el puerto :8002
+2024/12/01 10:58:40 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/01 10:58:40 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/01 10:58:58 Memoria inicializada con éxito.
+2024/12/01 10:58:58 El módulo memoria está a la escucha en el puerto :8002
+2024/12/01 10:59:02 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/01 10:59:02 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/01 11:00:25 Memoria inicializada con éxito.
+2024/12/01 11:00:25 El módulo memoria está a la escucha en el puerto :8002
+2024/12/01 11:01:24 Memoria inicializada con éxito.
+2024/12/01 11:01:24 El módulo memoria está a la escucha en el puerto :8002
+2024/12/01 11:06:37 Memoria inicializada con éxito.
+2024/12/01 11:06:37 El módulo memoria está a la escucha en el puerto :8002
+2024/12/01 11:07:00 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/01 11:07:00 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/01 11:18:40 Memoria inicializada con éxito.
+2024/12/01 11:18:40 El módulo memoria está a la escucha en el puerto :8002
+2024/12/01 11:18:43 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/01 11:18:43 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/01 11:19:53 Memoria inicializada con éxito.
+2024/12/01 11:19:53 El módulo memoria está a la escucha en el puerto :8002
+2024/12/01 11:19:57 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/01 11:19:57 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/01 11:23:16 Memoria inicializada con éxito.
+2024/12/01 11:23:16 El módulo memoria está a la escucha en el puerto :8002
+2024/12/01 11:23:18 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/01 11:23:18 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/01 11:24:51 Memoria inicializada con éxito.
+2024/12/01 11:24:51 El módulo memoria está a la escucha en el puerto :8002
+2024/12/01 11:24:53 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/01 11:24:53 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/01 11:28:41 Memoria inicializada con éxito.
+2024/12/01 11:28:41 El módulo memoria está a la escucha en el puerto :8002
+2024/12/01 11:28:43 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/01 11:28:43 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/01 11:31:07 Memoria inicializada con éxito.
+2024/12/01 11:31:07 El módulo memoria está a la escucha en el puerto :8002
+2024/12/01 11:31:09 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/01 11:31:09 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/01 11:32:38 Memoria inicializada con éxito.
+2024/12/01 11:32:38 El módulo memoria está a la escucha en el puerto :8002
+2024/12/01 11:32:40 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/01 11:32:40 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/01 11:34:31 Memoria inicializada con éxito.
+2024/12/01 11:34:31 El módulo memoria está a la escucha en el puerto :8002
+2024/12/01 11:34:34 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/01 11:34:34 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/01 11:36:03 Memoria inicializada con éxito.
+2024/12/01 11:36:03 El módulo memoria está a la escucha en el puerto :8002
+2024/12/01 11:36:06 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/01 11:36:06 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/01 11:36:31 Memoria inicializada con éxito.
+2024/12/01 11:36:31 El módulo memoria está a la escucha en el puerto :8002
+2024/12/01 11:36:34 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/01 11:36:34 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/01 11:38:17 El proceso 1 no pudo ser inicializado
+2024/12/01 11:38:25 Memoria inicializada con éxito.
+2024/12/01 11:38:25 El módulo memoria está a la escucha en el puerto :8002
+2024/12/01 11:38:28 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/01 11:38:28 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/01 11:38:46 Memoria inicializada con éxito.
+2024/12/01 11:38:46 El módulo memoria está a la escucha en el puerto :8002
+2024/12/01 11:38:49 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/01 11:38:49 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/01 11:39:15 Memoria inicializada con éxito.
+2024/12/01 11:39:15 El módulo memoria está a la escucha en el puerto :8002
+2024/12/01 11:39:19 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/01 11:39:19 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/01 11:39:46 Memoria inicializada con éxito.
+2024/12/01 11:39:46 El módulo memoria está a la escucha en el puerto :8002
+2024/12/01 11:39:48 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/01 11:39:48 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/01 11:42:53 Memoria inicializada con éxito.
+2024/12/01 11:42:53 El módulo memoria está a la escucha en el puerto :8002
+2024/12/01 11:42:56 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/01 11:42:56 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/01 11:43:26 Memoria inicializada con éxito.
+2024/12/01 11:43:26 El módulo memoria está a la escucha en el puerto :8002
+2024/12/01 11:43:28 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/01 11:43:28 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/01 11:44:26 Memoria inicializada con éxito.
+2024/12/01 11:44:26 El módulo memoria está a la escucha en el puerto :8002
+2024/12/01 11:44:40 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/01 11:44:40 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/01 11:50:44 Memoria inicializada con éxito.
+2024/12/01 11:50:44 El módulo memoria está a la escucha en el puerto :8002
+2024/12/01 11:53:24 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/01 11:53:24 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/01 11:53:25 http: panic serving 127.0.0.1:59695: runtime error: invalid memory address or nil pointer dereference
+goroutine 5 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1947 +0xbe
+panic({0x3c37c00?, 0x3e60870?})
+	/usr/local/go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/memoria/globals/functions.ObtenerInstruccion(0x0, 0x0, 0x0)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/globals/functions/funciones.go:49 +0x53
+github.com/sisoputnfrba/tp-golang/memoria/handlers.HandleEnviarInstruccion({0x3c906a8, 0xc00018a000}, 0xc000184000)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/handlers/handlers.go:94 +0xc7
+net/http.HandlerFunc.ServeHTTP(0xc0000da0e0?, {0x3c906a8?, 0xc00018a000?}, 0x29897028?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x38e02e5?, {0x3c906a8, 0xc00018a000}, 0xc000184000)
+	/usr/local/go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x3c8f2f0?}, {0x3c906a8?, 0xc00018a000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc000180000, {0x3c90bd8, 0xc0000a51d0})
+	/usr/local/go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3360 +0x485
+2024/12/01 11:56:23 Memoria inicializada con éxito.
+2024/12/01 11:56:23 El módulo memoria está a la escucha en el puerto :8002
+2024/12/01 11:56:30 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/01 11:56:30 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/01 11:56:31 http: panic serving 127.0.0.1:59934: runtime error: invalid memory address or nil pointer dereference
+goroutine 6 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1947 +0xbe
+panic({0x385cc00?, 0x3a85870?})
+	/usr/local/go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/memoria/globals/functions.ObtenerInstruccion(0x0, 0x0, 0x0)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/globals/functions/funciones.go:49 +0x53
+github.com/sisoputnfrba/tp-golang/memoria/handlers.HandleEnviarInstruccion({0x38b56a8, 0xc0001860e0}, 0xc00007e280)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/handlers/handlers.go:94 +0xc7
+net/http.HandlerFunc.ServeHTTP(0xc0000dc0e0?, {0x38b56a8?, 0xc0001860e0?}, 0x38df1118?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x35052e5?, {0x38b56a8, 0xc0001860e0}, 0xc00007e280)
+	/usr/local/go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x38b42f0?}, {0x38b56a8?, 0xc0001860e0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc000180360, {0x38b5bd8, 0xc0000a71d0})
+	/usr/local/go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3360 +0x485
+2024/12/01 12:03:08 Memoria inicializada con éxito.
+2024/12/01 12:03:08 El módulo memoria está a la escucha en el puerto :8002
+2024/12/01 12:03:13 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/01 12:03:13 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/01 12:03:14 http: panic serving 127.0.0.1:60439: runtime error: invalid memory address or nil pointer dereference
+goroutine 33 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1947 +0xbe
+panic({0x40e2c00?, 0x430b870?})
+	/usr/local/go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/memoria/globals/functions.ObtenerInstruccion(0x0, 0x0, 0x0)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/globals/functions/funciones.go:49 +0x53
+github.com/sisoputnfrba/tp-golang/memoria/handlers.HandleEnviarInstruccion({0x413b6a8, 0xc00022e000}, 0xc000222000)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/handlers/handlers.go:94 +0xc7
+net/http.HandlerFunc.ServeHTTP(0xc0000da0e0?, {0x413b6a8?, 0xc00022e000?}, 0x7e71a10?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x3d8b2e5?, {0x413b6a8, 0xc00022e000}, 0xc000222000)
+	/usr/local/go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x413a2f0?}, {0x413b6a8?, 0xc00022e000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc000208000, {0x413bbd8, 0xc0000a51d0})
+	/usr/local/go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3360 +0x485
+2024/12/01 12:09:50 Memoria inicializada con éxito.
+2024/12/01 12:09:50 El módulo memoria está a la escucha en el puerto :8002
+2024/12/01 12:09:56 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/01 12:09:56 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/01 12:09:57 http: panic serving 127.0.0.1:60939: runtime error: invalid memory address or nil pointer dereference
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1947 +0xbe
+panic({0x3e3ac00?, 0x4063870?})
+	/usr/local/go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/memoria/globals/functions.ObtenerInstruccion(0x0, 0x0, 0x0)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/globals/functions/funciones.go:49 +0x53
+github.com/sisoputnfrba/tp-golang/memoria/handlers.HandleEnviarInstruccion({0x3e936a8, 0xc0000da380}, 0xc0000e2780)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/handlers/handlers.go:94 +0xc7
+net/http.HandlerFunc.ServeHTTP(0xc0000da0e0?, {0x3e936a8?, 0xc0000da380?}, 0x21574358?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x3ae32e5?, {0x3e936a8, 0xc0000da380}, 0xc0000e2780)
+	/usr/local/go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x3e922f0?}, {0x3e936a8?, 0xc0000da380?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc0000e4750, {0x3e93bd8, 0xc0000a51d0})
+	/usr/local/go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3360 +0x485

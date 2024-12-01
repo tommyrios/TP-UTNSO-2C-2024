@@ -32,14 +32,17 @@ func main() {
 	//// Logger ////
 	configs.ConfigurarLogger("kernel")
 
+	//// Cola Ready ////
+	commons.CpuLibre <- true
+	schedulers.ManejarColaReady()
+
 	//// Proceso Inicial ////
 	processes.ProcesoInicial(os.Args)
 
-	//// Rutinas ////
-	commons.CpuLibre <- true
-	schedulers.ManejarColaReady()
+	//// Hilo Execute ////
 	go schedulers.ManejarHiloRunning()
 
+	//// Servidor ////
 	mux := http.NewServeMux()
 	http.HandleFunc("/syscall/process_create", handlers.HandleProcessCreate)
 	http.HandleFunc("/syscall/thread_create", handlers.HandleThreadCreate)

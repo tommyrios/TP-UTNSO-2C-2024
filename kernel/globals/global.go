@@ -40,4 +40,4 @@ var Estructura = &Kernel{
 
 var KConfig *Config
 var MutexPlanificacion sync.Mutex
-var Planificar = make(chan bool) // Verificar si no hay que poner
+var Planificar = make(chan bool, 1) // Verificar si no hay que poner

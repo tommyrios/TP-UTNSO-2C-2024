@@ -24,9 +24,9 @@ type RequestActualizarContexto struct {
 }
 
 type RequestObtenerInstruccion struct {
-	PC  uint32 `json:"pc"`
 	Pid int    `json:"pid"`
 	Tid int    `json:"tid"`
+	PC  uint32 `json:"pc"`
 }
 
 type RequestProcesoMemoria struct {

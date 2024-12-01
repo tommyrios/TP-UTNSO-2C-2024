@@ -40,12 +40,12 @@ func CrearHilo(pid int, prioridad int, pseudocodigo string) {
 	}
 
 	response := cliente.Post(globals.KConfig.IpMemory, globals.KConfig.PortMemory, "crear_hilo", solicitudCodificada)
-
 	if response.StatusCode == http.StatusOK {
 		globals.Planificar <- true
-
+		queues.AgregarHiloACola(&tcb, &globals.Estructura.ColaReady)
 		log.Printf("## (%d:%d) Se crea el Hilo - Estado: READY", pcb.Pid, tcb.Tid)
 	}
+	return
 }
 
 func FinalizarHilo(pid int, tid int) {
@@ -83,10 +83,14 @@ func FinalizarHilo(pid int, tid int) {
 		}
 	}
 
+	if globals.Estructura.HiloExecute.Pid == pid && globals.Estructura.HiloExecute.Tid == tid {
+		commons.CpuLibre <- true
+	}
+
 	log.Printf("## (%d:%d) Finaliza el hilo", pid, tid)
 
 	globals.Planificar <- true
-	commons.CpuLibre <- true
+
 }
 
 func BuscarHiloEnPCB(pid int, tid int) *commons.TCB {

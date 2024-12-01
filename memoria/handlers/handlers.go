@@ -14,7 +14,6 @@ import (
 )
 
 // ¡¡¡¡¡HANDLERS CPU!!!!!
-//Agregar retardo en peticiones!!
 
 func HandleDevolverContexto(w http.ResponseWriter, r *http.Request) {
 	var request requests.RequestContexto

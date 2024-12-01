@@ -40,7 +40,7 @@ func main() {
 
 	port := fmt.Sprintf(":%d", globals.CConfig.Port)
 
-	log.Printf("El módulo memoria está a la escucha en el puerto %s", port)
+	log.Printf("El módulo CPU está a la escucha en el puerto %s", port)
 
 	err = http.ListenAndServe(port, mux)
 	if err != nil {

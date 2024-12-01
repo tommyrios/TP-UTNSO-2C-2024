@@ -253,3 +253,272 @@
 2024/11/30 20:05:33 Cola NEW está vacía, solicitando memoria.
 2024/11/30 20:05:33 Respuesta POST: 200 OK
 2024/11/30 20:05:33 Respuesta POST: 200 OK
+2024/12/01 10:33:23 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/01 10:33:23 Cola NEW está vacía, solicitando memoria.
+2024/12/01 10:33:23 Respuesta POST: 200 OK
+2024/12/01 10:33:23 Respuesta POST: 200 OK
+2024/12/01 10:35:39 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/01 10:35:39 Cola NEW está vacía, solicitando memoria.
+2024/12/01 10:35:39 Respuesta POST: 200 OK
+2024/12/01 10:35:39 Respuesta POST: 200 OK
+2024/12/01 10:46:54 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/01 10:46:54 Cola NEW está vacía, solicitando memoria.
+2024/12/01 10:46:54 Respuesta POST: 200 OK
+2024/12/01 10:46:54 Respuesta POST: 200 OK
+2024/12/01 10:47:52 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/01 10:47:52 Cola NEW está vacía, solicitando memoria.
+2024/12/01 10:47:52 Respuesta POST: 200 OK
+2024/12/01 10:47:52 Respuesta POST: 200 OK
+2024/12/01 10:48:46 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/01 10:48:46 Cola NEW está vacía, solicitando memoria.
+2024/12/01 10:48:46 Respuesta POST: 200 OK
+2024/12/01 10:48:46 Respuesta POST: 200 OK
+2024/12/01 10:49:11 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/01 10:49:11 Cola NEW está vacía, solicitando memoria.
+2024/12/01 10:49:11 Respuesta POST: 200 OK
+2024/12/01 10:49:11 Respuesta POST: 200 OK
+2024/12/01 10:49:44 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/01 10:49:44 Cola NEW está vacía, solicitando memoria.
+2024/12/01 10:49:45 Respuesta POST: 200 OK
+2024/12/01 10:49:45 Respuesta POST: 200 OK
+2024/12/01 10:50:29 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/01 10:50:29 Cola NEW está vacía, solicitando memoria.
+2024/12/01 10:50:29 Respuesta POST: 200 OK
+2024/12/01 10:50:29 Respuesta POST: 200 OK
+2024/12/01 10:50:59 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/01 10:50:59 Cola NEW está vacía, solicitando memoria.
+2024/12/01 10:50:59 Respuesta POST: 200 OK
+2024/12/01 10:50:59 Respuesta POST: 200 OK
+2024/12/01 10:51:48 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/01 10:51:48 Cola NEW está vacía, solicitando memoria.
+2024/12/01 10:51:48 Respuesta POST: 200 OK
+2024/12/01 10:51:48 Respuesta POST: 200 OK
+2024/12/01 10:52:48 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/01 10:52:48 Cola NEW está vacía, solicitando memoria.
+2024/12/01 10:52:48 Respuesta POST: 200 OK
+2024/12/01 10:52:48 Respuesta POST: 200 OK
+2024/12/01 10:54:27 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/01 10:54:27 Cola NEW está vacía, solicitando memoria.
+2024/12/01 10:54:27 Respuesta POST: 200 OK
+2024/12/01 10:54:27 Respuesta POST: 200 OK
+2024/12/01 10:55:31 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/01 10:55:31 Cola NEW está vacía, solicitando memoria.
+2024/12/01 10:55:31 Respuesta POST: 200 OK
+2024/12/01 10:55:31 Respuesta POST: 200 OK
+2024/12/01 10:56:36 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/01 10:56:36 Cola NEW está vacía, solicitando memoria.
+2024/12/01 10:56:36 Respuesta POST: 200 OK
+2024/12/01 10:56:36 Respuesta POST: 200 OK
+2024/12/01 10:56:36 hola
+2024/12/01 10:57:05 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/01 10:57:05 Cola NEW está vacía, solicitando memoria.
+2024/12/01 10:57:05 Respuesta POST: 200 OK
+2024/12/01 10:57:05 Respuesta POST: 200 OK
+2024/12/01 10:57:17 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/01 10:57:17 Cola NEW está vacía, solicitando memoria.
+2024/12/01 10:57:17 Respuesta POST: 200 OK
+2024/12/01 10:57:17 Respuesta POST: 200 OK
+2024/12/01 10:57:17 gola
+2024/12/01 10:57:17 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/01 10:57:17 Hilo main movido a READY
+2024/12/01 10:57:17 Proceso creado.
+2024/12/01 10:58:40 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/01 10:58:40 Cola NEW está vacía, solicitando memoria.
+2024/12/01 10:58:40 Respuesta POST: 200 OK
+2024/12/01 10:58:40 Respuesta POST: 200 OK
+2024/12/01 10:58:40 gola
+2024/12/01 10:58:40 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/01 10:58:40 Hilo main movido a READY
+2024/12/01 10:58:40 Proceso creado.
+2024/12/01 10:59:02 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/01 10:59:02 Cola NEW está vacía, solicitando memoria.
+2024/12/01 10:59:02 Respuesta POST: 200 OK
+2024/12/01 10:59:02 Respuesta POST: 200 OK
+2024/12/01 10:59:02 gola
+2024/12/01 10:59:02 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/01 10:59:02 Hilo main movido a READY
+2024/12/01 10:59:02 Proceso creado.
+2024/12/01 10:59:02 Manejando cola de ready
+2024/12/01 11:01:28 cpu ok
+2024/12/01 11:01:28 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/01 11:01:28 Cola NEW está vacía, solicitando memoria.
+2024/12/01 11:07:00 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/01 11:07:00 Cola NEW está vacía, solicitando memoria.
+2024/12/01 11:07:00 Respuesta POST: 200 OK
+2024/12/01 11:07:00 Respuesta POST: 200 OK
+2024/12/01 11:07:00 gola
+2024/12/01 11:07:00 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/01 11:07:00 Hilo main movido a READY
+2024/12/01 11:07:00 Proceso creado.
+2024/12/01 11:18:43 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/01 11:18:43 Cola NEW está vacía, solicitando memoria.
+2024/12/01 11:18:43 Respuesta POST: 200 OK
+2024/12/01 11:18:43 Respuesta POST: 200 OK
+2024/12/01 11:18:43 gola
+2024/12/01 11:18:43 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/01 11:18:43 Hilo main movido a READY
+2024/12/01 11:18:43 Proceso creado.
+2024/12/01 11:19:57 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/01 11:19:57 Cola NEW está vacía, solicitando memoria.
+2024/12/01 11:19:57 Respuesta POST: 200 OK
+2024/12/01 11:19:57 Respuesta POST: 200 OK
+2024/12/01 11:19:57 gola
+2024/12/01 11:19:57 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/01 11:19:57 Hilo main movido a READY
+2024/12/01 11:19:57 Proceso creado.
+2024/12/01 11:23:18 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/01 11:23:18 Cola NEW está vacía, solicitando memoria.
+2024/12/01 11:23:18 Respuesta POST: 200 OK
+2024/12/01 11:23:18 Respuesta POST: 200 OK
+2024/12/01 11:23:18 gola
+2024/12/01 11:23:18 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/01 11:23:18 Hilo main movido a READY
+2024/12/01 11:23:18 Proceso creado.
+2024/12/01 11:24:53 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/01 11:24:53 Cola NEW está vacía, solicitando memoria.
+2024/12/01 11:24:53 Respuesta POST: 200 OK
+2024/12/01 11:24:53 Respuesta POST: 200 OK
+2024/12/01 11:24:53 gola
+2024/12/01 11:24:53 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/01 11:24:53 Hilo main movido a READY
+2024/12/01 11:24:53 Proceso creado.
+2024/12/01 11:28:43 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/01 11:28:43 Cola NEW está vacía, solicitando memoria.
+2024/12/01 11:28:43 Respuesta POST: 200 OK
+2024/12/01 11:28:43 Respuesta POST: 200 OK
+2024/12/01 11:28:43 gola
+2024/12/01 11:28:43 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/01 11:28:43 Hilo main movido a READY
+2024/12/01 11:28:43 Proceso creado.
+2024/12/01 11:31:09 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/01 11:31:09 Cola NEW está vacía, solicitando memoria.
+2024/12/01 11:31:09 Respuesta POST: 200 OK
+2024/12/01 11:31:09 Respuesta POST: 200 OK
+2024/12/01 11:31:09 gola
+2024/12/01 11:31:09 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/01 11:31:09 Hilo main movido a READY
+2024/12/01 11:31:09 Proceso creado.
+2024/12/01 11:31:09 hola
+2024/12/01 11:32:40 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/01 11:32:40 Cola NEW está vacía, solicitando memoria.
+2024/12/01 11:32:40 Respuesta POST: 200 OK
+2024/12/01 11:32:40 Respuesta POST: 200 OK
+2024/12/01 11:32:40 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/01 11:32:40 Hilo main movido a READY
+2024/12/01 11:32:40 Proceso creado.
+2024/12/01 11:32:40 hola
+2024/12/01 11:34:34 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/01 11:34:34 Cola NEW está vacía, solicitando memoria.
+2024/12/01 11:34:34 Respuesta POST: 200 OK
+2024/12/01 11:34:34 Respuesta POST: 200 OK
+2024/12/01 11:34:34 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/01 11:34:34 Hilo main movido a READY
+2024/12/01 11:34:34 Proceso creado.
+2024/12/01 11:36:06 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/01 11:36:06 Cola NEW está vacía, solicitando memoria.
+2024/12/01 11:36:06 Respuesta POST: 200 OK
+2024/12/01 11:36:06 Respuesta POST: 200 OK
+2024/12/01 11:36:06 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/01 11:36:06 Hilo main movido a READY
+2024/12/01 11:36:06 Proceso creado.
+2024/12/01 11:36:34 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/01 11:36:34 Cola NEW está vacía, solicitando memoria.
+2024/12/01 11:36:34 Respuesta POST: 200 OK
+2024/12/01 11:36:34 Respuesta POST: 200 OK
+2024/12/01 11:36:34 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/01 11:36:34 Hilo main movido a READY
+2024/12/01 11:36:34 Proceso creado.
+2024/12/01 11:38:17 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/01 11:38:17 Cola NEW está vacía, solicitando memoria.
+2024/12/01 11:38:17 Respuesta POST: 500 Internal Server Error
+2024/12/01 11:38:17 Proceso creado.
+2024/12/01 11:38:17 CPU libre
+2024/12/01 11:38:28 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/01 11:38:28 Cola NEW está vacía, solicitando memoria.
+2024/12/01 11:38:28 Respuesta POST: 200 OK
+2024/12/01 11:38:28 Respuesta POST: 200 OK
+2024/12/01 11:38:28 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/01 11:38:28 Hilo main movido a READY
+2024/12/01 11:38:28 Proceso creado.
+2024/12/01 11:38:28 CPU libre
+2024/12/01 11:38:49 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/01 11:38:49 Cola NEW está vacía, solicitando memoria.
+2024/12/01 11:38:49 Respuesta POST: 200 OK
+2024/12/01 11:38:49 Respuesta POST: 200 OK
+2024/12/01 11:38:49 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/01 11:38:49 Hilo main movido a READY
+2024/12/01 11:38:49 Proceso creado.
+2024/12/01 11:38:49 CPU libre
+2024/12/01 11:39:19 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/01 11:39:19 Cola NEW está vacía, solicitando memoria.
+2024/12/01 11:39:19 Respuesta POST: 200 OK
+2024/12/01 11:39:19 Respuesta POST: 200 OK
+2024/12/01 11:39:19 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/01 11:39:19 Hilo main movido a READY
+2024/12/01 11:39:19 Proceso creado.
+2024/12/01 11:39:48 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/01 11:39:48 Cola NEW está vacía, solicitando memoria.
+2024/12/01 11:39:48 Respuesta POST: 200 OK
+2024/12/01 11:39:48 Respuesta POST: 200 OK
+2024/12/01 11:39:48 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/01 11:39:48 Hilo main movido a READY
+2024/12/01 11:39:48 Proceso creado.
+2024/12/01 11:39:48 Planificando hilo
+2024/12/01 11:42:56 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/01 11:42:56 Cola NEW está vacía, solicitando memoria.
+2024/12/01 11:42:56 Respuesta POST: 200 OK
+2024/12/01 11:42:56 Respuesta POST: 200 OK
+2024/12/01 11:42:56 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/01 11:42:56 Hilo main movido a READY
+2024/12/01 11:42:56 Proceso creado.
+2024/12/01 11:43:28 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/01 11:43:28 Cola NEW está vacía, solicitando memoria.
+2024/12/01 11:43:28 Respuesta POST: 200 OK
+2024/12/01 11:43:28 Respuesta POST: 200 OK
+2024/12/01 11:43:28 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/01 11:43:28 Hilo main movido a READY
+2024/12/01 11:43:28 Proceso creado.
+2024/12/01 11:44:40 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/01 11:44:40 Cola NEW está vacía, solicitando memoria.
+2024/12/01 11:44:40 Respuesta POST: 200 OK
+2024/12/01 11:44:40 Respuesta POST: 200 OK
+2024/12/01 11:44:40 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/01 11:44:40 Hilo main movido a READY
+2024/12/01 11:44:40 Proceso creado.
+2024/12/01 11:44:40 El módulo kernel está a la escucha en el puerto :8001
+2024/12/01 11:53:24 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/01 11:53:24 Cola NEW está vacía, solicitando memoria.
+2024/12/01 11:53:24 Respuesta POST: 200 OK
+2024/12/01 11:53:24 Respuesta POST: 200 OK
+2024/12/01 11:53:24 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/01 11:53:24 Hilo main movido a READY
+2024/12/01 11:53:24 Proceso creado.
+2024/12/01 11:53:24 El módulo kernel está a la escucha en el puerto :8001
+2024/12/01 11:53:24 Respuesta POST: 200 OK
+2024/12/01 11:56:30 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/01 11:56:30 Cola NEW está vacía, solicitando memoria.
+2024/12/01 11:56:30 Respuesta POST: 200 OK
+2024/12/01 11:56:30 Respuesta POST: 200 OK
+2024/12/01 11:56:30 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/01 11:56:30 Hilo main movido a READY
+2024/12/01 11:56:30 Proceso creado.
+2024/12/01 11:56:30 El módulo kernel está a la escucha en el puerto :8001
+2024/12/01 11:56:30 Respuesta POST: 200 OK
+2024/12/01 12:03:13 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/01 12:03:13 Cola NEW está vacía, solicitando memoria.
+2024/12/01 12:03:13 Respuesta POST: 200 OK
+2024/12/01 12:03:13 Respuesta POST: 200 OK
+2024/12/01 12:03:13 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/01 12:03:13 Hilo main movido a READY
+2024/12/01 12:03:13 Proceso creado.
+2024/12/01 12:03:13 El módulo kernel está a la escucha en el puerto :8001
+2024/12/01 12:03:13 Respuesta POST: 200 OK
+2024/12/01 12:09:56 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/01 12:09:56 Cola NEW está vacía, solicitando memoria.
+2024/12/01 12:09:56 Respuesta POST: 200 OK
+2024/12/01 12:09:56 Respuesta POST: 200 OK
+2024/12/01 12:09:56 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/01 12:09:56 Hilo main movido a READY
+2024/12/01 12:09:56 Proceso creado.
+2024/12/01 12:09:56 El módulo kernel está a la escucha en el puerto :8001
+2024/12/01 12:09:56 Respuesta POST: 200 OK
