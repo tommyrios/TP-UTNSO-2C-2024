@@ -1,15 +1,17 @@
 package instruction_cycle
 
 import (
+	"encoding/json"
+	"github.com/sisoputnfrba/tp-golang/cpu/general/requests"
+	"github.com/sisoputnfrba/tp-golang/cpu/instrucciones"
+	"github.com/sisoputnfrba/tp-golang/utils/cliente"
 	"log"
 	"net/http"
 	"strings"
 
 	generalCPU "github.com/sisoputnfrba/tp-golang/cpu/general"
 	"github.com/sisoputnfrba/tp-golang/cpu/globals"
-	"github.com/sisoputnfrba/tp-golang/cpu/instrucciones"
 	"github.com/sisoputnfrba/tp-golang/cpu/interrupciones"
-	"github.com/sisoputnfrba/tp-golang/utils/cliente"
 	"github.com/sisoputnfrba/tp-golang/utils/commons"
 )
 
@@ -34,11 +36,6 @@ const (
 	PROCESS_EXIT   = "PROCESS_EXIT"
 )
 
-type requestKernel struct {
-	PCB commons.PCB `json:"pcb"`
-	Tid int         `json:"tid"`
-}
-
 func RecibirInterrupcion(w http.ResponseWriter, r *http.Request) {
 	log.Println("## Llega interrupcion al puerto Interrupt")
 	var interrupcion globals.InterrupcionRecibida
@@ -50,22 +47,26 @@ func RecibirInterrupcion(w http.ResponseWriter, r *http.Request) {
 }
 
 // Similar a Recibir Mensaje
-func Ejecutar(w http.ResponseWriter, r *http.Request) {
+func Dispatch(w http.ResponseWriter, r *http.Request) {
 
-	var req requestKernel
+	var req requests.RequestDispatch
 
 	err := commons.DecodificarJSON(r.Body, &req)
 	if err != nil {
 		return
 	}
 
-	w.WriteHeader(http.StatusOK)
-	w.Write([]byte("Pcb OK"))
+	err = EjecutarInstruccion(req.Pid, req.Tid)
 
-	go EjecutarInstrucciones(req.PCB, req.Tid)
+	if err != nil {
+		w.WriteHeader(http.StatusBadRequest)
+		return
+	}
+
+	w.WriteHeader(http.StatusOK)
 }
 
-func EjecutarInstrucciones(pcbUsada commons.PCB, tid int) {
+/*func EjecutarInstrucciones(pcbUsada commons.PCB, tid int) {
 	despacho := commons.DespachoProceso{Pcb: pcbUsada}
 	tcbUsado := pcbUsada.Tid[tid]
 
@@ -114,34 +115,98 @@ func EjecutarInstrucciones(pcbUsada commons.PCB, tid int) {
 	}
 
 	cliente.Post(globals.CConfig.IpKernel, globals.CConfig.PortKernel, "pcb", resp)
-}
+}*/
 
-func Fetch() string {
-	respuestaInstruccion, err := generalCPU.ObtenerInstruction()
+func EjecutarInstruccion(pid int, tid int) error {
+	contexto, err := solicitarContexto(pid, tid)
 
 	if err != nil {
-		log.Fatal("Error al buscar instruccion en memoria")
-		return "ERROR"
+		return err
 	}
 
-	log.Println(respuestaInstruccion.Instruccion)
+	for {
+		instruccionRecibida := Fetch(pid, tid, int(contexto.Registros.PC))
 
-	log.Printf("TID: %d - FETCH - Program Counter: %d", *globals.Tid, globals.Registros.PC)
+		instruccion := Decode(instruccionRecibida)
 
-	return respuestaInstruccion.Instruccion
+		Execute(instruccion, contexto.Registros)
+	}
 }
 
-func Decode(instruccion string) {
-	// Separar la instrucción en partes: Opcode y operandos
-	parts := strings.Split(instruccion, " ")
-	opCode := parts[0]
-	operands := parts[1:]
+func solicitarContexto(pid int, tid int) (requests.ResponseContexto, error) {
+	var reqContexto = requests.RequestContexto{Pid: pid, Tid: tid}
 
-	globals.Instruccion.CodigoInstruccion = opCode
-	globals.Instruccion.Operandos = operands
+	var responseContexto requests.ResponseContexto
+
+	reqCodificada, err := commons.CodificarJSON(reqContexto)
+
+	if err != nil {
+		return responseContexto, err
+	}
+
+	response, contexto := cliente.Post2(globals.CConfig.IpMemory, globals.CConfig.PortMemory, "contexto_de_ejecucion", reqCodificada)
+
+	defer response.Body.Close()
+
+	err = json.Unmarshal(contexto, &responseContexto)
+
+	if err != nil {
+		return responseContexto, err
+	}
+
+	return responseContexto, nil
 }
 
-func Execute(respuesta *commons.DespachoProceso, instruccion globals.InstruccionStruct) (bool, bool) {
+func Fetch(pid int, tid int, pc int) string {
+	reqPedidoInstruccion, err := commons.CodificarJSON(requests.RequestInstruccion{Pid: pid, Tid: tid, PC: pc})
+
+	if err != nil {
+		return ""
+	}
+
+	response, instruccion := cliente.Post2(globals.CConfig.IpMemory, globals.CConfig.PortMemory, "obtener_instruccion", reqPedidoInstruccion)
+
+	defer response.Body.Close()
+
+	return string(instruccion)
+}
+
+func Decode(instruccion string) globals.InstruccionStruct {
+	partes := strings.Split(instruccion, " ")
+
+	instruccionStruct := globals.InstruccionStruct{CodOperacion: partes[0], Operandos: partes[1:]}
+
+	return instruccionStruct
+}
+
+func Execute(instruccion globals.InstruccionStruct, registros commons.Registros) {
+	switch instruccion.CodOperacion {
+	case SET:
+		instrucciones.Set(instruccion.Operandos)
+	case SUM:
+		instrucciones.Sum(instruccion.Operandos)
+	case SUB:
+		instrucciones.Sub(instruccion.Operandos)
+	case JNZ:
+		salto = instrucciones.Jnz(instruccion.Operandos)
+	case READ_MEM:
+		instrucciones.ReadMem(instruccion.Operandos)
+	case WRITE_MEM:
+		instrucciones.WriteMem(instruccion.Operandos)
+	case LOG:
+		instrucciones.Log()
+	case DUMP_MEMORY, IO, PROCESS_CREATE, THREAD_CREATE,
+		THREAD_JOIN, THREAD_CANCEL, MUTEX_CREATE,
+		MUTEX_LOCK, MUTEX_UNLOCK, THREAD_EXIT, PROCESS_EXIT:
+		instrucciones.HandleSyscall(respuesta, &instruccion)
+		continuarEjecucion = false
+	default:
+		continuarEjecucion = false
+	}
+
+}
+
+/*func Execute(respuesta *commons.DespachoProceso, instruccion globals.InstruccionStruct) (bool, bool) {
 	//Instrucciones que no requieren Decode:SET, SUM, SUB, JNZ, LOG.
 
 	continuarEjecucion := true
@@ -174,7 +239,7 @@ func Execute(respuesta *commons.DespachoProceso, instruccion globals.Instruccion
 	log.Printf("## TID: %d - Ejecutando: %s - %v", *globals.Tid, globals.Instruccion.CodigoInstruccion, globals.Instruccion.Operandos)
 
 	return continuarEjecucion, salto
-}
+}*/
 
 func Interrupcion(respuesta *commons.DespachoProceso) bool {
 	// Chequear si hubo una interrupción

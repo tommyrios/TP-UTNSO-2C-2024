@@ -1,8 +1,6 @@
 package globals
 
 import (
-	"sync"
-
 	"github.com/sisoputnfrba/tp-golang/utils/commons"
 )
 
@@ -15,22 +13,9 @@ type Config struct {
 	LogLevel   string `json:"log_level"`
 }
 
-type PCB struct {
-	Pid   int `json:"pid"`
-	Tid   int `json:"tid"`
-	Mutex sync.Mutex
-}
-
-type Process struct {
-	Pid    int    `json:"pid"`
-	Estado string `json:"estado"`
-	PCB    PCB    `json:"pcb"`
-}
-
 type InstruccionStruct struct {
-	Partes            []string
-	CodigoInstruccion string
-	Operandos         []string
+	CodOperacion string   `json:"cod_operacion"`
+	Operandos    []string `json:"operandos"`
 }
 
 type InterrupcionRecibida struct {
@@ -41,12 +26,6 @@ type InterrupcionRecibida struct {
 var CConfig *Config
 
 var Registros *commons.Registros
-
-var Tid *int
-
-var Pid *int
-
-var Instruccion *InstruccionStruct
 
 var Regis map[string]interface{}
 

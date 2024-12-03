@@ -19,7 +19,7 @@ func ObtenerInstruction() (commons.GetRespuestaInstruccion, error) {
 
 	defer response.Body.Close()
 
-	instruccionDecodificada := commons.GetRespuestaInstruccion{Instruccion: instruccion}
+	instruccionDecodificada := commons.GetRespuestaInstruccion{Instruccion: string(instruccion)}
 
 	//err = commons.DecodificarJSON(response.Body, &instruccionDecodificada)
 

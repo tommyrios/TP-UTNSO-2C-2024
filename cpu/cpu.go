@@ -9,7 +9,6 @@ import (
 
 	"github.com/sisoputnfrba/tp-golang/cpu/globals"
 	"github.com/sisoputnfrba/tp-golang/cpu/instruction_cycle"
-	"github.com/sisoputnfrba/tp-golang/utils/commons"
 	configs "github.com/sisoputnfrba/tp-golang/utils/config"
 )
 
@@ -21,9 +20,9 @@ func main() {
 		panic(err)
 	}
 
-	globals.Registros = new(commons.Registros)
-	globals.Pid = new(int)
-	globals.Tid = new(int)
+	//globals.Registros = new(commons.Registros)
+	//globals.Pid = new(int)
+	//globals.Tid = new(int)
 	globals.CConfig = configs.IniciarConfiguracion(filepath.Join(path, "config.json"), &globals.Config{}).(*globals.Config)
 
 	if globals.CConfig == nil {
@@ -35,7 +34,7 @@ func main() {
 
 	//// Conexiones ////
 	mux := http.NewServeMux()
-	mux.HandleFunc("/dispatch", instruction_cycle.Ejecutar)
+	mux.HandleFunc("/dispatch", instruction_cycle.Dispatch)
 	mux.HandleFunc("/interrupt", instruction_cycle.RecibirInterrupcion)
 
 	port := fmt.Sprintf(":%d", globals.CConfig.Port)

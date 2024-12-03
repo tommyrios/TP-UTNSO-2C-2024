@@ -167,3 +167,10 @@
 2024/12/03 09:31:38 PROCESS_CREATE pruebaPlani.txt 32 0
 2024/12/03 09:31:38 TID: 0 - FETCH - Program Counter: 0
 2024/12/03 09:31:38 Respuesta POST: 404 Not Found
+2024/12/03 17:00:18 El módulo CPU está a la escucha en el puerto :8004
+2024/12/03 17:00:40 TID: 0 - Solicito Contexto Ejecución
+2024/12/03 17:00:41 Cuerpo recibido: PROCESS_CREATE pruebaPlani.txt 32 0
+2024/12/03 17:00:41 Respuesta POST: 200 OK
+2024/12/03 17:00:41 PROCESS_CREATE pruebaPlani.txt 32 0
+2024/12/03 17:00:41 TID: 0 - FETCH - Program Counter: 0
+2024/12/03 17:00:41 Respuesta POST: 404 Not Found
