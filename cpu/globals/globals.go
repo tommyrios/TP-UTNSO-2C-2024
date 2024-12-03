@@ -40,8 +40,6 @@ type InterrupcionRecibida struct {
 
 var CConfig *Config
 
-var ColaNEW []Process
-
 var Registros *commons.Registros
 
 var Tid *int

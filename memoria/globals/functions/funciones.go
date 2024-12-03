@@ -5,6 +5,7 @@ import (
 	"errors"
 	"fmt"
 	"github.com/sisoputnfrba/tp-golang/memoria/globals"
+	"github.com/sisoputnfrba/tp-golang/memoria/handlers/requests"
 	"log"
 	"net/http"
 	"os"
@@ -44,15 +45,16 @@ func ActualizarRegistros(pid int, tid int, registrosActualizados globals.Context
 	return nil
 }
 
-func ObtenerInstruccion(pid int, tid int, pc uint32) (string, error) {
-
+func ObtenerInstruccion(pid int, tid int, pc int) (requests.ResponseObtenerInstruccion, error) {
 	instruccion := globals.MemoriaSistema.Pseudocodigos[pid][tid].Instrucciones[pc]
 
+	responseInstruccion := requests.ResponseObtenerInstruccion{Instruccion: instruccion}
+
 	if instruccion == "" {
-		return "", fmt.Errorf("instrucción no encontrada para PID %d, TID %d y PC %d", pid, tid, pc)
+		return responseInstruccion, errors.New("instrucción no encontrada")
 	}
 
-	return instruccion, nil
+	return responseInstruccion, nil
 }
 
 func ObtenerTamanioMemoria(pid int) int {
@@ -137,7 +139,6 @@ func LiberarProceso(pid int) error {
 func CrearHiloMemoria(pid int, tid int, pseudocodigo string) error {
 	// Crear hilo con pseudocódigo y agregarlo a la tabla de hilos
 	instrucciones, err := DesglosarPseudocodigo(pseudocodigo)
-
 	if err != nil {
 		log.Printf("Error al desglosar el pseudocódigo: %s\n", pseudocodigo)
 		return err

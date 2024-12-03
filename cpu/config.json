@@ -1,5 +1,5 @@
 {
-	"ip_memory": "192.168.1.45",
+	"ip_memory": "192.168.1.38",
 	"port_memory": 8002,
 	"ip_kernel": "192.168.1.38",
 	"port_kernel": 8001,

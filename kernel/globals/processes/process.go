@@ -39,7 +39,7 @@ func CrearProceso(pseudocodigo string, tamanioMemoria int, prioridad int) int {
 		if respuestaMemoria.StatusCode == http.StatusOK {
 
 			threads.CrearHilo(pcb.Pid, prioridad, pseudocodigo)
-			
+
 			log.Printf("Hilo main movido a READY")
 		} else {
 			if respuestaMemoria.StatusCode == http.StatusConflict {
@@ -52,7 +52,6 @@ func CrearProceso(pseudocodigo string, tamanioMemoria int, prioridad int) int {
 
 		queues.AgregarProcesoACola(pcb, globals.Estructura.ColaNew)
 	}
-	log.Println("Proceso creado.")
 	return http.StatusOK
 }
 

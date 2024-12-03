@@ -108,11 +108,11 @@ func SegmentationFault() {
 	cliente.Post(globals.CConfig.IpKernel, globals.CConfig.PortKernel, "pcb", resp)
 }
 
-func HandleSyscall(respuesta *commons.DespachoProceso) {
+func HandleSyscall(respuesta *commons.DespachoProceso, instruccion *globals.InstruccionStruct) {
 	respuesta.Pcb.Tid[0].Registros = *globals.Registros
 	respuesta.Pcb.ProgramCounter = int(globals.Registros.PC)
 
-	switch globals.Instruccion.CodigoInstruccion {
+	switch instruccion.CodigoInstruccion {
 	case "DUMP_MEMORY":
 		respuesta.Reason = "DUMP_MEMORY"
 		general.NotifyKernel(respuesta, "--")

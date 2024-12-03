@@ -66,13 +66,14 @@ func Ejecutar(w http.ResponseWriter, r *http.Request) {
 }
 
 func EjecutarInstrucciones(pcbUsada commons.PCB, tid int) {
-	var despacho commons.DespachoProceso
+	despacho := commons.DespachoProceso{Pcb: pcbUsada}
 	tcbUsado := pcbUsada.Tid[tid]
 
 	log.Printf("TID: %d - Solicito Contexto Ejecución", tid)
 
 	*globals.Registros = tcbUsado.Registros
 	*globals.Tid = tid
+	*globals.Pid = pcbUsada.Pid
 	globals.Registros.PC = uint32(pcbUsada.ProgramCounter)
 
 	///////////////////////
@@ -80,16 +81,19 @@ func EjecutarInstrucciones(pcbUsada commons.PCB, tid int) {
 	///////////////////////
 
 	for {
-
 		//Fetch: Recibe la instruccion
 		instruccion := Fetch()
 
 		//Decode: Traduce
-		Decode(instruccion)
+		//Decode(instruccion)
+		parts := strings.Split(instruccion, " ")
+		opCode := parts[0]
+		operands := parts[1:]
 
+		instruccionStruct := globals.InstruccionStruct{Partes: parts, CodigoInstruccion: opCode, Operandos: operands}
 		//Execute: Puede ejecutar y seguir, ejecutar y hacer un salto con JNZ o Terminar su ejecucion tras hecha la instruccion
 
-		continuarEjecucion, saltoJNZ := Execute(&despacho)
+		continuarEjecucion, saltoJNZ := Execute(&despacho, instruccionStruct)
 
 		if !saltoJNZ {
 			globals.Registros.PC++
@@ -104,30 +108,23 @@ func EjecutarInstrucciones(pcbUsada commons.PCB, tid int) {
 
 	log.Printf("## TID: %d - Actualizo Contexto Ejecución", *globals.Tid)
 
-	despacho.Pcb = pcbUsada
-	despacho.Pcb.Tid[0] = tcbUsado
-	despacho.Pcb.ProgramCounter = int(globals.Registros.PC)
-
 	resp, err := commons.CodificarJSON(despacho)
 	if err != nil {
 		return
 	}
 
 	cliente.Post(globals.CConfig.IpKernel, globals.CConfig.PortKernel, "pcb", resp)
-
 }
 
 func Fetch() string {
-	resp, err := generalCPU.ObtenerInstruction()
+	respuestaInstruccion, err := generalCPU.ObtenerInstruction()
 
-	if err != nil || resp == nil {
+	if err != nil {
 		log.Fatal("Error al buscar instruccion en memoria")
 		return "ERROR"
 	}
 
-	var respuestaInstruccion commons.GetRespuestaInstruccion
-
-	err = commons.DecodificarJSON(resp.Body, &respuestaInstruccion)
+	log.Println(respuestaInstruccion.Instruccion)
 
 	log.Printf("TID: %d - FETCH - Program Counter: %d", *globals.Tid, globals.Registros.PC)
 
@@ -144,13 +141,13 @@ func Decode(instruccion string) {
 	globals.Instruccion.Operandos = operands
 }
 
-func Execute(respuesta *commons.DespachoProceso) (bool, bool) {
+func Execute(respuesta *commons.DespachoProceso, instruccion globals.InstruccionStruct) (bool, bool) {
 	//Instrucciones que no requieren Decode:SET, SUM, SUB, JNZ, LOG.
 
 	continuarEjecucion := true
 	salto := false
 
-	switch globals.Instruccion.CodigoInstruccion {
+	switch instruccion.CodigoInstruccion {
 	case SET:
 		instrucciones.Set()
 	case SUM:
@@ -168,7 +165,7 @@ func Execute(respuesta *commons.DespachoProceso) (bool, bool) {
 	case DUMP_MEMORY, IO, PROCESS_CREATE, THREAD_CREATE,
 		THREAD_JOIN, THREAD_CANCEL, MUTEX_CREATE,
 		MUTEX_LOCK, MUTEX_UNLOCK, THREAD_EXIT, PROCESS_EXIT:
-		instrucciones.HandleSyscall(respuesta)
+		instrucciones.HandleSyscall(respuesta, &instruccion)
 		continuarEjecucion = false
 	default:
 		continuarEjecucion = false

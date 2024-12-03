@@ -16,3 +16,146 @@
 2024/12/01 12:03:13 TID: 0 - Solicito Contexto Ejecución
 2024/12/01 12:09:53 El módulo CPU está a la escucha en el puerto :8004
 2024/12/01 12:09:56 TID: 0 - Solicito Contexto Ejecución
+2024/12/02 11:13:17 El módulo CPU está a la escucha en el puerto :8004
+2024/12/02 11:13:20 TID: 0 - Solicito Contexto Ejecución
+2024/12/02 11:16:18 El módulo CPU está a la escucha en el puerto :8004
+2024/12/02 11:16:49 TID: 0 - Solicito Contexto Ejecución
+2024/12/02 11:26:58 El módulo CPU está a la escucha en el puerto :8004
+2024/12/02 11:27:01 TID: 0 - Solicito Contexto Ejecución
+2024/12/02 11:43:37 El módulo CPU está a la escucha en el puerto :8004
+2024/12/02 11:43:40 TID: 0 - Solicito Contexto Ejecución
+2024/12/02 11:44:11 El módulo CPU está a la escucha en el puerto :8004
+2024/12/02 11:44:15 TID: 0 - Solicito Contexto Ejecución
+2024/12/02 12:47:52 El módulo CPU está a la escucha en el puerto :8004
+2024/12/02 12:47:55 TID: 0 - Solicito Contexto Ejecución
+2024/12/02 12:49:52 El módulo CPU está a la escucha en el puerto :8004
+2024/12/02 12:49:55 TID: 0 - Solicito Contexto Ejecución
+2024/12/02 12:51:05 El módulo CPU está a la escucha en el puerto :8004
+2024/12/02 12:51:18 TID: 0 - Solicito Contexto Ejecución
+2024/12/02 12:51:18 Hasta aca llego
+2024/12/02 12:52:17 El módulo CPU está a la escucha en el puerto :8004
+2024/12/02 12:52:30 El módulo CPU está a la escucha en el puerto :8004
+2024/12/02 12:52:32 TID: 0 - Solicito Contexto Ejecución
+2024/12/02 12:54:18 El módulo CPU está a la escucha en el puerto :8004
+2024/12/02 12:54:21 TID: 0 - Solicito Contexto Ejecución
+2024/12/02 13:04:08 El módulo CPU está a la escucha en el puerto :8004
+2024/12/02 13:04:11 TID: 0 - Solicito Contexto Ejecución
+2024/12/02 13:15:01 El módulo CPU está a la escucha en el puerto :8004
+2024/12/02 13:16:32 El módulo CPU está a la escucha en el puerto :8004
+2024/12/02 13:16:34 TID: 0 - Solicito Contexto Ejecución
+2024/12/02 13:17:12 El módulo CPU está a la escucha en el puerto :8004
+2024/12/02 13:17:15 TID: 0 - Solicito Contexto Ejecución
+2024/12/02 13:19:06 El módulo CPU está a la escucha en el puerto :8004
+2024/12/02 13:19:09 TID: 0 - Solicito Contexto Ejecución
+2024/12/02 13:19:30 El módulo CPU está a la escucha en el puerto :8004
+2024/12/02 13:22:03 El módulo CPU está a la escucha en el puerto :8004
+2024/12/02 13:22:09 TID: 0 - Solicito Contexto Ejecución
+2024/12/02 13:24:41 El módulo CPU está a la escucha en el puerto :8004
+2024/12/02 13:24:43 TID: 0 - Solicito Contexto Ejecución
+2024/12/02 13:25:41 El módulo CPU está a la escucha en el puerto :8004
+2024/12/02 13:25:44 TID: 0 - Solicito Contexto Ejecución
+2024/12/02 13:26:58 El módulo CPU está a la escucha en el puerto :8004
+2024/12/02 13:27:01 TID: 0 - Solicito Contexto Ejecución
+2024/12/02 13:32:37 El módulo CPU está a la escucha en el puerto :8004
+2024/12/02 13:32:39 TID: 0 - Solicito Contexto Ejecución
+2024/12/02 13:33:46 El módulo CPU está a la escucha en el puerto :8004
+2024/12/02 13:33:49 TID: 0 - Solicito Contexto Ejecución
+2024/12/02 13:34:49 El módulo CPU está a la escucha en el puerto :8004
+2024/12/02 13:34:56 TID: 0 - Solicito Contexto Ejecución
+2024/12/02 13:36:12 El módulo CPU está a la escucha en el puerto :8004
+2024/12/02 13:36:19 TID: 0 - Solicito Contexto Ejecución
+2024/12/02 13:36:20 Respuesta POST: 500 Internal Server Error
+2024/12/02 13:36:20 Error al decodificar JSON: http: read on closed response body
+2024/12/02 13:36:20 TID: 0 - FETCH - Program Counter: 0
+2024/12/02 13:37:59 El módulo CPU está a la escucha en el puerto :8004
+2024/12/02 13:38:02 TID: 0 - Solicito Contexto Ejecución
+2024/12/02 13:38:03 Respuesta POST: 500 Internal Server Error
+2024/12/02 13:38:03 Error al decodificar JSON: http: read on closed response body
+2024/12/02 13:38:03 TID: 0 - FETCH - Program Counter: 0
+2024/12/02 20:37:49 El módulo CPU está a la escucha en el puerto :8004
+2024/12/02 20:37:53 TID: 0 - Solicito Contexto Ejecución
+2024/12/02 20:39:36 El módulo CPU está a la escucha en el puerto :8004
+2024/12/02 20:39:38 TID: 0 - Solicito Contexto Ejecución
+2024/12/02 20:40:31 El módulo CPU está a la escucha en el puerto :8004
+2024/12/02 20:40:35 TID: 0 - Solicito Contexto Ejecución
+2024/12/02 20:57:55 El módulo CPU está a la escucha en el puerto :8004
+2024/12/02 20:57:59 TID: 0 - Solicito Contexto Ejecución
+2024/12/02 20:58:00 Respuesta POST: 200 OK
+2024/12/02 20:58:00 Error al decodificar JSON: http: read on closed response body
+2024/12/02 20:58:00 TID: 0 - FETCH - Program Counter: 0
+2024/12/02 21:04:55 El módulo CPU está a la escucha en el puerto :8004
+2024/12/02 21:04:58 TID: 0 - Solicito Contexto Ejecución
+2024/12/02 21:04:59 Respuesta POST: 200 OK
+2024/12/02 21:04:59 &{0xc000030140 {0 0} true <nil> 0x1fef0c0 0x1fef1a0}
+2024/12/02 21:05:00 Respuesta POST: 200 OK
+2024/12/02 21:05:00 Error al decodificar JSON: http: read on closed response body
+2024/12/02 21:05:00 
+2024/12/02 21:05:00 TID: 0 - FETCH - Program Counter: 0
+2024/12/02 21:08:02 El módulo CPU está a la escucha en el puerto :8004
+2024/12/02 21:08:06 TID: 0 - Solicito Contexto Ejecución
+2024/12/02 21:08:07 Respuesta POST: 200 OK
+2024/12/02 21:08:07 Error al decodificar JSON: http: read on closed response body
+2024/12/02 21:08:07 Error al buscar instruccion en memoria
+2024/12/02 21:16:55 El módulo CPU está a la escucha en el puerto :8004
+2024/12/02 21:16:58 TID: 0 - Solicito Contexto Ejecución
+2024/12/02 21:16:59 Respuesta POST: 200 OK
+2024/12/02 21:16:59 Error al decodificar JSON: http: read on closed response body
+2024/12/02 21:16:59 Error al buscar instruccion en memoria
+2024/12/02 21:26:55 El módulo CPU está a la escucha en el puerto :8004
+2024/12/02 21:27:37 El módulo CPU está a la escucha en el puerto :8004
+2024/12/02 21:27:40 TID: 0 - Solicito Contexto Ejecución
+2024/12/02 21:27:41 Respuesta POST: 200 OK
+2024/12/02 21:27:41 Error al decodificar JSON: http: read on closed response body
+2024/12/02 21:27:41 Error al buscar instruccion en memoria
+2024/12/02 21:29:20 El módulo CPU está a la escucha en el puerto :8004
+2024/12/02 21:29:24 TID: 0 - Solicito Contexto Ejecución
+2024/12/02 21:29:25 Respuesta POST: 200 OK
+2024/12/02 21:29:25 
+2024/12/02 21:29:25 Error al decodificar JSON: http: read on closed response body
+2024/12/02 21:29:25 Error al buscar instruccion en memoria
+2024/12/02 21:30:15 El módulo CPU está a la escucha en el puerto :8004
+2024/12/02 21:30:18 TID: 0 - Solicito Contexto Ejecución
+2024/12/02 21:30:19 Respuesta POST: 200 OK
+2024/12/02 21:30:19 
+2024/12/02 21:30:19 Error al decodificar JSON: invalid character 'P' looking for beginning of value
+2024/12/02 21:30:19 Error al buscar instruccion en memoria
+2024/12/02 21:31:59 El módulo CPU está a la escucha en el puerto :8004
+2024/12/02 21:32:03 TID: 0 - Solicito Contexto Ejecución
+2024/12/02 21:32:04 Respuesta POST: 200 OK
+2024/12/02 21:32:04 
+2024/12/02 21:32:04 Error al decodificar JSON: invalid character 'P' looking for beginning of value
+2024/12/02 21:32:04 Error al buscar instruccion en memoria
+2024/12/02 21:33:05 El módulo CPU está a la escucha en el puerto :8004
+2024/12/02 21:33:08 TID: 0 - Solicito Contexto Ejecución
+2024/12/02 21:33:09 Respuesta POST: 200 OK
+2024/12/02 21:33:09 Error al decodificar JSON: invalid character 'P' looking for beginning of value
+2024/12/02 21:33:09 Error al buscar instruccion en memoria
+2024/12/02 21:35:11 El módulo CPU está a la escucha en el puerto :8004
+2024/12/02 21:35:14 TID: 0 - Solicito Contexto Ejecución
+2024/12/02 21:35:15 Respuesta POST: 200 OK
+2024/12/02 21:35:15 Error al decodificar JSON: invalid character 'P' looking for beginning of value
+2024/12/02 21:35:15 Error al buscar instruccion en memoria
+2024/12/02 21:36:48 El módulo CPU está a la escucha en el puerto :8004
+2024/12/02 21:36:52 TID: 0 - Solicito Contexto Ejecución
+2024/12/02 21:36:53 Cuerpo recibido: PROCESS_CREATE pruebaPlani.txt 32 0
+2024/12/02 21:36:53 Respuesta POST: 200 OK
+2024/12/02 21:36:53 Error al decodificar JSON: EOF
+2024/12/02 21:36:53 Error al buscar instruccion en memoria
+2024/12/02 21:38:34 El módulo CPU está a la escucha en el puerto :8004
+2024/12/02 21:38:39 TID: 0 - Solicito Contexto Ejecución
+2024/12/02 21:38:40 Cuerpo recibido: PROCESS_CREATE pruebaPlani.txt 32 0
+2024/12/02 21:38:40 Respuesta POST: 200 OK
+2024/12/02 21:38:40 PROCESS_CREATE pruebaPlani.txt 32 0
+2024/12/02 21:38:40 TID: 0 - FETCH - Program Counter: 0
+2024/12/02 21:46:18 El módulo CPU está a la escucha en el puerto :8004
+2024/12/02 21:46:21 TID: 0 - Solicito Contexto Ejecución
+2024/12/02 21:46:22 Cuerpo recibido: PROCESS_CREATE pruebaPlani.txt 32 0
+2024/12/02 21:46:22 Respuesta POST: 200 OK
+2024/12/02 21:46:22 PROCESS_CREATE pruebaPlani.txt 32 0
+2024/12/02 21:46:22 TID: 0 - FETCH - Program Counter: 0
+2024/12/02 21:52:15 El módulo CPU está a la escucha en el puerto :8004
+2024/12/02 21:52:18 TID: 0 - Solicito Contexto Ejecución
+2024/12/02 21:52:19 Cuerpo recibido: PROCESS_CREATE pruebaPlani.txt 32 0
+2024/12/02 21:52:19 Respuesta POST: 200 OK
+2024/12/02 21:52:19 PROCESS_CREATE pruebaPlani.txt 32 0
+2024/12/02 21:52:19 TID: 0 - FETCH - Program Counter: 0

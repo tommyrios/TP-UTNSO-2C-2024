@@ -90,7 +90,7 @@ func HandleEnviarInstruccion(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	instruccion, err := functions.ObtenerInstruccion(request.Pid, request.Tid, request.PC)
+	instruccion, err := functions.ObtenerInstruccion(request.Pid, request.Tid, int(request.PC))
 
 	if err != nil {
 		http.Error(w, fmt.Sprintf("Error al obtener la instrucción: %s", err.Error()), http.StatusInternalServerError)
@@ -98,15 +98,15 @@ func HandleEnviarInstruccion(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	instruccionCodificada, err := commons.CodificarJSON(instruccion)
-
+	//instruccionCodificada, err := commons.CodificarJSON(instruccion)
 	if err != nil {
 		http.Error(w, "Error al codificar el JSON", http.StatusBadRequest)
 		return
 	}
 
 	w.WriteHeader(http.StatusOK)
-	w.Write(instruccionCodificada)
+	//w.Write(instruccionCodificada)
+	w.Write([]byte(instruccion.Instruccion))
 	log.Printf("## Obtener instrucción - (PID:TID) - (%d:%d) - Instrucción: %s\n", request.Pid, request.Tid, instruccion)
 }
 

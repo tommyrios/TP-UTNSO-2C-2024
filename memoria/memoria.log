@@ -490,3 +490,692 @@ net/http.(*conn).serve(0xc0000e4750, {0x3e93bd8, 0xc0000a51d0})
 	/usr/local/go/src/net/http/server.go:2092 +0x5d0
 created by net/http.(*Server).Serve in goroutine 1
 	/usr/local/go/src/net/http/server.go:3360 +0x485
+2024/12/02 11:26:44 Memoria inicializada con éxito.
+2024/12/02 11:26:44 El módulo memoria está a la escucha en el puerto :8002
+2024/12/02 11:27:01 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/02 11:27:01 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/02 11:27:02 http: panic serving 192.168.1.38:63570: runtime error: invalid memory address or nil pointer dereference
+goroutine 33 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1947 +0xbe
+panic({0x5682c00?, 0x58ab870?})
+	/usr/local/go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/memoria/globals/functions.ObtenerInstruccion(0x0, 0x0, 0x0)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/globals/functions/funciones.go:49 +0x53
+github.com/sisoputnfrba/tp-golang/memoria/handlers.HandleEnviarInstruccion({0x56db6a8, 0xc00012e000}, 0xc000124000)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/handlers/handlers.go:93 +0xc7
+net/http.HandlerFunc.ServeHTTP(0xc0000da0e0?, {0x56db6a8?, 0xc00012e000?}, 0x1f4b5270?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x532b2e5?, {0x56db6a8, 0xc00012e000}, 0xc000124000)
+	/usr/local/go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x56da2f0?}, {0x56db6a8?, 0xc00012e000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc00010a000, {0x56dbbd8, 0xc0000a51d0})
+	/usr/local/go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3360 +0x485
+2024/12/02 11:43:35 Memoria inicializada con éxito.
+2024/12/02 11:43:35 El módulo memoria está a la escucha en el puerto :8002
+2024/12/02 11:43:40 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/02 11:43:40 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/02 11:43:41 http: panic serving 192.168.1.38:49241: runtime error: invalid memory address or nil pointer dereference
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1947 +0xbe
+panic({0x54e7c00?, 0x5710870?})
+	/usr/local/go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/memoria/globals/functions.ObtenerInstruccion(0x0, 0x0, 0x0)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/globals/functions/funciones.go:49 +0x53
+github.com/sisoputnfrba/tp-golang/memoria/handlers.HandleEnviarInstruccion({0x55406a8, 0xc0000da380}, 0xc0000e2780)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/handlers/handlers.go:93 +0xc7
+net/http.HandlerFunc.ServeHTTP(0xc0000da0e0?, {0x55406a8?, 0xc0000da380?}, 0x166e6e80?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x51902e5?, {0x55406a8, 0xc0000da380}, 0xc0000e2780)
+	/usr/local/go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x553f2f0?}, {0x55406a8?, 0xc0000da380?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc0000e4750, {0x5540bd8, 0xc0000a51d0})
+	/usr/local/go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3360 +0x485
+2024/12/02 11:44:09 Memoria inicializada con éxito.
+2024/12/02 11:44:09 El módulo memoria está a la escucha en el puerto :8002
+2024/12/02 11:44:15 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/02 11:44:15 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/02 11:44:16 http: panic serving 192.168.1.38:49321: runtime error: invalid memory address or nil pointer dereference
+goroutine 5 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1947 +0xbe
+panic({0x35abc00?, 0x37d4870?})
+	/usr/local/go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/memoria/globals/functions.ObtenerInstruccion(0x0, 0x0, 0x0)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/globals/functions/funciones.go:49 +0x53
+github.com/sisoputnfrba/tp-golang/memoria/handlers.HandleEnviarInstruccion({0x36046a8, 0xc00020a000}, 0xc000204000)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/handlers/handlers.go:93 +0xc7
+net/http.HandlerFunc.ServeHTTP(0xc0000da0e0?, {0x36046a8?, 0xc00020a000?}, 0x2126d4e8?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x32542e5?, {0x36046a8, 0xc00020a000}, 0xc000204000)
+	/usr/local/go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x36032f0?}, {0x36046a8?, 0xc00020a000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc000200000, {0x3604bd8, 0xc0000a51d0})
+	/usr/local/go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3360 +0x485
+2024/12/02 12:47:50 Memoria inicializada con éxito.
+2024/12/02 12:47:50 El módulo memoria está a la escucha en el puerto :8002
+2024/12/02 12:47:55 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/02 12:47:55 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/02 12:47:56 http: panic serving 192.168.1.38:56997: runtime error: invalid memory address or nil pointer dereference
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1947 +0xbe
+panic({0x5f56c00?, 0x617f870?})
+	/usr/local/go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/memoria/globals/functions.ObtenerInstruccion(0x0, 0x0, 0x0)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/globals/functions/funciones.go:49 +0x53
+github.com/sisoputnfrba/tp-golang/memoria/handlers.HandleEnviarInstruccion({0x5faf6a8, 0xc000118000}, 0xc0000e2780)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/handlers/handlers.go:93 +0xc7
+net/http.HandlerFunc.ServeHTTP(0xc0000da0e0?, {0x5faf6a8?, 0xc000118000?}, 0x32ae3a58?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x5bff2e5?, {0x5faf6a8, 0xc000118000}, 0xc0000e2780)
+	/usr/local/go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x5fae2f0?}, {0x5faf6a8?, 0xc000118000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc0000e4750, {0x5fafbd8, 0xc0000a51d0})
+	/usr/local/go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3360 +0x485
+2024/12/02 12:49:49 Memoria inicializada con éxito.
+2024/12/02 12:49:49 El módulo memoria está a la escucha en el puerto :8002
+2024/12/02 12:49:55 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/02 12:49:55 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/02 12:49:56 http: panic serving 192.168.1.38:57246: runtime error: invalid memory address or nil pointer dereference
+goroutine 5 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1947 +0xbe
+panic({0x380ec00?, 0x3a37870?})
+	/usr/local/go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/memoria/globals/functions.ObtenerInstruccion(0x0, 0x0, 0x0)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/globals/functions/funciones.go:49 +0x53
+github.com/sisoputnfrba/tp-golang/memoria/handlers.HandleEnviarInstruccion({0x38676a8, 0xc00020a000}, 0xc000204000)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/handlers/handlers.go:93 +0xc7
+net/http.HandlerFunc.ServeHTTP(0xc0000da0e0?, {0x38676a8?, 0xc00020a000?}, 0x27ddb810?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x34b72e5?, {0x38676a8, 0xc00020a000}, 0xc000204000)
+	/usr/local/go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x38662f0?}, {0x38676a8?, 0xc00020a000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc000200000, {0x3867bd8, 0xc0000a51d0})
+	/usr/local/go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3360 +0x485
+2024/12/02 12:51:01 Memoria inicializada con éxito.
+2024/12/02 12:51:01 El módulo memoria está a la escucha en el puerto :8002
+2024/12/02 12:51:02 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/02 12:51:02 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/02 12:51:09 El proceso 1 no pudo ser inicializado
+2024/12/02 12:51:16 Memoria inicializada con éxito.
+2024/12/02 12:51:16 El módulo memoria está a la escucha en el puerto :8002
+2024/12/02 12:51:18 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/02 12:51:18 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/02 12:51:19 http: panic serving 192.168.1.38:57429: runtime error: invalid memory address or nil pointer dereference
+goroutine 33 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1947 +0xbe
+panic({0x5689c00?, 0x58b2870?})
+	/usr/local/go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/memoria/globals/functions.ObtenerInstruccion(0x0, 0x0, 0x0)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/globals/functions/funciones.go:49 +0x53
+github.com/sisoputnfrba/tp-golang/memoria/handlers.HandleEnviarInstruccion({0x56e26a8, 0xc0001ae000}, 0xc0001a4000)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/handlers/handlers.go:93 +0xc7
+net/http.HandlerFunc.ServeHTTP(0xc0000dc0e0?, {0x56e26a8?, 0xc0001ae000?}, 0xe9035e0?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x53322e5?, {0x56e26a8, 0xc0001ae000}, 0xc0001a4000)
+	/usr/local/go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x56e12f0?}, {0x56e26a8?, 0xc0001ae000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc000188000, {0x56e2bd8, 0xc0000a71d0})
+	/usr/local/go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3360 +0x485
+2024/12/02 12:52:13 Memoria inicializada con éxito.
+2024/12/02 12:52:13 El módulo memoria está a la escucha en el puerto :8002
+2024/12/02 12:52:14 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/02 12:52:14 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/02 12:52:28 Memoria inicializada con éxito.
+2024/12/02 12:52:28 El módulo memoria está a la escucha en el puerto :8002
+2024/12/02 12:52:32 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/02 12:52:32 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/02 12:52:34 http: panic serving 192.168.1.38:57596: runtime error: invalid memory address or nil pointer dereference
+goroutine 5 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1947 +0xbe
+panic({0x5c33c00?, 0x5e5c870?})
+	/usr/local/go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/memoria/globals/functions.ObtenerInstruccion(0x0, 0x0, 0x0)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/globals/functions/funciones.go:49 +0x53
+github.com/sisoputnfrba/tp-golang/memoria/handlers.HandleEnviarInstruccion({0x5c8c6a8, 0xc00020a000}, 0xc000204000)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/handlers/handlers.go:93 +0xc7
+net/http.HandlerFunc.ServeHTTP(0xc0000da0e0?, {0x5c8c6a8?, 0xc00020a000?}, 0x5576e8?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x58dc2e5?, {0x5c8c6a8, 0xc00020a000}, 0xc000204000)
+	/usr/local/go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x5c8b2f0?}, {0x5c8c6a8?, 0xc00020a000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc000200000, {0x5c8cbd8, 0xc0000a51d0})
+	/usr/local/go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3360 +0x485
+2024/12/02 12:54:16 Memoria inicializada con éxito.
+2024/12/02 12:54:16 El módulo memoria está a la escucha en el puerto :8002
+2024/12/02 12:54:21 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/02 12:54:21 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/02 12:54:22 http: panic serving 192.168.1.38:57824: runtime error: invalid memory address or nil pointer dereference
+goroutine 33 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1947 +0xbe
+panic({0x635dc00?, 0x6586870?})
+	/usr/local/go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/memoria/globals/functions.ObtenerInstruccion(0x0, 0x0, 0x0)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/globals/functions/funciones.go:49 +0x53
+github.com/sisoputnfrba/tp-golang/memoria/handlers.HandleEnviarInstruccion({0x63b66a8, 0xc0001ae000}, 0xc0001a4000)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/handlers/handlers.go:93 +0xc7
+net/http.HandlerFunc.ServeHTTP(0xc0000da0e0?, {0x63b66a8?, 0xc0001ae000?}, 0x243c6da0?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x60062e5?, {0x63b66a8, 0xc0001ae000}, 0xc0001a4000)
+	/usr/local/go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x63b52f0?}, {0x63b66a8?, 0xc0001ae000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc000188000, {0x63b6bd8, 0xc0000a51d0})
+	/usr/local/go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3360 +0x485
+2024/12/02 13:04:07 Memoria inicializada con éxito.
+2024/12/02 13:04:07 El módulo memoria está a la escucha en el puerto :8002
+2024/12/02 13:04:11 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/02 13:04:11 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/02 13:04:12 hola
+2024/12/02 13:04:12 http: panic serving 192.168.1.38:59030: runtime error: invalid memory address or nil pointer dereference
+goroutine 17 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1947 +0xbe
+panic({0x3983c00?, 0x3bac870?})
+	/usr/local/go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/memoria/globals/functions.ObtenerInstruccion(0x0, 0x0, 0x0)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/globals/functions/funciones.go:49 +0xdf
+github.com/sisoputnfrba/tp-golang/memoria/handlers.HandleEnviarInstruccion({0x39dc6a8, 0xc0000b2000}, 0xc0000a8000)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/handlers/handlers.go:93 +0xc7
+net/http.HandlerFunc.ServeHTTP(0xc00012c0e0?, {0x39dc6a8?, 0xc0000b2000?}, 0x38876f80?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x362c2e5?, {0x39dc6a8, 0xc0000b2000}, 0xc0000a8000)
+	/usr/local/go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x39db2f0?}, {0x39dc6a8?, 0xc0000b2000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc000098000, {0x39dcbd8, 0xc0001091d0})
+	/usr/local/go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3360 +0x485
+2024/12/02 13:14:59 Memoria inicializada con éxito.
+2024/12/02 13:14:59 El módulo memoria está a la escucha en el puerto :8002
+2024/12/02 13:15:03 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/02 13:15:03 http: panic serving 192.168.1.38:60347: assignment to entry in nil map
+goroutine 19 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1947 +0xbe
+panic({0x3e95e40?, 0x3eeae30?})
+	/usr/local/go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/memoria/globals/functions.CrearHiloMemoria(0x1, 0x0, {0xc000090896, 0xa})
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/globals/functions/funciones.go:147 +0xd2
+github.com/sisoputnfrba/tp-golang/memoria/handlers.HandleCrearHilo({0x3eee6a8, 0xc0000da2a0}, 0xc0000e2500)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/handlers/handlers.go:235 +0xb2
+net/http.HandlerFunc.ServeHTTP(0xc0000da0e0?, {0x3eee6a8?, 0xc0000da2a0?}, 0x20ed0420?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x3b3e2e5?, {0x3eee6a8, 0xc0000da2a0}, 0xc0000e2500)
+	/usr/local/go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x3eed2f0?}, {0x3eee6a8?, 0xc0000da2a0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc0000e4120, {0x3eeebd8, 0xc0000a51d0})
+	/usr/local/go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3360 +0x485
+2024/12/02 13:16:30 Memoria inicializada con éxito.
+2024/12/02 13:16:30 El módulo memoria está a la escucha en el puerto :8002
+2024/12/02 13:16:34 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/02 13:16:34 PROCESS_CREATE pruebaPlani.txt 32 0
+2024/12/02 13:16:34 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/02 13:16:35 http: panic serving 192.168.1.38:60542: runtime error: invalid memory address or nil pointer dereference
+goroutine 17 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1947 +0xbe
+panic({0x37fbc00?, 0x3a24870?})
+	/usr/local/go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/memoria/globals/functions.ObtenerInstruccion(0x0, 0x0, 0x0)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/globals/functions/funciones.go:48 +0x53
+github.com/sisoputnfrba/tp-golang/memoria/handlers.HandleEnviarInstruccion({0x38546a8, 0xc0000b2000}, 0xc0000a8000)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/handlers/handlers.go:93 +0xc7
+net/http.HandlerFunc.ServeHTTP(0xc00012c0e0?, {0x38546a8?, 0xc0000b2000?}, 0x2c8078a8?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x34a42e5?, {0x38546a8, 0xc0000b2000}, 0xc0000a8000)
+	/usr/local/go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x38532f0?}, {0x38546a8?, 0xc0000b2000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc000098000, {0x3854bd8, 0xc0001091d0})
+	/usr/local/go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3360 +0x485
+2024/12/02 13:17:12 Memoria inicializada con éxito.
+2024/12/02 13:17:12 El módulo memoria está a la escucha en el puerto :8002
+2024/12/02 13:17:15 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/02 13:17:15 PROCESS_CREATE pruebaPlani.txt 32 0
+2024/12/02 13:17:15 estoy aca
+2024/12/02 13:17:15 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/02 13:17:16 http: panic serving 192.168.1.38:60632: runtime error: invalid memory address or nil pointer dereference
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1947 +0xbe
+panic({0x3a1cc00?, 0x3c45870?})
+	/usr/local/go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/memoria/globals/functions.ObtenerInstruccion(0x0, 0x0, 0x0)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/globals/functions/funciones.go:48 +0x53
+github.com/sisoputnfrba/tp-golang/memoria/handlers.HandleEnviarInstruccion({0x3a756a8, 0xc0000da380}, 0xc0000e2780)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/handlers/handlers.go:93 +0xc7
+net/http.HandlerFunc.ServeHTTP(0xc0000da0e0?, {0x3a756a8?, 0xc0000da380?}, 0x1ebdb488?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x36c52e5?, {0x3a756a8, 0xc0000da380}, 0xc0000e2780)
+	/usr/local/go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x3a742f0?}, {0x3a756a8?, 0xc0000da380?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc0000e4750, {0x3a75bd8, 0xc0000a51d0})
+	/usr/local/go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3360 +0x485
+2024/12/02 13:19:05 Memoria inicializada con éxito.
+2024/12/02 13:19:05 El módulo memoria está a la escucha en el puerto :8002
+2024/12/02 13:19:09 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/02 13:19:09 [PROCESS_CREATE pruebaPlani.txt 32 0]
+2024/12/02 13:19:09 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/02 13:19:10 http: panic serving 192.168.1.38:60872: runtime error: invalid memory address or nil pointer dereference
+goroutine 5 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1947 +0xbe
+panic({0x42e7c00?, 0x4510870?})
+	/usr/local/go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/memoria/globals/functions.ObtenerInstruccion(0x0, 0x0, 0x0)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/globals/functions/funciones.go:48 +0x53
+github.com/sisoputnfrba/tp-golang/memoria/handlers.HandleEnviarInstruccion({0x43406a8, 0xc00020a000}, 0xc000204000)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/handlers/handlers.go:93 +0xc7
+net/http.HandlerFunc.ServeHTTP(0xc0000da0e0?, {0x43406a8?, 0xc00020a000?}, 0x5cecd18?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x3f902e5?, {0x43406a8, 0xc00020a000}, 0xc000204000)
+	/usr/local/go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x433f2f0?}, {0x43406a8?, 0xc00020a000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc000200000, {0x4340bd8, 0xc0000a51d0})
+	/usr/local/go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3360 +0x485
+2024/12/02 13:19:28 Memoria inicializada con éxito.
+2024/12/02 13:19:28 El módulo memoria está a la escucha en el puerto :8002
+2024/12/02 13:19:32 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/02 13:19:32 http: panic serving 192.168.1.38:60925: runtime error: index out of range [1] with length 1
+goroutine 19 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1947 +0xbe
+panic({0x60ad380?, 0xc0000b0210?})
+	/usr/local/go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/memoria/globals/functions.CrearHiloMemoria(0x1, 0x0, {0xc000090896, 0xa})
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/globals/functions/funciones.go:149 +0x3b3
+github.com/sisoputnfrba/tp-golang/memoria/handlers.HandleCrearHilo({0x60d06a8, 0xc0000da2a0}, 0xc0000e2500)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/handlers/handlers.go:235 +0xb2
+net/http.HandlerFunc.ServeHTTP(0xc0000da0e0?, {0x60d06a8?, 0xc0000da2a0?}, 0x37b8ffd8?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x5d202e5?, {0x60d06a8, 0xc0000da2a0}, 0xc0000e2500)
+	/usr/local/go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x60cf2f0?}, {0x60d06a8?, 0xc0000da2a0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc0000e4120, {0x60d0bd8, 0xc0000a51d0})
+	/usr/local/go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3360 +0x485
+2024/12/02 13:22:01 Memoria inicializada con éxito.
+2024/12/02 13:22:01 El módulo memoria está a la escucha en el puerto :8002
+2024/12/02 13:22:09 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/02 13:22:09 [PROCESS_CREATE pruebaPlani.txt 32 0]
+2024/12/02 13:22:09 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/02 13:22:10 http: panic serving 192.168.1.38:61249: runtime error: invalid memory address or nil pointer dereference
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1947 +0xbe
+panic({0x5d0ec00?, 0x5f37870?})
+	/usr/local/go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/memoria/globals/functions.ObtenerInstruccion(0x0, 0x0, 0x0)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/globals/functions/funciones.go:48 +0x53
+github.com/sisoputnfrba/tp-golang/memoria/handlers.HandleEnviarInstruccion({0x5d676a8, 0xc0001321c0}, 0xc00013a280)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/handlers/handlers.go:93 +0xc7
+net/http.HandlerFunc.ServeHTTP(0xc0001320e0?, {0x5d676a8?, 0xc0001321c0?}, 0x222b508?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x59b72e5?, {0x5d676a8, 0xc0001321c0}, 0xc00013a280)
+	/usr/local/go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x5d662f0?}, {0x5d676a8?, 0xc0001321c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc00013c120, {0x5d67bd8, 0xc000184120})
+	/usr/local/go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3360 +0x485
+2024/12/02 13:24:39 Memoria inicializada con éxito.
+2024/12/02 13:24:39 El módulo memoria está a la escucha en el puerto :8002
+2024/12/02 13:24:43 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/02 13:24:43 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/02 13:24:44 http: panic serving 192.168.1.38:61567: runtime error: invalid memory address or nil pointer dereference
+goroutine 17 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1947 +0xbe
+panic({0x42afc00?, 0x44d8870?})
+	/usr/local/go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/memoria/globals/functions.ObtenerInstruccion(0x0, 0x0, 0x0)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/globals/functions/funciones.go:48 +0x53
+github.com/sisoputnfrba/tp-golang/memoria/handlers.HandleEnviarInstruccion({0x43086a8, 0xc0001a6000}, 0xc00019c000)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/handlers/handlers.go:93 +0xc7
+net/http.HandlerFunc.ServeHTTP(0xc00012c0e0?, {0x43086a8?, 0xc0001a6000?}, 0x32476df0?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x3f582e5?, {0x43086a8, 0xc0001a6000}, 0xc00019c000)
+	/usr/local/go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x43072f0?}, {0x43086a8?, 0xc0001a6000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc00018a000, {0x4308bd8, 0xc0001091d0})
+	/usr/local/go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3360 +0x485
+2024/12/02 13:25:39 Memoria inicializada con éxito.
+2024/12/02 13:25:39 El módulo memoria está a la escucha en el puerto :8002
+2024/12/02 13:25:44 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/02 13:25:44 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/02 13:25:45 http: panic serving 192.168.1.38:61699: runtime error: invalid memory address or nil pointer dereference
+goroutine 33 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1947 +0xbe
+panic({0x37acc00?, 0x39d5870?})
+	/usr/local/go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/memoria/globals/functions.ObtenerInstruccion(0x0, 0x0, 0x0)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/globals/functions/funciones.go:48 +0x53
+github.com/sisoputnfrba/tp-golang/memoria/handlers.HandleEnviarInstruccion({0x38056a8, 0xc0000b2000}, 0xc0000a8000)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/handlers/handlers.go:93 +0xc7
+net/http.HandlerFunc.ServeHTTP(0xc0001ac0e0?, {0x38056a8?, 0xc0000b2000?}, 0x39a942d0?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x34552e5?, {0x38056a8, 0xc0000b2000}, 0xc0000a8000)
+	/usr/local/go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x38042f0?}, {0x38056a8?, 0xc0000b2000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc000098000, {0x3805bd8, 0xc0001891d0})
+	/usr/local/go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3360 +0x485
+2024/12/02 13:26:56 Memoria inicializada con éxito.
+2024/12/02 13:26:56 El módulo memoria está a la escucha en el puerto :8002
+2024/12/02 13:27:01 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/02 13:27:01 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/02 13:27:02 http: panic serving 192.168.1.38:61864: runtime error: invalid memory address or nil pointer dereference
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1947 +0xbe
+panic({0x5399c00?, 0x55c2870?})
+	/usr/local/go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/memoria/globals/functions.ObtenerInstruccion(...)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/globals/functions/funciones.go:48
+github.com/sisoputnfrba/tp-golang/memoria/handlers.HandleEnviarInstruccion({0x53f26a8, 0xc0000da380}, 0xc0000e2780)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/handlers/handlers.go:93 +0x101
+net/http.HandlerFunc.ServeHTTP(0xc0000da0e0?, {0x53f26a8?, 0xc0000da380?}, 0x1e096c30?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x50422e5?, {0x53f26a8, 0xc0000da380}, 0xc0000e2780)
+	/usr/local/go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x53f12f0?}, {0x53f26a8?, 0xc0000da380?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc0000e4750, {0x53f2bd8, 0xc0000a51d0})
+	/usr/local/go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3360 +0x485
+2024/12/02 13:32:35 Memoria inicializada con éxito.
+2024/12/02 13:32:35 El módulo memoria está a la escucha en el puerto :8002
+2024/12/02 13:32:39 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/02 13:32:39 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/02 13:32:40 ## Enviar instrucción - (PID:TID) - (0:0)
+2024/12/02 13:32:40 http: panic serving 192.168.1.38:62565: runtime error: invalid memory address or nil pointer dereference
+goroutine 33 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1947 +0xbe
+panic({0x5e43c00?, 0x606c870?})
+	/usr/local/go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/memoria/globals/functions.ObtenerInstruccion(...)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/globals/functions/funciones.go:48
+github.com/sisoputnfrba/tp-golang/memoria/handlers.HandleEnviarInstruccion({0x5e9c6a8, 0xc0001ae000}, 0xc0001a4000)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/handlers/handlers.go:93 +0x1e8
+net/http.HandlerFunc.ServeHTTP(0xc0000da0e0?, {0x5e9c6a8?, 0xc0001ae000?}, 0x39505530?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x5aec2e5?, {0x5e9c6a8, 0xc0001ae000}, 0xc0001a4000)
+	/usr/local/go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x5e9b2f0?}, {0x5e9c6a8?, 0xc0001ae000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc000188000, {0x5e9cbd8, 0xc0000a51d0})
+	/usr/local/go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3360 +0x485
+2024/12/02 13:33:45 Memoria inicializada con éxito.
+2024/12/02 13:33:45 El módulo memoria está a la escucha en el puerto :8002
+2024/12/02 13:33:49 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/02 13:33:49 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/02 13:33:50 0 0
+2024/12/02 13:33:50 http: panic serving 192.168.1.38:62712: runtime error: invalid memory address or nil pointer dereference
+goroutine 10 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1947 +0xbe
+panic({0x1739c00?, 0x1962870?})
+	/usr/local/go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/memoria/globals/functions.ObtenerInstruccion(...)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/globals/functions/funciones.go:48
+github.com/sisoputnfrba/tp-golang/memoria/handlers.HandleEnviarInstruccion({0x17926a8, 0xc00012c380}, 0xc000134780)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/handlers/handlers.go:93 +0x1bc
+net/http.HandlerFunc.ServeHTTP(0xc00012c0e0?, {0x17926a8?, 0xc00012c380?}, 0x76520a0?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x13e22e5?, {0x17926a8, 0xc00012c380}, 0xc000134780)
+	/usr/local/go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x17912f0?}, {0x17926a8?, 0xc00012c380?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc000136750, {0x1792bd8, 0xc0001091d0})
+	/usr/local/go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3360 +0x485
+2024/12/02 13:34:40 Memoria inicializada con éxito.
+2024/12/02 13:34:40 El módulo memoria está a la escucha en el puerto :8002
+2024/12/02 13:34:42 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/02 13:34:42 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/02 13:34:51 Memoria inicializada con éxito.
+2024/12/02 13:34:51 El módulo memoria está a la escucha en el puerto :8002
+2024/12/02 13:34:56 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/02 13:34:56 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/02 13:34:57 http: panic serving 192.168.1.38:62861: runtime error: invalid memory address or nil pointer dereference
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1947 +0xbe
+panic({0x5da5c00?, 0x5fce870?})
+	/usr/local/go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/memoria/globals/functions.ObtenerInstruccion(...)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/globals/functions/funciones.go:48
+github.com/sisoputnfrba/tp-golang/memoria/handlers.HandleEnviarInstruccion({0x5dfe6a8, 0xc0001980e0}, 0xc000184280)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/handlers/handlers.go:93 +0xfc
+net/http.HandlerFunc.ServeHTTP(0xc0000dc0e0?, {0x5dfe6a8?, 0xc0001980e0?}, 0x20124808?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x5a4e2e5?, {0x5dfe6a8, 0xc0001980e0}, 0xc000184280)
+	/usr/local/go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x5dfd2f0?}, {0x5dfe6a8?, 0xc0001980e0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc000188360, {0x5dfebd8, 0xc0000a71d0})
+	/usr/local/go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3360 +0x485
+2024/12/02 13:36:10 Memoria inicializada con éxito.
+2024/12/02 13:36:10 El módulo memoria está a la escucha en el puerto :8002
+2024/12/02 13:36:19 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/02 13:36:19 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/02 13:36:20 Instrucción: 
+2024/12/02 13:36:20 Error al obtener la instrucción - (PID:TID) - (0:0)
+2024/12/02 13:37:58 Memoria inicializada con éxito.
+2024/12/02 13:37:58 El módulo memoria está a la escucha en el puerto :8002
+2024/12/02 13:38:02 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/02 13:38:02 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/02 13:38:03 Error al obtener la instrucción - (PID:TID) - (0:0)
+2024/12/02 20:37:46 Memoria inicializada con éxito.
+2024/12/02 20:37:46 El módulo memoria está a la escucha en el puerto :8002
+2024/12/02 20:37:53 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/02 20:37:53 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/02 20:37:54 http: panic serving 192.168.1.38:65165: runtime error: invalid memory address or nil pointer dereference
+goroutine 5 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1947 +0xbe
+panic({0x5420c00?, 0x5649870?})
+	/usr/local/go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/memoria/globals/functions.ObtenerInstruccion(0x0, 0x0, 0x0)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/globals/functions/funciones.go:48 +0x54
+github.com/sisoputnfrba/tp-golang/memoria/handlers.HandleEnviarInstruccion({0x54796a8, 0xc00020a000}, 0xc000204000)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/handlers/handlers.go:93 +0xc7
+net/http.HandlerFunc.ServeHTTP(0xc0000da0e0?, {0x54796a8?, 0xc00020a000?}, 0x376c2fc8?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x50c92e5?, {0x54796a8, 0xc00020a000}, 0xc000204000)
+	/usr/local/go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x54782f0?}, {0x54796a8?, 0xc00020a000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc000200000, {0x5479bd8, 0xc0000a51d0})
+	/usr/local/go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3360 +0x485
+2024/12/02 20:39:35 Memoria inicializada con éxito.
+2024/12/02 20:39:35 El módulo memoria está a la escucha en el puerto :8002
+2024/12/02 20:39:38 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/02 20:39:38 [PROCESS_CREATE pruebaPlani.txt 32 0]
+2024/12/02 20:39:38 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/02 20:39:39 http: panic serving 192.168.1.38:65286: runtime error: invalid memory address or nil pointer dereference
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1947 +0xbe
+panic({0x5549c00?, 0x5772870?})
+	/usr/local/go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/memoria/globals/functions.ObtenerInstruccion(0x0, 0x0, 0x0)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/globals/functions/funciones.go:48 +0x54
+github.com/sisoputnfrba/tp-golang/memoria/handlers.HandleEnviarInstruccion({0x55a26a8, 0xc0000da380}, 0xc0000e2780)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/handlers/handlers.go:93 +0xc7
+net/http.HandlerFunc.ServeHTTP(0xc0000da0e0?, {0x55a26a8?, 0xc0000da380?}, 0x22f6ca58?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x51f22e5?, {0x55a26a8, 0xc0000da380}, 0xc0000e2780)
+	/usr/local/go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x55a12f0?}, {0x55a26a8?, 0xc0000da380?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc0000e4750, {0x55a2bd8, 0xc0000a51d0})
+	/usr/local/go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3360 +0x485
+2024/12/02 20:40:29 Memoria inicializada con éxito.
+2024/12/02 20:40:29 El módulo memoria está a la escucha en el puerto :8002
+2024/12/02 20:40:35 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/02 20:40:35 [PROCESS_CREATE pruebaPlani.txt 32 0 SET AX BX]
+2024/12/02 20:40:35 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/02 20:40:36 http: panic serving 192.168.1.38:65357: runtime error: invalid memory address or nil pointer dereference
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1947 +0xbe
+panic({0x5792c00?, 0x59bb870?})
+	/usr/local/go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/memoria/globals/functions.ObtenerInstruccion(0x0, 0x0, 0x0)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/globals/functions/funciones.go:48 +0x54
+github.com/sisoputnfrba/tp-golang/memoria/handlers.HandleEnviarInstruccion({0x57eb6a8, 0xc0000da380}, 0xc0000e2780)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/handlers/handlers.go:93 +0xc7
+net/http.HandlerFunc.ServeHTTP(0xc0000da0e0?, {0x57eb6a8?, 0xc0000da380?}, 0x293ebb28?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x543b2e5?, {0x57eb6a8, 0xc0000da380}, 0xc0000e2780)
+	/usr/local/go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x57ea2f0?}, {0x57eb6a8?, 0xc0000da380?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc0000e4750, {0x57ebbd8, 0xc0000a51d0})
+	/usr/local/go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3360 +0x485
+2024/12/02 20:41:02 Memoria inicializada con éxito.
+2024/12/02 20:41:02 El módulo memoria está a la escucha en el puerto :8002
+2024/12/02 20:41:05 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/02 20:41:05 SET AX BX
+2024/12/02 20:41:05 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/02 20:57:53 Memoria inicializada con éxito.
+2024/12/02 20:57:53 El módulo memoria está a la escucha en el puerto :8002
+2024/12/02 20:57:59 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/02 20:57:59 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/02 20:58:00 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: PROCESS_CREATE pruebaPlani.txt 32 0
+2024/12/02 21:04:53 Memoria inicializada con éxito.
+2024/12/02 21:04:53 El módulo memoria está a la escucha en el puerto :8002
+2024/12/02 21:04:58 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/02 21:04:58 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/02 21:04:59 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: PROCESS_CREATE pruebaPlani.txt 32 0
+2024/12/02 21:05:00 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: PROCESS_CREATE pruebaPlani.txt 32 0
+2024/12/02 21:07:53 Memoria inicializada con éxito.
+2024/12/02 21:07:53 El módulo memoria está a la escucha en el puerto :8002
+2024/12/02 21:08:06 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/02 21:08:06 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/02 21:08:07 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: PROCESS_CREATE pruebaPlani.txt 32 0
+2024/12/02 21:16:54 Memoria inicializada con éxito.
+2024/12/02 21:16:54 El módulo memoria está a la escucha en el puerto :8002
+2024/12/02 21:16:58 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/02 21:16:58 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/02 21:16:59 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE pruebaPlani.txt 32 0}
+2024/12/02 21:26:53 Memoria inicializada con éxito.
+2024/12/02 21:26:53 El módulo memoria está a la escucha en el puerto :8002
+2024/12/02 21:26:58 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/02 21:26:58 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/02 21:27:35 Memoria inicializada con éxito.
+2024/12/02 21:27:35 El módulo memoria está a la escucha en el puerto :8002
+2024/12/02 21:27:40 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/02 21:27:40 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/02 21:27:41 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE pruebaPlani.txt 32 0}
+2024/12/02 21:29:18 Memoria inicializada con éxito.
+2024/12/02 21:29:18 El módulo memoria está a la escucha en el puerto :8002
+2024/12/02 21:29:23 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/02 21:29:23 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/02 21:29:25 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE pruebaPlani.txt 32 0}
+2024/12/02 21:29:57 Memoria inicializada con éxito.
+2024/12/02 21:29:57 El módulo memoria está a la escucha en el puerto :8002
+2024/12/02 21:30:18 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/02 21:30:18 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/02 21:30:19 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE pruebaPlani.txt 32 0}
+2024/12/02 21:31:57 Memoria inicializada con éxito.
+2024/12/02 21:31:57 El módulo memoria está a la escucha en el puerto :8002
+2024/12/02 21:32:03 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/02 21:32:03 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/02 21:32:04 PROCESS_CREATE pruebaPlani.txt 32 0
+2024/12/02 21:32:04 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE pruebaPlani.txt 32 0}
+2024/12/02 21:33:03 Memoria inicializada con éxito.
+2024/12/02 21:33:03 El módulo memoria está a la escucha en el puerto :8002
+2024/12/02 21:33:08 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/02 21:33:08 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/02 21:33:09 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE pruebaPlani.txt 32 0}
+2024/12/02 21:35:09 Memoria inicializada con éxito.
+2024/12/02 21:35:09 El módulo memoria está a la escucha en el puerto :8002
+2024/12/02 21:35:14 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/02 21:35:14 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/02 21:35:15 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE pruebaPlani.txt 32 0}
+2024/12/02 21:36:41 Memoria inicializada con éxito.
+2024/12/02 21:36:41 El módulo memoria está a la escucha en el puerto :8002
+2024/12/02 21:36:52 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/02 21:36:52 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/02 21:36:53 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE pruebaPlani.txt 32 0}
+2024/12/02 21:38:31 Memoria inicializada con éxito.
+2024/12/02 21:38:31 El módulo memoria está a la escucha en el puerto :8002
+2024/12/02 21:38:39 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/02 21:38:39 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/02 21:38:40 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE pruebaPlani.txt 32 0}
+2024/12/02 21:46:15 Memoria inicializada con éxito.
+2024/12/02 21:46:15 El módulo memoria está a la escucha en el puerto :8002
+2024/12/02 21:46:21 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/02 21:46:21 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/02 21:46:22 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE pruebaPlani.txt 32 0}
+2024/12/02 21:52:13 Memoria inicializada con éxito.
+2024/12/02 21:52:13 El módulo memoria está a la escucha en el puerto :8002
+2024/12/02 21:52:18 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/02 21:52:18 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/02 21:52:19 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE pruebaPlani.txt 32 0}

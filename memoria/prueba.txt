@@ -1,1 +1,2 @@
 PROCESS_CREATE pruebaPlani.txt 32 0
+SET AX BX

@@ -29,6 +29,10 @@ type RequestObtenerInstruccion struct {
 	PC  uint32 `json:"pc"`
 }
 
+type ResponseObtenerInstruccion struct {
+	Instruccion string `json:"instruccion"`
+}
+
 type RequestProcesoMemoria struct {
 	Pid            int `json:"pid"`
 	TamanioMemoria int `json:"tamanio_memoria"`

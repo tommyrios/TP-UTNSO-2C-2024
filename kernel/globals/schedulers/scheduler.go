@@ -29,9 +29,12 @@ func ManejarHiloRunning() {
 		select {
 		case <-commons.CpuLibre:
 			mu.Lock()
+			if len(globals.Estructura.ColaReady) == 0 {
+				mu.Unlock()
+				continue // No hay hilos listos, salta al siguiente ciclo
+			}
 			hiloAEjecutar := globals.Estructura.ColaReady[0]
 			pcbHilo := queues.BuscarPCBEnColas(hiloAEjecutar.Pid)
-
 			// Lo asignamos al hilo en ejecución
 			globals.Estructura.HiloExecute = hiloAEjecutar
 
