@@ -20,8 +20,6 @@ func CrearMutex(nombre string, pid int) {
 	pcb.Mutex = append(pcb.Mutex, mutex)
 }
 
-// MUTEX_LOCK
-
 func BloquearMutex(nombre string, pid int, tid int) {
 	tcb := threads.BuscarHiloEnPCB(pid, tid)
 
@@ -30,19 +28,19 @@ func BloquearMutex(nombre string, pid int, tid int) {
 	for _, mutex := range pcb.Mutex {
 		if mutex.Nombre == nombre {
 			if mutex.Valor == 1 {
-				mutex.Valor = 0
+				mutex.Valor--
 				tcb.Mutex = mutex
+				return
 			} else {
 				mutex.HilosBloqueados = append(mutex.HilosBloqueados, tcb)
 				threads.BloquearHilo(tcb)
+				return
 			}
-		} else {
-			log.Printf("No existe el mutex solicitado con el nombre: %s\n", nombre)
 		}
 	}
-}
 
-// MUTEX_UNLOCK
+	log.Printf("No existe el mutex solicitado con el nombre: %s\n", nombre)
+}
 
 func DesbloquearMutex(nombre string, pid int, tid int) {
 	tcb := threads.BuscarHiloEnPCB(pid, tid)
@@ -57,14 +55,17 @@ func DesbloquearMutex(nombre string, pid int, tid int) {
 					mutex.HilosBloqueados = mutex.HilosBloqueados[1:]
 					tcbADesbloquear.Mutex = mutex
 					threads.DesbloquearHilo(tcbADesbloquear)
+				} else {
+					mutex.Valor++
 				}
-				mutex.Valor++
 				tcb.Mutex = commons.Mutex{} // Le saco el mutex al hilo que ejecutó la syscall
+				return
 			} else {
 				log.Printf("El hilo %d no tiene asignado el mutex %s\n", tid, nombre)
+				return
 			}
-		} else {
-			log.Printf("No existe el mutex solicitado con el nombre: %s\n", nombre)
 		}
 	}
+
+	log.Printf("No existe el mutex solicitado con el nombre: %s\n", nombre)
 }

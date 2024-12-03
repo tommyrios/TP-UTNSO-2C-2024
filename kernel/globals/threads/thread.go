@@ -24,8 +24,6 @@ func CrearHilo(pid int, prioridad int, pseudocodigo string) {
 
 	pcb.Tid = append(pcb.Tid, tcb) // Chequear después si hay que agregar un mutex
 
-	//Avisar a memoria creacion de hilo!!! no hace falta la respuesta
-
 	req := request.RequestCrearHilo{
 		Pid:          pid,
 		Tid:          tcb.Tid,
@@ -39,13 +37,11 @@ func CrearHilo(pid int, prioridad int, pseudocodigo string) {
 		return
 	}
 
-	response := cliente.Post(globals.KConfig.IpMemory, globals.KConfig.PortMemory, "crear_hilo", solicitudCodificada)
-	if response.StatusCode == http.StatusOK {
-		globals.Planificar <- true
-		queues.AgregarHiloACola(&tcb, &globals.Estructura.ColaReady)
-		log.Printf("## (%d:%d) Se crea el Hilo - Estado: READY", pcb.Pid, tcb.Tid)
-	}
-	return
+	_ = cliente.Post(globals.KConfig.IpMemory, globals.KConfig.PortMemory, "crear_hilo", solicitudCodificada)
+
+	queues.AgregarHiloACola(&tcb, &globals.Estructura.ColaReady)
+	log.Printf("## (%d:%d) Se crea el Hilo - Estado: READY", pcb.Pid, tcb.Tid)
+	globals.Planificar <- true
 }
 
 func FinalizarHilo(pid int, tid int) {
@@ -67,9 +63,11 @@ func FinalizarHilo(pid int, tid int) {
 		pcb := queues.BuscarPCBEnColas(pid)
 		tcb := BuscarHiloEnPCB(pid, tid)
 
-		defer queues.SacarHiloDeCola(tid, queues.BuscarColaDeHilo(tcb))
+		queues.SacarHiloDeCola(tid, queues.BuscarColaDeHilo(tcb))
 
 		tcb.Estado = "EXIT"
+
+		queues.AgregarHiloACola(tcb, &globals.Estructura.ColaExit)
 
 		for i, thread := range pcb.Tid {
 			if thread.Tid == tid {
@@ -111,11 +109,16 @@ func DesbloquearHilo(tcb *commons.TCB) {
 	queues.SacarHiloDeCola(tcb.Tid, &globals.Estructura.ColaBloqueados)
 
 	queues.AgregarHiloACola(tcb, &globals.Estructura.ColaReady)
+
+	globals.Planificar <- true
 }
 
 func BloquearHilo(tcb *commons.TCB) {
 	tcb.Estado = "BLOCKED"
+
 	globals.Estructura.HiloExecute = nil
+
 	queues.AgregarHiloACola(tcb, &globals.Estructura.ColaBloqueados)
-	// VER que onda la CPU, cómo le avisamos o qué hace
+
+	commons.CpuLibre <- true
 }

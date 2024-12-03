@@ -1,48 +1,45 @@
 package handlers
 
 import (
+	"github.com/sisoputnfrba/tp-golang/kernel/globals"
 	"github.com/sisoputnfrba/tp-golang/kernel/globals/mutexes"
 	"github.com/sisoputnfrba/tp-golang/kernel/globals/processes"
+	"github.com/sisoputnfrba/tp-golang/kernel/globals/queues"
 	"github.com/sisoputnfrba/tp-golang/kernel/globals/threads"
 	"github.com/sisoputnfrba/tp-golang/kernel/handlers/request"
 	"github.com/sisoputnfrba/tp-golang/memoria/globals/schemes"
 	"github.com/sisoputnfrba/tp-golang/utils/cliente"
+	"github.com/sisoputnfrba/tp-golang/utils/commons"
 	"log"
 	"net/http"
+	"sync"
 	"time"
-
-	"github.com/sisoputnfrba/tp-golang/kernel/globals"
-	"github.com/sisoputnfrba/tp-golang/utils/commons"
 )
 
 func HandleProcessCreate(w http.ResponseWriter, r *http.Request) {
 	var req request.RequestProcessCreate
 	err := commons.DecodificarJSON(r.Body, &req)
 
-	if err != nil {
-		http.Error(w, "Error al decodificar el JSON", http.StatusBadRequest)
-		return
-	}
-
-	w.WriteHeader(processes.CrearProceso(req.Pseudocodigo, req.TamanioMemoria, req.Prioridad))
-	w.Write([]byte("Proceso creado"))
-}
-
-func HandleThreadCreate(w http.ResponseWriter, r *http.Request) {
-	var req request.RequestThreadCreate
-	err := commons.DecodificarJSON(r.Body, &req)
+	log.Printf("## (%d:%d) - Solicitó syscall: PROCESS_CREATE", req.Pid, req.Tid)
 
 	if err != nil {
 		http.Error(w, "Error al decodificar el JSON", http.StatusBadRequest)
 		return
 	}
 
-	threads.CrearHilo(req.Pid, req.Prioridad, req.Pseudocodigo)
+	statusCode := processes.CrearProceso(req.Pseudocodigo, req.TamanioMemoria, req.Prioridad)
+
+	w.WriteHeader(statusCode)
+	if statusCode == 200 {
+		w.Write([]byte("Proceso creado"))
+	}
 }
 
 func HandleProcessExit(w http.ResponseWriter, r *http.Request) {
 	var req request.RequestProcessExit
 	err := commons.DecodificarJSON(r.Body, &req)
+
+	log.Printf("## (%d:%d) - Solicitó syscall: PROCESS_EXIT", req.Pid, req.Tid)
 
 	if err != nil {
 		http.Error(w, "Error al decodificar el JSON", http.StatusBadRequest)
@@ -50,49 +47,57 @@ func HandleProcessExit(w http.ResponseWriter, r *http.Request) {
 	}
 	if req.Tid == 0 {
 		processes.FinalizarProceso(req.Pid)
+		w.WriteHeader(http.StatusOK)
 	} else {
 		http.Error(w, "La finalizacion de un proceso solo puede ser solicitada por el TID 0", http.StatusBadRequest)
 	}
 }
 
-// THREAD_EXIT Finaliza el hilo que la invoca (el tid que se manda es del propio hilo)
-
-func HandleThreadExit(w http.ResponseWriter, r *http.Request) {
-	var req request.RequestThreadExit
+func HandleThreadCreate(w http.ResponseWriter, r *http.Request) {
+	var req request.RequestThreadCreate
 	err := commons.DecodificarJSON(r.Body, &req)
+
+	log.Printf("## (%d:%d) - Solicitó syscall: THREAD_CREATE", req.Pid, req.Tid)
 
 	if err != nil {
 		http.Error(w, "Error al decodificar el JSON", http.StatusBadRequest)
 		return
 	}
 
-	threads.FinalizarHilo(req.Pid, req.Tid)
+	threads.CrearHilo(req.Pid, req.Prioridad, req.Pseudocodigo)
+	w.WriteHeader(http.StatusOK)
 }
-
-//THREAD_JOIN, esta syscall recibe como parámetro un TID, mueve el hilo que la invocó al estado BLOCK hasta que el TID pasado por parámetro finalice.
-//En caso de que el TID pasado por parámetro no exista o ya haya finalizado, esta syscall no hace nada y el hilo que la invocó continuará su ejecución.
 
 func HandleThreadJoin(w http.ResponseWriter, r *http.Request) {
 	var req request.RequestThreadJoin
 	err := commons.DecodificarJSON(r.Body, &req)
 
+	log.Printf("## (%d:%d) - Solicitó syscall: THREAD_JOIN", req.Pid, req.Tid)
+
 	if err != nil {
 		http.Error(w, "Error al decodificar el JSON", http.StatusBadRequest)
 		return
 	}
 
-	threads.BloquearHilo(globals.Estructura.HiloExecute)
-	// REPLANIFICAR !!
-	tcbParametro := threads.BuscarHiloEnPCB(req.PidParametro, req.TidParametro)
+	tcbParametro := queues.BuscarTCBenPCB(req.PidParametro, req.TidParametro)
+	tcbExecute := queues.BuscarTCBenPCB(req.Pid, req.Tid)
 
-	tcbParametro.TcbADesbloquear = append(tcbParametro.TcbADesbloquear, globals.Estructura.HiloExecute)
+	if tcbParametro == nil || tcbParametro.Estado == "EXIT" {
+		return
+	}
+
+	threads.BloquearHilo(tcbExecute)
+
+	tcbParametro.TcbADesbloquear = append(tcbParametro.TcbADesbloquear, tcbExecute)
+
+	w.WriteHeader(http.StatusOK)
 }
-
-// THREAD_CANCEL Finaliza el hilo cuyo tid se pasa por parámetro (desde otro hilo)
 
 func HandleThreadCancel(w http.ResponseWriter, r *http.Request) {
 	var req request.RequestThreadCancel
 	err := commons.DecodificarJSON(r.Body, &req)
+
+	log.Printf("## (%d:%d) - Solicitó syscall: THREAD_CANCEL", req.Pid, req.Tid)
 
 	if err != nil {
 		http.Error(w, "Error al decodificar el JSON", http.StatusBadRequest)
@@ -101,11 +106,30 @@ func HandleThreadCancel(w http.ResponseWriter, r *http.Request) {
 
 	if threads.BuscarHiloEnPCB(req.Pid, req.TidAEliminar) != nil {
 		threads.FinalizarHilo(req.Pid, req.TidAEliminar)
+		w.WriteHeader(http.StatusOK)
 	}
+}
+
+func HandleThreadExit(w http.ResponseWriter, r *http.Request) {
+	var req request.RequestThreadExit
+	err := commons.DecodificarJSON(r.Body, &req)
+
+	log.Printf("## (%d:%d) - Solicitó syscall: THREAD_EXIT", req.Pid, req.Tid)
+
+	if err != nil {
+		http.Error(w, "Error al decodificar el JSON", http.StatusBadRequest)
+		return
+	}
+
+	threads.FinalizarHilo(req.Pid, req.Tid)
+
+	w.WriteHeader(http.StatusOK)
 }
 
 func HandleMutexCreate(w http.ResponseWriter, r *http.Request) {
 	var req request.RequestMutex
+
+	log.Printf("## (%d:%d) - Solicitó syscall: MUTEX_CREATE", req.Pid, req.Tid)
 
 	err := commons.DecodificarJSON(r.Body, &req)
 
@@ -115,10 +139,14 @@ func HandleMutexCreate(w http.ResponseWriter, r *http.Request) {
 	}
 
 	mutexes.CrearMutex(req.Nombre, req.Pid)
+
+	w.WriteHeader(http.StatusOK)
 }
 
 func HandleMutexLock(w http.ResponseWriter, r *http.Request) {
 	var req request.RequestMutex
+
+	log.Printf("## (%d:%d) - Solicitó syscall: MUTEX_LOCK", req.Pid, req.Tid)
 
 	err := commons.DecodificarJSON(r.Body, &req)
 
@@ -133,6 +161,8 @@ func HandleMutexLock(w http.ResponseWriter, r *http.Request) {
 func HandleMutexUnlock(w http.ResponseWriter, r *http.Request) {
 	var req request.RequestMutex
 
+	log.Printf("## (%d:%d) - Solicitó syscall: MUTEX_UNLOCK", req.Pid, req.Tid)
+
 	err := commons.DecodificarJSON(r.Body, &req)
 
 	if err != nil {
@@ -145,6 +175,9 @@ func HandleMutexUnlock(w http.ResponseWriter, r *http.Request) {
 
 func HandleDumpMemory(w http.ResponseWriter, r *http.Request) {
 	var req request.RequestDumpMemory
+
+	log.Printf("## (%d:%d) - Solicitó syscall: DUMP_MEMORY", req.Pid, req.Tid)
+
 	err := commons.DecodificarJSON(r.Body, &req)
 	if err != nil {
 		http.Error(w, "Error al decodificar el JSON", http.StatusBadRequest)
@@ -157,11 +190,9 @@ func HandleDumpMemory(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	threads.BloquearHilo(tcb)
+	statusCode, _ := SolicitarDumpMemory(req.Pid, req.Tid)
 
-	//mutex!!
-	response, err := SolicitarDumpMemory(req.Pid, req.Tid)
-
-	if err != nil || response.StatusCode != http.StatusOK {
+	if statusCode != http.StatusOK {
 		http.Error(w, "Error al solicitar el dump de memoria", http.StatusInternalServerError)
 		processes.FinalizarProceso(req.Pid)
 		return
@@ -170,8 +201,12 @@ func HandleDumpMemory(w http.ResponseWriter, r *http.Request) {
 	threads.DesbloquearHilo(tcb)
 }
 
+var mtxIO sync.Mutex
+
 func HandleIO(w http.ResponseWriter, r *http.Request) {
 	var req request.RequestIO
+
+	log.Printf("## (%d:%d) - Solicitó syscall: IO", req.Pid, req.Tid)
 
 	err := commons.DecodificarJSON(r.Body, &req)
 	if err != nil {
@@ -179,24 +214,40 @@ func HandleIO(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	tcb := globals.Estructura.HiloExecute
-	threads.BloquearHilo(tcb)
-	// REPLANIFICAR !!
-	time.Sleep(time.Duration(req.Tiempo) * time.Second)
+	mtxIO.Lock()
+	globals.Estructura.ColaIO = append(globals.Estructura.ColaIO, &req)
+	mtxIO.Unlock()
 
-	// Desbloquear Hilo y mandarlo a la cola de Ready devuelta
-	threads.DesbloquearHilo(tcb)
-	log.Printf("## (%d:%d) finalizó IO y pasa a READY", tcb.Pid, tcb.Tid)
+	globals.IO <- 1
+
+	log.Printf("## (%d:%d) finalizó IO y pasa a READY", req.Pid, req.Tid)
 }
 
-func SolicitarDumpMemory(pid int, tid int) (*http.Response, error) {
+func SolicitarDumpMemory(pid int, tid int) (int, error) {
 	request := request.RequestDumpMemory{
 		Pid: pid,
 		Tid: tid,
 	}
 	requestCodificado, _ := commons.CodificarJSON(request)
-	cliente.Post(globals.KConfig.IpMemory, globals.KConfig.PortMemory, "dump", requestCodificado)
-	return nil, nil
+	response := cliente.Post(globals.KConfig.IpMemory, globals.KConfig.PortMemory, "dump", requestCodificado)
+	return response.StatusCode, nil
+}
+
+func ManejadorIO() {
+	for {
+		<-globals.IO
+		mtxIO.Lock()
+		if len(globals.Estructura.ColaIO) > 0 {
+			req := globals.Estructura.ColaIO[0]
+			globals.Estructura.ColaIO = globals.Estructura.ColaIO[1:]
+			mtxIO.Unlock()
+			threads.BloquearHilo(threads.BuscarHiloEnPCB(req.Pid, req.Tid))
+			time.Sleep(time.Duration(req.Tiempo))
+			threads.DesbloquearHilo(threads.BuscarHiloEnPCB(req.Pid, req.Tid))
+		} else {
+			mtxIO.Unlock()
+		}
+	}
 }
 
 func Dispatch(pcb *commons.PCB, tid int) (*http.Response, error) {

@@ -37,21 +37,20 @@ func CrearProceso(pseudocodigo string, tamanioMemoria int, prioridad int) int {
 		}
 		// Si la memoria aceptó el proceso, crearlo y pasarlo a READY
 		if respuestaMemoria.StatusCode == http.StatusOK {
-
 			threads.CrearHilo(pcb.Pid, prioridad, pseudocodigo)
-
-			log.Printf("Hilo main movido a READY")
 		} else {
-			if respuestaMemoria.StatusCode == http.StatusConflict {
-				log.Println("Memoria no tiene suficiente espacio. Proceso en espera.")
-			}
+			log.Println("Memoria no tiene suficiente espacio. Proceso en espera.")
+
 			queues.AgregarProcesoACola(pcb, globals.Estructura.ColaNew)
+
+			return http.StatusBadRequest
 		}
 	} else {
 		log.Println("Cola NEW no está vacía, proceso se encola en NEW.")
 
 		queues.AgregarProcesoACola(pcb, globals.Estructura.ColaNew)
 	}
+
 	return http.StatusOK
 }
 
@@ -114,7 +113,7 @@ func FinalizarProceso(pid int) {
 }
 
 func SolicitarProcesoMemoria(pid int, pseudocodigo string, tamanio int) (*http.Response, error) {
-	req := request.RequestProcessCreate{
+	req := request.RequestProcessCreateMemoria{
 		Pid:            pid,
 		Pseudocodigo:   pseudocodigo,
 		TamanioMemoria: tamanio,

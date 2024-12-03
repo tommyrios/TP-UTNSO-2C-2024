@@ -50,3 +50,15 @@ func BuscarColaDeHilo(tcbBuscado *commons.TCB) *[]*commons.TCB {
 	}
 	return nil
 }
+
+func BuscarTCBenPCB(pid int, tid int) *commons.TCB {
+	pcb := BuscarPCBEnColas(pid)
+
+	for _, tcb := range pcb.Tid {
+		if tcb.Tid == tid {
+			return &tcb
+		}
+	}
+
+	return nil
+}

@@ -1,6 +1,7 @@
 package globals
 
 import (
+	"github.com/sisoputnfrba/tp-golang/kernel/handlers/request"
 	"github.com/sisoputnfrba/tp-golang/utils/commons"
 	"sync"
 )
@@ -22,6 +23,7 @@ type Kernel struct {
 	ColaReady      []*commons.TCB       // Cola de hilos listos para ejecución
 	ColaBloqueados []*commons.TCB       // Cola de hilos bloqueados
 	ColaExit       []*commons.TCB       // Cola de hilos finalizados
+	ColaIO         []*request.RequestIO // Cola de hilos esperando por IO
 	HiloExecute    *commons.TCB         // Hilo en ejecución
 	ContadorPid    int                  // PID autoincremental
 	MtxReady       *sync.Mutex
@@ -33,6 +35,7 @@ var Estructura = &Kernel{
 	ColaReady:      []*commons.TCB{},
 	ColaBloqueados: []*commons.TCB{},
 	ColaExit:       []*commons.TCB{},
+	ColaIO:         []*request.RequestIO{},
 	HiloExecute:    nil,
 	ContadorPid:    1,
 	MtxReady:       &sync.Mutex{},
@@ -40,4 +43,5 @@ var Estructura = &Kernel{
 
 var KConfig *Config
 var MutexPlanificacion sync.Mutex
-var Planificar = make(chan bool, 1) // Verificar si no hay que poner
+var Planificar = make(chan int) // Verificar si no hay que poner
+var IO chan int

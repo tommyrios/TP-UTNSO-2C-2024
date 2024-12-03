@@ -42,6 +42,9 @@ func main() {
 	//// Hilo Execute ////
 	go schedulers.ManejarHiloRunning()
 
+	globals.IO = make(chan int, 1)
+	go handlers.ManejadorIO()
+
 	//// Servidor ////
 	mux := http.NewServeMux()
 	http.HandleFunc("/syscall/process_create", handlers.HandleProcessCreate)

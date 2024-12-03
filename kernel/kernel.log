@@ -902,3 +902,5 @@
 2024/12/02 21:52:18 Hilo main movido a READY
 2024/12/02 21:52:18 El módulo kernel está a la escucha en el puerto :8001
 2024/12/02 21:52:18 Respuesta POST: 200 OK
+2024/12/03 09:27:41 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/03 09:27:41 Cola NEW está vacía, solicitando memoria.

@@ -1179,3 +1179,10 @@ created by net/http.(*Server).Serve in goroutine 1
 2024/12/02 21:52:18 ## Proceso creado -  PID: 1 - Tamaño: 32
 2024/12/02 21:52:18 ## Hilo creado - (PID:TID) - (1:0)
 2024/12/02 21:52:19 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE pruebaPlani.txt 32 0}
+2024/12/03 09:27:22 Memoria inicializada con éxito.
+2024/12/03 09:27:22 El módulo memoria está a la escucha en el puerto :8002
+2024/12/03 09:31:22 Memoria inicializada con éxito.
+2024/12/03 09:31:22 El módulo memoria está a la escucha en el puerto :8002
+2024/12/03 09:31:37 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/03 09:31:37 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/03 09:31:38 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE pruebaPlani.txt 32 0}
