@@ -214,7 +214,7 @@ func EnviarRegistrosActualizados(registros *commons.Registros, pid int, tid int)
 	reqRegistrosActualizados := requests.RequestActualizarRegistros{
 		Pid:       pid,
 		Tid:       tid,
-		Registros: *registros,
+		Registros: registros,
 	}
 
 	reqCodificada, err := commons.CodificarJSON(reqRegistrosActualizados)
@@ -223,10 +223,10 @@ func EnviarRegistrosActualizados(registros *commons.Registros, pid int, tid int)
 		return
 	}
 
-	response, mensaje := cliente.Post2(globals.CConfig.IpMemory, globals.CConfig.PortMemory, "actualizar_contexto", reqCodificada)
+	cliente.Post(globals.CConfig.IpMemory, globals.CConfig.PortMemory, "actualizar_contexto", reqCodificada)
 
-	defer response.Body.Close()
+	//defer response.Body.Close()
 
 	log.Printf("## TID: %d - Actualizo Contexto Ejecución.", tid)
-	log.Printf("Respuesta de memoria a actualizar contexto: %s\n", string(mensaje))
+	//log.Printf("Respuesta de memoria a actualizar contexto: %s\n", string(mensaje))
 }

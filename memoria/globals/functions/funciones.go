@@ -16,10 +16,10 @@ type MemUsuario globals.MemUsuario
 
 // FUNCIONES CPU
 
-func ObtenerRegistros(pid int, tid int) commons.Registros {
+func ObtenerRegistros(pid int, tid int) *commons.Registros {
 
-	registros := *globals.MemoriaSistema.TablaHilos[pid][tid]
-	
+	registros := globals.MemoriaSistema.TablaHilos[pid][tid]
+
 	return registros
 }
 
@@ -31,7 +31,7 @@ func ObtenerBaseLimite(pid int) (int, int) {
 	return base, limite
 }
 
-func ActualizarRegistros(pid int, tid int, registrosActualizados commons.Registros) error {
+func ActualizarRegistros(pid int, tid int, registrosActualizados *commons.Registros) error {
 
 	registrosAActualizar := globals.MemoriaSistema.TablaHilos[pid][tid]
 

@@ -297,13 +297,19 @@ func HandleDesalojoCpu(w http.ResponseWriter, r *http.Request) {
 		processes.FinalizarProceso(req.Pid)
 	} else {
 		if req.Razon == "SYSCALL" || req.Razon == "INTERRUPCION" {
-			globals.Estructura.HiloExecute = nil
+			globals.Estructura.MtxReady.Lock()
 			queues.AgregarHiloACola(threads.BuscarHiloEnPCB(req.Pid, req.Tid), &globals.Estructura.ColaReady)
-			<-globals.Planificar
+			globals.Estructura.MtxReady.Unlock()
 		}
 	}
 
-	<-commons.CpuLibre
+	globals.Estructura.HiloExecute = nil
+
+	log.Printf("## (PID:TID) - (%d:%d) - Devolvió hilo a Kernel", req.Pid, req.Tid)
+	w.WriteHeader(http.StatusOK)
+
+	globals.Planificar <- true
+	//globals.CpuLibre <- true
 }
 
 func PausarPlanificacion() {

@@ -17,6 +17,8 @@ type Config struct {
 
 var CConfig *Config
 
+var Syscall = make(chan bool)
+
 type InstruccionStruct struct {
 	CodOperacion string   `json:"cod_operacion"`
 	Operandos    []string `json:"operandos"`
@@ -88,4 +90,5 @@ func DevolverPCB(pid int, tid int, razon string) {
 	reqCodificada, _ := commons.CodificarJSON(reqDispatch)
 
 	cliente.Post(CConfig.IpKernel, CConfig.PortKernel, "pcb", reqCodificada)
+
 }

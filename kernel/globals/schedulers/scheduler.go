@@ -14,6 +14,8 @@ var mu = globals.Estructura.MtxReady
 
 func ManejarColaReady() {
 	switch globals.KConfig.SchedulerAlgorithm {
+	case "FIFO":
+		go ManejarColaReadyFIFO()
 	case "CMN":
 		go ManejarColaReadyCMN()
 	case "PRIORITY":
@@ -23,23 +25,35 @@ func ManejarColaReady() {
 
 func ManejarHiloRunning() {
 	for {
-		select {
-		case <-commons.CpuLibre:
-			mu.Lock()
-			if len(globals.Estructura.ColaReady) == 0 {
-				mu.Unlock()
-				continue // No hay hilos listos, salta al siguiente ciclo
-			}
-			hiloAEjecutar := globals.Estructura.ColaReady[0]
-			// Lo asignamos al hilo en ejecución
-			globals.Estructura.HiloExecute = hiloAEjecutar
+		<-globals.CpuLibre
 
-			// Lo eliminamos de la cola de ready
-			globals.Estructura.ColaReady = globals.Estructura.ColaReady[1:]
+		mu.Lock()
+		if len(globals.Estructura.ColaReady) == 0 {
 			mu.Unlock()
-
-			executeThread(hiloAEjecutar.Pid, hiloAEjecutar.Tid)
+			continue
 		}
+
+		hiloAEjecutar := globals.Estructura.ColaReady[0]
+
+		globals.Estructura.HiloExecute = hiloAEjecutar
+
+		hiloAEjecutar.Estado = "EXEC"
+
+		if len(globals.Estructura.ColaReady) > 0 {
+			globals.Estructura.ColaReady = globals.Estructura.ColaReady[1:]
+		} else {
+			globals.Estructura.ColaReady = []*commons.TCB{}
+		}
+
+		mu.Unlock()
+
+		executeThread(hiloAEjecutar.Pid, hiloAEjecutar.Tid)
+	}
+}
+
+func ManejarColaReadyFIFO() {
+	for {
+		<-globals.Planificar
 	}
 }
 
@@ -85,7 +99,7 @@ func ManejarColaReadyCMN() {
 
 				for len(queue) > 0 {
 					select {
-					case <-commons.CpuLibre:
+					case <-globals.CpuLibre:
 						globals.Estructura.HiloExecute = queue[0]
 
 						queue = queue[1:]
@@ -99,7 +113,7 @@ func ManejarColaReadyCMN() {
 									// Si llega un hilo de mayor prioridad, desaloja el hilo actual
 									priorityMap[priority] = append(priorityMap[priority], globals.Estructura.HiloExecute)
 									// Notificar que la CPU está libre
-									commons.CpuLibre <- true
+									globals.CpuLibre <- true
 									return // Termina la ejecución para dar paso al hilo de mayor prioridad
 								}
 
@@ -112,7 +126,7 @@ func ManejarColaReadyCMN() {
 							}
 
 							// Notificar que la CPU está libre
-							commons.CpuLibre <- true
+							globals.CpuLibre <- true
 						}()
 					}
 				}
@@ -157,5 +171,4 @@ func executeThread(pid int, tid int) {
 		log.Printf("Error al enviar el PID y TID %d al CPU.", pid)
 		threads.FinalizarHilo(pid, tid)
 	}
-	return
 }

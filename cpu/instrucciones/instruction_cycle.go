@@ -48,6 +48,7 @@ func Dispatch(w http.ResponseWriter, r *http.Request) {
 	}
 
 	w.WriteHeader(http.StatusOK)
+	return
 }
 
 func EjecutarInstruccion(pid int, tid int) error {
@@ -62,7 +63,7 @@ func EjecutarInstruccion(pid int, tid int) error {
 
 		instruccion := Decode(instruccionRecibida)
 
-		if Execute(instruccion, &contexto.Registros, contexto.Base, contexto.Limite, pid, tid) == 1 {
+		if Execute(instruccion, contexto.Registros, contexto.Base, contexto.Limite, pid, tid) == 1 {
 			contexto.Registros.PC++
 			break
 		}
@@ -76,7 +77,7 @@ func EjecutarInstruccion(pid int, tid int) error {
 		}
 	}
 
-	EnviarRegistrosActualizados(&contexto.Registros, pid, tid)
+	EnviarRegistrosActualizados(contexto.Registros, pid, tid)
 
 	return nil
 }
@@ -158,18 +159,21 @@ func Execute(instruccion globals.InstruccionStruct, registros *commons.Registros
 		return WriteMem(instruccion.Operandos, registros, base, limite, pid, tid)
 
 	case "PROCESS_EXIT":
+		Syscall(instruccion, registros, pid, tid)
 		globals.DevolverPCB(pid, tid, "PROCESS_EXIT")
 		return 1
 
 	case "THREAD_EXIT":
+		Syscall(instruccion, registros, pid, tid)
 		globals.DevolverPCB(pid, tid, "THREAD_EXIT")
 		return 1
 
 	case "DUMP_MEMORY", "IO", "PROCESS_CREATE", "THREAD_CREATE",
 		"THREAD_JOIN", "THREAD_CANCEL", "MUTEX_CREATE",
 		"MUTEX_LOCK", "MUTEX_UNLOCK":
-		Syscall(instruccion, registros, pid, tid)
 		globals.DevolverPCB(pid, tid, "SYSCALL")
+		Syscall(instruccion, registros, pid, tid)
+
 		return 1
 	}
 

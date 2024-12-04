@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"github.com/sisoputnfrba/tp-golang/kernel/globals/processes"
 	"github.com/sisoputnfrba/tp-golang/kernel/globals/schedulers"
-	"github.com/sisoputnfrba/tp-golang/utils/commons"
 	"log"
 	"net/http"
 	"os"
@@ -38,7 +37,6 @@ func main() {
 	//// Proceso Inicial ////
 	processes.ProcesoInicial(os.Args)
 
-	globals.IO = make(chan int, 1)
 	go handlers.ManejadorIO()
 
 	//// Servidor ////
@@ -64,7 +62,7 @@ func main() {
 
 	//// Hilo Execute ////
 	go schedulers.ManejarHiloRunning()
-	commons.CpuLibre <- true
+	globals.CpuLibre <- true
 
 	err = http.ListenAndServe(port, mux)
 	if err != nil {

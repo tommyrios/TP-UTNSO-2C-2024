@@ -42,6 +42,11 @@ var Estructura = &Kernel{
 }
 
 var KConfig *Config
+
+var CpuLibre = make(chan bool)
+
+var IO = make(chan int)
+
 var MutexPlanificacion sync.Mutex
-var Planificar = make(chan bool, 1) // Verificar si no hay que poner
-var IO chan int
+
+var Planificar = make(chan bool) // Verificar si no hay que poner

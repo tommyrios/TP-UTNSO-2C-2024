@@ -39,7 +39,6 @@ func Post2(ip string, port int, ruta string, jsonData []byte) (*http.Response, [
 	if err != nil {
 		return nil, nil
 	}
-	//log.Printf("Cuerpo recibido: %s", string(bodyBytes))
 
 	log.Println("Respuesta POST:", response.Status)
 

@@ -15,11 +15,11 @@ type RequestContexto struct {
 }
 
 type ResponseContexto struct {
-	Pid       int               `json:"pid"`
-	Tid       int               `json:"tid"`
-	Registros commons.Registros `json:"registros"`
-	Base      int               `json:"base"`
-	Limite    int               `json:"limite"`
+	Pid       int                `json:"pid"`
+	Tid       int                `json:"tid"`
+	Registros *commons.Registros `json:"registros"`
+	Base      int                `json:"base"`
+	Limite    int                `json:"limite"`
 }
 
 type RequestInstruccion struct {
@@ -29,9 +29,9 @@ type RequestInstruccion struct {
 }
 
 type RequestActualizarRegistros struct {
-	Pid       int               `json:"pid"`
-	Tid       int               `json:"tid"`
-	Registros commons.Registros `json:"registros"`
+	Pid       int                `json:"pid"`
+	Tid       int                `json:"tid"`
+	Registros *commons.Registros `json:"registros"`
 }
 
 type RequestSyscall struct {

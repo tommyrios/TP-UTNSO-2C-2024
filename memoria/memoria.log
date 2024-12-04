@@ -1601,3 +1601,731 @@ created by net/http.(*Server).Serve in goroutine 1
 2024/12/04 11:57:54 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 1}
 2024/12/04 11:57:55 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
 2024/12/04 11:57:55 ## Hilo creado - (PID:TID) - (1:1)
+2024/12/04 14:48:13 Memoria inicializada con éxito.
+2024/12/04 14:48:13 El módulo memoria está a la escucha en el puerto :8002
+2024/12/04 14:48:26 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/04 14:48:26 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/04 14:48:27 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/04 14:48:28 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/04 14:48:29 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 1}
+2024/12/04 14:48:30 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/04 14:48:30 ## Hilo creado - (PID:TID) - (1:1)
+2024/12/04 14:58:21 Memoria inicializada con éxito.
+2024/12/04 14:58:21 El módulo memoria está a la escucha en el puerto :8002
+2024/12/04 15:00:50 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/04 15:00:50 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/04 15:00:51 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/04 15:00:52 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/04 15:00:53 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 1}
+2024/12/04 15:00:54 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/04 15:00:54 ## Hilo creado - (PID:TID) - (1:1)
+2024/12/04 15:02:11 Memoria inicializada con éxito.
+2024/12/04 15:02:11 El módulo memoria está a la escucha en el puerto :8002
+2024/12/04 15:02:16 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/04 15:02:16 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/04 15:02:17 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/04 15:02:18 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/04 15:02:19 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 1}
+2024/12/04 15:02:20 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/04 15:02:20 ## Hilo creado - (PID:TID) - (1:1)
+2024/12/04 15:04:11 Memoria inicializada con éxito.
+2024/12/04 15:04:11 El módulo memoria está a la escucha en el puerto :8002
+2024/12/04 15:04:17 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/04 15:04:17 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/04 15:04:18 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/04 15:04:19 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/04 15:04:20 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 1}
+2024/12/04 15:04:21 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/04 15:04:21 ## Hilo creado - (PID:TID) - (1:1)
+2024/12/04 15:04:22 ## Contexto solicitado - (PID:TID) - (1:1)
+2024/12/04 15:04:23 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SET CX 5}
+2024/12/04 15:04:24 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SET BX 1}
+2024/12/04 15:04:25 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SUB CX BX}
+2024/12/04 15:04:26 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {JNZ CX 2}
+2024/12/04 15:04:27 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SUB CX BX}
+2024/12/04 15:04:28 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {JNZ CX 2}
+2024/12/04 15:04:29 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SUB CX BX}
+2024/12/04 15:04:30 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {JNZ CX 2}
+2024/12/04 15:04:31 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SUB CX BX}
+2024/12/04 15:04:32 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {JNZ CX 2}
+2024/12/04 15:04:33 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SUB CX BX}
+2024/12/04 15:04:34 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {JNZ CX 2}
+2024/12/04 15:04:35 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {THREAD_EXIT}
+2024/12/04 15:08:33 Memoria inicializada con éxito.
+2024/12/04 15:08:33 El módulo memoria está a la escucha en el puerto :8002
+2024/12/04 15:08:47 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/04 15:08:47 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/04 15:08:48 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/04 15:08:49 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/04 15:08:50 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 1}
+2024/12/04 15:08:51 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/04 15:08:51 ## Hilo creado - (PID:TID) - (1:1)
+2024/12/04 15:08:52 ## Contexto solicitado - (PID:TID) - (1:1)
+2024/12/04 15:08:53 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SET CX 5}
+2024/12/04 15:08:54 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SET BX 1}
+2024/12/04 15:08:55 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SUB CX BX}
+2024/12/04 15:08:56 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {JNZ CX 2}
+2024/12/04 15:08:57 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SUB CX BX}
+2024/12/04 15:08:58 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {JNZ CX 2}
+2024/12/04 15:08:59 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SUB CX BX}
+2024/12/04 15:09:00 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {JNZ CX 2}
+2024/12/04 15:09:01 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SUB CX BX}
+2024/12/04 15:09:02 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {JNZ CX 2}
+2024/12/04 15:09:03 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SUB CX BX}
+2024/12/04 15:09:04 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {JNZ CX 2}
+2024/12/04 15:09:05 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {THREAD_EXIT}
+2024/12/04 15:17:12 Memoria inicializada con éxito.
+2024/12/04 15:17:12 El módulo memoria está a la escucha en el puerto :8002
+2024/12/04 15:17:18 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/04 15:17:18 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/04 15:17:19 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/04 15:17:21 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/04 15:17:22 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 1}
+2024/12/04 15:17:23 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/04 15:17:23 ## Hilo creado - (PID:TID) - (1:1)
+2024/12/04 15:19:02 Memoria inicializada con éxito.
+2024/12/04 15:19:02 El módulo memoria está a la escucha en el puerto :8002
+2024/12/04 15:19:20 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/04 15:19:20 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/04 15:19:21 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/04 15:19:22 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/04 15:19:23 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 1}
+2024/12/04 15:19:24 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/04 15:19:24 ## Hilo creado - (PID:TID) - (1:1)
+2024/12/04 15:20:47 Memoria inicializada con éxito.
+2024/12/04 15:20:47 El módulo memoria está a la escucha en el puerto :8002
+2024/12/04 15:20:51 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/04 15:20:51 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/04 15:20:53 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/04 15:20:54 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/04 15:20:55 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 1}
+2024/12/04 15:20:56 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/04 15:20:56 ## Hilo creado - (PID:TID) - (1:1)
+2024/12/04 15:20:57 ## Contexto solicitado - (PID:TID) - (1:1)
+2024/12/04 15:20:58 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SET CX 5}
+2024/12/04 15:20:59 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SET BX 1}
+2024/12/04 15:21:00 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SUB CX BX}
+2024/12/04 15:21:01 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {JNZ CX 2}
+2024/12/04 15:21:02 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SUB CX BX}
+2024/12/04 15:21:03 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {JNZ CX 2}
+2024/12/04 15:21:04 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SUB CX BX}
+2024/12/04 15:21:05 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {JNZ CX 2}
+2024/12/04 15:21:06 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SUB CX BX}
+2024/12/04 15:21:07 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {JNZ CX 2}
+2024/12/04 15:21:08 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SUB CX BX}
+2024/12/04 15:21:09 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {JNZ CX 2}
+2024/12/04 15:21:10 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {THREAD_EXIT}
+2024/12/04 15:22:30 Memoria inicializada con éxito.
+2024/12/04 15:22:30 El módulo memoria está a la escucha en el puerto :8002
+2024/12/04 15:22:38 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/04 15:22:38 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/04 15:22:39 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/04 15:22:40 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET CX 5}
+2024/12/04 15:22:41 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET BX 1}
+2024/12/04 15:22:42 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUB CX BX}
+2024/12/04 15:22:43 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {JNZ CX 2}
+2024/12/04 15:22:44 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUB CX BX}
+2024/12/04 15:22:45 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {JNZ CX 2}
+2024/12/04 15:22:46 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUB CX BX}
+2024/12/04 15:22:47 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {JNZ CX 2}
+2024/12/04 15:22:48 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUB CX BX}
+2024/12/04 15:22:49 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {JNZ CX 2}
+2024/12/04 15:22:50 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUB CX BX}
+2024/12/04 15:22:51 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {JNZ CX 2}
+2024/12/04 15:22:52 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_EXIT}
+2024/12/04 15:23:57 Memoria inicializada con éxito.
+2024/12/04 15:23:57 El módulo memoria está a la escucha en el puerto :8002
+2024/12/04 15:24:06 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/04 15:24:06 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/04 15:24:07 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/04 15:24:08 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET CX 5}
+2024/12/04 15:24:09 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET BX 1}
+2024/12/04 15:24:10 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUB CX BX}
+2024/12/04 15:24:11 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {JNZ CX 2}
+2024/12/04 15:24:12 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUB CX BX}
+2024/12/04 15:24:13 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {JNZ CX 2}
+2024/12/04 15:24:14 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUB CX BX}
+2024/12/04 15:24:15 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {JNZ CX 2}
+2024/12/04 15:24:16 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUB CX BX}
+2024/12/04 15:24:17 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {JNZ CX 2}
+2024/12/04 15:24:18 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUB CX BX}
+2024/12/04 15:24:19 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {JNZ CX 2}
+2024/12/04 15:24:20 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 3}
+2024/12/04 15:24:20 ## Hilo creado - (PID:TID) - (1:1)
+2024/12/04 15:24:21 ## Contexto solicitado - (PID:TID) - (1:1)
+2024/12/04 15:24:22 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SET CX 5}
+2024/12/04 15:24:23 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SET BX 1}
+2024/12/04 15:24:24 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SUB CX BX}
+2024/12/04 15:24:25 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {JNZ CX 2}
+2024/12/04 15:24:26 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SUB CX BX}
+2024/12/04 15:24:27 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {JNZ CX 2}
+2024/12/04 15:24:28 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SUB CX BX}
+2024/12/04 15:24:29 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {JNZ CX 2}
+2024/12/04 15:24:30 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SUB CX BX}
+2024/12/04 15:24:31 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {JNZ CX 2}
+2024/12/04 15:24:32 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SUB CX BX}
+2024/12/04 15:24:33 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {JNZ CX 2}
+2024/12/04 15:24:34 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {THREAD_CREATE pruebaPlani.txt 3}
+2024/12/04 15:24:34 ## Hilo creado - (PID:TID) - (1:2)
+2024/12/04 15:28:11 Memoria inicializada con éxito.
+2024/12/04 15:28:11 El módulo memoria está a la escucha en el puerto :8002
+2024/12/04 15:28:15 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/04 15:28:15 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/04 15:28:16 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/04 15:28:17 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET CX 5}
+2024/12/04 15:28:18 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET BX 1}
+2024/12/04 15:28:19 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUB CX BX}
+2024/12/04 15:28:20 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {JNZ CX 2}
+2024/12/04 15:28:21 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUB CX BX}
+2024/12/04 15:28:22 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {JNZ CX 2}
+2024/12/04 15:28:23 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUB CX BX}
+2024/12/04 15:28:24 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {JNZ CX 2}
+2024/12/04 15:28:25 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUB CX BX}
+2024/12/04 15:28:26 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {JNZ CX 2}
+2024/12/04 15:28:27 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUB CX BX}
+2024/12/04 15:28:28 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {JNZ CX 2}
+2024/12/04 15:28:29 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 3}
+2024/12/04 15:28:29 ## Hilo creado - (PID:TID) - (1:1)
+2024/12/04 15:35:18 Memoria inicializada con éxito.
+2024/12/04 15:35:18 El módulo memoria está a la escucha en el puerto :8002
+2024/12/04 15:35:24 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/04 15:35:24 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/04 15:38:44 Memoria inicializada con éxito.
+2024/12/04 15:38:44 El módulo memoria está a la escucha en el puerto :8002
+2024/12/04 15:38:48 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/04 15:38:48 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/04 15:39:14 Memoria inicializada con éxito.
+2024/12/04 15:39:14 El módulo memoria está a la escucha en el puerto :8002
+2024/12/04 15:39:17 ## Proceso creado -  PID: 1 - Tamaño: 3
+2024/12/04 15:39:17 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/04 15:39:18 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/04 15:39:19 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET CX 5}
+2024/12/04 15:39:20 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET BX 1}
+2024/12/04 15:39:21 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUB CX BX}
+2024/12/04 15:39:22 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {JNZ CX 2}
+2024/12/04 15:39:23 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUB CX BX}
+2024/12/04 15:39:24 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {JNZ CX 2}
+2024/12/04 15:39:25 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUB CX BX}
+2024/12/04 15:39:26 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {JNZ CX 2}
+2024/12/04 15:39:27 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUB CX BX}
+2024/12/04 15:39:28 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {JNZ CX 2}
+2024/12/04 15:39:29 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUB CX BX}
+2024/12/04 15:39:30 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {JNZ CX 2}
+2024/12/04 15:39:31 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 3}
+2024/12/04 15:39:31 ## Hilo creado - (PID:TID) - (1:1)
+2024/12/04 15:46:41 Memoria inicializada con éxito.
+2024/12/04 15:46:41 El módulo memoria está a la escucha en el puerto :8002
+2024/12/04 15:46:46 ## Proceso creado -  PID: 1 - Tamaño: 3
+2024/12/04 15:46:46 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/04 15:46:47 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/04 15:46:48 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET CX 5}
+2024/12/04 15:46:49 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET BX 1}
+2024/12/04 15:46:50 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUB CX BX}
+2024/12/04 15:46:51 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {JNZ CX 2}
+2024/12/04 15:46:52 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUB CX BX}
+2024/12/04 15:46:53 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {JNZ CX 2}
+2024/12/04 15:46:54 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUB CX BX}
+2024/12/04 15:46:55 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {JNZ CX 2}
+2024/12/04 15:46:57 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUB CX BX}
+2024/12/04 15:46:58 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {JNZ CX 2}
+2024/12/04 15:46:59 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUB CX BX}
+2024/12/04 15:47:00 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {JNZ CX 2}
+2024/12/04 15:47:01 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 3}
+2024/12/04 15:47:01 ## Hilo creado - (PID:TID) - (1:1)
+2024/12/04 15:49:05 Memoria inicializada con éxito.
+2024/12/04 15:49:05 El módulo memoria está a la escucha en el puerto :8002
+2024/12/04 15:49:08 ## Proceso creado -  PID: 1 - Tamaño: 3
+2024/12/04 15:49:08 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/04 15:49:09 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/04 15:49:10 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET CX 5}
+2024/12/04 15:49:11 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET BX 1}
+2024/12/04 15:49:12 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUB CX BX}
+2024/12/04 15:49:13 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {JNZ CX 2}
+2024/12/04 15:49:14 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUB CX BX}
+2024/12/04 15:49:15 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {JNZ CX 2}
+2024/12/04 15:49:16 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUB CX BX}
+2024/12/04 15:49:17 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {JNZ CX 2}
+2024/12/04 15:49:18 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUB CX BX}
+2024/12/04 15:49:19 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {JNZ CX 2}
+2024/12/04 15:49:20 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUB CX BX}
+2024/12/04 15:49:21 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {JNZ CX 2}
+2024/12/04 15:49:22 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_EXIT}
+2024/12/04 15:50:10 Memoria inicializada con éxito.
+2024/12/04 15:50:10 El módulo memoria está a la escucha en el puerto :8002
+2024/12/04 15:50:15 ## Proceso creado -  PID: 1 - Tamaño: 3
+2024/12/04 15:50:15 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/04 15:50:16 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/04 15:50:17 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET CX 5}
+2024/12/04 15:50:18 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET BX 1}
+2024/12/04 15:50:19 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUB CX BX}
+2024/12/04 15:50:20 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {JNZ CX 2}
+2024/12/04 15:50:21 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUB CX BX}
+2024/12/04 15:50:22 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {JNZ CX 2}
+2024/12/04 15:50:23 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUB CX BX}
+2024/12/04 15:50:24 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {JNZ CX 2}
+2024/12/04 15:50:25 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUB CX BX}
+2024/12/04 15:50:26 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {JNZ CX 2}
+2024/12/04 15:50:27 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUB CX BX}
+2024/12/04 15:50:28 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {JNZ CX 2}
+2024/12/04 15:50:29 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_EXIT}
+2024/12/04 15:51:42 Memoria inicializada con éxito.
+2024/12/04 15:51:42 El módulo memoria está a la escucha en el puerto :8002
+2024/12/04 15:51:47 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/04 15:51:47 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/04 15:51:48 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/04 15:51:49 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET CX 5}
+2024/12/04 15:51:50 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET BX 1}
+2024/12/04 15:51:51 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUB CX BX}
+2024/12/04 15:51:52 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {JNZ CX 2}
+2024/12/04 15:51:53 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUB CX BX}
+2024/12/04 15:51:54 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {JNZ CX 2}
+2024/12/04 15:51:55 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUB CX BX}
+2024/12/04 15:51:56 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {JNZ CX 2}
+2024/12/04 15:51:57 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUB CX BX}
+2024/12/04 15:51:58 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {JNZ CX 2}
+2024/12/04 15:51:59 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUB CX BX}
+2024/12/04 15:52:00 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {JNZ CX 2}
+2024/12/04 15:52:01 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_EXIT}
+2024/12/04 15:52:01 ## Hilo destruido - (PID:TID) - (1:0)
+2024/12/04 15:54:45 Memoria inicializada con éxito.
+2024/12/04 15:54:45 El módulo memoria está a la escucha en el puerto :8002
+2024/12/04 15:54:51 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/04 15:54:51 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/04 15:54:52 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/04 15:54:53 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET CX 5}
+2024/12/04 15:54:54 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET BX 1}
+2024/12/04 15:54:55 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUB CX BX}
+2024/12/04 15:54:56 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {JNZ CX 2}
+2024/12/04 15:54:57 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUB CX BX}
+2024/12/04 15:54:58 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {JNZ CX 2}
+2024/12/04 15:54:59 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUB CX BX}
+2024/12/04 15:55:00 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {JNZ CX 2}
+2024/12/04 15:55:01 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUB CX BX}
+2024/12/04 15:55:02 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {JNZ CX 2}
+2024/12/04 15:55:03 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUB CX BX}
+2024/12/04 15:55:04 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {JNZ CX 2}
+2024/12/04 15:55:05 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_EXIT}
+2024/12/04 15:55:05 ## Hilo destruido - (PID:TID) - (1:0)
+2024/12/04 16:01:56 Memoria inicializada con éxito.
+2024/12/04 16:01:56 El módulo memoria está a la escucha en el puerto :8002
+2024/12/04 16:02:01 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/04 16:02:01 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/04 16:02:02 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/04 16:02:03 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET CX 5}
+2024/12/04 16:02:04 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET BX 1}
+2024/12/04 16:02:05 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUB CX BX}
+2024/12/04 16:02:06 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {JNZ CX 2}
+2024/12/04 16:02:07 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUB CX BX}
+2024/12/04 16:02:08 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {JNZ CX 2}
+2024/12/04 16:02:09 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUB CX BX}
+2024/12/04 16:02:10 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {JNZ CX 2}
+2024/12/04 16:02:11 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUB CX BX}
+2024/12/04 16:02:12 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {JNZ CX 2}
+2024/12/04 16:02:13 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUB CX BX}
+2024/12/04 16:02:14 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {JNZ CX 2}
+2024/12/04 16:02:15 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_EXIT}
+2024/12/04 16:02:15 ## Hilo destruido - (PID:TID) - (1:0)
+2024/12/04 16:04:14 Memoria inicializada con éxito.
+2024/12/04 16:04:14 El módulo memoria está a la escucha en el puerto :8002
+2024/12/04 16:04:22 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/04 16:04:22 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/04 16:04:23 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/04 16:04:24 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET CX 5}
+2024/12/04 16:04:25 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET BX 1}
+2024/12/04 16:04:26 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUB CX BX}
+2024/12/04 16:04:27 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {JNZ CX 2}
+2024/12/04 16:04:28 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUB CX BX}
+2024/12/04 16:04:29 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {JNZ CX 2}
+2024/12/04 16:04:30 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUB CX BX}
+2024/12/04 16:04:31 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {JNZ CX 2}
+2024/12/04 16:04:32 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUB CX BX}
+2024/12/04 16:04:33 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {JNZ CX 2}
+2024/12/04 16:04:34 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUB CX BX}
+2024/12/04 16:04:35 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {JNZ CX 2}
+2024/12/04 16:04:36 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_EXIT}
+2024/12/04 16:04:36 ## Hilo destruido - (PID:TID) - (1:0)
+2024/12/04 16:05:05 Memoria inicializada con éxito.
+2024/12/04 16:05:05 El módulo memoria está a la escucha en el puerto :8002
+2024/12/04 16:05:14 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/04 16:05:14 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/04 16:05:15 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/04 16:05:16 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/04 16:05:17 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 1}
+2024/12/04 16:05:18 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/04 16:05:18 ## Hilo creado - (PID:TID) - (1:1)
+2024/12/04 16:07:02 Memoria inicializada con éxito.
+2024/12/04 16:07:02 El módulo memoria está a la escucha en el puerto :8002
+2024/12/04 16:07:05 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/04 16:07:05 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/04 16:07:06 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/04 16:07:07 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/04 16:07:08 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 1}
+2024/12/04 16:07:09 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/04 16:07:09 ## Hilo creado - (PID:TID) - (1:1)
+2024/12/04 16:08:09 Memoria inicializada con éxito.
+2024/12/04 16:08:09 El módulo memoria está a la escucha en el puerto :8002
+2024/12/04 16:08:11 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/04 16:08:11 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/04 16:08:12 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/04 16:08:13 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/04 16:08:14 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 1}
+2024/12/04 16:08:15 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/04 16:08:15 ## Hilo creado - (PID:TID) - (1:1)
+2024/12/04 16:09:09 Memoria inicializada con éxito.
+2024/12/04 16:09:09 El módulo memoria está a la escucha en el puerto :8002
+2024/12/04 16:09:12 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/04 16:09:12 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/04 16:09:13 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/04 16:09:14 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/04 16:09:15 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 1}
+2024/12/04 16:09:16 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/04 16:09:16 ## Hilo creado - (PID:TID) - (1:1)
+2024/12/04 16:12:30 Memoria inicializada con éxito.
+2024/12/04 16:12:30 El módulo memoria está a la escucha en el puerto :8002
+2024/12/04 16:12:34 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/04 16:12:34 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/04 16:12:35 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/04 16:12:36 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/04 16:12:37 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 1}
+2024/12/04 16:12:38 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/04 16:12:38 ## Hilo creado - (PID:TID) - (1:1)
+2024/12/04 16:16:23 Memoria inicializada con éxito.
+2024/12/04 16:16:23 El módulo memoria está a la escucha en el puerto :8002
+2024/12/04 16:16:27 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/04 16:16:27 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/04 16:16:28 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/04 16:16:29 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/04 16:16:30 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 1}
+2024/12/04 16:16:31 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/04 16:16:31 ## Hilo creado - (PID:TID) - (1:1)
+2024/12/04 16:17:10 Memoria inicializada con éxito.
+2024/12/04 16:17:10 El módulo memoria está a la escucha en el puerto :8002
+2024/12/04 16:17:14 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/04 16:17:14 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/04 16:17:15 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/04 16:17:16 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/04 16:17:17 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 1}
+2024/12/04 16:17:18 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/04 16:17:18 ## Hilo creado - (PID:TID) - (1:1)
+2024/12/04 16:21:39 Memoria inicializada con éxito.
+2024/12/04 16:21:39 El módulo memoria está a la escucha en el puerto :8002
+2024/12/04 16:21:42 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/04 16:21:42 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/04 16:21:43 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/04 16:21:44 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/04 16:21:45 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 1}
+2024/12/04 16:21:46 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/04 16:21:46 ## Hilo creado - (PID:TID) - (1:1)
+2024/12/04 16:23:12 Memoria inicializada con éxito.
+2024/12/04 16:23:12 El módulo memoria está a la escucha en el puerto :8002
+2024/12/04 16:23:16 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/04 16:23:16 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/04 16:23:17 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/04 16:23:18 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/04 16:23:19 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 1}
+2024/12/04 16:23:20 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/04 16:23:20 ## Hilo creado - (PID:TID) - (1:1)
+2024/12/04 16:23:21 http: panic serving 127.0.0.1:63175: runtime error: invalid memory address or nil pointer dereference
+goroutine 10 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1947 +0xbe
+panic({0x6308ca0?, 0x6531870?})
+	/usr/local/go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/memoria/globals/functions.ActualizarRegistros(...)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/globals/functions/funciones.go:38
+github.com/sisoputnfrba/tp-golang/memoria/handlers.HandleActualizarContexto({0x63617c8, 0xc00012c540}, 0xc000134dc0)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/handlers/handlers.go:67 +0x138
+net/http.HandlerFunc.ServeHTTP(0xc00012c0e0?, {0x63617c8?, 0xc00012c540?}, 0x37f02cd8?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x5fb12e5?, {0x63617c8, 0xc00012c540}, 0xc000134dc0)
+	/usr/local/go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x6360410?}, {0x63617c8?, 0xc00012c540?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc000136750, {0x6361cf8, 0xc0001091d0})
+	/usr/local/go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3360 +0x485
+2024/12/04 16:32:23 Memoria inicializada con éxito.
+2024/12/04 16:32:23 El módulo memoria está a la escucha en el puerto :8002
+2024/12/04 16:32:33 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/04 16:32:33 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/04 16:32:34 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/04 16:32:35 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/04 16:32:36 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 1}
+2024/12/04 16:32:37 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/04 16:32:37 ## Hilo creado - (PID:TID) - (1:1)
+2024/12/04 16:33:12 Memoria inicializada con éxito.
+2024/12/04 16:33:12 El módulo memoria está a la escucha en el puerto :8002
+2024/12/04 16:33:16 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/04 16:33:16 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/04 16:33:17 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/04 16:33:18 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/04 16:33:19 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 1}
+2024/12/04 16:33:20 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/04 16:33:20 ## Hilo creado - (PID:TID) - (1:1)
+2024/12/04 16:34:20 Memoria inicializada con éxito.
+2024/12/04 16:34:20 El módulo memoria está a la escucha en el puerto :8002
+2024/12/04 16:34:24 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/04 16:34:24 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/04 16:34:25 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/04 16:34:26 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/04 16:34:27 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 1}
+2024/12/04 16:34:28 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/04 16:34:28 ## Hilo creado - (PID:TID) - (1:1)
+2024/12/04 16:42:33 Memoria inicializada con éxito.
+2024/12/04 16:42:33 El módulo memoria está a la escucha en el puerto :8002
+2024/12/04 16:42:37 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/04 16:42:37 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/04 16:42:38 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/04 16:42:39 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/04 16:42:40 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 1}
+2024/12/04 16:42:41 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/04 16:42:41 ## Hilo creado - (PID:TID) - (1:1)
+2024/12/04 16:42:42 http: panic serving 127.0.0.1:64731: runtime error: invalid memory address or nil pointer dereference
+goroutine 10 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1947 +0xbe
+panic({0x337aca0?, 0x35a3870?})
+	/usr/local/go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/memoria/globals/functions.ActualizarRegistros(...)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/globals/functions/funciones.go:38
+github.com/sisoputnfrba/tp-golang/memoria/handlers.HandleActualizarContexto({0x33d37c8, 0xc00012c620}, 0xc000134dc0)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/handlers/handlers.go:67 +0x138
+net/http.HandlerFunc.ServeHTTP(0xc00012c0e0?, {0x33d37c8?, 0xc00012c620?}, 0xcaea888?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x30232e5?, {0x33d37c8, 0xc00012c620}, 0xc000134dc0)
+	/usr/local/go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x33d2410?}, {0x33d37c8?, 0xc00012c620?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc000136750, {0x33d3cf8, 0xc0001091d0})
+	/usr/local/go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3360 +0x485
+2024/12/04 16:44:09 Memoria inicializada con éxito.
+2024/12/04 16:44:09 El módulo memoria está a la escucha en el puerto :8002
+2024/12/04 16:44:14 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/04 16:44:14 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/04 16:44:15 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/04 16:44:16 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/04 16:44:17 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 1}
+2024/12/04 16:44:18 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/04 16:44:18 ## Hilo creado - (PID:TID) - (1:1)
+2024/12/04 16:44:19 http: panic serving 127.0.0.1:64871: runtime error: invalid memory address or nil pointer dereference
+goroutine 33 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1947 +0xbe
+panic({0x5d6aca0?, 0x5f93870?})
+	/usr/local/go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/memoria/globals/functions.ActualizarRegistros(...)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/globals/functions/funciones.go:38
+github.com/sisoputnfrba/tp-golang/memoria/handlers.HandleActualizarContexto({0x5dc37c8, 0xc0002061c0}, 0xc00007e3c0)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/handlers/handlers.go:67 +0x138
+net/http.HandlerFunc.ServeHTTP(0xc0000da0e0?, {0x5dc37c8?, 0xc0002061c0?}, 0x1b388568?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x5a132e5?, {0x5dc37c8, 0xc0002061c0}, 0xc00007e3c0)
+	/usr/local/go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x5dc2410?}, {0x5dc37c8?, 0xc0002061c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc000188000, {0x5dc3cf8, 0xc0000a51d0})
+	/usr/local/go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3360 +0x485
+2024/12/04 16:47:22 Memoria inicializada con éxito.
+2024/12/04 16:47:22 El módulo memoria está a la escucha en el puerto :8002
+2024/12/04 16:47:26 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/04 16:47:26 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/04 16:47:27 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/04 16:47:28 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/04 16:47:29 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 1}
+2024/12/04 16:47:30 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/04 16:47:30 ## Hilo creado - (PID:TID) - (1:1)
+2024/12/04 16:53:46 Memoria inicializada con éxito.
+2024/12/04 16:53:46 El módulo memoria está a la escucha en el puerto :8002
+2024/12/04 16:53:50 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/04 16:53:50 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/04 16:53:51 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/04 16:53:52 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/04 16:53:53 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 1}
+2024/12/04 16:53:54 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/04 16:56:21 Memoria inicializada con éxito.
+2024/12/04 16:56:21 El módulo memoria está a la escucha en el puerto :8002
+2024/12/04 16:56:24 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/04 16:56:24 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/04 16:56:25 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/04 16:56:26 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/04 16:56:27 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 1}
+2024/12/04 16:56:28 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/04 16:58:05 Memoria inicializada con éxito.
+2024/12/04 16:58:05 El módulo memoria está a la escucha en el puerto :8002
+2024/12/04 16:58:07 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/04 16:58:07 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/04 16:58:08 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/04 16:58:09 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/04 16:58:10 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 1}
+2024/12/04 16:58:11 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/04 16:58:11 ## Hilo creado - (PID:TID) - (1:1)
+2024/12/04 16:58:12 http: panic serving 127.0.0.1:49638: runtime error: invalid memory address or nil pointer dereference
+goroutine 10 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1947 +0xbe
+panic({0x2260ca0?, 0x2489870?})
+	/usr/local/go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/memoria/globals/functions.ActualizarRegistros(...)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/globals/functions/funciones.go:38
+github.com/sisoputnfrba/tp-golang/memoria/handlers.HandleActualizarContexto({0x22b97c8, 0xc0000ac540}, 0xc0000b4b40)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/handlers/handlers.go:67 +0x138
+net/http.HandlerFunc.ServeHTTP(0xc0000ac0e0?, {0x22b97c8?, 0xc0000ac540?}, 0x2de315e8?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1f092e5?, {0x22b97c8, 0xc0000ac540}, 0xc0000b4b40)
+	/usr/local/go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x22b8410?}, {0x22b97c8?, 0xc0000ac540?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc0000b6750, {0x22b9cf8, 0xc0000891d0})
+	/usr/local/go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3360 +0x485
+2024/12/04 17:03:19 Memoria inicializada con éxito.
+2024/12/04 17:03:20 El módulo memoria está a la escucha en el puerto :8002
+2024/12/04 17:03:24 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/04 17:03:24 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/04 17:03:25 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/04 17:03:26 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/04 17:03:27 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 1}
+2024/12/04 17:03:28 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/04 17:03:28 ## Hilo creado - (PID:TID) - (1:1)
+2024/12/04 17:03:29 http: panic serving 127.0.0.1:50061: runtime error: invalid memory address or nil pointer dereference
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1947 +0xbe
+panic({0x235aca0?, 0x2583870?})
+	/usr/local/go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/memoria/globals/functions.ActualizarRegistros(...)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/globals/functions/funciones.go:38
+github.com/sisoputnfrba/tp-golang/memoria/handlers.HandleActualizarContexto({0x23b37c8, 0xc00020a0e0}, 0xc00007e3c0)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/handlers/handlers.go:67 +0x138
+net/http.HandlerFunc.ServeHTTP(0xc0000da0e0?, {0x23b37c8?, 0xc00020a0e0?}, 0x1cd633c0?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x20032e5?, {0x23b37c8, 0xc00020a0e0}, 0xc00007e3c0)
+	/usr/local/go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x23b2410?}, {0x23b37c8?, 0xc00020a0e0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc0000e4750, {0x23b3cf8, 0xc0000a51d0})
+	/usr/local/go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3360 +0x485
+2024/12/04 17:11:38 Memoria inicializada con éxito.
+2024/12/04 17:11:38 El módulo memoria está a la escucha en el puerto :8002
+2024/12/04 17:11:42 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/04 17:11:42 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/04 17:11:43 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/04 17:11:44 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/04 17:11:45 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 1}
+2024/12/04 17:11:46 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/04 17:11:46 ## Hilo creado - (PID:TID) - (1:1)
+2024/12/04 17:11:47 http: panic serving 127.0.0.1:50716: runtime error: invalid memory address or nil pointer dereference
+goroutine 5 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1947 +0xbe
+panic({0x3f2cca0?, 0x4155870?})
+	/usr/local/go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/memoria/globals/functions.ActualizarRegistros(...)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/globals/functions/funciones.go:38
+github.com/sisoputnfrba/tp-golang/memoria/handlers.HandleActualizarContexto({0x3f857c8, 0xc0001981c0}, 0xc000184500)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/handlers/handlers.go:67 +0x138
+net/http.HandlerFunc.ServeHTTP(0xc0000da0e0?, {0x3f857c8?, 0xc0001981c0?}, 0x18234688?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x3bd52e5?, {0x3f857c8, 0xc0001981c0}, 0xc000184500)
+	/usr/local/go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x3f84410?}, {0x3f857c8?, 0xc0001981c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc000200000, {0x3f85cf8, 0xc0000a51d0})
+	/usr/local/go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3360 +0x485
+2024/12/04 17:16:46 Memoria inicializada con éxito.
+2024/12/04 17:16:46 El módulo memoria está a la escucha en el puerto :8002
+2024/12/04 17:16:49 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/04 17:16:49 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/04 17:16:50 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/04 17:16:51 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/04 17:16:52 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 1}
+2024/12/04 17:16:53 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/04 17:16:53 ## Hilo creado - (PID:TID) - (1:1)
+2024/12/04 17:16:54 http: panic serving 127.0.0.1:51130: runtime error: invalid memory address or nil pointer dereference
+goroutine 10 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1947 +0xbe
+panic({0x376eca0?, 0x3997870?})
+	/usr/local/go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/memoria/globals/functions.ActualizarRegistros(...)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/globals/functions/funciones.go:38
+github.com/sisoputnfrba/tp-golang/memoria/handlers.HandleActualizarContexto({0x37c77c8, 0xc00012c7e0}, 0xc000135040)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/handlers/handlers.go:67 +0x138
+net/http.HandlerFunc.ServeHTTP(0xc00012c0e0?, {0x37c77c8?, 0xc00012c7e0?}, 0x321dae70?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x34172e5?, {0x37c77c8, 0xc00012c7e0}, 0xc000135040)
+	/usr/local/go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x37c6410?}, {0x37c77c8?, 0xc00012c7e0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc000136750, {0x37c7cf8, 0xc0001091d0})
+	/usr/local/go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3360 +0x485
+2024/12/04 17:18:13 Memoria inicializada con éxito.
+2024/12/04 17:18:13 El módulo memoria está a la escucha en el puerto :8002
+2024/12/04 17:18:18 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/04 17:18:18 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/04 17:18:19 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/04 17:18:20 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/04 17:18:21 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 1}
+2024/12/04 17:18:22 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/04 17:18:22 ## Hilo creado - (PID:TID) - (1:1)
+2024/12/04 17:18:23 http: panic serving 127.0.0.1:51254: runtime error: invalid memory address or nil pointer dereference
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1947 +0xbe
+panic({0x159eca0?, 0x17c7870?})
+	/usr/local/go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/memoria/globals/functions.ActualizarRegistros(...)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/globals/functions/funciones.go:38
+github.com/sisoputnfrba/tp-golang/memoria/handlers.HandleActualizarContexto({0x15f77c8, 0xc0002060e0}, 0xc00007c280)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/handlers/handlers.go:67 +0x129
+net/http.HandlerFunc.ServeHTTP(0xc0000da0e0?, {0x15f77c8?, 0xc0002060e0?}, 0x56345c0?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x12472e5?, {0x15f77c8, 0xc0002060e0}, 0xc00007c280)
+	/usr/local/go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x15f6410?}, {0x15f77c8?, 0xc0002060e0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc0000e4750, {0x15f7cf8, 0xc0000a51d0})
+	/usr/local/go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3360 +0x485
+2024/12/04 17:18:52 Memoria inicializada con éxito.
+2024/12/04 17:18:52 El módulo memoria está a la escucha en el puerto :8002
+2024/12/04 17:18:56 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/04 17:18:56 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/04 17:18:57 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/04 17:18:58 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/04 17:18:59 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 1}
+2024/12/04 17:19:00 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/04 17:19:00 ## Hilo creado - (PID:TID) - (1:1)
+2024/12/04 17:19:01 http: panic serving 127.0.0.1:51313: runtime error: invalid memory address or nil pointer dereference
+goroutine 17 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1947 +0xbe
+panic({0x3aa2ca0?, 0x3ccb870?})
+	/usr/local/go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/memoria/globals/functions.ActualizarRegistros(...)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/globals/functions/funciones.go:39
+github.com/sisoputnfrba/tp-golang/memoria/handlers.HandleActualizarContexto({0x3afb7c8, 0xc00019a1c0}, 0xc0001883c0)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/memoria/handlers/handlers.go:67 +0x12a
+net/http.HandlerFunc.ServeHTTP(0xc00012c0e0?, {0x3afb7c8?, 0xc00019a1c0?}, 0x89ec980?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x374b2e5?, {0x3afb7c8, 0xc00019a1c0}, 0xc0001883c0)
+	/usr/local/go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x3afa410?}, {0x3afb7c8?, 0xc00019a1c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc000098000, {0x3afbcf8, 0xc0001091d0})
+	/usr/local/go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3360 +0x485

@@ -5,7 +5,6 @@ import (
 	"io"
 	"log"
 	"net/http"
-	"sync"
 )
 
 type Mensaje struct {
@@ -75,10 +74,6 @@ type IoDispatch struct {
 	Instruction string   `json:"instruction"`
 	Params      []string `json:"params"`
 }
-
-var PidCounter int = 1
-var MutexPidCounter sync.Mutex
-var CpuLibre = make(chan bool, 1)
 
 // w es el cuerpo de la respuesta y r es el cuerpo de la solicitud
 func RecibirMensaje(w http.ResponseWriter, r *http.Request) {

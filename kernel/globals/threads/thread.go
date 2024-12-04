@@ -37,7 +37,11 @@ func CrearHilo(pid int, prioridad int, pseudocodigo string) {
 		return
 	}
 
-	_ = cliente.Post(globals.KConfig.IpMemory, globals.KConfig.PortMemory, "crear_hilo", solicitudCodificada)
+	response := cliente.Post(globals.KConfig.IpMemory, globals.KConfig.PortMemory, "crear_hilo", solicitudCodificada)
+
+	if response.StatusCode == http.StatusOK {
+		tcb.Estado = "READY"
+	}
 
 	queues.AgregarHiloACola(&tcb, &globals.Estructura.ColaReady)
 	log.Printf("## (%d:%d) Se crea el Hilo - Estado: READY", pcb.Pid, tcb.Tid)
@@ -62,7 +66,9 @@ func FinalizarHilo(pid int, tid int) {
 		pcb := queues.BuscarPCBEnColas(pid)
 		tcb := BuscarHiloEnPCB(pid, tid)
 
-		queues.SacarHiloDeCola(tid, queues.BuscarColaDeHilo(tcb))
+		if tcb.Estado != "EXEC" {
+			queues.SacarHiloDeCola(tid, &globals.Estructura.ColaReady)
+		}
 
 		tcb.Estado = "EXIT"
 
@@ -80,13 +86,11 @@ func FinalizarHilo(pid int, tid int) {
 		}
 	}
 
-	if globals.Estructura.HiloExecute.Pid == pid && globals.Estructura.HiloExecute.Tid == tid {
-		commons.CpuLibre <- true
-	}
+	/*if globals.Estructura.HiloExecute.Pid == pid && globals.Estructura.HiloExecute.Tid == tid {
+		globals.CpuLibre <- true
+	}*/
 
 	log.Printf("## (%d:%d) Finaliza el hilo", pid, tid)
-
-	globals.Planificar <- true
 
 }
 
@@ -108,8 +112,6 @@ func DesbloquearHilo(tcb *commons.TCB) {
 	queues.SacarHiloDeCola(tcb.Tid, &globals.Estructura.ColaBloqueados)
 
 	queues.AgregarHiloACola(tcb, &globals.Estructura.ColaReady)
-
-	globals.Planificar <- true
 }
 
 func BloquearHilo(tcb *commons.TCB) {
@@ -118,6 +120,4 @@ func BloquearHilo(tcb *commons.TCB) {
 	globals.Estructura.HiloExecute = nil
 
 	queues.AgregarHiloACola(tcb, &globals.Estructura.ColaBloqueados)
-
-	commons.CpuLibre <- true
 }
