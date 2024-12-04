@@ -122,7 +122,7 @@ func HandleReadMemory(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	response, err := functions.LeerMemoria(request.Byte, request.Pid)
+	response, err := functions.LeerMemoria(request.Direccion, request.Pid)
 
 	if err != nil {
 		http.Error(w, fmt.Sprintf("Error al leer la memoria: %s", err.Error()), http.StatusInternalServerError)
@@ -139,7 +139,7 @@ func HandleReadMemory(w http.ResponseWriter, r *http.Request) {
 
 	w.WriteHeader(http.StatusOK)
 	w.Write(bytesSolicitados)
-	log.Printf("## Lectura - (PID:TID) - (%d:%d) - Dir. Física: %d - Tamaño: %d\n", request.Pid, request.Tid, int(request.Byte), len(response))
+	log.Printf("## Lectura - (PID:TID) - (%d:%d) - Dir. Física: %d - Tamaño: %d\n", request.Pid, request.Tid, request.Direccion, len(response))
 }
 
 func HandleWriteMemory(w http.ResponseWriter, r *http.Request) {
@@ -155,7 +155,7 @@ func HandleWriteMemory(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	err = functions.EscribirMemoria(request.Byte, request.Pid, request.Datos)
+	err = functions.EscribirMemoria(request.Direccion, request.Pid, request.Datos)
 
 	if err != nil {
 		http.Error(w, fmt.Sprintf("Error al escribir la memoria: %s", err.Error()), http.StatusInternalServerError)
@@ -164,7 +164,7 @@ func HandleWriteMemory(w http.ResponseWriter, r *http.Request) {
 
 	w.WriteHeader(http.StatusOK)
 	w.Write([]byte("OK"))
-	log.Printf("## Escritura - (PID:TID) - (%d:%d) - Dir. Física: %d - Tamaño: %d\n", request.Pid, request.Tid, int(request.Byte), len(request.Datos))
+	log.Printf("## Escritura - (PID:TID) - (%d:%d) - Dir. Física: %d - Tamaño: %d\n", request.Pid, request.Tid, request.Direccion, len(request.Datos))
 }
 
 // ¡¡¡¡¡HANDLERS KERNEL!!!!!

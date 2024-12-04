@@ -79,7 +79,7 @@ func HandleThreadJoin(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	tcbParametro := queues.BuscarTCBenPCB(req.PidParametro, req.TidParametro)
+	tcbParametro := queues.BuscarTCBenPCB(req.Pid, req.TidParametro)
 	tcbExecute := queues.BuscarTCBenPCB(req.Pid, req.Tid)
 
 	if tcbParametro == nil || tcbParametro.Estado == "EXIT" {
@@ -285,6 +285,28 @@ func HandleCompactacion(w http.ResponseWriter, r *http.Request) {
 func HandleCompactacionFinalizada(w http.ResponseWriter, r *http.Request) {
 	ReanudarPlanificacion() // Reanudar planificación
 	w.WriteHeader(http.StatusOK)
+}
+
+func HandleDesalojoCpu(w http.ResponseWriter, r *http.Request) {
+	var req request.RequestDevolucionPCB
+	err := commons.DecodificarJSON(r.Body, &req)
+
+	if err != nil {
+		http.Error(w, "Error al decodificar el JSON", http.StatusBadRequest)
+		return
+	}
+
+	if req.Razon == "SEGMENTATION FAULT" {
+		processes.FinalizarProceso(req.Pid)
+	} else {
+		if req.Razon == "SYSCALL" || req.Razon == "INTERRUPCION" {
+			globals.Estructura.HiloExecute = nil
+			queues.AgregarHiloACola(threads.BuscarHiloEnPCB(req.Pid, req.Tid), &globals.Estructura.ColaReady)
+			<-globals.Planificar
+		}
+	}
+
+	<-commons.CpuLibre
 }
 
 func PausarPlanificacion() {

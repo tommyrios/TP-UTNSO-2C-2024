@@ -2,13 +2,13 @@ package main
 
 import (
 	"fmt"
+	"github.com/sisoputnfrba/tp-golang/cpu/instrucciones"
 	"log"
 	"net/http"
 	"os"
 	"path/filepath"
 
 	"github.com/sisoputnfrba/tp-golang/cpu/globals"
-	"github.com/sisoputnfrba/tp-golang/cpu/instruction_cycle"
 	configs "github.com/sisoputnfrba/tp-golang/utils/config"
 )
 
@@ -34,8 +34,8 @@ func main() {
 
 	//// Conexiones ////
 	mux := http.NewServeMux()
-	mux.HandleFunc("/dispatch", instruction_cycle.Dispatch)
-	mux.HandleFunc("/interrupt", instruction_cycle.RecibirInterrupcion)
+	mux.HandleFunc("/dispatch", instrucciones.Dispatch)
+	mux.HandleFunc("/interrupt", instrucciones.RecibirInterrupcion)
 
 	port := fmt.Sprintf(":%d", globals.CConfig.Port)
 

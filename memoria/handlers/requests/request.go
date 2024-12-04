@@ -1,7 +1,7 @@
 package requests
 
 import (
-	"github.com/sisoputnfrba/tp-golang/memoria/globals"
+	"github.com/sisoputnfrba/tp-golang/utils/commons"
 )
 
 type RequestContexto struct {
@@ -10,17 +10,17 @@ type RequestContexto struct {
 }
 
 type ResponseContexto struct {
-	Pid       int                  `json:"pid"`
-	Tid       int                  `json:"tid"`
-	Registros globals.ContextoHilo `json:"registros"`
-	Base      int                  `json:"base"`
-	Limite    int                  `json:"limite"`
+	Pid       int               `json:"pid"`
+	Tid       int               `json:"tid"`
+	Registros commons.Registros `json:"registros"`
+	Base      int               `json:"base"`
+	Limite    int               `json:"limite"`
 }
 
 type RequestActualizarContexto struct {
-	Pid       int                  `json:"pid"`
-	Tid       int                  `json:"tid"`
-	Registros globals.ContextoHilo `json:"registros"`
+	Pid       int               `json:"pid"`
+	Tid       int               `json:"tid"`
+	Registros commons.Registros `json:"registros"`
 }
 
 type RequestObtenerInstruccion struct {
@@ -54,16 +54,16 @@ type RequestFinalizarHilo struct {
 }
 
 type RequestReadMemory struct {
-	Byte byte `json:"byte"`
-	Pid  int  `json:"pid"`
-	Tid  int  `json:"tid"`
+	Direccion int `json:"direccion"`
+	Pid       int `json:"pid"`
+	Tid       int `json:"tid"`
 }
 
 type RequestWriteMemory struct {
-	Byte  byte   `json:"byte"`
-	Pid   int    `json:"pid"`
-	Tid   int    `json:"tid"`
-	Datos []byte `json:"datos"`
+	Direccion int    `json:"direccion"`
+	Pid       int    `json:"pid"`
+	Tid       int    `json:"tid"`
+	Datos     []byte `json:"datos"`
 }
 
 type RequestDumpMemory struct {

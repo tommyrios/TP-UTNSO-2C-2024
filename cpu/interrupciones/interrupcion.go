@@ -1,15 +1,6 @@
 package interrupciones
 
-import (
-	"log"
-	"net/http"
-	"sync"
-
-	"github.com/sisoputnfrba/tp-golang/cpu/globals"
-	"github.com/sisoputnfrba/tp-golang/utils/commons"
-)
-
-type Interrupcion struct {
+/*type Interrupcion struct {
 	Mutex  sync.Mutex
 	Status bool
 	Reason string
@@ -64,4 +55,4 @@ func ObtenerYResetearInterrupcion() (bool, string, int) {
 	InterrupcionActual.Tid = 0
 
 	return status, reason, tid
-}
+}*/

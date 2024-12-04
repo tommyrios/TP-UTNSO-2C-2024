@@ -32,14 +32,13 @@ type RequestThreadCreate struct {
 type RequestThreadJoin struct {
 	Pid          int `json:"pid"`
 	Tid          int `json:"tid"`
-	PidParametro int `json:"pid_parametro"`
 	TidParametro int `json:"tid_parametro"`
 }
 
 type RequestThreadCancel struct {
 	Pid          int `json:"pid"`
 	Tid          int `json:"tid"`
-	TidAEliminar int `json:"tid"`
+	TidAEliminar int `json:"tidAEliminar"`
 }
 
 type RequestThreadExit struct {
@@ -48,7 +47,7 @@ type RequestThreadExit struct {
 }
 
 type RequestMutex struct {
-	Nombre string `json:"nombre"`
+	Nombre string `json:"nombre_mutex"`
 	Pid    int    `json:"pid"`
 	Tid    int    `json:"tid"`
 }
@@ -87,4 +86,10 @@ type RequestCrearHilo struct {
 type RequestInterrupcion struct {
 	Razon string `json:"razon"`
 	Pid   int    `json:"pid"`
+}
+
+type RequestDevolucionPCB struct {
+	Pid   int    `json:"pid"`
+	Tid   int    `json:"tid"`
+	Razon string `json:"razon"`
 }

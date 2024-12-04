@@ -60,6 +60,7 @@ func main() {
 	http.HandleFunc("/syscall/handle_io", handlers.HandleIO)
 	http.HandleFunc("/compactacion", handlers.HandleCompactacion)
 	http.HandleFunc("/compactacion_finalizada", handlers.HandleCompactacionFinalizada)
+	http.HandleFunc("/pcb", handlers.HandleDesalojoCpu)
 
 	port := fmt.Sprintf(":%d", globals.KConfig.Port)
 

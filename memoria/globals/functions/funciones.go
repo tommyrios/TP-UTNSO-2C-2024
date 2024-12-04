@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"github.com/sisoputnfrba/tp-golang/memoria/globals"
 	"github.com/sisoputnfrba/tp-golang/memoria/handlers/requests"
+	"github.com/sisoputnfrba/tp-golang/utils/commons"
 	"log"
 	"net/http"
 	"os"
@@ -15,7 +16,7 @@ type MemUsuario globals.MemUsuario
 
 // FUNCIONES CPU
 
-func ObtenerRegistros(pid int, tid int) globals.ContextoHilo {
+func ObtenerRegistros(pid int, tid int) commons.Registros {
 
 	return *globals.MemoriaSistema.TablaHilos[pid][tid]
 }
@@ -28,7 +29,7 @@ func ObtenerBaseLimite(pid int) (int, int) {
 	return base, limite
 }
 
-func ActualizarRegistros(pid int, tid int, registrosActualizados globals.ContextoHilo) error {
+func ActualizarRegistros(pid int, tid int, registrosActualizados commons.Registros) error {
 
 	registrosAActualizar := globals.MemoriaSistema.TablaHilos[pid][tid]
 
@@ -61,9 +62,7 @@ func ObtenerTamanioMemoria(pid int) int {
 	return globals.MemoriaSistema.TablaProcesos[pid].Limite - globals.MemoriaSistema.TablaProcesos[pid].Base + 1
 }
 
-func LeerMemoria(byteDireccion byte, pid int) ([]byte, error) {
-
-	direccion := int(byteDireccion)
+func LeerMemoria(direccion int, pid int) ([]byte, error) {
 
 	if direccion < 0 || direccion+4 >= len(globals.MemoriaUsuario.Datos) {
 		return nil, fmt.Errorf("dirección de memoria inválida")
@@ -78,13 +77,11 @@ func LeerMemoria(byteDireccion byte, pid int) ([]byte, error) {
 	return nil, fmt.Errorf("segmentation fault")
 }
 
-func EscribirMemoria(byteDireccion byte, pid int, datos []byte) error {
+func EscribirMemoria(direccion int, pid int, datos []byte) error {
 
 	if len(datos) != 4 {
 		return fmt.Errorf("se deben proporcionar exactamente 4 bytes")
 	}
-
-	direccion := int(byteDireccion)
 
 	for _, particion := range globals.MemoriaUsuario.Particiones {
 		if direccion >= particion.Base && direccion+4 <= particion.Limite && particion.Pid == pid {
@@ -144,10 +141,10 @@ func CrearHiloMemoria(pid int, tid int, pseudocodigo string) error {
 		return err
 	}
 
-	globals.MemoriaSistema.TablaHilos[pid] = make(map[int]*globals.ContextoHilo)
+	globals.MemoriaSistema.TablaHilos[pid] = make(map[int]*commons.Registros)
 	globals.MemoriaSistema.Pseudocodigos[pid] = make(map[int]*globals.InstruccionesHilo)
 	globals.MemoriaSistema.Pseudocodigos[pid][tid] = &globals.InstruccionesHilo{Instrucciones: instrucciones}
-	globals.MemoriaSistema.TablaHilos[pid][tid] = &globals.ContextoHilo{AX: 0, BX: 0, CX: 0, DX: 0, EX: 0, FX: 0, GX: 0, HX: 0, PC: 0}
+	globals.MemoriaSistema.TablaHilos[pid][tid] = &commons.Registros{AX: 0, BX: 0, CX: 0, DX: 0, EX: 0, FX: 0, GX: 0, HX: 0, PC: 0}
 
 	return nil
 }
