@@ -118,7 +118,7 @@ func Fetch(pid int, tid int, pc int) string {
 
 	defer response.Body.Close()
 
-	log.Printf("## TID: %d, - FETCH - Program Counter: %s.", tid, pc)
+	log.Printf("## TID: %d - FETCH - Program Counter: %d.", tid, pc)
 
 	return string(instruccion)
 }

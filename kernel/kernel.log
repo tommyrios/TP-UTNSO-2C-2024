@@ -918,3 +918,343 @@
 2024/12/03 17:00:40 Respuesta POST: 200 OK
 2024/12/03 17:00:40 ## (1:0) Se crea el Hilo - Estado: READY
 2024/12/03 17:00:40 El módulo kernel está a la escucha en el puerto :8001
+2024/12/04 09:32:18 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/04 09:32:18 Cola NEW está vacía, solicitando memoria.
+2024/12/04 09:32:18 Respuesta POST: 200 OK
+2024/12/04 09:32:18 Respuesta POST: 200 OK
+2024/12/04 09:32:18 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/04 09:46:05 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/04 09:46:05 Cola NEW está vacía, solicitando memoria.
+2024/12/04 09:46:05 Respuesta POST: 200 OK
+2024/12/04 09:46:05 Respuesta POST: 200 OK
+2024/12/04 09:46:05 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/04 10:11:46 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/04 10:11:46 Cola NEW está vacía, solicitando memoria.
+2024/12/04 10:11:46 Respuesta POST: 200 OK
+2024/12/04 10:11:46 Respuesta POST: 200 OK
+2024/12/04 10:11:46 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/04 10:15:21 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/04 10:15:21 Cola NEW está vacía, solicitando memoria.
+2024/12/04 10:15:21 Respuesta POST: 200 OK
+2024/12/04 10:15:21 Respuesta POST: 200 OK
+2024/12/04 10:15:21 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/04 10:16:40 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/04 10:16:40 Cola NEW está vacía, solicitando memoria.
+2024/12/04 10:16:40 Respuesta POST: 200 OK
+2024/12/04 10:16:40 Respuesta POST: 200 OK
+2024/12/04 10:16:40 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/04 10:17:44 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/04 10:17:44 Cola NEW está vacía, solicitando memoria.
+2024/12/04 10:17:44 Respuesta POST: 500 Internal Server Error
+2024/12/04 10:17:44 Memoria no tiene suficiente espacio. Proceso en espera.
+2024/12/04 10:17:44 hola
+2024/12/04 10:17:44 El módulo kernel está a la escucha en el puerto :8001
+2024/12/04 10:17:58 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/04 10:17:58 Cola NEW está vacía, solicitando memoria.
+2024/12/04 10:17:58 Respuesta POST: 200 OK
+2024/12/04 10:17:58 Respuesta POST: 200 OK
+2024/12/04 10:17:58 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/04 10:18:22 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/04 10:18:22 Cola NEW está vacía, solicitando memoria.
+2024/12/04 10:18:22 Respuesta POST: 200 OK
+2024/12/04 10:18:22 Respuesta POST: 200 OK
+2024/12/04 10:18:22 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/04 10:19:12 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/04 10:19:12 Cola NEW está vacía, solicitando memoria.
+2024/12/04 10:19:12 Respuesta POST: 200 OK
+2024/12/04 10:19:12 Respuesta POST: 200 OK
+2024/12/04 10:19:12 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/04 10:20:18 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/04 10:20:18 Cola NEW está vacía, solicitando memoria.
+2024/12/04 10:20:19 Respuesta POST: 200 OK
+2024/12/04 10:20:19 Respuesta POST: 200 OK
+2024/12/04 10:20:19 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/04 10:20:45 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/04 10:20:45 Cola NEW está vacía, solicitando memoria.
+2024/12/04 10:20:45 Respuesta POST: 200 OK
+2024/12/04 10:20:45 Respuesta POST: 200 OK
+2024/12/04 10:20:45 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/04 10:20:45 El módulo kernel está a la escucha en el puerto :8001
+2024/12/04 10:22:22 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/04 10:22:22 Cola NEW está vacía, solicitando memoria.
+2024/12/04 10:22:22 Respuesta POST: 200 OK
+2024/12/04 10:22:22 Respuesta POST: 200 OK
+2024/12/04 10:22:22 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/04 10:22:22 El módulo kernel está a la escucha en el puerto :8001
+2024/12/04 10:34:34 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/04 10:34:34 Cola NEW está vacía, solicitando memoria.
+2024/12/04 10:34:34 Respuesta POST: 200 OK
+2024/12/04 10:34:34 Respuesta POST: 200 OK
+2024/12/04 10:34:34 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/04 10:34:34 El módulo kernel está a la escucha en el puerto :8001
+2024/12/04 10:39:27 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/04 10:39:27 Cola NEW está vacía, solicitando memoria.
+2024/12/04 10:39:27 Respuesta POST: 200 OK
+2024/12/04 10:39:27 Respuesta POST: 200 OK
+2024/12/04 10:39:27 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/04 10:39:27 El módulo kernel está a la escucha en el puerto :8001
+2024/12/04 10:39:30 Respuesta POST: 200 OK
+2024/12/04 10:43:27 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/04 10:43:27 Cola NEW está vacía, solicitando memoria.
+2024/12/04 10:43:27 Respuesta POST: 200 OK
+2024/12/04 10:43:27 Respuesta POST: 200 OK
+2024/12/04 10:43:27 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/04 10:43:27 El módulo kernel está a la escucha en el puerto :8001
+2024/12/04 10:43:30 Respuesta POST: 200 OK
+2024/12/04 10:49:26 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/04 10:49:26 Cola NEW está vacía, solicitando memoria.
+2024/12/04 10:49:26 Respuesta POST: 200 OK
+2024/12/04 10:49:26 Respuesta POST: 200 OK
+2024/12/04 10:49:26 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/04 10:49:39 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/04 10:49:39 Cola NEW está vacía, solicitando memoria.
+2024/12/04 10:49:39 Respuesta POST: 200 OK
+2024/12/04 10:49:39 Respuesta POST: 200 OK
+2024/12/04 10:49:39 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/04 10:49:39 El módulo kernel está a la escucha en el puerto :8001
+2024/12/04 10:49:42 Respuesta POST: 200 OK
+2024/12/04 10:50:05 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/04 10:50:05 Cola NEW está vacía, solicitando memoria.
+2024/12/04 10:50:17 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/04 10:50:17 Cola NEW está vacía, solicitando memoria.
+2024/12/04 10:50:17 Respuesta POST: 200 OK
+2024/12/04 10:50:17 Respuesta POST: 200 OK
+2024/12/04 10:50:17 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/04 10:50:27 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/04 10:50:27 Cola NEW está vacía, solicitando memoria.
+2024/12/04 10:50:27 Respuesta POST: 200 OK
+2024/12/04 10:50:27 Respuesta POST: 200 OK
+2024/12/04 10:50:27 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/04 10:50:27 El módulo kernel está a la escucha en el puerto :8001
+2024/12/04 10:50:30 Respuesta POST: 200 OK
+2024/12/04 10:58:09 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/04 10:58:09 Cola NEW está vacía, solicitando memoria.
+2024/12/04 10:58:09 URL: http://127.0.0.1:8002/crear_proceso
+2024/12/04 10:58:09 Respuesta POST: 200 OK
+2024/12/04 10:58:09 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/04 10:58:09 Respuesta POST: 200 OK
+2024/12/04 10:58:09 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/04 10:58:09 URL: http://127.0.0.1:8004/dispatch
+2024/12/04 10:58:09 El módulo kernel está a la escucha en el puerto :8001
+2024/12/04 10:58:12 Respuesta POST: 200 OK
+2024/12/04 11:01:46 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/04 11:01:46 Cola NEW está vacía, solicitando memoria.
+2024/12/04 11:01:46 URL: http://127.0.0.1:8002/crear_proceso
+2024/12/04 11:01:46 Respuesta POST: 200 OK
+2024/12/04 11:01:46 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/04 11:01:46 Respuesta POST: 200 OK
+2024/12/04 11:01:46 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/04 11:01:46 URL: http://127.0.0.1:8004/dispatch
+2024/12/04 11:01:46 El módulo kernel está a la escucha en el puerto :8001
+2024/12/04 11:01:49 Respuesta POST: 200 OK
+2024/12/04 11:04:45 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/04 11:04:45 Cola NEW está vacía, solicitando memoria.
+2024/12/04 11:04:45 URL: http://127.0.0.1:8002/crear_proceso
+2024/12/04 11:04:45 Respuesta POST: 200 OK
+2024/12/04 11:04:45 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/04 11:04:45 Respuesta POST: 200 OK
+2024/12/04 11:04:45 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/04 11:04:45 El módulo kernel está a la escucha en el puerto :8001
+2024/12/04 11:05:37 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/04 11:05:37 Cola NEW está vacía, solicitando memoria.
+2024/12/04 11:05:37 URL: http://127.0.0.1:8002/crear_proceso
+2024/12/04 11:05:37 Respuesta POST: 200 OK
+2024/12/04 11:05:37 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/04 11:05:37 Respuesta POST: 200 OK
+2024/12/04 11:05:37 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/04 11:05:37 El módulo kernel está a la escucha en el puerto :8001
+2024/12/04 11:07:24 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/04 11:07:24 Cola NEW está vacía, solicitando memoria.
+2024/12/04 11:07:24 URL: http://127.0.0.1:8002/crear_proceso
+2024/12/04 11:07:24 Respuesta POST: 200 OK
+2024/12/04 11:07:24 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/04 11:07:24 Respuesta POST: 200 OK
+2024/12/04 11:07:24 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/04 11:07:24 El módulo kernel está a la escucha en el puerto :8001
+2024/12/04 11:07:24 URL: http://127.0.0.1:8004/dispatch
+2024/12/04 11:07:28 Respuesta POST: 200 OK
+2024/12/04 11:11:16 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/04 11:11:16 Cola NEW está vacía, solicitando memoria.
+2024/12/04 11:11:16 URL: http://127.0.0.1:8002/crear_proceso
+2024/12/04 11:11:16 Respuesta POST: 200 OK
+2024/12/04 11:11:16 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/04 11:11:16 Respuesta POST: 200 OK
+2024/12/04 11:11:16 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/04 11:11:16 HOLLLLAAAAAAAAAAAA
+2024/12/04 11:11:16 El módulo kernel está a la escucha en el puerto :8001
+2024/12/04 11:11:16 URL: http://127.0.0.1:8004/dispatch
+2024/12/04 11:11:19 Respuesta POST: 200 OK
+2024/12/04 11:13:44 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/04 11:13:44 Cola NEW está vacía, solicitando memoria.
+2024/12/04 11:13:44 URL: http://127.0.0.1:8002/crear_proceso
+2024/12/04 11:13:44 Respuesta POST: 200 OK
+2024/12/04 11:13:44 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/04 11:13:44 Respuesta POST: 200 OK
+2024/12/04 11:13:44 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/04 11:13:44 El módulo kernel está a la escucha en el puerto :8001
+2024/12/04 11:13:44 URL: http://127.0.0.1:8004/dispatch
+2024/12/04 11:13:47 Respuesta POST: 200 OK
+2024/12/04 11:24:03 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/04 11:24:03 Cola NEW está vacía, solicitando memoria.
+2024/12/04 11:24:03 URL: http://127.0.0.1:8002/crear_proceso
+2024/12/04 11:24:03 Respuesta POST: 200 OK
+2024/12/04 11:24:03 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/04 11:24:03 Respuesta POST: 200 OK
+2024/12/04 11:24:03 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/04 11:24:03 El módulo kernel está a la escucha en el puerto :8001
+2024/12/04 11:24:03 URL: http://127.0.0.1:8004/dispatch
+2024/12/04 11:24:06 Respuesta POST: 200 OK
+2024/12/04 11:25:32 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/04 11:25:32 Cola NEW está vacía, solicitando memoria.
+2024/12/04 11:25:32 URL: http://127.0.0.1:8002/crear_proceso
+2024/12/04 11:25:32 Respuesta POST: 200 OK
+2024/12/04 11:25:32 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/04 11:25:32 Respuesta POST: 200 OK
+2024/12/04 11:25:32 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/04 11:25:32 El módulo kernel está a la escucha en el puerto :8001
+2024/12/04 11:25:32 URL: http://127.0.0.1:8004/dispatch
+2024/12/04 11:28:29 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/04 11:28:29 Cola NEW está vacía, solicitando memoria.
+2024/12/04 11:28:29 URL: http://127.0.0.1:8002/crear_proceso
+2024/12/04 11:28:29 Respuesta POST: 200 OK
+2024/12/04 11:28:29 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/04 11:28:29 Respuesta POST: 200 OK
+2024/12/04 11:28:29 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/04 11:28:29 El módulo kernel está a la escucha en el puerto :8001
+2024/12/04 11:28:29 hola
+2024/12/04 11:28:29 URL: http://127.0.0.1:8004/dispatch
+2024/12/04 11:31:40 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/04 11:31:40 Cola NEW está vacía, solicitando memoria.
+2024/12/04 11:31:40 URL: http://127.0.0.1:8002/crear_proceso
+2024/12/04 11:31:40 Respuesta POST: 200 OK
+2024/12/04 11:31:40 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/04 11:31:40 Respuesta POST: 200 OK
+2024/12/04 11:31:40 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/04 11:31:40 ## Proceso inicial con código de estado 200
+2024/12/04 11:31:40 El módulo kernel está a la escucha en el puerto :8001
+2024/12/04 11:31:40 URL: http://127.0.0.1:8004/dispatch
+2024/12/04 11:34:02 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/04 11:34:02 Cola NEW está vacía, solicitando memoria.
+2024/12/04 11:34:02 URL: http://127.0.0.1:8002/crear_proceso
+2024/12/04 11:34:02 Respuesta POST: 200 OK
+2024/12/04 11:34:02 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/04 11:34:02 Respuesta POST: 200 OK
+2024/12/04 11:34:02 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/04 11:34:02 El módulo kernel está a la escucha en el puerto :8001
+2024/12/04 11:34:02 URL: http://127.0.0.1:8004/dispatch
+2024/12/04 11:34:05 Respuesta POST: 200 OK
+2024/12/04 11:36:58 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/04 11:36:58 Cola NEW está vacía, solicitando memoria.
+2024/12/04 11:36:58 URL: http://127.0.0.1:8002/crear_proceso
+2024/12/04 11:36:58 Respuesta POST: 200 OK
+2024/12/04 11:36:58 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/04 11:36:58 Respuesta POST: 200 OK
+2024/12/04 11:36:58 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/04 11:36:58 El módulo kernel está a la escucha en el puerto :8001
+2024/12/04 11:36:58 URL: http://127.0.0.1:8004/dispatch
+2024/12/04 11:37:01 Respuesta POST: 200 OK
+2024/12/04 11:40:19 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/04 11:40:19 Cola NEW está vacía, solicitando memoria.
+2024/12/04 11:40:19 URL: http://127.0.0.1:8002/crear_proceso
+2024/12/04 11:40:19 Respuesta POST: 200 OK
+2024/12/04 11:40:19 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/04 11:40:19 Respuesta POST: 200 OK
+2024/12/04 11:40:19 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/04 11:40:19 El módulo kernel está a la escucha en el puerto :8001
+2024/12/04 11:40:19 URL: http://127.0.0.1:8004/dispatch
+2024/12/04 11:40:21 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/04 11:40:21 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/04 11:40:21 Respuesta POST: 200 OK
+2024/12/04 11:40:21 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/04 11:42:02 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/04 11:42:02 Cola NEW está vacía, solicitando memoria.
+2024/12/04 11:42:02 URL: http://127.0.0.1:8002/crear_proceso
+2024/12/04 11:42:03 Respuesta POST: 200 OK
+2024/12/04 11:42:03 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/04 11:42:03 Respuesta POST: 200 OK
+2024/12/04 11:42:03 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/04 11:42:03 El módulo kernel está a la escucha en el puerto :8001
+2024/12/04 11:42:03 URL: http://127.0.0.1:8004/dispatch
+2024/12/04 11:42:06 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/04 11:42:06 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/04 11:42:06 Respuesta POST: 200 OK
+2024/12/04 11:42:06 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/04 11:44:09 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/04 11:44:09 Cola NEW está vacía, solicitando memoria.
+2024/12/04 11:44:09 URL: http://127.0.0.1:8002/crear_proceso
+2024/12/04 11:44:09 Respuesta POST: 200 OK
+2024/12/04 11:44:09 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/04 11:44:09 Respuesta POST: 200 OK
+2024/12/04 11:44:09 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/04 11:44:09 El módulo kernel está a la escucha en el puerto :8001
+2024/12/04 11:44:09 URL: http://127.0.0.1:8004/dispatch
+2024/12/04 11:44:12 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/04 11:44:12 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/04 11:44:12 Respuesta POST: 200 OK
+2024/12/04 11:44:12 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/04 11:47:36 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/04 11:47:36 Cola NEW está vacía, solicitando memoria.
+2024/12/04 11:47:36 URL: http://127.0.0.1:8002/crear_proceso
+2024/12/04 11:47:36 Respuesta POST: 200 OK
+2024/12/04 11:47:36 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/04 11:47:36 Respuesta POST: 200 OK
+2024/12/04 11:47:36 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/04 11:47:36 El módulo kernel está a la escucha en el puerto :8001
+2024/12/04 11:47:36 URL: http://127.0.0.1:8004/dispatch
+2024/12/04 11:49:01 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/04 11:49:01 Cola NEW está vacía, solicitando memoria.
+2024/12/04 11:49:01 URL: http://127.0.0.1:8002/crear_proceso
+2024/12/04 11:49:01 Respuesta POST: 200 OK
+2024/12/04 11:49:01 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/04 11:49:01 Respuesta POST: 200 OK
+2024/12/04 11:49:01 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/04 11:49:01 El módulo kernel está a la escucha en el puerto :8001
+2024/12/04 11:49:01 URL: http://127.0.0.1:8004/dispatch
+2024/12/04 11:50:56 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/04 11:50:56 Cola NEW está vacía, solicitando memoria.
+2024/12/04 11:50:56 URL: http://127.0.0.1:8002/crear_proceso
+2024/12/04 11:50:56 Respuesta POST: 200 OK
+2024/12/04 11:50:56 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/04 11:50:56 Respuesta POST: 200 OK
+2024/12/04 11:50:56 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/04 11:50:56 El módulo kernel está a la escucha en el puerto :8001
+2024/12/04 11:50:56 URL: http://127.0.0.1:8004/dispatch
+2024/12/04 11:56:08 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/04 11:56:08 Cola NEW está vacía, solicitando memoria.
+2024/12/04 11:56:08 URL: http://127.0.0.1:8002/crear_proceso
+2024/12/04 11:56:08 Respuesta POST: 200 OK
+2024/12/04 11:56:08 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/04 11:56:08 Respuesta POST: 200 OK
+2024/12/04 11:56:08 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/04 11:56:08 El módulo kernel está a la escucha en el puerto :8001
+2024/12/04 11:56:08 URL: http://127.0.0.1:8004/dispatch
+2024/12/04 11:56:12 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/04 11:56:12 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/04 11:56:12 Respuesta POST: 500 Internal Server Error
+2024/12/04 11:56:12 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/04 11:57:06 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/04 11:57:06 Cola NEW está vacía, solicitando memoria.
+2024/12/04 11:57:06 URL: http://127.0.0.1:8002/crear_proceso
+2024/12/04 11:57:06 Respuesta POST: 200 OK
+2024/12/04 11:57:06 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/04 11:57:06 Respuesta POST: 200 OK
+2024/12/04 11:57:06 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/04 11:57:06 El módulo kernel está a la escucha en el puerto :8001
+2024/12/04 11:57:06 URL: http://127.0.0.1:8004/dispatch
+2024/12/04 11:57:10 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/04 11:57:10 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/04 11:57:10 Respuesta POST: 500 Internal Server Error
+2024/12/04 11:57:10 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/04 11:57:51 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/04 11:57:51 Cola NEW está vacía, solicitando memoria.
+2024/12/04 11:57:51 URL: http://127.0.0.1:8002/crear_proceso
+2024/12/04 11:57:51 Respuesta POST: 200 OK
+2024/12/04 11:57:51 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/04 11:57:51 Respuesta POST: 200 OK
+2024/12/04 11:57:51 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/04 11:57:51 El módulo kernel está a la escucha en el puerto :8001
+2024/12/04 11:57:51 URL: http://127.0.0.1:8004/dispatch
+2024/12/04 11:57:55 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/04 11:57:55 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/04 11:57:55 Respuesta POST: 200 OK
+2024/12/04 11:57:55 ## (1:1) Se crea el Hilo - Estado: READY

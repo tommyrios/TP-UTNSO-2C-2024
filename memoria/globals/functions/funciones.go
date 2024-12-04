@@ -18,7 +18,9 @@ type MemUsuario globals.MemUsuario
 
 func ObtenerRegistros(pid int, tid int) commons.Registros {
 
-	return *globals.MemoriaSistema.TablaHilos[pid][tid]
+	registros := *globals.MemoriaSistema.TablaHilos[pid][tid]
+	
+	return registros
 }
 
 func ObtenerBaseLimite(pid int) (int, int) {

@@ -1,3 +1,1 @@
-PROCESS_CREATE pruebaPlani.txt 32 0
-~                       
-~                         
+THREAD_CREATE pruebaPlani.txt 1

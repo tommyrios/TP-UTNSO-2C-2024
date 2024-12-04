@@ -1,7 +1,5 @@
 package request
 
-import "github.com/sisoputnfrba/tp-golang/utils/commons"
-
 // STRUCTS SYSCALLS
 type RequestProcessCreate struct {
 	Pid            int    `json:"pid"`
@@ -73,8 +71,8 @@ type RequestFinalizarHilo struct {
 }
 
 type RequestDispatcher struct {
-	PCB *commons.PCB `json:"pcb"`
-	Tid int          `json:"tid"`
+	Pid int `json:"pid"`
+	Tid int `json:"tid"`
 }
 
 type RequestCrearHilo struct {

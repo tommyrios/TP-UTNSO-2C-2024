@@ -33,6 +33,8 @@ func Jnz(operandos []string, registros *commons.Registros) {
 	if globals.ValorRegistros(operandos[0], registros) != 0 {
 		valor, _ := strconv.Atoi(operandos[1])
 		registros.PC = uint32(valor)
+	} else {
+		registros.PC++
 	}
 }
 
@@ -122,7 +124,7 @@ func Syscall(instruccion globals.InstruccionStruct, registros *commons.Registros
 		ruta = "process_exit"
 
 	case "THREAD_CREATE":
-		prioridadTid, _ := strconv.Atoi(instruccion.Operandos[2])
+		prioridadTid, _ := strconv.Atoi(instruccion.Operandos[1])
 
 		parametros = requests.RequestSyscall{
 			Pid:          pid,
@@ -205,7 +207,7 @@ func Syscall(instruccion globals.InstruccionStruct, registros *commons.Registros
 
 	requestBody, _ := commons.CodificarJSON(parametros)
 
-	cliente.Post(globals.CConfig.IpKernel, globals.CConfig.PortKernel, "/syscall/"+ruta, requestBody)
+	cliente.Post(globals.CConfig.IpKernel, globals.CConfig.PortKernel, ruta, requestBody)
 }
 
 func EnviarRegistrosActualizados(registros *commons.Registros, pid int, tid int) {

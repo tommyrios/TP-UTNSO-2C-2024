@@ -33,38 +33,38 @@ func main() {
 	configs.ConfigurarLogger("kernel")
 
 	//// Cola Ready ////
-	commons.CpuLibre <- true
 	schedulers.ManejarColaReady()
 
 	//// Proceso Inicial ////
 	processes.ProcesoInicial(os.Args)
-
-	//// Hilo Execute ////
-	go schedulers.ManejarHiloRunning()
 
 	globals.IO = make(chan int, 1)
 	go handlers.ManejadorIO()
 
 	//// Servidor ////
 	mux := http.NewServeMux()
-	http.HandleFunc("/syscall/process_create", handlers.HandleProcessCreate)
-	http.HandleFunc("/syscall/thread_create", handlers.HandleThreadCreate)
-	http.HandleFunc("/syscall/process_exit", handlers.HandleProcessExit)
-	http.HandleFunc("/syscall/thread_exit", handlers.HandleThreadExit)
-	http.HandleFunc("/syscall/thread_join", handlers.HandleThreadJoin)
-	http.HandleFunc("/syscall/thread_cancel", handlers.HandleThreadCancel)
-	http.HandleFunc("/syscall/mutex_create", handlers.HandleMutexCreate)
-	http.HandleFunc("/syscall/mutex_lock", handlers.HandleMutexLock)
-	http.HandleFunc("/syscall/mutex_unlock", handlers.HandleMutexUnlock)
-	http.HandleFunc("/syscall/dump_memory", handlers.HandleDumpMemory)
-	http.HandleFunc("/syscall/handle_io", handlers.HandleIO)
-	http.HandleFunc("/compactacion", handlers.HandleCompactacion)
-	http.HandleFunc("/compactacion_finalizada", handlers.HandleCompactacionFinalizada)
-	http.HandleFunc("/pcb", handlers.HandleDesalojoCpu)
+	mux.HandleFunc("/process_create", handlers.HandleProcessCreate)
+	mux.HandleFunc("/thread_create", handlers.HandleThreadCreate)
+	mux.HandleFunc("/process_exit", handlers.HandleProcessExit)
+	mux.HandleFunc("/thread_exit", handlers.HandleThreadExit)
+	mux.HandleFunc("/thread_join", handlers.HandleThreadJoin)
+	mux.HandleFunc("/thread_cancel", handlers.HandleThreadCancel)
+	mux.HandleFunc("/mutex_create", handlers.HandleMutexCreate)
+	mux.HandleFunc("/mutex_lock", handlers.HandleMutexLock)
+	mux.HandleFunc("/mutex_unlock", handlers.HandleMutexUnlock)
+	mux.HandleFunc("/dump_memory", handlers.HandleDumpMemory)
+	mux.HandleFunc("/handle_io", handlers.HandleIO)
+	mux.HandleFunc("/compactacion", handlers.HandleCompactacion)
+	mux.HandleFunc("/compactacion_finalizada", handlers.HandleCompactacionFinalizada)
+	mux.HandleFunc("/pcb", handlers.HandleDesalojoCpu)
 
 	port := fmt.Sprintf(":%d", globals.KConfig.Port)
 
 	log.Printf("El módulo kernel está a la escucha en el puerto %s", port)
+
+	//// Hilo Execute ////
+	go schedulers.ManejarHiloRunning()
+	commons.CpuLibre <- true
 
 	err = http.ListenAndServe(port, mux)
 	if err != nil {

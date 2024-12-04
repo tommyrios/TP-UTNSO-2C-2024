@@ -41,7 +41,6 @@ func CrearHilo(pid int, prioridad int, pseudocodigo string) {
 
 	queues.AgregarHiloACola(&tcb, &globals.Estructura.ColaReady)
 	log.Printf("## (%d:%d) Se crea el Hilo - Estado: READY", pcb.Pid, tcb.Tid)
-	globals.Planificar <- true
 }
 
 func FinalizarHilo(pid int, tid int) {

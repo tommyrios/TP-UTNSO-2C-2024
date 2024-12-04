@@ -30,9 +30,6 @@ func HandleProcessCreate(w http.ResponseWriter, r *http.Request) {
 	statusCode := processes.CrearProceso(req.Pseudocodigo, req.TamanioMemoria, req.Prioridad)
 
 	w.WriteHeader(statusCode)
-	if statusCode == 200 {
-		w.Write([]byte("Proceso creado"))
-	}
 }
 
 func HandleProcessExit(w http.ResponseWriter, r *http.Request) {
@@ -250,8 +247,8 @@ func ManejadorIO() {
 	}
 }
 
-func Dispatch(pcb *commons.PCB, tid int) (*http.Response, error) {
-	requestBody, err := commons.CodificarJSON(request.RequestDispatcher{PCB: pcb, Tid: tid})
+func Dispatch(pid int, tid int) (*http.Response, error) {
+	requestBody, err := commons.CodificarJSON(request.RequestDispatcher{Pid: pid, Tid: tid})
 	if err != nil {
 		return nil, err
 	}

@@ -18,6 +18,7 @@ func ProcesoInicial(argumentos []string) {
 	prioridadHiloMain := 0
 
 	CrearProceso(pseudocodigo, tamanio, prioridadHiloMain)
+	
 	return
 }
 
@@ -29,13 +30,12 @@ func CrearProceso(pseudocodigo string, tamanioMemoria int, prioridad int) int {
 	if len(globals.Estructura.ColaNew) == 0 {
 		log.Println("Cola NEW está vacía, solicitando memoria.")
 
-		// Solicitar espacio en memoria
 		respuestaMemoria, err := SolicitarProcesoMemoria(pcb.Pid, pseudocodigo, tamanioMemoria)
 
 		if err != nil {
 			log.Println("Error al solicitar espacio en memoria.")
 		}
-		// Si la memoria aceptó el proceso, crearlo y pasarlo a READY
+
 		if respuestaMemoria.StatusCode == http.StatusOK {
 			threads.CrearHilo(pcb.Pid, prioridad, pseudocodigo)
 		} else {
@@ -47,10 +47,8 @@ func CrearProceso(pseudocodigo string, tamanioMemoria int, prioridad int) int {
 		}
 	} else {
 		log.Println("Cola NEW no está vacía, proceso se encola en NEW.")
-
 		queues.AgregarProcesoACola(pcb, globals.Estructura.ColaNew)
 	}
-
 	return http.StatusOK
 }
 
