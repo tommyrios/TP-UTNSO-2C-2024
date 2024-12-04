@@ -305,11 +305,11 @@ func HandleDesalojoCpu(w http.ResponseWriter, r *http.Request) {
 
 	globals.Estructura.HiloExecute = nil
 
-	log.Printf("## (PID:TID) - (%d:%d) - Devolvió hilo a Kernel", req.Pid, req.Tid)
+	log.Printf("## (PID:TID) - (%d:%d) - Hilo recibido de CPU", req.Pid, req.Tid)
 	w.WriteHeader(http.StatusOK)
 
 	globals.Planificar <- true
-	//globals.CpuLibre <- true
+	globals.CpuLibre <- true
 }
 
 func PausarPlanificacion() {

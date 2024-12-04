@@ -43,7 +43,7 @@ var Estructura = &Kernel{
 
 var KConfig *Config
 
-var CpuLibre = make(chan bool)
+var CpuLibre = make(chan bool, 1)
 
 var IO = make(chan int)
 

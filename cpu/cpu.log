@@ -3100,3 +3100,757 @@ net/http.(*conn).serve(0xc000164120, {0x3edc898, 0xc000125020})
 	/usr/local/go/src/net/http/server.go:2092 +0x5d0
 created by net/http.(*Server).Serve in goroutine 1
 	/usr/local/go/src/net/http/server.go:3360 +0x485
+2024/12/04 18:24:40 El módulo CPU está a la escucha en el puerto :8004
+2024/12/04 18:24:46 Respuesta POST: 200 OK
+2024/12/04 18:24:46 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/04 18:24:47 Respuesta POST: 200 OK
+2024/12/04 18:24:47 ## TID: 0 - FETCH - Program Counter: 0.
+2024/12/04 18:24:47 ## TID: 0 - Ejecutando: SET - [DX 0].
+2024/12/04 18:24:48 Respuesta POST: 200 OK
+2024/12/04 18:24:48 ## TID: 0 - FETCH - Program Counter: 1.
+2024/12/04 18:24:48 ## TID: 0 - Ejecutando: SET - [AX 1].
+2024/12/04 18:24:49 Respuesta POST: 200 OK
+2024/12/04 18:24:49 ## TID: 0 - FETCH - Program Counter: 2.
+2024/12/04 18:24:49 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/04 18:24:49 URL: http://127.0.0.1:8001/pcb
+2024/12/04 18:24:49 Respuesta POST: 200 OK
+2024/12/04 18:24:49 URL: http://127.0.0.1:8001/thread_create
+2024/12/04 18:24:49 Respuesta POST: 200 OK
+2024/12/04 18:24:49 URL: http://127.0.0.1:8002/actualizar_contexto
+2024/12/04 18:24:50 http: panic serving 127.0.0.1:51766: Post "http://127.0.0.1:8002/actualizar_contexto": EOF
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1947 +0xbe
+panic({0x1c75b40?, 0xc00009c0f0?})
+	/usr/local/go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/utils/cliente.Post({0xc0000123c0?, 0xc00019c210?}, 0x1f42, {0x1ba7cc5, 0x13}, {0xc0001d2000, 0x5e, 0x60})
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/utils/cliente/client.go:19 +0x36c
+github.com/sisoputnfrba/tp-golang/cpu/instrucciones.EnviarRegistrosActualizados(0x0?, 0xc0001820e0?, 0x0)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/cpu/instrucciones/instruction.go:226 +0xa5
+github.com/sisoputnfrba/tp-golang/cpu/instrucciones.EjecutarInstruccion(0x1, 0x0)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/cpu/instrucciones/instruction_cycle.go:80 +0x1c5
+github.com/sisoputnfrba/tp-golang/cpu/instrucciones.Dispatch({0x1cbb368, 0xc00012c1c0}, 0xc000134280)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/cpu/instrucciones/instruction_cycle.go:43 +0x85
+net/http.HandlerFunc.ServeHTTP(0xc00012c0e0?, {0x1cbb368?, 0xc00012c1c0?}, 0x6f4cad0?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x190e2e5?, {0x1cbb368, 0xc00012c1c0}, 0xc000134280)
+	/usr/local/go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x1cb9f90?}, {0x1cbb368?, 0xc00012c1c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc000136120, {0x1cbb898, 0xc000109020})
+	/usr/local/go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3360 +0x485
+2024/12/04 18:33:52 El módulo CPU está a la escucha en el puerto :8004
+2024/12/04 18:33:55 Respuesta POST: 200 OK
+2024/12/04 18:33:55 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/04 18:33:56 Respuesta POST: 200 OK
+2024/12/04 18:33:56 ## TID: 0 - FETCH - Program Counter: 0.
+2024/12/04 18:33:56 ## TID: 0 - Ejecutando: SET - [DX 0].
+2024/12/04 18:33:57 Respuesta POST: 200 OK
+2024/12/04 18:33:57 ## TID: 0 - FETCH - Program Counter: 1.
+2024/12/04 18:33:57 ## TID: 0 - Ejecutando: SET - [AX 1].
+2024/12/04 18:33:58 Respuesta POST: 200 OK
+2024/12/04 18:33:58 ## TID: 0 - FETCH - Program Counter: 2.
+2024/12/04 18:33:58 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/04 18:33:58 URL: http://127.0.0.1:8001/pcb
+2024/12/04 18:33:58 Respuesta POST: 200 OK
+2024/12/04 18:33:58 URL: http://127.0.0.1:8001/thread_create
+2024/12/04 18:33:58 Respuesta POST: 200 OK
+2024/12/04 18:33:58 URL: http://127.0.0.1:8002/actualizar_contexto
+2024/12/04 18:33:59 Respuesta POST: 200 OK
+2024/12/04 18:33:59 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/04 18:38:31 El módulo CPU está a la escucha en el puerto :8004
+2024/12/04 18:38:34 Respuesta POST: 200 OK
+2024/12/04 18:38:34 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/04 18:38:35 Respuesta POST: 200 OK
+2024/12/04 18:38:35 ## TID: 0 - FETCH - Program Counter: 0.
+2024/12/04 18:38:35 ## TID: 0 - Ejecutando: SET - [DX 0].
+2024/12/04 18:38:36 Respuesta POST: 200 OK
+2024/12/04 18:38:36 ## TID: 0 - FETCH - Program Counter: 1.
+2024/12/04 18:38:36 ## TID: 0 - Ejecutando: SET - [AX 1].
+2024/12/04 18:38:37 Respuesta POST: 200 OK
+2024/12/04 18:38:37 ## TID: 0 - FETCH - Program Counter: 2.
+2024/12/04 18:38:37 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/04 18:38:37 URL: http://127.0.0.1:8001/thread_create
+2024/12/04 18:38:37 Respuesta POST: 200 OK
+2024/12/04 18:38:37 URL: http://127.0.0.1:8001/pcb
+2024/12/04 18:38:37 Respuesta POST: 200 OK
+2024/12/04 18:38:37 URL: http://127.0.0.1:8002/actualizar_contexto
+2024/12/04 18:38:38 Respuesta POST: 200 OK
+2024/12/04 18:38:38 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/04 18:41:18 El módulo CPU está a la escucha en el puerto :8004
+2024/12/04 18:41:21 Respuesta POST: 200 OK
+2024/12/04 18:41:21 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/04 18:41:22 Respuesta POST: 200 OK
+2024/12/04 18:41:22 ## TID: 0 - FETCH - Program Counter: 0.
+2024/12/04 18:41:22 ## TID: 0 - Ejecutando: SET - [DX 0].
+2024/12/04 18:41:23 Respuesta POST: 200 OK
+2024/12/04 18:41:23 ## TID: 0 - FETCH - Program Counter: 1.
+2024/12/04 18:41:23 ## TID: 0 - Ejecutando: SET - [AX 1].
+2024/12/04 18:41:24 Respuesta POST: 200 OK
+2024/12/04 18:41:24 ## TID: 0 - FETCH - Program Counter: 2.
+2024/12/04 18:41:24 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/04 18:41:24 URL: http://127.0.0.1:8001/thread_create
+2024/12/04 18:41:24 Respuesta POST: 200 OK
+2024/12/04 18:41:24 URL: http://127.0.0.1:8001/pcb
+2024/12/04 18:44:07 http: panic serving 127.0.0.1:53092: Post "http://127.0.0.1:8001/pcb": EOF
+goroutine 19 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1947 +0xbe
+panic({0x2112b40?, 0xc0002087e0?})
+	/usr/local/go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/utils/cliente.Post({0xc000090350?, 0xc0001a20c0?}, 0x1f41, {0x2040958, 0x3}, {0xc0001be030, 0x23, 0x30})
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/utils/cliente/client.go:19 +0x36c
+github.com/sisoputnfrba/tp-golang/cpu/globals.DevolverPCB(0xc0001800e0?, 0xd?, {0x2041076?, 0x2?})
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/cpu/globals/globals.go:92 +0x85
+github.com/sisoputnfrba/tp-golang/cpu/instrucciones.Execute({{0xc0001800e0, 0xd}, {0xc000182190, 0x2, 0x2}}, 0xc00022e000, 0x0, 0x200, 0x1, 0x0)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/cpu/instrucciones/instruction_cycle.go:175 +0x64c
+github.com/sisoputnfrba/tp-golang/cpu/instrucciones.EjecutarInstruccion(0x1, 0x0)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/cpu/instrucciones/instruction_cycle.go:66 +0x155
+github.com/sisoputnfrba/tp-golang/cpu/instrucciones.Dispatch({0x2158368, 0xc0000da1c0}, 0xc0000e2280)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/cpu/instrucciones/instruction_cycle.go:43 +0x85
+net/http.HandlerFunc.ServeHTTP(0xc0000da0e0?, {0x2158368?, 0xc0000da1c0?}, 0x1b88dfb8?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1dab2e5?, {0x2158368, 0xc0000da1c0}, 0xc0000e2280)
+	/usr/local/go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x2156f90?}, {0x2158368?, 0xc0000da1c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc0000e4120, {0x2158898, 0xc0000a5020})
+	/usr/local/go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3360 +0x485
+2024/12/04 18:44:12 El módulo CPU está a la escucha en el puerto :8004
+2024/12/04 18:44:15 Respuesta POST: 200 OK
+2024/12/04 18:44:15 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/04 18:44:16 Respuesta POST: 200 OK
+2024/12/04 18:44:16 ## TID: 0 - FETCH - Program Counter: 0.
+2024/12/04 18:44:16 ## TID: 0 - Ejecutando: SET - [DX 0].
+2024/12/04 18:44:17 Respuesta POST: 200 OK
+2024/12/04 18:44:17 ## TID: 0 - FETCH - Program Counter: 1.
+2024/12/04 18:44:17 ## TID: 0 - Ejecutando: SET - [AX 1].
+2024/12/04 18:44:18 Respuesta POST: 200 OK
+2024/12/04 18:44:18 ## TID: 0 - FETCH - Program Counter: 2.
+2024/12/04 18:44:18 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/04 18:44:18 URL: http://127.0.0.1:8001/thread_create
+2024/12/04 18:44:18 Respuesta POST: 200 OK
+2024/12/04 18:44:18 URL: http://127.0.0.1:8001/pcb
+2024/12/04 18:45:38 http: panic serving 127.0.0.1:53324: Post "http://127.0.0.1:8001/pcb": EOF
+goroutine 19 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1947 +0xbe
+panic({0x35cdb40?, 0xc000200120?})
+	/usr/local/go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/utils/cliente.Post({0xc000090350?, 0xc00006c160?}, 0x1f41, {0x34fb958, 0x3}, {0xc0000221e0, 0x23, 0x30})
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/utils/cliente/client.go:19 +0x36c
+github.com/sisoputnfrba/tp-golang/cpu/globals.DevolverPCB(0xc00001a180?, 0xd?, {0x34fc076?, 0x2?})
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/cpu/globals/globals.go:92 +0x85
+github.com/sisoputnfrba/tp-golang/cpu/instrucciones.Execute({{0xc00001a180, 0xd}, {0xc00007c520, 0x2, 0x2}}, 0xc000094180, 0x0, 0x200, 0x1, 0x0)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/cpu/instrucciones/instruction_cycle.go:175 +0x64c
+github.com/sisoputnfrba/tp-golang/cpu/instrucciones.EjecutarInstruccion(0x1, 0x0)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/cpu/instrucciones/instruction_cycle.go:66 +0x155
+github.com/sisoputnfrba/tp-golang/cpu/instrucciones.Dispatch({0x3613368, 0xc0000da1c0}, 0xc0000e2280)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/cpu/instrucciones/instruction_cycle.go:43 +0x85
+net/http.HandlerFunc.ServeHTTP(0xc0000da0e0?, {0x3613368?, 0xc0000da1c0?}, 0x22378580?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x32662e5?, {0x3613368, 0xc0000da1c0}, 0xc0000e2280)
+	/usr/local/go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x3611f90?}, {0x3613368?, 0xc0000da1c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc0000e4120, {0x3613898, 0xc0000a5020})
+	/usr/local/go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3360 +0x485
+2024/12/04 18:45:43 El módulo CPU está a la escucha en el puerto :8004
+2024/12/04 18:45:46 Respuesta POST: 200 OK
+2024/12/04 18:45:46 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/04 18:45:47 Respuesta POST: 200 OK
+2024/12/04 18:45:47 ## TID: 0 - FETCH - Program Counter: 0.
+2024/12/04 18:45:47 ## TID: 0 - Ejecutando: SET - [DX 0].
+2024/12/04 18:45:48 Respuesta POST: 200 OK
+2024/12/04 18:45:48 ## TID: 0 - FETCH - Program Counter: 1.
+2024/12/04 18:45:48 ## TID: 0 - Ejecutando: SET - [AX 1].
+2024/12/04 18:45:49 Respuesta POST: 200 OK
+2024/12/04 18:45:49 ## TID: 0 - FETCH - Program Counter: 2.
+2024/12/04 18:45:49 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/04 18:45:49 URL: http://127.0.0.1:8001/thread_create
+2024/12/04 18:45:49 Respuesta POST: 200 OK
+2024/12/04 18:45:49 URL: http://127.0.0.1:8001/pcb
+2024/12/04 18:45:49 Respuesta POST: 200 OK
+2024/12/04 18:45:49 URL: http://127.0.0.1:8002/actualizar_contexto
+2024/12/04 18:45:50 Respuesta POST: 200 OK
+2024/12/04 18:45:50 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/04 18:46:44 El módulo CPU está a la escucha en el puerto :8004
+2024/12/04 18:46:47 Respuesta POST: 200 OK
+2024/12/04 18:46:47 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/04 18:46:48 Respuesta POST: 200 OK
+2024/12/04 18:46:48 ## TID: 0 - FETCH - Program Counter: 0.
+2024/12/04 18:46:48 ## TID: 0 - Ejecutando: SET - [DX 0].
+2024/12/04 18:46:49 Respuesta POST: 200 OK
+2024/12/04 18:46:49 ## TID: 0 - FETCH - Program Counter: 1.
+2024/12/04 18:46:49 ## TID: 0 - Ejecutando: SET - [AX 1].
+2024/12/04 18:46:50 Respuesta POST: 200 OK
+2024/12/04 18:46:50 ## TID: 0 - FETCH - Program Counter: 2.
+2024/12/04 18:46:50 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/04 18:46:50 URL: http://127.0.0.1:8001/thread_create
+2024/12/04 18:46:50 http: panic serving 127.0.0.1:53543: Post "http://127.0.0.1:8001/thread_create": dial tcp 127.0.0.1:8001: connect: connection refused
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1947 +0xbe
+panic({0x6174b40?, 0xc0002006c0?})
+	/usr/local/go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/utils/cliente.Post({0xc0000123d0?, 0xc00020a120?}, 0x1f41, {0x60a4ab8, 0xd}, {0xc000246000, 0x94, 0xa0})
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/utils/cliente/client.go:19 +0x36c
+github.com/sisoputnfrba/tp-golang/cpu/instrucciones.Syscall({{0xc000218040, 0xd}, {0xc000200400, 0x2, 0x2}}, 0x1f?, 0x1, 0x0)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/cpu/instrucciones/instruction.go:210 +0x6e5
+github.com/sisoputnfrba/tp-golang/cpu/instrucciones.Execute({{0xc000218040, 0xd}, {0xc000200400, 0x2, 0x2}}, 0xc0000222a0, 0x0, 0x200, 0x1, 0x0)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/cpu/instrucciones/instruction_cycle.go:174 +0x62b
+github.com/sisoputnfrba/tp-golang/cpu/instrucciones.EjecutarInstruccion(0x1, 0x0)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/cpu/instrucciones/instruction_cycle.go:66 +0x155
+github.com/sisoputnfrba/tp-golang/cpu/instrucciones.Dispatch({0x61ba368, 0xc00012c1c0}, 0xc000134280)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/cpu/instrucciones/instruction_cycle.go:43 +0x85
+net/http.HandlerFunc.ServeHTTP(0xc00012c0e0?, {0x61ba368?, 0xc00012c1c0?}, 0x374429b0?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x5e0d2e5?, {0x61ba368, 0xc00012c1c0}, 0xc000134280)
+	/usr/local/go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x61b8f90?}, {0x61ba368?, 0xc00012c1c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc000136120, {0x61ba898, 0xc000109020})
+	/usr/local/go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3360 +0x485
+2024/12/04 18:50:52 El módulo CPU está a la escucha en el puerto :8004
+2024/12/04 18:50:56 Respuesta POST: 200 OK
+2024/12/04 18:50:56 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/04 18:50:57 Respuesta POST: 200 OK
+2024/12/04 18:50:57 ## TID: 0 - FETCH - Program Counter: 0.
+2024/12/04 18:50:57 ## TID: 0 - Ejecutando: SET - [DX 0].
+2024/12/04 18:50:58 Respuesta POST: 200 OK
+2024/12/04 18:50:58 ## TID: 0 - FETCH - Program Counter: 1.
+2024/12/04 18:50:58 ## TID: 0 - Ejecutando: SET - [AX 1].
+2024/12/04 18:50:59 Respuesta POST: 200 OK
+2024/12/04 18:50:59 ## TID: 0 - FETCH - Program Counter: 2.
+2024/12/04 18:50:59 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/04 18:50:59 URL: http://127.0.0.1:8001/thread_create
+2024/12/04 18:50:59 Respuesta POST: 200 OK
+2024/12/04 18:50:59 URL: http://127.0.0.1:8001/pcb
+2024/12/04 18:51:33 http: panic serving 127.0.0.1:53873: Post "http://127.0.0.1:8001/pcb": EOF
+goroutine 19 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1947 +0xbe
+panic({0x5ebdb40?, 0xc00007e060?})
+	/usr/local/go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/utils/cliente.Post({0xc000090350?, 0xc0000ca2a0?}, 0x1f41, {0x5deb958, 0x3}, {0xc0000941b0, 0x23, 0x30})
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/utils/cliente/client.go:19 +0x36c
+github.com/sisoputnfrba/tp-golang/cpu/globals.DevolverPCB(0xc00029e0c0?, 0xd?, {0x5dec076?, 0x2?})
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/cpu/globals/globals.go:92 +0x85
+github.com/sisoputnfrba/tp-golang/cpu/instrucciones.Execute({{0xc00029e0c0, 0xd}, {0xc00028e760, 0x2, 0x2}}, 0xc0002b4000, 0x0, 0x200, 0x1, 0x0)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/cpu/instrucciones/instruction_cycle.go:175 +0x64c
+github.com/sisoputnfrba/tp-golang/cpu/instrucciones.EjecutarInstruccion(0x1, 0x0)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/cpu/instrucciones/instruction_cycle.go:66 +0x155
+github.com/sisoputnfrba/tp-golang/cpu/instrucciones.Dispatch({0x5f03368, 0xc0000da1c0}, 0xc0000e2280)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/cpu/instrucciones/instruction_cycle.go:43 +0x85
+net/http.HandlerFunc.ServeHTTP(0xc0000da0e0?, {0x5f03368?, 0xc0000da1c0?}, 0xcb4d690?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x5b562e5?, {0x5f03368, 0xc0000da1c0}, 0xc0000e2280)
+	/usr/local/go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x5f01f90?}, {0x5f03368?, 0xc0000da1c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc0000e4120, {0x5f03898, 0xc0000a5020})
+	/usr/local/go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3360 +0x485
+2024/12/04 18:51:37 El módulo CPU está a la escucha en el puerto :8004
+2024/12/04 18:51:41 Respuesta POST: 200 OK
+2024/12/04 18:51:41 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/04 18:51:42 Respuesta POST: 200 OK
+2024/12/04 18:51:42 ## TID: 0 - FETCH - Program Counter: 0.
+2024/12/04 18:51:42 ## TID: 0 - Ejecutando: SET - [DX 0].
+2024/12/04 18:51:43 Respuesta POST: 200 OK
+2024/12/04 18:51:43 ## TID: 0 - FETCH - Program Counter: 1.
+2024/12/04 18:51:43 ## TID: 0 - Ejecutando: SET - [AX 1].
+2024/12/04 18:51:44 Respuesta POST: 200 OK
+2024/12/04 18:51:44 ## TID: 0 - FETCH - Program Counter: 2.
+2024/12/04 18:51:44 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/04 18:51:44 URL: http://127.0.0.1:8001/thread_create
+2024/12/04 18:51:44 Respuesta POST: 200 OK
+2024/12/04 18:51:44 URL: http://127.0.0.1:8001/pcb
+2024/12/04 18:55:18 http: panic serving 127.0.0.1:53940: Post "http://127.0.0.1:8001/pcb": EOF
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1947 +0xbe
+panic({0x154cb40?, 0xc0000a6000?})
+	/usr/local/go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/utils/cliente.Post({0xc0000123d0?, 0xc0001a8160?}, 0x1f41, {0x147a958, 0x3}, {0xc0001a60c0, 0x23, 0x30})
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/utils/cliente/client.go:19 +0x36c
+github.com/sisoputnfrba/tp-golang/cpu/globals.DevolverPCB(0xc0001820a0?, 0xd?, {0x147b076?, 0x2?})
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/cpu/globals/globals.go:92 +0x85
+github.com/sisoputnfrba/tp-golang/cpu/instrucciones.Execute({{0xc0001820a0, 0xd}, {0xc000184700, 0x2, 0x2}}, 0xc0001a6000, 0x0, 0x200, 0x1, 0x0)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/cpu/instrucciones/instruction_cycle.go:175 +0x64c
+github.com/sisoputnfrba/tp-golang/cpu/instrucciones.EjecutarInstruccion(0x1, 0x0)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/cpu/instrucciones/instruction_cycle.go:66 +0x155
+github.com/sisoputnfrba/tp-golang/cpu/instrucciones.Dispatch({0x1592368, 0xc00012c1c0}, 0xc000134280)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/cpu/instrucciones/instruction_cycle.go:43 +0x85
+net/http.HandlerFunc.ServeHTTP(0xc00012c0e0?, {0x1592368?, 0xc00012c1c0?}, 0xb667118?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x11e52e5?, {0x1592368, 0xc00012c1c0}, 0xc000134280)
+	/usr/local/go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x1590f90?}, {0x1592368?, 0xc00012c1c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc000136120, {0x1592898, 0xc000109020})
+	/usr/local/go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3360 +0x485
+2024/12/04 18:55:22 El módulo CPU está a la escucha en el puerto :8004
+2024/12/04 18:55:25 Respuesta POST: 200 OK
+2024/12/04 18:55:25 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/04 18:55:26 Respuesta POST: 200 OK
+2024/12/04 18:55:26 ## TID: 0 - FETCH - Program Counter: 0.
+2024/12/04 18:55:26 ## TID: 0 - Ejecutando: SET - [DX 0].
+2024/12/04 18:55:27 Respuesta POST: 200 OK
+2024/12/04 18:55:27 ## TID: 0 - FETCH - Program Counter: 1.
+2024/12/04 18:55:27 ## TID: 0 - Ejecutando: SET - [AX 1].
+2024/12/04 18:55:28 Respuesta POST: 200 OK
+2024/12/04 18:55:28 ## TID: 0 - FETCH - Program Counter: 2.
+2024/12/04 18:55:28 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/04 18:55:28 URL: http://127.0.0.1:8001/thread_create
+2024/12/04 18:55:28 Respuesta POST: 200 OK
+2024/12/04 18:55:28 URL: http://127.0.0.1:8001/pcb
+2024/12/04 19:02:39 http: panic serving 127.0.0.1:54236: Post "http://127.0.0.1:8001/pcb": EOF
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1947 +0xbe
+panic({0x3d58b40?, 0xc00028a000?})
+	/usr/local/go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/utils/cliente.Post({0xc000108350?, 0xc00021c060?}, 0x1f41, {0x3c86958, 0x3}, {0xc000224030, 0x23, 0x30})
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/utils/cliente/client.go:19 +0x36c
+github.com/sisoputnfrba/tp-golang/cpu/globals.DevolverPCB(0xc0000920e0?, 0xd?, {0x3c87076?, 0x2?})
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/cpu/globals/globals.go:92 +0x85
+github.com/sisoputnfrba/tp-golang/cpu/instrucciones.Execute({{0xc0000920e0, 0xd}, {0xc000094790, 0x2, 0x2}}, 0xc0000bc000, 0x0, 0x200, 0x1, 0x0)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/cpu/instrucciones/instruction_cycle.go:175 +0x64c
+github.com/sisoputnfrba/tp-golang/cpu/instrucciones.EjecutarInstruccion(0x1, 0x0)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/cpu/instrucciones/instruction_cycle.go:66 +0x155
+github.com/sisoputnfrba/tp-golang/cpu/instrucciones.Dispatch({0x3d9e368, 0xc0001521c0}, 0xc00015a280)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/cpu/instrucciones/instruction_cycle.go:43 +0x85
+net/http.HandlerFunc.ServeHTTP(0xc0001520e0?, {0x3d9e368?, 0xc0001521c0?}, 0x19aa3890?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x39f12e5?, {0x3d9e368, 0xc0001521c0}, 0xc00015a280)
+	/usr/local/go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x3d9cf90?}, {0x3d9e368?, 0xc0001521c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc00014c1b0, {0x3d9e898, 0xc00011b020})
+	/usr/local/go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3360 +0x485
+2024/12/04 19:02:44 El módulo CPU está a la escucha en el puerto :8004
+2024/12/04 19:02:48 Respuesta POST: 200 OK
+2024/12/04 19:02:48 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/04 19:02:49 Respuesta POST: 200 OK
+2024/12/04 19:02:49 ## TID: 0 - FETCH - Program Counter: 0.
+2024/12/04 19:02:49 ## TID: 0 - Ejecutando: SET - [DX 0].
+2024/12/04 19:02:50 Respuesta POST: 200 OK
+2024/12/04 19:02:50 ## TID: 0 - FETCH - Program Counter: 1.
+2024/12/04 19:02:50 ## TID: 0 - Ejecutando: SET - [AX 1].
+2024/12/04 19:02:51 Respuesta POST: 200 OK
+2024/12/04 19:02:51 ## TID: 0 - FETCH - Program Counter: 2.
+2024/12/04 19:02:51 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/04 19:02:51 URL: http://127.0.0.1:8001/thread_create
+2024/12/04 19:02:51 Respuesta POST: 200 OK
+2024/12/04 19:02:51 URL: http://127.0.0.1:8001/pcb
+2024/12/04 19:02:51 Respuesta POST: 200 OK
+2024/12/04 19:02:51 URL: http://127.0.0.1:8002/actualizar_contexto
+2024/12/04 19:02:52 Respuesta POST: 200 OK
+2024/12/04 19:02:52 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/04 19:02:53 Respuesta POST: 200 OK
+2024/12/04 19:02:53 ## TID: 1 - Solicito Contexto Ejecución.
+2024/12/04 19:02:54 Respuesta POST: 200 OK
+2024/12/04 19:02:54 ## TID: 1 - FETCH - Program Counter: 0.
+2024/12/04 19:02:54 ## TID: 1 - Ejecutando: SET - [CX 5].
+2024/12/04 19:02:55 Respuesta POST: 200 OK
+2024/12/04 19:02:55 ## TID: 1 - FETCH - Program Counter: 1.
+2024/12/04 19:02:55 ## TID: 1 - Ejecutando: SET - [BX 1].
+2024/12/04 19:02:56 Respuesta POST: 200 OK
+2024/12/04 19:02:56 ## TID: 1 - FETCH - Program Counter: 2.
+2024/12/04 19:02:56 ## TID: 1 - Ejecutando: SUB - [CX BX].
+2024/12/04 19:02:57 Respuesta POST: 200 OK
+2024/12/04 19:02:57 ## TID: 1 - FETCH - Program Counter: 3.
+2024/12/04 19:02:57 ## TID: 1 - Ejecutando: THREAD_EXIT - [].
+2024/12/04 19:02:57 URL: http://127.0.0.1:8001/thread_exit
+2024/12/04 19:02:57 Respuesta POST: 200 OK
+2024/12/04 19:02:57 URL: http://127.0.0.1:8001/pcb
+2024/12/04 19:02:57 Respuesta POST: 200 OK
+2024/12/04 19:02:57 URL: http://127.0.0.1:8002/actualizar_contexto
+2024/12/04 19:02:58 http: panic serving 127.0.0.1:54837: Post "http://127.0.0.1:8002/actualizar_contexto": EOF
+goroutine 19 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1947 +0xbe
+panic({0x3a46b40?, 0xc0001146f0?})
+	/usr/local/go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/utils/cliente.Post({0xc000090340?, 0xc0000a2588?}, 0x1f42, {0x3978ca5, 0x13}, {0xc000196060, 0x5e, 0x60})
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/utils/cliente/client.go:19 +0x36c
+github.com/sisoputnfrba/tp-golang/cpu/instrucciones.EnviarRegistrosActualizados(0x1?, 0xc000090784?, 0x1)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/cpu/instrucciones/instruction.go:226 +0xa5
+github.com/sisoputnfrba/tp-golang/cpu/instrucciones.EjecutarInstruccion(0x1, 0x1)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/cpu/instrucciones/instruction_cycle.go:80 +0x1c5
+github.com/sisoputnfrba/tp-golang/cpu/instrucciones.Dispatch({0x3a8c368, 0xc0000da2a0}, 0xc0000e2a00)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/cpu/instrucciones/instruction_cycle.go:43 +0x85
+net/http.HandlerFunc.ServeHTTP(0xc0000da0e0?, {0x3a8c368?, 0xc0000da2a0?}, 0x381dc8a0?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x36df2e5?, {0x3a8c368, 0xc0000da2a0}, 0xc0000e2a00)
+	/usr/local/go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x3a8af90?}, {0x3a8c368?, 0xc0000da2a0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc0000e4120, {0x3a8c898, 0xc0000a5020})
+	/usr/local/go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3360 +0x485
+2024/12/04 19:09:34 El módulo CPU está a la escucha en el puerto :8004
+2024/12/04 19:09:38 Respuesta POST: 200 OK
+2024/12/04 19:09:38 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/04 19:09:39 Respuesta POST: 200 OK
+2024/12/04 19:09:39 ## TID: 0 - FETCH - Program Counter: 0.
+2024/12/04 19:09:39 ## TID: 0 - Ejecutando: SET - [DX 0].
+2024/12/04 19:09:40 Respuesta POST: 200 OK
+2024/12/04 19:09:40 ## TID: 0 - FETCH - Program Counter: 1.
+2024/12/04 19:09:40 ## TID: 0 - Ejecutando: SET - [AX 1].
+2024/12/04 19:09:41 Respuesta POST: 200 OK
+2024/12/04 19:09:41 ## TID: 0 - FETCH - Program Counter: 2.
+2024/12/04 19:09:41 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/04 19:09:41 URL: http://127.0.0.1:8001/thread_create
+2024/12/04 19:09:41 Respuesta POST: 200 OK
+2024/12/04 19:09:41 URL: http://127.0.0.1:8001/pcb
+2024/12/04 19:09:41 Respuesta POST: 200 OK
+2024/12/04 19:09:41 URL: http://127.0.0.1:8002/actualizar_contexto
+2024/12/04 19:09:42 Respuesta POST: 200 OK
+2024/12/04 19:09:42 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/04 19:09:43 Respuesta POST: 200 OK
+2024/12/04 19:09:43 ## TID: 1 - Solicito Contexto Ejecución.
+2024/12/04 19:09:44 Respuesta POST: 200 OK
+2024/12/04 19:09:44 ## TID: 1 - FETCH - Program Counter: 0.
+2024/12/04 19:09:44 ## TID: 1 - Ejecutando: SET - [CX 5].
+2024/12/04 19:09:45 Respuesta POST: 200 OK
+2024/12/04 19:09:45 ## TID: 1 - FETCH - Program Counter: 1.
+2024/12/04 19:09:45 ## TID: 1 - Ejecutando: SET - [BX 1].
+2024/12/04 19:09:46 Respuesta POST: 200 OK
+2024/12/04 19:09:46 ## TID: 1 - FETCH - Program Counter: 2.
+2024/12/04 19:09:46 ## TID: 1 - Ejecutando: SUB - [CX BX].
+2024/12/04 19:09:47 Respuesta POST: 200 OK
+2024/12/04 19:09:47 ## TID: 1 - FETCH - Program Counter: 3.
+2024/12/04 19:09:47 ## TID: 1 - Ejecutando: THREAD_EXIT - [].
+2024/12/04 19:09:47 URL: http://127.0.0.1:8001/thread_exit
+2024/12/04 19:09:47 Respuesta POST: 200 OK
+2024/12/04 19:09:47 URL: http://127.0.0.1:8001/pcb
+2024/12/04 19:09:47 Respuesta POST: 200 OK
+2024/12/04 19:09:47 URL: http://127.0.0.1:8002/actualizar_contexto
+2024/12/04 19:09:48 Respuesta POST: 500 Internal Server Error
+2024/12/04 19:09:48 ## TID: 1 - Actualizo Contexto Ejecución.
+2024/12/04 19:09:49 Respuesta POST: 200 OK
+2024/12/04 19:09:49 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/04 19:09:50 Respuesta POST: 200 OK
+2024/12/04 19:09:50 ## TID: 0 - FETCH - Program Counter: 3.
+2024/12/04 19:09:50 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/04 19:09:51 Respuesta POST: 200 OK
+2024/12/04 19:09:51 ## TID: 0 - FETCH - Program Counter: 4.
+2024/12/04 19:09:51 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 5].
+2024/12/04 19:09:51 URL: http://127.0.0.1:8001/thread_create
+2024/12/04 19:09:51 Respuesta POST: 200 OK
+2024/12/04 19:09:51 URL: http://127.0.0.1:8001/pcb
+2024/12/04 19:09:51 Respuesta POST: 200 OK
+2024/12/04 19:09:51 URL: http://127.0.0.1:8002/actualizar_contexto
+2024/12/04 19:09:52 Respuesta POST: 200 OK
+2024/12/04 19:09:52 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/04 19:09:53 Respuesta POST: 200 OK
+2024/12/04 19:09:53 ## TID: 2 - Solicito Contexto Ejecución.
+2024/12/04 19:09:54 Respuesta POST: 200 OK
+2024/12/04 19:09:54 ## TID: 2 - FETCH - Program Counter: 0.
+2024/12/04 19:09:54 ## TID: 2 - Ejecutando: SET - [CX 5].
+2024/12/04 19:09:55 Respuesta POST: 200 OK
+2024/12/04 19:09:55 ## TID: 2 - FETCH - Program Counter: 1.
+2024/12/04 19:09:55 ## TID: 2 - Ejecutando: SET - [BX 1].
+2024/12/04 19:09:56 Respuesta POST: 200 OK
+2024/12/04 19:09:56 ## TID: 2 - FETCH - Program Counter: 2.
+2024/12/04 19:09:56 ## TID: 2 - Ejecutando: SUB - [CX BX].
+2024/12/04 19:09:57 Respuesta POST: 200 OK
+2024/12/04 19:09:57 ## TID: 2 - FETCH - Program Counter: 3.
+2024/12/04 19:09:57 ## TID: 2 - Ejecutando: THREAD_EXIT - [].
+2024/12/04 19:09:57 URL: http://127.0.0.1:8001/thread_exit
+2024/12/04 19:09:57 Respuesta POST: 200 OK
+2024/12/04 19:09:57 URL: http://127.0.0.1:8001/pcb
+2024/12/04 19:09:57 Respuesta POST: 200 OK
+2024/12/04 19:09:57 URL: http://127.0.0.1:8002/actualizar_contexto
+2024/12/04 19:09:58 Respuesta POST: 500 Internal Server Error
+2024/12/04 19:09:58 ## TID: 2 - Actualizo Contexto Ejecución.
+2024/12/04 19:09:59 Respuesta POST: 200 OK
+2024/12/04 19:09:59 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/04 19:10:00 Respuesta POST: 200 OK
+2024/12/04 19:10:00 ## TID: 0 - FETCH - Program Counter: 5.
+2024/12/04 19:10:00 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/04 19:10:01 Respuesta POST: 200 OK
+2024/12/04 19:10:01 ## TID: 0 - FETCH - Program Counter: 6.
+2024/12/04 19:10:01 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 5].
+2024/12/04 19:10:01 URL: http://127.0.0.1:8001/thread_create
+2024/12/04 19:10:01 Respuesta POST: 200 OK
+2024/12/04 19:10:01 URL: http://127.0.0.1:8001/pcb
+2024/12/04 19:10:01 Respuesta POST: 200 OK
+2024/12/04 19:10:01 URL: http://127.0.0.1:8002/actualizar_contexto
+2024/12/04 19:10:02 Respuesta POST: 200 OK
+2024/12/04 19:10:02 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/04 19:10:03 Respuesta POST: 200 OK
+2024/12/04 19:10:03 ## TID: 3 - Solicito Contexto Ejecución.
+2024/12/04 19:10:04 Respuesta POST: 200 OK
+2024/12/04 19:10:04 ## TID: 3 - FETCH - Program Counter: 0.
+2024/12/04 19:10:04 ## TID: 3 - Ejecutando: SET - [CX 5].
+2024/12/04 19:10:05 Respuesta POST: 200 OK
+2024/12/04 19:10:05 ## TID: 3 - FETCH - Program Counter: 1.
+2024/12/04 19:10:05 ## TID: 3 - Ejecutando: SET - [BX 1].
+2024/12/04 19:10:06 Respuesta POST: 200 OK
+2024/12/04 19:10:06 ## TID: 3 - FETCH - Program Counter: 2.
+2024/12/04 19:10:06 ## TID: 3 - Ejecutando: SUB - [CX BX].
+2024/12/04 19:10:07 Respuesta POST: 200 OK
+2024/12/04 19:10:07 ## TID: 3 - FETCH - Program Counter: 3.
+2024/12/04 19:10:07 ## TID: 3 - Ejecutando: THREAD_EXIT - [].
+2024/12/04 19:10:07 URL: http://127.0.0.1:8001/thread_exit
+2024/12/04 19:10:07 Respuesta POST: 200 OK
+2024/12/04 19:10:07 URL: http://127.0.0.1:8001/pcb
+2024/12/04 19:10:07 Respuesta POST: 200 OK
+2024/12/04 19:10:07 URL: http://127.0.0.1:8002/actualizar_contexto
+2024/12/04 19:10:08 Respuesta POST: 500 Internal Server Error
+2024/12/04 19:10:08 ## TID: 3 - Actualizo Contexto Ejecución.
+2024/12/04 19:10:09 Respuesta POST: 200 OK
+2024/12/04 19:10:09 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/04 19:10:10 Respuesta POST: 200 OK
+2024/12/04 19:10:10 ## TID: 0 - FETCH - Program Counter: 7.
+2024/12/04 19:10:10 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/04 19:10:11 Respuesta POST: 200 OK
+2024/12/04 19:10:11 ## TID: 0 - FETCH - Program Counter: 8.
+2024/12/04 19:10:11 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/04 19:10:11 URL: http://127.0.0.1:8001/thread_create
+2024/12/04 19:10:11 Respuesta POST: 200 OK
+2024/12/04 19:10:11 URL: http://127.0.0.1:8001/pcb
+2024/12/04 19:10:11 Respuesta POST: 200 OK
+2024/12/04 19:10:11 URL: http://127.0.0.1:8002/actualizar_contexto
+2024/12/04 19:10:12 Respuesta POST: 200 OK
+2024/12/04 19:10:12 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/04 19:10:13 Respuesta POST: 200 OK
+2024/12/04 19:10:13 ## TID: 4 - Solicito Contexto Ejecución.
+2024/12/04 19:10:14 Respuesta POST: 200 OK
+2024/12/04 19:10:14 ## TID: 4 - FETCH - Program Counter: 0.
+2024/12/04 19:10:14 ## TID: 4 - Ejecutando: SET - [CX 5].
+2024/12/04 19:10:15 Respuesta POST: 200 OK
+2024/12/04 19:10:15 ## TID: 4 - FETCH - Program Counter: 1.
+2024/12/04 19:10:15 ## TID: 4 - Ejecutando: SET - [BX 1].
+2024/12/04 19:10:16 Respuesta POST: 200 OK
+2024/12/04 19:10:16 ## TID: 4 - FETCH - Program Counter: 2.
+2024/12/04 19:10:16 ## TID: 4 - Ejecutando: SUB - [CX BX].
+2024/12/04 19:10:17 Respuesta POST: 200 OK
+2024/12/04 19:10:17 ## TID: 4 - FETCH - Program Counter: 3.
+2024/12/04 19:10:17 ## TID: 4 - Ejecutando: THREAD_EXIT - [].
+2024/12/04 19:10:17 URL: http://127.0.0.1:8001/thread_exit
+2024/12/04 19:10:17 Respuesta POST: 200 OK
+2024/12/04 19:10:17 URL: http://127.0.0.1:8001/pcb
+2024/12/04 19:10:17 Respuesta POST: 200 OK
+2024/12/04 19:10:17 URL: http://127.0.0.1:8002/actualizar_contexto
+2024/12/04 19:10:18 Respuesta POST: 500 Internal Server Error
+2024/12/04 19:10:18 ## TID: 4 - Actualizo Contexto Ejecución.
+2024/12/04 19:10:19 Respuesta POST: 200 OK
+2024/12/04 19:10:19 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/04 19:10:20 Respuesta POST: 200 OK
+2024/12/04 19:10:20 ## TID: 0 - FETCH - Program Counter: 9.
+2024/12/04 19:10:20 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/04 19:10:21 Respuesta POST: 200 OK
+2024/12/04 19:10:21 ## TID: 0 - FETCH - Program Counter: 10.
+2024/12/04 19:10:21 ## TID: 0 - Ejecutando: THREAD_JOIN - [4].
+2024/12/04 19:10:21 URL: http://127.0.0.1:8001/thread_join
+2024/12/04 19:10:21 Respuesta POST: 200 OK
+2024/12/04 19:10:21 URL: http://127.0.0.1:8001/pcb
+2024/12/04 19:10:21 Respuesta POST: 200 OK
+2024/12/04 19:10:21 URL: http://127.0.0.1:8002/actualizar_contexto
+2024/12/04 19:10:22 Respuesta POST: 200 OK
+2024/12/04 19:10:22 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/04 19:10:23 Respuesta POST: 200 OK
+2024/12/04 19:10:23 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/04 19:10:24 Respuesta POST: 200 OK
+2024/12/04 19:10:24 ## TID: 0 - FETCH - Program Counter: 11.
+2024/12/04 19:10:24 ## TID: 0 - Ejecutando: PROCESS_EXIT - [].
+2024/12/04 19:10:24 URL: http://127.0.0.1:8001/process_exit
+2024/12/04 19:10:24 Respuesta POST: 200 OK
+2024/12/04 19:10:24 URL: http://127.0.0.1:8001/pcb
+2024/12/04 19:10:24 Respuesta POST: 200 OK
+2024/12/04 19:10:24 URL: http://127.0.0.1:8002/actualizar_contexto
+2024/12/04 19:10:25 Respuesta POST: 500 Internal Server Error
+2024/12/04 19:10:25 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/04 19:26:43 El módulo CPU está a la escucha en el puerto :8004
+2024/12/04 19:26:48 Respuesta POST: 200 OK
+2024/12/04 19:26:48 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/04 19:26:49 Respuesta POST: 200 OK
+2024/12/04 19:26:49 ## TID: 0 - FETCH - Program Counter: 0.
+2024/12/04 19:26:49 ## TID: 0 - Ejecutando: SET - [DX 0].
+2024/12/04 19:26:50 Respuesta POST: 200 OK
+2024/12/04 19:26:50 ## TID: 0 - FETCH - Program Counter: 1.
+2024/12/04 19:26:50 ## TID: 0 - Ejecutando: SET - [AX 1].
+2024/12/04 19:26:51 Respuesta POST: 200 OK
+2024/12/04 19:26:51 ## TID: 0 - FETCH - Program Counter: 2.
+2024/12/04 19:26:51 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/04 19:26:51 URL: http://127.0.0.1:8001/thread_create
+2024/12/04 19:26:51 Respuesta POST: 200 OK
+2024/12/04 19:26:51 URL: http://127.0.0.1:8001/pcb
+2024/12/04 19:26:51 Respuesta POST: 200 OK
+2024/12/04 19:26:51 URL: http://127.0.0.1:8002/actualizar_contexto
+2024/12/04 19:26:52 Respuesta POST: 200 OK
+2024/12/04 19:26:52 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/04 19:26:53 Respuesta POST: 200 OK
+2024/12/04 19:26:53 ## TID: 1 - Solicito Contexto Ejecución.
+2024/12/04 19:26:54 Respuesta POST: 200 OK
+2024/12/04 19:26:54 ## TID: 1 - FETCH - Program Counter: 0.
+2024/12/04 19:26:54 ## TID: 1 - Ejecutando: SET - [CX 5].
+2024/12/04 19:26:55 Respuesta POST: 200 OK
+2024/12/04 19:26:55 ## TID: 1 - FETCH - Program Counter: 1.
+2024/12/04 19:26:55 ## TID: 1 - Ejecutando: SET - [BX 1].
+2024/12/04 19:26:56 Respuesta POST: 200 OK
+2024/12/04 19:26:56 ## TID: 1 - FETCH - Program Counter: 2.
+2024/12/04 19:26:56 ## TID: 1 - Ejecutando: SUB - [CX BX].
+2024/12/04 19:26:57 Respuesta POST: 200 OK
+2024/12/04 19:26:57 ## TID: 1 - FETCH - Program Counter: 3.
+2024/12/04 19:26:57 ## TID: 1 - Ejecutando: THREAD_EXIT - [].
+2024/12/04 19:26:57 URL: http://127.0.0.1:8001/thread_exit
+2024/12/04 19:26:57 Respuesta POST: 200 OK
+2024/12/04 19:26:57 URL: http://127.0.0.1:8001/pcb
+2024/12/04 19:26:57 Respuesta POST: 200 OK
+2024/12/04 19:26:57 URL: http://127.0.0.1:8002/actualizar_contexto
+2024/12/04 19:26:58 Respuesta POST: 500 Internal Server Error
+2024/12/04 19:26:58 ## TID: 1 - Actualizo Contexto Ejecución.
+2024/12/04 19:26:59 Respuesta POST: 200 OK
+2024/12/04 19:26:59 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/04 19:27:00 Respuesta POST: 200 OK
+2024/12/04 19:27:00 ## TID: 0 - FETCH - Program Counter: 3.
+2024/12/04 19:27:00 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/04 19:27:01 Respuesta POST: 200 OK
+2024/12/04 19:27:01 ## TID: 0 - FETCH - Program Counter: 4.
+2024/12/04 19:27:01 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 5].
+2024/12/04 19:27:01 URL: http://127.0.0.1:8001/thread_create
+2024/12/04 19:27:01 Respuesta POST: 200 OK
+2024/12/04 19:27:01 URL: http://127.0.0.1:8001/pcb
+2024/12/04 19:27:01 Respuesta POST: 200 OK
+2024/12/04 19:27:01 URL: http://127.0.0.1:8002/actualizar_contexto
+2024/12/04 19:27:02 Respuesta POST: 200 OK
+2024/12/04 19:27:02 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/04 19:27:03 Respuesta POST: 200 OK
+2024/12/04 19:27:03 ## TID: 2 - Solicito Contexto Ejecución.
+2024/12/04 19:27:04 Respuesta POST: 200 OK
+2024/12/04 19:27:04 ## TID: 2 - FETCH - Program Counter: 0.
+2024/12/04 19:27:04 ## TID: 2 - Ejecutando: SET - [CX 5].
+2024/12/04 19:27:05 Respuesta POST: 200 OK
+2024/12/04 19:27:05 ## TID: 2 - FETCH - Program Counter: 1.
+2024/12/04 19:27:05 ## TID: 2 - Ejecutando: SET - [BX 1].
+2024/12/04 19:27:06 Respuesta POST: 200 OK
+2024/12/04 19:27:06 ## TID: 2 - FETCH - Program Counter: 2.
+2024/12/04 19:27:06 ## TID: 2 - Ejecutando: SUB - [CX BX].
+2024/12/04 19:27:07 Respuesta POST: 200 OK
+2024/12/04 19:27:07 ## TID: 2 - FETCH - Program Counter: 3.
+2024/12/04 19:27:07 ## TID: 2 - Ejecutando: THREAD_EXIT - [].
+2024/12/04 19:27:07 URL: http://127.0.0.1:8001/thread_exit
+2024/12/04 19:27:07 Respuesta POST: 200 OK
+2024/12/04 19:27:07 URL: http://127.0.0.1:8001/pcb
+2024/12/04 19:27:07 Respuesta POST: 200 OK
+2024/12/04 19:27:07 URL: http://127.0.0.1:8002/actualizar_contexto
+2024/12/04 19:27:08 Respuesta POST: 500 Internal Server Error
+2024/12/04 19:27:08 ## TID: 2 - Actualizo Contexto Ejecución.
+2024/12/04 19:27:09 Respuesta POST: 200 OK
+2024/12/04 19:27:09 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/04 19:27:10 Respuesta POST: 200 OK
+2024/12/04 19:27:10 ## TID: 0 - FETCH - Program Counter: 5.
+2024/12/04 19:27:10 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/04 19:27:11 Respuesta POST: 200 OK
+2024/12/04 19:27:11 ## TID: 0 - FETCH - Program Counter: 6.
+2024/12/04 19:27:11 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 5].
+2024/12/04 19:27:11 URL: http://127.0.0.1:8001/thread_create
+2024/12/04 19:27:11 Respuesta POST: 200 OK
+2024/12/04 19:27:11 URL: http://127.0.0.1:8001/pcb
+2024/12/04 19:27:11 Respuesta POST: 200 OK
+2024/12/04 19:27:11 URL: http://127.0.0.1:8002/actualizar_contexto
+2024/12/04 19:27:12 Respuesta POST: 200 OK
+2024/12/04 19:27:12 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/04 19:27:13 Respuesta POST: 200 OK
+2024/12/04 19:27:13 ## TID: 3 - Solicito Contexto Ejecución.
+2024/12/04 19:27:14 Respuesta POST: 200 OK
+2024/12/04 19:27:14 ## TID: 3 - FETCH - Program Counter: 0.
+2024/12/04 19:27:14 ## TID: 3 - Ejecutando: SET - [CX 5].
+2024/12/04 19:27:15 Respuesta POST: 200 OK
+2024/12/04 19:27:15 ## TID: 3 - FETCH - Program Counter: 1.
+2024/12/04 19:27:15 ## TID: 3 - Ejecutando: SET - [BX 1].
+2024/12/04 19:27:16 Respuesta POST: 200 OK
+2024/12/04 19:27:16 ## TID: 3 - FETCH - Program Counter: 2.
+2024/12/04 19:27:16 ## TID: 3 - Ejecutando: SUB - [CX BX].
+2024/12/04 19:27:17 Respuesta POST: 200 OK
+2024/12/04 19:27:17 ## TID: 3 - FETCH - Program Counter: 3.
+2024/12/04 19:27:17 ## TID: 3 - Ejecutando: THREAD_EXIT - [].
+2024/12/04 19:27:17 URL: http://127.0.0.1:8001/thread_exit
+2024/12/04 19:27:17 Respuesta POST: 200 OK
+2024/12/04 19:27:17 URL: http://127.0.0.1:8001/pcb
+2024/12/04 19:27:17 Respuesta POST: 200 OK
+2024/12/04 19:27:17 URL: http://127.0.0.1:8002/actualizar_contexto
+2024/12/04 19:27:18 Respuesta POST: 500 Internal Server Error
+2024/12/04 19:27:18 ## TID: 3 - Actualizo Contexto Ejecución.
+2024/12/04 19:27:19 Respuesta POST: 200 OK
+2024/12/04 19:27:19 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/04 19:27:21 Respuesta POST: 200 OK
+2024/12/04 19:27:21 ## TID: 0 - FETCH - Program Counter: 7.
+2024/12/04 19:27:21 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/04 19:27:22 Respuesta POST: 200 OK
+2024/12/04 19:27:22 ## TID: 0 - FETCH - Program Counter: 8.
+2024/12/04 19:27:22 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/04 19:27:22 URL: http://127.0.0.1:8001/thread_create
+2024/12/04 19:27:22 Respuesta POST: 200 OK
+2024/12/04 19:27:22 URL: http://127.0.0.1:8001/pcb
+2024/12/04 19:27:22 Respuesta POST: 200 OK
+2024/12/04 19:27:22 URL: http://127.0.0.1:8002/actualizar_contexto
+2024/12/04 19:27:23 Respuesta POST: 200 OK
+2024/12/04 19:27:23 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/04 19:27:24 Respuesta POST: 200 OK
+2024/12/04 19:27:24 ## TID: 4 - Solicito Contexto Ejecución.
+2024/12/04 19:27:25 Respuesta POST: 200 OK
+2024/12/04 19:27:25 ## TID: 4 - FETCH - Program Counter: 0.
+2024/12/04 19:27:25 ## TID: 4 - Ejecutando: SET - [CX 5].
+2024/12/04 19:27:26 Respuesta POST: 200 OK
+2024/12/04 19:27:26 ## TID: 4 - FETCH - Program Counter: 1.
+2024/12/04 19:27:26 ## TID: 4 - Ejecutando: SET - [BX 1].
+2024/12/04 19:27:27 Respuesta POST: 200 OK
+2024/12/04 19:27:27 ## TID: 4 - FETCH - Program Counter: 2.
+2024/12/04 19:27:27 ## TID: 4 - Ejecutando: SUB - [CX BX].
+2024/12/04 19:27:28 Respuesta POST: 200 OK
+2024/12/04 19:27:28 ## TID: 4 - FETCH - Program Counter: 3.
+2024/12/04 19:27:28 ## TID: 4 - Ejecutando: THREAD_EXIT - [].
+2024/12/04 19:27:28 URL: http://127.0.0.1:8001/thread_exit
+2024/12/04 19:27:28 Respuesta POST: 200 OK
+2024/12/04 19:27:28 URL: http://127.0.0.1:8001/pcb
+2024/12/04 19:27:28 Respuesta POST: 200 OK
+2024/12/04 19:27:28 URL: http://127.0.0.1:8002/actualizar_contexto
+2024/12/04 19:27:29 Respuesta POST: 500 Internal Server Error
+2024/12/04 19:27:29 ## TID: 4 - Actualizo Contexto Ejecución.
+2024/12/04 19:27:30 Respuesta POST: 200 OK
+2024/12/04 19:27:30 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/04 19:27:31 Respuesta POST: 200 OK
+2024/12/04 19:27:31 ## TID: 0 - FETCH - Program Counter: 9.
+2024/12/04 19:27:31 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/04 19:27:32 Respuesta POST: 200 OK
+2024/12/04 19:27:32 ## TID: 0 - FETCH - Program Counter: 10.
+2024/12/04 19:27:32 ## TID: 0 - Ejecutando: THREAD_JOIN - [4].
+2024/12/04 19:27:32 URL: http://127.0.0.1:8001/thread_join
+2024/12/04 19:27:32 Respuesta POST: 200 OK
+2024/12/04 19:27:32 URL: http://127.0.0.1:8001/pcb
+2024/12/04 19:27:32 Respuesta POST: 200 OK
+2024/12/04 19:27:32 URL: http://127.0.0.1:8002/actualizar_contexto
+2024/12/04 19:27:33 Respuesta POST: 200 OK
+2024/12/04 19:27:33 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/04 19:27:34 Respuesta POST: 200 OK
+2024/12/04 19:27:34 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/04 19:27:35 Respuesta POST: 200 OK
+2024/12/04 19:27:35 ## TID: 0 - FETCH - Program Counter: 11.
+2024/12/04 19:27:35 ## TID: 0 - Ejecutando: PROCESS_EXIT - [].
+2024/12/04 19:27:35 URL: http://127.0.0.1:8001/process_exit
+2024/12/04 19:27:35 Respuesta POST: 200 OK
+2024/12/04 19:27:35 URL: http://127.0.0.1:8001/pcb
+2024/12/04 19:27:35 Respuesta POST: 200 OK
+2024/12/04 19:27:35 URL: http://127.0.0.1:8002/actualizar_contexto
+2024/12/04 19:27:36 Respuesta POST: 500 Internal Server Error
+2024/12/04 19:27:36 ## TID: 0 - Actualizo Contexto Ejecución.

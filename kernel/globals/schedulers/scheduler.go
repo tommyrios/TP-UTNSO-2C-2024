@@ -30,6 +30,7 @@ func ManejarHiloRunning() {
 		mu.Lock()
 		if len(globals.Estructura.ColaReady) == 0 {
 			mu.Unlock()
+			globals.CpuLibre <- true
 			continue
 		}
 
@@ -39,7 +40,9 @@ func ManejarHiloRunning() {
 
 		hiloAEjecutar.Estado = "EXEC"
 
-		if len(globals.Estructura.ColaReady) > 0 {
+		log.Println(len(globals.Estructura.ColaReady)) // LOG DE LEN
+
+		if len(globals.Estructura.ColaReady) > 1 {
 			globals.Estructura.ColaReady = globals.Estructura.ColaReady[1:]
 		} else {
 			globals.Estructura.ColaReady = []*commons.TCB{}

@@ -54,6 +54,8 @@ func Dispatch(w http.ResponseWriter, r *http.Request) {
 func EjecutarInstruccion(pid int, tid int) error {
 	contexto, err := solicitarContexto(pid, tid)
 
+	var ultimaInstruccion string
+
 	if err != nil {
 		return err
 	}
@@ -75,9 +77,13 @@ func EjecutarInstruccion(pid int, tid int) error {
 		if CheckInterrupt(pid, tid) == true {
 			break
 		}
+
+		ultimaInstruccion = instruccion.CodOperacion
 	}
 
-	EnviarRegistrosActualizados(contexto.Registros, pid, tid)
+	if ultimaInstruccion != "THREAD_EXIT" {
+		EnviarRegistrosActualizados(contexto.Registros, pid, tid)
+	}
 
 	return nil
 }
@@ -171,8 +177,8 @@ func Execute(instruccion globals.InstruccionStruct, registros *commons.Registros
 	case "DUMP_MEMORY", "IO", "PROCESS_CREATE", "THREAD_CREATE",
 		"THREAD_JOIN", "THREAD_CANCEL", "MUTEX_CREATE",
 		"MUTEX_LOCK", "MUTEX_UNLOCK":
-		globals.DevolverPCB(pid, tid, "SYSCALL")
 		Syscall(instruccion, registros, pid, tid)
+		globals.DevolverPCB(pid, tid, "SYSCALL")
 
 		return 1
 	}

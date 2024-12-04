@@ -31,10 +31,36 @@ func ObtenerBaseLimite(pid int) (int, int) {
 	return base, limite
 }
 
-func ActualizarRegistros(pid int, tid int, registrosActualizados *commons.Registros) error {
+/*func ActualizarRegistros(pid int, tid int, registrosActualizados *commons.Registros) error {
 
 	registrosAActualizar := globals.MemoriaSistema.TablaHilos[pid][tid]
 
+	registrosAActualizar.PC = registrosActualizados.PC
+	registrosAActualizar.AX = registrosActualizados.AX
+	registrosAActualizar.BX = registrosActualizados.BX
+	registrosAActualizar.CX = registrosActualizados.CX
+	registrosAActualizar.DX = registrosActualizados.DX
+	registrosAActualizar.EX = registrosActualizados.EX
+	registrosAActualizar.FX = registrosActualizados.FX
+	registrosAActualizar.GX = registrosActualizados.GX
+	registrosAActualizar.HX = registrosActualizados.HX
+
+	return nil
+}*/
+
+func ActualizarRegistros(pid int, tid int, registrosActualizados *commons.Registros) error {
+	// Verificar que el mapa de PID existe
+	if _, ok := globals.MemoriaSistema.TablaHilos[pid]; !ok {
+		return fmt.Errorf("el PID %d no existe en la tabla de hilos", pid)
+	}
+
+	// Verificar que el TID existe para el PID dado
+	registrosAActualizar, ok := globals.MemoriaSistema.TablaHilos[pid][tid]
+	if !ok || registrosAActualizar == nil {
+		return fmt.Errorf("el TID %d no existe para el PID %d", tid, pid)
+	}
+
+	// Actualizar registros
 	registrosAActualizar.PC = registrosActualizados.PC
 	registrosAActualizar.AX = registrosActualizados.AX
 	registrosAActualizar.BX = registrosActualizados.BX
@@ -143,8 +169,17 @@ func CrearHiloMemoria(pid int, tid int, pseudocodigo string) error {
 		return err
 	}
 
-	globals.MemoriaSistema.TablaHilos[pid] = make(map[int]*commons.Registros)
-	globals.MemoriaSistema.Pseudocodigos[pid] = make(map[int]*globals.InstruccionesHilo)
+	// Inicializar TablaHilos si no existe para el PID
+	if globals.MemoriaSistema.TablaHilos[pid] == nil {
+		globals.MemoriaSistema.TablaHilos[pid] = make(map[int]*commons.Registros)
+	}
+
+	// Inicializar Pseudocodigos si no existe para el PID
+	if globals.MemoriaSistema.Pseudocodigos[pid] == nil {
+		globals.MemoriaSistema.Pseudocodigos[pid] = make(map[int]*globals.InstruccionesHilo)
+	}
+
+	// Agregar pseudocódigo e inicializar registros para el hilo
 	globals.MemoriaSistema.Pseudocodigos[pid][tid] = &globals.InstruccionesHilo{Instrucciones: instrucciones}
 	globals.MemoriaSistema.TablaHilos[pid][tid] = &commons.Registros{AX: 0, BX: 0, CX: 0, DX: 0, EX: 0, FX: 0, GX: 0, HX: 0, PC: 0}
 

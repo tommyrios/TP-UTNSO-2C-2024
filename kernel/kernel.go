@@ -33,6 +33,7 @@ func main() {
 
 	//// Cola Ready ////
 	schedulers.ManejarColaReady()
+	go schedulers.ManejarHiloRunning()
 
 	//// Proceso Inicial ////
 	processes.ProcesoInicial(os.Args)
@@ -61,7 +62,7 @@ func main() {
 	log.Printf("El módulo kernel está a la escucha en el puerto %s", port)
 
 	//// Hilo Execute ////
-	go schedulers.ManejarHiloRunning()
+
 	globals.CpuLibre <- true
 
 	err = http.ListenAndServe(port, mux)
