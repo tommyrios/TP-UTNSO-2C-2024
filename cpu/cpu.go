@@ -13,16 +13,13 @@ import (
 )
 
 func main() {
-	//// Configuración  ////
+	//// Configuración ////
 	path, err := os.Getwd()
 
 	if err != nil {
 		panic(err)
 	}
 
-	//globals.Registros = new(commons.Registros)
-	//globals.Pid = new(int)
-	//globals.Tid = new(int)
 	globals.CConfig = configs.IniciarConfiguracion(filepath.Join(path, "config.json"), &globals.Config{}).(*globals.Config)
 
 	if globals.CConfig == nil {

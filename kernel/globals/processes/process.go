@@ -56,7 +56,7 @@ func CrearPCB(pseudocodigo string, tamanio int, prioridad int) *commons.PCB {
 	pcb := commons.PCB{
 		Pid:               globals.Estructura.ContadorPid,
 		Estado:            "NEW",
-		Tid:               []commons.TCB{},
+		Tid:               []*commons.TCB{},
 		ContadorHilos:     0,
 		Tamanio:           tamanio,
 		PseudoCodigoHilo0: pseudocodigo,

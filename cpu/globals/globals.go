@@ -25,9 +25,10 @@ type InstruccionStruct struct {
 }
 
 type InterrupcionStruct struct {
-	Pid       int  `json:"pid"`
-	Tid       int  `json:"tid"`
-	Presencia bool `json:"presencia"`
+	Pid       int    `json:"pid"`
+	Tid       int    `json:"tid"`
+	Presencia bool   `json:"presencia"`
+	Razon     string `json:"razon"`
 }
 
 func ValorRegistros(registroBuscado string, registros *commons.Registros) uint32 {

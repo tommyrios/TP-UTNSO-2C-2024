@@ -2648,3 +2648,2011 @@ created by net/http.(*Server).Serve in goroutine 1
 2024/12/05 09:47:10 ## Finaliza el proceso 1
 2024/12/05 09:47:10 ## (PID:TID) - (1:0) - Hilo recibido de CPU
 2024/12/05 09:47:10 Respuesta POST: 200 OK
+2024/12/05 10:10:20 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 10:10:20 Cola NEW está vacía, solicitando memoria.
+2024/12/05 10:10:20 URL: http://127.0.0.1:8002/crear_proceso
+2024/12/05 10:10:20 Respuesta POST: 200 OK
+2024/12/05 10:10:20 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:10:20 Respuesta POST: 200 OK
+2024/12/05 10:10:20 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 10:10:20 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 10:10:20 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:10:24 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:10:24 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:10:24 Respuesta POST: 200 OK
+2024/12/05 10:10:24 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 10:10:24 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:12:18 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 10:12:18 Cola NEW está vacía, solicitando memoria.
+2024/12/05 10:12:18 URL: http://127.0.0.1:8002/crear_proceso
+2024/12/05 10:12:18 Respuesta POST: 200 OK
+2024/12/05 10:12:18 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:12:18 Respuesta POST: 200 OK
+2024/12/05 10:12:18 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 10:12:18 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 10:12:18 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:12:22 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:12:22 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:12:22 Respuesta POST: 200 OK
+2024/12/05 10:12:22 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 10:12:22 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:12:23 Respuesta POST: 200 OK
+2024/12/05 10:12:23 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:12:26 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:12:26 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:12:26 Respuesta POST: 200 OK
+2024/12/05 10:12:26 ## (1:2) Se crea el Hilo - Estado: READY
+2024/12/05 10:12:26 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:12:27 Respuesta POST: 200 OK
+2024/12/05 10:12:27 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:12:30 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:12:30 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:12:30 Respuesta POST: 200 OK
+2024/12/05 10:12:30 ## (1:3) Se crea el Hilo - Estado: READY
+2024/12/05 10:12:30 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:12:31 Respuesta POST: 200 OK
+2024/12/05 10:12:31 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:12:34 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:12:34 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:12:34 Respuesta POST: 200 OK
+2024/12/05 10:12:34 ## (1:4) Se crea el Hilo - Estado: READY
+2024/12/05 10:12:34 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:12:35 Respuesta POST: 200 OK
+2024/12/05 10:12:35 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:12:38 ## (1:0) - Solicitó syscall: THREAD_JOIN
+2024/12/05 10:12:38 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:12:39 Respuesta POST: 200 OK
+2024/12/05 10:12:39 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:12:41 ## (1:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/05 10:12:41 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:12:41 Respuesta POST: 200 OK
+2024/12/05 10:12:41 ## (1:0) Finaliza el hilo
+2024/12/05 10:12:41 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:12:41 Respuesta POST: 200 OK
+2024/12/05 10:12:41 ## (1:2) Finaliza el hilo
+2024/12/05 10:12:41 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:12:41 Respuesta POST: 200 OK
+2024/12/05 10:12:41 ## (1:4) Finaliza el hilo
+2024/12/05 10:12:41 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:12:41 Respuesta POST: 404 Not Found
+2024/12/05 10:12:41 ## (1:4) Finaliza el hilo
+2024/12/05 10:12:41 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:12:41 Respuesta POST: 404 Not Found
+2024/12/05 10:12:41 ## (1:4) Finaliza el hilo
+2024/12/05 10:12:41 URL: http://127.0.0.1:8002/finalizar_proceso
+2024/12/05 10:12:41 Respuesta POST: 200 OK
+2024/12/05 10:12:41 ## Finaliza el proceso 1
+2024/12/05 10:12:41 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/05 10:12:41 Respuesta POST: 200 OK
+2024/12/05 10:12:41 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:25:13 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 10:25:13 Cola NEW está vacía, solicitando memoria.
+2024/12/05 10:25:13 URL: http://127.0.0.1:8002/crear_proceso
+2024/12/05 10:25:13 Respuesta POST: 200 OK
+2024/12/05 10:25:13 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:25:13 Respuesta POST: 200 OK
+2024/12/05 10:25:13 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 10:25:13 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 10:25:13 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:25:15 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:25:15 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:25:15 Respuesta POST: 200 OK
+2024/12/05 10:25:15 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 10:25:15 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:25:15 Respuesta POST: 200 OK
+2024/12/05 10:25:15 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:25:17 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:25:17 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:25:17 Respuesta POST: 200 OK
+2024/12/05 10:25:17 ## (1:2) Se crea el Hilo - Estado: READY
+2024/12/05 10:25:17 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:25:17 Respuesta POST: 200 OK
+2024/12/05 10:25:17 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:25:19 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:25:19 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:25:19 Respuesta POST: 200 OK
+2024/12/05 10:25:19 ## (1:3) Se crea el Hilo - Estado: READY
+2024/12/05 10:25:19 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:25:19 Respuesta POST: 200 OK
+2024/12/05 10:25:19 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:25:21 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:25:21 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:25:21 Respuesta POST: 200 OK
+2024/12/05 10:25:21 ## (1:4) Se crea el Hilo - Estado: READY
+2024/12/05 10:25:21 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:25:21 Respuesta POST: 200 OK
+2024/12/05 10:25:21 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:25:23 ## (1:0) - Solicitó syscall: THREAD_JOIN
+2024/12/05 10:25:23 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:25:23 Respuesta POST: 200 OK
+2024/12/05 10:25:23 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:25:26 ## (1:2) - Solicitó syscall: THREAD_EXIT
+2024/12/05 10:25:26 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:25:26 Respuesta POST: 200 OK
+2024/12/05 10:25:26 ## (1:2) Finaliza el hilo
+2024/12/05 10:25:26 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 10:25:26 Respuesta POST: 200 OK
+2024/12/05 10:25:26 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:25:28 ## (1:3) - Solicitó syscall: THREAD_EXIT
+2024/12/05 10:25:28 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:25:28 Respuesta POST: 200 OK
+2024/12/05 10:25:28 ## (1:3) Finaliza el hilo
+2024/12/05 10:25:28 ## (PID:TID) - (1:3) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 10:25:28 Respuesta POST: 200 OK
+2024/12/05 10:25:28 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:25:31 ## (1:1) - Solicitó syscall: THREAD_EXIT
+2024/12/05 10:25:31 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:25:31 Respuesta POST: 200 OK
+2024/12/05 10:25:31 ## (1:1) Finaliza el hilo
+2024/12/05 10:25:31 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 10:25:31 Respuesta POST: 200 OK
+2024/12/05 10:25:31 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:25:33 ## (1:4) - Solicitó syscall: THREAD_EXIT
+2024/12/05 10:25:33 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:25:34 Respuesta POST: 200 OK
+2024/12/05 10:25:34 ## (1:4) Finaliza el hilo
+2024/12/05 10:25:34 ## (PID:TID) - (1:4) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 10:25:34 Respuesta POST: 200 OK
+2024/12/05 10:28:28 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 10:28:28 Cola NEW está vacía, solicitando memoria.
+2024/12/05 10:28:28 URL: http://127.0.0.1:8002/crear_proceso
+2024/12/05 10:28:28 Respuesta POST: 200 OK
+2024/12/05 10:28:28 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:28:28 Respuesta POST: 200 OK
+2024/12/05 10:28:28 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 10:28:28 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 10:28:28 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:28:30 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:28:30 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:28:30 Respuesta POST: 200 OK
+2024/12/05 10:28:30 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 10:28:30 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:28:31 Respuesta POST: 200 OK
+2024/12/05 10:28:31 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:28:32 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:28:32 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:28:32 Respuesta POST: 200 OK
+2024/12/05 10:28:32 ## (1:2) Se crea el Hilo - Estado: READY
+2024/12/05 10:28:32 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:28:33 Respuesta POST: 200 OK
+2024/12/05 10:28:33 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:28:34 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:28:34 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:28:34 Respuesta POST: 200 OK
+2024/12/05 10:28:34 ## (1:3) Se crea el Hilo - Estado: READY
+2024/12/05 10:28:34 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:28:35 Respuesta POST: 200 OK
+2024/12/05 10:28:35 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:28:36 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:28:36 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:28:36 Respuesta POST: 200 OK
+2024/12/05 10:28:36 ## (1:4) Se crea el Hilo - Estado: READY
+2024/12/05 10:28:36 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:28:37 Respuesta POST: 200 OK
+2024/12/05 10:28:37 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:28:38 ## (1:0) - Solicitó syscall: THREAD_JOIN
+2024/12/05 10:28:38 0
+2024/12/05 10:28:38 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:28:39 Respuesta POST: 200 OK
+2024/12/05 10:28:39 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:28:41 ## (1:2) - Solicitó syscall: THREAD_EXIT
+2024/12/05 10:28:41 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:28:41 Respuesta POST: 200 OK
+2024/12/05 10:28:41 ## (1:2) Finaliza el hilo
+2024/12/05 10:28:41 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 10:28:41 Respuesta POST: 200 OK
+2024/12/05 10:28:41 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:28:44 ## (1:3) - Solicitó syscall: THREAD_EXIT
+2024/12/05 10:28:44 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:28:44 Respuesta POST: 200 OK
+2024/12/05 10:28:44 ## (1:3) Finaliza el hilo
+2024/12/05 10:28:44 ## (PID:TID) - (1:3) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 10:28:44 Respuesta POST: 200 OK
+2024/12/05 10:28:44 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:28:46 ## (1:1) - Solicitó syscall: THREAD_EXIT
+2024/12/05 10:28:46 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:28:46 Respuesta POST: 200 OK
+2024/12/05 10:28:46 ## (1:1) Finaliza el hilo
+2024/12/05 10:28:46 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 10:28:46 Respuesta POST: 200 OK
+2024/12/05 10:28:46 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:28:49 ## (1:4) - Solicitó syscall: THREAD_EXIT
+2024/12/05 10:28:49 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:28:49 Respuesta POST: 200 OK
+2024/12/05 10:28:49 ## (1:4) Finaliza el hilo
+2024/12/05 10:28:49 ## (PID:TID) - (1:4) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 10:28:49 Respuesta POST: 200 OK
+2024/12/05 10:31:09 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 10:31:09 Cola NEW está vacía, solicitando memoria.
+2024/12/05 10:31:09 URL: http://127.0.0.1:8002/crear_proceso
+2024/12/05 10:31:09 Respuesta POST: 200 OK
+2024/12/05 10:31:09 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:31:09 Respuesta POST: 200 OK
+2024/12/05 10:31:09 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 10:31:09 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 10:31:09 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:31:11 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:31:11 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:31:11 Respuesta POST: 200 OK
+2024/12/05 10:31:11 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 10:31:11 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:31:12 Respuesta POST: 200 OK
+2024/12/05 10:31:12 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:31:13 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:31:13 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:31:13 Respuesta POST: 200 OK
+2024/12/05 10:31:13 ## (1:2) Se crea el Hilo - Estado: READY
+2024/12/05 10:31:13 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:31:14 Respuesta POST: 200 OK
+2024/12/05 10:31:14 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:31:15 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:31:15 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:31:15 Respuesta POST: 200 OK
+2024/12/05 10:31:15 ## (1:3) Se crea el Hilo - Estado: READY
+2024/12/05 10:31:15 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:31:16 Respuesta POST: 200 OK
+2024/12/05 10:31:16 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:31:17 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:31:17 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:31:17 Respuesta POST: 200 OK
+2024/12/05 10:31:17 ## (1:4) Se crea el Hilo - Estado: READY
+2024/12/05 10:31:17 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:31:18 Respuesta POST: 200 OK
+2024/12/05 10:31:18 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:31:19 ## (1:0) - Solicitó syscall: THREAD_JOIN
+2024/12/05 10:31:19 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:31:20 Respuesta POST: 200 OK
+2024/12/05 10:31:20 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:31:22 ## (1:2) - Solicitó syscall: THREAD_EXIT
+2024/12/05 10:31:22 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:31:22 Respuesta POST: 200 OK
+2024/12/05 10:31:22 ## (1:2) Finaliza el hilo
+2024/12/05 10:31:22 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 10:31:22 Respuesta POST: 200 OK
+2024/12/05 10:31:22 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:31:25 ## (1:3) - Solicitó syscall: THREAD_EXIT
+2024/12/05 10:31:25 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:31:25 Respuesta POST: 200 OK
+2024/12/05 10:31:25 ## (1:3) Finaliza el hilo
+2024/12/05 10:31:25 ## (PID:TID) - (1:3) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 10:31:25 Respuesta POST: 200 OK
+2024/12/05 10:31:25 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:31:27 ## (1:1) - Solicitó syscall: THREAD_EXIT
+2024/12/05 10:31:27 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:31:27 Respuesta POST: 200 OK
+2024/12/05 10:31:27 ## (1:1) Finaliza el hilo
+2024/12/05 10:31:27 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 10:31:27 Respuesta POST: 200 OK
+2024/12/05 10:31:27 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:31:30 ## (1:4) - Solicitó syscall: THREAD_EXIT
+2024/12/05 10:31:30 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:31:30 Respuesta POST: 200 OK
+2024/12/05 10:31:30 ## (1:4) Finaliza el hilo
+2024/12/05 10:31:30 ## (PID:TID) - (1:4) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 10:31:30 Respuesta POST: 200 OK
+2024/12/05 10:32:54 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 10:32:54 Cola NEW está vacía, solicitando memoria.
+2024/12/05 10:32:54 URL: http://127.0.0.1:8002/crear_proceso
+2024/12/05 10:32:54 Respuesta POST: 200 OK
+2024/12/05 10:32:54 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:32:54 Respuesta POST: 200 OK
+2024/12/05 10:32:54 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 10:32:54 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 10:32:54 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:32:56 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:32:56 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:32:56 Respuesta POST: 200 OK
+2024/12/05 10:32:56 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 10:32:56 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:32:57 Respuesta POST: 200 OK
+2024/12/05 10:32:57 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:32:58 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:32:58 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:32:58 Respuesta POST: 200 OK
+2024/12/05 10:32:58 ## (1:2) Se crea el Hilo - Estado: READY
+2024/12/05 10:32:58 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:32:59 Respuesta POST: 200 OK
+2024/12/05 10:32:59 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:33:00 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:33:00 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:33:00 Respuesta POST: 200 OK
+2024/12/05 10:33:00 ## (1:3) Se crea el Hilo - Estado: READY
+2024/12/05 10:33:00 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:33:01 Respuesta POST: 200 OK
+2024/12/05 10:33:01 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:33:02 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:33:02 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:33:02 Respuesta POST: 200 OK
+2024/12/05 10:33:02 ## (1:4) Se crea el Hilo - Estado: READY
+2024/12/05 10:33:02 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:33:03 Respuesta POST: 200 OK
+2024/12/05 10:33:03 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:33:04 ## (1:0) - Solicitó syscall: THREAD_JOIN
+2024/12/05 10:33:04 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:33:05 Respuesta POST: 200 OK
+2024/12/05 10:33:05 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:33:07 ## (1:2) - Solicitó syscall: THREAD_EXIT
+2024/12/05 10:33:07 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:33:07 Respuesta POST: 200 OK
+2024/12/05 10:33:07 3
+2024/12/05 10:33:07 ## (1:2) Finaliza el hilo
+2024/12/05 10:33:07 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 10:33:07 Respuesta POST: 200 OK
+2024/12/05 10:33:07 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:33:10 ## (1:3) - Solicitó syscall: THREAD_EXIT
+2024/12/05 10:33:10 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:33:10 Respuesta POST: 200 OK
+2024/12/05 10:33:10 1
+2024/12/05 10:33:10 ## (1:3) Finaliza el hilo
+2024/12/05 10:33:10 ## (PID:TID) - (1:3) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 10:33:10 Respuesta POST: 200 OK
+2024/12/05 10:33:10 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:33:12 ## (1:1) - Solicitó syscall: THREAD_EXIT
+2024/12/05 10:33:12 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:33:12 Respuesta POST: 200 OK
+2024/12/05 10:33:12 4
+2024/12/05 10:33:12 ## (1:1) Finaliza el hilo
+2024/12/05 10:33:12 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 10:33:12 Respuesta POST: 200 OK
+2024/12/05 10:33:12 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:33:15 ## (1:4) - Solicitó syscall: THREAD_EXIT
+2024/12/05 10:33:15 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:33:15 Respuesta POST: 200 OK
+2024/12/05 10:33:15 http: panic serving 127.0.0.1:55694: runtime error: index out of range [0] with length 0
+goroutine 26 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1947 +0xbe
+panic({0x3479520?, 0xc0001281e0?})
+	/usr/local/go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/kernel/globals/threads.FinalizarHilo(0x1, 0x4)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/kernel/globals/threads/thread.go:85 +0x74f
+github.com/sisoputnfrba/tp-golang/kernel/handlers.HandleThreadExit({0x349cac8, 0xc0002987e0}, 0xc0002cc8c0)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/kernel/handlers/handlers.go:121 +0x193
+net/http.HandlerFunc.ServeHTTP(0xc0001500e0?, {0x349cac8?, 0xc0002987e0?}, 0xd4ebd00?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x30e82e5?, {0x349cac8, 0xc0002987e0}, 0xc0002cc8c0)
+	/usr/local/go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x349b710?}, {0x349cac8?, 0xc0002987e0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc00015a510, {0x349cff8, 0xc00011d740})
+	/usr/local/go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3360 +0x485
+2024/12/05 10:34:11 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 10:34:11 Cola NEW está vacía, solicitando memoria.
+2024/12/05 10:34:11 URL: http://127.0.0.1:8002/crear_proceso
+2024/12/05 10:34:11 Respuesta POST: 200 OK
+2024/12/05 10:34:11 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:34:11 Respuesta POST: 200 OK
+2024/12/05 10:34:11 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 10:34:11 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 10:34:11 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:34:13 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:34:13 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:34:13 Respuesta POST: 200 OK
+2024/12/05 10:34:13 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 10:34:13 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:34:13 Respuesta POST: 200 OK
+2024/12/05 10:34:13 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:34:15 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:34:15 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:34:15 Respuesta POST: 200 OK
+2024/12/05 10:34:15 ## (1:2) Se crea el Hilo - Estado: READY
+2024/12/05 10:34:15 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:34:15 Respuesta POST: 200 OK
+2024/12/05 10:34:15 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:34:17 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:34:17 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:34:17 Respuesta POST: 200 OK
+2024/12/05 10:34:17 ## (1:3) Se crea el Hilo - Estado: READY
+2024/12/05 10:34:17 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:34:17 Respuesta POST: 200 OK
+2024/12/05 10:34:17 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:34:19 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:34:19 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:34:19 Respuesta POST: 200 OK
+2024/12/05 10:34:19 ## (1:4) Se crea el Hilo - Estado: READY
+2024/12/05 10:34:19 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:34:19 Respuesta POST: 200 OK
+2024/12/05 10:34:19 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:34:21 ## (1:0) - Solicitó syscall: THREAD_JOIN
+2024/12/05 10:34:21 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:34:21 Respuesta POST: 200 OK
+2024/12/05 10:34:21 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:34:24 ## (1:2) - Solicitó syscall: THREAD_EXIT
+2024/12/05 10:34:24 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:34:24 Respuesta POST: 200 OK
+2024/12/05 10:34:24 ## (1:2) Finaliza el hilo
+2024/12/05 10:34:24 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 10:34:24 Respuesta POST: 200 OK
+2024/12/05 10:34:24 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:34:26 ## (1:3) - Solicitó syscall: THREAD_EXIT
+2024/12/05 10:34:26 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:34:26 Respuesta POST: 200 OK
+2024/12/05 10:34:26 ## (1:3) Finaliza el hilo
+2024/12/05 10:34:26 ## (PID:TID) - (1:3) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 10:34:26 Respuesta POST: 200 OK
+2024/12/05 10:34:26 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:34:29 ## (1:1) - Solicitó syscall: THREAD_EXIT
+2024/12/05 10:34:29 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:34:29 Respuesta POST: 200 OK
+2024/12/05 10:34:29 ## (1:1) Finaliza el hilo
+2024/12/05 10:34:29 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 10:34:29 Respuesta POST: 200 OK
+2024/12/05 10:34:29 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:34:31 ## (1:4) - Solicitó syscall: THREAD_EXIT
+2024/12/05 10:34:31 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:34:31 Respuesta POST: 200 OK
+2024/12/05 10:34:31 ## (1:4) Finaliza el hilo
+2024/12/05 10:34:31 ## (PID:TID) - (1:4) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 10:34:31 Respuesta POST: 200 OK
+2024/12/05 10:37:08 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 10:37:08 Cola NEW está vacía, solicitando memoria.
+2024/12/05 10:37:08 URL: http://127.0.0.1:8002/crear_proceso
+2024/12/05 10:37:08 Respuesta POST: 200 OK
+2024/12/05 10:37:08 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:37:08 Respuesta POST: 200 OK
+2024/12/05 10:37:08 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 10:37:08 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 10:37:08 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:37:10 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:37:10 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:37:10 Respuesta POST: 200 OK
+2024/12/05 10:37:10 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 10:37:10 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:37:10 Respuesta POST: 200 OK
+2024/12/05 10:37:10 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:37:12 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:37:12 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:37:12 Respuesta POST: 200 OK
+2024/12/05 10:37:12 ## (1:2) Se crea el Hilo - Estado: READY
+2024/12/05 10:37:12 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:37:12 Respuesta POST: 200 OK
+2024/12/05 10:37:12 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:37:14 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:37:14 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:37:14 Respuesta POST: 200 OK
+2024/12/05 10:37:14 ## (1:3) Se crea el Hilo - Estado: READY
+2024/12/05 10:37:14 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:37:14 Respuesta POST: 200 OK
+2024/12/05 10:37:14 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:37:16 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:37:16 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:37:16 Respuesta POST: 200 OK
+2024/12/05 10:37:16 ## (1:4) Se crea el Hilo - Estado: READY
+2024/12/05 10:37:16 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:37:16 Respuesta POST: 200 OK
+2024/12/05 10:37:16 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:37:18 ## (1:0) - Solicitó syscall: THREAD_JOIN
+2024/12/05 10:37:18 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:37:18 Respuesta POST: 200 OK
+2024/12/05 10:37:18 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:37:21 ## (1:2) - Solicitó syscall: THREAD_EXIT
+2024/12/05 10:37:21 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:37:21 Respuesta POST: 200 OK
+2024/12/05 10:37:21 gola
+2024/12/05 10:37:21 ## (1:2) Finaliza el hilo
+2024/12/05 10:37:21 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 10:37:21 Respuesta POST: 200 OK
+2024/12/05 10:37:21 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:37:23 ## (1:3) - Solicitó syscall: THREAD_EXIT
+2024/12/05 10:37:23 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:37:23 Respuesta POST: 200 OK
+2024/12/05 10:37:23 gola
+2024/12/05 10:37:23 ## (1:3) Finaliza el hilo
+2024/12/05 10:37:23 ## (PID:TID) - (1:3) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 10:37:23 Respuesta POST: 200 OK
+2024/12/05 10:37:23 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:37:26 ## (1:1) - Solicitó syscall: THREAD_EXIT
+2024/12/05 10:37:26 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:37:26 Respuesta POST: 200 OK
+2024/12/05 10:37:26 gola
+2024/12/05 10:37:26 ## (1:1) Finaliza el hilo
+2024/12/05 10:37:26 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 10:37:26 Respuesta POST: 200 OK
+2024/12/05 10:37:26 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:37:28 ## (1:4) - Solicitó syscall: THREAD_EXIT
+2024/12/05 10:37:28 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:37:28 Respuesta POST: 200 OK
+2024/12/05 10:37:28 gola
+2024/12/05 10:37:28 ## (1:4) Finaliza el hilo
+2024/12/05 10:37:28 ## (PID:TID) - (1:4) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 10:37:28 Respuesta POST: 200 OK
+2024/12/05 10:41:03 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 10:41:03 Cola NEW está vacía, solicitando memoria.
+2024/12/05 10:41:03 URL: http://127.0.0.1:8002/crear_proceso
+2024/12/05 10:41:03 Respuesta POST: 200 OK
+2024/12/05 10:41:03 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:41:03 Respuesta POST: 200 OK
+2024/12/05 10:41:03 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 10:41:03 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 10:41:03 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:41:06 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:41:06 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:41:06 Respuesta POST: 200 OK
+2024/12/05 10:41:06 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 10:41:06 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:41:06 Respuesta POST: 200 OK
+2024/12/05 10:41:06 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:41:08 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:41:08 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:41:08 Respuesta POST: 200 OK
+2024/12/05 10:41:08 ## (1:2) Se crea el Hilo - Estado: READY
+2024/12/05 10:41:08 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:41:08 Respuesta POST: 200 OK
+2024/12/05 10:41:08 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:41:10 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:41:10 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:41:10 Respuesta POST: 200 OK
+2024/12/05 10:41:10 ## (1:3) Se crea el Hilo - Estado: READY
+2024/12/05 10:41:10 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:41:10 Respuesta POST: 200 OK
+2024/12/05 10:41:10 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:41:12 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:41:12 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:41:12 Respuesta POST: 200 OK
+2024/12/05 10:41:12 ## (1:4) Se crea el Hilo - Estado: READY
+2024/12/05 10:41:12 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:41:12 Respuesta POST: 200 OK
+2024/12/05 10:41:12 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:41:14 ## (1:0) - Solicitó syscall: THREAD_JOIN
+2024/12/05 10:41:14 HOLAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+2024/12/05 10:41:14 0
+2024/12/05 10:41:14 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:41:14 Respuesta POST: 200 OK
+2024/12/05 10:41:14 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:41:17 ## (1:2) - Solicitó syscall: THREAD_EXIT
+2024/12/05 10:41:17 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:41:17 Respuesta POST: 200 OK
+2024/12/05 10:41:17 ## (1:2) Finaliza el hilo
+2024/12/05 10:41:17 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 10:41:17 Respuesta POST: 200 OK
+2024/12/05 10:41:17 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:41:19 ## (1:3) - Solicitó syscall: THREAD_EXIT
+2024/12/05 10:41:19 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:41:19 Respuesta POST: 200 OK
+2024/12/05 10:41:19 ## (1:3) Finaliza el hilo
+2024/12/05 10:41:19 ## (PID:TID) - (1:3) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 10:41:19 Respuesta POST: 200 OK
+2024/12/05 10:41:19 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:41:22 ## (1:1) - Solicitó syscall: THREAD_EXIT
+2024/12/05 10:41:22 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:41:22 Respuesta POST: 200 OK
+2024/12/05 10:41:22 ## (1:1) Finaliza el hilo
+2024/12/05 10:41:22 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 10:41:22 Respuesta POST: 200 OK
+2024/12/05 10:41:22 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:41:24 ## (1:4) - Solicitó syscall: THREAD_EXIT
+2024/12/05 10:41:24 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:41:24 Respuesta POST: 200 OK
+2024/12/05 10:41:24 ## (1:4) Finaliza el hilo
+2024/12/05 10:41:24 ## (PID:TID) - (1:4) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 10:41:24 Respuesta POST: 200 OK
+2024/12/05 10:44:31 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 10:44:31 Cola NEW está vacía, solicitando memoria.
+2024/12/05 10:44:31 URL: http://127.0.0.1:8002/crear_proceso
+2024/12/05 10:44:31 Respuesta POST: 200 OK
+2024/12/05 10:44:31 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:44:31 Respuesta POST: 200 OK
+2024/12/05 10:44:31 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 10:44:31 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 10:44:31 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:44:34 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:44:34 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:44:34 Respuesta POST: 200 OK
+2024/12/05 10:44:34 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 10:44:34 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:44:34 Respuesta POST: 200 OK
+2024/12/05 10:44:34 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:44:36 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:44:36 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:44:36 Respuesta POST: 200 OK
+2024/12/05 10:44:36 ## (1:2) Se crea el Hilo - Estado: READY
+2024/12/05 10:44:36 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:44:36 Respuesta POST: 200 OK
+2024/12/05 10:44:36 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:44:38 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:44:38 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:44:38 Respuesta POST: 200 OK
+2024/12/05 10:44:38 ## (1:3) Se crea el Hilo - Estado: READY
+2024/12/05 10:44:38 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:44:38 Respuesta POST: 200 OK
+2024/12/05 10:44:38 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:44:40 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:44:40 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:44:40 Respuesta POST: 200 OK
+2024/12/05 10:44:40 ## (1:4) Se crea el Hilo - Estado: READY
+2024/12/05 10:44:40 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:44:40 Respuesta POST: 200 OK
+2024/12/05 10:44:40 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:44:42 ## (1:0) - Solicitó syscall: THREAD_JOIN
+2024/12/05 10:44:42 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:44:42 Respuesta POST: 200 OK
+2024/12/05 10:44:42 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:44:45 ## (1:2) - Solicitó syscall: THREAD_EXIT
+2024/12/05 10:44:45 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:44:45 Respuesta POST: 200 OK
+2024/12/05 10:44:45 ## (1:2) Finaliza el hilo
+2024/12/05 10:44:45 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 10:44:45 Respuesta POST: 200 OK
+2024/12/05 10:44:45 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:44:47 ## (1:1) - Solicitó syscall: THREAD_EXIT
+2024/12/05 10:44:47 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:44:47 Respuesta POST: 200 OK
+2024/12/05 10:44:47 ## (1:1) Finaliza el hilo
+2024/12/05 10:44:47 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 10:44:47 Respuesta POST: 200 OK
+2024/12/05 10:47:02 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 10:47:02 Cola NEW está vacía, solicitando memoria.
+2024/12/05 10:47:02 URL: http://127.0.0.1:8002/crear_proceso
+2024/12/05 10:47:02 Respuesta POST: 200 OK
+2024/12/05 10:47:02 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:47:02 Respuesta POST: 200 OK
+2024/12/05 10:47:02 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 10:47:02 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 10:47:02 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:47:04 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:47:04 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:47:04 Respuesta POST: 200 OK
+2024/12/05 10:47:04 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 10:47:04 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:47:05 Respuesta POST: 200 OK
+2024/12/05 10:47:05 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:47:06 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:47:06 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:47:06 Respuesta POST: 200 OK
+2024/12/05 10:47:06 ## (1:2) Se crea el Hilo - Estado: READY
+2024/12/05 10:47:06 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:47:07 Respuesta POST: 200 OK
+2024/12/05 10:47:07 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:47:09 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:47:09 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:47:09 Respuesta POST: 200 OK
+2024/12/05 10:47:09 ## (1:3) Se crea el Hilo - Estado: READY
+2024/12/05 10:47:09 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:47:09 Respuesta POST: 200 OK
+2024/12/05 10:47:09 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:47:11 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:47:11 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:47:11 Respuesta POST: 200 OK
+2024/12/05 10:47:11 ## (1:4) Se crea el Hilo - Estado: READY
+2024/12/05 10:47:11 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:47:11 Respuesta POST: 200 OK
+2024/12/05 10:47:11 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:47:13 ## (1:0) - Solicitó syscall: THREAD_JOIN
+2024/12/05 10:47:13 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:47:13 Respuesta POST: 200 OK
+2024/12/05 10:47:13 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:47:16 ## (1:2) - Solicitó syscall: THREAD_EXIT
+2024/12/05 10:47:16 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:47:16 Respuesta POST: 200 OK
+2024/12/05 10:47:16 ## (1:2) Finaliza el hilo
+2024/12/05 10:47:16 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 10:47:16 Respuesta POST: 200 OK
+2024/12/05 10:47:16 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:47:18 ## (1:3) - Solicitó syscall: THREAD_EXIT
+2024/12/05 10:47:18 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:47:18 Respuesta POST: 200 OK
+2024/12/05 10:47:18 ## (1:3) Finaliza el hilo
+2024/12/05 10:47:18 ## (PID:TID) - (1:3) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 10:47:18 Respuesta POST: 200 OK
+2024/12/05 10:47:18 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:47:21 ## (1:1) - Solicitó syscall: THREAD_EXIT
+2024/12/05 10:47:21 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:47:21 Respuesta POST: 200 OK
+2024/12/05 10:47:21 ## (1:1) Finaliza el hilo
+2024/12/05 10:47:21 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 10:47:21 Respuesta POST: 200 OK
+2024/12/05 10:47:21 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:47:23 ## (1:4) - Solicitó syscall: THREAD_EXIT
+2024/12/05 10:47:23 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:47:23 Respuesta POST: 200 OK
+2024/12/05 10:47:23 ## (1:4) Finaliza el hilo
+2024/12/05 10:47:23 ## (PID:TID) - (1:4) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 10:47:23 Respuesta POST: 200 OK
+2024/12/05 10:48:41 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 10:48:41 Cola NEW está vacía, solicitando memoria.
+2024/12/05 10:48:41 URL: http://127.0.0.1:8002/crear_proceso
+2024/12/05 10:48:41 Respuesta POST: 200 OK
+2024/12/05 10:48:41 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:48:41 Respuesta POST: 200 OK
+2024/12/05 10:48:41 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 10:48:41 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 10:48:41 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:48:43 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:48:43 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:48:43 Respuesta POST: 200 OK
+2024/12/05 10:48:43 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 10:48:43 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:48:43 Respuesta POST: 200 OK
+2024/12/05 10:48:43 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:48:45 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:48:45 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:48:45 Respuesta POST: 200 OK
+2024/12/05 10:48:45 ## (1:2) Se crea el Hilo - Estado: READY
+2024/12/05 10:48:45 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:48:45 Respuesta POST: 200 OK
+2024/12/05 10:48:45 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:48:47 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:48:47 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:48:47 Respuesta POST: 200 OK
+2024/12/05 10:48:47 ## (1:3) Se crea el Hilo - Estado: READY
+2024/12/05 10:48:47 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:48:47 Respuesta POST: 200 OK
+2024/12/05 10:48:47 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:48:49 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:48:49 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:48:49 Respuesta POST: 200 OK
+2024/12/05 10:48:49 ## (1:4) Se crea el Hilo - Estado: READY
+2024/12/05 10:48:49 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:48:49 Respuesta POST: 200 OK
+2024/12/05 10:48:49 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:48:51 ## (1:0) - Solicitó syscall: THREAD_JOIN
+2024/12/05 10:48:51 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:48:51 Respuesta POST: 200 OK
+2024/12/05 10:48:51 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:48:54 ## (1:2) - Solicitó syscall: THREAD_EXIT
+2024/12/05 10:48:54 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:48:54 Respuesta POST: 200 OK
+2024/12/05 10:48:54 ## (1:2) Finaliza el hilo
+2024/12/05 10:48:54 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 10:48:54 Respuesta POST: 200 OK
+2024/12/05 10:48:54 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:48:56 ## (1:3) - Solicitó syscall: THREAD_EXIT
+2024/12/05 10:48:56 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:48:56 Respuesta POST: 200 OK
+2024/12/05 10:48:56 ## (1:3) Finaliza el hilo
+2024/12/05 10:48:56 ## (PID:TID) - (1:3) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 10:48:56 Respuesta POST: 200 OK
+2024/12/05 10:48:56 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:48:59 ## (1:1) - Solicitó syscall: THREAD_EXIT
+2024/12/05 10:48:59 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:48:59 Respuesta POST: 200 OK
+2024/12/05 10:48:59 ## (1:1) Finaliza el hilo
+2024/12/05 10:48:59 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 10:48:59 Respuesta POST: 200 OK
+2024/12/05 10:48:59 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:49:01 ## (1:4) - Solicitó syscall: THREAD_EXIT
+2024/12/05 10:49:01 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:49:01 Respuesta POST: 200 OK
+2024/12/05 10:49:01 ## (1:4) Finaliza el hilo
+2024/12/05 10:49:01 ## (PID:TID) - (1:4) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 10:49:01 Respuesta POST: 200 OK
+2024/12/05 10:50:49 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 10:50:49 Cola NEW está vacía, solicitando memoria.
+2024/12/05 10:50:49 URL: http://127.0.0.1:8002/crear_proceso
+2024/12/05 10:50:49 Respuesta POST: 200 OK
+2024/12/05 10:50:49 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:50:49 Respuesta POST: 200 OK
+2024/12/05 10:50:49 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 10:50:49 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 10:50:49 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:50:51 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:50:51 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:50:51 Respuesta POST: 200 OK
+2024/12/05 10:50:51 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 10:50:51 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:50:51 Respuesta POST: 200 OK
+2024/12/05 10:50:51 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:50:53 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:50:53 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:50:53 Respuesta POST: 200 OK
+2024/12/05 10:50:53 ## (1:2) Se crea el Hilo - Estado: READY
+2024/12/05 10:50:53 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:50:53 Respuesta POST: 200 OK
+2024/12/05 10:50:53 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:50:55 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:50:55 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:50:55 Respuesta POST: 200 OK
+2024/12/05 10:50:55 ## (1:3) Se crea el Hilo - Estado: READY
+2024/12/05 10:50:55 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:50:55 Respuesta POST: 200 OK
+2024/12/05 10:50:55 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:50:57 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:50:57 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:50:57 Respuesta POST: 200 OK
+2024/12/05 10:50:57 ## (1:4) Se crea el Hilo - Estado: READY
+2024/12/05 10:50:57 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:50:57 Respuesta POST: 200 OK
+2024/12/05 10:50:57 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:50:59 ## (1:0) - Solicitó syscall: THREAD_JOIN
+2024/12/05 10:50:59 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:50:59 Respuesta POST: 200 OK
+2024/12/05 10:50:59 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:51:02 ## (1:2) - Solicitó syscall: THREAD_EXIT
+2024/12/05 10:51:02 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:51:02 Respuesta POST: 200 OK
+2024/12/05 10:51:02 hola
+2024/12/05 10:51:02 hola2
+2024/12/05 10:51:02 ## (1:2) Finaliza el hilo
+2024/12/05 10:51:02 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 10:51:02 Respuesta POST: 200 OK
+2024/12/05 10:51:02 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:51:04 ## (1:3) - Solicitó syscall: THREAD_EXIT
+2024/12/05 10:51:04 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:51:04 Respuesta POST: 200 OK
+2024/12/05 10:51:04 hola
+2024/12/05 10:51:04 hola2
+2024/12/05 10:51:04 ## (1:3) Finaliza el hilo
+2024/12/05 10:51:04 ## (PID:TID) - (1:3) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 10:51:04 Respuesta POST: 200 OK
+2024/12/05 10:51:04 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:51:07 ## (1:1) - Solicitó syscall: THREAD_EXIT
+2024/12/05 10:51:07 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:51:07 Respuesta POST: 200 OK
+2024/12/05 10:51:07 hola
+2024/12/05 10:51:07 hola2
+2024/12/05 10:51:07 ## (1:1) Finaliza el hilo
+2024/12/05 10:51:07 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 10:51:07 Respuesta POST: 200 OK
+2024/12/05 10:51:07 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:51:09 ## (1:4) - Solicitó syscall: THREAD_EXIT
+2024/12/05 10:51:09 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:51:09 Respuesta POST: 200 OK
+2024/12/05 10:51:09 hola
+2024/12/05 10:51:09 hola2
+2024/12/05 10:51:09 ## (1:4) Finaliza el hilo
+2024/12/05 10:51:09 ## (PID:TID) - (1:4) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 10:51:09 Respuesta POST: 200 OK
+2024/12/05 10:51:45 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 10:51:45 Cola NEW está vacía, solicitando memoria.
+2024/12/05 10:51:45 URL: http://127.0.0.1:8002/crear_proceso
+2024/12/05 10:51:45 Respuesta POST: 200 OK
+2024/12/05 10:51:45 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:51:45 Respuesta POST: 200 OK
+2024/12/05 10:51:45 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 10:51:45 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 10:51:45 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:51:47 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:51:47 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:51:47 Respuesta POST: 200 OK
+2024/12/05 10:51:47 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 10:51:47 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:51:47 Respuesta POST: 200 OK
+2024/12/05 10:51:47 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:51:49 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:51:49 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:51:49 Respuesta POST: 200 OK
+2024/12/05 10:51:49 ## (1:2) Se crea el Hilo - Estado: READY
+2024/12/05 10:51:49 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:51:49 Respuesta POST: 200 OK
+2024/12/05 10:51:49 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:51:51 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:51:51 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:51:51 Respuesta POST: 200 OK
+2024/12/05 10:51:51 ## (1:3) Se crea el Hilo - Estado: READY
+2024/12/05 10:51:51 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:51:51 Respuesta POST: 200 OK
+2024/12/05 10:51:51 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:51:53 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:51:53 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:51:53 Respuesta POST: 200 OK
+2024/12/05 10:51:53 ## (1:4) Se crea el Hilo - Estado: READY
+2024/12/05 10:51:53 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:51:53 Respuesta POST: 200 OK
+2024/12/05 10:51:53 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:51:55 ## (1:0) - Solicitó syscall: THREAD_JOIN
+2024/12/05 10:51:55 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:51:55 Respuesta POST: 200 OK
+2024/12/05 10:51:55 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:51:58 ## (1:2) - Solicitó syscall: THREAD_EXIT
+2024/12/05 10:51:58 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:51:58 Respuesta POST: 200 OK
+2024/12/05 10:51:58 hola
+2024/12/05 10:51:58 3
+2024/12/05 10:51:58 ## (1:2) Finaliza el hilo
+2024/12/05 10:51:58 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 10:51:58 Respuesta POST: 200 OK
+2024/12/05 10:51:58 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:52:01 ## (1:3) - Solicitó syscall: THREAD_EXIT
+2024/12/05 10:52:01 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:52:01 Respuesta POST: 200 OK
+2024/12/05 10:52:01 hola
+2024/12/05 10:52:01 1
+2024/12/05 10:52:01 ## (1:3) Finaliza el hilo
+2024/12/05 10:52:01 ## (PID:TID) - (1:3) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 10:52:01 Respuesta POST: 200 OK
+2024/12/05 10:52:01 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:52:03 ## (1:1) - Solicitó syscall: THREAD_EXIT
+2024/12/05 10:52:03 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:52:03 Respuesta POST: 200 OK
+2024/12/05 10:52:03 hola
+2024/12/05 10:52:03 4
+2024/12/05 10:52:03 ## (1:1) Finaliza el hilo
+2024/12/05 10:52:03 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 10:52:03 Respuesta POST: 200 OK
+2024/12/05 10:52:03 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:52:06 ## (1:4) - Solicitó syscall: THREAD_EXIT
+2024/12/05 10:52:06 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:52:06 Respuesta POST: 200 OK
+2024/12/05 10:52:06 hola
+2024/12/05 10:52:06 http: panic serving 127.0.0.1:57048: runtime error: index out of range [0] with length 0
+goroutine 24 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1947 +0xbe
+panic({0x3db1520?, 0xc00029c138?})
+	/usr/local/go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/kernel/globals/threads.FinalizarHilo(0x1, 0x4)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/kernel/globals/threads/thread.go:95 +0x7bd
+github.com/sisoputnfrba/tp-golang/kernel/handlers.HandleThreadExit({0x3dd4ac8, 0xc0001562a0}, 0xc000135680)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/kernel/handlers/handlers.go:121 +0x193
+net/http.HandlerFunc.ServeHTTP(0xc0000da0e0?, {0x3dd4ac8?, 0xc0001562a0?}, 0x3f1ac90?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x3a202e5?, {0x3dd4ac8, 0xc0001562a0}, 0xc000135680)
+	/usr/local/go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x3dd3710?}, {0x3dd4ac8?, 0xc0001562a0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc0000e4510, {0x3dd4ff8, 0xc0000a5650})
+	/usr/local/go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3360 +0x485
+2024/12/05 10:52:54 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 10:52:54 Cola NEW está vacía, solicitando memoria.
+2024/12/05 10:52:54 URL: http://127.0.0.1:8002/crear_proceso
+2024/12/05 10:52:54 Respuesta POST: 200 OK
+2024/12/05 10:52:54 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:52:54 Respuesta POST: 200 OK
+2024/12/05 10:52:54 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 10:52:54 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 10:52:54 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:52:56 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:52:56 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:52:56 Respuesta POST: 200 OK
+2024/12/05 10:52:56 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 10:52:56 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:52:57 Respuesta POST: 200 OK
+2024/12/05 10:52:57 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:52:58 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:52:58 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:52:58 Respuesta POST: 200 OK
+2024/12/05 10:52:58 ## (1:2) Se crea el Hilo - Estado: READY
+2024/12/05 10:52:58 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:52:59 Respuesta POST: 200 OK
+2024/12/05 10:52:59 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:53:00 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:53:00 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:53:00 Respuesta POST: 200 OK
+2024/12/05 10:53:00 ## (1:3) Se crea el Hilo - Estado: READY
+2024/12/05 10:53:00 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:53:01 Respuesta POST: 200 OK
+2024/12/05 10:53:01 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:53:02 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:53:02 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:53:02 Respuesta POST: 200 OK
+2024/12/05 10:53:02 ## (1:4) Se crea el Hilo - Estado: READY
+2024/12/05 10:53:02 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:53:03 Respuesta POST: 200 OK
+2024/12/05 10:53:03 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:53:04 ## (1:0) - Solicitó syscall: THREAD_JOIN
+2024/12/05 10:53:04 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:53:05 Respuesta POST: 200 OK
+2024/12/05 10:53:05 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:53:07 ## (1:2) - Solicitó syscall: THREAD_EXIT
+2024/12/05 10:53:07 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:53:07 Respuesta POST: 200 OK
+2024/12/05 10:53:07 3
+2024/12/05 10:53:07 ## (1:2) Finaliza el hilo
+2024/12/05 10:53:07 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 10:53:07 Respuesta POST: 200 OK
+2024/12/05 10:53:07 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:53:10 ## (1:3) - Solicitó syscall: THREAD_EXIT
+2024/12/05 10:53:10 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:53:10 Respuesta POST: 200 OK
+2024/12/05 10:53:10 1
+2024/12/05 10:53:10 ## (1:3) Finaliza el hilo
+2024/12/05 10:53:10 ## (PID:TID) - (1:3) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 10:53:10 Respuesta POST: 200 OK
+2024/12/05 10:53:10 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:53:12 ## (1:1) - Solicitó syscall: THREAD_EXIT
+2024/12/05 10:53:12 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:53:12 Respuesta POST: 200 OK
+2024/12/05 10:53:12 4
+2024/12/05 10:53:12 ## (1:1) Finaliza el hilo
+2024/12/05 10:53:12 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 10:53:12 Respuesta POST: 200 OK
+2024/12/05 10:53:12 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:53:15 ## (1:4) - Solicitó syscall: THREAD_EXIT
+2024/12/05 10:53:15 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:53:15 Respuesta POST: 200 OK
+2024/12/05 10:53:15 http: panic serving 127.0.0.1:57140: runtime error: index out of range [0] with length 0
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1947 +0xbe
+panic({0x1863520?, 0xc0001161f8?})
+	/usr/local/go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/kernel/globals/threads.FinalizarHilo(0x1, 0x4)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/kernel/globals/threads/thread.go:93 +0x76f
+github.com/sisoputnfrba/tp-golang/kernel/handlers.HandleThreadExit({0x1886ac8, 0xc0002a00e0}, 0xc000286c80)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/kernel/handlers/handlers.go:121 +0x193
+net/http.HandlerFunc.ServeHTTP(0xc000232000?, {0x1886ac8?, 0xc0002a00e0?}, 0x19f83568?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x14d22e5?, {0x1886ac8, 0xc0002a00e0}, 0xc000286c80)
+	/usr/local/go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x1885710?}, {0x1886ac8?, 0xc0002a00e0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc00020c1b0, {0x1886ff8, 0xc0002003f0})
+	/usr/local/go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3360 +0x485
+2024/12/05 10:53:39 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 10:53:39 Cola NEW está vacía, solicitando memoria.
+2024/12/05 10:53:39 URL: http://127.0.0.1:8002/crear_proceso
+2024/12/05 10:53:39 Respuesta POST: 200 OK
+2024/12/05 10:53:39 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:53:39 Respuesta POST: 200 OK
+2024/12/05 10:53:39 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 10:53:39 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 10:53:39 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:53:41 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:53:41 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:53:41 Respuesta POST: 200 OK
+2024/12/05 10:53:41 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 10:53:41 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:53:42 Respuesta POST: 200 OK
+2024/12/05 10:53:42 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:53:43 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:53:43 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:53:43 Respuesta POST: 200 OK
+2024/12/05 10:53:43 ## (1:2) Se crea el Hilo - Estado: READY
+2024/12/05 10:53:43 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:53:44 Respuesta POST: 200 OK
+2024/12/05 10:53:44 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:53:45 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:53:45 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:53:45 Respuesta POST: 200 OK
+2024/12/05 10:53:45 ## (1:3) Se crea el Hilo - Estado: READY
+2024/12/05 10:53:45 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:53:46 Respuesta POST: 200 OK
+2024/12/05 10:53:46 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:53:47 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 10:53:47 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 10:53:47 Respuesta POST: 200 OK
+2024/12/05 10:53:47 ## (1:4) Se crea el Hilo - Estado: READY
+2024/12/05 10:53:47 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:53:48 Respuesta POST: 200 OK
+2024/12/05 10:53:48 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:53:49 ## (1:0) - Solicitó syscall: THREAD_JOIN
+2024/12/05 10:53:49 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 10:53:50 Respuesta POST: 200 OK
+2024/12/05 10:53:50 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:53:52 ## (1:2) - Solicitó syscall: THREAD_EXIT
+2024/12/05 10:53:52 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:53:52 Respuesta POST: 200 OK
+2024/12/05 10:53:52 ## (1:2) Finaliza el hilo
+2024/12/05 10:53:52 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 10:53:52 Respuesta POST: 200 OK
+2024/12/05 10:53:52 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:53:55 ## (1:3) - Solicitó syscall: THREAD_EXIT
+2024/12/05 10:53:55 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:53:55 Respuesta POST: 200 OK
+2024/12/05 10:53:55 ## (1:3) Finaliza el hilo
+2024/12/05 10:53:55 ## (PID:TID) - (1:3) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 10:53:55 Respuesta POST: 200 OK
+2024/12/05 10:53:55 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:53:57 ## (1:1) - Solicitó syscall: THREAD_EXIT
+2024/12/05 10:53:57 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:53:57 Respuesta POST: 200 OK
+2024/12/05 10:53:57 ## (1:1) Finaliza el hilo
+2024/12/05 10:53:57 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 10:53:57 Respuesta POST: 200 OK
+2024/12/05 10:53:57 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 10:54:00 ## (1:4) - Solicitó syscall: THREAD_EXIT
+2024/12/05 10:54:00 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 10:54:00 Respuesta POST: 200 OK
+2024/12/05 10:54:00 ## (1:4) Finaliza el hilo
+2024/12/05 10:54:00 ## (PID:TID) - (1:4) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 10:54:00 Respuesta POST: 200 OK
+2024/12/05 11:01:06 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 11:01:06 Cola NEW está vacía, solicitando memoria.
+2024/12/05 11:01:06 URL: http://127.0.0.1:8002/crear_proceso
+2024/12/05 11:01:06 Respuesta POST: 200 OK
+2024/12/05 11:01:06 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 11:01:06 Respuesta POST: 200 OK
+2024/12/05 11:01:06 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 11:01:06 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 11:01:06 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:01:07 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 11:01:07 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 11:01:07 Respuesta POST: 200 OK
+2024/12/05 11:01:07 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 11:01:07 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:01:07 Respuesta POST: 200 OK
+2024/12/05 11:01:07 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:01:08 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 11:01:08 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 11:01:08 Respuesta POST: 200 OK
+2024/12/05 11:01:08 ## (1:2) Se crea el Hilo - Estado: READY
+2024/12/05 11:01:08 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:01:08 Respuesta POST: 200 OK
+2024/12/05 11:01:08 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:01:09 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 11:01:09 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 11:01:09 Respuesta POST: 200 OK
+2024/12/05 11:01:09 ## (1:3) Se crea el Hilo - Estado: READY
+2024/12/05 11:01:09 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:01:09 Respuesta POST: 200 OK
+2024/12/05 11:01:09 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:01:10 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 11:01:10 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 11:01:10 Respuesta POST: 200 OK
+2024/12/05 11:01:10 ## (1:4) Se crea el Hilo - Estado: READY
+2024/12/05 11:01:10 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:01:10 Respuesta POST: 200 OK
+2024/12/05 11:01:10 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:01:11 ## (1:0) - Solicitó syscall: THREAD_JOIN
+2024/12/05 11:01:11 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:01:11 Respuesta POST: 200 OK
+2024/12/05 11:01:11 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:01:13 ## (1:2) - Solicitó syscall: THREAD_EXIT
+2024/12/05 11:01:13 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 11:01:13 Respuesta POST: 200 OK
+2024/12/05 11:01:13 ## (1:2) Finaliza el hilo
+2024/12/05 11:01:13 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 11:01:13 Respuesta POST: 200 OK
+2024/12/05 11:01:13 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:01:14 ## (1:3) - Solicitó syscall: THREAD_EXIT
+2024/12/05 11:01:14 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 11:01:14 Respuesta POST: 200 OK
+2024/12/05 11:01:14 ## (1:3) Finaliza el hilo
+2024/12/05 11:01:14 ## (PID:TID) - (1:3) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 11:01:14 Respuesta POST: 200 OK
+2024/12/05 11:01:14 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:01:15 ## (1:1) - Solicitó syscall: THREAD_EXIT
+2024/12/05 11:01:15 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 11:01:15 Respuesta POST: 200 OK
+2024/12/05 11:01:15 ## (1:1) Finaliza el hilo
+2024/12/05 11:01:15 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 11:01:15 Respuesta POST: 200 OK
+2024/12/05 11:01:15 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:01:16 ## (1:4) - Solicitó syscall: THREAD_EXIT
+2024/12/05 11:01:16 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 11:01:16 Respuesta POST: 200 OK
+2024/12/05 11:01:16 ## (1:4) Finaliza el hilo
+2024/12/05 11:01:16 ## (PID:TID) - (1:4) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 11:01:16 Respuesta POST: 200 OK
+2024/12/05 11:02:31 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 11:02:31 Cola NEW está vacía, solicitando memoria.
+2024/12/05 11:02:31 URL: http://127.0.0.1:8002/crear_proceso
+2024/12/05 11:02:32 Respuesta POST: 200 OK
+2024/12/05 11:02:32 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 11:02:32 Respuesta POST: 200 OK
+2024/12/05 11:02:32 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 11:02:32 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 11:02:32 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:02:33 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 11:02:33 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 11:02:33 Respuesta POST: 200 OK
+2024/12/05 11:02:33 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 11:02:33 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:02:33 Respuesta POST: 200 OK
+2024/12/05 11:02:33 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:02:34 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 11:02:34 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 11:02:34 Respuesta POST: 200 OK
+2024/12/05 11:02:34 ## (1:2) Se crea el Hilo - Estado: READY
+2024/12/05 11:02:34 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:02:34 Respuesta POST: 200 OK
+2024/12/05 11:02:34 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:02:35 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 11:02:35 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 11:02:35 Respuesta POST: 200 OK
+2024/12/05 11:02:35 ## (1:3) Se crea el Hilo - Estado: READY
+2024/12/05 11:02:35 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:02:35 Respuesta POST: 200 OK
+2024/12/05 11:02:35 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:02:36 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 11:02:36 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 11:02:36 Respuesta POST: 200 OK
+2024/12/05 11:02:36 ## (1:4) Se crea el Hilo - Estado: READY
+2024/12/05 11:02:36 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:02:36 Respuesta POST: 200 OK
+2024/12/05 11:02:36 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:02:37 ## (1:0) - Solicitó syscall: THREAD_JOIN
+2024/12/05 11:02:37 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:02:37 Respuesta POST: 200 OK
+2024/12/05 11:02:37 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:02:38 ## (1:2) - Solicitó syscall: THREAD_EXIT
+2024/12/05 11:02:38 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 11:02:38 Respuesta POST: 200 OK
+2024/12/05 11:02:38 ## (1:2) Finaliza el hilo
+2024/12/05 11:02:38 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 11:02:38 Respuesta POST: 200 OK
+2024/12/05 11:02:38 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:02:39 ## (1:3) - Solicitó syscall: THREAD_EXIT
+2024/12/05 11:02:39 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 11:02:39 Respuesta POST: 200 OK
+2024/12/05 11:02:39 ## (1:3) Finaliza el hilo
+2024/12/05 11:02:39 ## (PID:TID) - (1:3) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 11:02:39 Respuesta POST: 200 OK
+2024/12/05 11:02:39 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:02:41 ## (1:1) - Solicitó syscall: THREAD_EXIT
+2024/12/05 11:02:41 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 11:02:41 Respuesta POST: 200 OK
+2024/12/05 11:02:41 ## (1:1) Finaliza el hilo
+2024/12/05 11:02:41 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 11:02:41 Respuesta POST: 200 OK
+2024/12/05 11:02:41 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:02:42 ## (1:4) - Solicitó syscall: THREAD_EXIT
+2024/12/05 11:02:42 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 11:02:42 Respuesta POST: 200 OK
+2024/12/05 11:02:42 ## (1:4) Finaliza el hilo
+2024/12/05 11:02:42 ## (PID:TID) - (1:4) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 11:02:42 Respuesta POST: 200 OK
+2024/12/05 11:02:59 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 11:02:59 Cola NEW está vacía, solicitando memoria.
+2024/12/05 11:02:59 URL: http://127.0.0.1:8002/crear_proceso
+2024/12/05 11:02:59 Respuesta POST: 200 OK
+2024/12/05 11:02:59 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 11:02:59 Respuesta POST: 200 OK
+2024/12/05 11:02:59 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 11:02:59 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 11:02:59 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:02:59 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 11:02:59 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 11:02:59 Respuesta POST: 200 OK
+2024/12/05 11:02:59 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 11:02:59 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:02:59 Respuesta POST: 200 OK
+2024/12/05 11:02:59 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:02:59 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 11:02:59 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 11:02:59 Respuesta POST: 200 OK
+2024/12/05 11:02:59 ## (1:2) Se crea el Hilo - Estado: READY
+2024/12/05 11:02:59 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:02:59 Respuesta POST: 200 OK
+2024/12/05 11:02:59 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:02:59 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 11:02:59 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 11:02:59 Respuesta POST: 200 OK
+2024/12/05 11:02:59 ## (1:3) Se crea el Hilo - Estado: READY
+2024/12/05 11:02:59 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:02:59 Respuesta POST: 200 OK
+2024/12/05 11:02:59 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:02:59 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 11:02:59 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 11:02:59 Respuesta POST: 200 OK
+2024/12/05 11:02:59 ## (1:4) Se crea el Hilo - Estado: READY
+2024/12/05 11:02:59 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:02:59 Respuesta POST: 200 OK
+2024/12/05 11:02:59 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:02:59 ## (1:0) - Solicitó syscall: THREAD_JOIN
+2024/12/05 11:02:59 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:02:59 Respuesta POST: 200 OK
+2024/12/05 11:02:59 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:02:59 ## (1:2) - Solicitó syscall: THREAD_EXIT
+2024/12/05 11:02:59 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 11:02:59 Respuesta POST: 200 OK
+2024/12/05 11:02:59 ## (1:2) Finaliza el hilo
+2024/12/05 11:02:59 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 11:02:59 Respuesta POST: 200 OK
+2024/12/05 11:02:59 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:02:59 ## (1:3) - Solicitó syscall: THREAD_EXIT
+2024/12/05 11:02:59 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 11:02:59 Respuesta POST: 200 OK
+2024/12/05 11:02:59 ## (1:3) Finaliza el hilo
+2024/12/05 11:02:59 ## (PID:TID) - (1:3) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 11:02:59 Respuesta POST: 200 OK
+2024/12/05 11:02:59 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:02:59 ## (1:1) - Solicitó syscall: THREAD_EXIT
+2024/12/05 11:02:59 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 11:02:59 Respuesta POST: 200 OK
+2024/12/05 11:02:59 ## (1:1) Finaliza el hilo
+2024/12/05 11:02:59 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 11:02:59 Respuesta POST: 200 OK
+2024/12/05 11:02:59 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:02:59 ## (1:4) - Solicitó syscall: THREAD_EXIT
+2024/12/05 11:02:59 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 11:02:59 Respuesta POST: 200 OK
+2024/12/05 11:02:59 ## (1:4) Finaliza el hilo
+2024/12/05 11:02:59 ## (PID:TID) - (1:4) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 11:02:59 Respuesta POST: 200 OK
+2024/12/05 11:04:08 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 11:04:08 Cola NEW está vacía, solicitando memoria.
+2024/12/05 11:04:08 URL: http://127.0.0.1:8002/crear_proceso
+2024/12/05 11:04:08 Respuesta POST: 200 OK
+2024/12/05 11:04:08 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 11:04:08 Respuesta POST: 200 OK
+2024/12/05 11:04:08 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 11:04:08 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 11:04:08 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:04:08 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 11:04:08 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 11:04:08 Respuesta POST: 200 OK
+2024/12/05 11:04:08 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 11:04:08 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:04:08 Respuesta POST: 200 OK
+2024/12/05 11:04:08 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:04:08 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 11:04:08 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 11:04:08 Respuesta POST: 200 OK
+2024/12/05 11:04:08 ## (1:2) Se crea el Hilo - Estado: READY
+2024/12/05 11:04:08 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:04:08 Respuesta POST: 200 OK
+2024/12/05 11:04:08 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:04:08 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 11:04:08 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 11:04:08 Respuesta POST: 200 OK
+2024/12/05 11:04:08 ## (1:3) Se crea el Hilo - Estado: READY
+2024/12/05 11:04:08 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:04:08 Respuesta POST: 200 OK
+2024/12/05 11:04:08 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:04:08 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 11:04:08 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 11:04:08 Respuesta POST: 200 OK
+2024/12/05 11:04:08 ## (1:4) Se crea el Hilo - Estado: READY
+2024/12/05 11:04:08 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:04:08 Respuesta POST: 200 OK
+2024/12/05 11:04:08 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:04:08 ## (1:0) - Solicitó syscall: THREAD_JOIN
+2024/12/05 11:04:08 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:04:08 Respuesta POST: 200 OK
+2024/12/05 11:04:08 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:04:08 ## (1:2) - Solicitó syscall: THREAD_EXIT
+2024/12/05 11:04:08 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 11:04:08 Respuesta POST: 200 OK
+2024/12/05 11:04:08 http: panic serving 127.0.0.1:57954: runtime error: index out of range [0] with length 0
+goroutine 24 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1947 +0xbe
+panic({0x1518520?, 0xc0001300c0?})
+	/usr/local/go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/kernel/globals/threads.FinalizarHilo(0x1, 0x2)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/kernel/globals/threads/thread.go:88 +0x878
+github.com/sisoputnfrba/tp-golang/kernel/handlers.HandleThreadExit({0x153bac8, 0xc0001341c0}, 0xc00012ea00)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/kernel/handlers/handlers.go:121 +0x193
+net/http.HandlerFunc.ServeHTTP(0xc0000da0e0?, {0x153bac8?, 0xc0001341c0?}, 0x34963c08?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x11872e5?, {0x153bac8, 0xc0001341c0}, 0xc00012ea00)
+	/usr/local/go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x153a710?}, {0x153bac8?, 0xc0001341c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc0000e45a0, {0x153bff8, 0xc0000a57a0})
+	/usr/local/go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3360 +0x485
+2024/12/05 11:05:11 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 11:05:11 Cola NEW está vacía, solicitando memoria.
+2024/12/05 11:05:11 URL: http://127.0.0.1:8002/crear_proceso
+2024/12/05 11:05:11 Respuesta POST: 200 OK
+2024/12/05 11:05:11 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 11:05:11 Respuesta POST: 200 OK
+2024/12/05 11:05:11 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 11:05:11 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 11:05:11 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:05:11 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 11:05:11 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 11:05:11 Respuesta POST: 200 OK
+2024/12/05 11:05:11 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 11:05:11 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:05:11 Respuesta POST: 200 OK
+2024/12/05 11:05:11 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:05:11 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 11:05:11 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 11:05:11 Respuesta POST: 200 OK
+2024/12/05 11:05:11 ## (1:2) Se crea el Hilo - Estado: READY
+2024/12/05 11:05:11 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:05:11 Respuesta POST: 200 OK
+2024/12/05 11:05:11 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:05:11 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 11:05:11 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 11:05:11 Respuesta POST: 200 OK
+2024/12/05 11:05:11 ## (1:3) Se crea el Hilo - Estado: READY
+2024/12/05 11:05:11 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:05:11 Respuesta POST: 200 OK
+2024/12/05 11:05:11 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:05:11 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 11:05:11 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 11:05:11 Respuesta POST: 200 OK
+2024/12/05 11:05:11 ## (1:4) Se crea el Hilo - Estado: READY
+2024/12/05 11:05:11 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:05:11 Respuesta POST: 200 OK
+2024/12/05 11:05:11 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:05:11 ## (1:0) - Solicitó syscall: THREAD_JOIN
+2024/12/05 11:05:11 0
+2024/12/05 11:05:11 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:05:11 Respuesta POST: 200 OK
+2024/12/05 11:05:11 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:05:11 ## (1:2) - Solicitó syscall: THREAD_EXIT
+2024/12/05 11:05:11 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 11:05:11 Respuesta POST: 200 OK
+2024/12/05 11:05:11 http: panic serving 127.0.0.1:58035: runtime error: index out of range [0] with length 0
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1947 +0xbe
+panic({0x61ab520?, 0xc00019e0c0?})
+	/usr/local/go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/kernel/globals/threads.FinalizarHilo(0x1, 0x2)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/kernel/globals/threads/thread.go:88 +0x878
+github.com/sisoputnfrba/tp-golang/kernel/handlers.HandleThreadExit({0x61ceac8, 0xc0001a81c0}, 0xc000192f00)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/kernel/handlers/handlers.go:121 +0x193
+net/http.HandlerFunc.ServeHTTP(0xc000232000?, {0x61ceac8?, 0xc0001a81c0?}, 0x228d42b8?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x5e1a2e5?, {0x61ceac8, 0xc0001a81c0}, 0xc000192f00)
+	/usr/local/go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x61cd710?}, {0x61ceac8?, 0xc0001a81c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc00020c1b0, {0x61ceff8, 0xc0002003f0})
+	/usr/local/go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3360 +0x485
+2024/12/05 11:05:54 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 11:05:54 Cola NEW está vacía, solicitando memoria.
+2024/12/05 11:05:54 URL: http://127.0.0.1:8002/crear_proceso
+2024/12/05 11:05:54 Respuesta POST: 200 OK
+2024/12/05 11:05:54 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 11:05:54 Respuesta POST: 200 OK
+2024/12/05 11:05:54 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 11:05:54 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 11:05:54 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:05:54 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 11:05:54 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 11:05:54 Respuesta POST: 200 OK
+2024/12/05 11:05:54 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 11:05:54 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:05:54 Respuesta POST: 200 OK
+2024/12/05 11:05:54 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:05:54 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 11:05:54 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 11:05:54 Respuesta POST: 200 OK
+2024/12/05 11:05:54 ## (1:2) Se crea el Hilo - Estado: READY
+2024/12/05 11:05:54 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:05:54 Respuesta POST: 200 OK
+2024/12/05 11:05:54 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:05:54 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 11:05:54 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 11:05:54 Respuesta POST: 200 OK
+2024/12/05 11:05:54 ## (1:3) Se crea el Hilo - Estado: READY
+2024/12/05 11:05:54 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:05:54 Respuesta POST: 200 OK
+2024/12/05 11:05:54 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:05:54 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 11:05:54 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 11:05:54 Respuesta POST: 200 OK
+2024/12/05 11:05:54 ## (1:4) Se crea el Hilo - Estado: READY
+2024/12/05 11:05:54 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:05:54 Respuesta POST: 200 OK
+2024/12/05 11:05:54 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:05:54 ## (1:0) - Solicitó syscall: THREAD_JOIN
+2024/12/05 11:05:54 4
+2024/12/05 11:05:54 0
+2024/12/05 11:05:54 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:05:54 Respuesta POST: 200 OK
+2024/12/05 11:05:54 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:05:54 ## (1:2) - Solicitó syscall: THREAD_EXIT
+2024/12/05 11:05:54 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 11:05:54 Respuesta POST: 200 OK
+2024/12/05 11:05:54 http: panic serving 127.0.0.1:58096: runtime error: index out of range [0] with length 0
+goroutine 50 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1947 +0xbe
+panic({0x363d520?, 0xc000018180?})
+	/usr/local/go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/kernel/globals/threads.FinalizarHilo(0x1, 0x2)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/kernel/globals/threads/thread.go:88 +0x878
+github.com/sisoputnfrba/tp-golang/kernel/handlers.HandleThreadExit({0x3660ac8, 0xc000232460}, 0xc000257180)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/kernel/handlers/handlers.go:122 +0x193
+net/http.HandlerFunc.ServeHTTP(0xc000232000?, {0x3660ac8?, 0xc000232460?}, 0x4462d60?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x32ac2e5?, {0x3660ac8, 0xc000232460}, 0xc000257180)
+	/usr/local/go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x365f710?}, {0x3660ac8?, 0xc000232460?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc0002141b0, {0x3660ff8, 0xc0002083f0})
+	/usr/local/go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3360 +0x485
+2024/12/05 11:11:28 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 11:11:28 Cola NEW está vacía, solicitando memoria.
+2024/12/05 11:11:28 URL: http://127.0.0.1:8002/crear_proceso
+2024/12/05 11:11:28 Respuesta POST: 200 OK
+2024/12/05 11:11:28 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 11:11:28 Respuesta POST: 200 OK
+2024/12/05 11:11:28 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 11:11:28 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 11:11:28 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:11:28 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 11:11:28 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 11:11:28 Respuesta POST: 200 OK
+2024/12/05 11:11:28 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 11:11:28 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:11:28 Respuesta POST: 200 OK
+2024/12/05 11:11:28 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:11:28 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 11:11:28 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 11:11:28 Respuesta POST: 200 OK
+2024/12/05 11:11:28 ## (1:2) Se crea el Hilo - Estado: READY
+2024/12/05 11:11:28 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:11:28 Respuesta POST: 200 OK
+2024/12/05 11:11:28 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:11:28 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 11:11:28 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 11:11:28 Respuesta POST: 200 OK
+2024/12/05 11:11:28 ## (1:3) Se crea el Hilo - Estado: READY
+2024/12/05 11:11:28 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:11:28 Respuesta POST: 200 OK
+2024/12/05 11:11:28 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:11:28 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 11:11:28 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 11:11:28 Respuesta POST: 200 OK
+2024/12/05 11:11:28 ## (1:4) Se crea el Hilo - Estado: READY
+2024/12/05 11:11:28 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:11:28 Respuesta POST: 200 OK
+2024/12/05 11:11:28 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:11:28 ## (1:0) - Solicitó syscall: THREAD_JOIN
+2024/12/05 11:11:28 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:11:28 Respuesta POST: 200 OK
+2024/12/05 11:11:28 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:11:28 ## (1:2) - Solicitó syscall: THREAD_EXIT
+2024/12/05 11:11:28 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 11:11:28 Respuesta POST: 200 OK
+2024/12/05 11:11:28 http: panic serving 127.0.0.1:58478: runtime error: index out of range [0] with length 0
+goroutine 50 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1947 +0xbe
+panic({0x352a4e0?, 0xc0002520d8?})
+	/usr/local/go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/kernel/globals/threads.FinalizarHilo(0x1, 0x2)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/kernel/globals/threads/thread.go:88 +0x759
+github.com/sisoputnfrba/tp-golang/kernel/handlers.HandleThreadExit({0x354da88, 0xc00023e460}, 0xc00022f180)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/kernel/handlers/handlers.go:121 +0x193
+net/http.HandlerFunc.ServeHTTP(0xc00023e000?, {0x354da88?, 0xc00023e460?}, 0x38246bd8?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x31992e5?, {0x354da88, 0xc00023e460}, 0xc00022f180)
+	/usr/local/go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x354c6d0?}, {0x354da88?, 0xc00023e460?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc0002261b0, {0x354dfb8, 0xc000208540})
+	/usr/local/go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3360 +0x485
+2024/12/05 11:12:14 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 11:12:14 Cola NEW está vacía, solicitando memoria.
+2024/12/05 11:12:14 URL: http://127.0.0.1:8002/crear_proceso
+2024/12/05 11:12:14 Respuesta POST: 200 OK
+2024/12/05 11:12:14 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 11:12:14 Respuesta POST: 200 OK
+2024/12/05 11:12:14 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 11:12:14 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 11:12:14 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:12:14 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 11:12:14 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 11:12:14 Respuesta POST: 200 OK
+2024/12/05 11:12:14 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 11:12:14 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:12:14 Respuesta POST: 200 OK
+2024/12/05 11:12:14 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:12:14 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 11:12:14 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 11:12:14 Respuesta POST: 200 OK
+2024/12/05 11:12:14 ## (1:2) Se crea el Hilo - Estado: READY
+2024/12/05 11:12:14 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:12:14 Respuesta POST: 200 OK
+2024/12/05 11:12:14 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:12:14 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 11:12:14 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 11:12:14 Respuesta POST: 200 OK
+2024/12/05 11:12:14 ## (1:3) Se crea el Hilo - Estado: READY
+2024/12/05 11:12:14 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:12:14 Respuesta POST: 200 OK
+2024/12/05 11:12:14 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:12:14 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 11:12:14 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 11:12:14 Respuesta POST: 200 OK
+2024/12/05 11:12:14 ## (1:4) Se crea el Hilo - Estado: READY
+2024/12/05 11:12:14 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:12:14 Respuesta POST: 200 OK
+2024/12/05 11:12:14 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:12:14 ## (1:0) - Solicitó syscall: THREAD_JOIN
+2024/12/05 11:12:14 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:12:14 Respuesta POST: 200 OK
+2024/12/05 11:12:14 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:12:14 ## (1:2) - Solicitó syscall: THREAD_EXIT
+2024/12/05 11:12:14 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 11:12:14 Respuesta POST: 200 OK
+2024/12/05 11:12:14 http: panic serving 127.0.0.1:58543: runtime error: index out of range [0] with length 0
+goroutine 36 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1947 +0xbe
+panic({0x556b4e0?, 0xc000128210?})
+	/usr/local/go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/kernel/globals/threads.FinalizarHilo(0x1, 0x2)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/kernel/globals/threads/thread.go:88 +0x658
+github.com/sisoputnfrba/tp-golang/kernel/handlers.HandleThreadExit({0x558ea88, 0xc000150460}, 0xc000159680)
+	/Users/gonzaloramirez/Documents/UTN/tp-2024-2c-Equipo-Operativo/kernel/handlers/handlers.go:121 +0x193
+net/http.HandlerFunc.ServeHTTP(0xc0000be000?, {0x558ea88?, 0xc000150460?}, 0x19c88278?)
+	/usr/local/go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x51db2e5?, {0x558ea88, 0xc000150460}, 0xc000159680)
+	/usr/local/go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x558d6d0?}, {0x558ea88?, 0xc000150460?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc0000a41b0, {0x558efb8, 0xc000092420})
+	/usr/local/go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3360 +0x485
+2024/12/05 11:12:39 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 11:12:39 Cola NEW está vacía, solicitando memoria.
+2024/12/05 11:12:39 URL: http://127.0.0.1:8002/crear_proceso
+2024/12/05 11:12:39 Respuesta POST: 200 OK
+2024/12/05 11:12:39 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 11:12:39 Respuesta POST: 200 OK
+2024/12/05 11:12:39 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 11:12:39 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 11:12:39 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:12:40 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 11:12:40 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 11:12:40 Respuesta POST: 200 OK
+2024/12/05 11:12:40 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 11:12:40 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:12:40 Respuesta POST: 200 OK
+2024/12/05 11:12:40 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:12:40 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 11:12:40 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 11:12:40 Respuesta POST: 200 OK
+2024/12/05 11:12:40 ## (1:2) Se crea el Hilo - Estado: READY
+2024/12/05 11:12:40 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:12:40 Respuesta POST: 200 OK
+2024/12/05 11:12:40 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:12:40 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 11:12:40 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 11:12:40 Respuesta POST: 200 OK
+2024/12/05 11:12:40 ## (1:3) Se crea el Hilo - Estado: READY
+2024/12/05 11:12:40 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:12:40 Respuesta POST: 200 OK
+2024/12/05 11:12:40 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:12:40 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 11:12:40 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 11:12:40 Respuesta POST: 200 OK
+2024/12/05 11:12:40 ## (1:4) Se crea el Hilo - Estado: READY
+2024/12/05 11:12:40 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:12:40 Respuesta POST: 200 OK
+2024/12/05 11:12:40 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:12:40 ## (1:0) - Solicitó syscall: THREAD_JOIN
+2024/12/05 11:12:40 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:12:40 Respuesta POST: 200 OK
+2024/12/05 11:12:40 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:12:40 ## (1:2) - Solicitó syscall: THREAD_EXIT
+2024/12/05 11:12:40 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 11:12:40 Respuesta POST: 200 OK
+2024/12/05 11:12:40 ## (1:2) Finaliza el hilo
+2024/12/05 11:12:40 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 11:12:40 Respuesta POST: 200 OK
+2024/12/05 11:12:40 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:12:40 ## (1:3) - Solicitó syscall: THREAD_EXIT
+2024/12/05 11:12:40 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 11:12:40 Respuesta POST: 200 OK
+2024/12/05 11:12:40 ## (1:3) Finaliza el hilo
+2024/12/05 11:12:40 ## (PID:TID) - (1:3) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 11:12:40 Respuesta POST: 200 OK
+2024/12/05 11:12:40 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:12:40 ## (1:1) - Solicitó syscall: THREAD_EXIT
+2024/12/05 11:12:40 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 11:12:40 Respuesta POST: 200 OK
+2024/12/05 11:12:40 ## (1:1) Finaliza el hilo
+2024/12/05 11:12:40 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 11:12:40 Respuesta POST: 200 OK
+2024/12/05 11:12:40 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:12:40 ## (1:4) - Solicitó syscall: THREAD_EXIT
+2024/12/05 11:12:40 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 11:12:40 Respuesta POST: 200 OK
+2024/12/05 11:12:40 0
+2024/12/05 11:12:40 0
+2024/12/05 11:12:40 ## (1:4) Finaliza el hilo
+2024/12/05 11:12:40 ## (PID:TID) - (1:4) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 11:12:40 Respuesta POST: 200 OK
+2024/12/05 11:12:40 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:12:40 ## (1:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/05 11:12:40 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 11:12:40 Respuesta POST: 200 OK
+2024/12/05 11:12:40 ## (1:0) Finaliza el hilo
+2024/12/05 11:12:40 URL: http://127.0.0.1:8002/finalizar_proceso
+2024/12/05 11:12:40 Respuesta POST: 200 OK
+2024/12/05 11:12:40 ## Finaliza el proceso 1
+2024/12/05 11:12:40 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/05 11:12:40 Respuesta POST: 200 OK
+2024/12/05 11:14:15 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 11:14:15 Cola NEW está vacía, solicitando memoria.
+2024/12/05 11:14:15 URL: http://127.0.0.1:8002/crear_proceso
+2024/12/05 11:14:15 Respuesta POST: 200 OK
+2024/12/05 11:14:15 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 11:14:15 Respuesta POST: 200 OK
+2024/12/05 11:14:15 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 11:14:15 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 11:14:15 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:14:15 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 11:14:15 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 11:14:15 Respuesta POST: 200 OK
+2024/12/05 11:14:15 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 11:14:15 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:14:15 Respuesta POST: 200 OK
+2024/12/05 11:14:15 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:14:15 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 11:14:15 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 11:14:15 Respuesta POST: 200 OK
+2024/12/05 11:14:15 ## (1:2) Se crea el Hilo - Estado: READY
+2024/12/05 11:14:15 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:14:15 Respuesta POST: 200 OK
+2024/12/05 11:14:15 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:14:15 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 11:14:15 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 11:14:15 Respuesta POST: 200 OK
+2024/12/05 11:14:15 ## (1:3) Se crea el Hilo - Estado: READY
+2024/12/05 11:14:15 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:14:15 Respuesta POST: 200 OK
+2024/12/05 11:14:15 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:14:15 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 11:14:15 URL: http://127.0.0.1:8002/crear_hilo
+2024/12/05 11:14:15 Respuesta POST: 200 OK
+2024/12/05 11:14:15 ## (1:4) Se crea el Hilo - Estado: READY
+2024/12/05 11:14:15 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:14:15 Respuesta POST: 200 OK
+2024/12/05 11:14:15 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:14:15 ## (1:0) - Solicitó syscall: THREAD_JOIN
+2024/12/05 11:14:15 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:14:15 Respuesta POST: 200 OK
+2024/12/05 11:14:15 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:14:15 ## (1:2) - Solicitó syscall: THREAD_EXIT
+2024/12/05 11:14:15 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 11:14:15 Respuesta POST: 200 OK
+2024/12/05 11:14:15 ## (1:2) Finaliza el hilo
+2024/12/05 11:14:15 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 11:14:15 Respuesta POST: 200 OK
+2024/12/05 11:14:15 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:14:15 ## (1:3) - Solicitó syscall: THREAD_EXIT
+2024/12/05 11:14:15 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 11:14:15 Respuesta POST: 200 OK
+2024/12/05 11:14:15 ## (1:3) Finaliza el hilo
+2024/12/05 11:14:15 ## (PID:TID) - (1:3) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 11:14:15 Respuesta POST: 200 OK
+2024/12/05 11:14:15 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:14:15 ## (1:1) - Solicitó syscall: THREAD_EXIT
+2024/12/05 11:14:15 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 11:14:15 Respuesta POST: 200 OK
+2024/12/05 11:14:15 ## (1:1) Finaliza el hilo
+2024/12/05 11:14:15 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 11:14:15 Respuesta POST: 200 OK
+2024/12/05 11:14:15 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:14:15 ## (1:4) - Solicitó syscall: THREAD_EXIT
+2024/12/05 11:14:15 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 11:14:15 Respuesta POST: 200 OK
+2024/12/05 11:14:15 0
+2024/12/05 11:14:15 0
+2024/12/05 11:14:15 ## (1:4) Finaliza el hilo
+2024/12/05 11:14:15 ## (PID:TID) - (1:4) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 11:14:15 Respuesta POST: 200 OK
+2024/12/05 11:14:15 URL: http://127.0.0.1:8004/dispatch
+2024/12/05 11:14:15 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/05 11:14:15 ## (1:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/05 11:14:15 URL: http://127.0.0.1:8002/finalizar_hilo
+2024/12/05 11:14:15 Respuesta POST: 200 OK
+2024/12/05 11:14:15 ## (1:0) Finaliza el hilo
+2024/12/05 11:14:15 URL: http://127.0.0.1:8002/finalizar_proceso
+2024/12/05 11:14:15 Respuesta POST: 200 OK
+2024/12/05 11:14:15 ## Finaliza el proceso 1
+2024/12/05 11:14:15 Respuesta POST: 200 OK
+2024/12/05 11:15:49 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 11:15:49 Cola NEW está vacía, solicitando memoria.
+2024/12/05 11:15:49 Respuesta POST: 200 OK
+2024/12/05 11:15:49 Respuesta POST: 200 OK
+2024/12/05 11:15:49 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 11:15:49 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 11:15:50 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 11:15:50 Respuesta POST: 200 OK
+2024/12/05 11:15:50 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 11:15:50 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:15:50 Respuesta POST: 200 OK
+2024/12/05 11:15:50 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 11:15:50 Respuesta POST: 200 OK
+2024/12/05 11:15:50 ## (1:2) Se crea el Hilo - Estado: READY
+2024/12/05 11:15:50 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:15:50 Respuesta POST: 200 OK
+2024/12/05 11:15:50 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 11:15:50 Respuesta POST: 200 OK
+2024/12/05 11:15:50 ## (1:3) Se crea el Hilo - Estado: READY
+2024/12/05 11:15:50 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:15:50 Respuesta POST: 200 OK
+2024/12/05 11:15:50 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 11:15:50 Respuesta POST: 200 OK
+2024/12/05 11:15:50 ## (1:4) Se crea el Hilo - Estado: READY
+2024/12/05 11:15:50 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:15:50 Respuesta POST: 200 OK
+2024/12/05 11:15:50 ## (1:0) - Solicitó syscall: THREAD_JOIN
+2024/12/05 11:15:50 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:15:50 Respuesta POST: 200 OK
+2024/12/05 11:15:50 ## (1:2) - Solicitó syscall: THREAD_EXIT
+2024/12/05 11:15:50 Respuesta POST: 200 OK
+2024/12/05 11:15:50 ## (1:2) Finaliza el hilo
+2024/12/05 11:15:50 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 11:15:50 Respuesta POST: 200 OK
+2024/12/05 11:15:50 ## (1:3) - Solicitó syscall: THREAD_EXIT
+2024/12/05 11:15:50 Respuesta POST: 200 OK
+2024/12/05 11:15:50 ## (1:3) Finaliza el hilo
+2024/12/05 11:15:50 ## (PID:TID) - (1:3) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 11:15:50 Respuesta POST: 200 OK
+2024/12/05 11:15:50 ## (1:1) - Solicitó syscall: THREAD_EXIT
+2024/12/05 11:15:50 Respuesta POST: 200 OK
+2024/12/05 11:15:50 ## (1:1) Finaliza el hilo
+2024/12/05 11:15:50 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 11:15:50 Respuesta POST: 200 OK
+2024/12/05 11:15:50 ## (1:4) - Solicitó syscall: THREAD_EXIT
+2024/12/05 11:15:50 Respuesta POST: 200 OK
+2024/12/05 11:15:50 0
+2024/12/05 11:15:50 ## (1:4) Finaliza el hilo
+2024/12/05 11:15:50 ## (PID:TID) - (1:4) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 11:15:50 Respuesta POST: 200 OK
+2024/12/05 11:15:50 ## (1:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/05 11:15:50 Respuesta POST: 200 OK
+2024/12/05 11:15:50 ## (1:0) Finaliza el hilo
+2024/12/05 11:15:50 Respuesta POST: 200 OK
+2024/12/05 11:15:50 ## Finaliza el proceso 1
+2024/12/05 11:15:50 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/05 11:15:50 Respuesta POST: 200 OK
+2024/12/05 11:18:26 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 11:18:26 Cola NEW está vacía, solicitando memoria.
+2024/12/05 11:18:26 Respuesta POST: 200 OK
+2024/12/05 11:18:26 Respuesta POST: 200 OK
+2024/12/05 11:18:26 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 11:18:26 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 11:18:26 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 11:18:26 Respuesta POST: 200 OK
+2024/12/05 11:18:26 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 11:18:26 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:18:26 Respuesta POST: 200 OK
+2024/12/05 11:18:26 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 11:18:26 Respuesta POST: 200 OK
+2024/12/05 11:18:26 ## (1:2) Se crea el Hilo - Estado: READY
+2024/12/05 11:18:26 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:18:26 Respuesta POST: 200 OK
+2024/12/05 11:18:26 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 11:18:26 Respuesta POST: 200 OK
+2024/12/05 11:18:26 ## (1:3) Se crea el Hilo - Estado: READY
+2024/12/05 11:18:26 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:18:26 Respuesta POST: 200 OK
+2024/12/05 11:18:26 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 11:18:26 Respuesta POST: 200 OK
+2024/12/05 11:18:26 ## (1:4) Se crea el Hilo - Estado: READY
+2024/12/05 11:18:26 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:18:26 Respuesta POST: 200 OK
+2024/12/05 11:18:26 ## (1:0) - Solicitó syscall: THREAD_JOIN
+2024/12/05 11:18:26 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:18:26 Respuesta POST: 200 OK
+2024/12/05 11:18:26 ## (1:2) - Solicitó syscall: THREAD_EXIT
+2024/12/05 11:18:26 Respuesta POST: 200 OK
+2024/12/05 11:18:26 ## (1:2) Finaliza el hilo
+2024/12/05 11:18:26 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 11:18:26 Respuesta POST: 200 OK
+2024/12/05 11:18:26 ## (1:3) - Solicitó syscall: THREAD_EXIT
+2024/12/05 11:18:26 Respuesta POST: 200 OK
+2024/12/05 11:18:26 ## (1:3) Finaliza el hilo
+2024/12/05 11:18:26 ## (PID:TID) - (1:3) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 11:18:26 Respuesta POST: 200 OK
+2024/12/05 11:18:26 ## (1:1) - Solicitó syscall: THREAD_EXIT
+2024/12/05 11:18:26 Respuesta POST: 200 OK
+2024/12/05 11:18:26 ## (1:1) Finaliza el hilo
+2024/12/05 11:18:26 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 11:18:26 Respuesta POST: 200 OK
+2024/12/05 11:18:26 ## (1:4) - Solicitó syscall: THREAD_EXIT
+2024/12/05 11:18:26 Respuesta POST: 200 OK
+2024/12/05 11:18:26 ## (1:4) Finaliza el hilo
+2024/12/05 11:18:26 ## (PID:TID) - (1:4) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 11:18:26 Respuesta POST: 200 OK
+2024/12/05 11:18:26 ## (1:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/05 11:18:26 Respuesta POST: 200 OK
+2024/12/05 11:18:26 ## (1:0) Finaliza el hilo
+2024/12/05 11:18:26 Respuesta POST: 200 OK
+2024/12/05 11:18:26 ## Finaliza el proceso 1
+2024/12/05 11:18:26 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/05 11:18:26 Respuesta POST: 200 OK
+2024/12/05 11:22:19 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 11:22:19 Cola NEW está vacía, solicitando memoria.
+2024/12/05 11:22:19 Respuesta POST: 200 OK
+2024/12/05 11:22:19 Respuesta POST: 200 OK
+2024/12/05 11:22:19 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 11:22:19 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 11:22:19 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 11:22:19 Respuesta POST: 200 OK
+2024/12/05 11:22:19 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 11:22:19 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:22:19 Respuesta POST: 200 OK
+2024/12/05 11:22:19 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 11:22:19 Respuesta POST: 200 OK
+2024/12/05 11:22:19 ## (1:2) Se crea el Hilo - Estado: READY
+2024/12/05 11:22:19 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:22:19 Respuesta POST: 200 OK
+2024/12/05 11:22:19 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 11:22:19 Respuesta POST: 200 OK
+2024/12/05 11:22:19 ## (1:3) Se crea el Hilo - Estado: READY
+2024/12/05 11:22:19 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:22:19 Respuesta POST: 200 OK
+2024/12/05 11:22:19 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 11:22:19 Respuesta POST: 200 OK
+2024/12/05 11:22:19 ## (1:4) Se crea el Hilo - Estado: READY
+2024/12/05 11:22:19 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:22:19 Respuesta POST: 200 OK
+2024/12/05 11:22:19 ## (1:0) - Solicitó syscall: THREAD_JOIN
+2024/12/05 11:22:19 ## Proceso 1 - Hilo 0 esperando por el hilo 4
+2024/12/05 11:22:19 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:22:19 Respuesta POST: 200 OK
+2024/12/05 11:22:19 ## (1:2) - Solicitó syscall: THREAD_EXIT
+2024/12/05 11:22:19 Respuesta POST: 200 OK
+2024/12/05 11:22:19 ## (1:2) Finaliza el hilo
+2024/12/05 11:22:19 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 11:22:19 Respuesta POST: 200 OK
+2024/12/05 11:22:19 ## (1:3) - Solicitó syscall: THREAD_EXIT
+2024/12/05 11:22:19 Respuesta POST: 200 OK
+2024/12/05 11:22:19 ## (1:3) Finaliza el hilo
+2024/12/05 11:22:19 ## (PID:TID) - (1:3) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 11:22:19 Respuesta POST: 200 OK
+2024/12/05 11:22:19 ## (1:1) - Solicitó syscall: THREAD_EXIT
+2024/12/05 11:22:19 Respuesta POST: 200 OK
+2024/12/05 11:22:19 ## (1:1) Finaliza el hilo
+2024/12/05 11:22:19 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 11:22:19 Respuesta POST: 200 OK
+2024/12/05 11:22:19 ## (1:4) - Solicitó syscall: THREAD_EXIT
+2024/12/05 11:22:19 Respuesta POST: 200 OK
+2024/12/05 11:22:19 ## (1:4) Finaliza el hilo
+2024/12/05 11:22:19 ## (PID:TID) - (1:4) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 11:22:19 Respuesta POST: 200 OK
+2024/12/05 11:22:19 ## (1:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/05 11:22:19 Respuesta POST: 200 OK
+2024/12/05 11:22:19 ## (1:0) Finaliza el hilo
+2024/12/05 11:22:19 Respuesta POST: 200 OK
+2024/12/05 11:22:19 ## Finaliza el proceso 1
+2024/12/05 11:22:19 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/05 11:22:19 Respuesta POST: 200 OK
+2024/12/05 11:26:19 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 11:26:19 Cola NEW está vacía, solicitando memoria.
+2024/12/05 11:26:19 Respuesta POST: 200 OK
+2024/12/05 11:26:19 Respuesta POST: 200 OK
+2024/12/05 11:26:19 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 11:26:19 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 11:26:19 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 11:26:19 Respuesta POST: 200 OK
+2024/12/05 11:26:19 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 11:26:19 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:26:19 Respuesta POST: 200 OK
+2024/12/05 11:26:19 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 11:26:19 Respuesta POST: 200 OK
+2024/12/05 11:26:19 ## (1:2) Se crea el Hilo - Estado: READY
+2024/12/05 11:26:19 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:26:19 Respuesta POST: 200 OK
+2024/12/05 11:26:19 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 11:26:19 Respuesta POST: 200 OK
+2024/12/05 11:26:19 ## (1:3) Se crea el Hilo - Estado: READY
+2024/12/05 11:26:19 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:26:19 Respuesta POST: 200 OK
+2024/12/05 11:26:19 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 11:26:19 Respuesta POST: 200 OK
+2024/12/05 11:26:19 ## (1:4) Se crea el Hilo - Estado: READY
+2024/12/05 11:26:19 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:26:19 Respuesta POST: 200 OK
+2024/12/05 11:26:19 ## (1:0) - Solicitó syscall: THREAD_JOIN
+2024/12/05 11:26:19 ## Proceso 1 - Hilo 0 esperando por el hilo 4
+2024/12/05 11:26:19 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 11:26:19 Respuesta POST: 200 OK
+2024/12/05 11:26:19 ## (1:2) - Solicitó syscall: THREAD_EXIT
+2024/12/05 11:26:19 Respuesta POST: 200 OK
+2024/12/05 11:26:19 ## (1:2) Finaliza el hilo
+2024/12/05 11:26:19 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 11:26:19 Respuesta POST: 200 OK
+2024/12/05 11:26:19 ## (1:3) - Solicitó syscall: THREAD_EXIT
+2024/12/05 11:26:19 Respuesta POST: 200 OK
+2024/12/05 11:26:19 ## (1:3) Finaliza el hilo
+2024/12/05 11:26:19 ## (PID:TID) - (1:3) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 11:26:19 Respuesta POST: 200 OK
+2024/12/05 11:26:19 ## (1:1) - Solicitó syscall: THREAD_EXIT
+2024/12/05 11:26:19 Respuesta POST: 200 OK
+2024/12/05 11:26:19 ## (1:1) Finaliza el hilo
+2024/12/05 11:26:19 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 11:26:19 Respuesta POST: 200 OK
+2024/12/05 11:26:19 ## (1:4) - Solicitó syscall: THREAD_EXIT
+2024/12/05 11:26:19 Respuesta POST: 200 OK
+2024/12/05 11:26:19 ## (1:4) Finaliza el hilo
+2024/12/05 11:26:19 ## (PID:TID) - (1:4) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 11:26:19 Respuesta POST: 200 OK
+2024/12/05 11:26:19 ## (1:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/05 11:26:19 Respuesta POST: 200 OK
+2024/12/05 11:26:19 ## (1:0) Finaliza el hilo
+2024/12/05 11:26:19 Respuesta POST: 200 OK
+2024/12/05 11:26:19 ## Finaliza el proceso 1
+2024/12/05 11:26:19 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/05 11:26:19 Respuesta POST: 200 OK

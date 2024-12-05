@@ -66,6 +66,7 @@ type RequestDevolverPcb struct {
 }
 
 type RequestInterrupcion struct {
-	Pid int `json:"pid"`
-	Tid int `json:"tid"`
+	Pid   int    `json:"pid"`
+	Tid   int    `json:"tid"`
+	Razon string `json:"razon"`
 }

@@ -22,9 +22,9 @@ func AgregarHiloACola(tcb *commons.TCB, cola *[]*commons.TCB) {
 	*cola = append(*cola, tcb)
 }
 
-func SacarHiloDeCola(tid int, cola *[]*commons.TCB) {
+func SacarHiloDeCola(tid int, pid int, cola *[]*commons.TCB) {
 	for i, tcb := range *cola {
-		if tcb.Tid == tid {
+		if tcb.Tid == tid && tcb.Pid == pid {
 			*cola = append((*cola)[:i], (*cola)[i+1:]...)
 			return
 		}
@@ -39,26 +39,24 @@ func BuscarPCBEnColas(pid int) *commons.PCB {
 	return nil
 }
 
-func BuscarColaDeHilo(tcbBuscado *commons.TCB) *[]*commons.TCB {
-	switch tcbBuscado.Estado {
-	case "READY":
-		return &globals.Estructura.ColaReady
-	case "BLOCKED":
-		return &globals.Estructura.ColaBloqueados
-	case "EXIT":
-		return &globals.Estructura.ColaExit
-	}
-	return nil
-}
-
 func BuscarTCBenPCB(pid int, tid int) *commons.TCB {
 	pcb := BuscarPCBEnColas(pid)
 
 	for _, tcb := range pcb.Tid {
 		if tcb.Tid == tid {
-			return &tcb
+			return tcb
 		}
 	}
 
 	return nil
+}
+
+func ConsultaBloqueado(pid int, tid int) bool {
+	for _, tcb := range globals.Estructura.ColaBloqueados {
+		if tcb.Pid == pid && tcb.Tid == tid {
+			return true
+		}
+	}
+
+	return false
 }

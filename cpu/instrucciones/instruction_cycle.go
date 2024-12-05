@@ -20,9 +20,7 @@ func RecibirInterrupcion(w http.ResponseWriter, r *http.Request) {
 
 	err := commons.DecodificarJSON(r.Body, &interrupcion)
 
-	interrupcion.Pid = interrupcionRecibida.Pid
-	interrupcion.Tid = interrupcionRecibida.Tid
-	interrupcion.Presencia = true
+	interrupcion = globals.InterrupcionStruct{Pid: interrupcionRecibida.Pid, Tid: interrupcionRecibida.Tid, Presencia: true, Razon: interrupcionRecibida.Razon}
 
 	if err != nil {
 		return
@@ -191,7 +189,7 @@ func CheckInterrupt(pid int, tid int) bool {
 	if interrupcion.Presencia == true {
 		interrupcion.Presencia = false
 		if interrupcion.Pid == pid && interrupcion.Tid == tid {
-			globals.DevolverPCB(pid, tid, "INTERRUPT")
+			globals.DevolverPCB(pid, tid, interrupcion.Razon)
 			return true
 		}
 	}

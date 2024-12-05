@@ -13,7 +13,7 @@ type Mensaje struct {
 
 type PCB struct {
 	Pid               int     `json:"pid"`
-	Tid               []TCB   `json:"tid"`
+	Tid               []*TCB  `json:"tid"`
 	Mutex             []Mutex `json:"mutex"`
 	ContadorHilos     int     `json:"contador_hilos"`
 	Estado            string  `json:"estado"`

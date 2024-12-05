@@ -18,7 +18,7 @@ func ManejarColaReady() {
 		go ManejarColaReadyFIFO()
 	case "CMN":
 		go ManejarColaReadyCMN()
-	case "PRIORITY":
+	case "PRIORIDADES":
 		go ManejarColaReadyPriority()
 	}
 }
@@ -60,16 +60,20 @@ func ManejarColaReadyFIFO() {
 
 func ManejarColaReadyPriority() {
 	for {
-		select {
-		case <-globals.Planificar:
-			if len(globals.Estructura.ColaReady) != 0 {
-				// Ordenar la cola de ready por prioridad
-				mu.Lock()
-				sort.SliceStable(globals.Estructura.ColaReady, func(i, j int) bool {
-					return globals.Estructura.ColaReady[i].Prioridad < globals.Estructura.ColaReady[j].Prioridad
-				})
-				mu.Unlock()
+		<-globals.Planificar
+		if len(globals.Estructura.ColaReady) != 0 {
+			mu.Lock()
+			sort.SliceStable(globals.Estructura.ColaReady, func(i, j int) bool {
+				return globals.Estructura.ColaReady[i].Prioridad < globals.Estructura.ColaReady[j].Prioridad
+			})
+			if globals.Estructura.HiloExecute != nil {
+				if globals.Estructura.ColaReady[0].Prioridad < globals.Estructura.HiloExecute.Prioridad {
+					handlers.Interrupt("Desalojo por prioridad", globals.Estructura.HiloExecute.Pid, globals.Estructura.HiloExecute.Tid)
+				}
+			} else {
+				globals.Estructura.HiloExecute = globals.Estructura.ColaReady[0]
 			}
+			mu.Unlock()
 		}
 	}
 }

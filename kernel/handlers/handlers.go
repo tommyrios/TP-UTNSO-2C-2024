@@ -87,6 +87,8 @@ func HandleThreadJoin(w http.ResponseWriter, r *http.Request) {
 
 	tcbParametro.TcbADesbloquear = append(tcbParametro.TcbADesbloquear, tcbExecute)
 
+	log.Printf("## Proceso %d - Hilo %d esperando por el hilo %d", tcbExecute.Pid, tcbExecute.Tid, tcbParametro.Tid)
+
 	w.WriteHeader(http.StatusOK)
 }
 
@@ -256,13 +258,14 @@ func Dispatch(pid int, tid int) (*http.Response, error) {
 	return cliente.Post(globals.KConfig.IpCpu, globals.KConfig.PortCpu, "dispatch", requestBody), err
 }
 
-func Interrupt(interruption string, pid int) (*http.Response, error) {
-	requestBody, err := commons.CodificarJSON(request.RequestInterrupcion{Razon: interruption, Pid: pid})
+func Interrupt(interruption string, pid int, tid int) *http.Response {
+	requestBody, err := commons.CodificarJSON(request.RequestInterrupcion{Razon: interruption, Pid: pid, Tid: tid})
 	if err != nil {
-		return nil, err
+		log.Printf("Error al codificar el JSON en Interrupt")
+		return nil
 	}
 
-	return cliente.Post(globals.KConfig.IpCpu, globals.KConfig.PortCpu, "interrupt", requestBody), err
+	return cliente.Post(globals.KConfig.IpCpu, globals.KConfig.PortCpu, "interrupt", requestBody)
 }
 
 func HandleCompactacion(w http.ResponseWriter, r *http.Request) {
@@ -298,14 +301,16 @@ func HandleDesalojoCpu(w http.ResponseWriter, r *http.Request) {
 	} else {
 		if req.Razon == "SYSCALL" || req.Razon == "INTERRUPCION" {
 			globals.Estructura.MtxReady.Lock()
-			queues.AgregarHiloACola(threads.BuscarHiloEnPCB(req.Pid, req.Tid), &globals.Estructura.ColaReady)
+			if !queues.ConsultaBloqueado(req.Pid, req.Tid) {
+				queues.AgregarHiloACola(threads.BuscarHiloEnPCB(req.Pid, req.Tid), &globals.Estructura.ColaReady)
+			}
 			globals.Estructura.MtxReady.Unlock()
 		}
 	}
 
 	globals.Estructura.HiloExecute = nil
 
-	log.Printf("## (PID:TID) - (%d:%d) - Hilo recibido de CPU", req.Pid, req.Tid)
+	log.Printf("## (PID:TID) - (%d:%d) - Hilo recibido de CPU - Razon: %s", req.Pid, req.Tid, req.Razon)
 	w.WriteHeader(http.StatusOK)
 
 	globals.Planificar <- true

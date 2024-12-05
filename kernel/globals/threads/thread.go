@@ -22,7 +22,7 @@ func CrearHilo(pid int, prioridad int, pseudocodigo string) {
 
 	pcb.ContadorHilos++
 
-	pcb.Tid = append(pcb.Tid, tcb) // Chequear después si hay que agregar un mutex
+	pcb.Tid = append(pcb.Tid, &tcb) // Chequear después si hay que agregar un mutex
 
 	req := request.RequestCrearHilo{
 		Pid:          pid,
@@ -67,7 +67,7 @@ func FinalizarHilo(pid int, tid int) {
 		tcb := BuscarHiloEnPCB(pid, tid)
 
 		if tcb.Estado != "EXEC" {
-			queues.SacarHiloDeCola(tid, &globals.Estructura.ColaReady)
+			queues.SacarHiloDeCola(tid, pid, &globals.Estructura.ColaReady)
 		}
 
 		tcb.Estado = "EXIT"
@@ -86,10 +86,6 @@ func FinalizarHilo(pid int, tid int) {
 		}
 	}
 
-	/*if globals.Estructura.HiloExecute.Pid == pid && globals.Estructura.HiloExecute.Tid == tid {
-		globals.CpuLibre <- true
-	}*/
-
 	log.Printf("## (%d:%d) Finaliza el hilo", pid, tid)
 
 }
@@ -99,7 +95,7 @@ func BuscarHiloEnPCB(pid int, tid int) *commons.TCB {
 
 	for _, tcb := range pcb.Tid {
 		if tcb.Tid == tid {
-			return &tcb
+			return tcb
 		}
 	}
 
@@ -109,7 +105,7 @@ func BuscarHiloEnPCB(pid int, tid int) *commons.TCB {
 func DesbloquearHilo(tcb *commons.TCB) {
 	tcb.Estado = "READY"
 
-	queues.SacarHiloDeCola(tcb.Tid, &globals.Estructura.ColaBloqueados)
+	queues.SacarHiloDeCola(tcb.Tid, tcb.Pid, &globals.Estructura.ColaBloqueados)
 
 	queues.AgregarHiloACola(tcb, &globals.Estructura.ColaReady)
 }

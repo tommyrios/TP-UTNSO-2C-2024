@@ -82,8 +82,9 @@ type RequestCrearHilo struct {
 }
 
 type RequestInterrupcion struct {
-	Razon string `json:"razon"`
 	Pid   int    `json:"pid"`
+	Tid   int    `json:"tid"`
+	Razon string `json:"razon"`
 }
 
 type RequestDevolucionPCB struct {

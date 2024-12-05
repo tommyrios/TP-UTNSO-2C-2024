@@ -11,8 +11,6 @@ import (
 func Post(ip string, port int, ruta string, jsonData []byte) *http.Response {
 	url := fmt.Sprintf("http://%s:%d/%s", ip, port, ruta)
 
-	log.Println("URL:", url)
-
 	response, err := http.Post(url, "application/json", bytes.NewBuffer(jsonData))
 
 	if err != nil {
