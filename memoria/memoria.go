@@ -44,7 +44,7 @@ func main() {
 	mux.HandleFunc("/finalizar_proceso", handlers.HandleFinalizarProceso)
 	mux.HandleFunc("/crear_hilo", handlers.HandleCrearHilo)
 	mux.HandleFunc("/finalizar_hilo", handlers.HandleFinalizarHilo)
-	mux.HandleFunc("/memory_dump", handlers.HandleMemoryDump)
+	mux.HandleFunc("/dump", handlers.HandleMemoryDump)
 
 	port := fmt.Sprintf(":%d", globals.MConfig.Port)
 

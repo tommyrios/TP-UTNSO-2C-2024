@@ -11,7 +11,6 @@ import (
 	"github.com/sisoputnfrba/tp-golang/filesystem/handlers"
 	"github.com/sisoputnfrba/tp-golang/filesystem/inicializacion"
 
-	"github.com/sisoputnfrba/tp-golang/utils/commons"
 	configs "github.com/sisoputnfrba/tp-golang/utils/config"
 )
 
@@ -41,7 +40,6 @@ func main() {
 
 	//// Conexión ////
 	mux := http.NewServeMux()
-	mux.HandleFunc("/mensaje", commons.RecibirMensaje)
 	mux.HandleFunc("/dump_memory", handlers.CrearArchivoDump)
 
 	port := fmt.Sprintf(":%d", globals.FSConfig.Port)

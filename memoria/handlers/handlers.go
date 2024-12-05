@@ -305,6 +305,8 @@ func HandleMemoryDump(w http.ResponseWriter, r *http.Request) {
 		Contenido: ContenidoProceso,
 	}
 
+	log.Printf("Solicitud antes de codificar: %+v", solicitud)
+
 	solicitudCodificada, err := commons.CodificarJSON(solicitud)
 
 	if err != nil {

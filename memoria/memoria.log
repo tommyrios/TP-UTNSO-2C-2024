@@ -4373,6 +4373,1300 @@ created by net/http.(*Server).Serve in goroutine 1
 2024/12/05 11:26:19 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_EXIT}
 2024/12/05 11:26:19 ## Hilo destruido - (PID:TID) - (1:0)
 2024/12/05 11:26:19 ## Proceso destruido -  PID: 1 - Tamaño: 512
+2024/12/05 11:50:07 Memoria inicializada con éxito.
+2024/12/05 11:50:07 El módulo memoria está a la escucha en el puerto :8002
+2024/12/05 11:50:32 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/05 11:50:32 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/05 11:50:32 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 11:50:32 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/05 11:50:32 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 1}
+2024/12/05 11:50:32 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/05 11:50:32 ## Hilo creado - (PID:TID) - (1:1)
+2024/12/05 11:50:32 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 11:50:32 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 11:50:32 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 11:50:32 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 5}
+2024/12/05 11:50:32 ## Hilo creado - (PID:TID) - (1:2)
+2024/12/05 11:50:32 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 11:50:32 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 11:50:32 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 11:50:32 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 5}
+2024/12/05 11:50:32 ## Hilo creado - (PID:TID) - (1:3)
+2024/12/05 11:50:32 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 11:50:32 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 11:50:32 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 11:50:32 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/05 11:50:32 ## Hilo creado - (PID:TID) - (1:4)
+2024/12/05 11:50:32 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 11:50:32 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 11:50:32 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 11:50:32 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_JOIN 4}
+2024/12/05 11:50:32 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 11:50:32 ## Contexto solicitado - (PID:TID) - (1:2)
+2024/12/05 11:50:32 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SET CX 5}
+2024/12/05 11:50:32 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SET BX 1}
+2024/12/05 11:50:32 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SUB CX BX}
+2024/12/05 11:50:32 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {THREAD_EXIT}
+2024/12/05 11:50:32 ## Hilo destruido - (PID:TID) - (1:2)
+2024/12/05 11:50:32 ## Contexto solicitado - (PID:TID) - (1:3)
+2024/12/05 11:50:32 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {SET CX 5}
+2024/12/05 11:50:32 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {SET BX 1}
+2024/12/05 11:50:32 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {SUB CX BX}
+2024/12/05 11:50:32 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {THREAD_EXIT}
+2024/12/05 11:50:32 ## Hilo destruido - (PID:TID) - (1:3)
+2024/12/05 11:50:32 ## Contexto solicitado - (PID:TID) - (1:1)
+2024/12/05 11:50:32 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SET CX 5}
+2024/12/05 11:50:32 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SET BX 1}
+2024/12/05 11:50:32 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SUB CX BX}
+2024/12/05 11:50:32 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {THREAD_EXIT}
+2024/12/05 11:50:32 ## Hilo destruido - (PID:TID) - (1:1)
+2024/12/05 11:50:32 ## Contexto solicitado - (PID:TID) - (1:4)
+2024/12/05 11:50:32 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {SET CX 5}
+2024/12/05 11:50:32 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {SET BX 1}
+2024/12/05 11:50:32 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {SUB CX BX}
+2024/12/05 11:50:32 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {THREAD_EXIT}
+2024/12/05 11:50:32 ## Hilo destruido - (PID:TID) - (1:4)
+2024/12/05 11:50:32 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 11:50:32 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_EXIT}
+2024/12/05 11:50:32 ## Hilo destruido - (PID:TID) - (1:0)
+2024/12/05 11:50:32 ## Proceso destruido -  PID: 1 - Tamaño: 512
+2024/12/05 11:52:34 Memoria inicializada con éxito.
+2024/12/05 11:52:34 El módulo memoria está a la escucha en el puerto :8002
+2024/12/05 11:52:45 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/05 11:52:45 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/05 11:52:45 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 11:52:45 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/05 11:52:45 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 1}
+2024/12/05 11:52:45 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/05 11:52:45 ## Hilo creado - (PID:TID) - (1:1)
+2024/12/05 11:52:45 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 11:52:45 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 11:52:45 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 11:52:45 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 5}
+2024/12/05 11:52:45 ## Hilo creado - (PID:TID) - (1:2)
+2024/12/05 11:52:45 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 11:52:45 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 11:52:45 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 11:52:45 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 5}
+2024/12/05 11:52:45 ## Hilo creado - (PID:TID) - (1:3)
+2024/12/05 11:52:45 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 11:52:45 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 11:52:45 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 11:52:45 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/05 11:52:45 ## Hilo creado - (PID:TID) - (1:4)
+2024/12/05 11:52:45 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 11:52:45 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 11:52:45 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 11:52:45 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_JOIN 4}
+2024/12/05 11:52:45 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 11:52:45 ## Contexto solicitado - (PID:TID) - (1:2)
+2024/12/05 11:52:45 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SET CX 5}
+2024/12/05 11:52:45 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SET BX 1}
+2024/12/05 11:52:45 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SUB CX BX}
+2024/12/05 11:52:45 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {THREAD_EXIT}
+2024/12/05 11:52:45 ## Hilo destruido - (PID:TID) - (1:2)
+2024/12/05 11:52:45 ## Contexto solicitado - (PID:TID) - (1:3)
+2024/12/05 11:52:45 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {SET CX 5}
+2024/12/05 11:52:45 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {SET BX 1}
+2024/12/05 11:52:45 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {SUB CX BX}
+2024/12/05 11:52:45 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {THREAD_EXIT}
+2024/12/05 11:52:45 ## Hilo destruido - (PID:TID) - (1:3)
+2024/12/05 11:52:45 ## Contexto solicitado - (PID:TID) - (1:1)
+2024/12/05 11:52:45 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SET CX 5}
+2024/12/05 11:52:45 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SET BX 1}
+2024/12/05 11:52:45 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SUB CX BX}
+2024/12/05 11:52:45 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {THREAD_EXIT}
+2024/12/05 11:52:45 ## Hilo destruido - (PID:TID) - (1:1)
+2024/12/05 11:52:45 ## Contexto solicitado - (PID:TID) - (1:4)
+2024/12/05 11:52:45 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {SET CX 5}
+2024/12/05 11:52:45 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {SET BX 1}
+2024/12/05 11:52:45 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {SUB CX BX}
+2024/12/05 11:52:45 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {THREAD_EXIT}
+2024/12/05 11:52:45 ## Hilo destruido - (PID:TID) - (1:4)
+2024/12/05 11:52:45 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 11:52:45 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {DUMP_MEMORY}
+2024/12/05 11:52:45 ## Hilo destruido - (PID:TID) - (1:0)
+2024/12/05 11:52:45 ## Proceso destruido -  PID: 1 - Tamaño: 512
+2024/12/05 11:52:45 Error al actualizar los registros - (PID:TID) - (1:0)
+2024/12/05 11:57:54 Memoria inicializada con éxito.
+2024/12/05 11:57:54 El módulo memoria está a la escucha en el puerto :8002
+2024/12/05 11:58:02 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/05 11:58:02 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/05 11:58:02 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 11:58:02 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/05 11:58:02 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 1}
+2024/12/05 11:58:02 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/05 11:58:02 ## Hilo creado - (PID:TID) - (1:1)
+2024/12/05 11:58:02 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 11:58:02 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 11:58:02 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 11:58:02 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 5}
+2024/12/05 11:58:02 ## Hilo creado - (PID:TID) - (1:2)
+2024/12/05 11:58:02 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 11:58:02 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 11:58:02 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 11:58:02 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 5}
+2024/12/05 11:58:02 ## Hilo creado - (PID:TID) - (1:3)
+2024/12/05 11:58:02 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 11:58:02 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 11:58:02 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 11:58:02 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/05 11:58:02 ## Hilo creado - (PID:TID) - (1:4)
+2024/12/05 11:58:02 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 11:58:02 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 11:58:02 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 11:58:02 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_JOIN 4}
+2024/12/05 11:58:02 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 11:58:02 ## Contexto solicitado - (PID:TID) - (1:2)
+2024/12/05 11:58:02 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SET CX 5}
+2024/12/05 11:58:02 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SET BX 1}
+2024/12/05 11:58:02 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SUB CX BX}
+2024/12/05 11:58:02 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {THREAD_EXIT}
+2024/12/05 11:58:02 ## Hilo destruido - (PID:TID) - (1:2)
+2024/12/05 11:58:02 ## Contexto solicitado - (PID:TID) - (1:3)
+2024/12/05 11:58:02 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {SET CX 5}
+2024/12/05 11:58:02 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {SET BX 1}
+2024/12/05 11:58:02 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {SUB CX BX}
+2024/12/05 11:58:02 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {THREAD_EXIT}
+2024/12/05 11:58:02 ## Hilo destruido - (PID:TID) - (1:3)
+2024/12/05 11:58:02 ## Contexto solicitado - (PID:TID) - (1:1)
+2024/12/05 11:58:02 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SET CX 5}
+2024/12/05 11:58:02 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SET BX 1}
+2024/12/05 11:58:02 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SUB CX BX}
+2024/12/05 11:58:02 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {THREAD_EXIT}
+2024/12/05 11:58:02 ## Hilo destruido - (PID:TID) - (1:1)
+2024/12/05 11:58:02 ## Contexto solicitado - (PID:TID) - (1:4)
+2024/12/05 11:58:02 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {SET CX 5}
+2024/12/05 11:58:02 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {SET BX 1}
+2024/12/05 11:58:02 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {SUB CX BX}
+2024/12/05 11:58:02 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {THREAD_EXIT}
+2024/12/05 11:58:02 ## Hilo destruido - (PID:TID) - (1:4)
+2024/12/05 11:58:02 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 11:58:02 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {DUMP_MEMORY}
+2024/12/05 11:58:02 ## Hilo destruido - (PID:TID) - (1:0)
+2024/12/05 11:58:02 ## Proceso destruido -  PID: 1 - Tamaño: 512
+2024/12/05 11:58:02 Error al actualizar los registros - (PID:TID) - (1:0)
+2024/12/05 11:59:01 Memoria inicializada con éxito.
+2024/12/05 11:59:01 El módulo memoria está a la escucha en el puerto :8002
+2024/12/05 11:59:18 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/05 11:59:18 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/05 11:59:18 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 11:59:18 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/05 11:59:18 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 1}
+2024/12/05 11:59:18 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/05 11:59:18 ## Hilo creado - (PID:TID) - (1:1)
+2024/12/05 11:59:18 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 11:59:18 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 11:59:18 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 11:59:18 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 5}
+2024/12/05 11:59:18 ## Hilo creado - (PID:TID) - (1:2)
+2024/12/05 11:59:18 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 11:59:18 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 11:59:18 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 11:59:18 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 5}
+2024/12/05 11:59:18 ## Hilo creado - (PID:TID) - (1:3)
+2024/12/05 11:59:18 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 11:59:18 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 11:59:18 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 11:59:18 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/05 11:59:18 ## Hilo creado - (PID:TID) - (1:4)
+2024/12/05 11:59:18 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 11:59:18 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 11:59:18 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 11:59:18 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_JOIN 4}
+2024/12/05 11:59:18 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 11:59:18 ## Contexto solicitado - (PID:TID) - (1:2)
+2024/12/05 11:59:18 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SET CX 5}
+2024/12/05 11:59:18 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SET BX 1}
+2024/12/05 11:59:18 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SUB CX BX}
+2024/12/05 11:59:18 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {THREAD_EXIT}
+2024/12/05 11:59:18 ## Hilo destruido - (PID:TID) - (1:2)
+2024/12/05 11:59:18 ## Contexto solicitado - (PID:TID) - (1:3)
+2024/12/05 11:59:18 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {SET CX 5}
+2024/12/05 11:59:18 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {SET BX 1}
+2024/12/05 11:59:18 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {SUB CX BX}
+2024/12/05 11:59:18 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {THREAD_EXIT}
+2024/12/05 11:59:18 ## Hilo destruido - (PID:TID) - (1:3)
+2024/12/05 11:59:18 ## Contexto solicitado - (PID:TID) - (1:1)
+2024/12/05 11:59:18 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SET CX 5}
+2024/12/05 11:59:18 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SET BX 1}
+2024/12/05 11:59:18 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SUB CX BX}
+2024/12/05 11:59:18 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {THREAD_EXIT}
+2024/12/05 11:59:18 ## Hilo destruido - (PID:TID) - (1:1)
+2024/12/05 11:59:18 ## Contexto solicitado - (PID:TID) - (1:4)
+2024/12/05 11:59:18 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {SET CX 5}
+2024/12/05 11:59:18 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {SET BX 1}
+2024/12/05 11:59:18 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {SUB CX BX}
+2024/12/05 11:59:18 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {THREAD_EXIT}
+2024/12/05 11:59:18 ## Hilo destruido - (PID:TID) - (1:4)
+2024/12/05 11:59:18 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 11:59:18 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {DUMP_MEMORY}
+2024/12/05 11:59:18 ## Hilo destruido - (PID:TID) - (1:0)
+2024/12/05 11:59:18 ## Proceso destruido -  PID: 1 - Tamaño: 512
+2024/12/05 11:59:18 Error al actualizar los registros - (PID:TID) - (1:0)
+2024/12/05 12:08:07 Memoria inicializada con éxito.
+2024/12/05 12:08:07 El módulo memoria está a la escucha en el puerto :8002
+2024/12/05 12:08:26 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/05 12:08:26 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/05 12:08:26 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 12:08:26 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/05 12:08:26 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 1}
+2024/12/05 12:08:26 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/05 12:08:26 ## Hilo creado - (PID:TID) - (1:1)
+2024/12/05 12:08:26 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 12:08:26 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 12:08:26 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 12:08:26 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 5}
+2024/12/05 12:08:26 ## Hilo creado - (PID:TID) - (1:2)
+2024/12/05 12:08:26 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 12:08:26 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 12:08:26 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 12:08:26 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 5}
+2024/12/05 12:08:26 ## Hilo creado - (PID:TID) - (1:3)
+2024/12/05 12:08:26 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 12:08:26 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 12:08:26 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 12:08:26 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/05 12:08:26 ## Hilo creado - (PID:TID) - (1:4)
+2024/12/05 12:08:26 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 12:08:26 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 12:08:26 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 12:08:26 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_JOIN 4}
+2024/12/05 12:08:26 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 12:08:26 ## Contexto solicitado - (PID:TID) - (1:2)
+2024/12/05 12:08:26 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SET CX 5}
+2024/12/05 12:08:26 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SET BX 1}
+2024/12/05 12:08:26 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SUB CX BX}
+2024/12/05 12:08:26 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {THREAD_EXIT}
+2024/12/05 12:08:26 ## Hilo destruido - (PID:TID) - (1:2)
+2024/12/05 12:08:26 ## Contexto solicitado - (PID:TID) - (1:3)
+2024/12/05 12:08:26 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {SET CX 5}
+2024/12/05 12:08:26 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {SET BX 1}
+2024/12/05 12:08:26 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {SUB CX BX}
+2024/12/05 12:08:26 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {THREAD_EXIT}
+2024/12/05 12:08:26 ## Hilo destruido - (PID:TID) - (1:3)
+2024/12/05 12:08:26 ## Contexto solicitado - (PID:TID) - (1:1)
+2024/12/05 12:08:26 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SET CX 5}
+2024/12/05 12:08:26 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SET BX 1}
+2024/12/05 12:08:26 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SUB CX BX}
+2024/12/05 12:08:26 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {THREAD_EXIT}
+2024/12/05 12:08:26 ## Hilo destruido - (PID:TID) - (1:1)
+2024/12/05 12:08:26 ## Contexto solicitado - (PID:TID) - (1:4)
+2024/12/05 12:08:26 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {SET CX 5}
+2024/12/05 12:08:26 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {SET BX 1}
+2024/12/05 12:08:26 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {SUB CX BX}
+2024/12/05 12:08:26 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {THREAD_EXIT}
+2024/12/05 12:08:26 ## Hilo destruido - (PID:TID) - (1:4)
+2024/12/05 12:08:26 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 12:08:26 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {DUMP_MEMORY}
+2024/12/05 12:08:26 ## Hilo destruido - (PID:TID) - (1:0)
+2024/12/05 12:08:26 ## Proceso destruido -  PID: 1 - Tamaño: 512
+2024/12/05 12:08:26 Error al actualizar los registros - (PID:TID) - (1:0)
+2024/12/05 12:11:49 Memoria inicializada con éxito.
+2024/12/05 12:11:49 El módulo memoria está a la escucha en el puerto :8002
+2024/12/05 12:12:05 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/05 12:12:05 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/05 12:12:05 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 12:12:05 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/05 12:12:05 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 1}
+2024/12/05 12:12:05 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/05 12:12:05 ## Hilo creado - (PID:TID) - (1:1)
+2024/12/05 12:12:05 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 12:12:05 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 12:12:05 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 12:12:05 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 5}
+2024/12/05 12:12:05 ## Hilo creado - (PID:TID) - (1:2)
+2024/12/05 12:12:05 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 12:12:05 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 12:12:05 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 12:12:05 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 5}
+2024/12/05 12:12:05 ## Hilo creado - (PID:TID) - (1:3)
+2024/12/05 12:12:05 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 12:12:05 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 12:12:05 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 12:12:05 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/05 12:12:05 ## Hilo creado - (PID:TID) - (1:4)
+2024/12/05 12:12:05 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 12:12:05 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 12:12:05 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 12:12:05 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_JOIN 4}
+2024/12/05 12:12:05 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 12:12:05 ## Contexto solicitado - (PID:TID) - (1:2)
+2024/12/05 12:12:05 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SET CX 5}
+2024/12/05 12:12:05 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SET BX 1}
+2024/12/05 12:12:05 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SUB CX BX}
+2024/12/05 12:12:05 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {THREAD_EXIT}
+2024/12/05 12:12:05 ## Hilo destruido - (PID:TID) - (1:2)
+2024/12/05 12:12:05 ## Contexto solicitado - (PID:TID) - (1:3)
+2024/12/05 12:12:05 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {SET CX 5}
+2024/12/05 12:12:05 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {SET BX 1}
+2024/12/05 12:12:05 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {SUB CX BX}
+2024/12/05 12:12:05 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {THREAD_EXIT}
+2024/12/05 12:12:05 ## Hilo destruido - (PID:TID) - (1:3)
+2024/12/05 12:12:05 ## Contexto solicitado - (PID:TID) - (1:1)
+2024/12/05 12:12:05 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SET CX 5}
+2024/12/05 12:12:05 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SET BX 1}
+2024/12/05 12:12:05 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SUB CX BX}
+2024/12/05 12:12:05 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {THREAD_EXIT}
+2024/12/05 12:12:05 ## Hilo destruido - (PID:TID) - (1:1)
+2024/12/05 12:12:05 ## Contexto solicitado - (PID:TID) - (1:4)
+2024/12/05 12:12:05 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {SET CX 5}
+2024/12/05 12:12:05 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {SET BX 1}
+2024/12/05 12:12:05 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {SUB CX BX}
+2024/12/05 12:12:05 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {THREAD_EXIT}
+2024/12/05 12:12:05 ## Hilo destruido - (PID:TID) - (1:4)
+2024/12/05 12:12:05 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 12:12:05 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {DUMP_MEMORY}
+2024/12/05 12:12:05 ## Hilo destruido - (PID:TID) - (1:0)
+2024/12/05 12:12:05 ## Proceso destruido -  PID: 1 - Tamaño: 512
+2024/12/05 12:12:05 Error al actualizar los registros - (PID:TID) - (1:0)
+2024/12/05 12:13:12 Memoria inicializada con éxito.
+2024/12/05 12:13:12 El módulo memoria está a la escucha en el puerto :8002
+2024/12/05 12:13:28 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/05 12:13:28 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/05 12:13:28 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 12:13:28 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/05 12:13:28 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 1}
+2024/12/05 12:13:28 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/05 12:13:28 ## Hilo creado - (PID:TID) - (1:1)
+2024/12/05 12:13:28 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 12:13:28 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 12:13:28 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 12:13:28 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 5}
+2024/12/05 12:13:28 ## Hilo creado - (PID:TID) - (1:2)
+2024/12/05 12:13:28 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 12:13:28 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 12:13:28 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 12:13:28 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 5}
+2024/12/05 12:13:28 ## Hilo creado - (PID:TID) - (1:3)
+2024/12/05 12:13:28 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 12:13:28 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 12:13:28 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 12:13:28 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/05 12:13:28 ## Hilo creado - (PID:TID) - (1:4)
+2024/12/05 12:13:28 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 12:13:28 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 12:13:28 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 12:13:28 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_JOIN 4}
+2024/12/05 12:13:28 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 12:13:28 ## Contexto solicitado - (PID:TID) - (1:2)
+2024/12/05 12:13:28 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SET CX 5}
+2024/12/05 12:13:28 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SET BX 1}
+2024/12/05 12:13:28 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SUB CX BX}
+2024/12/05 12:13:28 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {THREAD_EXIT}
+2024/12/05 12:13:28 ## Hilo destruido - (PID:TID) - (1:2)
+2024/12/05 12:13:28 ## Contexto solicitado - (PID:TID) - (1:3)
+2024/12/05 12:13:28 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {SET CX 5}
+2024/12/05 12:13:28 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {SET BX 1}
+2024/12/05 12:13:28 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {SUB CX BX}
+2024/12/05 12:13:28 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {THREAD_EXIT}
+2024/12/05 12:13:28 ## Hilo destruido - (PID:TID) - (1:3)
+2024/12/05 12:13:28 ## Contexto solicitado - (PID:TID) - (1:1)
+2024/12/05 12:13:28 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SET CX 5}
+2024/12/05 12:13:28 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SET BX 1}
+2024/12/05 12:13:28 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SUB CX BX}
+2024/12/05 12:13:28 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {THREAD_EXIT}
+2024/12/05 12:13:28 ## Hilo destruido - (PID:TID) - (1:1)
+2024/12/05 12:13:28 ## Contexto solicitado - (PID:TID) - (1:4)
+2024/12/05 12:13:28 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {SET CX 5}
+2024/12/05 12:13:28 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {SET BX 1}
+2024/12/05 12:13:28 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {SUB CX BX}
+2024/12/05 12:13:28 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {THREAD_EXIT}
+2024/12/05 12:13:28 ## Hilo destruido - (PID:TID) - (1:4)
+2024/12/05 12:13:28 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 12:13:28 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {DUMP_MEMORY}
+2024/12/05 12:13:28 HOLA
+2024/12/05 12:13:28 http: panic serving 127.0.0.1:60310: Post "http://127.0.0.1:8006//dump_memory": dial tcp 127.0.0.1:8006: connectex: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+goroutine 77 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
+panic({0xb03b60?, 0xc0000faab0?})
+	C:/Program Files/Go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/utils/cliente.Post({0xc00000a6d0?, 0x0?}, 0x1f46, {0xb47561, 0xc}, {0xc000208300, 0x2da, 0x300})
+	C:/Users/Tomás/Desktop/Facultad/FACULTAD/3 AÑO/S.O/GO/tp-2024-2c-Equipo-Operativo/tp-2024-2c-Equipo-Operativo/utils/cliente/client.go:17 +0x2c6
+github.com/sisoputnfrba/tp-golang/memoria/handlers.HandleMemoryDump({0xbd2950, 0xc0002021c0}, 0xc00011adc0)
+	C:/Users/Tomás/Desktop/Facultad/FACULTAD/3 AÑO/S.O/GO/tp-2024-2c-Equipo-Operativo/tp-2024-2c-Equipo-Operativo/memoria/handlers/handlers.go:316 +0x367
+net/http.HandlerFunc.ServeHTTP(0xc0001aa0e0?, {0xbd2950?, 0xc0002021c0?}, 0x6751c318?)
+	C:/Program Files/Go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x81da65?, {0xbd2950, 0xc0002021c0}, 0xc00011adc0)
+	C:/Program Files/Go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0xbd14d8?}, {0xbd2950?, 0xc0002021c0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc0002003f0, {0xbd2e18, 0xc00001d2c0})
+	C:/Program Files/Go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3360 +0x485
+2024/12/05 12:14:57 Memoria inicializada con éxito.
+2024/12/05 12:14:57 El módulo memoria está a la escucha en el puerto :8002
+2024/12/05 12:15:13 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/05 12:15:13 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/05 12:15:13 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 12:15:13 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/05 12:15:13 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 1}
+2024/12/05 12:15:13 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/05 12:15:13 ## Hilo creado - (PID:TID) - (1:1)
+2024/12/05 12:15:13 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 12:15:13 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 12:15:13 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 12:15:13 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 5}
+2024/12/05 12:15:13 ## Hilo creado - (PID:TID) - (1:2)
+2024/12/05 12:15:13 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 12:15:13 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 12:15:13 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 12:15:13 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 5}
+2024/12/05 12:15:13 ## Hilo creado - (PID:TID) - (1:3)
+2024/12/05 12:15:13 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 12:15:13 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 12:15:13 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 12:15:13 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/05 12:15:13 ## Hilo creado - (PID:TID) - (1:4)
+2024/12/05 12:15:13 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 12:15:13 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 12:15:13 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 12:15:13 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_JOIN 4}
+2024/12/05 12:15:13 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 12:15:13 ## Contexto solicitado - (PID:TID) - (1:2)
+2024/12/05 12:15:13 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SET CX 5}
+2024/12/05 12:15:13 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SET BX 1}
+2024/12/05 12:15:13 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SUB CX BX}
+2024/12/05 12:15:13 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {THREAD_EXIT}
+2024/12/05 12:15:13 ## Hilo destruido - (PID:TID) - (1:2)
+2024/12/05 12:15:13 ## Contexto solicitado - (PID:TID) - (1:3)
+2024/12/05 12:15:13 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {SET CX 5}
+2024/12/05 12:15:13 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {SET BX 1}
+2024/12/05 12:15:13 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {SUB CX BX}
+2024/12/05 12:15:13 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {THREAD_EXIT}
+2024/12/05 12:15:13 ## Hilo destruido - (PID:TID) - (1:3)
+2024/12/05 12:15:13 ## Contexto solicitado - (PID:TID) - (1:1)
+2024/12/05 12:15:13 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SET CX 5}
+2024/12/05 12:15:13 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SET BX 1}
+2024/12/05 12:15:13 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SUB CX BX}
+2024/12/05 12:15:13 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {THREAD_EXIT}
+2024/12/05 12:15:13 ## Hilo destruido - (PID:TID) - (1:1)
+2024/12/05 12:15:13 ## Contexto solicitado - (PID:TID) - (1:4)
+2024/12/05 12:15:13 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {SET CX 5}
+2024/12/05 12:15:13 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {SET BX 1}
+2024/12/05 12:15:13 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {SUB CX BX}
+2024/12/05 12:15:13 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {THREAD_EXIT}
+2024/12/05 12:15:13 ## Hilo destruido - (PID:TID) - (1:4)
+2024/12/05 12:15:13 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 12:15:13 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {DUMP_MEMORY}
+2024/12/05 12:15:13 HOLA
+2024/12/05 12:15:13 Respuesta POST: 400 Bad Request
+2024/12/05 12:15:13 Error al realizar el dump de memoria - (PID:TID) - (1:0)
+2024/12/05 12:15:13 ## Hilo destruido - (PID:TID) - (1:0)
+2024/12/05 12:15:13 ## Proceso destruido -  PID: 1 - Tamaño: 512
+2024/12/05 12:15:13 Error al actualizar los registros - (PID:TID) - (1:0)
+2024/12/05 12:27:03 Memoria inicializada con éxito.
+2024/12/05 12:27:03 El módulo memoria está a la escucha en el puerto :8002
+2024/12/05 12:27:18 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/05 12:27:18 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/05 12:27:18 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 12:27:18 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/05 12:27:18 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 1}
+2024/12/05 12:27:18 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/05 12:27:18 ## Hilo creado - (PID:TID) - (1:1)
+2024/12/05 12:27:18 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 12:27:18 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 12:27:18 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 12:27:18 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 5}
+2024/12/05 12:27:18 ## Hilo creado - (PID:TID) - (1:2)
+2024/12/05 12:27:18 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 12:27:18 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 12:27:18 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 12:27:18 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 5}
+2024/12/05 12:27:18 ## Hilo creado - (PID:TID) - (1:3)
+2024/12/05 12:27:18 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 12:27:18 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 12:27:18 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 12:27:18 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/05 12:27:18 ## Hilo creado - (PID:TID) - (1:4)
+2024/12/05 12:27:18 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 12:27:18 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 12:27:18 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 12:27:18 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_JOIN 4}
+2024/12/05 12:27:18 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 12:27:18 ## Contexto solicitado - (PID:TID) - (1:2)
+2024/12/05 12:27:18 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SET CX 5}
+2024/12/05 12:27:18 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SET BX 1}
+2024/12/05 12:27:18 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SUB CX BX}
+2024/12/05 12:27:18 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {THREAD_EXIT}
+2024/12/05 12:27:18 ## Hilo destruido - (PID:TID) - (1:2)
+2024/12/05 12:27:18 ## Contexto solicitado - (PID:TID) - (1:3)
+2024/12/05 12:27:18 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {SET CX 5}
+2024/12/05 12:27:18 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {SET BX 1}
+2024/12/05 12:27:18 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {SUB CX BX}
+2024/12/05 12:27:18 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {THREAD_EXIT}
+2024/12/05 12:27:18 ## Hilo destruido - (PID:TID) - (1:3)
+2024/12/05 12:27:18 ## Contexto solicitado - (PID:TID) - (1:1)
+2024/12/05 12:27:18 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SET CX 5}
+2024/12/05 12:27:18 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SET BX 1}
+2024/12/05 12:27:18 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SUB CX BX}
+2024/12/05 12:27:18 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {THREAD_EXIT}
+2024/12/05 12:27:18 ## Hilo destruido - (PID:TID) - (1:1)
+2024/12/05 12:27:18 ## Contexto solicitado - (PID:TID) - (1:4)
+2024/12/05 12:27:18 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {SET CX 5}
+2024/12/05 12:27:18 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {SET BX 1}
+2024/12/05 12:27:18 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {SUB CX BX}
+2024/12/05 12:27:18 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {THREAD_EXIT}
+2024/12/05 12:27:18 ## Hilo destruido - (PID:TID) - (1:4)
+2024/12/05 12:27:18 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 12:27:18 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {DUMP_MEMORY}
+2024/12/05 12:27:18 HOLA
+2024/12/05 12:27:18 Respuesta POST: 400 Bad Request
+2024/12/05 12:27:18 Respuesta: 400
+2024/12/05 12:27:18 Error al realizar el dump de memoria - (PID:TID) - (1:0)
+2024/12/05 12:27:18 ## Hilo destruido - (PID:TID) - (1:0)
+2024/12/05 12:27:18 ## Proceso destruido -  PID: 1 - Tamaño: 512
+2024/12/05 12:27:18 Error al actualizar los registros - (PID:TID) - (1:0)
+2024/12/05 12:44:25 Memoria inicializada con éxito.
+2024/12/05 12:44:25 El módulo memoria está a la escucha en el puerto :8002
+2024/12/05 12:44:41 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/05 12:44:41 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/05 12:44:41 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 12:44:41 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/05 12:44:41 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 1}
+2024/12/05 12:44:41 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/05 12:44:41 ## Hilo creado - (PID:TID) - (1:1)
+2024/12/05 12:44:41 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 12:44:41 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 12:44:41 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 12:44:41 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 5}
+2024/12/05 12:44:41 ## Hilo creado - (PID:TID) - (1:2)
+2024/12/05 12:44:41 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 12:44:41 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 12:44:41 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 12:44:41 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 5}
+2024/12/05 12:44:41 ## Hilo creado - (PID:TID) - (1:3)
+2024/12/05 12:44:41 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 12:44:41 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 12:44:41 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 12:44:41 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/05 12:44:41 ## Hilo creado - (PID:TID) - (1:4)
+2024/12/05 12:44:41 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 12:44:41 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 12:44:41 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 12:44:41 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_JOIN 4}
+2024/12/05 12:44:41 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 12:44:41 ## Contexto solicitado - (PID:TID) - (1:2)
+2024/12/05 12:44:41 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SET CX 5}
+2024/12/05 12:44:41 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SET BX 1}
+2024/12/05 12:44:41 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SUB CX BX}
+2024/12/05 12:44:41 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {THREAD_EXIT}
+2024/12/05 12:44:41 ## Hilo destruido - (PID:TID) - (1:2)
+2024/12/05 12:44:41 ## Contexto solicitado - (PID:TID) - (1:3)
+2024/12/05 12:44:41 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {SET CX 5}
+2024/12/05 12:44:41 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {SET BX 1}
+2024/12/05 12:44:41 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {SUB CX BX}
+2024/12/05 12:44:41 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {THREAD_EXIT}
+2024/12/05 12:44:41 ## Hilo destruido - (PID:TID) - (1:3)
+2024/12/05 12:44:41 ## Contexto solicitado - (PID:TID) - (1:1)
+2024/12/05 12:44:41 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SET CX 5}
+2024/12/05 12:44:41 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SET BX 1}
+2024/12/05 12:44:41 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SUB CX BX}
+2024/12/05 12:44:41 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {THREAD_EXIT}
+2024/12/05 12:44:41 ## Hilo destruido - (PID:TID) - (1:1)
+2024/12/05 12:44:41 ## Contexto solicitado - (PID:TID) - (1:4)
+2024/12/05 12:44:41 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {SET CX 5}
+2024/12/05 12:44:41 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {SET BX 1}
+2024/12/05 12:44:41 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {SUB CX BX}
+2024/12/05 12:44:41 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {THREAD_EXIT}
+2024/12/05 12:44:41 ## Hilo destruido - (PID:TID) - (1:4)
+2024/12/05 12:44:41 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 12:44:41 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {DUMP_MEMORY}
+2024/12/05 12:44:41 Respuesta POST: 400 Bad Request
+2024/12/05 12:44:41 Respuesta: 400
+2024/12/05 12:44:41 Error al realizar el dump de memoria - (PID:TID) - (1:0)
+2024/12/05 12:44:41 ## Hilo destruido - (PID:TID) - (1:0)
+2024/12/05 12:44:41 ## Proceso destruido -  PID: 1 - Tamaño: 512
+2024/12/05 12:44:41 Error al actualizar los registros - (PID:TID) - (1:0)
+2024/12/05 12:52:04 Memoria inicializada con éxito.
+2024/12/05 12:52:04 El módulo memoria está a la escucha en el puerto :8002
+2024/12/05 12:52:21 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/05 12:52:21 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/05 12:52:21 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 12:52:21 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/05 12:52:21 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 1}
+2024/12/05 12:52:21 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/05 12:52:21 ## Hilo creado - (PID:TID) - (1:1)
+2024/12/05 12:52:21 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 12:52:21 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 12:52:21 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 12:52:21 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 5}
+2024/12/05 12:52:21 ## Hilo creado - (PID:TID) - (1:2)
+2024/12/05 12:52:21 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 12:52:21 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 12:52:21 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 12:52:21 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 5}
+2024/12/05 12:52:21 ## Hilo creado - (PID:TID) - (1:3)
+2024/12/05 12:52:21 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 12:52:21 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 12:52:21 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 12:52:21 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/05 12:52:21 ## Hilo creado - (PID:TID) - (1:4)
+2024/12/05 12:52:21 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 12:52:21 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 12:52:21 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 12:52:21 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_JOIN 4}
+2024/12/05 12:52:21 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 12:52:21 ## Contexto solicitado - (PID:TID) - (1:2)
+2024/12/05 12:52:21 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SET CX 5}
+2024/12/05 12:52:21 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SET BX 1}
+2024/12/05 12:52:21 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SUB CX BX}
+2024/12/05 12:52:21 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {THREAD_EXIT}
+2024/12/05 12:52:21 ## Hilo destruido - (PID:TID) - (1:2)
+2024/12/05 12:52:21 ## Contexto solicitado - (PID:TID) - (1:3)
+2024/12/05 12:52:21 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {SET CX 5}
+2024/12/05 12:52:21 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {SET BX 1}
+2024/12/05 12:52:21 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {SUB CX BX}
+2024/12/05 12:52:21 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {THREAD_EXIT}
+2024/12/05 12:52:21 ## Hilo destruido - (PID:TID) - (1:3)
+2024/12/05 12:52:21 ## Contexto solicitado - (PID:TID) - (1:1)
+2024/12/05 12:52:21 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SET CX 5}
+2024/12/05 12:52:21 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SET BX 1}
+2024/12/05 12:52:21 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SUB CX BX}
+2024/12/05 12:52:21 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {THREAD_EXIT}
+2024/12/05 12:52:21 ## Hilo destruido - (PID:TID) - (1:1)
+2024/12/05 12:52:21 ## Contexto solicitado - (PID:TID) - (1:4)
+2024/12/05 12:52:21 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {SET CX 5}
+2024/12/05 12:52:21 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {SET BX 1}
+2024/12/05 12:52:21 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {SUB CX BX}
+2024/12/05 12:52:21 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {THREAD_EXIT}
+2024/12/05 12:52:21 ## Hilo destruido - (PID:TID) - (1:4)
+2024/12/05 12:52:21 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 12:52:21 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {DUMP_MEMORY}
+2024/12/05 12:52:21 Respuesta POST: 400 Bad Request
+2024/12/05 12:52:21 Respuesta: 400
+2024/12/05 12:52:21 Error al realizar el dump de memoria - (PID:TID) - (1:0)
+2024/12/05 12:52:21 ## Hilo destruido - (PID:TID) - (1:0)
+2024/12/05 12:52:21 ## Proceso destruido -  PID: 1 - Tamaño: 512
+2024/12/05 12:52:21 Error al actualizar los registros - (PID:TID) - (1:0)
+2024/12/05 12:58:24 Memoria inicializada con éxito.
+2024/12/05 12:58:24 El módulo memoria está a la escucha en el puerto :8002
+2024/12/05 12:58:34 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/05 12:58:34 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/05 12:58:34 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 12:58:34 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/05 12:58:34 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 1}
+2024/12/05 12:58:34 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/05 12:58:34 ## Hilo creado - (PID:TID) - (1:1)
+2024/12/05 12:58:34 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 12:58:34 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 12:58:34 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 12:58:34 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 5}
+2024/12/05 12:58:34 ## Hilo creado - (PID:TID) - (1:2)
+2024/12/05 12:58:34 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 12:58:34 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 12:58:34 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 12:58:34 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 5}
+2024/12/05 12:58:34 ## Hilo creado - (PID:TID) - (1:3)
+2024/12/05 12:58:34 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 12:58:34 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 12:58:34 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 12:58:34 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/05 12:58:34 ## Hilo creado - (PID:TID) - (1:4)
+2024/12/05 12:58:34 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 12:58:34 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 12:58:34 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 12:58:34 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_JOIN 4}
+2024/12/05 12:58:34 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 12:58:34 ## Contexto solicitado - (PID:TID) - (1:2)
+2024/12/05 12:58:34 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SET CX 5}
+2024/12/05 12:58:34 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SET BX 1}
+2024/12/05 12:58:34 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SUB CX BX}
+2024/12/05 12:58:34 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {THREAD_EXIT}
+2024/12/05 12:58:34 ## Hilo destruido - (PID:TID) - (1:2)
+2024/12/05 12:58:34 ## Contexto solicitado - (PID:TID) - (1:3)
+2024/12/05 12:58:34 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {SET CX 5}
+2024/12/05 12:58:34 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {SET BX 1}
+2024/12/05 12:58:34 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {SUB CX BX}
+2024/12/05 12:58:34 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {THREAD_EXIT}
+2024/12/05 12:58:34 ## Hilo destruido - (PID:TID) - (1:3)
+2024/12/05 12:58:34 ## Contexto solicitado - (PID:TID) - (1:1)
+2024/12/05 12:58:34 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SET CX 5}
+2024/12/05 12:58:34 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SET BX 1}
+2024/12/05 12:58:34 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SUB CX BX}
+2024/12/05 12:58:34 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {THREAD_EXIT}
+2024/12/05 12:58:34 ## Hilo destruido - (PID:TID) - (1:1)
+2024/12/05 12:58:34 ## Contexto solicitado - (PID:TID) - (1:4)
+2024/12/05 12:58:34 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {SET CX 5}
+2024/12/05 12:58:34 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {SET BX 1}
+2024/12/05 12:58:34 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {SUB CX BX}
+2024/12/05 12:58:34 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {THREAD_EXIT}
+2024/12/05 12:58:34 ## Hilo destruido - (PID:TID) - (1:4)
+2024/12/05 12:58:34 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 12:58:34 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {DUMP_MEMORY}
+2024/12/05 12:58:34 Respuesta POST: 400 Bad Request
+2024/12/05 12:58:34 Respuesta: 400
+2024/12/05 12:58:34 Error al realizar el dump de memoria - (PID:TID) - (1:0)
+2024/12/05 12:58:34 ## Hilo destruido - (PID:TID) - (1:0)
+2024/12/05 12:58:34 ## Proceso destruido -  PID: 1 - Tamaño: 512
+2024/12/05 12:58:34 Error al actualizar los registros - (PID:TID) - (1:0)
+2024/12/05 14:05:27 Memoria inicializada con éxito.
+2024/12/05 14:05:27 El módulo memoria está a la escucha en el puerto :8002
+2024/12/05 14:05:41 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/05 14:05:41 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/05 14:05:41 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 14:05:41 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/05 14:05:41 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 1}
+2024/12/05 14:05:41 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/05 14:05:41 ## Hilo creado - (PID:TID) - (1:1)
+2024/12/05 14:05:41 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 14:05:41 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 14:05:41 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 14:05:41 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 5}
+2024/12/05 14:05:41 ## Hilo creado - (PID:TID) - (1:2)
+2024/12/05 14:05:41 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 14:05:41 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 14:05:41 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 14:05:41 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 5}
+2024/12/05 14:05:41 ## Hilo creado - (PID:TID) - (1:3)
+2024/12/05 14:05:41 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 14:05:41 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 14:05:41 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 14:05:41 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/05 14:05:41 ## Hilo creado - (PID:TID) - (1:4)
+2024/12/05 14:05:41 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 14:05:41 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 14:05:41 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 14:05:41 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_JOIN 4}
+2024/12/05 14:05:41 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 14:05:41 ## Contexto solicitado - (PID:TID) - (1:2)
+2024/12/05 14:05:41 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SET CX 5}
+2024/12/05 14:05:41 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SET BX 1}
+2024/12/05 14:05:41 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SUB CX BX}
+2024/12/05 14:05:41 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {THREAD_EXIT}
+2024/12/05 14:05:41 ## Hilo destruido - (PID:TID) - (1:2)
+2024/12/05 14:05:41 ## Contexto solicitado - (PID:TID) - (1:3)
+2024/12/05 14:05:41 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {SET CX 5}
+2024/12/05 14:05:41 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {SET BX 1}
+2024/12/05 14:05:41 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {SUB CX BX}
+2024/12/05 14:05:41 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {THREAD_EXIT}
+2024/12/05 14:05:41 ## Hilo destruido - (PID:TID) - (1:3)
+2024/12/05 14:05:41 ## Contexto solicitado - (PID:TID) - (1:1)
+2024/12/05 14:05:41 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SET CX 5}
+2024/12/05 14:05:41 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SET BX 1}
+2024/12/05 14:05:41 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SUB CX BX}
+2024/12/05 14:05:41 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {THREAD_EXIT}
+2024/12/05 14:05:41 ## Hilo destruido - (PID:TID) - (1:1)
+2024/12/05 14:05:41 ## Contexto solicitado - (PID:TID) - (1:4)
+2024/12/05 14:05:41 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {SET CX 5}
+2024/12/05 14:05:41 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {SET BX 1}
+2024/12/05 14:05:41 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {SUB CX BX}
+2024/12/05 14:05:41 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {THREAD_EXIT}
+2024/12/05 14:05:41 ## Hilo destruido - (PID:TID) - (1:4)
+2024/12/05 14:05:41 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 14:05:41 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {DUMP_MEMORY}
+2024/12/05 14:05:41 Contenido del proceso (PID: 1) - [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+2024/12/05 14:05:41 Respuesta POST: 400 Bad Request
+2024/12/05 14:05:41 Error al realizar el dump de memoria - (PID:TID) - (1:0)
+2024/12/05 14:05:41 ## Hilo destruido - (PID:TID) - (1:0)
+2024/12/05 14:05:41 ## Proceso destruido -  PID: 1 - Tamaño: 512
+2024/12/05 14:05:41 Error al actualizar los registros - (PID:TID) - (1:0)
+2024/12/05 14:12:33 Memoria inicializada con éxito.
+2024/12/05 14:12:33 El módulo memoria está a la escucha en el puerto :8002
+2024/12/05 14:12:43 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/05 14:12:43 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/05 14:12:43 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 14:12:43 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/05 14:12:43 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 1}
+2024/12/05 14:12:43 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/05 14:12:43 ## Hilo creado - (PID:TID) - (1:1)
+2024/12/05 14:12:43 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 14:12:43 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 14:12:43 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 14:12:43 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 5}
+2024/12/05 14:12:43 ## Hilo creado - (PID:TID) - (1:2)
+2024/12/05 14:12:43 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 14:12:43 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 14:12:43 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 14:12:43 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 5}
+2024/12/05 14:12:43 ## Hilo creado - (PID:TID) - (1:3)
+2024/12/05 14:12:43 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 14:12:43 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 14:12:43 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 14:12:43 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/05 14:12:43 ## Hilo creado - (PID:TID) - (1:4)
+2024/12/05 14:12:43 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 14:12:43 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 14:12:43 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 14:12:43 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_JOIN 4}
+2024/12/05 14:12:43 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 14:12:43 ## Contexto solicitado - (PID:TID) - (1:2)
+2024/12/05 14:12:43 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SET CX 5}
+2024/12/05 14:12:43 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SET BX 1}
+2024/12/05 14:12:43 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SUB CX BX}
+2024/12/05 14:12:43 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {THREAD_EXIT}
+2024/12/05 14:12:43 ## Hilo destruido - (PID:TID) - (1:2)
+2024/12/05 14:12:43 ## Contexto solicitado - (PID:TID) - (1:3)
+2024/12/05 14:12:43 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {SET CX 5}
+2024/12/05 14:12:43 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {SET BX 1}
+2024/12/05 14:12:43 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {SUB CX BX}
+2024/12/05 14:12:43 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {THREAD_EXIT}
+2024/12/05 14:12:43 ## Hilo destruido - (PID:TID) - (1:3)
+2024/12/05 14:12:43 ## Contexto solicitado - (PID:TID) - (1:1)
+2024/12/05 14:12:43 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SET CX 5}
+2024/12/05 14:12:43 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SET BX 1}
+2024/12/05 14:12:43 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SUB CX BX}
+2024/12/05 14:12:43 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {THREAD_EXIT}
+2024/12/05 14:12:43 ## Hilo destruido - (PID:TID) - (1:1)
+2024/12/05 14:12:43 ## Contexto solicitado - (PID:TID) - (1:4)
+2024/12/05 14:12:43 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {SET CX 5}
+2024/12/05 14:12:43 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {SET BX 1}
+2024/12/05 14:12:43 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {SUB CX BX}
+2024/12/05 14:12:43 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {THREAD_EXIT}
+2024/12/05 14:12:43 ## Hilo destruido - (PID:TID) - (1:4)
+2024/12/05 14:12:43 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 14:12:43 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {DUMP_MEMORY}
+2024/12/05 14:12:43 Respuesta POST: 400 Bad Request
+2024/12/05 14:12:43 Error al realizar el dump de memoria - (PID:TID) - (1:0)
+2024/12/05 14:12:43 ## Hilo destruido - (PID:TID) - (1:0)
+2024/12/05 14:12:43 ## Proceso destruido -  PID: 1 - Tamaño: 512
+2024/12/05 14:12:43 Error al actualizar los registros - (PID:TID) - (1:0)
+2024/12/05 14:23:29 Memoria inicializada con éxito.
+2024/12/05 14:23:29 El módulo memoria está a la escucha en el puerto :8002
+2024/12/05 14:23:39 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/05 14:23:39 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/05 14:23:39 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 14:23:39 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/05 14:23:39 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 1}
+2024/12/05 14:23:39 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/05 14:23:39 ## Hilo creado - (PID:TID) - (1:1)
+2024/12/05 14:23:39 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 14:23:39 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 14:23:39 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 14:23:39 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 5}
+2024/12/05 14:23:39 ## Hilo creado - (PID:TID) - (1:2)
+2024/12/05 14:23:39 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 14:23:39 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 14:23:39 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 14:23:39 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 5}
+2024/12/05 14:23:39 ## Hilo creado - (PID:TID) - (1:3)
+2024/12/05 14:23:39 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 14:23:39 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 14:23:39 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 14:23:39 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/05 14:23:39 ## Hilo creado - (PID:TID) - (1:4)
+2024/12/05 14:23:39 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 14:23:39 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 14:23:39 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 14:23:39 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_JOIN 4}
+2024/12/05 14:23:39 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 14:23:39 ## Contexto solicitado - (PID:TID) - (1:2)
+2024/12/05 14:23:39 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SET CX 5}
+2024/12/05 14:23:39 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SET BX 1}
+2024/12/05 14:23:39 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SUB CX BX}
+2024/12/05 14:23:39 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {THREAD_EXIT}
+2024/12/05 14:23:39 ## Hilo destruido - (PID:TID) - (1:2)
+2024/12/05 14:23:39 ## Contexto solicitado - (PID:TID) - (1:3)
+2024/12/05 14:23:39 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {SET CX 5}
+2024/12/05 14:23:39 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {SET BX 1}
+2024/12/05 14:23:39 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {SUB CX BX}
+2024/12/05 14:23:39 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {THREAD_EXIT}
+2024/12/05 14:23:39 ## Hilo destruido - (PID:TID) - (1:3)
+2024/12/05 14:23:39 ## Contexto solicitado - (PID:TID) - (1:1)
+2024/12/05 14:23:39 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SET CX 5}
+2024/12/05 14:23:39 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SET BX 1}
+2024/12/05 14:23:39 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SUB CX BX}
+2024/12/05 14:23:39 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {THREAD_EXIT}
+2024/12/05 14:23:39 ## Hilo destruido - (PID:TID) - (1:1)
+2024/12/05 14:23:39 ## Contexto solicitado - (PID:TID) - (1:4)
+2024/12/05 14:23:39 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {SET CX 5}
+2024/12/05 14:23:39 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {SET BX 1}
+2024/12/05 14:23:39 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {SUB CX BX}
+2024/12/05 14:23:39 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {THREAD_EXIT}
+2024/12/05 14:23:39 ## Hilo destruido - (PID:TID) - (1:4)
+2024/12/05 14:23:39 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 14:23:39 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {DUMP_MEMORY}
+2024/12/05 14:23:39 Respuesta POST: 400 Bad Request
+2024/12/05 14:23:39 Error al realizar el dump de memoria - (PID:TID) - (1:0)
+2024/12/05 14:23:39 ## Hilo destruido - (PID:TID) - (1:0)
+2024/12/05 14:23:39 ## Proceso destruido -  PID: 1 - Tamaño: 512
+2024/12/05 14:23:39 Error al actualizar los registros - (PID:TID) - (1:0)
+2024/12/05 14:36:46 Memoria inicializada con éxito.
+2024/12/05 14:36:46 El módulo memoria está a la escucha en el puerto :8002
+2024/12/05 14:36:54 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/05 14:36:54 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/05 14:36:54 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 14:36:54 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/05 14:36:54 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 1}
+2024/12/05 14:36:54 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/05 14:36:54 ## Hilo creado - (PID:TID) - (1:1)
+2024/12/05 14:36:54 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 14:36:54 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 14:36:54 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 14:36:54 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 5}
+2024/12/05 14:36:54 ## Hilo creado - (PID:TID) - (1:2)
+2024/12/05 14:36:54 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 14:36:54 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 14:36:54 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 14:36:54 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 5}
+2024/12/05 14:36:54 ## Hilo creado - (PID:TID) - (1:3)
+2024/12/05 14:36:54 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 14:36:54 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 14:36:54 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 14:36:54 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/05 14:36:54 ## Hilo creado - (PID:TID) - (1:4)
+2024/12/05 14:36:54 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 14:36:54 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 14:36:54 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 14:36:54 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_JOIN 4}
+2024/12/05 14:36:54 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 14:36:54 ## Contexto solicitado - (PID:TID) - (1:2)
+2024/12/05 14:36:54 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SET CX 5}
+2024/12/05 14:36:54 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SET BX 1}
+2024/12/05 14:36:54 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SUB CX BX}
+2024/12/05 14:36:54 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {THREAD_EXIT}
+2024/12/05 14:36:54 ## Hilo destruido - (PID:TID) - (1:2)
+2024/12/05 14:36:54 ## Contexto solicitado - (PID:TID) - (1:3)
+2024/12/05 14:36:54 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {SET CX 5}
+2024/12/05 14:36:54 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {SET BX 1}
+2024/12/05 14:36:54 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {SUB CX BX}
+2024/12/05 14:36:54 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {THREAD_EXIT}
+2024/12/05 14:36:54 ## Hilo destruido - (PID:TID) - (1:3)
+2024/12/05 14:36:54 ## Contexto solicitado - (PID:TID) - (1:1)
+2024/12/05 14:36:54 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SET CX 5}
+2024/12/05 14:36:54 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SET BX 1}
+2024/12/05 14:36:54 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SUB CX BX}
+2024/12/05 14:36:54 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {THREAD_EXIT}
+2024/12/05 14:36:54 ## Hilo destruido - (PID:TID) - (1:1)
+2024/12/05 14:36:54 ## Contexto solicitado - (PID:TID) - (1:4)
+2024/12/05 14:36:54 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {SET CX 5}
+2024/12/05 14:36:54 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {SET BX 1}
+2024/12/05 14:36:54 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {SUB CX BX}
+2024/12/05 14:36:54 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {THREAD_EXIT}
+2024/12/05 14:36:54 ## Hilo destruido - (PID:TID) - (1:4)
+2024/12/05 14:36:54 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 14:36:54 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {DUMP_MEMORY}
+2024/12/05 14:36:54 Solicitud antes de codificar: {Pid:1 Tid:0 Tamanio:512 Contenido:[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]}
+2024/12/05 14:36:54 Respuesta POST: 400 Bad Request
+2024/12/05 14:36:54 Error al realizar el dump de memoria - (PID:TID) - (1:0)
+2024/12/05 14:36:54 ## Hilo destruido - (PID:TID) - (1:0)
+2024/12/05 14:36:54 ## Proceso destruido -  PID: 1 - Tamaño: 512
+2024/12/05 14:36:54 Error al actualizar los registros - (PID:TID) - (1:0)
+2024/12/05 14:38:33 Memoria inicializada con éxito.
+2024/12/05 14:38:33 El módulo memoria está a la escucha en el puerto :8002
+2024/12/05 14:38:35 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/05 14:38:35 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/05 14:38:35 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 14:38:35 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/05 14:38:35 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 1}
+2024/12/05 14:38:35 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/05 14:38:35 ## Hilo creado - (PID:TID) - (1:1)
+2024/12/05 14:38:35 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 14:38:35 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 14:38:35 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 14:38:35 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 5}
+2024/12/05 14:38:35 ## Hilo creado - (PID:TID) - (1:2)
+2024/12/05 14:38:35 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 14:38:35 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 14:38:35 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 14:38:35 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 5}
+2024/12/05 14:38:35 ## Hilo creado - (PID:TID) - (1:3)
+2024/12/05 14:38:35 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 14:38:35 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 14:38:35 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 14:38:35 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/05 14:38:35 ## Hilo creado - (PID:TID) - (1:4)
+2024/12/05 14:38:35 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 14:38:35 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 14:38:35 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 14:38:35 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_JOIN 4}
+2024/12/05 14:38:35 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 14:38:35 ## Contexto solicitado - (PID:TID) - (1:2)
+2024/12/05 14:38:35 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SET CX 5}
+2024/12/05 14:38:35 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SET BX 1}
+2024/12/05 14:38:35 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SUB CX BX}
+2024/12/05 14:38:35 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {THREAD_EXIT}
+2024/12/05 14:38:35 ## Hilo destruido - (PID:TID) - (1:2)
+2024/12/05 14:38:35 ## Contexto solicitado - (PID:TID) - (1:3)
+2024/12/05 14:38:35 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {SET CX 5}
+2024/12/05 14:38:35 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {SET BX 1}
+2024/12/05 14:38:35 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {SUB CX BX}
+2024/12/05 14:38:35 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {THREAD_EXIT}
+2024/12/05 14:38:35 ## Hilo destruido - (PID:TID) - (1:3)
+2024/12/05 14:38:35 ## Contexto solicitado - (PID:TID) - (1:1)
+2024/12/05 14:38:35 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SET CX 5}
+2024/12/05 14:38:35 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SET BX 1}
+2024/12/05 14:38:35 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SUB CX BX}
+2024/12/05 14:38:35 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {THREAD_EXIT}
+2024/12/05 14:38:35 ## Hilo destruido - (PID:TID) - (1:1)
+2024/12/05 14:38:35 ## Contexto solicitado - (PID:TID) - (1:4)
+2024/12/05 14:38:35 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {SET CX 5}
+2024/12/05 14:38:35 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {SET BX 1}
+2024/12/05 14:38:35 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {SUB CX BX}
+2024/12/05 14:38:35 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {THREAD_EXIT}
+2024/12/05 14:38:35 ## Hilo destruido - (PID:TID) - (1:4)
+2024/12/05 14:38:35 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 14:38:35 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {DUMP_MEMORY}
+2024/12/05 14:38:35 Contenido de memoria: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+2024/12/05 14:38:35 Contenido del Proceso: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+2024/12/05 14:38:35 Solicitud antes de codificar: {Pid:1 Tid:0 Tamanio:512 Contenido:[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]}
+2024/12/05 14:38:35 Respuesta POST: 400 Bad Request
+2024/12/05 14:38:35 Error al realizar el dump de memoria - (PID:TID) - (1:0)
+2024/12/05 14:38:35 ## Hilo destruido - (PID:TID) - (1:0)
+2024/12/05 14:38:35 ## Proceso destruido -  PID: 1 - Tamaño: 512
+2024/12/05 14:38:35 Error al actualizar los registros - (PID:TID) - (1:0)
+2024/12/05 14:47:39 Memoria inicializada con éxito.
+2024/12/05 14:47:39 El módulo memoria está a la escucha en el puerto :8002
+2024/12/05 14:47:49 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/05 14:47:49 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/05 14:47:49 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 14:47:49 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/05 14:47:49 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 1}
+2024/12/05 14:47:49 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/05 14:47:49 ## Hilo creado - (PID:TID) - (1:1)
+2024/12/05 14:47:49 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 14:47:49 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 14:47:49 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 14:47:49 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 5}
+2024/12/05 14:47:49 ## Hilo creado - (PID:TID) - (1:2)
+2024/12/05 14:47:49 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 14:47:49 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 14:47:49 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 14:47:49 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 5}
+2024/12/05 14:47:49 ## Hilo creado - (PID:TID) - (1:3)
+2024/12/05 14:47:49 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 14:47:49 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 14:47:49 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 14:47:49 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/05 14:47:49 ## Hilo creado - (PID:TID) - (1:4)
+2024/12/05 14:47:49 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 14:47:49 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 14:47:49 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 14:47:49 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_JOIN 4}
+2024/12/05 14:47:49 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 14:47:49 ## Contexto solicitado - (PID:TID) - (1:2)
+2024/12/05 14:47:49 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SET AX 1}
+2024/12/05 14:47:49 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SET BX 1}
+2024/12/05 14:47:49 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SET PC 5}
+2024/12/05 14:47:49 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {WRITE_MEM AX BX}
+2024/12/05 14:47:49 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {JNZ AX 4}
+2024/12/05 14:47:49 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SUB AX BX}
+2024/12/05 14:47:49 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {READ_MEM AX BX}
+2024/12/05 14:47:49 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {WRITE_MEM AX BX}
+2024/12/05 14:47:49 ## Hilo destruido - (PID:TID) - (1:0)
+2024/12/05 14:47:49 ## Hilo destruido - (PID:TID) - (1:2)
+2024/12/05 14:47:49 ## Hilo destruido - (PID:TID) - (1:4)
+2024/12/05 14:47:49 El hilo 4 no pudo ser destruido
+2024/12/05 14:47:49 El hilo 4 no pudo ser destruido
+2024/12/05 14:47:49 ## Proceso destruido -  PID: 1 - Tamaño: 512
+2024/12/05 14:47:49 Error al actualizar los registros - (PID:TID) - (1:2)
+2024/12/05 14:47:49 http: panic serving 127.0.0.1:62495: runtime error: invalid memory address or nil pointer dereference
+goroutine 73 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
+panic({0x541a60?, 0x7f79e0?})
+	C:/Program Files/Go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/memoria/globals/functions.ObtenerBaseLimite(...)
+	C:/Users/Tomás/Desktop/Facultad/FACULTAD/3 AÑO/S.O/GO/tp-2024-2c-Equipo-Operativo/tp-2024-2c-Equipo-Operativo/memoria/globals/functions/funciones.go:28
+github.com/sisoputnfrba/tp-golang/memoria/handlers.HandleDevolverContexto({0x622950, 0xc000198fc0}, 0xc00009b680)
+	C:/Users/Tomás/Desktop/Facultad/FACULTAD/3 AÑO/S.O/GO/tp-2024-2c-Equipo-Operativo/tp-2024-2c-Equipo-Operativo/memoria/handlers/handlers.go:37 +0x13c
+net/http.HandlerFunc.ServeHTTP(0xc00012a0e0?, {0x622950?, 0xc000198fc0?}, 0x6751e745?)
+	C:/Program Files/Go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x26da65?, {0x622950, 0xc000198fc0}, 0xc00009b680)
+	C:/Program Files/Go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x6214d8?}, {0x622950?, 0xc000198fc0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc000185170, {0x622e18, 0xc00001d2c0})
+	C:/Program Files/Go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3360 +0x485
+2024/12/05 15:09:32 Memoria inicializada con éxito.
+2024/12/05 15:09:32 El módulo memoria está a la escucha en el puerto :8002
+2024/12/05 15:09:41 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/05 15:09:41 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/05 15:09:41 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 15:09:41 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/05 15:09:41 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 1}
+2024/12/05 15:09:41 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/05 15:09:41 ## Hilo creado - (PID:TID) - (1:1)
+2024/12/05 15:09:41 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 15:09:41 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 15:09:41 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 15:09:41 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 5}
+2024/12/05 15:09:41 ## Hilo creado - (PID:TID) - (1:2)
+2024/12/05 15:09:41 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 15:09:41 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 15:09:41 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 15:09:41 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 5}
+2024/12/05 15:09:41 ## Hilo creado - (PID:TID) - (1:3)
+2024/12/05 15:09:41 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 15:09:41 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 15:09:41 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 15:09:41 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/05 15:09:41 ## Hilo creado - (PID:TID) - (1:4)
+2024/12/05 15:09:41 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 15:09:41 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 15:09:41 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 15:09:41 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_JOIN 4}
+2024/12/05 15:09:41 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 15:09:41 ## Contexto solicitado - (PID:TID) - (1:2)
+2024/12/05 15:09:41 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SET CX 5}
+2024/12/05 15:09:41 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SET BX 1}
+2024/12/05 15:09:41 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SUB CX BX}
+2024/12/05 15:09:41 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {WRITE_MEM CX BX}
+2024/12/05 15:09:41 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {THREAD_EXIT}
+2024/12/05 15:09:41 ## Hilo destruido - (PID:TID) - (1:2)
+2024/12/05 15:09:41 ## Contexto solicitado - (PID:TID) - (1:3)
+2024/12/05 15:09:41 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {SET CX 5}
+2024/12/05 15:09:41 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {SET BX 1}
+2024/12/05 15:09:41 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {SUB CX BX}
+2024/12/05 15:09:41 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {WRITE_MEM CX BX}
+2024/12/05 15:09:41 ## Obtener instrucción - (PID:TID) - (1:3) - Instrucción: {THREAD_EXIT}
+2024/12/05 15:09:41 ## Hilo destruido - (PID:TID) - (1:3)
+2024/12/05 15:09:41 ## Contexto solicitado - (PID:TID) - (1:1)
+2024/12/05 15:09:41 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SET CX 5}
+2024/12/05 15:09:41 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SET BX 1}
+2024/12/05 15:09:41 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {SUB CX BX}
+2024/12/05 15:09:41 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {WRITE_MEM CX BX}
+2024/12/05 15:09:41 ## Obtener instrucción - (PID:TID) - (1:1) - Instrucción: {THREAD_EXIT}
+2024/12/05 15:09:41 ## Hilo destruido - (PID:TID) - (1:1)
+2024/12/05 15:09:41 ## Contexto solicitado - (PID:TID) - (1:4)
+2024/12/05 15:09:41 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {SET CX 5}
+2024/12/05 15:09:41 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {SET BX 1}
+2024/12/05 15:09:41 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {SUB CX BX}
+2024/12/05 15:09:41 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {WRITE_MEM CX BX}
+2024/12/05 15:09:41 ## Obtener instrucción - (PID:TID) - (1:4) - Instrucción: {THREAD_EXIT}
+2024/12/05 15:09:41 ## Hilo destruido - (PID:TID) - (1:4)
+2024/12/05 15:09:41 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 15:09:41 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {DUMP_MEMORY}
+2024/12/05 15:09:41 Solicitud antes de codificar: {Pid:1 Tid:0 Tamanio:512 Contenido:[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]}
+2024/12/05 15:09:41 Respuesta POST: 400 Bad Request
+2024/12/05 15:09:41 Error al realizar el dump de memoria - (PID:TID) - (1:0)
+2024/12/05 15:09:41 ## Hilo destruido - (PID:TID) - (1:0)
+2024/12/05 15:09:41 ## Proceso destruido -  PID: 1 - Tamaño: 512
+2024/12/05 15:09:41 Error al actualizar los registros - (PID:TID) - (1:0)
+2024/12/05 15:15:46 Memoria inicializada con éxito.
+2024/12/05 15:15:46 El módulo memoria está a la escucha en el puerto :8002
+2024/12/05 15:15:59 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/05 15:15:59 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/05 15:15:59 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 15:15:59 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/05 15:15:59 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 1}
+2024/12/05 15:15:59 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/05 15:15:59 ## Hilo creado - (PID:TID) - (1:1)
+2024/12/05 15:15:59 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 15:15:59 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 15:15:59 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 15:15:59 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 5}
+2024/12/05 15:15:59 ## Hilo creado - (PID:TID) - (1:2)
+2024/12/05 15:15:59 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 15:15:59 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 15:15:59 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 15:15:59 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 5}
+2024/12/05 15:15:59 ## Hilo creado - (PID:TID) - (1:3)
+2024/12/05 15:15:59 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 15:15:59 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 15:15:59 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 15:15:59 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/05 15:15:59 ## Hilo creado - (PID:TID) - (1:4)
+2024/12/05 15:15:59 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 15:15:59 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 15:15:59 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 15:15:59 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_JOIN 4}
+2024/12/05 15:15:59 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 15:15:59 ## Contexto solicitado - (PID:TID) - (1:2)
+2024/12/05 15:15:59 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SET AX 1}
+2024/12/05 15:15:59 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SET BX 1}
+2024/12/05 15:15:59 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SET PC 5}
+2024/12/05 15:15:59 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {WRITE_MEM AX BX}
+2024/12/05 15:15:59 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {JNZ AX 4}
+2024/12/05 15:15:59 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SUB AX BX}
+2024/12/05 15:15:59 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {READ_MEM AX BX}
+2024/12/05 15:15:59 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {WRITE_MEM AX BX}
+2024/12/05 15:15:59 ## Hilo destruido - (PID:TID) - (1:0)
+2024/12/05 15:15:59 ## Hilo destruido - (PID:TID) - (1:2)
+2024/12/05 15:15:59 ## Hilo destruido - (PID:TID) - (1:4)
+2024/12/05 15:15:59 El hilo 4 no pudo ser destruido
+2024/12/05 15:15:59 El hilo 4 no pudo ser destruido
+2024/12/05 15:15:59 ## Proceso destruido -  PID: 1 - Tamaño: 512
+2024/12/05 15:15:59 Error al actualizar los registros - (PID:TID) - (1:2)
+2024/12/05 15:15:59 http: panic serving 127.0.0.1:62885: runtime error: invalid memory address or nil pointer dereference
+goroutine 49 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
+panic({0x3a1a60?, 0x6579e0?})
+	C:/Program Files/Go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/memoria/globals/functions.ObtenerBaseLimite(...)
+	C:/Users/Tomás/Desktop/Facultad/FACULTAD/3 AÑO/S.O/GO/tp-2024-2c-Equipo-Operativo/tp-2024-2c-Equipo-Operativo/memoria/globals/functions/funciones.go:28
+github.com/sisoputnfrba/tp-golang/memoria/handlers.HandleDevolverContexto({0x482950, 0xc0000e7340}, 0xc000119400)
+	C:/Users/Tomás/Desktop/Facultad/FACULTAD/3 AÑO/S.O/GO/tp-2024-2c-Equipo-Operativo/tp-2024-2c-Equipo-Operativo/memoria/handlers/handlers.go:37 +0x13c
+net/http.HandlerFunc.ServeHTTP(0xc0000e60e0?, {0x482950?, 0xc0000e7340?}, 0x6751eddf?)
+	C:/Program Files/Go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0xcda65?, {0x482950, 0xc0000e7340}, 0xc000119400)
+	C:/Program Files/Go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x4814d8?}, {0x482950?, 0xc0000e7340?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc000197170, {0x482e18, 0xc00008b290})
+	C:/Program Files/Go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3360 +0x485
+2024/12/05 15:25:47 Memoria inicializada con éxito.
+2024/12/05 15:25:47 El módulo memoria está a la escucha en el puerto :8002
+2024/12/05 15:25:57 ## Proceso creado -  PID: 1 - Tamaño: 32
+2024/12/05 15:25:57 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/05 15:25:57 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 15:25:57 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/05 15:25:57 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 1}
+2024/12/05 15:25:57 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/05 15:25:57 ## Hilo creado - (PID:TID) - (1:1)
+2024/12/05 15:25:57 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 15:25:57 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 15:25:57 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 15:25:57 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 5}
+2024/12/05 15:25:57 ## Hilo creado - (PID:TID) - (1:2)
+2024/12/05 15:25:57 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 15:25:57 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 15:25:57 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 15:25:57 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 5}
+2024/12/05 15:25:57 ## Hilo creado - (PID:TID) - (1:3)
+2024/12/05 15:25:57 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 15:25:57 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 15:25:57 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 15:25:57 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_CREATE pruebaPlani.txt 6}
+2024/12/05 15:25:57 ## Hilo creado - (PID:TID) - (1:4)
+2024/12/05 15:25:57 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 15:25:57 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/05 15:25:57 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SUM DX AX}
+2024/12/05 15:25:57 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {THREAD_JOIN 4}
+2024/12/05 15:25:57 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/05 15:25:57 ## Contexto solicitado - (PID:TID) - (1:2)
+2024/12/05 15:25:57 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SET AX 1}
+2024/12/05 15:25:57 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SET BX 1}
+2024/12/05 15:25:57 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SET PC 5}
+2024/12/05 15:25:57 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {WRITE_MEM AX BX}
+2024/12/05 15:25:57 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {JNZ AX 4}
+2024/12/05 15:25:57 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {SUB AX BX}
+2024/12/05 15:25:57 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {READ_MEM AX BX}
+2024/12/05 15:25:57 ## Obtener instrucción - (PID:TID) - (1:2) - Instrucción: {WRITE_MEM AX BX}
+2024/12/05 15:25:57 ## Hilo destruido - (PID:TID) - (1:0)
+2024/12/05 15:25:57 ## Hilo destruido - (PID:TID) - (1:2)
+2024/12/05 15:25:57 ## Hilo destruido - (PID:TID) - (1:4)
+2024/12/05 15:25:57 El hilo 4 no pudo ser destruido
+2024/12/05 15:25:57 El hilo 4 no pudo ser destruido
+2024/12/05 15:25:57 ## Proceso destruido -  PID: 1 - Tamaño: 512
+2024/12/05 15:25:57 Error al actualizar los registros - (PID:TID) - (1:2)
+2024/12/05 15:25:57 http: panic serving 127.0.0.1:63020: runtime error: invalid memory address or nil pointer dereference
+goroutine 83 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
+panic({0x511a60?, 0x7c79e0?})
+	C:/Program Files/Go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/memoria/globals/functions.ObtenerBaseLimite(...)
+	C:/Users/Tomás/Desktop/Facultad/FACULTAD/3 AÑO/S.O/GO/tp-2024-2c-Equipo-Operativo/tp-2024-2c-Equipo-Operativo/memoria/globals/functions/funciones.go:28
+github.com/sisoputnfrba/tp-golang/memoria/handlers.HandleDevolverContexto({0x5f2950, 0xc0001289a0}, 0xc000071e00)
+	C:/Users/Tomás/Desktop/Facultad/FACULTAD/3 AÑO/S.O/GO/tp-2024-2c-Equipo-Operativo/tp-2024-2c-Equipo-Operativo/memoria/handlers/handlers.go:37 +0x13c
+net/http.HandlerFunc.ServeHTTP(0xc0001280e0?, {0x5f2950?, 0xc0001289a0?}, 0x6751f035?)
+	C:/Program Files/Go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x23da65?, {0x5f2950, 0xc0001289a0}, 0xc000071e00)
+	C:/Program Files/Go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x5f14d8?}, {0x5f2950?, 0xc0001289a0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc00018d050, {0x5f2e18, 0xc00001d2c0})
+	C:/Program Files/Go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3360 +0x485
 2024/12/05 12:36:18 Memoria inicializada con éxito.
 2024/12/05 12:36:18 El módulo memoria está a la escucha en el puerto :8002
 2024/12/05 12:37:09 ## Proceso creado -  PID: 1 - Tamaño: 32

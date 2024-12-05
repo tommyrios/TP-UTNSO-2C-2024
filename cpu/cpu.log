@@ -8999,6 +8999,2891 @@ created by net/http.(*Server).Serve in goroutine 1
 2024/12/05 11:26:19 ## TID: 0 - Ejecutando: PROCESS_EXIT - [].
 2024/12/05 11:26:19 Respuesta POST: 200 OK
 2024/12/05 11:26:19 Respuesta POST: 200 OK
+2024/12/05 11:50:19 El módulo CPU está a la escucha en el puerto :8004
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 ## TID: 0 - FETCH - Program Counter: 0.
+2024/12/05 11:50:32 ## TID: 0 - Ejecutando: SET - [DX 0].
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 ## TID: 0 - FETCH - Program Counter: 1.
+2024/12/05 11:50:32 ## TID: 0 - Ejecutando: SET - [AX 1].
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 ## TID: 0 - FETCH - Program Counter: 2.
+2024/12/05 11:50:32 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 ## TID: 0 - FETCH - Program Counter: 3.
+2024/12/05 11:50:32 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 ## TID: 0 - FETCH - Program Counter: 4.
+2024/12/05 11:50:32 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 5].
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 ## TID: 0 - FETCH - Program Counter: 5.
+2024/12/05 11:50:32 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 ## TID: 0 - FETCH - Program Counter: 6.
+2024/12/05 11:50:32 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 5].
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 ## TID: 0 - FETCH - Program Counter: 7.
+2024/12/05 11:50:32 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 ## TID: 0 - FETCH - Program Counter: 8.
+2024/12/05 11:50:32 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 ## TID: 0 - FETCH - Program Counter: 9.
+2024/12/05 11:50:32 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 ## TID: 0 - FETCH - Program Counter: 10.
+2024/12/05 11:50:32 ## TID: 0 - Ejecutando: THREAD_JOIN - [4].
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 ## TID: 2 - Solicito Contexto Ejecución.
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 ## TID: 2 - FETCH - Program Counter: 0.
+2024/12/05 11:50:32 ## TID: 2 - Ejecutando: SET - [CX 5].
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 ## TID: 2 - FETCH - Program Counter: 1.
+2024/12/05 11:50:32 ## TID: 2 - Ejecutando: SET - [BX 1].
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 ## TID: 2 - FETCH - Program Counter: 2.
+2024/12/05 11:50:32 ## TID: 2 - Ejecutando: SUB - [CX BX].
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 ## TID: 2 - FETCH - Program Counter: 3.
+2024/12/05 11:50:32 ## TID: 2 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 ## TID: 3 - Solicito Contexto Ejecución.
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 ## TID: 3 - FETCH - Program Counter: 0.
+2024/12/05 11:50:32 ## TID: 3 - Ejecutando: SET - [CX 5].
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 ## TID: 3 - FETCH - Program Counter: 1.
+2024/12/05 11:50:32 ## TID: 3 - Ejecutando: SET - [BX 1].
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 ## TID: 3 - FETCH - Program Counter: 2.
+2024/12/05 11:50:32 ## TID: 3 - Ejecutando: SUB - [CX BX].
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 ## TID: 3 - FETCH - Program Counter: 3.
+2024/12/05 11:50:32 ## TID: 3 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 ## TID: 1 - Solicito Contexto Ejecución.
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 ## TID: 1 - FETCH - Program Counter: 0.
+2024/12/05 11:50:32 ## TID: 1 - Ejecutando: SET - [CX 5].
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 ## TID: 1 - FETCH - Program Counter: 1.
+2024/12/05 11:50:32 ## TID: 1 - Ejecutando: SET - [BX 1].
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 ## TID: 1 - FETCH - Program Counter: 2.
+2024/12/05 11:50:32 ## TID: 1 - Ejecutando: SUB - [CX BX].
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 ## TID: 1 - FETCH - Program Counter: 3.
+2024/12/05 11:50:32 ## TID: 1 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 ## TID: 4 - Solicito Contexto Ejecución.
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 ## TID: 4 - FETCH - Program Counter: 0.
+2024/12/05 11:50:32 ## TID: 4 - Ejecutando: SET - [CX 5].
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 ## TID: 4 - FETCH - Program Counter: 1.
+2024/12/05 11:50:32 ## TID: 4 - Ejecutando: SET - [BX 1].
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 ## TID: 4 - FETCH - Program Counter: 2.
+2024/12/05 11:50:32 ## TID: 4 - Ejecutando: SUB - [CX BX].
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 ## TID: 4 - FETCH - Program Counter: 3.
+2024/12/05 11:50:32 ## TID: 4 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 ## TID: 0 - FETCH - Program Counter: 11.
+2024/12/05 11:50:32 ## TID: 0 - Ejecutando: PROCESS_EXIT - [].
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:50:32 Respuesta POST: 200 OK
+2024/12/05 11:52:39 El módulo CPU está a la escucha en el puerto :8004
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 ## TID: 0 - FETCH - Program Counter: 0.
+2024/12/05 11:52:45 ## TID: 0 - Ejecutando: SET - [DX 0].
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 ## TID: 0 - FETCH - Program Counter: 1.
+2024/12/05 11:52:45 ## TID: 0 - Ejecutando: SET - [AX 1].
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 ## TID: 0 - FETCH - Program Counter: 2.
+2024/12/05 11:52:45 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 ## TID: 0 - FETCH - Program Counter: 3.
+2024/12/05 11:52:45 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 ## TID: 0 - FETCH - Program Counter: 4.
+2024/12/05 11:52:45 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 5].
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 ## TID: 0 - FETCH - Program Counter: 5.
+2024/12/05 11:52:45 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 ## TID: 0 - FETCH - Program Counter: 6.
+2024/12/05 11:52:45 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 5].
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 ## TID: 0 - FETCH - Program Counter: 7.
+2024/12/05 11:52:45 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 ## TID: 0 - FETCH - Program Counter: 8.
+2024/12/05 11:52:45 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 ## TID: 0 - FETCH - Program Counter: 9.
+2024/12/05 11:52:45 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 ## TID: 0 - FETCH - Program Counter: 10.
+2024/12/05 11:52:45 ## TID: 0 - Ejecutando: THREAD_JOIN - [4].
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 ## TID: 2 - Solicito Contexto Ejecución.
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 ## TID: 2 - FETCH - Program Counter: 0.
+2024/12/05 11:52:45 ## TID: 2 - Ejecutando: SET - [CX 5].
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 ## TID: 2 - FETCH - Program Counter: 1.
+2024/12/05 11:52:45 ## TID: 2 - Ejecutando: SET - [BX 1].
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 ## TID: 2 - FETCH - Program Counter: 2.
+2024/12/05 11:52:45 ## TID: 2 - Ejecutando: SUB - [CX BX].
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 ## TID: 2 - FETCH - Program Counter: 3.
+2024/12/05 11:52:45 ## TID: 2 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 ## TID: 3 - Solicito Contexto Ejecución.
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 ## TID: 3 - FETCH - Program Counter: 0.
+2024/12/05 11:52:45 ## TID: 3 - Ejecutando: SET - [CX 5].
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 ## TID: 3 - FETCH - Program Counter: 1.
+2024/12/05 11:52:45 ## TID: 3 - Ejecutando: SET - [BX 1].
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 ## TID: 3 - FETCH - Program Counter: 2.
+2024/12/05 11:52:45 ## TID: 3 - Ejecutando: SUB - [CX BX].
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 ## TID: 3 - FETCH - Program Counter: 3.
+2024/12/05 11:52:45 ## TID: 3 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 ## TID: 1 - Solicito Contexto Ejecución.
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 ## TID: 1 - FETCH - Program Counter: 0.
+2024/12/05 11:52:45 ## TID: 1 - Ejecutando: SET - [CX 5].
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 ## TID: 1 - FETCH - Program Counter: 1.
+2024/12/05 11:52:45 ## TID: 1 - Ejecutando: SET - [BX 1].
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 ## TID: 1 - FETCH - Program Counter: 2.
+2024/12/05 11:52:45 ## TID: 1 - Ejecutando: SUB - [CX BX].
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 ## TID: 1 - FETCH - Program Counter: 3.
+2024/12/05 11:52:45 ## TID: 1 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 ## TID: 4 - Solicito Contexto Ejecución.
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 ## TID: 4 - FETCH - Program Counter: 0.
+2024/12/05 11:52:45 ## TID: 4 - Ejecutando: SET - [CX 5].
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 ## TID: 4 - FETCH - Program Counter: 1.
+2024/12/05 11:52:45 ## TID: 4 - Ejecutando: SET - [BX 1].
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 ## TID: 4 - FETCH - Program Counter: 2.
+2024/12/05 11:52:45 ## TID: 4 - Ejecutando: SUB - [CX BX].
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 ## TID: 4 - FETCH - Program Counter: 3.
+2024/12/05 11:52:45 ## TID: 4 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 ## TID: 0 - FETCH - Program Counter: 11.
+2024/12/05 11:52:45 ## TID: 0 - Ejecutando: DUMP_MEMORY - [].
+2024/12/05 11:52:45 Respuesta POST: 500 Internal Server Error
+2024/12/05 11:52:45 Respuesta POST: 200 OK
+2024/12/05 11:52:45 Respuesta POST: 500 Internal Server Error
+2024/12/05 11:52:45 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 11:57:58 El módulo CPU está a la escucha en el puerto :8004
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 ## TID: 0 - FETCH - Program Counter: 0.
+2024/12/05 11:58:02 ## TID: 0 - Ejecutando: SET - [DX 0].
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 ## TID: 0 - FETCH - Program Counter: 1.
+2024/12/05 11:58:02 ## TID: 0 - Ejecutando: SET - [AX 1].
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 ## TID: 0 - FETCH - Program Counter: 2.
+2024/12/05 11:58:02 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 ## TID: 0 - FETCH - Program Counter: 3.
+2024/12/05 11:58:02 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 ## TID: 0 - FETCH - Program Counter: 4.
+2024/12/05 11:58:02 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 5].
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 ## TID: 0 - FETCH - Program Counter: 5.
+2024/12/05 11:58:02 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 ## TID: 0 - FETCH - Program Counter: 6.
+2024/12/05 11:58:02 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 5].
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 ## TID: 0 - FETCH - Program Counter: 7.
+2024/12/05 11:58:02 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 ## TID: 0 - FETCH - Program Counter: 8.
+2024/12/05 11:58:02 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 ## TID: 0 - FETCH - Program Counter: 9.
+2024/12/05 11:58:02 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 ## TID: 0 - FETCH - Program Counter: 10.
+2024/12/05 11:58:02 ## TID: 0 - Ejecutando: THREAD_JOIN - [4].
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 ## TID: 2 - Solicito Contexto Ejecución.
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 ## TID: 2 - FETCH - Program Counter: 0.
+2024/12/05 11:58:02 ## TID: 2 - Ejecutando: SET - [CX 5].
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 ## TID: 2 - FETCH - Program Counter: 1.
+2024/12/05 11:58:02 ## TID: 2 - Ejecutando: SET - [BX 1].
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 ## TID: 2 - FETCH - Program Counter: 2.
+2024/12/05 11:58:02 ## TID: 2 - Ejecutando: SUB - [CX BX].
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 ## TID: 2 - FETCH - Program Counter: 3.
+2024/12/05 11:58:02 ## TID: 2 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 ## TID: 3 - Solicito Contexto Ejecución.
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 ## TID: 3 - FETCH - Program Counter: 0.
+2024/12/05 11:58:02 ## TID: 3 - Ejecutando: SET - [CX 5].
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 ## TID: 3 - FETCH - Program Counter: 1.
+2024/12/05 11:58:02 ## TID: 3 - Ejecutando: SET - [BX 1].
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 ## TID: 3 - FETCH - Program Counter: 2.
+2024/12/05 11:58:02 ## TID: 3 - Ejecutando: SUB - [CX BX].
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 ## TID: 3 - FETCH - Program Counter: 3.
+2024/12/05 11:58:02 ## TID: 3 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 ## TID: 1 - Solicito Contexto Ejecución.
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 ## TID: 1 - FETCH - Program Counter: 0.
+2024/12/05 11:58:02 ## TID: 1 - Ejecutando: SET - [CX 5].
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 ## TID: 1 - FETCH - Program Counter: 1.
+2024/12/05 11:58:02 ## TID: 1 - Ejecutando: SET - [BX 1].
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 ## TID: 1 - FETCH - Program Counter: 2.
+2024/12/05 11:58:02 ## TID: 1 - Ejecutando: SUB - [CX BX].
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 ## TID: 1 - FETCH - Program Counter: 3.
+2024/12/05 11:58:02 ## TID: 1 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 ## TID: 4 - Solicito Contexto Ejecución.
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 ## TID: 4 - FETCH - Program Counter: 0.
+2024/12/05 11:58:02 ## TID: 4 - Ejecutando: SET - [CX 5].
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 ## TID: 4 - FETCH - Program Counter: 1.
+2024/12/05 11:58:02 ## TID: 4 - Ejecutando: SET - [BX 1].
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 ## TID: 4 - FETCH - Program Counter: 2.
+2024/12/05 11:58:02 ## TID: 4 - Ejecutando: SUB - [CX BX].
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 ## TID: 4 - FETCH - Program Counter: 3.
+2024/12/05 11:58:02 ## TID: 4 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 ## TID: 0 - FETCH - Program Counter: 11.
+2024/12/05 11:58:02 ## TID: 0 - Ejecutando: DUMP_MEMORY - [].
+2024/12/05 11:58:02 Respuesta POST: 500 Internal Server Error
+2024/12/05 11:58:02 Respuesta POST: 200 OK
+2024/12/05 11:58:02 Respuesta POST: 500 Internal Server Error
+2024/12/05 11:58:02 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 11:59:07 El módulo CPU está a la escucha en el puerto :8004
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 ## TID: 0 - FETCH - Program Counter: 0.
+2024/12/05 11:59:18 ## TID: 0 - Ejecutando: SET - [DX 0].
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 ## TID: 0 - FETCH - Program Counter: 1.
+2024/12/05 11:59:18 ## TID: 0 - Ejecutando: SET - [AX 1].
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 ## TID: 0 - FETCH - Program Counter: 2.
+2024/12/05 11:59:18 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 ## TID: 0 - FETCH - Program Counter: 3.
+2024/12/05 11:59:18 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 ## TID: 0 - FETCH - Program Counter: 4.
+2024/12/05 11:59:18 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 5].
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 ## TID: 0 - FETCH - Program Counter: 5.
+2024/12/05 11:59:18 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 ## TID: 0 - FETCH - Program Counter: 6.
+2024/12/05 11:59:18 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 5].
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 ## TID: 0 - FETCH - Program Counter: 7.
+2024/12/05 11:59:18 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 ## TID: 0 - FETCH - Program Counter: 8.
+2024/12/05 11:59:18 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 ## TID: 0 - FETCH - Program Counter: 9.
+2024/12/05 11:59:18 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 ## TID: 0 - FETCH - Program Counter: 10.
+2024/12/05 11:59:18 ## TID: 0 - Ejecutando: THREAD_JOIN - [4].
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 ## TID: 2 - Solicito Contexto Ejecución.
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 ## TID: 2 - FETCH - Program Counter: 0.
+2024/12/05 11:59:18 ## TID: 2 - Ejecutando: SET - [CX 5].
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 ## TID: 2 - FETCH - Program Counter: 1.
+2024/12/05 11:59:18 ## TID: 2 - Ejecutando: SET - [BX 1].
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 ## TID: 2 - FETCH - Program Counter: 2.
+2024/12/05 11:59:18 ## TID: 2 - Ejecutando: SUB - [CX BX].
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 ## TID: 2 - FETCH - Program Counter: 3.
+2024/12/05 11:59:18 ## TID: 2 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 ## TID: 3 - Solicito Contexto Ejecución.
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 ## TID: 3 - FETCH - Program Counter: 0.
+2024/12/05 11:59:18 ## TID: 3 - Ejecutando: SET - [CX 5].
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 ## TID: 3 - FETCH - Program Counter: 1.
+2024/12/05 11:59:18 ## TID: 3 - Ejecutando: SET - [BX 1].
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 ## TID: 3 - FETCH - Program Counter: 2.
+2024/12/05 11:59:18 ## TID: 3 - Ejecutando: SUB - [CX BX].
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 ## TID: 3 - FETCH - Program Counter: 3.
+2024/12/05 11:59:18 ## TID: 3 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 ## TID: 1 - Solicito Contexto Ejecución.
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 ## TID: 1 - FETCH - Program Counter: 0.
+2024/12/05 11:59:18 ## TID: 1 - Ejecutando: SET - [CX 5].
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 ## TID: 1 - FETCH - Program Counter: 1.
+2024/12/05 11:59:18 ## TID: 1 - Ejecutando: SET - [BX 1].
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 ## TID: 1 - FETCH - Program Counter: 2.
+2024/12/05 11:59:18 ## TID: 1 - Ejecutando: SUB - [CX BX].
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 ## TID: 1 - FETCH - Program Counter: 3.
+2024/12/05 11:59:18 ## TID: 1 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 ## TID: 4 - Solicito Contexto Ejecución.
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 ## TID: 4 - FETCH - Program Counter: 0.
+2024/12/05 11:59:18 ## TID: 4 - Ejecutando: SET - [CX 5].
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 ## TID: 4 - FETCH - Program Counter: 1.
+2024/12/05 11:59:18 ## TID: 4 - Ejecutando: SET - [BX 1].
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 ## TID: 4 - FETCH - Program Counter: 2.
+2024/12/05 11:59:18 ## TID: 4 - Ejecutando: SUB - [CX BX].
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 ## TID: 4 - FETCH - Program Counter: 3.
+2024/12/05 11:59:18 ## TID: 4 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 ## TID: 0 - FETCH - Program Counter: 11.
+2024/12/05 11:59:18 ## TID: 0 - Ejecutando: DUMP_MEMORY - [].
+2024/12/05 11:59:18 Respuesta POST: 500 Internal Server Error
+2024/12/05 11:59:18 Respuesta POST: 200 OK
+2024/12/05 11:59:18 Respuesta POST: 500 Internal Server Error
+2024/12/05 11:59:18 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 12:08:13 El módulo CPU está a la escucha en el puerto :8004
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 ## TID: 0 - FETCH - Program Counter: 0.
+2024/12/05 12:08:26 ## TID: 0 - Ejecutando: SET - [DX 0].
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 ## TID: 0 - FETCH - Program Counter: 1.
+2024/12/05 12:08:26 ## TID: 0 - Ejecutando: SET - [AX 1].
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 ## TID: 0 - FETCH - Program Counter: 2.
+2024/12/05 12:08:26 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 ## TID: 0 - FETCH - Program Counter: 3.
+2024/12/05 12:08:26 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 ## TID: 0 - FETCH - Program Counter: 4.
+2024/12/05 12:08:26 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 5].
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 ## TID: 0 - FETCH - Program Counter: 5.
+2024/12/05 12:08:26 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 ## TID: 0 - FETCH - Program Counter: 6.
+2024/12/05 12:08:26 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 5].
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 ## TID: 0 - FETCH - Program Counter: 7.
+2024/12/05 12:08:26 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 ## TID: 0 - FETCH - Program Counter: 8.
+2024/12/05 12:08:26 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 ## TID: 0 - FETCH - Program Counter: 9.
+2024/12/05 12:08:26 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 ## TID: 0 - FETCH - Program Counter: 10.
+2024/12/05 12:08:26 ## TID: 0 - Ejecutando: THREAD_JOIN - [4].
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 ## TID: 2 - Solicito Contexto Ejecución.
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 ## TID: 2 - FETCH - Program Counter: 0.
+2024/12/05 12:08:26 ## TID: 2 - Ejecutando: SET - [CX 5].
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 ## TID: 2 - FETCH - Program Counter: 1.
+2024/12/05 12:08:26 ## TID: 2 - Ejecutando: SET - [BX 1].
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 ## TID: 2 - FETCH - Program Counter: 2.
+2024/12/05 12:08:26 ## TID: 2 - Ejecutando: SUB - [CX BX].
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 ## TID: 2 - FETCH - Program Counter: 3.
+2024/12/05 12:08:26 ## TID: 2 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 ## TID: 3 - Solicito Contexto Ejecución.
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 ## TID: 3 - FETCH - Program Counter: 0.
+2024/12/05 12:08:26 ## TID: 3 - Ejecutando: SET - [CX 5].
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 ## TID: 3 - FETCH - Program Counter: 1.
+2024/12/05 12:08:26 ## TID: 3 - Ejecutando: SET - [BX 1].
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 ## TID: 3 - FETCH - Program Counter: 2.
+2024/12/05 12:08:26 ## TID: 3 - Ejecutando: SUB - [CX BX].
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 ## TID: 3 - FETCH - Program Counter: 3.
+2024/12/05 12:08:26 ## TID: 3 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 ## TID: 1 - Solicito Contexto Ejecución.
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 ## TID: 1 - FETCH - Program Counter: 0.
+2024/12/05 12:08:26 ## TID: 1 - Ejecutando: SET - [CX 5].
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 ## TID: 1 - FETCH - Program Counter: 1.
+2024/12/05 12:08:26 ## TID: 1 - Ejecutando: SET - [BX 1].
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 ## TID: 1 - FETCH - Program Counter: 2.
+2024/12/05 12:08:26 ## TID: 1 - Ejecutando: SUB - [CX BX].
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 ## TID: 1 - FETCH - Program Counter: 3.
+2024/12/05 12:08:26 ## TID: 1 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 ## TID: 4 - Solicito Contexto Ejecución.
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 ## TID: 4 - FETCH - Program Counter: 0.
+2024/12/05 12:08:26 ## TID: 4 - Ejecutando: SET - [CX 5].
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 ## TID: 4 - FETCH - Program Counter: 1.
+2024/12/05 12:08:26 ## TID: 4 - Ejecutando: SET - [BX 1].
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 ## TID: 4 - FETCH - Program Counter: 2.
+2024/12/05 12:08:26 ## TID: 4 - Ejecutando: SUB - [CX BX].
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 ## TID: 4 - FETCH - Program Counter: 3.
+2024/12/05 12:08:26 ## TID: 4 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 ## TID: 0 - FETCH - Program Counter: 11.
+2024/12/05 12:08:26 ## TID: 0 - Ejecutando: DUMP_MEMORY - [].
+2024/12/05 12:08:26 Respuesta POST: 500 Internal Server Error
+2024/12/05 12:08:26 Respuesta POST: 200 OK
+2024/12/05 12:08:26 Respuesta POST: 500 Internal Server Error
+2024/12/05 12:08:26 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 12:11:55 El módulo CPU está a la escucha en el puerto :8004
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 ## TID: 0 - FETCH - Program Counter: 0.
+2024/12/05 12:12:05 ## TID: 0 - Ejecutando: SET - [DX 0].
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 ## TID: 0 - FETCH - Program Counter: 1.
+2024/12/05 12:12:05 ## TID: 0 - Ejecutando: SET - [AX 1].
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 ## TID: 0 - FETCH - Program Counter: 2.
+2024/12/05 12:12:05 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 ## TID: 0 - FETCH - Program Counter: 3.
+2024/12/05 12:12:05 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 ## TID: 0 - FETCH - Program Counter: 4.
+2024/12/05 12:12:05 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 5].
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 ## TID: 0 - FETCH - Program Counter: 5.
+2024/12/05 12:12:05 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 ## TID: 0 - FETCH - Program Counter: 6.
+2024/12/05 12:12:05 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 5].
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 ## TID: 0 - FETCH - Program Counter: 7.
+2024/12/05 12:12:05 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 ## TID: 0 - FETCH - Program Counter: 8.
+2024/12/05 12:12:05 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 ## TID: 0 - FETCH - Program Counter: 9.
+2024/12/05 12:12:05 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 ## TID: 0 - FETCH - Program Counter: 10.
+2024/12/05 12:12:05 ## TID: 0 - Ejecutando: THREAD_JOIN - [4].
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 ## TID: 2 - Solicito Contexto Ejecución.
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 ## TID: 2 - FETCH - Program Counter: 0.
+2024/12/05 12:12:05 ## TID: 2 - Ejecutando: SET - [CX 5].
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 ## TID: 2 - FETCH - Program Counter: 1.
+2024/12/05 12:12:05 ## TID: 2 - Ejecutando: SET - [BX 1].
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 ## TID: 2 - FETCH - Program Counter: 2.
+2024/12/05 12:12:05 ## TID: 2 - Ejecutando: SUB - [CX BX].
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 ## TID: 2 - FETCH - Program Counter: 3.
+2024/12/05 12:12:05 ## TID: 2 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 ## TID: 3 - Solicito Contexto Ejecución.
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 ## TID: 3 - FETCH - Program Counter: 0.
+2024/12/05 12:12:05 ## TID: 3 - Ejecutando: SET - [CX 5].
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 ## TID: 3 - FETCH - Program Counter: 1.
+2024/12/05 12:12:05 ## TID: 3 - Ejecutando: SET - [BX 1].
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 ## TID: 3 - FETCH - Program Counter: 2.
+2024/12/05 12:12:05 ## TID: 3 - Ejecutando: SUB - [CX BX].
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 ## TID: 3 - FETCH - Program Counter: 3.
+2024/12/05 12:12:05 ## TID: 3 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 ## TID: 1 - Solicito Contexto Ejecución.
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 ## TID: 1 - FETCH - Program Counter: 0.
+2024/12/05 12:12:05 ## TID: 1 - Ejecutando: SET - [CX 5].
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 ## TID: 1 - FETCH - Program Counter: 1.
+2024/12/05 12:12:05 ## TID: 1 - Ejecutando: SET - [BX 1].
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 ## TID: 1 - FETCH - Program Counter: 2.
+2024/12/05 12:12:05 ## TID: 1 - Ejecutando: SUB - [CX BX].
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 ## TID: 1 - FETCH - Program Counter: 3.
+2024/12/05 12:12:05 ## TID: 1 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 ## TID: 4 - Solicito Contexto Ejecución.
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 ## TID: 4 - FETCH - Program Counter: 0.
+2024/12/05 12:12:05 ## TID: 4 - Ejecutando: SET - [CX 5].
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 ## TID: 4 - FETCH - Program Counter: 1.
+2024/12/05 12:12:05 ## TID: 4 - Ejecutando: SET - [BX 1].
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 ## TID: 4 - FETCH - Program Counter: 2.
+2024/12/05 12:12:05 ## TID: 4 - Ejecutando: SUB - [CX BX].
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 ## TID: 4 - FETCH - Program Counter: 3.
+2024/12/05 12:12:05 ## TID: 4 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 ## TID: 0 - FETCH - Program Counter: 11.
+2024/12/05 12:12:05 ## TID: 0 - Ejecutando: DUMP_MEMORY - [].
+2024/12/05 12:12:05 Respuesta POST: 500 Internal Server Error
+2024/12/05 12:12:05 Respuesta POST: 200 OK
+2024/12/05 12:12:05 Respuesta POST: 500 Internal Server Error
+2024/12/05 12:12:05 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 12:13:18 El módulo CPU está a la escucha en el puerto :8004
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 ## TID: 0 - FETCH - Program Counter: 0.
+2024/12/05 12:13:28 ## TID: 0 - Ejecutando: SET - [DX 0].
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 ## TID: 0 - FETCH - Program Counter: 1.
+2024/12/05 12:13:28 ## TID: 0 - Ejecutando: SET - [AX 1].
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 ## TID: 0 - FETCH - Program Counter: 2.
+2024/12/05 12:13:28 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 ## TID: 0 - FETCH - Program Counter: 3.
+2024/12/05 12:13:28 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 ## TID: 0 - FETCH - Program Counter: 4.
+2024/12/05 12:13:28 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 5].
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 ## TID: 0 - FETCH - Program Counter: 5.
+2024/12/05 12:13:28 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 ## TID: 0 - FETCH - Program Counter: 6.
+2024/12/05 12:13:28 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 5].
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 ## TID: 0 - FETCH - Program Counter: 7.
+2024/12/05 12:13:28 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 ## TID: 0 - FETCH - Program Counter: 8.
+2024/12/05 12:13:28 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 ## TID: 0 - FETCH - Program Counter: 9.
+2024/12/05 12:13:28 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 ## TID: 0 - FETCH - Program Counter: 10.
+2024/12/05 12:13:28 ## TID: 0 - Ejecutando: THREAD_JOIN - [4].
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 ## TID: 2 - Solicito Contexto Ejecución.
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 ## TID: 2 - FETCH - Program Counter: 0.
+2024/12/05 12:13:28 ## TID: 2 - Ejecutando: SET - [CX 5].
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 ## TID: 2 - FETCH - Program Counter: 1.
+2024/12/05 12:13:28 ## TID: 2 - Ejecutando: SET - [BX 1].
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 ## TID: 2 - FETCH - Program Counter: 2.
+2024/12/05 12:13:28 ## TID: 2 - Ejecutando: SUB - [CX BX].
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 ## TID: 2 - FETCH - Program Counter: 3.
+2024/12/05 12:13:28 ## TID: 2 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 ## TID: 3 - Solicito Contexto Ejecución.
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 ## TID: 3 - FETCH - Program Counter: 0.
+2024/12/05 12:13:28 ## TID: 3 - Ejecutando: SET - [CX 5].
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 ## TID: 3 - FETCH - Program Counter: 1.
+2024/12/05 12:13:28 ## TID: 3 - Ejecutando: SET - [BX 1].
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 ## TID: 3 - FETCH - Program Counter: 2.
+2024/12/05 12:13:28 ## TID: 3 - Ejecutando: SUB - [CX BX].
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 ## TID: 3 - FETCH - Program Counter: 3.
+2024/12/05 12:13:28 ## TID: 3 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 ## TID: 1 - Solicito Contexto Ejecución.
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 ## TID: 1 - FETCH - Program Counter: 0.
+2024/12/05 12:13:28 ## TID: 1 - Ejecutando: SET - [CX 5].
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 ## TID: 1 - FETCH - Program Counter: 1.
+2024/12/05 12:13:28 ## TID: 1 - Ejecutando: SET - [BX 1].
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 ## TID: 1 - FETCH - Program Counter: 2.
+2024/12/05 12:13:28 ## TID: 1 - Ejecutando: SUB - [CX BX].
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 ## TID: 1 - FETCH - Program Counter: 3.
+2024/12/05 12:13:28 ## TID: 1 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 ## TID: 4 - Solicito Contexto Ejecución.
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 ## TID: 4 - FETCH - Program Counter: 0.
+2024/12/05 12:13:28 ## TID: 4 - Ejecutando: SET - [CX 5].
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 ## TID: 4 - FETCH - Program Counter: 1.
+2024/12/05 12:13:28 ## TID: 4 - Ejecutando: SET - [BX 1].
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 ## TID: 4 - FETCH - Program Counter: 2.
+2024/12/05 12:13:28 ## TID: 4 - Ejecutando: SUB - [CX BX].
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 ## TID: 4 - FETCH - Program Counter: 3.
+2024/12/05 12:13:28 ## TID: 4 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 12:13:28 Respuesta POST: 200 OK
+2024/12/05 12:13:28 ## TID: 0 - FETCH - Program Counter: 11.
+2024/12/05 12:13:28 ## TID: 0 - Ejecutando: DUMP_MEMORY - [].
+2024/12/05 12:13:28 http: panic serving 127.0.0.1:60298: Post "http://127.0.0.1:8001/dump_memory": EOF
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
+panic({0x6f1300?, 0xc0002627b0?})
+	C:/Program Files/Go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/utils/cliente.Post({0xc00008c430?, 0xc0000e8ba0?}, 0x1f41, {0x733acf, 0xb}, {0xc0000fe1b0, 0x85, 0x90})
+	C:/Users/Tomás/Desktop/Facultad/FACULTAD/3 AÑO/S.O/GO/tp-2024-2c-Equipo-Operativo/tp-2024-2c-Equipo-Operativo/utils/cliente/client.go:17 +0x2c6
+github.com/sisoputnfrba/tp-golang/cpu/instrucciones.Syscall({{0xc00008d554, 0xb}, {0xc00008fe70, 0x0, 0x0}}, 0xb?, 0x1, 0x0)
+	C:/Users/Tomás/Desktop/Facultad/FACULTAD/3 AÑO/S.O/GO/tp-2024-2c-Equipo-Operativo/tp-2024-2c-Equipo-Operativo/cpu/instrucciones/instruction.go:210 +0x6e5
+github.com/sisoputnfrba/tp-golang/cpu/instrucciones.Execute({{0xc00008d554, 0xb}, {0xc00008fe70, 0x0, 0x0}}, 0xc000090de0, 0x0, 0x200, 0x1, 0x0)
+	C:/Users/Tomás/Desktop/Facultad/FACULTAD/3 AÑO/S.O/GO/tp-2024-2c-Equipo-Operativo/tp-2024-2c-Equipo-Operativo/cpu/instrucciones/instruction_cycle.go:179 +0x62b
+github.com/sisoputnfrba/tp-golang/cpu/instrucciones.EjecutarInstruccion(0x1, 0x0)
+	C:/Users/Tomás/Desktop/Facultad/FACULTAD/3 AÑO/S.O/GO/tp-2024-2c-Equipo-Operativo/tp-2024-2c-Equipo-Operativo/cpu/instrucciones/instruction_cycle.go:66 +0x155
+github.com/sisoputnfrba/tp-golang/cpu/instrucciones.Dispatch({0x7bea50, 0xc0000e6380}, 0xc00012fe00)
+	C:/Users/Tomás/Desktop/Facultad/FACULTAD/3 AÑO/S.O/GO/tp-2024-2c-Equipo-Operativo/tp-2024-2c-Equipo-Operativo/cpu/instrucciones/instruction_cycle.go:41 +0x85
+net/http.HandlerFunc.ServeHTTP(0xc0000e60e0?, {0x7bea50?, 0xc0000e6380?}, 0x6751c318?)
+	C:/Program Files/Go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x40da65?, {0x7bea50, 0xc0000e6380}, 0xc00012fe00)
+	C:/Program Files/Go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x7bd5d8?}, {0x7bea50?, 0xc0000e6380?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc0000ee120, {0x7bef18, 0xc00008b0e0})
+	C:/Program Files/Go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3360 +0x485
+2024/12/05 12:15:03 El módulo CPU está a la escucha en el puerto :8004
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 ## TID: 0 - FETCH - Program Counter: 0.
+2024/12/05 12:15:13 ## TID: 0 - Ejecutando: SET - [DX 0].
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 ## TID: 0 - FETCH - Program Counter: 1.
+2024/12/05 12:15:13 ## TID: 0 - Ejecutando: SET - [AX 1].
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 ## TID: 0 - FETCH - Program Counter: 2.
+2024/12/05 12:15:13 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 ## TID: 0 - FETCH - Program Counter: 3.
+2024/12/05 12:15:13 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 ## TID: 0 - FETCH - Program Counter: 4.
+2024/12/05 12:15:13 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 5].
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 ## TID: 0 - FETCH - Program Counter: 5.
+2024/12/05 12:15:13 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 ## TID: 0 - FETCH - Program Counter: 6.
+2024/12/05 12:15:13 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 5].
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 ## TID: 0 - FETCH - Program Counter: 7.
+2024/12/05 12:15:13 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 ## TID: 0 - FETCH - Program Counter: 8.
+2024/12/05 12:15:13 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 ## TID: 0 - FETCH - Program Counter: 9.
+2024/12/05 12:15:13 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 ## TID: 0 - FETCH - Program Counter: 10.
+2024/12/05 12:15:13 ## TID: 0 - Ejecutando: THREAD_JOIN - [4].
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 ## TID: 2 - Solicito Contexto Ejecución.
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 ## TID: 2 - FETCH - Program Counter: 0.
+2024/12/05 12:15:13 ## TID: 2 - Ejecutando: SET - [CX 5].
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 ## TID: 2 - FETCH - Program Counter: 1.
+2024/12/05 12:15:13 ## TID: 2 - Ejecutando: SET - [BX 1].
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 ## TID: 2 - FETCH - Program Counter: 2.
+2024/12/05 12:15:13 ## TID: 2 - Ejecutando: SUB - [CX BX].
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 ## TID: 2 - FETCH - Program Counter: 3.
+2024/12/05 12:15:13 ## TID: 2 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 ## TID: 3 - Solicito Contexto Ejecución.
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 ## TID: 3 - FETCH - Program Counter: 0.
+2024/12/05 12:15:13 ## TID: 3 - Ejecutando: SET - [CX 5].
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 ## TID: 3 - FETCH - Program Counter: 1.
+2024/12/05 12:15:13 ## TID: 3 - Ejecutando: SET - [BX 1].
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 ## TID: 3 - FETCH - Program Counter: 2.
+2024/12/05 12:15:13 ## TID: 3 - Ejecutando: SUB - [CX BX].
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 ## TID: 3 - FETCH - Program Counter: 3.
+2024/12/05 12:15:13 ## TID: 3 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 ## TID: 1 - Solicito Contexto Ejecución.
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 ## TID: 1 - FETCH - Program Counter: 0.
+2024/12/05 12:15:13 ## TID: 1 - Ejecutando: SET - [CX 5].
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 ## TID: 1 - FETCH - Program Counter: 1.
+2024/12/05 12:15:13 ## TID: 1 - Ejecutando: SET - [BX 1].
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 ## TID: 1 - FETCH - Program Counter: 2.
+2024/12/05 12:15:13 ## TID: 1 - Ejecutando: SUB - [CX BX].
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 ## TID: 1 - FETCH - Program Counter: 3.
+2024/12/05 12:15:13 ## TID: 1 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 ## TID: 4 - Solicito Contexto Ejecución.
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 ## TID: 4 - FETCH - Program Counter: 0.
+2024/12/05 12:15:13 ## TID: 4 - Ejecutando: SET - [CX 5].
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 ## TID: 4 - FETCH - Program Counter: 1.
+2024/12/05 12:15:13 ## TID: 4 - Ejecutando: SET - [BX 1].
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 ## TID: 4 - FETCH - Program Counter: 2.
+2024/12/05 12:15:13 ## TID: 4 - Ejecutando: SUB - [CX BX].
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 ## TID: 4 - FETCH - Program Counter: 3.
+2024/12/05 12:15:13 ## TID: 4 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 ## TID: 0 - FETCH - Program Counter: 11.
+2024/12/05 12:15:13 ## TID: 0 - Ejecutando: DUMP_MEMORY - [].
+2024/12/05 12:15:13 Respuesta POST: 500 Internal Server Error
+2024/12/05 12:15:13 Respuesta POST: 200 OK
+2024/12/05 12:15:13 Respuesta POST: 500 Internal Server Error
+2024/12/05 12:15:13 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 12:27:09 El módulo CPU está a la escucha en el puerto :8004
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 ## TID: 0 - FETCH - Program Counter: 0.
+2024/12/05 12:27:18 ## TID: 0 - Ejecutando: SET - [DX 0].
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 ## TID: 0 - FETCH - Program Counter: 1.
+2024/12/05 12:27:18 ## TID: 0 - Ejecutando: SET - [AX 1].
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 ## TID: 0 - FETCH - Program Counter: 2.
+2024/12/05 12:27:18 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 ## TID: 0 - FETCH - Program Counter: 3.
+2024/12/05 12:27:18 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 ## TID: 0 - FETCH - Program Counter: 4.
+2024/12/05 12:27:18 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 5].
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 ## TID: 0 - FETCH - Program Counter: 5.
+2024/12/05 12:27:18 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 ## TID: 0 - FETCH - Program Counter: 6.
+2024/12/05 12:27:18 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 5].
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 ## TID: 0 - FETCH - Program Counter: 7.
+2024/12/05 12:27:18 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 ## TID: 0 - FETCH - Program Counter: 8.
+2024/12/05 12:27:18 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 ## TID: 0 - FETCH - Program Counter: 9.
+2024/12/05 12:27:18 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 ## TID: 0 - FETCH - Program Counter: 10.
+2024/12/05 12:27:18 ## TID: 0 - Ejecutando: THREAD_JOIN - [4].
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 ## TID: 2 - Solicito Contexto Ejecución.
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 ## TID: 2 - FETCH - Program Counter: 0.
+2024/12/05 12:27:18 ## TID: 2 - Ejecutando: SET - [CX 5].
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 ## TID: 2 - FETCH - Program Counter: 1.
+2024/12/05 12:27:18 ## TID: 2 - Ejecutando: SET - [BX 1].
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 ## TID: 2 - FETCH - Program Counter: 2.
+2024/12/05 12:27:18 ## TID: 2 - Ejecutando: SUB - [CX BX].
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 ## TID: 2 - FETCH - Program Counter: 3.
+2024/12/05 12:27:18 ## TID: 2 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 ## TID: 3 - Solicito Contexto Ejecución.
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 ## TID: 3 - FETCH - Program Counter: 0.
+2024/12/05 12:27:18 ## TID: 3 - Ejecutando: SET - [CX 5].
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 ## TID: 3 - FETCH - Program Counter: 1.
+2024/12/05 12:27:18 ## TID: 3 - Ejecutando: SET - [BX 1].
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 ## TID: 3 - FETCH - Program Counter: 2.
+2024/12/05 12:27:18 ## TID: 3 - Ejecutando: SUB - [CX BX].
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 ## TID: 3 - FETCH - Program Counter: 3.
+2024/12/05 12:27:18 ## TID: 3 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 ## TID: 1 - Solicito Contexto Ejecución.
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 ## TID: 1 - FETCH - Program Counter: 0.
+2024/12/05 12:27:18 ## TID: 1 - Ejecutando: SET - [CX 5].
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 ## TID: 1 - FETCH - Program Counter: 1.
+2024/12/05 12:27:18 ## TID: 1 - Ejecutando: SET - [BX 1].
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 ## TID: 1 - FETCH - Program Counter: 2.
+2024/12/05 12:27:18 ## TID: 1 - Ejecutando: SUB - [CX BX].
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 ## TID: 1 - FETCH - Program Counter: 3.
+2024/12/05 12:27:18 ## TID: 1 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 ## TID: 4 - Solicito Contexto Ejecución.
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 ## TID: 4 - FETCH - Program Counter: 0.
+2024/12/05 12:27:18 ## TID: 4 - Ejecutando: SET - [CX 5].
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 ## TID: 4 - FETCH - Program Counter: 1.
+2024/12/05 12:27:18 ## TID: 4 - Ejecutando: SET - [BX 1].
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 ## TID: 4 - FETCH - Program Counter: 2.
+2024/12/05 12:27:18 ## TID: 4 - Ejecutando: SUB - [CX BX].
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 ## TID: 4 - FETCH - Program Counter: 3.
+2024/12/05 12:27:18 ## TID: 4 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 ## TID: 0 - FETCH - Program Counter: 11.
+2024/12/05 12:27:18 ## TID: 0 - Ejecutando: DUMP_MEMORY - [].
+2024/12/05 12:27:18 Respuesta POST: 500 Internal Server Error
+2024/12/05 12:27:18 Respuesta POST: 200 OK
+2024/12/05 12:27:18 Respuesta POST: 500 Internal Server Error
+2024/12/05 12:27:18 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 12:44:29 El módulo CPU está a la escucha en el puerto :8004
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 ## TID: 0 - FETCH - Program Counter: 0.
+2024/12/05 12:44:41 ## TID: 0 - Ejecutando: SET - [DX 0].
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 ## TID: 0 - FETCH - Program Counter: 1.
+2024/12/05 12:44:41 ## TID: 0 - Ejecutando: SET - [AX 1].
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 ## TID: 0 - FETCH - Program Counter: 2.
+2024/12/05 12:44:41 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 ## TID: 0 - FETCH - Program Counter: 3.
+2024/12/05 12:44:41 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 ## TID: 0 - FETCH - Program Counter: 4.
+2024/12/05 12:44:41 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 5].
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 ## TID: 0 - FETCH - Program Counter: 5.
+2024/12/05 12:44:41 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 ## TID: 0 - FETCH - Program Counter: 6.
+2024/12/05 12:44:41 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 5].
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 ## TID: 0 - FETCH - Program Counter: 7.
+2024/12/05 12:44:41 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 ## TID: 0 - FETCH - Program Counter: 8.
+2024/12/05 12:44:41 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 ## TID: 0 - FETCH - Program Counter: 9.
+2024/12/05 12:44:41 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 ## TID: 0 - FETCH - Program Counter: 10.
+2024/12/05 12:44:41 ## TID: 0 - Ejecutando: THREAD_JOIN - [4].
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 ## TID: 2 - Solicito Contexto Ejecución.
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 ## TID: 2 - FETCH - Program Counter: 0.
+2024/12/05 12:44:41 ## TID: 2 - Ejecutando: SET - [CX 5].
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 ## TID: 2 - FETCH - Program Counter: 1.
+2024/12/05 12:44:41 ## TID: 2 - Ejecutando: SET - [BX 1].
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 ## TID: 2 - FETCH - Program Counter: 2.
+2024/12/05 12:44:41 ## TID: 2 - Ejecutando: SUB - [CX BX].
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 ## TID: 2 - FETCH - Program Counter: 3.
+2024/12/05 12:44:41 ## TID: 2 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 ## TID: 3 - Solicito Contexto Ejecución.
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 ## TID: 3 - FETCH - Program Counter: 0.
+2024/12/05 12:44:41 ## TID: 3 - Ejecutando: SET - [CX 5].
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 ## TID: 3 - FETCH - Program Counter: 1.
+2024/12/05 12:44:41 ## TID: 3 - Ejecutando: SET - [BX 1].
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 ## TID: 3 - FETCH - Program Counter: 2.
+2024/12/05 12:44:41 ## TID: 3 - Ejecutando: SUB - [CX BX].
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 ## TID: 3 - FETCH - Program Counter: 3.
+2024/12/05 12:44:41 ## TID: 3 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 ## TID: 1 - Solicito Contexto Ejecución.
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 ## TID: 1 - FETCH - Program Counter: 0.
+2024/12/05 12:44:41 ## TID: 1 - Ejecutando: SET - [CX 5].
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 ## TID: 1 - FETCH - Program Counter: 1.
+2024/12/05 12:44:41 ## TID: 1 - Ejecutando: SET - [BX 1].
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 ## TID: 1 - FETCH - Program Counter: 2.
+2024/12/05 12:44:41 ## TID: 1 - Ejecutando: SUB - [CX BX].
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 ## TID: 1 - FETCH - Program Counter: 3.
+2024/12/05 12:44:41 ## TID: 1 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 ## TID: 4 - Solicito Contexto Ejecución.
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 ## TID: 4 - FETCH - Program Counter: 0.
+2024/12/05 12:44:41 ## TID: 4 - Ejecutando: SET - [CX 5].
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 ## TID: 4 - FETCH - Program Counter: 1.
+2024/12/05 12:44:41 ## TID: 4 - Ejecutando: SET - [BX 1].
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 ## TID: 4 - FETCH - Program Counter: 2.
+2024/12/05 12:44:41 ## TID: 4 - Ejecutando: SUB - [CX BX].
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 ## TID: 4 - FETCH - Program Counter: 3.
+2024/12/05 12:44:41 ## TID: 4 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 ## TID: 0 - FETCH - Program Counter: 11.
+2024/12/05 12:44:41 ## TID: 0 - Ejecutando: DUMP_MEMORY - [].
+2024/12/05 12:44:41 Respuesta POST: 500 Internal Server Error
+2024/12/05 12:44:41 Respuesta POST: 200 OK
+2024/12/05 12:44:41 Respuesta POST: 500 Internal Server Error
+2024/12/05 12:44:41 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 12:52:08 El módulo CPU está a la escucha en el puerto :8004
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 ## TID: 0 - FETCH - Program Counter: 0.
+2024/12/05 12:52:21 ## TID: 0 - Ejecutando: SET - [DX 0].
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 ## TID: 0 - FETCH - Program Counter: 1.
+2024/12/05 12:52:21 ## TID: 0 - Ejecutando: SET - [AX 1].
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 ## TID: 0 - FETCH - Program Counter: 2.
+2024/12/05 12:52:21 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 ## TID: 0 - FETCH - Program Counter: 3.
+2024/12/05 12:52:21 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 ## TID: 0 - FETCH - Program Counter: 4.
+2024/12/05 12:52:21 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 5].
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 ## TID: 0 - FETCH - Program Counter: 5.
+2024/12/05 12:52:21 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 ## TID: 0 - FETCH - Program Counter: 6.
+2024/12/05 12:52:21 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 5].
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 ## TID: 0 - FETCH - Program Counter: 7.
+2024/12/05 12:52:21 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 ## TID: 0 - FETCH - Program Counter: 8.
+2024/12/05 12:52:21 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 ## TID: 0 - FETCH - Program Counter: 9.
+2024/12/05 12:52:21 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 ## TID: 0 - FETCH - Program Counter: 10.
+2024/12/05 12:52:21 ## TID: 0 - Ejecutando: THREAD_JOIN - [4].
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 ## TID: 2 - Solicito Contexto Ejecución.
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 ## TID: 2 - FETCH - Program Counter: 0.
+2024/12/05 12:52:21 ## TID: 2 - Ejecutando: SET - [CX 5].
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 ## TID: 2 - FETCH - Program Counter: 1.
+2024/12/05 12:52:21 ## TID: 2 - Ejecutando: SET - [BX 1].
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 ## TID: 2 - FETCH - Program Counter: 2.
+2024/12/05 12:52:21 ## TID: 2 - Ejecutando: SUB - [CX BX].
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 ## TID: 2 - FETCH - Program Counter: 3.
+2024/12/05 12:52:21 ## TID: 2 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 ## TID: 3 - Solicito Contexto Ejecución.
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 ## TID: 3 - FETCH - Program Counter: 0.
+2024/12/05 12:52:21 ## TID: 3 - Ejecutando: SET - [CX 5].
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 ## TID: 3 - FETCH - Program Counter: 1.
+2024/12/05 12:52:21 ## TID: 3 - Ejecutando: SET - [BX 1].
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 ## TID: 3 - FETCH - Program Counter: 2.
+2024/12/05 12:52:21 ## TID: 3 - Ejecutando: SUB - [CX BX].
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 ## TID: 3 - FETCH - Program Counter: 3.
+2024/12/05 12:52:21 ## TID: 3 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 ## TID: 1 - Solicito Contexto Ejecución.
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 ## TID: 1 - FETCH - Program Counter: 0.
+2024/12/05 12:52:21 ## TID: 1 - Ejecutando: SET - [CX 5].
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 ## TID: 1 - FETCH - Program Counter: 1.
+2024/12/05 12:52:21 ## TID: 1 - Ejecutando: SET - [BX 1].
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 ## TID: 1 - FETCH - Program Counter: 2.
+2024/12/05 12:52:21 ## TID: 1 - Ejecutando: SUB - [CX BX].
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 ## TID: 1 - FETCH - Program Counter: 3.
+2024/12/05 12:52:21 ## TID: 1 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 ## TID: 4 - Solicito Contexto Ejecución.
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 ## TID: 4 - FETCH - Program Counter: 0.
+2024/12/05 12:52:21 ## TID: 4 - Ejecutando: SET - [CX 5].
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 ## TID: 4 - FETCH - Program Counter: 1.
+2024/12/05 12:52:21 ## TID: 4 - Ejecutando: SET - [BX 1].
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 ## TID: 4 - FETCH - Program Counter: 2.
+2024/12/05 12:52:21 ## TID: 4 - Ejecutando: SUB - [CX BX].
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 ## TID: 4 - FETCH - Program Counter: 3.
+2024/12/05 12:52:21 ## TID: 4 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 ## TID: 0 - FETCH - Program Counter: 11.
+2024/12/05 12:52:21 ## TID: 0 - Ejecutando: DUMP_MEMORY - [].
+2024/12/05 12:52:21 Respuesta POST: 500 Internal Server Error
+2024/12/05 12:52:21 Respuesta POST: 200 OK
+2024/12/05 12:52:21 Respuesta POST: 500 Internal Server Error
+2024/12/05 12:52:21 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 12:58:24 El módulo CPU está a la escucha en el puerto :8004
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 ## TID: 0 - FETCH - Program Counter: 0.
+2024/12/05 12:58:34 ## TID: 0 - Ejecutando: SET - [DX 0].
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 ## TID: 0 - FETCH - Program Counter: 1.
+2024/12/05 12:58:34 ## TID: 0 - Ejecutando: SET - [AX 1].
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 ## TID: 0 - FETCH - Program Counter: 2.
+2024/12/05 12:58:34 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 ## TID: 0 - FETCH - Program Counter: 3.
+2024/12/05 12:58:34 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 ## TID: 0 - FETCH - Program Counter: 4.
+2024/12/05 12:58:34 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 5].
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 ## TID: 0 - FETCH - Program Counter: 5.
+2024/12/05 12:58:34 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 ## TID: 0 - FETCH - Program Counter: 6.
+2024/12/05 12:58:34 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 5].
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 ## TID: 0 - FETCH - Program Counter: 7.
+2024/12/05 12:58:34 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 ## TID: 0 - FETCH - Program Counter: 8.
+2024/12/05 12:58:34 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 ## TID: 0 - FETCH - Program Counter: 9.
+2024/12/05 12:58:34 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 ## TID: 0 - FETCH - Program Counter: 10.
+2024/12/05 12:58:34 ## TID: 0 - Ejecutando: THREAD_JOIN - [4].
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 ## TID: 2 - Solicito Contexto Ejecución.
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 ## TID: 2 - FETCH - Program Counter: 0.
+2024/12/05 12:58:34 ## TID: 2 - Ejecutando: SET - [CX 5].
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 ## TID: 2 - FETCH - Program Counter: 1.
+2024/12/05 12:58:34 ## TID: 2 - Ejecutando: SET - [BX 1].
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 ## TID: 2 - FETCH - Program Counter: 2.
+2024/12/05 12:58:34 ## TID: 2 - Ejecutando: SUB - [CX BX].
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 ## TID: 2 - FETCH - Program Counter: 3.
+2024/12/05 12:58:34 ## TID: 2 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 ## TID: 3 - Solicito Contexto Ejecución.
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 ## TID: 3 - FETCH - Program Counter: 0.
+2024/12/05 12:58:34 ## TID: 3 - Ejecutando: SET - [CX 5].
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 ## TID: 3 - FETCH - Program Counter: 1.
+2024/12/05 12:58:34 ## TID: 3 - Ejecutando: SET - [BX 1].
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 ## TID: 3 - FETCH - Program Counter: 2.
+2024/12/05 12:58:34 ## TID: 3 - Ejecutando: SUB - [CX BX].
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 ## TID: 3 - FETCH - Program Counter: 3.
+2024/12/05 12:58:34 ## TID: 3 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 ## TID: 1 - Solicito Contexto Ejecución.
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 ## TID: 1 - FETCH - Program Counter: 0.
+2024/12/05 12:58:34 ## TID: 1 - Ejecutando: SET - [CX 5].
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 ## TID: 1 - FETCH - Program Counter: 1.
+2024/12/05 12:58:34 ## TID: 1 - Ejecutando: SET - [BX 1].
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 ## TID: 1 - FETCH - Program Counter: 2.
+2024/12/05 12:58:34 ## TID: 1 - Ejecutando: SUB - [CX BX].
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 ## TID: 1 - FETCH - Program Counter: 3.
+2024/12/05 12:58:34 ## TID: 1 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 ## TID: 4 - Solicito Contexto Ejecución.
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 ## TID: 4 - FETCH - Program Counter: 0.
+2024/12/05 12:58:34 ## TID: 4 - Ejecutando: SET - [CX 5].
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 ## TID: 4 - FETCH - Program Counter: 1.
+2024/12/05 12:58:34 ## TID: 4 - Ejecutando: SET - [BX 1].
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 ## TID: 4 - FETCH - Program Counter: 2.
+2024/12/05 12:58:34 ## TID: 4 - Ejecutando: SUB - [CX BX].
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 ## TID: 4 - FETCH - Program Counter: 3.
+2024/12/05 12:58:34 ## TID: 4 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 ## TID: 0 - FETCH - Program Counter: 11.
+2024/12/05 12:58:34 ## TID: 0 - Ejecutando: DUMP_MEMORY - [].
+2024/12/05 12:58:34 Respuesta POST: 500 Internal Server Error
+2024/12/05 12:58:34 Respuesta POST: 200 OK
+2024/12/05 12:58:34 Respuesta POST: 500 Internal Server Error
+2024/12/05 12:58:34 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 14:05:26 El módulo CPU está a la escucha en el puerto :8004
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 ## TID: 0 - FETCH - Program Counter: 0.
+2024/12/05 14:05:41 ## TID: 0 - Ejecutando: SET - [DX 0].
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 ## TID: 0 - FETCH - Program Counter: 1.
+2024/12/05 14:05:41 ## TID: 0 - Ejecutando: SET - [AX 1].
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 ## TID: 0 - FETCH - Program Counter: 2.
+2024/12/05 14:05:41 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 ## TID: 0 - FETCH - Program Counter: 3.
+2024/12/05 14:05:41 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 ## TID: 0 - FETCH - Program Counter: 4.
+2024/12/05 14:05:41 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 5].
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 ## TID: 0 - FETCH - Program Counter: 5.
+2024/12/05 14:05:41 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 ## TID: 0 - FETCH - Program Counter: 6.
+2024/12/05 14:05:41 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 5].
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 ## TID: 0 - FETCH - Program Counter: 7.
+2024/12/05 14:05:41 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 ## TID: 0 - FETCH - Program Counter: 8.
+2024/12/05 14:05:41 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 ## TID: 0 - FETCH - Program Counter: 9.
+2024/12/05 14:05:41 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 ## TID: 0 - FETCH - Program Counter: 10.
+2024/12/05 14:05:41 ## TID: 0 - Ejecutando: THREAD_JOIN - [4].
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 ## TID: 2 - Solicito Contexto Ejecución.
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 ## TID: 2 - FETCH - Program Counter: 0.
+2024/12/05 14:05:41 ## TID: 2 - Ejecutando: SET - [CX 5].
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 ## TID: 2 - FETCH - Program Counter: 1.
+2024/12/05 14:05:41 ## TID: 2 - Ejecutando: SET - [BX 1].
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 ## TID: 2 - FETCH - Program Counter: 2.
+2024/12/05 14:05:41 ## TID: 2 - Ejecutando: SUB - [CX BX].
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 ## TID: 2 - FETCH - Program Counter: 3.
+2024/12/05 14:05:41 ## TID: 2 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 ## TID: 3 - Solicito Contexto Ejecución.
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 ## TID: 3 - FETCH - Program Counter: 0.
+2024/12/05 14:05:41 ## TID: 3 - Ejecutando: SET - [CX 5].
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 ## TID: 3 - FETCH - Program Counter: 1.
+2024/12/05 14:05:41 ## TID: 3 - Ejecutando: SET - [BX 1].
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 ## TID: 3 - FETCH - Program Counter: 2.
+2024/12/05 14:05:41 ## TID: 3 - Ejecutando: SUB - [CX BX].
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 ## TID: 3 - FETCH - Program Counter: 3.
+2024/12/05 14:05:41 ## TID: 3 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 ## TID: 1 - Solicito Contexto Ejecución.
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 ## TID: 1 - FETCH - Program Counter: 0.
+2024/12/05 14:05:41 ## TID: 1 - Ejecutando: SET - [CX 5].
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 ## TID: 1 - FETCH - Program Counter: 1.
+2024/12/05 14:05:41 ## TID: 1 - Ejecutando: SET - [BX 1].
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 ## TID: 1 - FETCH - Program Counter: 2.
+2024/12/05 14:05:41 ## TID: 1 - Ejecutando: SUB - [CX BX].
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 ## TID: 1 - FETCH - Program Counter: 3.
+2024/12/05 14:05:41 ## TID: 1 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 ## TID: 4 - Solicito Contexto Ejecución.
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 ## TID: 4 - FETCH - Program Counter: 0.
+2024/12/05 14:05:41 ## TID: 4 - Ejecutando: SET - [CX 5].
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 ## TID: 4 - FETCH - Program Counter: 1.
+2024/12/05 14:05:41 ## TID: 4 - Ejecutando: SET - [BX 1].
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 ## TID: 4 - FETCH - Program Counter: 2.
+2024/12/05 14:05:41 ## TID: 4 - Ejecutando: SUB - [CX BX].
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 ## TID: 4 - FETCH - Program Counter: 3.
+2024/12/05 14:05:41 ## TID: 4 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 ## TID: 0 - FETCH - Program Counter: 11.
+2024/12/05 14:05:41 ## TID: 0 - Ejecutando: DUMP_MEMORY - [].
+2024/12/05 14:05:41 Respuesta POST: 500 Internal Server Error
+2024/12/05 14:05:41 Respuesta POST: 200 OK
+2024/12/05 14:05:41 Respuesta POST: 500 Internal Server Error
+2024/12/05 14:05:41 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 14:11:18 El módulo CPU está a la escucha en el puerto :8004
+2024/12/05 14:12:32 El módulo CPU está a la escucha en el puerto :8004
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 ## TID: 0 - FETCH - Program Counter: 0.
+2024/12/05 14:12:43 ## TID: 0 - Ejecutando: SET - [DX 0].
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 ## TID: 0 - FETCH - Program Counter: 1.
+2024/12/05 14:12:43 ## TID: 0 - Ejecutando: SET - [AX 1].
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 ## TID: 0 - FETCH - Program Counter: 2.
+2024/12/05 14:12:43 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 ## TID: 0 - FETCH - Program Counter: 3.
+2024/12/05 14:12:43 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 ## TID: 0 - FETCH - Program Counter: 4.
+2024/12/05 14:12:43 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 5].
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 ## TID: 0 - FETCH - Program Counter: 5.
+2024/12/05 14:12:43 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 ## TID: 0 - FETCH - Program Counter: 6.
+2024/12/05 14:12:43 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 5].
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 ## TID: 0 - FETCH - Program Counter: 7.
+2024/12/05 14:12:43 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 ## TID: 0 - FETCH - Program Counter: 8.
+2024/12/05 14:12:43 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 ## TID: 0 - FETCH - Program Counter: 9.
+2024/12/05 14:12:43 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 ## TID: 0 - FETCH - Program Counter: 10.
+2024/12/05 14:12:43 ## TID: 0 - Ejecutando: THREAD_JOIN - [4].
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 ## TID: 2 - Solicito Contexto Ejecución.
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 ## TID: 2 - FETCH - Program Counter: 0.
+2024/12/05 14:12:43 ## TID: 2 - Ejecutando: SET - [CX 5].
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 ## TID: 2 - FETCH - Program Counter: 1.
+2024/12/05 14:12:43 ## TID: 2 - Ejecutando: SET - [BX 1].
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 ## TID: 2 - FETCH - Program Counter: 2.
+2024/12/05 14:12:43 ## TID: 2 - Ejecutando: SUB - [CX BX].
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 ## TID: 2 - FETCH - Program Counter: 3.
+2024/12/05 14:12:43 ## TID: 2 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 ## TID: 3 - Solicito Contexto Ejecución.
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 ## TID: 3 - FETCH - Program Counter: 0.
+2024/12/05 14:12:43 ## TID: 3 - Ejecutando: SET - [CX 5].
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 ## TID: 3 - FETCH - Program Counter: 1.
+2024/12/05 14:12:43 ## TID: 3 - Ejecutando: SET - [BX 1].
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 ## TID: 3 - FETCH - Program Counter: 2.
+2024/12/05 14:12:43 ## TID: 3 - Ejecutando: SUB - [CX BX].
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 ## TID: 3 - FETCH - Program Counter: 3.
+2024/12/05 14:12:43 ## TID: 3 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 ## TID: 1 - Solicito Contexto Ejecución.
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 ## TID: 1 - FETCH - Program Counter: 0.
+2024/12/05 14:12:43 ## TID: 1 - Ejecutando: SET - [CX 5].
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 ## TID: 1 - FETCH - Program Counter: 1.
+2024/12/05 14:12:43 ## TID: 1 - Ejecutando: SET - [BX 1].
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 ## TID: 1 - FETCH - Program Counter: 2.
+2024/12/05 14:12:43 ## TID: 1 - Ejecutando: SUB - [CX BX].
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 ## TID: 1 - FETCH - Program Counter: 3.
+2024/12/05 14:12:43 ## TID: 1 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 ## TID: 4 - Solicito Contexto Ejecución.
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 ## TID: 4 - FETCH - Program Counter: 0.
+2024/12/05 14:12:43 ## TID: 4 - Ejecutando: SET - [CX 5].
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 ## TID: 4 - FETCH - Program Counter: 1.
+2024/12/05 14:12:43 ## TID: 4 - Ejecutando: SET - [BX 1].
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 ## TID: 4 - FETCH - Program Counter: 2.
+2024/12/05 14:12:43 ## TID: 4 - Ejecutando: SUB - [CX BX].
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 ## TID: 4 - FETCH - Program Counter: 3.
+2024/12/05 14:12:43 ## TID: 4 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 ## TID: 0 - FETCH - Program Counter: 11.
+2024/12/05 14:12:43 ## TID: 0 - Ejecutando: DUMP_MEMORY - [].
+2024/12/05 14:12:43 Respuesta POST: 500 Internal Server Error
+2024/12/05 14:12:43 Respuesta POST: 200 OK
+2024/12/05 14:12:43 Respuesta POST: 500 Internal Server Error
+2024/12/05 14:12:43 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 14:23:27 El módulo CPU está a la escucha en el puerto :8004
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 ## TID: 0 - FETCH - Program Counter: 0.
+2024/12/05 14:23:39 ## TID: 0 - Ejecutando: SET - [DX 0].
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 ## TID: 0 - FETCH - Program Counter: 1.
+2024/12/05 14:23:39 ## TID: 0 - Ejecutando: SET - [AX 1].
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 ## TID: 0 - FETCH - Program Counter: 2.
+2024/12/05 14:23:39 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 ## TID: 0 - FETCH - Program Counter: 3.
+2024/12/05 14:23:39 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 ## TID: 0 - FETCH - Program Counter: 4.
+2024/12/05 14:23:39 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 5].
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 ## TID: 0 - FETCH - Program Counter: 5.
+2024/12/05 14:23:39 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 ## TID: 0 - FETCH - Program Counter: 6.
+2024/12/05 14:23:39 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 5].
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 ## TID: 0 - FETCH - Program Counter: 7.
+2024/12/05 14:23:39 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 ## TID: 0 - FETCH - Program Counter: 8.
+2024/12/05 14:23:39 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 ## TID: 0 - FETCH - Program Counter: 9.
+2024/12/05 14:23:39 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 ## TID: 0 - FETCH - Program Counter: 10.
+2024/12/05 14:23:39 ## TID: 0 - Ejecutando: THREAD_JOIN - [4].
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 ## TID: 2 - Solicito Contexto Ejecución.
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 ## TID: 2 - FETCH - Program Counter: 0.
+2024/12/05 14:23:39 ## TID: 2 - Ejecutando: SET - [CX 5].
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 ## TID: 2 - FETCH - Program Counter: 1.
+2024/12/05 14:23:39 ## TID: 2 - Ejecutando: SET - [BX 1].
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 ## TID: 2 - FETCH - Program Counter: 2.
+2024/12/05 14:23:39 ## TID: 2 - Ejecutando: SUB - [CX BX].
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 ## TID: 2 - FETCH - Program Counter: 3.
+2024/12/05 14:23:39 ## TID: 2 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 ## TID: 3 - Solicito Contexto Ejecución.
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 ## TID: 3 - FETCH - Program Counter: 0.
+2024/12/05 14:23:39 ## TID: 3 - Ejecutando: SET - [CX 5].
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 ## TID: 3 - FETCH - Program Counter: 1.
+2024/12/05 14:23:39 ## TID: 3 - Ejecutando: SET - [BX 1].
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 ## TID: 3 - FETCH - Program Counter: 2.
+2024/12/05 14:23:39 ## TID: 3 - Ejecutando: SUB - [CX BX].
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 ## TID: 3 - FETCH - Program Counter: 3.
+2024/12/05 14:23:39 ## TID: 3 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 ## TID: 1 - Solicito Contexto Ejecución.
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 ## TID: 1 - FETCH - Program Counter: 0.
+2024/12/05 14:23:39 ## TID: 1 - Ejecutando: SET - [CX 5].
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 ## TID: 1 - FETCH - Program Counter: 1.
+2024/12/05 14:23:39 ## TID: 1 - Ejecutando: SET - [BX 1].
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 ## TID: 1 - FETCH - Program Counter: 2.
+2024/12/05 14:23:39 ## TID: 1 - Ejecutando: SUB - [CX BX].
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 ## TID: 1 - FETCH - Program Counter: 3.
+2024/12/05 14:23:39 ## TID: 1 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 ## TID: 4 - Solicito Contexto Ejecución.
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 ## TID: 4 - FETCH - Program Counter: 0.
+2024/12/05 14:23:39 ## TID: 4 - Ejecutando: SET - [CX 5].
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 ## TID: 4 - FETCH - Program Counter: 1.
+2024/12/05 14:23:39 ## TID: 4 - Ejecutando: SET - [BX 1].
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 ## TID: 4 - FETCH - Program Counter: 2.
+2024/12/05 14:23:39 ## TID: 4 - Ejecutando: SUB - [CX BX].
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 ## TID: 4 - FETCH - Program Counter: 3.
+2024/12/05 14:23:39 ## TID: 4 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 ## TID: 0 - FETCH - Program Counter: 11.
+2024/12/05 14:23:39 ## TID: 0 - Ejecutando: DUMP_MEMORY - [].
+2024/12/05 14:23:39 Respuesta POST: 500 Internal Server Error
+2024/12/05 14:23:39 Respuesta POST: 200 OK
+2024/12/05 14:23:39 Respuesta POST: 500 Internal Server Error
+2024/12/05 14:23:39 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 14:36:45 El módulo CPU está a la escucha en el puerto :8004
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 ## TID: 0 - FETCH - Program Counter: 0.
+2024/12/05 14:36:54 ## TID: 0 - Ejecutando: SET - [DX 0].
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 ## TID: 0 - FETCH - Program Counter: 1.
+2024/12/05 14:36:54 ## TID: 0 - Ejecutando: SET - [AX 1].
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 ## TID: 0 - FETCH - Program Counter: 2.
+2024/12/05 14:36:54 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 ## TID: 0 - FETCH - Program Counter: 3.
+2024/12/05 14:36:54 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 ## TID: 0 - FETCH - Program Counter: 4.
+2024/12/05 14:36:54 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 5].
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 ## TID: 0 - FETCH - Program Counter: 5.
+2024/12/05 14:36:54 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 ## TID: 0 - FETCH - Program Counter: 6.
+2024/12/05 14:36:54 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 5].
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 ## TID: 0 - FETCH - Program Counter: 7.
+2024/12/05 14:36:54 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 ## TID: 0 - FETCH - Program Counter: 8.
+2024/12/05 14:36:54 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 ## TID: 0 - FETCH - Program Counter: 9.
+2024/12/05 14:36:54 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 ## TID: 0 - FETCH - Program Counter: 10.
+2024/12/05 14:36:54 ## TID: 0 - Ejecutando: THREAD_JOIN - [4].
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 ## TID: 2 - Solicito Contexto Ejecución.
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 ## TID: 2 - FETCH - Program Counter: 0.
+2024/12/05 14:36:54 ## TID: 2 - Ejecutando: SET - [CX 5].
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 ## TID: 2 - FETCH - Program Counter: 1.
+2024/12/05 14:36:54 ## TID: 2 - Ejecutando: SET - [BX 1].
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 ## TID: 2 - FETCH - Program Counter: 2.
+2024/12/05 14:36:54 ## TID: 2 - Ejecutando: SUB - [CX BX].
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 ## TID: 2 - FETCH - Program Counter: 3.
+2024/12/05 14:36:54 ## TID: 2 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 ## TID: 3 - Solicito Contexto Ejecución.
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 ## TID: 3 - FETCH - Program Counter: 0.
+2024/12/05 14:36:54 ## TID: 3 - Ejecutando: SET - [CX 5].
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 ## TID: 3 - FETCH - Program Counter: 1.
+2024/12/05 14:36:54 ## TID: 3 - Ejecutando: SET - [BX 1].
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 ## TID: 3 - FETCH - Program Counter: 2.
+2024/12/05 14:36:54 ## TID: 3 - Ejecutando: SUB - [CX BX].
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 ## TID: 3 - FETCH - Program Counter: 3.
+2024/12/05 14:36:54 ## TID: 3 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 ## TID: 1 - Solicito Contexto Ejecución.
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 ## TID: 1 - FETCH - Program Counter: 0.
+2024/12/05 14:36:54 ## TID: 1 - Ejecutando: SET - [CX 5].
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 ## TID: 1 - FETCH - Program Counter: 1.
+2024/12/05 14:36:54 ## TID: 1 - Ejecutando: SET - [BX 1].
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 ## TID: 1 - FETCH - Program Counter: 2.
+2024/12/05 14:36:54 ## TID: 1 - Ejecutando: SUB - [CX BX].
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 ## TID: 1 - FETCH - Program Counter: 3.
+2024/12/05 14:36:54 ## TID: 1 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 ## TID: 4 - Solicito Contexto Ejecución.
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 ## TID: 4 - FETCH - Program Counter: 0.
+2024/12/05 14:36:54 ## TID: 4 - Ejecutando: SET - [CX 5].
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 ## TID: 4 - FETCH - Program Counter: 1.
+2024/12/05 14:36:54 ## TID: 4 - Ejecutando: SET - [BX 1].
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 ## TID: 4 - FETCH - Program Counter: 2.
+2024/12/05 14:36:54 ## TID: 4 - Ejecutando: SUB - [CX BX].
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 ## TID: 4 - FETCH - Program Counter: 3.
+2024/12/05 14:36:54 ## TID: 4 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 ## TID: 0 - FETCH - Program Counter: 11.
+2024/12/05 14:36:54 ## TID: 0 - Ejecutando: DUMP_MEMORY - [].
+2024/12/05 14:36:54 Respuesta POST: 500 Internal Server Error
+2024/12/05 14:36:54 Respuesta POST: 200 OK
+2024/12/05 14:36:54 Respuesta POST: 500 Internal Server Error
+2024/12/05 14:36:54 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 14:38:31 El módulo CPU está a la escucha en el puerto :8004
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 ## TID: 0 - FETCH - Program Counter: 0.
+2024/12/05 14:38:35 ## TID: 0 - Ejecutando: SET - [DX 0].
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 ## TID: 0 - FETCH - Program Counter: 1.
+2024/12/05 14:38:35 ## TID: 0 - Ejecutando: SET - [AX 1].
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 ## TID: 0 - FETCH - Program Counter: 2.
+2024/12/05 14:38:35 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 ## TID: 0 - FETCH - Program Counter: 3.
+2024/12/05 14:38:35 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 ## TID: 0 - FETCH - Program Counter: 4.
+2024/12/05 14:38:35 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 5].
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 ## TID: 0 - FETCH - Program Counter: 5.
+2024/12/05 14:38:35 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 ## TID: 0 - FETCH - Program Counter: 6.
+2024/12/05 14:38:35 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 5].
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 ## TID: 0 - FETCH - Program Counter: 7.
+2024/12/05 14:38:35 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 ## TID: 0 - FETCH - Program Counter: 8.
+2024/12/05 14:38:35 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 ## TID: 0 - FETCH - Program Counter: 9.
+2024/12/05 14:38:35 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 ## TID: 0 - FETCH - Program Counter: 10.
+2024/12/05 14:38:35 ## TID: 0 - Ejecutando: THREAD_JOIN - [4].
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 ## TID: 2 - Solicito Contexto Ejecución.
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 ## TID: 2 - FETCH - Program Counter: 0.
+2024/12/05 14:38:35 ## TID: 2 - Ejecutando: SET - [CX 5].
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 ## TID: 2 - FETCH - Program Counter: 1.
+2024/12/05 14:38:35 ## TID: 2 - Ejecutando: SET - [BX 1].
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 ## TID: 2 - FETCH - Program Counter: 2.
+2024/12/05 14:38:35 ## TID: 2 - Ejecutando: SUB - [CX BX].
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 ## TID: 2 - FETCH - Program Counter: 3.
+2024/12/05 14:38:35 ## TID: 2 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 ## TID: 3 - Solicito Contexto Ejecución.
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 ## TID: 3 - FETCH - Program Counter: 0.
+2024/12/05 14:38:35 ## TID: 3 - Ejecutando: SET - [CX 5].
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 ## TID: 3 - FETCH - Program Counter: 1.
+2024/12/05 14:38:35 ## TID: 3 - Ejecutando: SET - [BX 1].
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 ## TID: 3 - FETCH - Program Counter: 2.
+2024/12/05 14:38:35 ## TID: 3 - Ejecutando: SUB - [CX BX].
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 ## TID: 3 - FETCH - Program Counter: 3.
+2024/12/05 14:38:35 ## TID: 3 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 ## TID: 1 - Solicito Contexto Ejecución.
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 ## TID: 1 - FETCH - Program Counter: 0.
+2024/12/05 14:38:35 ## TID: 1 - Ejecutando: SET - [CX 5].
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 ## TID: 1 - FETCH - Program Counter: 1.
+2024/12/05 14:38:35 ## TID: 1 - Ejecutando: SET - [BX 1].
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 ## TID: 1 - FETCH - Program Counter: 2.
+2024/12/05 14:38:35 ## TID: 1 - Ejecutando: SUB - [CX BX].
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 ## TID: 1 - FETCH - Program Counter: 3.
+2024/12/05 14:38:35 ## TID: 1 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 ## TID: 4 - Solicito Contexto Ejecución.
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 ## TID: 4 - FETCH - Program Counter: 0.
+2024/12/05 14:38:35 ## TID: 4 - Ejecutando: SET - [CX 5].
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 ## TID: 4 - FETCH - Program Counter: 1.
+2024/12/05 14:38:35 ## TID: 4 - Ejecutando: SET - [BX 1].
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 ## TID: 4 - FETCH - Program Counter: 2.
+2024/12/05 14:38:35 ## TID: 4 - Ejecutando: SUB - [CX BX].
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 ## TID: 4 - FETCH - Program Counter: 3.
+2024/12/05 14:38:35 ## TID: 4 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 ## TID: 0 - FETCH - Program Counter: 11.
+2024/12/05 14:38:35 ## TID: 0 - Ejecutando: DUMP_MEMORY - [].
+2024/12/05 14:38:35 Respuesta POST: 500 Internal Server Error
+2024/12/05 14:38:35 Respuesta POST: 200 OK
+2024/12/05 14:38:35 Respuesta POST: 500 Internal Server Error
+2024/12/05 14:38:35 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 14:47:38 El módulo CPU está a la escucha en el puerto :8004
+2024/12/05 14:47:49 Respuesta POST: 200 OK
+2024/12/05 14:47:49 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 14:47:49 Respuesta POST: 200 OK
+2024/12/05 14:47:49 ## TID: 0 - FETCH - Program Counter: 0.
+2024/12/05 14:47:49 ## TID: 0 - Ejecutando: SET - [DX 0].
+2024/12/05 14:47:49 Respuesta POST: 200 OK
+2024/12/05 14:47:49 ## TID: 0 - FETCH - Program Counter: 1.
+2024/12/05 14:47:49 ## TID: 0 - Ejecutando: SET - [AX 1].
+2024/12/05 14:47:49 Respuesta POST: 200 OK
+2024/12/05 14:47:49 ## TID: 0 - FETCH - Program Counter: 2.
+2024/12/05 14:47:49 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/05 14:47:49 Respuesta POST: 200 OK
+2024/12/05 14:47:49 Respuesta POST: 200 OK
+2024/12/05 14:47:49 Respuesta POST: 200 OK
+2024/12/05 14:47:49 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 14:47:49 Respuesta POST: 200 OK
+2024/12/05 14:47:49 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 14:47:49 Respuesta POST: 200 OK
+2024/12/05 14:47:49 ## TID: 0 - FETCH - Program Counter: 3.
+2024/12/05 14:47:49 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 14:47:49 Respuesta POST: 200 OK
+2024/12/05 14:47:49 ## TID: 0 - FETCH - Program Counter: 4.
+2024/12/05 14:47:49 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 5].
+2024/12/05 14:47:49 Respuesta POST: 200 OK
+2024/12/05 14:47:49 Respuesta POST: 200 OK
+2024/12/05 14:47:49 Respuesta POST: 200 OK
+2024/12/05 14:47:49 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 14:47:49 Respuesta POST: 200 OK
+2024/12/05 14:47:49 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 14:47:49 Respuesta POST: 200 OK
+2024/12/05 14:47:49 ## TID: 0 - FETCH - Program Counter: 5.
+2024/12/05 14:47:49 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 14:47:49 Respuesta POST: 200 OK
+2024/12/05 14:47:49 ## TID: 0 - FETCH - Program Counter: 6.
+2024/12/05 14:47:49 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 5].
+2024/12/05 14:47:49 Respuesta POST: 200 OK
+2024/12/05 14:47:49 Respuesta POST: 200 OK
+2024/12/05 14:47:49 Respuesta POST: 200 OK
+2024/12/05 14:47:49 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 14:47:49 Respuesta POST: 200 OK
+2024/12/05 14:47:49 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 14:47:49 Respuesta POST: 200 OK
+2024/12/05 14:47:49 ## TID: 0 - FETCH - Program Counter: 7.
+2024/12/05 14:47:49 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 14:47:49 Respuesta POST: 200 OK
+2024/12/05 14:47:49 ## TID: 0 - FETCH - Program Counter: 8.
+2024/12/05 14:47:49 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/05 14:47:49 Respuesta POST: 200 OK
+2024/12/05 14:47:49 Respuesta POST: 200 OK
+2024/12/05 14:47:49 Respuesta POST: 200 OK
+2024/12/05 14:47:49 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 14:47:49 Respuesta POST: 200 OK
+2024/12/05 14:47:49 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 14:47:49 Respuesta POST: 200 OK
+2024/12/05 14:47:49 ## TID: 0 - FETCH - Program Counter: 9.
+2024/12/05 14:47:49 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 14:47:49 Respuesta POST: 200 OK
+2024/12/05 14:47:49 ## TID: 0 - FETCH - Program Counter: 10.
+2024/12/05 14:47:49 ## TID: 0 - Ejecutando: THREAD_JOIN - [4].
+2024/12/05 14:47:49 Respuesta POST: 200 OK
+2024/12/05 14:47:49 Respuesta POST: 200 OK
+2024/12/05 14:47:49 Respuesta POST: 200 OK
+2024/12/05 14:47:49 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 14:47:49 Respuesta POST: 200 OK
+2024/12/05 14:47:49 ## TID: 2 - Solicito Contexto Ejecución.
+2024/12/05 14:47:49 Respuesta POST: 200 OK
+2024/12/05 14:47:49 ## TID: 2 - FETCH - Program Counter: 0.
+2024/12/05 14:47:49 ## TID: 2 - Ejecutando: SET - [AX 1].
+2024/12/05 14:47:49 Respuesta POST: 200 OK
+2024/12/05 14:47:49 ## TID: 2 - FETCH - Program Counter: 1.
+2024/12/05 14:47:49 ## TID: 2 - Ejecutando: SET - [BX 1].
+2024/12/05 14:47:49 Respuesta POST: 200 OK
+2024/12/05 14:47:49 ## TID: 2 - FETCH - Program Counter: 2.
+2024/12/05 14:47:49 ## TID: 2 - Ejecutando: SET - [PC 5].
+2024/12/05 14:47:49 Respuesta POST: 200 OK
+2024/12/05 14:47:49 ## TID: 2 - FETCH - Program Counter: 6.
+2024/12/05 14:47:49 ## TID: 2 - Ejecutando: WRITE_MEM - [AX BX].
+2024/12/05 14:47:49 Respuesta POST: 404 Not Found
+2024/12/05 14:47:49 Respuesta de memoria a escribir memoria: 404 page not found
+
+2024/12/05 14:47:49 ## TID: 2 - Acción: ESCRIBIR - Dirección Física: 1.
+2024/12/05 14:47:49 Respuesta POST: 200 OK
+2024/12/05 14:47:49 ## TID: 2 - FETCH - Program Counter: 7.
+2024/12/05 14:47:49 ## TID: 2 - Ejecutando: JNZ - [AX 4].
+2024/12/05 14:47:49 Respuesta POST: 200 OK
+2024/12/05 14:47:49 ## TID: 2 - FETCH - Program Counter: 4.
+2024/12/05 14:47:49 ## TID: 2 - Ejecutando: SUB - [AX BX].
+2024/12/05 14:47:49 Respuesta POST: 200 OK
+2024/12/05 14:47:49 ## TID: 2 - FETCH - Program Counter: 5.
+2024/12/05 14:47:49 ## TID: 2 - Ejecutando: READ_MEM - [AX BX].
+2024/12/05 14:47:49 Respuesta POST: 404 Not Found
+2024/12/05 14:47:49 ## TID: 2 - Acción: LEER - Dirección Física: 1.
+2024/12/05 14:47:49 Respuesta POST: 200 OK
+2024/12/05 14:47:49 ## TID: 2 - FETCH - Program Counter: 6.
+2024/12/05 14:47:49 ## TID: 2 - Ejecutando: WRITE_MEM - [AX BX].
+2024/12/05 14:47:49 Respuesta POST: 200 OK
+2024/12/05 14:47:49 Respuesta POST: 500 Internal Server Error
+2024/12/05 14:47:49 ## TID: 2 - Actualizo Contexto Ejecución.
+2024/12/05 14:47:49 http: panic serving 127.0.0.1:62481: Post "http://127.0.0.1:8002/contexto_de_ejecucion": EOF
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
+panic({0x961300?, 0xc0001f8750?})
+	C:/Program Files/Go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/utils/cliente.Post2({0xc00000a450?, 0xc00000ac70?}, 0x1f42, {0x9a7f01, 0x15}, {0xc000015098, 0x11, 0x18})
+	C:/Users/Tomás/Desktop/Facultad/FACULTAD/3 AÑO/S.O/GO/tp-2024-2c-Equipo-Operativo/tp-2024-2c-Equipo-Operativo/utils/cliente/client.go:33 +0x30d
+github.com/sisoputnfrba/tp-golang/cpu/instrucciones.solicitarContexto(0x1, 0x0)
+	C:/Users/Tomás/Desktop/Facultad/FACULTAD/3 AÑO/S.O/GO/tp-2024-2c-Equipo-Operativo/tp-2024-2c-Equipo-Operativo/cpu/instrucciones/instruction_cycle.go:101 +0xe5
+github.com/sisoputnfrba/tp-golang/cpu/instrucciones.EjecutarInstruccion(0x1, 0x0)
+	C:/Users/Tomás/Desktop/Facultad/FACULTAD/3 AÑO/S.O/GO/tp-2024-2c-Equipo-Operativo/tp-2024-2c-Equipo-Operativo/cpu/instrucciones/instruction_cycle.go:53 +0x2f
+github.com/sisoputnfrba/tp-golang/cpu/instrucciones.Dispatch({0xa2ea50, 0xc000128460}, 0xc00016b180)
+	C:/Users/Tomás/Desktop/Facultad/FACULTAD/3 AÑO/S.O/GO/tp-2024-2c-Equipo-Operativo/tp-2024-2c-Equipo-Operativo/cpu/instrucciones/instruction_cycle.go:41 +0x85
+net/http.HandlerFunc.ServeHTTP(0xc0001280e0?, {0xa2ea50?, 0xc000128460?}, 0x6751e745?)
+	C:/Program Files/Go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x67da65?, {0xa2ea50, 0xc000128460}, 0xc00016b180)
+	C:/Program Files/Go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0xa2d5d8?}, {0xa2ea50?, 0xc000128460?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc00012e120, {0xa2ef18, 0xc00001d110})
+	C:/Program Files/Go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3360 +0x485
+2024/12/05 15:09:33 El módulo CPU está a la escucha en el puerto :8004
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 ## TID: 0 - FETCH - Program Counter: 0.
+2024/12/05 15:09:41 ## TID: 0 - Ejecutando: SET - [DX 0].
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 ## TID: 0 - FETCH - Program Counter: 1.
+2024/12/05 15:09:41 ## TID: 0 - Ejecutando: SET - [AX 1].
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 ## TID: 0 - FETCH - Program Counter: 2.
+2024/12/05 15:09:41 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 ## TID: 0 - FETCH - Program Counter: 3.
+2024/12/05 15:09:41 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 ## TID: 0 - FETCH - Program Counter: 4.
+2024/12/05 15:09:41 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 5].
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 ## TID: 0 - FETCH - Program Counter: 5.
+2024/12/05 15:09:41 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 ## TID: 0 - FETCH - Program Counter: 6.
+2024/12/05 15:09:41 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 5].
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 ## TID: 0 - FETCH - Program Counter: 7.
+2024/12/05 15:09:41 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 ## TID: 0 - FETCH - Program Counter: 8.
+2024/12/05 15:09:41 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 ## TID: 0 - FETCH - Program Counter: 9.
+2024/12/05 15:09:41 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 ## TID: 0 - FETCH - Program Counter: 10.
+2024/12/05 15:09:41 ## TID: 0 - Ejecutando: THREAD_JOIN - [4].
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 ## TID: 2 - Solicito Contexto Ejecución.
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 ## TID: 2 - FETCH - Program Counter: 0.
+2024/12/05 15:09:41 ## TID: 2 - Ejecutando: SET - [CX 5].
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 ## TID: 2 - FETCH - Program Counter: 1.
+2024/12/05 15:09:41 ## TID: 2 - Ejecutando: SET - [BX 1].
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 ## TID: 2 - FETCH - Program Counter: 2.
+2024/12/05 15:09:41 ## TID: 2 - Ejecutando: SUB - [CX BX].
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 ## TID: 2 - FETCH - Program Counter: 3.
+2024/12/05 15:09:41 ## TID: 2 - Ejecutando: WRITE_MEM - [CX BX].
+2024/12/05 15:09:41 Respuesta POST: 404 Not Found
+2024/12/05 15:09:41 Respuesta de memoria a escribir memoria: 404 page not found
+
+2024/12/05 15:09:41 ## TID: 2 - Acción: ESCRIBIR - Dirección Física: 4.
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 ## TID: 2 - FETCH - Program Counter: 4.
+2024/12/05 15:09:41 ## TID: 2 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 ## TID: 3 - Solicito Contexto Ejecución.
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 ## TID: 3 - FETCH - Program Counter: 0.
+2024/12/05 15:09:41 ## TID: 3 - Ejecutando: SET - [CX 5].
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 ## TID: 3 - FETCH - Program Counter: 1.
+2024/12/05 15:09:41 ## TID: 3 - Ejecutando: SET - [BX 1].
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 ## TID: 3 - FETCH - Program Counter: 2.
+2024/12/05 15:09:41 ## TID: 3 - Ejecutando: SUB - [CX BX].
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 ## TID: 3 - FETCH - Program Counter: 3.
+2024/12/05 15:09:41 ## TID: 3 - Ejecutando: WRITE_MEM - [CX BX].
+2024/12/05 15:09:41 Respuesta POST: 404 Not Found
+2024/12/05 15:09:41 Respuesta de memoria a escribir memoria: 404 page not found
+
+2024/12/05 15:09:41 ## TID: 3 - Acción: ESCRIBIR - Dirección Física: 4.
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 ## TID: 3 - FETCH - Program Counter: 4.
+2024/12/05 15:09:41 ## TID: 3 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 ## TID: 1 - Solicito Contexto Ejecución.
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 ## TID: 1 - FETCH - Program Counter: 0.
+2024/12/05 15:09:41 ## TID: 1 - Ejecutando: SET - [CX 5].
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 ## TID: 1 - FETCH - Program Counter: 1.
+2024/12/05 15:09:41 ## TID: 1 - Ejecutando: SET - [BX 1].
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 ## TID: 1 - FETCH - Program Counter: 2.
+2024/12/05 15:09:41 ## TID: 1 - Ejecutando: SUB - [CX BX].
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 ## TID: 1 - FETCH - Program Counter: 3.
+2024/12/05 15:09:41 ## TID: 1 - Ejecutando: WRITE_MEM - [CX BX].
+2024/12/05 15:09:41 Respuesta POST: 404 Not Found
+2024/12/05 15:09:41 Respuesta de memoria a escribir memoria: 404 page not found
+
+2024/12/05 15:09:41 ## TID: 1 - Acción: ESCRIBIR - Dirección Física: 4.
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 ## TID: 1 - FETCH - Program Counter: 4.
+2024/12/05 15:09:41 ## TID: 1 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 ## TID: 4 - Solicito Contexto Ejecución.
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 ## TID: 4 - FETCH - Program Counter: 0.
+2024/12/05 15:09:41 ## TID: 4 - Ejecutando: SET - [CX 5].
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 ## TID: 4 - FETCH - Program Counter: 1.
+2024/12/05 15:09:41 ## TID: 4 - Ejecutando: SET - [BX 1].
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 ## TID: 4 - FETCH - Program Counter: 2.
+2024/12/05 15:09:41 ## TID: 4 - Ejecutando: SUB - [CX BX].
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 ## TID: 4 - FETCH - Program Counter: 3.
+2024/12/05 15:09:41 ## TID: 4 - Ejecutando: WRITE_MEM - [CX BX].
+2024/12/05 15:09:41 Respuesta POST: 404 Not Found
+2024/12/05 15:09:41 Respuesta de memoria a escribir memoria: 404 page not found
+
+2024/12/05 15:09:41 ## TID: 4 - Acción: ESCRIBIR - Dirección Física: 4.
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 ## TID: 4 - FETCH - Program Counter: 4.
+2024/12/05 15:09:41 ## TID: 4 - Ejecutando: THREAD_EXIT - [].
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 ## TID: 0 - FETCH - Program Counter: 11.
+2024/12/05 15:09:41 ## TID: 0 - Ejecutando: DUMP_MEMORY - [].
+2024/12/05 15:09:41 Respuesta POST: 500 Internal Server Error
+2024/12/05 15:09:41 Respuesta POST: 200 OK
+2024/12/05 15:09:41 Respuesta POST: 500 Internal Server Error
+2024/12/05 15:09:41 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 15:15:47 El módulo CPU está a la escucha en el puerto :8004
+2024/12/05 15:15:59 Respuesta POST: 200 OK
+2024/12/05 15:15:59 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 15:15:59 Respuesta POST: 200 OK
+2024/12/05 15:15:59 ## TID: 0 - FETCH - Program Counter: 0.
+2024/12/05 15:15:59 ## TID: 0 - Ejecutando: SET - [DX 0].
+2024/12/05 15:15:59 Respuesta POST: 200 OK
+2024/12/05 15:15:59 ## TID: 0 - FETCH - Program Counter: 1.
+2024/12/05 15:15:59 ## TID: 0 - Ejecutando: SET - [AX 1].
+2024/12/05 15:15:59 Respuesta POST: 200 OK
+2024/12/05 15:15:59 ## TID: 0 - FETCH - Program Counter: 2.
+2024/12/05 15:15:59 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/05 15:15:59 Respuesta POST: 200 OK
+2024/12/05 15:15:59 Respuesta POST: 200 OK
+2024/12/05 15:15:59 Respuesta POST: 200 OK
+2024/12/05 15:15:59 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 15:15:59 Respuesta POST: 200 OK
+2024/12/05 15:15:59 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 15:15:59 Respuesta POST: 200 OK
+2024/12/05 15:15:59 ## TID: 0 - FETCH - Program Counter: 3.
+2024/12/05 15:15:59 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 15:15:59 Respuesta POST: 200 OK
+2024/12/05 15:15:59 ## TID: 0 - FETCH - Program Counter: 4.
+2024/12/05 15:15:59 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 5].
+2024/12/05 15:15:59 Respuesta POST: 200 OK
+2024/12/05 15:15:59 Respuesta POST: 200 OK
+2024/12/05 15:15:59 Respuesta POST: 200 OK
+2024/12/05 15:15:59 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 15:15:59 Respuesta POST: 200 OK
+2024/12/05 15:15:59 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 15:15:59 Respuesta POST: 200 OK
+2024/12/05 15:15:59 ## TID: 0 - FETCH - Program Counter: 5.
+2024/12/05 15:15:59 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 15:15:59 Respuesta POST: 200 OK
+2024/12/05 15:15:59 ## TID: 0 - FETCH - Program Counter: 6.
+2024/12/05 15:15:59 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 5].
+2024/12/05 15:15:59 Respuesta POST: 200 OK
+2024/12/05 15:15:59 Respuesta POST: 200 OK
+2024/12/05 15:15:59 Respuesta POST: 200 OK
+2024/12/05 15:15:59 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 15:15:59 Respuesta POST: 200 OK
+2024/12/05 15:15:59 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 15:15:59 Respuesta POST: 200 OK
+2024/12/05 15:15:59 ## TID: 0 - FETCH - Program Counter: 7.
+2024/12/05 15:15:59 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 15:15:59 Respuesta POST: 200 OK
+2024/12/05 15:15:59 ## TID: 0 - FETCH - Program Counter: 8.
+2024/12/05 15:15:59 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/05 15:15:59 Respuesta POST: 200 OK
+2024/12/05 15:15:59 Respuesta POST: 200 OK
+2024/12/05 15:15:59 Respuesta POST: 200 OK
+2024/12/05 15:15:59 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 15:15:59 Respuesta POST: 200 OK
+2024/12/05 15:15:59 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 15:15:59 Respuesta POST: 200 OK
+2024/12/05 15:15:59 ## TID: 0 - FETCH - Program Counter: 9.
+2024/12/05 15:15:59 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 15:15:59 Respuesta POST: 200 OK
+2024/12/05 15:15:59 ## TID: 0 - FETCH - Program Counter: 10.
+2024/12/05 15:15:59 ## TID: 0 - Ejecutando: THREAD_JOIN - [4].
+2024/12/05 15:15:59 Respuesta POST: 200 OK
+2024/12/05 15:15:59 Respuesta POST: 200 OK
+2024/12/05 15:15:59 Respuesta POST: 200 OK
+2024/12/05 15:15:59 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 15:15:59 Respuesta POST: 200 OK
+2024/12/05 15:15:59 ## TID: 2 - Solicito Contexto Ejecución.
+2024/12/05 15:15:59 Respuesta POST: 200 OK
+2024/12/05 15:15:59 ## TID: 2 - FETCH - Program Counter: 0.
+2024/12/05 15:15:59 ## TID: 2 - Ejecutando: SET - [AX 1].
+2024/12/05 15:15:59 Respuesta POST: 200 OK
+2024/12/05 15:15:59 ## TID: 2 - FETCH - Program Counter: 1.
+2024/12/05 15:15:59 ## TID: 2 - Ejecutando: SET - [BX 1].
+2024/12/05 15:15:59 Respuesta POST: 200 OK
+2024/12/05 15:15:59 ## TID: 2 - FETCH - Program Counter: 2.
+2024/12/05 15:15:59 ## TID: 2 - Ejecutando: SET - [PC 5].
+2024/12/05 15:15:59 Respuesta POST: 200 OK
+2024/12/05 15:15:59 ## TID: 2 - FETCH - Program Counter: 6.
+2024/12/05 15:15:59 ## TID: 2 - Ejecutando: WRITE_MEM - [AX BX].
+2024/12/05 15:15:59 Respuesta POST: 404 Not Found
+2024/12/05 15:15:59 Respuesta de memoria a escribir memoria: 404 page not found
+
+2024/12/05 15:15:59 ## TID: 2 - Acción: ESCRIBIR - Dirección Física: 1.
+2024/12/05 15:15:59 Respuesta POST: 200 OK
+2024/12/05 15:15:59 ## TID: 2 - FETCH - Program Counter: 7.
+2024/12/05 15:15:59 ## TID: 2 - Ejecutando: JNZ - [AX 4].
+2024/12/05 15:15:59 Respuesta POST: 200 OK
+2024/12/05 15:15:59 ## TID: 2 - FETCH - Program Counter: 4.
+2024/12/05 15:15:59 ## TID: 2 - Ejecutando: SUB - [AX BX].
+2024/12/05 15:15:59 Respuesta POST: 200 OK
+2024/12/05 15:15:59 ## TID: 2 - FETCH - Program Counter: 5.
+2024/12/05 15:15:59 ## TID: 2 - Ejecutando: READ_MEM - [AX BX].
+2024/12/05 15:15:59 Respuesta POST: 404 Not Found
+2024/12/05 15:15:59 ## TID: 2 - Acción: LEER - Dirección Física: 1.
+2024/12/05 15:15:59 Respuesta POST: 200 OK
+2024/12/05 15:15:59 ## TID: 2 - FETCH - Program Counter: 6.
+2024/12/05 15:15:59 ## TID: 2 - Ejecutando: WRITE_MEM - [AX BX].
+2024/12/05 15:15:59 Respuesta POST: 200 OK
+2024/12/05 15:15:59 Respuesta POST: 500 Internal Server Error
+2024/12/05 15:15:59 ## TID: 2 - Actualizo Contexto Ejecución.
+2024/12/05 15:15:59 http: panic serving 127.0.0.1:62871: Post "http://127.0.0.1:8002/contexto_de_ejecucion": EOF
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
+panic({0x491300?, 0xc0001fede0?})
+	C:/Program Files/Go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/utils/cliente.Post2({0xc00008c420?, 0xc00000abe0?}, 0x1f42, {0x4d7f01, 0x15}, {0xc000014240, 0x11, 0x18})
+	C:/Users/Tomás/Desktop/Facultad/FACULTAD/3 AÑO/S.O/GO/tp-2024-2c-Equipo-Operativo/tp-2024-2c-Equipo-Operativo/utils/cliente/client.go:33 +0x30d
+github.com/sisoputnfrba/tp-golang/cpu/instrucciones.solicitarContexto(0x1, 0x0)
+	C:/Users/Tomás/Desktop/Facultad/FACULTAD/3 AÑO/S.O/GO/tp-2024-2c-Equipo-Operativo/tp-2024-2c-Equipo-Operativo/cpu/instrucciones/instruction_cycle.go:101 +0xe5
+github.com/sisoputnfrba/tp-golang/cpu/instrucciones.EjecutarInstruccion(0x1, 0x0)
+	C:/Users/Tomás/Desktop/Facultad/FACULTAD/3 AÑO/S.O/GO/tp-2024-2c-Equipo-Operativo/tp-2024-2c-Equipo-Operativo/cpu/instrucciones/instruction_cycle.go:53 +0x2f
+github.com/sisoputnfrba/tp-golang/cpu/instrucciones.Dispatch({0x55ea50, 0xc0002140e0}, 0xc0002328c0)
+	C:/Users/Tomás/Desktop/Facultad/FACULTAD/3 AÑO/S.O/GO/tp-2024-2c-Equipo-Operativo/tp-2024-2c-Equipo-Operativo/cpu/instrucciones/instruction_cycle.go:41 +0x85
+net/http.HandlerFunc.ServeHTTP(0xc0000e60e0?, {0x55ea50?, 0xc0002140e0?}, 0x6751eddf?)
+	C:/Program Files/Go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1ada65?, {0x55ea50, 0xc0002140e0}, 0xc0002328c0)
+	C:/Program Files/Go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x55d5d8?}, {0x55ea50?, 0xc0002140e0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc0000ee120, {0x55ef18, 0xc00008b0e0})
+	C:/Program Files/Go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3360 +0x485
+2024/12/05 15:25:50 El módulo CPU está a la escucha en el puerto :8004
+2024/12/05 15:25:57 Respuesta POST: 200 OK
+2024/12/05 15:25:57 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 15:25:57 Respuesta POST: 200 OK
+2024/12/05 15:25:57 ## TID: 0 - FETCH - Program Counter: 0.
+2024/12/05 15:25:57 ## TID: 0 - Ejecutando: SET - [DX 0].
+2024/12/05 15:25:57 Respuesta POST: 200 OK
+2024/12/05 15:25:57 ## TID: 0 - FETCH - Program Counter: 1.
+2024/12/05 15:25:57 ## TID: 0 - Ejecutando: SET - [AX 1].
+2024/12/05 15:25:57 Respuesta POST: 200 OK
+2024/12/05 15:25:57 ## TID: 0 - FETCH - Program Counter: 2.
+2024/12/05 15:25:57 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/05 15:25:57 Respuesta POST: 200 OK
+2024/12/05 15:25:57 Respuesta POST: 200 OK
+2024/12/05 15:25:57 Respuesta POST: 200 OK
+2024/12/05 15:25:57 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 15:25:57 Respuesta POST: 200 OK
+2024/12/05 15:25:57 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 15:25:57 Respuesta POST: 200 OK
+2024/12/05 15:25:57 ## TID: 0 - FETCH - Program Counter: 3.
+2024/12/05 15:25:57 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 15:25:57 Respuesta POST: 200 OK
+2024/12/05 15:25:57 ## TID: 0 - FETCH - Program Counter: 4.
+2024/12/05 15:25:57 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 5].
+2024/12/05 15:25:57 Respuesta POST: 200 OK
+2024/12/05 15:25:57 Respuesta POST: 200 OK
+2024/12/05 15:25:57 Respuesta POST: 200 OK
+2024/12/05 15:25:57 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 15:25:57 Respuesta POST: 200 OK
+2024/12/05 15:25:57 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 15:25:57 Respuesta POST: 200 OK
+2024/12/05 15:25:57 ## TID: 0 - FETCH - Program Counter: 5.
+2024/12/05 15:25:57 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 15:25:57 Respuesta POST: 200 OK
+2024/12/05 15:25:57 ## TID: 0 - FETCH - Program Counter: 6.
+2024/12/05 15:25:57 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 5].
+2024/12/05 15:25:57 Respuesta POST: 200 OK
+2024/12/05 15:25:57 Respuesta POST: 200 OK
+2024/12/05 15:25:57 Respuesta POST: 200 OK
+2024/12/05 15:25:57 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 15:25:57 Respuesta POST: 200 OK
+2024/12/05 15:25:57 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 15:25:57 Respuesta POST: 200 OK
+2024/12/05 15:25:57 ## TID: 0 - FETCH - Program Counter: 7.
+2024/12/05 15:25:57 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 15:25:57 Respuesta POST: 200 OK
+2024/12/05 15:25:57 ## TID: 0 - FETCH - Program Counter: 8.
+2024/12/05 15:25:57 ## TID: 0 - Ejecutando: THREAD_CREATE - [pruebaPlani.txt 6].
+2024/12/05 15:25:57 Respuesta POST: 200 OK
+2024/12/05 15:25:57 Respuesta POST: 200 OK
+2024/12/05 15:25:57 Respuesta POST: 200 OK
+2024/12/05 15:25:57 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 15:25:57 Respuesta POST: 200 OK
+2024/12/05 15:25:57 ## TID: 0 - Solicito Contexto Ejecución.
+2024/12/05 15:25:57 Respuesta POST: 200 OK
+2024/12/05 15:25:57 ## TID: 0 - FETCH - Program Counter: 9.
+2024/12/05 15:25:57 ## TID: 0 - Ejecutando: SUM - [DX AX].
+2024/12/05 15:25:57 Respuesta POST: 200 OK
+2024/12/05 15:25:57 ## TID: 0 - FETCH - Program Counter: 10.
+2024/12/05 15:25:57 ## TID: 0 - Ejecutando: THREAD_JOIN - [4].
+2024/12/05 15:25:57 Respuesta POST: 200 OK
+2024/12/05 15:25:57 Respuesta POST: 200 OK
+2024/12/05 15:25:57 Respuesta POST: 200 OK
+2024/12/05 15:25:57 ## TID: 0 - Actualizo Contexto Ejecución.
+2024/12/05 15:25:57 Respuesta POST: 200 OK
+2024/12/05 15:25:57 ## TID: 2 - Solicito Contexto Ejecución.
+2024/12/05 15:25:57 Respuesta POST: 200 OK
+2024/12/05 15:25:57 ## TID: 2 - FETCH - Program Counter: 0.
+2024/12/05 15:25:57 ## TID: 2 - Ejecutando: SET - [AX 1].
+2024/12/05 15:25:57 Respuesta POST: 200 OK
+2024/12/05 15:25:57 ## TID: 2 - FETCH - Program Counter: 1.
+2024/12/05 15:25:57 ## TID: 2 - Ejecutando: SET - [BX 1].
+2024/12/05 15:25:57 Respuesta POST: 200 OK
+2024/12/05 15:25:57 ## TID: 2 - FETCH - Program Counter: 2.
+2024/12/05 15:25:57 ## TID: 2 - Ejecutando: SET - [PC 5].
+2024/12/05 15:25:57 Respuesta POST: 200 OK
+2024/12/05 15:25:57 ## TID: 2 - FETCH - Program Counter: 6.
+2024/12/05 15:25:57 ## TID: 2 - Ejecutando: WRITE_MEM - [AX BX].
+2024/12/05 15:25:57 aaaaa
+2024/12/05 15:25:57 Respuesta POST: 404 Not Found
+2024/12/05 15:25:57 Respuesta de memoria a escribir memoria: 404 page not found
+
+2024/12/05 15:25:57 ## TID: 2 - Acción: ESCRIBIR - Dirección Física: 1.
+2024/12/05 15:25:57 Respuesta POST: 200 OK
+2024/12/05 15:25:57 ## TID: 2 - FETCH - Program Counter: 7.
+2024/12/05 15:25:57 ## TID: 2 - Ejecutando: JNZ - [AX 4].
+2024/12/05 15:25:57 Respuesta POST: 200 OK
+2024/12/05 15:25:57 ## TID: 2 - FETCH - Program Counter: 4.
+2024/12/05 15:25:57 ## TID: 2 - Ejecutando: SUB - [AX BX].
+2024/12/05 15:25:57 Respuesta POST: 200 OK
+2024/12/05 15:25:57 ## TID: 2 - FETCH - Program Counter: 5.
+2024/12/05 15:25:57 ## TID: 2 - Ejecutando: READ_MEM - [AX BX].
+2024/12/05 15:25:57 Respuesta POST: 404 Not Found
+2024/12/05 15:25:57 ## TID: 2 - Acción: LEER - Dirección Física: 1.
+2024/12/05 15:25:57 Respuesta POST: 200 OK
+2024/12/05 15:25:57 ## TID: 2 - FETCH - Program Counter: 6.
+2024/12/05 15:25:57 ## TID: 2 - Ejecutando: WRITE_MEM - [AX BX].
+2024/12/05 15:25:57 Respuesta POST: 200 OK
+2024/12/05 15:25:57 Respuesta POST: 500 Internal Server Error
+2024/12/05 15:25:57 ## TID: 2 - Actualizo Contexto Ejecución.
+2024/12/05 15:25:57 http: panic serving 127.0.0.1:63006: Post "http://127.0.0.1:8002/contexto_de_ejecucion": EOF
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
+panic({0x1071300?, 0xc00009b260?})
+	C:/Program Files/Go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/utils/cliente.Post2({0xc00000a450?, 0xc00000aee0?}, 0x1f42, {0x10b7f06, 0x15}, {0xc0000151b8, 0x11, 0x18})
+	C:/Users/Tomás/Desktop/Facultad/FACULTAD/3 AÑO/S.O/GO/tp-2024-2c-Equipo-Operativo/tp-2024-2c-Equipo-Operativo/utils/cliente/client.go:33 +0x30d
+github.com/sisoputnfrba/tp-golang/cpu/instrucciones.solicitarContexto(0x1, 0x0)
+	C:/Users/Tomás/Desktop/Facultad/FACULTAD/3 AÑO/S.O/GO/tp-2024-2c-Equipo-Operativo/tp-2024-2c-Equipo-Operativo/cpu/instrucciones/instruction_cycle.go:101 +0xe5
+github.com/sisoputnfrba/tp-golang/cpu/instrucciones.EjecutarInstruccion(0x1, 0x0)
+	C:/Users/Tomás/Desktop/Facultad/FACULTAD/3 AÑO/S.O/GO/tp-2024-2c-Equipo-Operativo/tp-2024-2c-Equipo-Operativo/cpu/instrucciones/instruction_cycle.go:53 +0x2f
+github.com/sisoputnfrba/tp-golang/cpu/instrucciones.Dispatch({0x113eab0, 0xc000128460}, 0xc00017db80)
+	C:/Users/Tomás/Desktop/Facultad/FACULTAD/3 AÑO/S.O/GO/tp-2024-2c-Equipo-Operativo/tp-2024-2c-Equipo-Operativo/cpu/instrucciones/instruction_cycle.go:41 +0x85
+net/http.HandlerFunc.ServeHTTP(0xc0001280e0?, {0x113eab0?, 0xc000128460?}, 0x6751f035?)
+	C:/Program Files/Go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0xd8da65?, {0x113eab0, 0xc000128460}, 0xc00017db80)
+	C:/Program Files/Go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0x113d638?}, {0x113eab0?, 0xc000128460?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc00012e120, {0x113ef78, 0xc00001d110})
+	C:/Program Files/Go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3360 +0x485
 2024/12/05 12:36:06 El módulo CPU está a la escucha en el puerto :8004
 2024/12/05 12:37:09 Respuesta POST: 200 OK
 2024/12/05 12:37:09 ## TID: 0 - Solicito Contexto Ejecución.

@@ -195,7 +195,6 @@ func ObtenerContenidoMemoria(base, limite int) []byte {
 	tamanio := limite - base + 1
 	contenido := make([]byte, tamanio)
 	copy(contenido, globals.MemoriaUsuario.Datos[base:limite+1])
-
 	return contenido
 }
 
