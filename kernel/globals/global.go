@@ -49,4 +49,4 @@ var IO = make(chan int)
 
 var MutexPlanificacion sync.Mutex
 
-var Planificar = make(chan bool) // Verificar si no hay que poner
+var Planificar = make(chan bool)

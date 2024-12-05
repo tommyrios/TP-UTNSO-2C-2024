@@ -71,8 +71,10 @@ type RequestFinalizarHilo struct {
 }
 
 type RequestDispatcher struct {
-	Pid int `json:"pid"`
-	Tid int `json:"tid"`
+	Pid       int    `json:"pid"`
+	Tid       int    `json:"tid"`
+	Quantum   int    `json:"quantum"`
+	Scheduler string `json:"scheduler"`
 }
 
 type RequestCrearHilo struct {

@@ -17,8 +17,6 @@ type Config struct {
 
 var CConfig *Config
 
-var Syscall = make(chan bool)
-
 type InstruccionStruct struct {
 	CodOperacion string   `json:"cod_operacion"`
 	Operandos    []string `json:"operandos"`

@@ -9,25 +9,8 @@ import (
 	"log"
 	"net/http"
 	"strings"
+	"time"
 )
-
-var interrupcion = globals.InterrupcionStruct{Presencia: false}
-
-func RecibirInterrupcion(w http.ResponseWriter, r *http.Request) {
-	log.Println("## Llega interrupcion al puerto Interrupt")
-
-	var interrupcionRecibida requests.RequestInterrupcion
-
-	err := commons.DecodificarJSON(r.Body, &interrupcion)
-
-	interrupcion = globals.InterrupcionStruct{Pid: interrupcionRecibida.Pid, Tid: interrupcionRecibida.Tid, Presencia: true, Razon: interrupcionRecibida.Razon}
-
-	if err != nil {
-		return
-	}
-
-	w.WriteHeader(http.StatusOK)
-}
 
 func Dispatch(w http.ResponseWriter, r *http.Request) {
 
@@ -38,7 +21,7 @@ func Dispatch(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	err = EjecutarInstruccion(req.Pid, req.Tid)
+	err = EjecutarInstruccion(req.Pid, req.Tid, req.Quantum, req.Scheduler)
 
 	if err != nil {
 		w.WriteHeader(http.StatusBadRequest)
@@ -49,7 +32,7 @@ func Dispatch(w http.ResponseWriter, r *http.Request) {
 	return
 }
 
-func EjecutarInstruccion(pid int, tid int) error {
+func EjecutarInstruccion(pid int, tid int, quantum int, scheduler string) error {
 	contexto, err := solicitarContexto(pid, tid)
 
 	var ultimaInstruccion string
@@ -57,6 +40,8 @@ func EjecutarInstruccion(pid int, tid int) error {
 	if err != nil {
 		return err
 	}
+
+	inicio := time.Now()
 
 	for {
 		instruccionRecibida := Fetch(pid, tid, int(contexto.Registros.PC))
@@ -73,7 +58,9 @@ func EjecutarInstruccion(pid int, tid int) error {
 			contexto.Registros.PC++
 		}
 
-		if CheckInterrupt(pid, tid) == true {
+		tiempo := int(time.Since(inicio).Milliseconds())
+
+		if checkInterrupt(pid, tid, scheduler, quantum, tiempo) {
 			break
 		}
 	}
@@ -185,11 +172,11 @@ func Execute(instruccion globals.InstruccionStruct, registros *commons.Registros
 	return 4
 }
 
-func CheckInterrupt(pid int, tid int) bool {
-	if interrupcion.Presencia == true {
-		interrupcion.Presencia = false
-		if interrupcion.Pid == pid && interrupcion.Tid == tid {
-			globals.DevolverPCB(pid, tid, interrupcion.Razon)
+func checkInterrupt(pid int, tid int, scheduler string, quantum int, tiempo int) bool {
+	if scheduler == "CMN" {
+		if tiempo > quantum {
+			log.Printf("END OF QUANTUM - (PID:TID) - (%d:%d)", pid, tid)
+			globals.DevolverPCB(pid, tid, "INTERRUPCION")
 			return true
 		}
 	}

@@ -5,8 +5,10 @@ import (
 )
 
 type RequestDispatch struct {
-	Pid int `json:"pid"`
-	Tid int `json:"tid"`
+	Pid       int    `json:"pid"`
+	Tid       int    `json:"tid"`
+	Quantum   int    `json:"quantum"`
+	Scheduler string `json:"scheduler"`
 }
 
 type RequestContexto struct {

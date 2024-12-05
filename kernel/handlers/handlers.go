@@ -250,7 +250,7 @@ func ManejadorIO() {
 }
 
 func Dispatch(pid int, tid int) (*http.Response, error) {
-	requestBody, err := commons.CodificarJSON(request.RequestDispatcher{Pid: pid, Tid: tid})
+	requestBody, err := commons.CodificarJSON(request.RequestDispatcher{Pid: pid, Tid: tid, Quantum: globals.KConfig.Quantum, Scheduler: globals.KConfig.SchedulerAlgorithm})
 	if err != nil {
 		return nil, err
 	}
@@ -259,7 +259,8 @@ func Dispatch(pid int, tid int) (*http.Response, error) {
 }
 
 func Interrupt(interruption string, pid int, tid int) *http.Response {
-	requestBody, err := commons.CodificarJSON(request.RequestInterrupcion{Razon: interruption, Pid: pid, Tid: tid})
+	interrupcion := request.RequestInterrupcion{Pid: pid, Tid: tid, Razon: interruption}
+	requestBody, err := commons.CodificarJSON(interrupcion)
 	if err != nil {
 		log.Printf("Error al codificar el JSON en Interrupt")
 		return nil
@@ -302,6 +303,10 @@ func HandleDesalojoCpu(w http.ResponseWriter, r *http.Request) {
 		if req.Razon == "SYSCALL" || req.Razon == "INTERRUPCION" {
 			globals.Estructura.MtxReady.Lock()
 			if !queues.ConsultaBloqueado(req.Pid, req.Tid) {
+				tcb := threads.BuscarHiloEnPCB(req.Pid, req.Tid)
+
+				tcb.Estado = "READY"
+
 				queues.AgregarHiloACola(threads.BuscarHiloEnPCB(req.Pid, req.Tid), &globals.Estructura.ColaReady)
 			}
 			globals.Estructura.MtxReady.Unlock()

@@ -4656,3 +4656,1284 @@ created by net/http.(*Server).Serve in goroutine 1
 2024/12/05 11:26:19 ## Finaliza el proceso 1
 2024/12/05 11:26:19 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
 2024/12/05 11:26:19 Respuesta POST: 200 OK
+2024/12/05 12:37:09 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 12:37:09 Cola NEW está vacía, solicitando memoria.
+2024/12/05 12:37:09 Respuesta POST: 200 OK
+2024/12/05 12:37:09 Respuesta POST: 200 OK
+2024/12/05 12:37:09 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 12:37:09 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 12:37:09 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 12:37:09 Respuesta POST: 200 OK
+2024/12/05 12:37:09 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 12:37:09 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 12:37:09 Respuesta POST: 200 OK
+2024/12/05 12:37:09 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 12:37:09 Respuesta POST: 200 OK
+2024/12/05 12:37:09 ## (1:2) Se crea el Hilo - Estado: READY
+2024/12/05 12:37:09 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 12:37:09 Respuesta POST: 200 OK
+2024/12/05 12:37:09 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 12:37:09 Respuesta POST: 200 OK
+2024/12/05 12:37:09 ## (1:3) Se crea el Hilo - Estado: READY
+2024/12/05 12:37:09 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 12:37:09 Respuesta POST: 200 OK
+2024/12/05 12:37:09 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 12:37:09 Respuesta POST: 200 OK
+2024/12/05 12:37:09 ## (1:4) Se crea el Hilo - Estado: READY
+2024/12/05 12:37:09 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 12:37:09 Respuesta POST: 200 OK
+2024/12/05 12:37:09 ## (1:0) - Solicitó syscall: THREAD_JOIN
+2024/12/05 12:37:09 ## Proceso 1 - Hilo 0 esperando por el hilo 4
+2024/12/05 12:37:09 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 12:37:09 Respuesta POST: 200 OK
+2024/12/05 12:37:09 ## (1:2) - Solicitó syscall: THREAD_EXIT
+2024/12/05 12:37:09 Respuesta POST: 200 OK
+2024/12/05 12:37:09 ## (1:2) Finaliza el hilo
+2024/12/05 12:37:09 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 12:37:09 Respuesta POST: 200 OK
+2024/12/05 12:37:09 ## (1:3) - Solicitó syscall: THREAD_EXIT
+2024/12/05 12:37:09 Respuesta POST: 200 OK
+2024/12/05 12:37:09 ## (1:3) Finaliza el hilo
+2024/12/05 12:37:09 ## (PID:TID) - (1:3) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 12:37:09 Respuesta POST: 200 OK
+2024/12/05 12:37:09 ## (1:1) - Solicitó syscall: THREAD_EXIT
+2024/12/05 12:37:09 Respuesta POST: 200 OK
+2024/12/05 12:37:09 ## (1:1) Finaliza el hilo
+2024/12/05 12:37:09 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 12:37:09 Respuesta POST: 200 OK
+2024/12/05 12:37:09 ## (1:4) - Solicitó syscall: THREAD_EXIT
+2024/12/05 12:37:09 Respuesta POST: 200 OK
+2024/12/05 12:37:09 ## (1:4) Finaliza el hilo
+2024/12/05 12:37:09 ## (PID:TID) - (1:4) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 12:37:09 Respuesta POST: 200 OK
+2024/12/05 12:37:09 ## (1:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/05 12:37:09 Respuesta POST: 200 OK
+2024/12/05 12:37:09 ## (1:0) Finaliza el hilo
+2024/12/05 12:37:09 Respuesta POST: 200 OK
+2024/12/05 12:37:09 ## Finaliza el proceso 1
+2024/12/05 12:37:09 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/05 12:37:09 Respuesta POST: 200 OK
+2024/12/05 12:54:26 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 12:54:26 Cola NEW está vacía, solicitando memoria.
+2024/12/05 12:54:26 Respuesta POST: 200 OK
+2024/12/05 12:54:26 Respuesta POST: 200 OK
+2024/12/05 12:54:26 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 12:54:26 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 12:54:26 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 12:54:26 Respuesta POST: 200 OK
+2024/12/05 12:54:26 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 12:54:26 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 12:54:26 Respuesta POST: 200 OK
+2024/12/05 12:54:26 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 12:54:26 Respuesta POST: 200 OK
+2024/12/05 12:54:26 ## (1:2) Se crea el Hilo - Estado: READY
+2024/12/05 12:54:26 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 12:54:26 Respuesta POST: 200 OK
+2024/12/05 12:54:26 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 12:54:26 Respuesta POST: 200 OK
+2024/12/05 12:54:26 ## (1:3) Se crea el Hilo - Estado: READY
+2024/12/05 12:54:26 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 12:54:26 Respuesta POST: 200 OK
+2024/12/05 12:54:26 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 12:54:26 Respuesta POST: 200 OK
+2024/12/05 12:54:26 ## (1:4) Se crea el Hilo - Estado: READY
+2024/12/05 12:54:26 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 12:54:26 Respuesta POST: 200 OK
+2024/12/05 12:54:26 ## (1:0) - Solicitó syscall: THREAD_JOIN
+2024/12/05 12:54:26 ## Proceso 1 - Hilo 0 esperando por el hilo 4
+2024/12/05 12:54:26 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 12:54:26 Respuesta POST: 200 OK
+2024/12/05 12:54:26 ## (1:2) - Solicitó syscall: THREAD_EXIT
+2024/12/05 12:54:26 Respuesta POST: 200 OK
+2024/12/05 12:54:26 ## (1:2) Finaliza el hilo
+2024/12/05 12:54:26 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 12:54:26 Respuesta POST: 200 OK
+2024/12/05 12:54:26 ## (1:3) - Solicitó syscall: THREAD_EXIT
+2024/12/05 12:54:26 Respuesta POST: 200 OK
+2024/12/05 12:54:26 ## (1:3) Finaliza el hilo
+2024/12/05 12:54:26 ## (PID:TID) - (1:3) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 12:54:26 Respuesta POST: 200 OK
+2024/12/05 12:54:26 ## (1:1) - Solicitó syscall: THREAD_EXIT
+2024/12/05 12:54:26 Respuesta POST: 200 OK
+2024/12/05 12:54:26 ## (1:1) Finaliza el hilo
+2024/12/05 12:54:26 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 12:54:26 Respuesta POST: 200 OK
+2024/12/05 12:54:26 ## (1:4) - Solicitó syscall: THREAD_EXIT
+2024/12/05 12:54:26 Respuesta POST: 200 OK
+2024/12/05 12:54:26 ## (1:4) Finaliza el hilo
+2024/12/05 12:54:26 ## (PID:TID) - (1:4) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 12:54:26 Respuesta POST: 200 OK
+2024/12/05 12:54:26 ## (1:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/05 12:54:26 Respuesta POST: 200 OK
+2024/12/05 12:54:26 ## (1:0) Finaliza el hilo
+2024/12/05 12:54:26 Respuesta POST: 200 OK
+2024/12/05 12:54:26 ## Finaliza el proceso 1
+2024/12/05 12:54:26 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/05 12:54:26 Respuesta POST: 200 OK
+2024/12/05 12:57:45 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 12:57:45 Cola NEW está vacía, solicitando memoria.
+2024/12/05 12:57:45 Respuesta POST: 200 OK
+2024/12/05 12:57:45 Respuesta POST: 200 OK
+2024/12/05 12:57:45 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 12:57:45 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 12:57:47 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 12:57:47 Respuesta POST: 200 OK
+2024/12/05 12:57:47 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 12:57:47 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 12:57:47 Respuesta POST: 200 OK
+2024/12/05 12:57:49 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 12:57:49 Respuesta POST: 200 OK
+2024/12/05 12:57:49 ## (1:2) Se crea el Hilo - Estado: READY
+2024/12/05 12:57:49 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 12:57:49 Respuesta POST: 200 OK
+2024/12/05 12:57:51 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 12:57:51 Respuesta POST: 200 OK
+2024/12/05 12:57:51 ## (1:3) Se crea el Hilo - Estado: READY
+2024/12/05 12:57:51 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 12:57:51 Respuesta POST: 200 OK
+2024/12/05 12:57:53 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 12:57:53 Respuesta POST: 200 OK
+2024/12/05 12:57:53 ## (1:4) Se crea el Hilo - Estado: READY
+2024/12/05 12:57:53 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 12:57:53 Respuesta POST: 200 OK
+2024/12/05 12:57:55 ## (1:0) - Solicitó syscall: THREAD_JOIN
+2024/12/05 12:57:55 ## Proceso 1 - Hilo 0 esperando por el hilo 4
+2024/12/05 12:57:55 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 12:57:55 Respuesta POST: 200 OK
+2024/12/05 12:57:58 ## (1:2) - Solicitó syscall: THREAD_EXIT
+2024/12/05 12:57:58 Respuesta POST: 200 OK
+2024/12/05 12:57:58 ## (1:2) Finaliza el hilo
+2024/12/05 12:57:58 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 12:57:58 Respuesta POST: 200 OK
+2024/12/05 12:58:01 ## (1:3) - Solicitó syscall: THREAD_EXIT
+2024/12/05 12:58:01 Respuesta POST: 200 OK
+2024/12/05 12:58:01 ## (1:3) Finaliza el hilo
+2024/12/05 12:58:01 ## (PID:TID) - (1:3) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 12:58:01 Respuesta POST: 200 OK
+2024/12/05 12:58:03 ## (1:1) - Solicitó syscall: THREAD_EXIT
+2024/12/05 12:58:03 Respuesta POST: 200 OK
+2024/12/05 12:58:03 ## (1:1) Finaliza el hilo
+2024/12/05 12:58:03 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 12:58:03 Respuesta POST: 200 OK
+2024/12/05 12:58:06 ## (1:4) - Solicitó syscall: THREAD_EXIT
+2024/12/05 12:58:06 Respuesta POST: 200 OK
+2024/12/05 12:58:06 ## (1:4) Finaliza el hilo
+2024/12/05 12:58:06 ## (PID:TID) - (1:4) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 12:58:06 Respuesta POST: 200 OK
+2024/12/05 12:58:07 ## (1:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/05 12:58:07 Respuesta POST: 200 OK
+2024/12/05 12:58:07 ## (1:0) Finaliza el hilo
+2024/12/05 12:58:07 Respuesta POST: 200 OK
+2024/12/05 12:58:07 ## Finaliza el proceso 1
+2024/12/05 12:58:07 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/05 12:58:07 Respuesta POST: 200 OK
+2024/12/05 13:18:50 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 13:18:50 Cola NEW está vacía, solicitando memoria.
+2024/12/05 13:18:50 Respuesta POST: 200 OK
+2024/12/05 13:18:50 Respuesta POST: 200 OK
+2024/12/05 13:18:50 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 13:18:50 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 13:18:52 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 13:18:52 Respuesta POST: 200 OK
+2024/12/05 13:18:52 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 13:18:52 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 13:18:52 Respuesta POST: 200 OK
+2024/12/05 13:18:53 ## (1:0) - Solicitó syscall: THREAD_JOIN
+2024/12/05 13:18:53 ## Proceso 1 - Hilo 0 esperando por el hilo 1
+2024/12/05 13:18:53 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 13:18:53 Respuesta POST: 200 OK
+2024/12/05 13:18:55 ## (1:1) - Solicitó syscall: THREAD_CREATE
+2024/12/05 13:18:55 Respuesta POST: 200 OK
+2024/12/05 13:18:55 ## (1:2) Se crea el Hilo - Estado: READY
+2024/12/05 13:18:55 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 13:18:55 Respuesta POST: 200 OK
+2024/12/05 13:18:56 ## (1:2) - Solicitó syscall: THREAD_CREATE
+2024/12/05 13:18:56 Respuesta POST: 200 OK
+2024/12/05 13:18:56 ## (1:3) Se crea el Hilo - Estado: READY
+2024/12/05 13:18:56 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 13:18:57 Respuesta POST: 200 OK
+2024/12/05 13:18:58 ## (1:3) - Solicitó syscall: THREAD_CREATE
+2024/12/05 13:18:58 Respuesta POST: 200 OK
+2024/12/05 13:18:58 ## (1:4) Se crea el Hilo - Estado: READY
+2024/12/05 13:18:58 ## (PID:TID) - (1:3) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 13:18:59 Respuesta POST: 200 OK
+2024/12/05 13:19:00 ## (1:2) - Solicitó syscall: THREAD_EXIT
+2024/12/05 13:19:00 Respuesta POST: 200 OK
+2024/12/05 13:19:00 ## (1:2) Finaliza el hilo
+2024/12/05 13:19:00 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 13:19:00 Respuesta POST: 200 OK
+2024/12/05 13:19:02 ## (1:4) - Solicitó syscall: THREAD_CREATE
+2024/12/05 13:19:02 Respuesta POST: 200 OK
+2024/12/05 13:19:02 ## (1:5) Se crea el Hilo - Estado: READY
+2024/12/05 13:19:02 ## (PID:TID) - (1:4) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 13:19:02 Respuesta POST: 200 OK
+2024/12/05 13:19:03 ## (1:3) - Solicitó syscall: THREAD_EXIT
+2024/12/05 13:19:03 Respuesta POST: 200 OK
+2024/12/05 13:19:03 ## (1:3) Finaliza el hilo
+2024/12/05 13:19:03 ## (PID:TID) - (1:3) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 13:19:03 Respuesta POST: 200 OK
+2024/12/05 13:19:05 ## (1:5) - Solicitó syscall: THREAD_CREATE
+2024/12/05 13:19:05 Respuesta POST: 200 OK
+2024/12/05 13:19:05 ## (1:6) Se crea el Hilo - Estado: READY
+2024/12/05 13:19:05 ## (PID:TID) - (1:5) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 13:19:05 Respuesta POST: 200 OK
+2024/12/05 13:19:07 ## (1:4) - Solicitó syscall: THREAD_EXIT
+2024/12/05 13:19:07 Respuesta POST: 200 OK
+2024/12/05 13:19:07 ## (1:4) Finaliza el hilo
+2024/12/05 13:19:07 ## (PID:TID) - (1:4) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 13:19:07 Respuesta POST: 200 OK
+2024/12/05 13:19:08 ## (1:6) - Solicitó syscall: THREAD_CREATE
+2024/12/05 13:19:08 Respuesta POST: 200 OK
+2024/12/05 13:19:08 ## (1:7) Se crea el Hilo - Estado: READY
+2024/12/05 13:19:08 ## (PID:TID) - (1:6) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 13:19:09 Respuesta POST: 200 OK
+2024/12/05 13:19:10 ## (1:5) - Solicitó syscall: THREAD_EXIT
+2024/12/05 13:19:10 Respuesta POST: 200 OK
+2024/12/05 13:19:10 ## (1:5) Finaliza el hilo
+2024/12/05 13:19:10 ## (PID:TID) - (1:5) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 13:19:10 Respuesta POST: 200 OK
+2024/12/05 13:19:12 ## (1:7) - Solicitó syscall: THREAD_CREATE
+2024/12/05 13:19:12 Respuesta POST: 200 OK
+2024/12/05 13:19:12 ## (1:8) Se crea el Hilo - Estado: READY
+2024/12/05 13:19:12 ## (PID:TID) - (1:7) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 13:19:12 Respuesta POST: 200 OK
+2024/12/05 13:19:13 ## (1:6) - Solicitó syscall: THREAD_EXIT
+2024/12/05 13:19:13 Respuesta POST: 200 OK
+2024/12/05 13:19:13 ## (1:6) Finaliza el hilo
+2024/12/05 13:19:13 ## (PID:TID) - (1:6) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 13:19:13 Respuesta POST: 200 OK
+2024/12/05 13:19:15 ## (1:8) - Solicitó syscall: THREAD_CREATE
+2024/12/05 13:19:15 Respuesta POST: 200 OK
+2024/12/05 13:19:15 ## (1:9) Se crea el Hilo - Estado: READY
+2024/12/05 13:19:15 ## (PID:TID) - (1:8) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 13:19:15 Respuesta POST: 200 OK
+2024/12/05 13:19:17 ## (1:7) - Solicitó syscall: THREAD_EXIT
+2024/12/05 13:19:17 Respuesta POST: 200 OK
+2024/12/05 13:19:17 ## (1:7) Finaliza el hilo
+2024/12/05 13:19:17 ## (PID:TID) - (1:7) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 13:19:17 Respuesta POST: 200 OK
+2024/12/05 13:19:18 ## (1:9) - Solicitó syscall: THREAD_CREATE
+2024/12/05 13:19:18 Respuesta POST: 200 OK
+2024/12/05 13:19:18 ## (1:10) Se crea el Hilo - Estado: READY
+2024/12/05 13:19:18 ## (PID:TID) - (1:9) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 13:19:19 Respuesta POST: 200 OK
+2024/12/05 13:19:20 ## (1:8) - Solicitó syscall: THREAD_EXIT
+2024/12/05 13:19:20 Respuesta POST: 200 OK
+2024/12/05 13:19:20 ## (1:8) Finaliza el hilo
+2024/12/05 13:19:20 ## (PID:TID) - (1:8) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 13:19:20 Respuesta POST: 200 OK
+2024/12/05 13:19:22 ## (1:10) - Solicitó syscall: THREAD_CREATE
+2024/12/05 13:19:22 Respuesta POST: 200 OK
+2024/12/05 13:19:22 ## (1:11) Se crea el Hilo - Estado: READY
+2024/12/05 13:19:22 ## (PID:TID) - (1:10) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 13:19:22 Respuesta POST: 200 OK
+2024/12/05 13:19:23 ## (1:9) - Solicitó syscall: THREAD_EXIT
+2024/12/05 13:19:23 Respuesta POST: 200 OK
+2024/12/05 13:19:23 ## (1:9) Finaliza el hilo
+2024/12/05 13:19:23 ## (PID:TID) - (1:9) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 13:19:23 Respuesta POST: 200 OK
+2024/12/05 13:19:25 ## (1:11) - Solicitó syscall: THREAD_CREATE
+2024/12/05 13:19:25 Respuesta POST: 200 OK
+2024/12/05 13:19:25 ## (1:12) Se crea el Hilo - Estado: READY
+2024/12/05 13:19:25 ## (PID:TID) - (1:11) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 13:19:25 Respuesta POST: 200 OK
+2024/12/05 13:19:27 ## (1:10) - Solicitó syscall: THREAD_EXIT
+2024/12/05 13:19:27 Respuesta POST: 200 OK
+2024/12/05 13:19:27 ## (1:10) Finaliza el hilo
+2024/12/05 13:19:27 ## (PID:TID) - (1:10) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 13:19:27 Respuesta POST: 200 OK
+2024/12/05 13:19:28 ## (1:12) - Solicitó syscall: THREAD_CREATE
+2024/12/05 13:19:28 Respuesta POST: 200 OK
+2024/12/05 13:19:28 ## (1:13) Se crea el Hilo - Estado: READY
+2024/12/05 13:19:28 ## (PID:TID) - (1:12) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 13:19:29 Respuesta POST: 200 OK
+2024/12/05 13:46:53 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 13:46:53 Cola NEW está vacía, solicitando memoria.
+2024/12/05 13:46:53 Respuesta POST: 200 OK
+2024/12/05 13:46:53 Respuesta POST: 200 OK
+2024/12/05 13:46:53 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 13:46:53 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 13:46:54 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 13:46:54 Respuesta POST: 200 OK
+2024/12/05 13:46:54 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 13:46:54 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 13:46:55 Respuesta POST: 200 OK
+2024/12/05 13:46:55 Respuesta POST: 200 OK
+2024/12/05 13:46:56 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 13:46:56 Respuesta POST: 200 OK
+2024/12/05 13:46:56 ## (1:2) Se crea el Hilo - Estado: READY
+2024/12/05 13:46:56 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 13:46:56 Respuesta POST: 200 OK
+2024/12/05 13:46:56 Respuesta POST: 200 OK
+2024/12/05 13:46:57 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 13:46:57 Respuesta POST: 200 OK
+2024/12/05 13:46:57 ## (1:3) Se crea el Hilo - Estado: READY
+2024/12/05 13:46:57 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 13:46:57 Respuesta POST: 200 OK
+2024/12/05 13:46:57 Respuesta POST: 200 OK
+2024/12/05 13:46:58 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 13:46:58 Respuesta POST: 200 OK
+2024/12/05 13:46:58 ## (1:4) Se crea el Hilo - Estado: READY
+2024/12/05 13:46:58 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 13:46:58 Respuesta POST: 200 OK
+2024/12/05 13:46:58 Respuesta POST: 200 OK
+2024/12/05 13:46:59 ## (1:0) - Solicitó syscall: THREAD_JOIN
+2024/12/05 13:46:59 ## Proceso 1 - Hilo 0 esperando por el hilo 4
+2024/12/05 13:46:59 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 13:47:00 Respuesta POST: 200 OK
+2024/12/05 13:47:01 ## (1:2) - Solicitó syscall: THREAD_EXIT
+2024/12/05 13:47:01 Respuesta POST: 200 OK
+2024/12/05 13:47:01 ## (1:2) Finaliza el hilo
+2024/12/05 13:47:01 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 13:47:01 Respuesta POST: 200 OK
+2024/12/05 13:47:03 ## (1:3) - Solicitó syscall: THREAD_EXIT
+2024/12/05 13:47:03 Respuesta POST: 200 OK
+2024/12/05 13:47:03 ## (1:3) Finaliza el hilo
+2024/12/05 13:47:03 ## (PID:TID) - (1:3) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 13:47:03 Respuesta POST: 200 OK
+2024/12/05 13:47:04 ## (1:1) - Solicitó syscall: THREAD_EXIT
+2024/12/05 13:47:04 Respuesta POST: 200 OK
+2024/12/05 13:47:04 ## (1:1) Finaliza el hilo
+2024/12/05 13:47:04 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 13:47:04 Respuesta POST: 200 OK
+2024/12/05 13:47:06 ## (1:4) - Solicitó syscall: THREAD_EXIT
+2024/12/05 13:47:06 Respuesta POST: 200 OK
+2024/12/05 13:47:06 ## (1:4) Finaliza el hilo
+2024/12/05 13:47:06 ## (PID:TID) - (1:4) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 13:47:06 Respuesta POST: 200 OK
+2024/12/05 13:47:06 ## (1:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/05 13:47:06 Respuesta POST: 200 OK
+2024/12/05 13:47:06 ## (1:0) Finaliza el hilo
+2024/12/05 13:47:06 Respuesta POST: 200 OK
+2024/12/05 13:47:06 ## Finaliza el proceso 1
+2024/12/05 13:47:06 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/05 13:47:06 Respuesta POST: 200 OK
+2024/12/05 13:49:46 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 13:49:46 Cola NEW está vacía, solicitando memoria.
+2024/12/05 13:49:46 Respuesta POST: 200 OK
+2024/12/05 13:49:46 Respuesta POST: 200 OK
+2024/12/05 13:49:46 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 13:49:46 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 13:49:48 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 13:49:48 Respuesta POST: 200 OK
+2024/12/05 13:49:48 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 13:49:48 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 13:49:49 Respuesta POST: 200 OK
+2024/12/05 13:49:49 Respuesta POST: 200 OK
+2024/12/05 13:49:50 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 13:49:51 Respuesta POST: 200 OK
+2024/12/05 13:49:51 ## (1:2) Se crea el Hilo - Estado: READY
+2024/12/05 13:49:51 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 13:49:51 Respuesta POST: 200 OK
+2024/12/05 13:49:51 Respuesta POST: 200 OK
+2024/12/05 13:49:53 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 13:49:53 Respuesta POST: 200 OK
+2024/12/05 13:49:53 ## (1:3) Se crea el Hilo - Estado: READY
+2024/12/05 13:49:53 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 13:49:53 Respuesta POST: 200 OK
+2024/12/05 13:49:53 Respuesta POST: 200 OK
+2024/12/05 13:49:55 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 13:49:55 Respuesta POST: 200 OK
+2024/12/05 13:49:55 ## (1:4) Se crea el Hilo - Estado: READY
+2024/12/05 13:49:55 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 13:49:55 Respuesta POST: 200 OK
+2024/12/05 13:49:55 Respuesta POST: 200 OK
+2024/12/05 13:49:57 ## (1:0) - Solicitó syscall: THREAD_JOIN
+2024/12/05 13:49:57 ## Proceso 1 - Hilo 0 esperando por el hilo 4
+2024/12/05 13:49:57 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 13:49:57 Respuesta POST: 200 OK
+2024/12/05 13:50:04 ## (1:2) - Solicitó syscall: THREAD_EXIT
+2024/12/05 13:50:04 Respuesta POST: 200 OK
+2024/12/05 13:50:04 ## (1:2) Finaliza el hilo
+2024/12/05 13:50:04 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 13:50:04 Respuesta POST: 200 OK
+2024/12/05 13:50:11 ## (1:3) - Solicitó syscall: THREAD_EXIT
+2024/12/05 13:50:11 Respuesta POST: 200 OK
+2024/12/05 13:50:11 ## (1:3) Finaliza el hilo
+2024/12/05 13:50:11 ## (PID:TID) - (1:3) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 13:50:11 Respuesta POST: 200 OK
+2024/12/05 13:50:18 ## (1:1) - Solicitó syscall: THREAD_EXIT
+2024/12/05 13:50:18 Respuesta POST: 200 OK
+2024/12/05 13:50:18 ## (1:1) Finaliza el hilo
+2024/12/05 13:50:18 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 13:50:18 Respuesta POST: 200 OK
+2024/12/05 13:50:25 ## (1:4) - Solicitó syscall: THREAD_EXIT
+2024/12/05 13:50:25 Respuesta POST: 200 OK
+2024/12/05 13:50:25 ## (1:4) Finaliza el hilo
+2024/12/05 13:50:25 ## (PID:TID) - (1:4) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 13:50:25 Respuesta POST: 200 OK
+2024/12/05 13:50:26 ## (1:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/05 13:50:26 Respuesta POST: 200 OK
+2024/12/05 13:50:26 ## (1:0) Finaliza el hilo
+2024/12/05 13:50:26 Respuesta POST: 200 OK
+2024/12/05 13:50:26 ## Finaliza el proceso 1
+2024/12/05 13:50:26 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/05 13:50:26 Respuesta POST: 200 OK
+2024/12/05 13:54:22 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 13:54:22 Cola NEW está vacía, solicitando memoria.
+2024/12/05 13:54:22 Respuesta POST: 200 OK
+2024/12/05 13:54:22 Respuesta POST: 200 OK
+2024/12/05 13:54:22 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 13:54:22 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 13:54:24 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 13:54:24 Respuesta POST: 200 OK
+2024/12/05 13:54:24 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 13:54:24 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 13:54:25 Respuesta POST: 200 OK
+2024/12/05 13:54:57 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 13:54:57 Cola NEW está vacía, solicitando memoria.
+2024/12/05 13:54:57 Respuesta POST: 200 OK
+2024/12/05 13:54:57 Respuesta POST: 200 OK
+2024/12/05 13:54:57 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 13:54:57 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 13:54:59 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 13:54:59 Respuesta POST: 200 OK
+2024/12/05 13:54:59 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 13:54:59 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 13:55:00 Respuesta POST: 200 OK
+2024/12/05 13:55:00 Respuesta POST: 200 OK
+2024/12/05 13:55:01 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 13:55:01 Respuesta POST: 200 OK
+2024/12/05 13:55:01 ## (1:2) Se crea el Hilo - Estado: READY
+2024/12/05 13:55:01 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 13:55:02 Respuesta POST: 200 OK
+2024/12/05 13:55:02 Respuesta POST: 200 OK
+2024/12/05 13:55:03 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 13:55:03 Respuesta POST: 200 OK
+2024/12/05 13:55:03 ## (1:3) Se crea el Hilo - Estado: READY
+2024/12/05 13:55:03 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 13:55:04 Respuesta POST: 200 OK
+2024/12/05 13:55:04 Respuesta POST: 200 OK
+2024/12/05 13:55:05 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 13:55:05 Respuesta POST: 200 OK
+2024/12/05 13:55:05 ## (1:4) Se crea el Hilo - Estado: READY
+2024/12/05 13:55:05 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 13:55:06 Respuesta POST: 200 OK
+2024/12/05 13:55:06 Respuesta POST: 200 OK
+2024/12/05 13:55:07 ## (1:0) - Solicitó syscall: THREAD_JOIN
+2024/12/05 13:55:07 ## Proceso 1 - Hilo 0 esperando por el hilo 4
+2024/12/05 13:55:07 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 13:55:08 Respuesta POST: 200 OK
+2024/12/05 13:55:15 ## (1:2) - Solicitó syscall: THREAD_EXIT
+2024/12/05 13:55:15 Respuesta POST: 200 OK
+2024/12/05 13:55:15 ## (1:2) Finaliza el hilo
+2024/12/05 13:55:15 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 13:55:15 Respuesta POST: 200 OK
+2024/12/05 13:55:22 ## (1:3) - Solicitó syscall: THREAD_EXIT
+2024/12/05 13:55:22 Respuesta POST: 200 OK
+2024/12/05 13:55:22 ## (1:3) Finaliza el hilo
+2024/12/05 13:55:22 ## (PID:TID) - (1:3) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 13:55:22 Respuesta POST: 200 OK
+2024/12/05 13:55:29 ## (1:1) - Solicitó syscall: THREAD_EXIT
+2024/12/05 13:55:29 Respuesta POST: 200 OK
+2024/12/05 13:55:29 ## (1:1) Finaliza el hilo
+2024/12/05 13:55:29 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 13:55:29 Respuesta POST: 200 OK
+2024/12/05 13:55:36 ## (1:4) - Solicitó syscall: THREAD_EXIT
+2024/12/05 13:55:36 Respuesta POST: 200 OK
+2024/12/05 13:55:36 ## (1:4) Finaliza el hilo
+2024/12/05 13:55:36 ## (PID:TID) - (1:4) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 13:55:36 Respuesta POST: 200 OK
+2024/12/05 13:55:37 ## (1:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/05 13:55:37 Respuesta POST: 200 OK
+2024/12/05 13:55:37 ## (1:0) Finaliza el hilo
+2024/12/05 13:55:37 Respuesta POST: 200 OK
+2024/12/05 13:55:37 ## Finaliza el proceso 1
+2024/12/05 13:55:37 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/05 13:55:37 Respuesta POST: 200 OK
+2024/12/05 13:57:04 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 13:57:04 Cola NEW está vacía, solicitando memoria.
+2024/12/05 13:57:04 Respuesta POST: 200 OK
+2024/12/05 13:57:04 Respuesta POST: 200 OK
+2024/12/05 13:57:04 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 13:57:04 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 13:57:06 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 13:57:06 Respuesta POST: 200 OK
+2024/12/05 13:57:06 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 13:57:06 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 13:57:07 Respuesta POST: 200 OK
+2024/12/05 13:57:07 Respuesta POST: 200 OK
+2024/12/05 13:57:08 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 13:57:08 Respuesta POST: 200 OK
+2024/12/05 13:57:08 ## (1:2) Se crea el Hilo - Estado: READY
+2024/12/05 13:57:08 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 13:57:09 Respuesta POST: 200 OK
+2024/12/05 13:57:09 Respuesta POST: 200 OK
+2024/12/05 13:57:10 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 13:57:10 Respuesta POST: 200 OK
+2024/12/05 13:57:10 ## (1:3) Se crea el Hilo - Estado: READY
+2024/12/05 13:57:10 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 13:57:11 Respuesta POST: 200 OK
+2024/12/05 13:57:11 Respuesta POST: 200 OK
+2024/12/05 13:57:12 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 13:57:12 Respuesta POST: 200 OK
+2024/12/05 13:57:12 ## (1:4) Se crea el Hilo - Estado: READY
+2024/12/05 13:57:12 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 13:57:13 Respuesta POST: 200 OK
+2024/12/05 13:57:13 Respuesta POST: 200 OK
+2024/12/05 13:57:14 ## (1:0) - Solicitó syscall: THREAD_JOIN
+2024/12/05 13:57:14 ## Proceso 1 - Hilo 0 esperando por el hilo 4
+2024/12/05 13:57:14 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 13:57:15 Respuesta POST: 200 OK
+2024/12/05 13:57:22 ## (1:2) - Solicitó syscall: THREAD_EXIT
+2024/12/05 13:57:22 Respuesta POST: 200 OK
+2024/12/05 13:57:22 ## (1:2) Finaliza el hilo
+2024/12/05 13:57:22 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 13:57:22 Respuesta POST: 200 OK
+2024/12/05 13:57:29 ## (1:3) - Solicitó syscall: THREAD_EXIT
+2024/12/05 13:57:29 Respuesta POST: 200 OK
+2024/12/05 13:57:29 ## (1:3) Finaliza el hilo
+2024/12/05 13:57:29 ## (PID:TID) - (1:3) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 13:57:29 Respuesta POST: 200 OK
+2024/12/05 13:57:36 ## (1:1) - Solicitó syscall: THREAD_EXIT
+2024/12/05 13:57:36 Respuesta POST: 200 OK
+2024/12/05 13:57:36 ## (1:1) Finaliza el hilo
+2024/12/05 13:57:36 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 13:57:36 Respuesta POST: 200 OK
+2024/12/05 14:04:30 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 14:04:30 Cola NEW está vacía, solicitando memoria.
+2024/12/05 14:04:30 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 14:04:30 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 14:04:32 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 14:04:32 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 14:04:32 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 14:04:36 ## (1:1) - Solicitó syscall: THREAD_EXIT
+2024/12/05 14:04:36 ## (1:1) Finaliza el hilo
+2024/12/05 14:04:36 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 14:04:38 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 14:04:38 ## (1:2) Se crea el Hilo - Estado: READY
+2024/12/05 14:04:38 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 14:04:40 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 14:04:40 ## (1:3) Se crea el Hilo - Estado: READY
+2024/12/05 14:04:40 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 14:04:42 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 14:04:42 ## (1:4) Se crea el Hilo - Estado: READY
+2024/12/05 14:04:42 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 14:04:44 ## (1:0) - Solicitó syscall: THREAD_JOIN
+2024/12/05 14:04:44 ## Proceso 1 - Hilo 0 esperando por el hilo 4
+2024/12/05 14:04:44 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 14:09:36 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 14:09:36 Cola NEW está vacía, solicitando memoria.
+2024/12/05 14:09:36 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 14:09:36 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 14:09:38 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 14:09:38 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 14:09:38 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 14:09:42 ## (1:1) - Solicitó syscall: THREAD_EXIT
+2024/12/05 14:09:42 ## (1:1) Finaliza el hilo
+2024/12/05 14:09:42 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 14:09:43 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 14:09:43 ## (1:2) Se crea el Hilo - Estado: READY
+2024/12/05 14:09:43 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 14:09:45 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 14:09:45 ## (1:3) Se crea el Hilo - Estado: READY
+2024/12/05 14:09:45 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 14:09:47 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 14:09:47 ## (1:4) Se crea el Hilo - Estado: READY
+2024/12/05 14:09:47 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 14:09:49 ## (1:0) - Solicitó syscall: THREAD_JOIN
+2024/12/05 14:09:49 ## Proceso 1 - Hilo 0 esperando por el hilo 4
+2024/12/05 14:09:49 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 14:10:39 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 14:10:39 Cola NEW está vacía, solicitando memoria.
+2024/12/05 14:10:39 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 14:10:39 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 14:10:41 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 14:10:41 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 14:10:41 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 14:10:48 ## (1:1) - Solicitó syscall: THREAD_EXIT
+2024/12/05 14:10:48 ## (1:1) Finaliza el hilo
+2024/12/05 14:10:48 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 14:10:50 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 14:10:50 ## (1:2) Se crea el Hilo - Estado: READY
+2024/12/05 14:10:50 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 14:10:56 ## (1:2) - Solicitó syscall: THREAD_EXIT
+2024/12/05 14:10:56 ## (1:2) Finaliza el hilo
+2024/12/05 14:10:56 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 14:10:58 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 14:10:58 ## (1:3) Se crea el Hilo - Estado: READY
+2024/12/05 14:10:58 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 14:11:00 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 14:11:00 ## (1:4) Se crea el Hilo - Estado: READY
+2024/12/05 14:11:00 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 14:11:02 ## (1:0) - Solicitó syscall: THREAD_JOIN
+2024/12/05 14:11:02 ## Proceso 1 - Hilo 0 esperando por el hilo 4
+2024/12/05 14:11:02 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 14:11:08 ## (1:3) - Solicitó syscall: THREAD_EXIT
+2024/12/05 14:11:08 ## (1:3) Finaliza el hilo
+2024/12/05 14:11:08 ## (PID:TID) - (1:3) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 14:11:14 ## (1:4) - Solicitó syscall: THREAD_EXIT
+2024/12/05 14:11:14 ## (1:4) Finaliza el hilo
+2024/12/05 14:11:14 ## (PID:TID) - (1:4) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 14:11:15 ## (1:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/05 14:11:15 ## (1:0) Finaliza el hilo
+2024/12/05 14:11:15 ## Finaliza el proceso 1
+2024/12/05 14:11:15 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/05 14:13:28 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 14:13:28 Cola NEW está vacía, solicitando memoria.
+2024/12/05 14:13:28 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 14:13:28 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 14:13:30 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 14:13:30 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 14:13:30 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 14:13:36 ## (1:1) - Solicitó syscall: THREAD_EXIT
+2024/12/05 14:13:36 ## (1:1) Finaliza el hilo
+2024/12/05 14:13:36 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 14:13:38 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 14:13:38 ## (1:2) Se crea el Hilo - Estado: READY
+2024/12/05 14:13:38 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 14:13:44 ## (1:2) - Solicitó syscall: THREAD_EXIT
+2024/12/05 14:13:44 ## (1:2) Finaliza el hilo
+2024/12/05 14:13:44 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 14:13:46 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 14:13:46 ## (1:3) Se crea el Hilo - Estado: READY
+2024/12/05 14:13:46 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 14:13:48 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 14:13:48 ## (1:4) Se crea el Hilo - Estado: READY
+2024/12/05 14:13:48 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 14:13:50 ## (1:0) - Solicitó syscall: THREAD_JOIN
+2024/12/05 14:13:50 ## Proceso 1 - Hilo 0 esperando por el hilo 4
+2024/12/05 14:13:50 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 14:13:57 ## (1:3) - Solicitó syscall: THREAD_EXIT
+2024/12/05 14:13:57 ## (1:3) Finaliza el hilo
+2024/12/05 14:13:57 ## (PID:TID) - (1:3) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 14:14:03 ## (1:4) - Solicitó syscall: THREAD_EXIT
+2024/12/05 14:14:03 ## (1:4) Finaliza el hilo
+2024/12/05 14:14:03 ## (PID:TID) - (1:4) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 14:14:04 ## (1:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/05 14:14:04 ## (1:0) Finaliza el hilo
+2024/12/05 14:14:04 ## Finaliza el proceso 1
+2024/12/05 14:14:04 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/05 14:16:17 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 14:16:17 Cola NEW está vacía, solicitando memoria.
+2024/12/05 14:16:17 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 14:16:17 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 14:16:19 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 14:16:19 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 14:16:19 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 14:16:25 ## (1:1) - Solicitó syscall: THREAD_EXIT
+2024/12/05 14:16:25 ## (1:1) Finaliza el hilo
+2024/12/05 14:16:25 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 14:16:27 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 14:16:27 ## (1:2) Se crea el Hilo - Estado: READY
+2024/12/05 14:16:27 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 14:16:33 ## (1:2) - Solicitó syscall: THREAD_EXIT
+2024/12/05 14:16:33 ## (1:2) Finaliza el hilo
+2024/12/05 14:16:33 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 14:16:35 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 14:16:35 ## (1:3) Se crea el Hilo - Estado: READY
+2024/12/05 14:16:35 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 14:16:37 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 14:16:37 ## (1:4) Se crea el Hilo - Estado: READY
+2024/12/05 14:16:37 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 14:16:39 ## (1:0) - Solicitó syscall: THREAD_JOIN
+2024/12/05 14:16:39 ## Proceso 1 - Hilo 0 esperando por el hilo 4
+2024/12/05 14:16:39 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 14:16:45 ## (1:3) - Solicitó syscall: THREAD_EXIT
+2024/12/05 14:16:45 ## (1:3) Finaliza el hilo
+2024/12/05 14:16:45 ## (PID:TID) - (1:3) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 14:16:51 ## (1:4) - Solicitó syscall: THREAD_EXIT
+2024/12/05 14:16:51 ## (1:4) Finaliza el hilo
+2024/12/05 14:16:51 ## (PID:TID) - (1:4) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 14:16:52 ## (1:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/05 14:16:52 ## (1:0) Finaliza el hilo
+2024/12/05 14:16:52 ## Finaliza el proceso 1
+2024/12/05 14:16:52 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/05 14:17:29 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 14:17:29 Cola NEW está vacía, solicitando memoria.
+2024/12/05 14:17:29 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 14:17:29 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 14:17:31 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 14:17:31 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 14:17:31 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 14:17:38 ## (1:1) - Solicitó syscall: THREAD_EXIT
+2024/12/05 14:17:38 ## (1:1) Finaliza el hilo
+2024/12/05 14:17:38 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 14:17:39 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 14:17:39 ## (1:2) Se crea el Hilo - Estado: READY
+2024/12/05 14:17:39 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 14:17:46 ## (1:2) - Solicitó syscall: THREAD_EXIT
+2024/12/05 14:17:46 ## (1:2) Finaliza el hilo
+2024/12/05 14:17:46 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 14:17:47 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 14:17:47 ## (1:3) Se crea el Hilo - Estado: READY
+2024/12/05 14:17:47 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 14:17:49 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 14:17:49 ## (1:4) Se crea el Hilo - Estado: READY
+2024/12/05 14:17:49 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 14:17:51 ## (1:0) - Solicitó syscall: THREAD_JOIN
+2024/12/05 14:17:51 ## Proceso 1 - Hilo 0 esperando por el hilo 4
+2024/12/05 14:17:51 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 14:17:58 ## (1:3) - Solicitó syscall: THREAD_EXIT
+2024/12/05 14:17:58 ## (1:3) Finaliza el hilo
+2024/12/05 14:17:58 ## (PID:TID) - (1:3) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 14:18:04 ## (1:4) - Solicitó syscall: THREAD_EXIT
+2024/12/05 14:18:04 ## (1:4) Finaliza el hilo
+2024/12/05 14:18:04 ## (PID:TID) - (1:4) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 14:18:05 ## (1:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/05 14:18:05 ## (1:0) Finaliza el hilo
+2024/12/05 14:18:05 ## Finaliza el proceso 1
+2024/12/05 14:18:05 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/05 14:20:59 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 14:20:59 Cola NEW está vacía, solicitando memoria.
+2024/12/05 14:20:59 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 14:20:59 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 14:21:01 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 14:21:01 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 14:21:01 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 14:21:08 ## (1:1) - Solicitó syscall: THREAD_EXIT
+2024/12/05 14:21:08 ## (1:1) Finaliza el hilo
+2024/12/05 14:21:08 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 14:21:09 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 14:21:09 ## (1:2) Se crea el Hilo - Estado: READY
+2024/12/05 14:21:09 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 14:21:16 ## (1:2) - Solicitó syscall: THREAD_EXIT
+2024/12/05 14:21:16 ## (1:2) Finaliza el hilo
+2024/12/05 14:21:16 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 14:21:18 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 14:21:18 ## (1:3) Se crea el Hilo - Estado: READY
+2024/12/05 14:21:18 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 14:21:20 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 14:21:20 ## (1:4) Se crea el Hilo - Estado: READY
+2024/12/05 14:21:20 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 14:21:22 ## (1:0) - Solicitó syscall: THREAD_JOIN
+2024/12/05 14:21:22 ## Proceso 1 - Hilo 0 esperando por el hilo 4
+2024/12/05 14:21:22 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 14:21:28 ## (1:3) - Solicitó syscall: THREAD_EXIT
+2024/12/05 14:21:28 ## (1:3) Finaliza el hilo
+2024/12/05 14:21:28 ## (PID:TID) - (1:3) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 14:21:34 ## (1:4) - Solicitó syscall: THREAD_EXIT
+2024/12/05 14:21:34 ## (1:4) Finaliza el hilo
+2024/12/05 14:21:34 ## (PID:TID) - (1:4) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 14:21:35 ## (1:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/05 14:21:35 ## (1:0) Finaliza el hilo
+2024/12/05 14:21:35 ## Finaliza el proceso 1
+2024/12/05 14:21:35 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/05 14:33:02 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 14:33:02 Cola NEW está vacía, solicitando memoria.
+2024/12/05 14:33:02 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 14:33:02 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 14:33:04 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 14:33:04 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 14:33:04 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 14:33:10 ## (1:1) - Solicitó syscall: THREAD_EXIT
+2024/12/05 14:33:10 ## (1:1) Finaliza el hilo
+2024/12/05 14:33:10 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 14:33:12 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 14:33:12 ## (1:2) Se crea el Hilo - Estado: READY
+2024/12/05 14:33:12 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 14:33:18 ## (1:2) - Solicitó syscall: THREAD_EXIT
+2024/12/05 14:33:18 ## (1:2) Finaliza el hilo
+2024/12/05 14:33:18 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 14:33:20 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 14:33:20 ## (1:3) Se crea el Hilo - Estado: READY
+2024/12/05 14:33:20 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 14:33:21 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 14:33:23 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 14:33:23 ## (1:4) Se crea el Hilo - Estado: READY
+2024/12/05 14:33:23 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 14:33:24 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 14:33:26 ## (1:0) - Solicitó syscall: THREAD_JOIN
+2024/12/05 14:33:26 ## Proceso 1 - Hilo 0 esperando por el hilo 4
+2024/12/05 14:33:26 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 14:33:32 ## (1:3) - Solicitó syscall: THREAD_EXIT
+2024/12/05 14:33:32 ## (1:3) Finaliza el hilo
+2024/12/05 14:33:32 ## (PID:TID) - (1:3) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 14:33:38 ## (1:4) - Solicitó syscall: THREAD_EXIT
+2024/12/05 14:33:38 ## (1:4) Finaliza el hilo
+2024/12/05 14:33:38 ## (PID:TID) - (1:4) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 14:33:39 ## (1:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/05 14:33:39 ## (1:0) Finaliza el hilo
+2024/12/05 14:33:39 ## Finaliza el proceso 1
+2024/12/05 14:33:39 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/05 14:34:10 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 14:34:10 Cola NEW está vacía, solicitando memoria.
+2024/12/05 14:34:10 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 14:34:10 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 14:34:12 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 14:34:12 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 14:34:12 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 14:34:18 ## (1:1) - Solicitó syscall: THREAD_EXIT
+2024/12/05 14:34:18 ## (1:1) Finaliza el hilo
+2024/12/05 14:34:18 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 14:34:20 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 14:34:20 ## (1:2) Se crea el Hilo - Estado: READY
+2024/12/05 14:34:20 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 14:34:26 ## (1:2) - Solicitó syscall: THREAD_EXIT
+2024/12/05 14:34:26 ## (1:2) Finaliza el hilo
+2024/12/05 14:34:26 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 14:34:28 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 14:34:28 ## (1:3) Se crea el Hilo - Estado: READY
+2024/12/05 14:34:28 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 14:34:29 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 14:34:31 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 14:34:31 ## (1:4) Se crea el Hilo - Estado: READY
+2024/12/05 14:34:31 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 14:34:32 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 14:34:34 ## (1:0) - Solicitó syscall: THREAD_JOIN
+2024/12/05 14:34:34 ## Proceso 1 - Hilo 0 esperando por el hilo 4
+2024/12/05 14:34:34 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 14:34:40 ## (1:3) - Solicitó syscall: THREAD_EXIT
+2024/12/05 14:34:40 ## (1:3) Finaliza el hilo
+2024/12/05 14:34:40 ## (PID:TID) - (1:3) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 14:34:46 ## (1:4) - Solicitó syscall: THREAD_EXIT
+2024/12/05 14:34:46 ## (1:4) Finaliza el hilo
+2024/12/05 14:34:46 ## (PID:TID) - (1:4) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 14:34:47 ## (1:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/05 14:34:47 ## (1:0) Finaliza el hilo
+2024/12/05 14:34:48 ## Finaliza el proceso 1
+2024/12/05 14:34:48 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/05 14:35:31 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 14:35:31 Cola NEW está vacía, solicitando memoria.
+2024/12/05 14:35:31 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 14:35:31 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 14:35:33 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 14:35:33 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 14:35:33 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 14:35:35 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 14:35:36 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 14:35:38 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 14:35:39 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 14:35:39 ## (1:2) Se crea el Hilo - Estado: READY
+2024/12/05 14:35:39 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 14:35:41 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 14:35:42 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 14:35:44 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 14:35:45 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 14:35:47 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 14:35:48 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 14:35:49 ## (1:3) Se crea el Hilo - Estado: READY
+2024/12/05 14:35:49 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 14:35:50 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 14:35:52 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 14:35:53 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 14:35:55 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 14:35:56 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 14:35:58 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 14:35:58 ## (1:4) Se crea el Hilo - Estado: READY
+2024/12/05 14:35:58 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 14:35:59 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 14:36:01 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 14:36:02 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 14:36:04 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 14:36:05 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 14:36:07 ## (1:0) - Solicitó syscall: THREAD_JOIN
+2024/12/05 14:36:07 ## Proceso 1 - Hilo 0 esperando por el hilo 4
+2024/12/05 14:36:07 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 14:36:08 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 14:36:10 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 14:36:11 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 14:36:13 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 14:36:14 ## (1:1) - Solicitó syscall: THREAD_EXIT
+2024/12/05 14:36:14 ## (1:1) Finaliza el hilo
+2024/12/05 14:36:14 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 14:43:22 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 14:43:22 Cola NEW está vacía, solicitando memoria.
+2024/12/05 14:43:22 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 14:43:22 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 14:45:00 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 14:45:00 Cola NEW está vacía, solicitando memoria.
+2024/12/05 14:45:00 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 14:45:00 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 14:45:02 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 14:45:02 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 14:45:02 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 15:05:45 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 15:05:45 Cola NEW está vacía, solicitando memoria.
+2024/12/05 15:05:45 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 15:05:45 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 15:05:46 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:05:48 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 15:05:48 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 15:05:48 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 15:05:50 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:05:52 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 15:05:52 ## (1:2) Se crea el Hilo - Estado: READY
+2024/12/05 15:05:52 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 15:05:54 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:05:56 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:05:58 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 15:05:58 ## (1:3) Se crea el Hilo - Estado: READY
+2024/12/05 15:05:58 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 15:06:00 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:06:02 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:06:04 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 15:06:04 ## (1:4) Se crea el Hilo - Estado: READY
+2024/12/05 15:06:04 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 15:06:06 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:06:08 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:06:10 ## (1:0) - Solicitó syscall: THREAD_JOIN
+2024/12/05 15:06:10 ## Proceso 1 - Hilo 0 esperando por el hilo 4
+2024/12/05 15:06:10 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 15:06:12 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:06:33 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 15:06:33 Cola NEW está vacía, solicitando memoria.
+2024/12/05 15:06:33 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 15:06:33 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 15:06:35 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:06:36 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 15:06:36 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 15:06:36 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 15:06:38 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:06:40 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 15:06:40 ## (1:2) Se crea el Hilo - Estado: READY
+2024/12/05 15:06:40 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 15:06:42 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:06:44 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:06:46 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 15:06:46 ## (1:3) Se crea el Hilo - Estado: READY
+2024/12/05 15:06:46 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 15:07:38 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 15:07:38 Cola NEW está vacía, solicitando memoria.
+2024/12/05 15:07:38 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 15:07:38 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 15:07:39 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:07:41 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 15:07:41 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 15:07:41 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 15:07:43 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:07:45 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 15:07:45 ## (1:2) Se crea el Hilo - Estado: READY
+2024/12/05 15:07:45 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 15:07:47 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:07:49 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:07:51 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 15:07:51 ## (1:3) Se crea el Hilo - Estado: READY
+2024/12/05 15:07:51 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 15:07:53 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:07:55 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:07:57 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 15:07:57 ## (1:4) Se crea el Hilo - Estado: READY
+2024/12/05 15:07:57 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 15:07:59 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:08:01 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:08:03 ## (1:0) - Solicitó syscall: THREAD_JOIN
+2024/12/05 15:08:03 ## Proceso 1 - Hilo 0 esperando por el hilo 4
+2024/12/05 15:08:03 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 15:08:05 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:08:07 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:08:09 ## (1:1) - Solicitó syscall: THREAD_EXIT
+2024/12/05 15:08:09 ## (1:1) Finaliza el hilo
+2024/12/05 15:08:09 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 15:08:10 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:08:12 ## (1:2) - Solicitó syscall: THREAD_EXIT
+2024/12/05 15:08:12 ## (1:2) Finaliza el hilo
+2024/12/05 15:08:12 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 15:08:13 ## (PID:TID) - (1:3) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:08:15 ## (PID:TID) - (1:4) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:08:17 ## (PID:TID) - (1:3) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:08:19 ## (PID:TID) - (1:4) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:08:21 ## (PID:TID) - (1:3) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:08:23 ## (PID:TID) - (1:4) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:08:25 ## (PID:TID) - (1:3) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:08:27 ## (PID:TID) - (1:4) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:08:29 ## (PID:TID) - (1:3) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:08:31 ## (PID:TID) - (1:4) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:08:33 ## (1:3) - Solicitó syscall: THREAD_EXIT
+2024/12/05 15:08:33 ## (1:3) Finaliza el hilo
+2024/12/05 15:08:33 ## (PID:TID) - (1:3) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 15:08:34 ## (1:4) - Solicitó syscall: THREAD_EXIT
+2024/12/05 15:08:34 ## (1:4) Finaliza el hilo
+2024/12/05 15:08:34 ## (PID:TID) - (1:4) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 15:08:35 ## (1:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/05 15:08:35 ## (1:0) Finaliza el hilo
+2024/12/05 15:08:35 ## Finaliza el proceso 1
+2024/12/05 15:08:35 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/05 15:11:11 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 15:11:11 Cola NEW está vacía, solicitando memoria.
+2024/12/05 15:11:11 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 15:11:11 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 15:11:13 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:11:14 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 15:11:14 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 15:11:14 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 15:11:16 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:11:18 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 15:11:18 ## (1:2) Se crea el Hilo - Estado: READY
+2024/12/05 15:11:18 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 15:11:20 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:11:22 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:11:24 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 15:11:24 ## (1:3) Se crea el Hilo - Estado: READY
+2024/12/05 15:11:24 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 15:11:26 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:11:28 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:11:30 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 15:11:30 ## (1:4) Se crea el Hilo - Estado: READY
+2024/12/05 15:11:30 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 15:11:32 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:11:34 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:11:36 ## (1:0) - Solicitó syscall: THREAD_JOIN
+2024/12/05 15:11:36 ## Proceso 1 - Hilo 0 esperando por el hilo 4
+2024/12/05 15:11:36 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 15:11:38 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:11:40 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:11:42 ## (1:1) - Solicitó syscall: THREAD_EXIT
+2024/12/05 15:11:42 ## (1:1) Finaliza el hilo
+2024/12/05 15:11:42 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 15:11:43 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:11:45 ## (1:2) - Solicitó syscall: THREAD_EXIT
+2024/12/05 15:11:45 ## (1:2) Finaliza el hilo
+2024/12/05 15:11:45 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 15:11:46 ## (PID:TID) - (1:3) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:11:48 ## (PID:TID) - (1:4) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:11:50 ## (PID:TID) - (1:3) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:11:52 ## (PID:TID) - (1:4) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:11:54 ## (PID:TID) - (1:3) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:11:56 ## (PID:TID) - (1:4) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:13:22 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 15:13:22 Cola NEW está vacía, solicitando memoria.
+2024/12/05 15:13:22 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 15:13:22 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 15:13:24 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:13:26 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 15:13:26 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 15:13:26 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 15:13:28 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:13:30 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 15:13:30 ## (1:2) Se crea el Hilo - Estado: READY
+2024/12/05 15:13:30 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 15:13:32 ## (1:1) - Solicitó syscall: THREAD_CREATE
+2024/12/05 15:13:32 ## (1:3) Se crea el Hilo - Estado: READY
+2024/12/05 15:13:32 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 15:13:34 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:13:36 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 15:13:36 ## (1:4) Se crea el Hilo - Estado: READY
+2024/12/05 15:13:36 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 15:16:15 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 15:16:15 Cola NEW está vacía, solicitando memoria.
+2024/12/05 15:16:15 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 15:16:15 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 15:16:17 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:16:18 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 15:16:18 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 15:16:18 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 15:16:20 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:16:22 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 15:16:22 ## (1:2) Se crea el Hilo - Estado: READY
+2024/12/05 15:16:22 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 15:16:24 ## (1:1) - Solicitó syscall: THREAD_CREATE
+2024/12/05 15:16:24 ## (1:3) Se crea el Hilo - Estado: READY
+2024/12/05 15:16:24 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 15:16:26 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:16:28 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 15:16:28 ## (1:4) Se crea el Hilo - Estado: READY
+2024/12/05 15:16:28 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 15:17:39 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 15:17:39 Cola NEW está vacía, solicitando memoria.
+2024/12/05 15:17:39 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 15:17:39 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 15:17:41 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:17:42 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 15:17:42 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 15:17:42 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 15:17:44 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:17:46 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 15:17:46 ## (1:2) Se crea el Hilo - Estado: READY
+2024/12/05 15:17:46 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 15:17:48 ## (1:1) - Solicitó syscall: THREAD_CREATE
+2024/12/05 15:17:48 ## (1:3) Se crea el Hilo - Estado: READY
+2024/12/05 15:17:48 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 15:17:50 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:17:52 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 15:17:52 ## (1:4) Se crea el Hilo - Estado: READY
+2024/12/05 15:17:52 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 15:17:54 ## (PID:TID) - (1:3) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:17:57 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:17:59 ## (1:2) - Solicitó syscall: THREAD_CREATE
+2024/12/05 15:17:59 ## (1:5) Se crea el Hilo - Estado: READY
+2024/12/05 15:17:59 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 15:18:01 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 15:18:01 ## (1:6) Se crea el Hilo - Estado: READY
+2024/12/05 15:18:01 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 15:18:03 ## (1:3) - Solicitó syscall: THREAD_EXIT
+2024/12/05 15:18:03 ## (1:3) Finaliza el hilo
+2024/12/05 15:18:03 ## (PID:TID) - (1:3) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 15:18:04 ## (1:1) - Solicitó syscall: THREAD_EXIT
+2024/12/05 15:18:04 ## (1:1) Finaliza el hilo
+2024/12/05 15:18:04 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 15:18:06 ## (PID:TID) - (1:5) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:18:08 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:18:10 ## (1:0) - Solicitó syscall: THREAD_JOIN
+2024/12/05 15:18:10 ## Proceso 1 - Hilo 0 esperando por el hilo 4
+2024/12/05 15:18:10 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 15:18:12 ## (1:5) - Solicitó syscall: THREAD_EXIT
+2024/12/05 15:18:12 ## (1:5) Finaliza el hilo
+2024/12/05 15:18:12 ## (PID:TID) - (1:5) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 15:18:13 ## (1:2) - Solicitó syscall: THREAD_EXIT
+2024/12/05 15:18:13 ## (1:2) Finaliza el hilo
+2024/12/05 15:18:13 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 15:18:15 ## (PID:TID) - (1:4) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:18:17 ## (PID:TID) - (1:6) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:18:19 ## (1:4) - Solicitó syscall: THREAD_CREATE
+2024/12/05 15:18:19 ## (1:7) Se crea el Hilo - Estado: READY
+2024/12/05 15:18:19 ## (PID:TID) - (1:4) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 15:18:21 ## (PID:TID) - (1:7) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:18:23 ## (1:7) - Solicitó syscall: THREAD_EXIT
+2024/12/05 15:18:23 ## (1:7) Finaliza el hilo
+2024/12/05 15:18:23 ## (PID:TID) - (1:7) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 15:18:24 ## (1:6) - Solicitó syscall: THREAD_CREATE
+2024/12/05 15:18:24 ## (1:8) Se crea el Hilo - Estado: READY
+2024/12/05 15:18:24 ## (PID:TID) - (1:6) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 15:18:26 ## (PID:TID) - (1:8) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:18:28 ## (1:8) - Solicitó syscall: THREAD_EXIT
+2024/12/05 15:18:28 ## (1:8) Finaliza el hilo
+2024/12/05 15:18:28 ## (PID:TID) - (1:8) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 15:18:30 ## (PID:TID) - (1:4) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:18:32 ## (PID:TID) - (1:6) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:18:34 ## (1:4) - Solicitó syscall: THREAD_EXIT
+2024/12/05 15:18:34 ## (1:4) Finaliza el hilo
+2024/12/05 15:18:34 ## (PID:TID) - (1:4) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 15:18:35 ## (1:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/05 15:18:35 ## (1:0) Finaliza el hilo
+2024/12/05 15:18:35 ## (1:6) Finaliza el hilo
+2024/12/05 15:18:35 ## Finaliza el proceso 1
+2024/12/05 15:18:35 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/05 15:24:26 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 15:24:26 Cola NEW está vacía, solicitando memoria.
+2024/12/05 15:24:26 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 15:24:26 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 15:24:28 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:24:29 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 15:24:29 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 15:24:29 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 15:24:31 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:24:33 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 15:24:33 ## (1:2) Se crea el Hilo - Estado: READY
+2024/12/05 15:24:33 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 15:24:35 ## (1:1) - Solicitó syscall: THREAD_CREATE
+2024/12/05 15:24:35 ## (1:3) Se crea el Hilo - Estado: READY
+2024/12/05 15:24:35 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 15:24:37 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:24:39 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 15:24:39 ## (1:4) Se crea el Hilo - Estado: READY
+2024/12/05 15:24:39 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 15:24:41 ## (PID:TID) - (1:3) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:24:43 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:24:45 ## (1:2) - Solicitó syscall: THREAD_CREATE
+2024/12/05 15:24:45 ## (1:5) Se crea el Hilo - Estado: READY
+2024/12/05 15:24:45 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 15:24:47 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 15:24:47 ## (1:6) Se crea el Hilo - Estado: READY
+2024/12/05 15:24:47 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 15:24:49 ## (1:3) - Solicitó syscall: THREAD_EXIT
+2024/12/05 15:24:49 ## (1:3) Finaliza el hilo
+2024/12/05 15:24:49 ## (PID:TID) - (1:3) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 15:24:51 ## (1:1) - Solicitó syscall: THREAD_EXIT
+2024/12/05 15:24:51 ## (1:1) Finaliza el hilo
+2024/12/05 15:24:51 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 15:24:52 ## (PID:TID) - (1:5) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:24:54 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:24:56 ## (1:0) - Solicitó syscall: THREAD_JOIN
+2024/12/05 15:24:56 ## Proceso 1 - Hilo 0 esperando por el hilo 4
+2024/12/05 15:24:56 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 15:24:58 ## (1:5) - Solicitó syscall: THREAD_EXIT
+2024/12/05 15:24:58 ## (1:5) Finaliza el hilo
+2024/12/05 15:24:58 ## (PID:TID) - (1:5) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 15:25:00 ## (1:2) - Solicitó syscall: THREAD_EXIT
+2024/12/05 15:25:00 ## (1:2) Finaliza el hilo
+2024/12/05 15:25:00 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 15:25:01 ## (PID:TID) - (1:4) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:25:03 ## (PID:TID) - (1:6) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:25:05 ## (1:4) - Solicitó syscall: THREAD_CREATE
+2024/12/05 15:25:05 ## (1:7) Se crea el Hilo - Estado: READY
+2024/12/05 15:25:05 ## (PID:TID) - (1:4) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 15:25:07 ## (PID:TID) - (1:7) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:25:10 ## (1:7) - Solicitó syscall: THREAD_EXIT
+2024/12/05 15:25:10 ## (1:7) Finaliza el hilo
+2024/12/05 15:25:10 ## (PID:TID) - (1:7) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 15:25:11 ## (1:6) - Solicitó syscall: THREAD_CREATE
+2024/12/05 15:25:11 ## (1:8) Se crea el Hilo - Estado: READY
+2024/12/05 15:25:11 ## (PID:TID) - (1:6) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 15:25:13 ## (PID:TID) - (1:8) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:25:15 ## (1:8) - Solicitó syscall: THREAD_EXIT
+2024/12/05 15:25:15 ## (1:8) Finaliza el hilo
+2024/12/05 15:25:15 ## (PID:TID) - (1:8) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 15:25:17 ## (PID:TID) - (1:4) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:25:19 ## (PID:TID) - (1:6) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:25:21 ## (1:4) - Solicitó syscall: THREAD_EXIT
+2024/12/05 15:25:21 ## (1:4) Finaliza el hilo
+2024/12/05 15:25:21 ## (PID:TID) - (1:4) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 15:25:22 ## (1:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/05 15:25:22 ## (1:0) Finaliza el hilo
+2024/12/05 15:25:22 ## (1:6) Finaliza el hilo
+2024/12/05 15:25:22 ## Finaliza el proceso 1
+2024/12/05 15:25:22 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/05 15:26:39 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/05 15:26:39 Cola NEW está vacía, solicitando memoria.
+2024/12/05 15:26:39 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/05 15:26:39 El módulo kernel está a la escucha en el puerto :8001
+2024/12/05 15:26:41 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:26:42 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 15:26:42 ## (1:1) Se crea el Hilo - Estado: READY
+2024/12/05 15:26:42 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 15:26:44 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:26:46 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 15:26:46 ## (1:2) Se crea el Hilo - Estado: READY
+2024/12/05 15:26:46 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 15:26:48 ## (1:1) - Solicitó syscall: THREAD_CREATE
+2024/12/05 15:26:48 ## (1:3) Se crea el Hilo - Estado: READY
+2024/12/05 15:26:48 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 15:26:50 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:26:52 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 15:26:52 ## (1:4) Se crea el Hilo - Estado: READY
+2024/12/05 15:26:52 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 15:26:54 ## (PID:TID) - (1:3) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:26:56 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:26:58 ## (1:2) - Solicitó syscall: THREAD_CREATE
+2024/12/05 15:26:58 ## (1:5) Se crea el Hilo - Estado: READY
+2024/12/05 15:26:58 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 15:27:00 ## (1:0) - Solicitó syscall: THREAD_CREATE
+2024/12/05 15:27:00 ## (1:6) Se crea el Hilo - Estado: READY
+2024/12/05 15:27:00 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 15:27:02 ## (PID:TID) - (1:3) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:27:04 ## (1:1) - Solicitó syscall: THREAD_EXIT
+2024/12/05 15:27:04 ## (1:1) Finaliza el hilo
+2024/12/05 15:27:04 ## (PID:TID) - (1:1) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 15:27:06 ## (PID:TID) - (1:5) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:27:08 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:27:10 ## (1:0) - Solicitó syscall: THREAD_JOIN
+2024/12/05 15:27:10 ## Proceso 1 - Hilo 0 esperando por el hilo 4
+2024/12/05 15:27:10 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 15:27:12 ## (PID:TID) - (1:3) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:27:14 ## (PID:TID) - (1:5) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:27:16 ## (1:2) - Solicitó syscall: THREAD_EXIT
+2024/12/05 15:27:16 ## (1:2) Finaliza el hilo
+2024/12/05 15:27:16 ## (PID:TID) - (1:2) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 15:27:17 ## (1:3) - Solicitó syscall: THREAD_EXIT
+2024/12/05 15:27:17 ## (1:3) Finaliza el hilo
+2024/12/05 15:27:17 ## (PID:TID) - (1:3) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 15:27:18 ## (PID:TID) - (1:5) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:27:20 ## (1:5) - Solicitó syscall: THREAD_EXIT
+2024/12/05 15:27:20 ## (1:5) Finaliza el hilo
+2024/12/05 15:27:20 ## (PID:TID) - (1:5) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 15:27:21 ## (PID:TID) - (1:4) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:27:23 ## (PID:TID) - (1:6) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:27:25 ## (1:4) - Solicitó syscall: THREAD_CREATE
+2024/12/05 15:27:25 ## (1:7) Se crea el Hilo - Estado: READY
+2024/12/05 15:27:25 ## (PID:TID) - (1:4) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 15:27:27 ## (PID:TID) - (1:7) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:27:29 ## (PID:TID) - (1:7) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:27:31 ## (PID:TID) - (1:7) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:27:33 ## (1:7) - Solicitó syscall: THREAD_EXIT
+2024/12/05 15:27:33 ## (1:7) Finaliza el hilo
+2024/12/05 15:27:33 ## (PID:TID) - (1:7) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 15:27:35 ## (1:6) - Solicitó syscall: THREAD_CREATE
+2024/12/05 15:27:35 ## (1:8) Se crea el Hilo - Estado: READY
+2024/12/05 15:27:35 ## (PID:TID) - (1:6) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/05 15:27:37 ## (PID:TID) - (1:8) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:27:39 ## (PID:TID) - (1:8) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:27:41 ## (PID:TID) - (1:8) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:27:42 ## (1:8) - Solicitó syscall: THREAD_EXIT
+2024/12/05 15:27:42 ## (1:8) Finaliza el hilo
+2024/12/05 15:27:42 ## (PID:TID) - (1:8) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 15:27:44 ## (PID:TID) - (1:4) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:27:46 ## (PID:TID) - (1:6) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/05 15:27:48 ## (1:4) - Solicitó syscall: THREAD_EXIT
+2024/12/05 15:27:48 ## (1:4) Finaliza el hilo
+2024/12/05 15:27:48 ## (PID:TID) - (1:4) - Hilo recibido de CPU - Razon: THREAD_EXIT
+2024/12/05 15:27:49 ## (1:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/05 15:27:49 ## (1:0) Finaliza el hilo
+2024/12/05 15:27:49 ## (1:6) Finaliza el hilo
+2024/12/05 15:27:49 ## Finaliza el proceso 1
+2024/12/05 15:27:49 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
