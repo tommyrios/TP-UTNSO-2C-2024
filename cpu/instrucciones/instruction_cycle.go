@@ -151,19 +151,19 @@ func Execute(instruccion globals.InstruccionStruct, registros *commons.Registros
 		return WriteMem(instruccion.Operandos, registros, base, limite, pid, tid)
 
 	case "PROCESS_EXIT":
-		Syscall(instruccion, registros, pid, tid)
+		Syscall(instruccion, pid, tid)
 		globals.DevolverPCB(pid, tid, "PROCESS_EXIT")
 		return 1
 
 	case "THREAD_EXIT":
-		Syscall(instruccion, registros, pid, tid)
+		Syscall(instruccion, pid, tid)
 		globals.DevolverPCB(pid, tid, "THREAD_EXIT")
 		return 1
 
 	case "DUMP_MEMORY", "IO", "PROCESS_CREATE", "THREAD_CREATE",
 		"THREAD_JOIN", "THREAD_CANCEL", "MUTEX_CREATE",
 		"MUTEX_LOCK", "MUTEX_UNLOCK":
-		Syscall(instruccion, registros, pid, tid)
+		Syscall(instruccion, pid, tid)
 		globals.DevolverPCB(pid, tid, "SYSCALL")
 
 		return 1

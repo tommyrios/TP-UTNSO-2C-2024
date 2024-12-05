@@ -47,6 +47,4 @@ var CpuLibre = make(chan bool, 1)
 
 var IO = make(chan int)
 
-var MutexPlanificacion sync.Mutex
-
 var Planificar = make(chan bool)

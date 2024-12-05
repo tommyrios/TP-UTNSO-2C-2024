@@ -89,5 +89,4 @@ func DevolverPCB(pid int, tid int, razon string) {
 	reqCodificada, _ := commons.CodificarJSON(reqDispatch)
 
 	cliente.Post(CConfig.IpKernel, CConfig.PortKernel, "pcb", reqCodificada)
-
 }

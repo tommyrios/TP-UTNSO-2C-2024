@@ -16,6 +16,8 @@ import (
 	"time"
 )
 
+var mtxIO sync.Mutex
+
 func HandleProcessCreate(w http.ResponseWriter, r *http.Request) {
 	var req request.RequestProcessCreate
 	err := commons.DecodificarJSON(r.Body, &req)
@@ -200,75 +202,6 @@ func HandleDumpMemory(w http.ResponseWriter, r *http.Request) {
 	threads.DesbloquearHilo(tcb)
 }
 
-var mtxIO sync.Mutex
-
-func HandleIO(w http.ResponseWriter, r *http.Request) {
-	var req request.RequestIO
-
-	log.Printf("## (%d:%d) - Solicitó syscall: IO", req.Pid, req.Tid)
-
-	err := commons.DecodificarJSON(r.Body, &req)
-	if err != nil {
-		http.Error(w, "Error al decodificar el JSON", http.StatusBadRequest)
-		return
-	}
-
-	mtxIO.Lock()
-	globals.Estructura.ColaIO = append(globals.Estructura.ColaIO, &req)
-	mtxIO.Unlock()
-
-	globals.IO <- 1
-
-	log.Printf("## (%d:%d) finalizó IO y pasa a READY", req.Pid, req.Tid)
-}
-
-func SolicitarDumpMemory(pid int, tid int) (int, error) {
-	request := request.RequestDumpMemory{
-		Pid: pid,
-		Tid: tid,
-	}
-	requestCodificado, _ := commons.CodificarJSON(request)
-	response := cliente.Post(globals.KConfig.IpMemory, globals.KConfig.PortMemory, "dump", requestCodificado)
-	return response.StatusCode, nil
-}
-
-func ManejadorIO() {
-	for {
-		<-globals.IO
-		mtxIO.Lock()
-		if len(globals.Estructura.ColaIO) > 0 {
-			req := globals.Estructura.ColaIO[0]
-			globals.Estructura.ColaIO = globals.Estructura.ColaIO[1:]
-			mtxIO.Unlock()
-			threads.BloquearHilo(threads.BuscarHiloEnPCB(req.Pid, req.Tid))
-			time.Sleep(time.Duration(req.Tiempo))
-			threads.DesbloquearHilo(threads.BuscarHiloEnPCB(req.Pid, req.Tid))
-		} else {
-			mtxIO.Unlock()
-		}
-	}
-}
-
-func Dispatch(pid int, tid int) (*http.Response, error) {
-	requestBody, err := commons.CodificarJSON(request.RequestDispatcher{Pid: pid, Tid: tid, Quantum: globals.KConfig.Quantum, Scheduler: globals.KConfig.SchedulerAlgorithm})
-	if err != nil {
-		return nil, err
-	}
-
-	return cliente.Post(globals.KConfig.IpCpu, globals.KConfig.PortCpu, "dispatch", requestBody), err
-}
-
-func Interrupt(interruption string, pid int, tid int) *http.Response {
-	interrupcion := request.RequestInterrupcion{Pid: pid, Tid: tid, Razon: interruption}
-	requestBody, err := commons.CodificarJSON(interrupcion)
-	if err != nil {
-		log.Printf("Error al codificar el JSON en Interrupt")
-		return nil
-	}
-
-	return cliente.Post(globals.KConfig.IpCpu, globals.KConfig.PortCpu, "interrupt", requestBody)
-}
-
 func HandleCompactacion(w http.ResponseWriter, r *http.Request) {
 	PausarPlanificacion() // Pausar planificación de corto plazo
 
@@ -322,10 +255,77 @@ func HandleDesalojoCpu(w http.ResponseWriter, r *http.Request) {
 	globals.CpuLibre <- true
 }
 
-func PausarPlanificacion() {
-	globals.MutexPlanificacion.Lock()
+func HandleIO(w http.ResponseWriter, r *http.Request) {
+	var req request.RequestIO
+
+	log.Printf("## (%d:%d) - Solicitó syscall: IO", req.Pid, req.Tid)
+
+	err := commons.DecodificarJSON(r.Body, &req)
+	if err != nil {
+		http.Error(w, "Error al decodificar el JSON", http.StatusBadRequest)
+		return
+	}
+
+	mtxIO.Lock()
+	globals.Estructura.ColaIO = append(globals.Estructura.ColaIO, &req)
+	mtxIO.Unlock()
+
+	globals.IO <- 1
+
+	log.Printf("## (%d:%d) finalizó IO y pasa a READY", req.Pid, req.Tid)
 }
 
+func ManejadorIO() {
+	for {
+		<-globals.IO
+		mtxIO.Lock()
+		if len(globals.Estructura.ColaIO) > 0 {
+			req := globals.Estructura.ColaIO[0]
+			globals.Estructura.ColaIO = globals.Estructura.ColaIO[1:]
+			mtxIO.Unlock()
+			threads.BloquearHilo(threads.BuscarHiloEnPCB(req.Pid, req.Tid))
+			time.Sleep(time.Duration(req.Tiempo))
+			threads.DesbloquearHilo(threads.BuscarHiloEnPCB(req.Pid, req.Tid))
+		} else {
+			mtxIO.Unlock()
+		}
+	}
+}
+
+func SolicitarDumpMemory(pid int, tid int) (int, error) {
+	request := request.RequestDumpMemory{
+		Pid: pid,
+		Tid: tid,
+	}
+	requestCodificado, _ := commons.CodificarJSON(request)
+	response := cliente.Post(globals.KConfig.IpMemory, globals.KConfig.PortMemory, "dump", requestCodificado)
+	return response.StatusCode, nil
+}
+
+func Dispatch(pid int, tid int) (*http.Response, error) {
+	requestBody, err := commons.CodificarJSON(request.RequestDispatcher{Pid: pid, Tid: tid, Quantum: globals.KConfig.Quantum, Scheduler: globals.KConfig.SchedulerAlgorithm})
+	if err != nil {
+		return nil, err
+	}
+
+	return cliente.Post(globals.KConfig.IpCpu, globals.KConfig.PortCpu, "dispatch", requestBody), err
+}
+
+func Interrupt(interruption string, pid int, tid int) *http.Response {
+	interrupcion := request.RequestInterrupcion{Pid: pid, Tid: tid, Razon: interruption}
+	requestBody, err := commons.CodificarJSON(interrupcion)
+	if err != nil {
+		log.Printf("Error al codificar el JSON en Interrupt")
+		return nil
+	}
+
+	return cliente.Post(globals.KConfig.IpCpu, globals.KConfig.PortCpu, "interrupt", requestBody)
+}
+
+func PausarPlanificacion() {
+	globals.Estructura.MtxReady.Lock()
+} // check
+
 func ReanudarPlanificacion() {
-	globals.MutexPlanificacion.Unlock()
+	globals.Estructura.MtxReady.Unlock()
 }

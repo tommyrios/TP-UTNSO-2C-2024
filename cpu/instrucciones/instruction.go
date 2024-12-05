@@ -96,7 +96,7 @@ func WriteMem(operandos []string, registros *commons.Registros, base int, limite
 	return 0
 }
 
-func Syscall(instruccion globals.InstruccionStruct, registros *commons.Registros, pid int, tid int) {
+func Syscall(instruccion globals.InstruccionStruct, pid int, tid int) {
 	var parametros requests.RequestSyscall
 
 	var ruta string

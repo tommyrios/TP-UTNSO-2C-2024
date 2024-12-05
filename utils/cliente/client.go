@@ -42,21 +42,3 @@ func Post2(ip string, port int, ruta string, jsonData []byte) (*http.Response, [
 
 	return response, bodyBytes
 }
-
-func Get(ip string, port int, ruta string) *http.Response {
-	url := fmt.Sprintf("http://%s:%d/%s", ip, port, ruta)
-
-	response, err := http.Get(url)
-
-	if err != nil {
-		panic(err)
-	}
-
-	defer response.Body.Close()
-
-	body, _ := io.ReadAll(response.Body)
-
-	log.Println("Respuesta GET:", string(body))
-
-	return response
-}

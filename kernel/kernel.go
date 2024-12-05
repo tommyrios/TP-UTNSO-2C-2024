@@ -33,6 +33,8 @@ func main() {
 
 	//// Cola Ready ////
 	schedulers.ManejarColaReady()
+
+	//// Hilo Execute ////
 	go schedulers.ManejarHiloRunning()
 
 	//// Proceso Inicial ////
@@ -60,8 +62,6 @@ func main() {
 	port := fmt.Sprintf(":%d", globals.KConfig.Port)
 
 	log.Printf("El módulo kernel está a la escucha en el puerto %s", port)
-
-	//// Hilo Execute ////
 
 	globals.CpuLibre <- true
 
