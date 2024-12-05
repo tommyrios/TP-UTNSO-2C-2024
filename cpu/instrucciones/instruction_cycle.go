@@ -67,6 +67,7 @@ func EjecutarInstruccion(pid int, tid int) error {
 
 		if Execute(instruccion, contexto.Registros, contexto.Base, contexto.Limite, pid, tid) == 1 {
 			contexto.Registros.PC++
+			ultimaInstruccion = instruccion.CodOperacion
 			break
 		}
 
@@ -77,13 +78,13 @@ func EjecutarInstruccion(pid int, tid int) error {
 		if CheckInterrupt(pid, tid) == true {
 			break
 		}
-
-		ultimaInstruccion = instruccion.CodOperacion
 	}
 
-	if ultimaInstruccion != "THREAD_EXIT" {
-		EnviarRegistrosActualizados(contexto.Registros, pid, tid)
+	if ultimaInstruccion == "THREAD_EXIT" || ultimaInstruccion == "PROCESS_EXIT" {
+		return nil
 	}
+
+	EnviarRegistrosActualizados(contexto.Registros, pid, tid)
 
 	return nil
 }

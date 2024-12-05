@@ -225,8 +225,5 @@ func EnviarRegistrosActualizados(registros *commons.Registros, pid int, tid int)
 
 	cliente.Post(globals.CConfig.IpMemory, globals.CConfig.PortMemory, "actualizar_contexto", reqCodificada)
 
-	//defer response.Body.Close()
-
 	log.Printf("## TID: %d - Actualizo Contexto Ejecución.", tid)
-	//log.Printf("Respuesta de memoria a actualizar contexto: %s\n", string(mensaje))
 }

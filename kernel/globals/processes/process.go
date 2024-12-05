@@ -18,7 +18,7 @@ func ProcesoInicial(argumentos []string) {
 	prioridadHiloMain := 0
 
 	CrearProceso(pseudocodigo, tamanio, prioridadHiloMain)
-	
+
 	return
 }
 
@@ -83,16 +83,16 @@ func FinalizarProceso(pid int) {
 		return
 	}
 
+	pcb := queues.BuscarPCBEnColas(pid)
+
+	for _, tcb := range pcb.Tid {
+		threads.FinalizarHilo(pid, tcb.Tid)
+	}
+
 	response := cliente.Post(globals.KConfig.IpMemory, globals.KConfig.PortMemory, "finalizar_proceso", solicitudCodificada)
 
 	if response.StatusCode == http.StatusOK {
-		pcb := queues.BuscarPCBEnColas(pid)
-
 		defer delete(globals.Estructura.Procesos, pid)
-
-		for _, tcb := range pcb.Tid {
-			threads.FinalizarHilo(pid, tcb.Tid)
-		}
 
 		pcb.Estado = "EXIT"
 

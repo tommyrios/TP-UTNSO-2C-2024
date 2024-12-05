@@ -40,8 +40,6 @@ func ManejarHiloRunning() {
 
 		hiloAEjecutar.Estado = "EXEC"
 
-		log.Println(len(globals.Estructura.ColaReady)) // LOG DE LEN
-
 		if len(globals.Estructura.ColaReady) > 1 {
 			globals.Estructura.ColaReady = globals.Estructura.ColaReady[1:]
 		} else {
@@ -152,21 +150,6 @@ func tieneMasPrioridad() bool {
 func checkQuantumAgotado() bool {
 	// Lógica para determinar si el quantum ha expirado
 	return true // Modifica esta parte para que funcione según el sistema
-}
-
-func pasarHiloAEjecutar() {
-	// Agarramos el primer hilo de la cola de ready
-	mu.Lock()
-	hiloAEjecutar := globals.Estructura.ColaReady[0]
-	mu.Unlock()
-
-	// Lo asignamos al hilo en ejecución
-	globals.Estructura.HiloExecute = hiloAEjecutar
-
-	// Lo eliminamos de la cola de ready
-	globals.Estructura.ColaReady = globals.Estructura.ColaReady[1:]
-
-	executeThread(hiloAEjecutar.Pid, hiloAEjecutar.Tid)
 }
 
 func executeThread(pid int, tid int) {

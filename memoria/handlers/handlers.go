@@ -47,7 +47,10 @@ func HandleDevolverContexto(w http.ResponseWriter, r *http.Request) {
 	}
 
 	w.WriteHeader(http.StatusOK)
-	w.Write(responseCodificada)
+	_, err = w.Write(responseCodificada)
+	if err != nil {
+		return
+	}
 	log.Printf("## Contexto solicitado - (PID:TID) - (%d:%d)\n", request.Pid, request.Tid)
 
 }
@@ -74,7 +77,10 @@ func HandleActualizarContexto(w http.ResponseWriter, r *http.Request) {
 
 	// Responder con éxito si se actualizaron correctamente
 	w.WriteHeader(http.StatusOK)
-	w.Write([]byte("OK"))
+	_, err = w.Write([]byte("OK"))
+	if err != nil {
+		return
+	}
 	log.Printf("## Contexto actualizado - (PID:TID) - (%d:%d)\n", request.Pid, request.Tid)
 }
 
@@ -98,15 +104,11 @@ func HandleEnviarInstruccion(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	//instruccionCodificada, err := commons.CodificarJSON(instruccion)
+	w.WriteHeader(http.StatusOK)
+	_, err = w.Write([]byte(instruccion.Instruccion))
 	if err != nil {
-		http.Error(w, "Error al codificar el JSON", http.StatusBadRequest)
 		return
 	}
-
-	w.WriteHeader(http.StatusOK)
-	//w.Write(instruccionCodificada)
-	w.Write([]byte(instruccion.Instruccion))
 	log.Printf("## Obtener instrucción - (PID:TID) - (%d:%d) - Instrucción: %s\n", request.Pid, request.Tid, instruccion)
 }
 
@@ -138,7 +140,10 @@ func HandleReadMemory(w http.ResponseWriter, r *http.Request) {
 	}
 
 	w.WriteHeader(http.StatusOK)
-	w.Write(bytesSolicitados)
+	_, err = w.Write(bytesSolicitados)
+	if err != nil {
+		return
+	}
 	log.Printf("## Lectura - (PID:TID) - (%d:%d) - Dir. Física: %d - Tamaño: %d\n", request.Pid, request.Tid, request.Direccion, len(response))
 }
 
@@ -163,7 +168,10 @@ func HandleWriteMemory(w http.ResponseWriter, r *http.Request) {
 	}
 
 	w.WriteHeader(http.StatusOK)
-	w.Write([]byte("OK"))
+	_, err = w.Write([]byte("OK"))
+	if err != nil {
+		return
+	}
 	log.Printf("## Escritura - (PID:TID) - (%d:%d) - Dir. Física: %d - Tamaño: %d\n", request.Pid, request.Tid, request.Direccion, len(request.Datos))
 }
 
@@ -218,7 +226,10 @@ func HandleFinalizarProceso(w http.ResponseWriter, r *http.Request) {
 	delete(globals.MemoriaSistema.Pseudocodigos, req.Pid)
 
 	w.WriteHeader(http.StatusOK)
-	w.Write([]byte("OK"))
+	_, err = w.Write([]byte("OK"))
+	if err != nil {
+		return
+	}
 	log.Printf("## Proceso destruido -  PID: %d - Tamaño: %d", req.Pid, tamanioProceso)
 }
 
@@ -265,7 +276,10 @@ func HandleFinalizarHilo(w http.ResponseWriter, r *http.Request) {
 	delete(globals.MemoriaSistema.Pseudocodigos[req.Pid], req.Tid)
 
 	w.WriteHeader(http.StatusOK)
-	w.Write([]byte("OK"))
+	_, err = w.Write([]byte("OK"))
+	if err != nil {
+		return
+	}
 	log.Printf("## Hilo destruido - (PID:TID) - (%d:%d)", req.Pid, req.Tid)
 }
 
@@ -301,11 +315,17 @@ func HandleMemoryDump(w http.ResponseWriter, r *http.Request) {
 
 	if response != nil && response.StatusCode == http.StatusOK {
 		w.WriteHeader(http.StatusOK)
-		w.Write([]byte("OK"))
+		_, err = w.Write([]byte("OK"))
+		if err != nil {
+			return
+		}
 		log.Printf("## Memory Dump solicitado - (PID:TID) - (%d:%d)", req.Pid, req.Tid)
 	} else {
 		w.WriteHeader(http.StatusInternalServerError)
-		w.Write([]byte("Error al realizar el dump de memoria"))
+		_, err = w.Write([]byte("Error al realizar el dump de memoria"))
+		if err != nil {
+			return
+		}
 		log.Printf("Error al realizar el dump de memoria - (PID:TID) - (%d:%d)", req.Pid, req.Tid)
 	}
 }

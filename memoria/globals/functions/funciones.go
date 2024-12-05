@@ -31,36 +31,17 @@ func ObtenerBaseLimite(pid int) (int, int) {
 	return base, limite
 }
 
-/*func ActualizarRegistros(pid int, tid int, registrosActualizados *commons.Registros) error {
-
-	registrosAActualizar := globals.MemoriaSistema.TablaHilos[pid][tid]
-
-	registrosAActualizar.PC = registrosActualizados.PC
-	registrosAActualizar.AX = registrosActualizados.AX
-	registrosAActualizar.BX = registrosActualizados.BX
-	registrosAActualizar.CX = registrosActualizados.CX
-	registrosAActualizar.DX = registrosActualizados.DX
-	registrosAActualizar.EX = registrosActualizados.EX
-	registrosAActualizar.FX = registrosActualizados.FX
-	registrosAActualizar.GX = registrosActualizados.GX
-	registrosAActualizar.HX = registrosActualizados.HX
-
-	return nil
-}*/
-
 func ActualizarRegistros(pid int, tid int, registrosActualizados *commons.Registros) error {
-	// Verificar que el mapa de PID existe
-	if _, ok := globals.MemoriaSistema.TablaHilos[pid]; !ok {
+	if _, existeMap := globals.MemoriaSistema.TablaHilos[pid]; !existeMap {
 		return fmt.Errorf("el PID %d no existe en la tabla de hilos", pid)
 	}
 
-	// Verificar que el TID existe para el PID dado
-	registrosAActualizar, ok := globals.MemoriaSistema.TablaHilos[pid][tid]
-	if !ok || registrosAActualizar == nil {
+	registrosAActualizar, existeMap := globals.MemoriaSistema.TablaHilos[pid][tid]
+
+	if !existeMap || registrosAActualizar == nil {
 		return fmt.Errorf("el TID %d no existe para el PID %d", tid, pid)
 	}
 
-	// Actualizar registros
 	registrosAActualizar.PC = registrosActualizados.PC
 	registrosAActualizar.AX = registrosActualizados.AX
 	registrosAActualizar.BX = registrosActualizados.BX
@@ -87,7 +68,7 @@ func ObtenerInstruccion(pid int, tid int, pc int) (requests.ResponseObtenerInstr
 }
 
 func ObtenerTamanioMemoria(pid int) int {
-	return globals.MemoriaSistema.TablaProcesos[pid].Limite - globals.MemoriaSistema.TablaProcesos[pid].Base + 1
+	return globals.MemoriaSistema.TablaProcesos[pid].Limite - globals.MemoriaSistema.TablaProcesos[pid].Base
 }
 
 func LeerMemoria(direccion int, pid int) ([]byte, error) {
@@ -162,24 +143,21 @@ func LiberarProceso(pid int) error {
 }
 
 func CrearHiloMemoria(pid int, tid int, pseudocodigo string) error {
-	// Crear hilo con pseudocódigo y agregarlo a la tabla de hilos
 	instrucciones, err := DesglosarPseudocodigo(pseudocodigo)
+
 	if err != nil {
 		log.Printf("Error al desglosar el pseudocódigo: %s\n", pseudocodigo)
 		return err
 	}
 
-	// Inicializar TablaHilos si no existe para el PID
 	if globals.MemoriaSistema.TablaHilos[pid] == nil {
 		globals.MemoriaSistema.TablaHilos[pid] = make(map[int]*commons.Registros)
 	}
 
-	// Inicializar Pseudocodigos si no existe para el PID
 	if globals.MemoriaSistema.Pseudocodigos[pid] == nil {
 		globals.MemoriaSistema.Pseudocodigos[pid] = make(map[int]*globals.InstruccionesHilo)
 	}
 
-	// Agregar pseudocódigo e inicializar registros para el hilo
 	globals.MemoriaSistema.Pseudocodigos[pid][tid] = &globals.InstruccionesHilo{Instrucciones: instrucciones}
 	globals.MemoriaSistema.TablaHilos[pid][tid] = &commons.Registros{AX: 0, BX: 0, CX: 0, DX: 0, EX: 0, FX: 0, GX: 0, HX: 0, PC: 0}
 
