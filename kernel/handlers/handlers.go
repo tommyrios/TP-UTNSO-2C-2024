@@ -135,12 +135,12 @@ func HandleMutexCreate(w http.ResponseWriter, r *http.Request) {
 
 	err := commons.DecodificarJSON(r.Body, &req)
 
-	log.Printf("## (%d:%d) - Solicitó syscall: MUTEX_CREATE", req.Pid, req.Tid)
-
 	if err != nil {
 		http.Error(w, "Error al decodificar el JSON", http.StatusBadRequest)
 		return
 	}
+
+	log.Printf("## (%d:%d) - Solicitó syscall: MUTEX_CREATE", req.Pid, req.Tid)
 
 	mutexes.CrearMutex(req.Nombre, req.Pid)
 
@@ -150,14 +150,14 @@ func HandleMutexCreate(w http.ResponseWriter, r *http.Request) {
 func HandleMutexLock(w http.ResponseWriter, r *http.Request) {
 	var req request.RequestMutex
 
-	log.Printf("## (%d:%d) - Solicitó syscall: MUTEX_LOCK", req.Pid, req.Tid)
-
 	err := commons.DecodificarJSON(r.Body, &req)
 
 	if err != nil {
 		http.Error(w, "Error al decodificar el JSON", http.StatusBadRequest)
 		return
 	}
+
+	log.Printf("## (%d:%d) - Solicitó syscall: MUTEX_LOCK", req.Pid, req.Tid)
 
 	mutexes.BloquearMutex(req.Nombre, req.Pid, req.Tid)
 }
@@ -165,14 +165,14 @@ func HandleMutexLock(w http.ResponseWriter, r *http.Request) {
 func HandleMutexUnlock(w http.ResponseWriter, r *http.Request) {
 	var req request.RequestMutex
 
-	log.Printf("## (%d:%d) - Solicitó syscall: MUTEX_UNLOCK", req.Pid, req.Tid)
-
 	err := commons.DecodificarJSON(r.Body, &req)
 
 	if err != nil {
 		http.Error(w, "Error al decodificar el JSON", http.StatusBadRequest)
 		return
 	}
+
+	log.Printf("## (%d:%d) - Solicitó syscall: MUTEX_UNLOCK", req.Pid, req.Tid)
 
 	mutexes.DesbloquearMutex(req.Nombre, req.Pid, req.Tid)
 }

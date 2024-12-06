@@ -85,6 +85,11 @@ func PrintColaReady() {
 		fmt.Printf("Pid: %d, Tid: %d, Prioridad: %d, Estado: %s\n", hilo.Pid, hilo.Tid, hilo.Prioridad, hilo.Estado)
 	}
 	fmt.Println("---------------")
+	fmt.Println("Estado actual de ColaBlock:")
+	for _, hilo := range globals.Estructura.ColaBloqueados {
+		fmt.Printf("Pid: %d, Tid: %d, Prioridad: %d, Estado: %s\n", hilo.Pid, hilo.Tid, hilo.Prioridad, hilo.Estado)
+	}
+	fmt.Println("---------------")
 }
 
 func ExecuteThread(pid int, tid int) {

@@ -112,7 +112,7 @@ func DesbloquearHilo(tcb *commons.TCB) {
 
 func BloquearHilo(tcb *commons.TCB) {
 	tcb.Estado = "BLOCKED"
-
+	
 	globals.Estructura.HiloExecute = nil
 
 	queues.AgregarHiloACola(tcb, &globals.Estructura.ColaBloqueados)
