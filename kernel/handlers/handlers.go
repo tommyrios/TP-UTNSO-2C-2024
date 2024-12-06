@@ -20,6 +20,7 @@ var mtxIO sync.Mutex
 
 func HandleProcessCreate(w http.ResponseWriter, r *http.Request) {
 	var req request.RequestProcessCreate
+
 	err := commons.DecodificarJSON(r.Body, &req)
 
 	log.Printf("## (%d:%d) - Solicitó syscall: PROCESS_CREATE", req.Pid, req.Tid)
@@ -30,6 +31,8 @@ func HandleProcessCreate(w http.ResponseWriter, r *http.Request) {
 	}
 
 	statusCode := processes.CrearProceso(req.Pseudocodigo, req.TamanioMemoria, req.Prioridad)
+
+	log.Println("Respuesta de la creación de proceso: ", statusCode)
 
 	w.WriteHeader(statusCode)
 }
@@ -130,9 +133,9 @@ func HandleThreadExit(w http.ResponseWriter, r *http.Request) {
 func HandleMutexCreate(w http.ResponseWriter, r *http.Request) {
 	var req request.RequestMutex
 
-	log.Printf("## (%d:%d) - Solicitó syscall: MUTEX_CREATE", req.Pid, req.Tid)
-
 	err := commons.DecodificarJSON(r.Body, &req)
+
+	log.Printf("## (%d:%d) - Solicitó syscall: MUTEX_CREATE", req.Pid, req.Tid)
 
 	if err != nil {
 		http.Error(w, "Error al decodificar el JSON", http.StatusBadRequest)

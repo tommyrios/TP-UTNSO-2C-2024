@@ -37,15 +37,15 @@ type RequestActualizarRegistros struct {
 }
 
 type RequestSyscall struct {
-	Pid            int    `json:"pid"`
-	Tid            int    `json:"tid"`
-	PseudoCodigo   string `json:"pseudocodigo"`
-	TamanioMemoria int    `json:"tamanio_memoria"`
-	Prioridad      int    `json:"prioridad"`
-	Tiempo         int    `json:"tiempo"`
-	TidParametro   int    `json:"tid_parametro"`
-	TidAEliminar   int    `json:"tidAEliminar"`
-	NombreMutex    string `json:"nombre_mutex"`
+	Pid            int    `json:"pid,omitempty"`
+	Tid            int    `json:"tid,omitempty"`
+	PseudoCodigo   string `json:"pseudocodigo,omitempty"`
+	TamanioMemoria int    `json:"tamanio_memoria,omitempty"`
+	Prioridad      int    `json:"prioridad,omitempty"`
+	Tiempo         int    `json:"tiempo,omitempty"`
+	TidParametro   int    `json:"tid_parametro,omitempty"`
+	TidAEliminar   int    `json:"tidAEliminar,omitempty"`
+	NombreMutex    string `json:"nombre_mutex,omitempty"`
 }
 
 type RequestReadMemory struct {
@@ -71,4 +71,10 @@ type RequestInterrupcion struct {
 	Pid   int    `json:"pid"`
 	Tid   int    `json:"tid"`
 	Razon string `json:"razon"`
+}
+
+type RequestMutex struct {
+	Nombre string `json:"nombre_mutex"`
+	Pid    int    `json:"pid"`
+	Tid    int    `json:"tid"`
 }

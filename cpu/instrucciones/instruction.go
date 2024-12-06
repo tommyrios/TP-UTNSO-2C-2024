@@ -57,7 +57,7 @@ func ReadMem(operandos []string, registros *commons.Registros, base int, limite 
 
 	reqCodificada, _ := commons.CodificarJSON(reqReadMemory)
 
-	response, byteSolicitados := cliente.Post2(globals.CConfig.IpMemory, globals.CConfig.PortMemory, "read_memory", reqCodificada)
+	response, byteSolicitados := cliente.Post2(globals.CConfig.IpMemory, globals.CConfig.PortMemory, "read_mem", reqCodificada)
 
 	defer response.Body.Close()
 
@@ -81,11 +81,15 @@ func WriteMem(operandos []string, registros *commons.Registros, base int, limite
 		return 1
 	}
 
-	reqWriteMemory := requests.RequestWriteMemory{Direccion: direccionFísica, Pid: pid, Tid: tid, Datos: []byte{byte(globals.ValorRegistros(operandos[1], registros))}}
+	datos := make([]byte, 4)
+
+	binary.LittleEndian.PutUint32(datos, globals.ValorRegistros(operandos[1], registros))
+
+	reqWriteMemory := requests.RequestWriteMemory{Direccion: direccionFísica, Pid: pid, Tid: tid, Datos: datos}
 
 	reqCodificada, _ := commons.CodificarJSON(reqWriteMemory)
 
-	response, mensaje := cliente.Post2(globals.CConfig.IpMemory, globals.CConfig.PortMemory, "write_memory", reqCodificada)
+	response, mensaje := cliente.Post2(globals.CConfig.IpMemory, globals.CConfig.PortMemory, "write_mem", reqCodificada)
 
 	defer response.Body.Close()
 
@@ -204,7 +208,6 @@ func Syscall(instruccion globals.InstruccionStruct, pid int, tid int) {
 		}
 		ruta = "handle_io"
 	}
-
 	requestBody, _ := commons.CodificarJSON(parametros)
 
 	cliente.Post(globals.CConfig.IpKernel, globals.CConfig.PortKernel, ruta, requestBody)

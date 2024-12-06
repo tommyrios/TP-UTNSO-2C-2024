@@ -76,7 +76,7 @@ func CambiarValorRegistros(registro string, valor uint32, registros *commons.Reg
 }
 
 func Mmu(desplazamiento int, base int, limite int) (int, int) {
-	if desplazamiento < 0 || desplazamiento >= limite || desplazamiento+base >= limite {
+	if desplazamiento < 0 || desplazamiento+base >= limite {
 		return -1, 1
 	}
 

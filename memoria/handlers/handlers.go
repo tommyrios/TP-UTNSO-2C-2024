@@ -1,6 +1,7 @@
 package handlers
 
 import (
+	"encoding/binary"
 	"fmt"
 	"github.com/sisoputnfrba/tp-golang/memoria/globals"
 	"github.com/sisoputnfrba/tp-golang/memoria/globals/functions"
@@ -131,6 +132,10 @@ func HandleReadMemory(w http.ResponseWriter, r *http.Request) {
 		log.Printf("Error al leer la memoria - (PID:TID) - (%d:%d)\n", request.Pid, request.Tid)
 		return
 	}
+
+	nuevoValor := binary.LittleEndian.Uint32(response)
+
+	log.Println(nuevoValor)
 
 	bytesSolicitados, err := commons.CodificarJSON(response)
 

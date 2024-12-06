@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"github.com/sisoputnfrba/tp-golang/utils/commons"
 	"log"
+	"sync"
 )
 
 type Config struct {
@@ -46,6 +47,7 @@ var MemoriaSistema MemSistema
 type MemUsuario struct {
 	Datos       []byte
 	Particiones []Particion
+	MutexDatos  sync.Mutex
 }
 
 var MemoriaUsuario MemUsuario
@@ -77,20 +79,20 @@ func InicializarMemoria() {
 
 	if MConfig.Scheme == "FIJAS" {
 		base := 0
-		for _, tamaño := range MConfig.Partitions {
-			if base+tamaño > MConfig.MemorySize {
+		for _, tamanio := range MConfig.Partitions {
+			if base+tamanio > MConfig.MemorySize {
 				errors.New("error: Particiones fijas exceden el tamaño total de memoria")
 			}
 
 			// Crear una nueva partición y agregarla a la lista
 			nuevaParticion := Particion{
 				Base:   base,
-				Limite: tamaño,
+				Limite: base + tamanio,
 				Libre:  true,
 				Pid:    -1,
 			}
 			MemoriaUsuario.Particiones = append(MemoriaUsuario.Particiones, nuevaParticion)
-			base += tamaño
+			base += tamanio
 		}
 
 		if base != MConfig.MemorySize {

@@ -2,6 +2,7 @@ package functions
 
 import (
 	"bufio"
+	"encoding/binary"
 	"errors"
 	"fmt"
 	"github.com/sisoputnfrba/tp-golang/memoria/globals"
@@ -11,8 +12,6 @@ import (
 	"net/http"
 	"os"
 )
-
-type MemUsuario globals.MemUsuario
 
 // FUNCIONES CPU
 
@@ -76,7 +75,6 @@ func LeerMemoria(direccion int, pid int) ([]byte, error) {
 	if direccion < 0 || direccion+4 >= len(globals.MemoriaUsuario.Datos) {
 		return nil, fmt.Errorf("dirección de memoria inválida")
 	}
-
 	for _, particion := range globals.MemoriaUsuario.Particiones {
 		if direccion >= particion.Base && direccion+4 <= particion.Limite && particion.Pid == pid {
 			return globals.MemoriaUsuario.Datos[direccion : direccion+4], nil
@@ -88,17 +86,21 @@ func LeerMemoria(direccion int, pid int) ([]byte, error) {
 
 func EscribirMemoria(direccion int, pid int, datos []byte) error {
 
-	if len(datos) != 4 {
-		return fmt.Errorf("se deben proporcionar exactamente 4 bytes")
+	if len(datos) == 0 {
+		return fmt.Errorf("está vacío el contenido a escribir")
 	}
 
 	for _, particion := range globals.MemoriaUsuario.Particiones {
 		if direccion >= particion.Base && direccion+4 <= particion.Limite && particion.Pid == pid {
 			copy(globals.MemoriaUsuario.Datos[direccion:direccion+4], datos)
-		} else {
+			break
+		} else if particion.Pid == pid && direccion > particion.Limite {
 			return fmt.Errorf("segmentation fault")
 		}
 	}
+	value := binary.LittleEndian.Uint32(globals.MemoriaUsuario.Datos[direccion : direccion+4])
+
+	log.Println(value)
 
 	return nil
 }
@@ -165,7 +167,7 @@ func CrearHiloMemoria(pid int, tid int, pseudocodigo string) error {
 }
 
 func DesglosarPseudocodigo(pseudocodigo string) ([]string, error) {
-	archivo, err := os.Open(pseudocodigo)
+	archivo, err := os.Open("../the-last-of-c-pruebas/" + pseudocodigo)
 	if err != nil {
 		return nil, fmt.Errorf("error al abrir el archivo: %w", err)
 	}

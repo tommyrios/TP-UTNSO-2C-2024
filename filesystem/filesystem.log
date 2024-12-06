@@ -102,3 +102,11 @@
 2024/12/05 15:25:49 Archivo encontrado: \home\utnso\mount_dir\bloques.dat.
 2024/12/05 15:25:49 Inicialización del File System completada.
 2024/12/05 15:25:49 El módulo filesystem está a la escucha en el puerto :8003
+2024/12/05 17:56:13 Archivo /Users/gonzaloramirez/Desktop/mount_dir/bitmap.dat no encontrado. Creando uno nuevo.
+2024/12/05 17:56:13 Archivo /Users/gonzaloramirez/Desktop/mount_dir/bloques.dat no encontrado. Creando uno nuevo.
+2024/12/05 17:56:13 Inicialización del File System completada.
+2024/12/05 17:56:13 El módulo filesystem está a la escucha en el puerto :8003
+2024/12/05 18:07:04 Archivo encontrado: /Users/gonzaloramirez/Desktop/mount_dir/bitmap.dat.
+2024/12/05 18:07:04 Archivo encontrado: /Users/gonzaloramirez/Desktop/mount_dir/bloques.dat.
+2024/12/05 18:07:04 Inicialización del File System completada.
+2024/12/05 18:07:04 El módulo filesystem está a la escucha en el puerto :8003
