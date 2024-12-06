@@ -27663,3 +27663,2490 @@ created by net/http.(*Server).Serve in goroutine 1
 2024/12/06 11:33:58 ## Contexto actualizado - (PID:TID) - (1:0)
 2024/12/06 11:33:58 ## Contexto solicitado - (PID:TID) - (3:0)
 2024/12/06 11:33:59 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {IO 120000}
+2024/12/06 11:44:55 Memoria inicializada con éxito.
+2024/12/06 11:44:55 El módulo memoria está a la escucha en el puerto :8002
+2024/12/06 11:45:17 ## Proceso creado -  PID: 1 - Tamaño: 12
+2024/12/06 11:45:17 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/06 11:45:18 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 11:45:18 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 11:45:18 ## Proceso creado -  PID: 2 - Tamaño: 8
+2024/12/06 11:45:18 ## Hilo creado - (PID:TID) - (2:0)
+2024/12/06 11:45:18 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 11:45:18 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 11:45:18 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {SET DX 0}
+2024/12/06 11:45:19 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {SET AX 64}
+2024/12/06 11:45:19 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 11:45:19 ## Escritura - (PID:TID) - (2:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 11:45:19 ## Contexto actualizado - (PID:TID) - (2:0)
+2024/12/06 11:45:19 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 11:45:20 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 48 0}
+2024/12/06 11:45:20 ## Proceso creado -  PID: 3 - Tamaño: 48
+2024/12/06 11:45:20 ## Hilo creado - (PID:TID) - (3:0)
+2024/12/06 11:45:20 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 11:45:20 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 11:45:20 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 11:45:20 ## Leer Memoria - Direccion:  32
+2024/12/06 11:45:20 ## Nuevo Valor: 64
+2024/12/06 11:45:20 ## Lectura - (PID:TID) - (2:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 11:45:21 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {LOG BX}
+2024/12/06 11:45:21 ## Contexto actualizado - (PID:TID) - (2:0)
+2024/12/06 11:45:21 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 11:45:21 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {SET DX 0}
+2024/12/06 11:45:21 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {SET AX 64}
+2024/12/06 11:45:22 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 11:45:22 ## Escritura - (PID:TID) - (3:0) - Dir. Física: 48 - Tamaño: 4
+2024/12/06 11:45:22 ## Contexto actualizado - (PID:TID) - (3:0)
+2024/12/06 11:45:22 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 11:45:22 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 96 0}
+2024/12/06 11:45:22 ## Proceso creado -  PID: 4 - Tamaño: 96
+2024/12/06 11:45:22 ## Hilo creado - (PID:TID) - (4:0)
+2024/12/06 11:45:23 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 11:45:23 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 11:45:23 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {IO 120000}
+2024/12/06 11:45:23 ## Contexto actualizado - (PID:TID) - (2:0)
+2024/12/06 11:45:23 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 11:45:24 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 11:45:24 ## Leer Memoria - Direccion:  48
+2024/12/06 11:45:24 ## Nuevo Valor: 64
+2024/12/06 11:45:24 ## Lectura - (PID:TID) - (3:0) - Dir. Física: 48 - Tamaño: 4
+2024/12/06 11:45:24 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {LOG BX}
+2024/12/06 11:45:24 ## Contexto actualizado - (PID:TID) - (3:0)
+2024/12/06 11:45:24 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 11:45:25 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {SET DX 0}
+2024/12/06 11:45:25 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {SET AX 64}
+2024/12/06 11:45:25 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 11:45:25 ## Escritura - (PID:TID) - (4:0) - Dir. Física: 112 - Tamaño: 4
+2024/12/06 11:45:25 ## Contexto actualizado - (PID:TID) - (4:0)
+2024/12/06 11:45:26 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 11:45:26 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 12 0}
+2024/12/06 11:45:26 ## Proceso creado -  PID: 5 - Tamaño: 12
+2024/12/06 11:45:26 ## Hilo creado - (PID:TID) - (5:0)
+2024/12/06 11:45:26 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 11:45:26 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 11:45:26 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {IO 120000}
+2024/12/06 11:45:27 ## Contexto actualizado - (PID:TID) - (3:0)
+2024/12/06 11:45:27 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 11:45:27 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 11:45:27 ## Leer Memoria - Direccion:  112
+2024/12/06 11:45:27 ## Nuevo Valor: 64
+2024/12/06 11:45:27 ## Lectura - (PID:TID) - (4:0) - Dir. Física: 112 - Tamaño: 4
+2024/12/06 11:45:27 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {LOG BX}
+2024/12/06 11:45:28 ## Contexto actualizado - (PID:TID) - (4:0)
+2024/12/06 11:45:28 ## Contexto solicitado - (PID:TID) - (5:0)
+2024/12/06 11:45:28 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {SET DX 0}
+2024/12/06 11:45:28 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {SET AX 64}
+2024/12/06 11:45:28 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 11:45:29 ## Escritura - (PID:TID) - (5:0) - Dir. Física: 240 - Tamaño: 4
+2024/12/06 11:45:29 ## Contexto actualizado - (PID:TID) - (5:0)
+2024/12/06 11:45:29 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 11:45:29 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 11:45:29 El proceso 6 no pudo ser inicializado
+2024/12/06 11:45:29 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 11:45:30 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 11:45:30 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {PROCESS_EXIT}
+2024/12/06 11:45:30 ## Hilo destruido - (PID:TID) - (3:0)
+2024/12/06 11:45:30 ## Proceso destruido -  PID: 3 - Tamaño: 64
+2024/12/06 11:45:30 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 11:45:30 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {IO 120000}
+2024/12/06 12:13:22 Memoria inicializada con éxito.
+2024/12/06 12:13:22 El módulo memoria está a la escucha en el puerto :8002
+2024/12/06 12:13:27 ## Proceso creado -  PID: 1 - Tamaño: 12
+2024/12/06 12:13:27 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/06 12:13:27 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 12:13:27 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 12:13:27 ## Proceso creado -  PID: 2 - Tamaño: 8
+2024/12/06 12:13:27 ## Hilo creado - (PID:TID) - (2:0)
+2024/12/06 12:13:28 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 12:13:28 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 12:13:28 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {SET DX 0}
+2024/12/06 12:13:28 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {SET AX 64}
+2024/12/06 12:13:29 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 12:13:29 ## Escritura - (PID:TID) - (2:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 12:13:29 ## Contexto actualizado - (PID:TID) - (2:0)
+2024/12/06 12:13:29 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 12:13:29 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 48 0}
+2024/12/06 12:13:29 ## Proceso creado -  PID: 3 - Tamaño: 48
+2024/12/06 12:13:29 ## Hilo creado - (PID:TID) - (3:0)
+2024/12/06 12:13:30 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 12:13:30 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 12:13:30 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 12:13:30 ## Leer Memoria - Direccion:  32
+2024/12/06 12:13:30 ## Nuevo Valor: 64
+2024/12/06 12:13:30 ## Lectura - (PID:TID) - (2:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 12:13:30 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {LOG BX}
+2024/12/06 12:13:31 ## Contexto actualizado - (PID:TID) - (2:0)
+2024/12/06 12:13:31 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 12:13:31 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {SET DX 0}
+2024/12/06 12:13:31 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {SET AX 64}
+2024/12/06 12:13:31 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 12:13:32 ## Escritura - (PID:TID) - (3:0) - Dir. Física: 48 - Tamaño: 4
+2024/12/06 12:13:32 ## Contexto actualizado - (PID:TID) - (3:0)
+2024/12/06 12:13:32 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 12:13:32 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 96 0}
+2024/12/06 12:13:32 ## Proceso creado -  PID: 4 - Tamaño: 96
+2024/12/06 12:13:32 ## Hilo creado - (PID:TID) - (4:0)
+2024/12/06 12:13:32 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 12:13:33 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 12:13:33 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {IO 120000}
+2024/12/06 12:13:33 ## Contexto actualizado - (PID:TID) - (2:0)
+2024/12/06 12:13:33 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 12:13:33 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 12:13:34 ## Leer Memoria - Direccion:  48
+2024/12/06 12:13:34 ## Nuevo Valor: 64
+2024/12/06 12:13:34 ## Lectura - (PID:TID) - (3:0) - Dir. Física: 48 - Tamaño: 4
+2024/12/06 12:13:34 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {LOG BX}
+2024/12/06 12:13:34 ## Contexto actualizado - (PID:TID) - (3:0)
+2024/12/06 12:13:34 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 12:13:34 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {SET DX 0}
+2024/12/06 12:13:35 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {SET AX 64}
+2024/12/06 12:13:35 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 12:13:35 ## Escritura - (PID:TID) - (4:0) - Dir. Física: 112 - Tamaño: 4
+2024/12/06 12:13:35 ## Contexto actualizado - (PID:TID) - (4:0)
+2024/12/06 12:13:35 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 12:13:36 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 12 0}
+2024/12/06 12:13:36 ## Proceso creado -  PID: 5 - Tamaño: 12
+2024/12/06 12:13:36 ## Hilo creado - (PID:TID) - (5:0)
+2024/12/06 12:13:36 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 12:13:36 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 12:13:36 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {IO 120000}
+2024/12/06 12:13:36 ## Contexto actualizado - (PID:TID) - (3:0)
+2024/12/06 12:13:37 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 12:13:37 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 12:13:37 ## Leer Memoria - Direccion:  112
+2024/12/06 12:13:37 ## Nuevo Valor: 64
+2024/12/06 12:13:37 ## Lectura - (PID:TID) - (4:0) - Dir. Física: 112 - Tamaño: 4
+2024/12/06 12:13:37 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {LOG BX}
+2024/12/06 12:13:37 ## Contexto actualizado - (PID:TID) - (4:0)
+2024/12/06 12:13:38 ## Contexto solicitado - (PID:TID) - (5:0)
+2024/12/06 12:13:38 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {SET DX 0}
+2024/12/06 12:13:38 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {SET AX 64}
+2024/12/06 12:13:38 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 12:13:38 ## Escritura - (PID:TID) - (5:0) - Dir. Física: 240 - Tamaño: 4
+2024/12/06 12:13:39 ## Contexto actualizado - (PID:TID) - (5:0)
+2024/12/06 12:13:39 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 12:13:39 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 12:13:39 El proceso 6 no pudo ser inicializado
+2024/12/06 12:13:39 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 12:13:39 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 12:13:40 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {PROCESS_EXIT}
+2024/12/06 12:13:40 ## Hilo destruido - (PID:TID) - (3:0)
+2024/12/06 12:13:40 ## Proceso destruido -  PID: 3 - Tamaño: 64
+2024/12/06 12:13:40 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 12:13:40 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {IO 120000}
+2024/12/06 12:25:16 Memoria inicializada con éxito.
+2024/12/06 12:25:16 El módulo memoria está a la escucha en el puerto :8002
+2024/12/06 12:25:25 ## Proceso creado -  PID: 1 - Tamaño: 12
+2024/12/06 12:25:25 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/06 12:25:25 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 12:25:26 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 12:25:26 ## Proceso creado -  PID: 2 - Tamaño: 8
+2024/12/06 12:25:26 ## Hilo creado - (PID:TID) - (2:0)
+2024/12/06 12:25:26 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 12:25:26 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 12:25:26 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {SET DX 0}
+2024/12/06 12:25:26 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {SET AX 64}
+2024/12/06 12:25:27 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 12:25:27 ## Escritura - (PID:TID) - (2:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 12:25:27 ## Contexto actualizado - (PID:TID) - (2:0)
+2024/12/06 12:25:27 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 12:25:27 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 48 0}
+2024/12/06 12:25:27 ## Proceso creado -  PID: 3 - Tamaño: 48
+2024/12/06 12:25:27 ## Hilo creado - (PID:TID) - (3:0)
+2024/12/06 12:25:28 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 12:25:28 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 12:25:28 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 12:25:28 ## Leer Memoria - Direccion:  32
+2024/12/06 12:25:28 ## Nuevo Valor: 64
+2024/12/06 12:25:28 ## Lectura - (PID:TID) - (2:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 12:25:28 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {LOG BX}
+2024/12/06 12:25:29 ## Contexto actualizado - (PID:TID) - (2:0)
+2024/12/06 12:25:29 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 12:25:29 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {SET DX 0}
+2024/12/06 12:25:29 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {SET AX 64}
+2024/12/06 12:25:29 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 12:25:30 ## Escritura - (PID:TID) - (3:0) - Dir. Física: 48 - Tamaño: 4
+2024/12/06 12:25:30 ## Contexto actualizado - (PID:TID) - (3:0)
+2024/12/06 12:25:30 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 12:25:30 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 96 0}
+2024/12/06 12:25:30 ## Proceso creado -  PID: 4 - Tamaño: 96
+2024/12/06 12:25:30 ## Hilo creado - (PID:TID) - (4:0)
+2024/12/06 12:25:30 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 12:25:31 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 12:25:31 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {IO 120000}
+2024/12/06 12:25:31 ## Contexto actualizado - (PID:TID) - (2:0)
+2024/12/06 12:25:31 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 12:25:31 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 12:25:32 ## Leer Memoria - Direccion:  48
+2024/12/06 12:25:32 ## Nuevo Valor: 64
+2024/12/06 12:25:32 ## Lectura - (PID:TID) - (3:0) - Dir. Física: 48 - Tamaño: 4
+2024/12/06 12:25:32 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {LOG BX}
+2024/12/06 12:25:32 ## Contexto actualizado - (PID:TID) - (3:0)
+2024/12/06 12:25:32 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 12:25:32 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {SET DX 0}
+2024/12/06 12:25:33 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {SET AX 64}
+2024/12/06 12:25:33 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 12:25:33 ## Escritura - (PID:TID) - (4:0) - Dir. Física: 112 - Tamaño: 4
+2024/12/06 12:25:33 ## Contexto actualizado - (PID:TID) - (4:0)
+2024/12/06 12:25:33 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 12:25:34 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 12 0}
+2024/12/06 12:25:34 ## Proceso creado -  PID: 5 - Tamaño: 12
+2024/12/06 12:25:34 ## Hilo creado - (PID:TID) - (5:0)
+2024/12/06 12:25:34 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 12:25:34 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 12:25:34 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {PROCESS_EXIT}
+2024/12/06 12:25:34 ## Hilo destruido - (PID:TID) - (2:0)
+2024/12/06 12:25:34 ## Proceso destruido -  PID: 2 - Tamaño: 16
+2024/12/06 12:25:34 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 12:25:35 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {IO 120000}
+2024/12/06 12:25:35 ## Contexto actualizado - (PID:TID) - (3:0)
+2024/12/06 12:25:35 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 12:25:35 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 12:25:35 ## Leer Memoria - Direccion:  112
+2024/12/06 12:25:35 ## Nuevo Valor: 64
+2024/12/06 12:25:35 ## Lectura - (PID:TID) - (4:0) - Dir. Física: 112 - Tamaño: 4
+2024/12/06 12:25:36 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {LOG BX}
+2024/12/06 12:25:36 ## Contexto actualizado - (PID:TID) - (4:0)
+2024/12/06 12:25:36 ## Contexto solicitado - (PID:TID) - (5:0)
+2024/12/06 12:25:36 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {SET DX 0}
+2024/12/06 12:25:36 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {SET AX 64}
+2024/12/06 12:25:37 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 12:25:37 ## Escritura - (PID:TID) - (5:0) - Dir. Física: 240 - Tamaño: 4
+2024/12/06 12:25:37 ## Contexto actualizado - (PID:TID) - (5:0)
+2024/12/06 12:25:37 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 12:25:37 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 12:25:37 ## Proceso creado -  PID: 6 - Tamaño: 8
+2024/12/06 12:25:37 ## Hilo creado - (PID:TID) - (6:0)
+2024/12/06 12:25:38 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 12:25:38 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 12:25:38 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {PROCESS_EXIT}
+2024/12/06 12:25:38 ## Hilo destruido - (PID:TID) - (3:0)
+2024/12/06 12:25:38 ## Proceso destruido -  PID: 3 - Tamaño: 64
+2024/12/06 12:25:38 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 12:25:38 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {IO 120000}
+2024/12/06 12:25:39 ## Contexto actualizado - (PID:TID) - (4:0)
+2024/12/06 12:25:39 ## Contexto solicitado - (PID:TID) - (5:0)
+2024/12/06 12:25:39 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 12:25:39 ## Leer Memoria - Direccion:  240
+2024/12/06 12:25:39 ## Nuevo Valor: 64
+2024/12/06 12:25:39 ## Lectura - (PID:TID) - (5:0) - Dir. Física: 240 - Tamaño: 4
+2024/12/06 12:25:39 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {LOG BX}
+2024/12/06 12:25:40 ## Contexto actualizado - (PID:TID) - (5:0)
+2024/12/06 12:25:40 ## Contexto solicitado - (PID:TID) - (6:0)
+2024/12/06 12:25:40 ## Obtener instrucción - (PID:TID) - (6:0) - Instrucción: {SET DX 0}
+2024/12/06 12:25:40 ## Obtener instrucción - (PID:TID) - (6:0) - Instrucción: {SET AX 64}
+2024/12/06 12:25:40 ## Obtener instrucción - (PID:TID) - (6:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 12:25:41 ## Escritura - (PID:TID) - (6:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 12:25:41 ## Contexto actualizado - (PID:TID) - (6:0)
+2024/12/06 12:25:41 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 12:25:41 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 12:25:41 ## Proceso creado -  PID: 7 - Tamaño: 8
+2024/12/06 12:25:41 ## Hilo creado - (PID:TID) - (7:0)
+2024/12/06 12:25:41 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 12:25:42 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 12:25:42 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {PROCESS_EXIT}
+2024/12/06 12:25:42 ## Hilo destruido - (PID:TID) - (4:0)
+2024/12/06 12:25:42 ## Proceso destruido -  PID: 4 - Tamaño: 128
+2024/12/06 12:25:42 ## Contexto solicitado - (PID:TID) - (5:0)
+2024/12/06 12:25:42 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {IO 120000}
+2024/12/06 12:25:42 ## Contexto actualizado - (PID:TID) - (5:0)
+2024/12/06 12:25:43 ## Contexto solicitado - (PID:TID) - (6:0)
+2024/12/06 12:25:43 ## Obtener instrucción - (PID:TID) - (6:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 12:25:43 ## Leer Memoria - Direccion:  32
+2024/12/06 12:25:43 ## Nuevo Valor: 64
+2024/12/06 12:25:43 ## Lectura - (PID:TID) - (6:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 12:25:43 ## Obtener instrucción - (PID:TID) - (6:0) - Instrucción: {LOG BX}
+2024/12/06 12:25:43 ## Contexto actualizado - (PID:TID) - (6:0)
+2024/12/06 12:25:44 ## Contexto solicitado - (PID:TID) - (7:0)
+2024/12/06 12:25:44 ## Obtener instrucción - (PID:TID) - (7:0) - Instrucción: {SET DX 0}
+2024/12/06 12:25:44 ## Obtener instrucción - (PID:TID) - (7:0) - Instrucción: {SET AX 64}
+2024/12/06 12:25:44 ## Obtener instrucción - (PID:TID) - (7:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 12:25:44 ## Escritura - (PID:TID) - (7:0) - Dir. Física: 48 - Tamaño: 4
+2024/12/06 12:25:45 ## Contexto actualizado - (PID:TID) - (7:0)
+2024/12/06 12:25:45 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 12:25:45 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 12:25:45 ## Proceso creado -  PID: 8 - Tamaño: 8
+2024/12/06 12:25:45 ## Hilo creado - (PID:TID) - (8:0)
+2024/12/06 12:25:45 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 12:25:45 ## Contexto solicitado - (PID:TID) - (5:0)
+2024/12/06 12:25:46 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {PROCESS_EXIT}
+2024/12/06 12:25:46 ## Hilo destruido - (PID:TID) - (5:0)
+2024/12/06 12:25:46 ## Proceso destruido -  PID: 5 - Tamaño: 16
+2024/12/06 12:25:46 ## Contexto solicitado - (PID:TID) - (6:0)
+2024/12/06 12:25:46 ## Obtener instrucción - (PID:TID) - (6:0) - Instrucción: {IO 120000}
+2024/12/06 12:25:46 ## Contexto actualizado - (PID:TID) - (6:0)
+2024/12/06 12:25:46 ## Contexto solicitado - (PID:TID) - (7:0)
+2024/12/06 12:25:47 ## Obtener instrucción - (PID:TID) - (7:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 12:25:47 ## Leer Memoria - Direccion:  48
+2024/12/06 12:25:47 ## Nuevo Valor: 64
+2024/12/06 12:25:47 ## Lectura - (PID:TID) - (7:0) - Dir. Física: 48 - Tamaño: 4
+2024/12/06 12:25:47 ## Obtener instrucción - (PID:TID) - (7:0) - Instrucción: {LOG BX}
+2024/12/06 12:25:47 ## Contexto actualizado - (PID:TID) - (7:0)
+2024/12/06 12:25:47 ## Contexto solicitado - (PID:TID) - (8:0)
+2024/12/06 12:25:48 ## Obtener instrucción - (PID:TID) - (8:0) - Instrucción: {SET DX 0}
+2024/12/06 12:25:48 ## Obtener instrucción - (PID:TID) - (8:0) - Instrucción: {SET AX 64}
+2024/12/06 12:25:48 ## Obtener instrucción - (PID:TID) - (8:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 12:25:48 ## Escritura - (PID:TID) - (8:0) - Dir. Física: 112 - Tamaño: 4
+2024/12/06 12:25:49 ## Contexto actualizado - (PID:TID) - (8:0)
+2024/12/06 12:25:49 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 12:25:49 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 12:25:49 ## Proceso creado -  PID: 9 - Tamaño: 8
+2024/12/06 12:25:49 ## Hilo creado - (PID:TID) - (9:0)
+2024/12/06 12:25:49 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 12:25:49 ## Contexto solicitado - (PID:TID) - (6:0)
+2024/12/06 12:25:50 ## Obtener instrucción - (PID:TID) - (6:0) - Instrucción: {PROCESS_EXIT}
+2024/12/06 12:25:50 ## Hilo destruido - (PID:TID) - (6:0)
+2024/12/06 12:25:50 ## Proceso destruido -  PID: 6 - Tamaño: 16
+2024/12/06 12:25:50 ## Contexto solicitado - (PID:TID) - (7:0)
+2024/12/06 12:25:50 ## Obtener instrucción - (PID:TID) - (7:0) - Instrucción: {IO 120000}
+2024/12/06 12:25:50 ## Contexto actualizado - (PID:TID) - (7:0)
+2024/12/06 12:25:50 ## Contexto solicitado - (PID:TID) - (8:0)
+2024/12/06 12:25:51 ## Obtener instrucción - (PID:TID) - (8:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 12:25:51 ## Leer Memoria - Direccion:  112
+2024/12/06 12:25:51 ## Nuevo Valor: 64
+2024/12/06 12:25:51 ## Lectura - (PID:TID) - (8:0) - Dir. Física: 112 - Tamaño: 4
+2024/12/06 12:25:51 ## Obtener instrucción - (PID:TID) - (8:0) - Instrucción: {LOG BX}
+2024/12/06 12:25:51 ## Contexto actualizado - (PID:TID) - (8:0)
+2024/12/06 12:25:51 ## Contexto solicitado - (PID:TID) - (9:0)
+2024/12/06 12:25:52 ## Obtener instrucción - (PID:TID) - (9:0) - Instrucción: {SET DX 0}
+2024/12/06 12:25:52 ## Obtener instrucción - (PID:TID) - (9:0) - Instrucción: {SET AX 64}
+2024/12/06 12:25:52 ## Obtener instrucción - (PID:TID) - (9:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 12:25:52 ## Escritura - (PID:TID) - (9:0) - Dir. Física: 240 - Tamaño: 4
+2024/12/06 12:25:52 ## Contexto actualizado - (PID:TID) - (9:0)
+2024/12/06 12:25:53 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 12:25:53 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/06 12:25:53 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 64}
+2024/12/06 12:25:53 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 12:25:53 ## Escritura - (PID:TID) - (1:0) - Dir. Física: 0 - Tamaño: 4
+2024/12/06 12:25:54 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 12:25:54 ## Contexto solicitado - (PID:TID) - (7:0)
+2024/12/06 12:25:54 ## Obtener instrucción - (PID:TID) - (7:0) - Instrucción: {PROCESS_EXIT}
+2024/12/06 12:25:54 ## Hilo destruido - (PID:TID) - (7:0)
+2024/12/06 12:25:54 ## Proceso destruido -  PID: 7 - Tamaño: 64
+2024/12/06 12:25:54 ## Contexto solicitado - (PID:TID) - (8:0)
+2024/12/06 12:25:54 ## Obtener instrucción - (PID:TID) - (8:0) - Instrucción: {IO 120000}
+2024/12/06 12:25:55 ## Contexto actualizado - (PID:TID) - (8:0)
+2024/12/06 12:25:55 ## Contexto solicitado - (PID:TID) - (9:0)
+2024/12/06 12:25:55 ## Obtener instrucción - (PID:TID) - (9:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 12:25:55 ## Leer Memoria - Direccion:  240
+2024/12/06 12:25:55 ## Nuevo Valor: 64
+2024/12/06 12:25:55 ## Lectura - (PID:TID) - (9:0) - Dir. Física: 240 - Tamaño: 4
+2024/12/06 12:25:55 ## Obtener instrucción - (PID:TID) - (9:0) - Instrucción: {LOG BX}
+2024/12/06 12:25:56 ## Contexto actualizado - (PID:TID) - (9:0)
+2024/12/06 12:25:56 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 12:25:56 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 12:25:56 ## Leer Memoria - Direccion:  0
+2024/12/06 12:25:56 ## Nuevo Valor: 64
+2024/12/06 12:25:56 ## Lectura - (PID:TID) - (1:0) - Dir. Física: 0 - Tamaño: 4
+2024/12/06 12:25:56 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {LOG BX}
+2024/12/06 12:25:57 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 12:25:57 ## Contexto solicitado - (PID:TID) - (8:0)
+2024/12/06 12:25:57 ## Obtener instrucción - (PID:TID) - (8:0) - Instrucción: {PROCESS_EXIT}
+2024/12/06 12:25:57 ## Hilo destruido - (PID:TID) - (8:0)
+2024/12/06 12:25:57 ## Proceso destruido -  PID: 8 - Tamaño: 128
+2024/12/06 12:25:57 ## Contexto solicitado - (PID:TID) - (9:0)
+2024/12/06 12:25:57 ## Obtener instrucción - (PID:TID) - (9:0) - Instrucción: {IO 120000}
+2024/12/06 12:25:58 ## Contexto actualizado - (PID:TID) - (9:0)
+2024/12/06 12:25:58 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 12:25:58 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {IO 120000}
+2024/12/06 12:25:58 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 12:25:58 ## Contexto solicitado - (PID:TID) - (9:0)
+2024/12/06 12:25:59 ## Obtener instrucción - (PID:TID) - (9:0) - Instrucción: {PROCESS_EXIT}
+2024/12/06 12:25:59 ## Hilo destruido - (PID:TID) - (9:0)
+2024/12/06 12:25:59 ## Proceso destruido -  PID: 9 - Tamaño: 16
+2024/12/06 12:25:59 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 12:25:59 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_EXIT}
+2024/12/06 12:25:59 ## Hilo destruido - (PID:TID) - (1:0)
+2024/12/06 12:25:59 ## Proceso destruido -  PID: 1 - Tamaño: 32
+2024/12/06 12:33:45 Memoria inicializada con éxito.
+2024/12/06 12:33:45 El módulo memoria está a la escucha en el puerto :8002
+2024/12/06 12:33:59 ## Proceso creado -  PID: 1 - Tamaño: 12
+2024/12/06 12:33:59 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/06 12:33:59 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 12:33:59 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 12:33:59 ## Proceso creado -  PID: 2 - Tamaño: 8
+2024/12/06 12:33:59 ## Hilo creado - (PID:TID) - (2:0)
+2024/12/06 12:34:00 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 12:34:00 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 12:34:00 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {SET DX 0}
+2024/12/06 12:34:00 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {SET AX 64}
+2024/12/06 12:34:00 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 12:34:01 ## Escritura - (PID:TID) - (2:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 12:34:01 ## Contexto actualizado - (PID:TID) - (2:0)
+2024/12/06 12:34:01 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 12:34:01 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 48 0}
+2024/12/06 12:34:01 ## Proceso creado -  PID: 3 - Tamaño: 48
+2024/12/06 12:34:01 ## Hilo creado - (PID:TID) - (3:0)
+2024/12/06 12:34:01 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 12:34:02 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 12:34:02 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 12:34:02 ## Leer Memoria - Direccion:  32
+2024/12/06 12:34:02 ## Nuevo Valor: 64
+2024/12/06 12:34:02 ## Lectura - (PID:TID) - (2:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 12:34:02 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {LOG BX}
+2024/12/06 12:34:02 ## Contexto actualizado - (PID:TID) - (2:0)
+2024/12/06 12:34:03 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 12:34:03 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {SET DX 0}
+2024/12/06 12:34:03 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {SET AX 64}
+2024/12/06 12:34:03 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 12:34:03 ## Escritura - (PID:TID) - (3:0) - Dir. Física: 48 - Tamaño: 4
+2024/12/06 12:34:04 ## Contexto actualizado - (PID:TID) - (3:0)
+2024/12/06 12:34:04 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 12:34:04 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 96 0}
+2024/12/06 12:34:04 ## Proceso creado -  PID: 4 - Tamaño: 96
+2024/12/06 12:34:04 ## Hilo creado - (PID:TID) - (4:0)
+2024/12/06 12:34:04 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 12:34:04 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 12:34:05 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {IO 120000}
+2024/12/06 12:34:05 ## Contexto actualizado - (PID:TID) - (2:0)
+2024/12/06 12:34:05 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 12:34:05 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 12:34:06 ## Leer Memoria - Direccion:  48
+2024/12/06 12:34:06 ## Nuevo Valor: 64
+2024/12/06 12:34:06 ## Lectura - (PID:TID) - (3:0) - Dir. Física: 48 - Tamaño: 4
+2024/12/06 12:34:06 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {LOG BX}
+2024/12/06 12:34:06 ## Contexto actualizado - (PID:TID) - (3:0)
+2024/12/06 12:34:06 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 12:34:06 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {SET DX 0}
+2024/12/06 12:34:07 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {SET AX 64}
+2024/12/06 12:34:07 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 12:34:07 ## Escritura - (PID:TID) - (4:0) - Dir. Física: 112 - Tamaño: 4
+2024/12/06 12:34:07 ## Contexto actualizado - (PID:TID) - (4:0)
+2024/12/06 12:34:07 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 12:34:08 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 12 0}
+2024/12/06 12:34:08 ## Proceso creado -  PID: 5 - Tamaño: 12
+2024/12/06 12:34:08 ## Hilo creado - (PID:TID) - (5:0)
+2024/12/06 12:34:08 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 12:34:08 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 12:34:08 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {IO 120000}
+2024/12/06 12:34:08 ## Contexto actualizado - (PID:TID) - (3:0)
+2024/12/06 12:34:09 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 12:34:09 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 12:34:09 ## Leer Memoria - Direccion:  112
+2024/12/06 12:34:09 ## Nuevo Valor: 64
+2024/12/06 12:34:09 ## Lectura - (PID:TID) - (4:0) - Dir. Física: 112 - Tamaño: 4
+2024/12/06 12:34:09 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {LOG BX}
+2024/12/06 12:34:09 ## Contexto actualizado - (PID:TID) - (4:0)
+2024/12/06 12:34:10 ## Contexto solicitado - (PID:TID) - (5:0)
+2024/12/06 12:34:10 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {SET DX 0}
+2024/12/06 12:34:10 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {SET AX 64}
+2024/12/06 12:34:10 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 12:34:10 ## Escritura - (PID:TID) - (5:0) - Dir. Física: 240 - Tamaño: 4
+2024/12/06 12:34:11 ## Contexto actualizado - (PID:TID) - (5:0)
+2024/12/06 12:34:11 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 12:34:11 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 12:34:11 El proceso 6 no pudo ser inicializado
+2024/12/06 12:34:11 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 12:34:11 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 12:34:12 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {IO 120000}
+2024/12/06 12:53:06 Memoria inicializada con éxito.
+2024/12/06 12:53:06 El módulo memoria está a la escucha en el puerto :8002
+2024/12/06 12:53:15 ## Proceso creado -  PID: 1 - Tamaño: 12
+2024/12/06 12:53:15 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/06 12:53:16 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 12:53:16 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 12:53:16 ## Proceso creado -  PID: 2 - Tamaño: 8
+2024/12/06 12:53:16 ## Hilo creado - (PID:TID) - (2:0)
+2024/12/06 12:53:16 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 12:53:16 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 12:53:16 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {SET DX 0}
+2024/12/06 12:53:17 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {SET AX 64}
+2024/12/06 12:53:17 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 12:53:17 ## Escritura - (PID:TID) - (2:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 12:53:17 ## Contexto actualizado - (PID:TID) - (2:0)
+2024/12/06 12:53:17 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 12:53:18 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 48 0}
+2024/12/06 12:53:18 ## Proceso creado -  PID: 3 - Tamaño: 48
+2024/12/06 12:53:18 ## Hilo creado - (PID:TID) - (3:0)
+2024/12/06 12:53:18 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 12:53:18 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 12:53:18 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 12:53:18 ## Leer Memoria - Direccion:  32
+2024/12/06 12:53:18 ## Nuevo Valor: 64
+2024/12/06 12:53:18 ## Lectura - (PID:TID) - (2:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 12:53:19 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {LOG BX}
+2024/12/06 12:53:19 ## Contexto actualizado - (PID:TID) - (2:0)
+2024/12/06 12:53:19 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 12:53:19 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {SET DX 0}
+2024/12/06 12:53:19 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {SET AX 64}
+2024/12/06 12:53:20 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 12:53:20 ## Escritura - (PID:TID) - (3:0) - Dir. Física: 48 - Tamaño: 4
+2024/12/06 12:53:20 ## Contexto actualizado - (PID:TID) - (3:0)
+2024/12/06 12:53:20 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 12:53:20 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 96 0}
+2024/12/06 12:53:20 ## Proceso creado -  PID: 4 - Tamaño: 96
+2024/12/06 12:53:20 ## Hilo creado - (PID:TID) - (4:0)
+2024/12/06 12:53:21 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 12:53:21 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 12:53:21 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {IO 120000}
+2024/12/06 12:53:21 ## Contexto actualizado - (PID:TID) - (2:0)
+2024/12/06 12:53:21 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 12:53:22 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 12:53:22 ## Leer Memoria - Direccion:  48
+2024/12/06 12:53:22 ## Nuevo Valor: 64
+2024/12/06 12:53:22 ## Lectura - (PID:TID) - (3:0) - Dir. Física: 48 - Tamaño: 4
+2024/12/06 12:53:22 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {LOG BX}
+2024/12/06 12:53:22 ## Contexto actualizado - (PID:TID) - (3:0)
+2024/12/06 12:53:22 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 12:53:23 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {SET DX 0}
+2024/12/06 12:53:23 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {SET AX 64}
+2024/12/06 12:53:23 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 12:53:23 ## Escritura - (PID:TID) - (4:0) - Dir. Física: 112 - Tamaño: 4
+2024/12/06 12:53:23 ## Contexto actualizado - (PID:TID) - (4:0)
+2024/12/06 12:53:24 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 12:53:24 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 12 0}
+2024/12/06 12:53:24 ## Proceso creado -  PID: 5 - Tamaño: 12
+2024/12/06 12:53:24 ## Hilo creado - (PID:TID) - (5:0)
+2024/12/06 12:53:24 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 12:53:24 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 12:53:24 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {IO 120000}
+2024/12/06 12:53:25 ## Contexto actualizado - (PID:TID) - (3:0)
+2024/12/06 12:53:25 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 12:53:25 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 12:53:25 ## Leer Memoria - Direccion:  112
+2024/12/06 12:53:25 ## Nuevo Valor: 64
+2024/12/06 12:53:25 ## Lectura - (PID:TID) - (4:0) - Dir. Física: 112 - Tamaño: 4
+2024/12/06 12:53:25 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {LOG BX}
+2024/12/06 12:53:26 ## Contexto actualizado - (PID:TID) - (4:0)
+2024/12/06 12:53:26 ## Contexto solicitado - (PID:TID) - (5:0)
+2024/12/06 12:53:26 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {SET DX 0}
+2024/12/06 12:53:26 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {SET AX 64}
+2024/12/06 12:53:26 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 12:53:27 ## Escritura - (PID:TID) - (5:0) - Dir. Física: 240 - Tamaño: 4
+2024/12/06 12:53:27 ## Contexto actualizado - (PID:TID) - (5:0)
+2024/12/06 12:53:27 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 12:53:27 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 12:53:27 El proceso 6 no pudo ser inicializado
+2024/12/06 12:53:27 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 12:53:28 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 12:53:28 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {IO 120000}
+2024/12/06 12:53:28 ## Contexto actualizado - (PID:TID) - (4:0)
+2024/12/06 12:53:28 ## Contexto solicitado - (PID:TID) - (5:0)
+2024/12/06 12:53:28 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 12:53:29 ## Leer Memoria - Direccion:  240
+2024/12/06 12:53:29 ## Nuevo Valor: 64
+2024/12/06 12:53:29 ## Lectura - (PID:TID) - (5:0) - Dir. Física: 240 - Tamaño: 4
+2024/12/06 12:53:29 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {LOG BX}
+2024/12/06 12:53:29 ## Contexto actualizado - (PID:TID) - (5:0)
+2024/12/06 12:53:29 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 12:53:29 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 12:53:29 El proceso 7 no pudo ser inicializado
+2024/12/06 12:53:30 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 12:53:30 ## Contexto solicitado - (PID:TID) - (5:0)
+2024/12/06 12:53:30 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {IO 120000}
+2024/12/06 12:53:30 ## Contexto actualizado - (PID:TID) - (5:0)
+2024/12/06 12:53:30 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 12:53:31 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 12:53:31 El proceso 8 no pudo ser inicializado
+2024/12/06 12:53:31 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 12:53:31 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 12:53:31 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 12:53:31 El proceso 9 no pudo ser inicializado
+2024/12/06 12:53:31 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 12:53:32 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 12:53:32 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/06 12:53:32 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 64}
+2024/12/06 12:53:32 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 12:53:32 ## Escritura - (PID:TID) - (1:0) - Dir. Física: 0 - Tamaño: 4
+2024/12/06 12:53:33 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 12:53:33 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 12:53:33 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 12:53:33 ## Leer Memoria - Direccion:  0
+2024/12/06 12:53:33 ## Nuevo Valor: 64
+2024/12/06 12:53:33 ## Lectura - (PID:TID) - (1:0) - Dir. Física: 0 - Tamaño: 4
+2024/12/06 12:53:34 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {LOG BX}
+2024/12/06 12:53:34 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 12:53:34 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 12:53:34 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {IO 120000}
+2024/12/06 12:53:34 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 12:54:42 Memoria inicializada con éxito.
+2024/12/06 12:54:42 El módulo memoria está a la escucha en el puerto :8002
+2024/12/06 12:54:52 ## Proceso creado -  PID: 1 - Tamaño: 12
+2024/12/06 12:54:52 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/06 12:54:52 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 12:54:52 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 12:54:52 ## Proceso creado -  PID: 2 - Tamaño: 8
+2024/12/06 12:54:52 ## Hilo creado - (PID:TID) - (2:0)
+2024/12/06 12:54:52 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 12:54:53 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 12:54:53 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {SET DX 0}
+2024/12/06 12:54:53 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {SET AX 64}
+2024/12/06 12:54:53 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 12:54:53 ## Escritura - (PID:TID) - (2:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 12:54:54 ## Contexto actualizado - (PID:TID) - (2:0)
+2024/12/06 12:54:54 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 12:54:54 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 48 0}
+2024/12/06 12:54:54 ## Proceso creado -  PID: 3 - Tamaño: 48
+2024/12/06 12:54:54 ## Hilo creado - (PID:TID) - (3:0)
+2024/12/06 12:54:54 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 12:54:54 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 12:54:55 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 12:54:55 ## Leer Memoria - Direccion:  32
+2024/12/06 12:54:55 ## Nuevo Valor: 64
+2024/12/06 12:54:55 ## Lectura - (PID:TID) - (2:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 12:54:55 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {LOG BX}
+2024/12/06 12:54:55 ## Contexto actualizado - (PID:TID) - (2:0)
+2024/12/06 12:54:55 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 12:54:56 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {SET DX 0}
+2024/12/06 12:54:56 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {SET AX 64}
+2024/12/06 12:54:56 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 12:54:56 ## Escritura - (PID:TID) - (3:0) - Dir. Física: 48 - Tamaño: 4
+2024/12/06 12:54:56 ## Contexto actualizado - (PID:TID) - (3:0)
+2024/12/06 12:54:57 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 12:54:57 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 96 0}
+2024/12/06 12:54:57 ## Proceso creado -  PID: 4 - Tamaño: 96
+2024/12/06 12:54:57 ## Hilo creado - (PID:TID) - (4:0)
+2024/12/06 12:54:57 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 12:54:57 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 12:54:57 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {IO 120000}
+2024/12/06 12:54:58 ## Contexto actualizado - (PID:TID) - (2:0)
+2024/12/06 12:54:58 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 12:54:58 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 12:54:58 ## Leer Memoria - Direccion:  48
+2024/12/06 12:54:58 ## Nuevo Valor: 64
+2024/12/06 12:54:58 ## Lectura - (PID:TID) - (3:0) - Dir. Física: 48 - Tamaño: 4
+2024/12/06 12:54:58 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {LOG BX}
+2024/12/06 12:54:59 ## Contexto actualizado - (PID:TID) - (3:0)
+2024/12/06 12:54:59 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 12:54:59 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {SET DX 0}
+2024/12/06 12:54:59 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {SET AX 64}
+2024/12/06 12:54:59 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 12:55:00 ## Escritura - (PID:TID) - (4:0) - Dir. Física: 112 - Tamaño: 4
+2024/12/06 12:55:00 ## Contexto actualizado - (PID:TID) - (4:0)
+2024/12/06 12:55:00 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 12:55:00 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 12 0}
+2024/12/06 12:55:00 ## Proceso creado -  PID: 5 - Tamaño: 12
+2024/12/06 12:55:00 ## Hilo creado - (PID:TID) - (5:0)
+2024/12/06 12:55:00 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 12:55:01 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 12:55:01 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {IO 120000}
+2024/12/06 12:55:01 ## Contexto actualizado - (PID:TID) - (3:0)
+2024/12/06 12:55:01 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 12:55:01 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 12:55:02 ## Leer Memoria - Direccion:  112
+2024/12/06 12:55:02 ## Nuevo Valor: 64
+2024/12/06 12:55:02 ## Lectura - (PID:TID) - (4:0) - Dir. Física: 112 - Tamaño: 4
+2024/12/06 12:55:02 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {LOG BX}
+2024/12/06 12:55:02 ## Contexto actualizado - (PID:TID) - (4:0)
+2024/12/06 12:55:02 ## Contexto solicitado - (PID:TID) - (5:0)
+2024/12/06 12:55:02 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {SET DX 0}
+2024/12/06 12:55:03 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {SET AX 64}
+2024/12/06 12:55:03 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 12:55:03 ## Escritura - (PID:TID) - (5:0) - Dir. Física: 240 - Tamaño: 4
+2024/12/06 12:55:03 ## Contexto actualizado - (PID:TID) - (5:0)
+2024/12/06 12:55:03 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 12:55:04 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 12:55:04 El proceso 6 no pudo ser inicializado
+2024/12/06 12:55:04 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 12:55:04 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 12:55:04 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {IO 120000}
+2024/12/06 12:55:04 ## Contexto actualizado - (PID:TID) - (4:0)
+2024/12/06 12:55:05 ## Contexto solicitado - (PID:TID) - (5:0)
+2024/12/06 12:55:05 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 12:55:05 ## Leer Memoria - Direccion:  240
+2024/12/06 12:55:05 ## Nuevo Valor: 64
+2024/12/06 12:55:05 ## Lectura - (PID:TID) - (5:0) - Dir. Física: 240 - Tamaño: 4
+2024/12/06 12:55:05 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {LOG BX}
+2024/12/06 12:55:05 ## Contexto actualizado - (PID:TID) - (5:0)
+2024/12/06 12:55:06 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 12:55:06 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 12:55:06 El proceso 7 no pudo ser inicializado
+2024/12/06 12:55:06 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 12:55:06 ## Contexto solicitado - (PID:TID) - (5:0)
+2024/12/06 12:55:06 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {IO 120000}
+2024/12/06 12:55:07 ## Contexto actualizado - (PID:TID) - (5:0)
+2024/12/06 12:55:07 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 12:55:07 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 12:55:07 El proceso 8 no pudo ser inicializado
+2024/12/06 12:55:07 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 12:55:07 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 12:55:08 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 12:55:08 El proceso 9 no pudo ser inicializado
+2024/12/06 12:55:08 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 12:55:08 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 12:55:08 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/06 12:55:09 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 64}
+2024/12/06 12:55:09 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 12:55:09 ## Escritura - (PID:TID) - (1:0) - Dir. Física: 0 - Tamaño: 4
+2024/12/06 12:55:09 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 12:55:09 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 12:55:10 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 12:55:10 ## Leer Memoria - Direccion:  0
+2024/12/06 12:55:10 ## Nuevo Valor: 64
+2024/12/06 12:55:10 ## Lectura - (PID:TID) - (1:0) - Dir. Física: 0 - Tamaño: 4
+2024/12/06 12:55:10 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {LOG BX}
+2024/12/06 12:55:10 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 12:55:10 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 12:55:11 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {IO 120000}
+2024/12/06 12:55:11 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 12:55:39 Memoria inicializada con éxito.
+2024/12/06 12:55:39 El módulo memoria está a la escucha en el puerto :8002
+2024/12/06 12:55:47 ## Proceso creado -  PID: 1 - Tamaño: 12
+2024/12/06 12:55:47 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/06 12:55:47 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 12:55:47 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 12:55:47 ## Proceso creado -  PID: 2 - Tamaño: 8
+2024/12/06 12:55:47 ## Hilo creado - (PID:TID) - (2:0)
+2024/12/06 12:55:47 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 12:55:48 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 12:55:48 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {SET DX 0}
+2024/12/06 12:55:48 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {SET AX 64}
+2024/12/06 12:55:48 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 12:55:48 ## Escritura - (PID:TID) - (2:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 12:55:49 ## Contexto actualizado - (PID:TID) - (2:0)
+2024/12/06 12:55:49 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 12:55:49 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 48 0}
+2024/12/06 12:55:49 ## Proceso creado -  PID: 3 - Tamaño: 48
+2024/12/06 12:55:49 ## Hilo creado - (PID:TID) - (3:0)
+2024/12/06 12:55:49 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 12:55:49 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 12:55:50 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 12:55:50 ## Leer Memoria - Direccion:  32
+2024/12/06 12:55:50 ## Nuevo Valor: 64
+2024/12/06 12:55:50 ## Lectura - (PID:TID) - (2:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 12:55:50 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {LOG BX}
+2024/12/06 12:55:50 ## Contexto actualizado - (PID:TID) - (2:0)
+2024/12/06 12:55:50 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 12:55:51 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {SET DX 0}
+2024/12/06 12:55:51 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {SET AX 64}
+2024/12/06 12:55:51 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 12:55:51 ## Escritura - (PID:TID) - (3:0) - Dir. Física: 48 - Tamaño: 4
+2024/12/06 12:55:51 ## Contexto actualizado - (PID:TID) - (3:0)
+2024/12/06 12:55:52 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 12:55:52 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 96 0}
+2024/12/06 12:55:52 ## Proceso creado -  PID: 4 - Tamaño: 96
+2024/12/06 12:55:52 ## Hilo creado - (PID:TID) - (4:0)
+2024/12/06 12:55:52 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 12:55:52 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 12:55:52 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {IO 120000}
+2024/12/06 12:55:53 ## Contexto actualizado - (PID:TID) - (2:0)
+2024/12/06 12:55:53 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 12:55:53 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 12:55:53 ## Leer Memoria - Direccion:  48
+2024/12/06 12:55:53 ## Nuevo Valor: 64
+2024/12/06 12:55:53 ## Lectura - (PID:TID) - (3:0) - Dir. Física: 48 - Tamaño: 4
+2024/12/06 12:55:53 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {LOG BX}
+2024/12/06 12:55:54 ## Contexto actualizado - (PID:TID) - (3:0)
+2024/12/06 12:55:54 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 12:55:54 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {SET DX 0}
+2024/12/06 12:55:54 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {SET AX 64}
+2024/12/06 12:55:54 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 12:55:55 ## Escritura - (PID:TID) - (4:0) - Dir. Física: 112 - Tamaño: 4
+2024/12/06 12:55:55 ## Contexto actualizado - (PID:TID) - (4:0)
+2024/12/06 12:55:55 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 12:55:55 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 12 0}
+2024/12/06 12:55:55 ## Proceso creado -  PID: 5 - Tamaño: 12
+2024/12/06 12:55:55 ## Hilo creado - (PID:TID) - (5:0)
+2024/12/06 12:55:55 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 12:55:56 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 12:55:56 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {IO 120000}
+2024/12/06 12:55:56 ## Contexto actualizado - (PID:TID) - (3:0)
+2024/12/06 12:55:56 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 12:55:56 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 12:55:57 ## Leer Memoria - Direccion:  112
+2024/12/06 12:55:57 ## Nuevo Valor: 64
+2024/12/06 12:55:57 ## Lectura - (PID:TID) - (4:0) - Dir. Física: 112 - Tamaño: 4
+2024/12/06 12:55:57 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {LOG BX}
+2024/12/06 12:55:57 ## Contexto actualizado - (PID:TID) - (4:0)
+2024/12/06 12:55:57 ## Contexto solicitado - (PID:TID) - (5:0)
+2024/12/06 12:55:57 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {SET DX 0}
+2024/12/06 12:55:58 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {SET AX 64}
+2024/12/06 12:55:58 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 12:55:58 ## Escritura - (PID:TID) - (5:0) - Dir. Física: 240 - Tamaño: 4
+2024/12/06 12:55:58 ## Contexto actualizado - (PID:TID) - (5:0)
+2024/12/06 12:55:58 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 12:55:59 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 12:55:59 El proceso 6 no pudo ser inicializado
+2024/12/06 12:55:59 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 12:55:59 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 12:55:59 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {IO 120000}
+2024/12/06 12:55:59 ## Contexto actualizado - (PID:TID) - (4:0)
+2024/12/06 12:56:00 ## Contexto solicitado - (PID:TID) - (5:0)
+2024/12/06 12:56:00 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 12:56:00 ## Leer Memoria - Direccion:  240
+2024/12/06 12:56:00 ## Nuevo Valor: 64
+2024/12/06 12:56:00 ## Lectura - (PID:TID) - (5:0) - Dir. Física: 240 - Tamaño: 4
+2024/12/06 12:56:00 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {LOG BX}
+2024/12/06 12:56:00 ## Contexto actualizado - (PID:TID) - (5:0)
+2024/12/06 12:56:01 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 12:56:01 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 12:56:01 El proceso 7 no pudo ser inicializado
+2024/12/06 12:56:01 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 12:56:01 ## Contexto solicitado - (PID:TID) - (5:0)
+2024/12/06 12:56:01 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {IO 120000}
+2024/12/06 12:56:02 ## Contexto actualizado - (PID:TID) - (5:0)
+2024/12/06 12:56:02 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 12:56:02 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 12:56:02 El proceso 8 no pudo ser inicializado
+2024/12/06 12:56:02 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 12:56:02 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 12:56:03 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 12:56:03 El proceso 9 no pudo ser inicializado
+2024/12/06 12:56:03 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 12:56:03 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 12:56:03 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/06 12:56:03 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 64}
+2024/12/06 12:56:04 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 12:56:04 ## Escritura - (PID:TID) - (1:0) - Dir. Física: 0 - Tamaño: 4
+2024/12/06 12:56:04 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 12:56:04 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 12:56:04 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 12:56:05 ## Leer Memoria - Direccion:  0
+2024/12/06 12:56:05 ## Nuevo Valor: 64
+2024/12/06 12:56:05 ## Lectura - (PID:TID) - (1:0) - Dir. Física: 0 - Tamaño: 4
+2024/12/06 12:56:05 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {LOG BX}
+2024/12/06 12:56:05 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 12:56:05 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 12:56:05 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {IO 120000}
+2024/12/06 12:56:06 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:04:08 Memoria inicializada con éxito.
+2024/12/06 13:04:08 El módulo memoria está a la escucha en el puerto :8002
+2024/12/06 13:04:18 ## Proceso creado -  PID: 1 - Tamaño: 12
+2024/12/06 13:04:18 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/06 13:04:18 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:04:18 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 13:04:18 ## Proceso creado -  PID: 2 - Tamaño: 8
+2024/12/06 13:04:18 ## Hilo creado - (PID:TID) - (2:0)
+2024/12/06 13:04:19 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:04:19 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 13:04:19 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {SET DX 0}
+2024/12/06 13:04:19 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {SET AX 64}
+2024/12/06 13:04:19 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 13:04:20 ## Escritura - (PID:TID) - (2:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 13:04:20 ## Contexto actualizado - (PID:TID) - (2:0)
+2024/12/06 13:04:20 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:04:20 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 48 0}
+2024/12/06 13:04:20 ## Proceso creado -  PID: 3 - Tamaño: 48
+2024/12/06 13:04:20 ## Hilo creado - (PID:TID) - (3:0)
+2024/12/06 13:04:20 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:04:21 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 13:04:21 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 13:04:21 ## Leer Memoria - Direccion:  32
+2024/12/06 13:04:21 ## Nuevo Valor: 64
+2024/12/06 13:04:21 ## Lectura - (PID:TID) - (2:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 13:04:21 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {LOG BX}
+2024/12/06 13:04:21 ## Contexto actualizado - (PID:TID) - (2:0)
+2024/12/06 13:04:22 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 13:04:22 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {SET DX 0}
+2024/12/06 13:04:22 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {SET AX 64}
+2024/12/06 13:04:22 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 13:04:22 ## Escritura - (PID:TID) - (3:0) - Dir. Física: 48 - Tamaño: 4
+2024/12/06 13:04:23 ## Contexto actualizado - (PID:TID) - (3:0)
+2024/12/06 13:04:23 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:04:23 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 96 0}
+2024/12/06 13:04:23 ## Proceso creado -  PID: 4 - Tamaño: 96
+2024/12/06 13:04:23 ## Hilo creado - (PID:TID) - (4:0)
+2024/12/06 13:04:23 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:04:23 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 13:04:24 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {IO 120000}
+2024/12/06 13:04:24 ## Contexto actualizado - (PID:TID) - (2:0)
+2024/12/06 13:04:24 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 13:04:24 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 13:04:25 ## Leer Memoria - Direccion:  48
+2024/12/06 13:04:25 ## Nuevo Valor: 64
+2024/12/06 13:04:25 ## Lectura - (PID:TID) - (3:0) - Dir. Física: 48 - Tamaño: 4
+2024/12/06 13:04:25 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {LOG BX}
+2024/12/06 13:04:25 ## Contexto actualizado - (PID:TID) - (3:0)
+2024/12/06 13:04:25 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 13:04:25 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {SET DX 0}
+2024/12/06 13:04:26 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {SET AX 64}
+2024/12/06 13:04:26 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 13:04:26 ## Escritura - (PID:TID) - (4:0) - Dir. Física: 112 - Tamaño: 4
+2024/12/06 13:04:26 ## Contexto actualizado - (PID:TID) - (4:0)
+2024/12/06 13:04:26 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:04:27 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 12 0}
+2024/12/06 13:04:27 ## Proceso creado -  PID: 5 - Tamaño: 12
+2024/12/06 13:04:27 ## Hilo creado - (PID:TID) - (5:0)
+2024/12/06 13:04:27 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:04:27 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 13:04:27 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {IO 120000}
+2024/12/06 13:04:27 ## Contexto actualizado - (PID:TID) - (3:0)
+2024/12/06 13:04:28 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 13:04:28 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 13:04:28 ## Leer Memoria - Direccion:  112
+2024/12/06 13:04:28 ## Nuevo Valor: 64
+2024/12/06 13:04:28 ## Lectura - (PID:TID) - (4:0) - Dir. Física: 112 - Tamaño: 4
+2024/12/06 13:04:28 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {LOG BX}
+2024/12/06 13:04:28 ## Contexto actualizado - (PID:TID) - (4:0)
+2024/12/06 13:04:29 ## Contexto solicitado - (PID:TID) - (5:0)
+2024/12/06 13:04:29 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {SET DX 0}
+2024/12/06 13:04:29 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {SET AX 64}
+2024/12/06 13:04:29 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 13:04:29 ## Escritura - (PID:TID) - (5:0) - Dir. Física: 240 - Tamaño: 4
+2024/12/06 13:04:30 ## Contexto actualizado - (PID:TID) - (5:0)
+2024/12/06 13:04:30 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:04:30 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 13:04:30 El proceso 6 no pudo ser inicializado
+2024/12/06 13:04:30 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:04:30 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 13:04:31 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {IO 120000}
+2024/12/06 13:04:31 ## Contexto actualizado - (PID:TID) - (4:0)
+2024/12/06 13:04:31 ## Contexto solicitado - (PID:TID) - (5:0)
+2024/12/06 13:04:31 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 13:04:31 ## Leer Memoria - Direccion:  240
+2024/12/06 13:04:31 ## Nuevo Valor: 64
+2024/12/06 13:04:31 ## Lectura - (PID:TID) - (5:0) - Dir. Física: 240 - Tamaño: 4
+2024/12/06 13:04:32 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {LOG BX}
+2024/12/06 13:04:32 ## Contexto actualizado - (PID:TID) - (5:0)
+2024/12/06 13:04:32 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:04:32 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 13:04:32 El proceso 7 no pudo ser inicializado
+2024/12/06 13:04:32 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:04:33 ## Contexto solicitado - (PID:TID) - (5:0)
+2024/12/06 13:04:33 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {IO 120000}
+2024/12/06 13:04:33 ## Contexto actualizado - (PID:TID) - (5:0)
+2024/12/06 13:04:33 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:04:33 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 13:04:33 El proceso 8 no pudo ser inicializado
+2024/12/06 13:04:34 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:04:34 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:04:34 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 13:04:34 El proceso 9 no pudo ser inicializado
+2024/12/06 13:04:34 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:04:34 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:04:35 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/06 13:04:35 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 64}
+2024/12/06 13:04:35 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 13:04:35 ## Escritura - (PID:TID) - (1:0) - Dir. Física: 0 - Tamaño: 4
+2024/12/06 13:04:35 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:04:36 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:04:36 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 13:04:36 ## Leer Memoria - Direccion:  0
+2024/12/06 13:04:36 ## Nuevo Valor: 64
+2024/12/06 13:04:36 ## Lectura - (PID:TID) - (1:0) - Dir. Física: 0 - Tamaño: 4
+2024/12/06 13:04:36 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {LOG BX}
+2024/12/06 13:04:36 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:04:37 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:04:37 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {IO 120000}
+2024/12/06 13:04:37 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:05:15 Memoria inicializada con éxito.
+2024/12/06 13:05:15 El módulo memoria está a la escucha en el puerto :8002
+2024/12/06 13:05:25 ## Proceso creado -  PID: 1 - Tamaño: 12
+2024/12/06 13:05:25 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/06 13:05:25 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:05:25 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 13:05:25 ## Proceso creado -  PID: 2 - Tamaño: 8
+2024/12/06 13:05:25 ## Hilo creado - (PID:TID) - (2:0)
+2024/12/06 13:05:25 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:05:26 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 13:05:26 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {SET DX 0}
+2024/12/06 13:05:26 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {SET AX 64}
+2024/12/06 13:05:26 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 13:05:26 ## Escritura - (PID:TID) - (2:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 13:05:27 ## Contexto actualizado - (PID:TID) - (2:0)
+2024/12/06 13:05:27 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:05:27 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 48 0}
+2024/12/06 13:05:27 ## Proceso creado -  PID: 3 - Tamaño: 48
+2024/12/06 13:05:27 ## Hilo creado - (PID:TID) - (3:0)
+2024/12/06 13:05:27 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:05:27 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 13:05:28 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 13:05:28 ## Leer Memoria - Direccion:  32
+2024/12/06 13:05:28 ## Nuevo Valor: 64
+2024/12/06 13:05:28 ## Lectura - (PID:TID) - (2:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 13:05:28 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {LOG BX}
+2024/12/06 13:05:28 ## Contexto actualizado - (PID:TID) - (2:0)
+2024/12/06 13:05:28 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 13:05:29 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {SET DX 0}
+2024/12/06 13:05:29 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {SET AX 64}
+2024/12/06 13:05:29 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 13:05:29 ## Escritura - (PID:TID) - (3:0) - Dir. Física: 48 - Tamaño: 4
+2024/12/06 13:05:29 ## Contexto actualizado - (PID:TID) - (3:0)
+2024/12/06 13:05:30 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:05:30 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 96 0}
+2024/12/06 13:05:30 ## Proceso creado -  PID: 4 - Tamaño: 96
+2024/12/06 13:05:30 ## Hilo creado - (PID:TID) - (4:0)
+2024/12/06 13:05:30 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:05:30 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 13:05:30 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {IO 12000}
+2024/12/06 13:05:31 ## Contexto actualizado - (PID:TID) - (2:0)
+2024/12/06 13:05:31 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 13:05:31 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 13:05:31 ## Leer Memoria - Direccion:  48
+2024/12/06 13:05:31 ## Nuevo Valor: 64
+2024/12/06 13:05:31 ## Lectura - (PID:TID) - (3:0) - Dir. Física: 48 - Tamaño: 4
+2024/12/06 13:05:31 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {LOG BX}
+2024/12/06 13:05:32 ## Contexto actualizado - (PID:TID) - (3:0)
+2024/12/06 13:05:32 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 13:05:32 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {SET DX 0}
+2024/12/06 13:05:32 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {SET AX 64}
+2024/12/06 13:05:32 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 13:05:33 ## Escritura - (PID:TID) - (4:0) - Dir. Física: 112 - Tamaño: 4
+2024/12/06 13:05:33 ## Contexto actualizado - (PID:TID) - (4:0)
+2024/12/06 13:05:33 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:05:33 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 12 0}
+2024/12/06 13:05:33 ## Proceso creado -  PID: 5 - Tamaño: 12
+2024/12/06 13:05:33 ## Hilo creado - (PID:TID) - (5:0)
+2024/12/06 13:05:33 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:05:34 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 13:05:34 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {IO 12000}
+2024/12/06 13:05:34 ## Contexto actualizado - (PID:TID) - (3:0)
+2024/12/06 13:05:34 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 13:05:34 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 13:05:35 ## Leer Memoria - Direccion:  112
+2024/12/06 13:05:35 ## Nuevo Valor: 64
+2024/12/06 13:05:35 ## Lectura - (PID:TID) - (4:0) - Dir. Física: 112 - Tamaño: 4
+2024/12/06 13:05:35 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {LOG BX}
+2024/12/06 13:05:35 ## Contexto actualizado - (PID:TID) - (4:0)
+2024/12/06 13:05:35 ## Contexto solicitado - (PID:TID) - (5:0)
+2024/12/06 13:05:35 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {SET DX 0}
+2024/12/06 13:05:36 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {SET AX 64}
+2024/12/06 13:05:36 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 13:05:36 ## Escritura - (PID:TID) - (5:0) - Dir. Física: 240 - Tamaño: 4
+2024/12/06 13:05:36 ## Contexto actualizado - (PID:TID) - (5:0)
+2024/12/06 13:05:36 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:05:37 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 13:05:37 El proceso 6 no pudo ser inicializado
+2024/12/06 13:05:37 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:05:37 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 13:05:37 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {IO 12000}
+2024/12/06 13:05:38 ## Contexto actualizado - (PID:TID) - (4:0)
+2024/12/06 13:05:38 ## Contexto solicitado - (PID:TID) - (5:0)
+2024/12/06 13:05:38 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 13:05:38 ## Leer Memoria - Direccion:  240
+2024/12/06 13:05:38 ## Nuevo Valor: 64
+2024/12/06 13:05:38 ## Lectura - (PID:TID) - (5:0) - Dir. Física: 240 - Tamaño: 4
+2024/12/06 13:05:38 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {LOG BX}
+2024/12/06 13:05:39 ## Contexto actualizado - (PID:TID) - (5:0)
+2024/12/06 13:05:39 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:05:39 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 13:05:39 El proceso 7 no pudo ser inicializado
+2024/12/06 13:05:39 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:05:39 ## Contexto solicitado - (PID:TID) - (5:0)
+2024/12/06 13:05:40 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {IO 12000}
+2024/12/06 13:05:40 ## Contexto actualizado - (PID:TID) - (5:0)
+2024/12/06 13:05:40 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:05:40 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 13:05:40 El proceso 8 no pudo ser inicializado
+2024/12/06 13:05:40 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:05:41 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:05:41 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 13:05:41 El proceso 9 no pudo ser inicializado
+2024/12/06 13:05:41 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:05:41 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:05:41 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/06 13:05:42 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 64}
+2024/12/06 13:05:42 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 13:05:42 ## Escritura - (PID:TID) - (1:0) - Dir. Física: 0 - Tamaño: 4
+2024/12/06 13:05:42 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:05:42 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:05:43 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 13:05:43 ## Leer Memoria - Direccion:  0
+2024/12/06 13:05:43 ## Nuevo Valor: 64
+2024/12/06 13:05:43 ## Lectura - (PID:TID) - (1:0) - Dir. Física: 0 - Tamaño: 4
+2024/12/06 13:05:43 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {LOG BX}
+2024/12/06 13:10:54 Memoria inicializada con éxito.
+2024/12/06 13:10:54 El módulo memoria está a la escucha en el puerto :8002
+2024/12/06 13:10:59 ## Proceso creado -  PID: 1 - Tamaño: 12
+2024/12/06 13:10:59 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/06 13:11:00 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:11:00 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 13:11:00 ## Proceso creado -  PID: 2 - Tamaño: 8
+2024/12/06 13:11:00 ## Hilo creado - (PID:TID) - (2:0)
+2024/12/06 13:11:00 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:11:00 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 13:11:00 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {SET DX 0}
+2024/12/06 13:11:01 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {SET AX 64}
+2024/12/06 13:11:01 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 13:11:01 ## Escritura - (PID:TID) - (2:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 13:11:01 ## Contexto actualizado - (PID:TID) - (2:0)
+2024/12/06 13:11:01 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:11:02 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 48 0}
+2024/12/06 13:11:02 ## Proceso creado -  PID: 3 - Tamaño: 48
+2024/12/06 13:11:02 ## Hilo creado - (PID:TID) - (3:0)
+2024/12/06 13:11:02 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:11:02 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 13:11:02 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 13:11:02 ## Leer Memoria - Direccion:  32
+2024/12/06 13:11:02 ## Nuevo Valor: 64
+2024/12/06 13:11:02 ## Lectura - (PID:TID) - (2:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 13:11:03 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {LOG BX}
+2024/12/06 13:11:03 ## Contexto actualizado - (PID:TID) - (2:0)
+2024/12/06 13:11:03 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 13:11:03 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {SET DX 0}
+2024/12/06 13:11:03 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {SET AX 64}
+2024/12/06 13:11:04 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 13:11:04 ## Escritura - (PID:TID) - (3:0) - Dir. Física: 48 - Tamaño: 4
+2024/12/06 13:11:04 ## Contexto actualizado - (PID:TID) - (3:0)
+2024/12/06 13:11:04 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:11:04 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 96 0}
+2024/12/06 13:11:04 ## Proceso creado -  PID: 4 - Tamaño: 96
+2024/12/06 13:11:04 ## Hilo creado - (PID:TID) - (4:0)
+2024/12/06 13:11:05 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:11:05 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 13:11:05 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {IO 12000}
+2024/12/06 13:11:05 ## Contexto actualizado - (PID:TID) - (2:0)
+2024/12/06 13:11:05 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 13:11:06 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 13:11:06 ## Leer Memoria - Direccion:  48
+2024/12/06 13:11:06 ## Nuevo Valor: 64
+2024/12/06 13:11:06 ## Lectura - (PID:TID) - (3:0) - Dir. Física: 48 - Tamaño: 4
+2024/12/06 13:11:06 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {LOG BX}
+2024/12/06 13:11:06 ## Contexto actualizado - (PID:TID) - (3:0)
+2024/12/06 13:11:07 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 13:11:07 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {SET DX 0}
+2024/12/06 13:11:07 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {SET AX 64}
+2024/12/06 13:11:07 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 13:11:07 ## Escritura - (PID:TID) - (4:0) - Dir. Física: 112 - Tamaño: 4
+2024/12/06 13:11:08 ## Contexto actualizado - (PID:TID) - (4:0)
+2024/12/06 13:11:08 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:11:08 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 12 0}
+2024/12/06 13:11:08 ## Proceso creado -  PID: 5 - Tamaño: 12
+2024/12/06 13:11:08 ## Hilo creado - (PID:TID) - (5:0)
+2024/12/06 13:11:08 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:11:08 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 13:11:09 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {IO 12000}
+2024/12/06 13:11:09 ## Contexto actualizado - (PID:TID) - (3:0)
+2024/12/06 13:11:09 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 13:11:09 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 13:11:09 ## Leer Memoria - Direccion:  112
+2024/12/06 13:11:09 ## Nuevo Valor: 64
+2024/12/06 13:11:09 ## Lectura - (PID:TID) - (4:0) - Dir. Física: 112 - Tamaño: 4
+2024/12/06 13:11:10 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {LOG BX}
+2024/12/06 13:11:10 ## Contexto actualizado - (PID:TID) - (4:0)
+2024/12/06 13:11:10 ## Contexto solicitado - (PID:TID) - (5:0)
+2024/12/06 13:11:10 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {SET DX 0}
+2024/12/06 13:11:10 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {SET AX 64}
+2024/12/06 13:11:11 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 13:11:11 ## Escritura - (PID:TID) - (5:0) - Dir. Física: 240 - Tamaño: 4
+2024/12/06 13:11:11 ## Contexto actualizado - (PID:TID) - (5:0)
+2024/12/06 13:11:11 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:11:11 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 13:11:11 El proceso 6 no pudo ser inicializado
+2024/12/06 13:11:12 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:11:12 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 13:11:12 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {IO 12000}
+2024/12/06 13:11:12 ## Contexto actualizado - (PID:TID) - (4:0)
+2024/12/06 13:11:12 ## Contexto solicitado - (PID:TID) - (5:0)
+2024/12/06 13:11:13 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 13:11:13 ## Leer Memoria - Direccion:  240
+2024/12/06 13:11:13 ## Nuevo Valor: 64
+2024/12/06 13:11:13 ## Lectura - (PID:TID) - (5:0) - Dir. Física: 240 - Tamaño: 4
+2024/12/06 13:11:13 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {LOG BX}
+2024/12/06 13:11:13 ## Contexto actualizado - (PID:TID) - (5:0)
+2024/12/06 13:11:13 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:11:14 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 13:11:14 El proceso 7 no pudo ser inicializado
+2024/12/06 13:11:14 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:11:14 ## Contexto solicitado - (PID:TID) - (5:0)
+2024/12/06 13:11:14 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {IO 12000}
+2024/12/06 13:11:14 ## Contexto actualizado - (PID:TID) - (5:0)
+2024/12/06 13:11:15 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:11:15 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 13:11:15 El proceso 8 no pudo ser inicializado
+2024/12/06 13:11:15 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:11:15 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:11:15 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 13:11:15 El proceso 9 no pudo ser inicializado
+2024/12/06 13:11:16 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:11:16 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:11:16 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/06 13:11:16 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 64}
+2024/12/06 13:11:16 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 13:11:17 ## Escritura - (PID:TID) - (1:0) - Dir. Física: 0 - Tamaño: 4
+2024/12/06 13:11:17 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:11:17 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:11:17 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 13:11:17 ## Leer Memoria - Direccion:  0
+2024/12/06 13:11:17 ## Nuevo Valor: 64
+2024/12/06 13:11:17 ## Lectura - (PID:TID) - (1:0) - Dir. Física: 0 - Tamaño: 4
+2024/12/06 13:11:18 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {LOG BX}
+2024/12/06 13:12:17 Memoria inicializada con éxito.
+2024/12/06 13:12:17 El módulo memoria está a la escucha en el puerto :8002
+2024/12/06 13:12:24 ## Proceso creado -  PID: 1 - Tamaño: 12
+2024/12/06 13:12:24 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/06 13:12:24 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:12:24 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 13:12:24 ## Proceso creado -  PID: 2 - Tamaño: 8
+2024/12/06 13:12:24 ## Hilo creado - (PID:TID) - (2:0)
+2024/12/06 13:12:24 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:12:24 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 13:12:25 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {SET DX 0}
+2024/12/06 13:12:25 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {SET AX 64}
+2024/12/06 13:12:25 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 13:12:25 ## Escritura - (PID:TID) - (2:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 13:12:25 ## Contexto actualizado - (PID:TID) - (2:0)
+2024/12/06 13:12:26 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:12:26 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 48 0}
+2024/12/06 13:12:26 ## Proceso creado -  PID: 3 - Tamaño: 48
+2024/12/06 13:12:26 ## Hilo creado - (PID:TID) - (3:0)
+2024/12/06 13:12:26 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:12:26 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 13:12:26 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 13:12:27 ## Leer Memoria - Direccion:  32
+2024/12/06 13:12:27 ## Nuevo Valor: 64
+2024/12/06 13:12:27 ## Lectura - (PID:TID) - (2:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 13:12:27 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {LOG BX}
+2024/12/06 13:12:27 ## Contexto actualizado - (PID:TID) - (2:0)
+2024/12/06 13:12:27 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 13:12:27 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {SET DX 0}
+2024/12/06 13:12:28 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {SET AX 64}
+2024/12/06 13:12:28 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 13:12:28 ## Escritura - (PID:TID) - (3:0) - Dir. Física: 48 - Tamaño: 4
+2024/12/06 13:12:28 ## Contexto actualizado - (PID:TID) - (3:0)
+2024/12/06 13:12:28 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:12:29 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 96 0}
+2024/12/06 13:12:29 ## Proceso creado -  PID: 4 - Tamaño: 96
+2024/12/06 13:12:29 ## Hilo creado - (PID:TID) - (4:0)
+2024/12/06 13:12:29 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:12:29 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 13:12:29 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {IO 12000}
+2024/12/06 13:12:29 ## Contexto actualizado - (PID:TID) - (2:0)
+2024/12/06 13:12:30 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 13:12:30 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 13:12:30 ## Leer Memoria - Direccion:  48
+2024/12/06 13:12:30 ## Nuevo Valor: 64
+2024/12/06 13:12:30 ## Lectura - (PID:TID) - (3:0) - Dir. Física: 48 - Tamaño: 4
+2024/12/06 13:12:30 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {LOG BX}
+2024/12/06 13:12:30 ## Contexto actualizado - (PID:TID) - (3:0)
+2024/12/06 13:12:31 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 13:12:31 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {SET DX 0}
+2024/12/06 13:12:31 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {SET AX 64}
+2024/12/06 13:12:31 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 13:12:31 ## Escritura - (PID:TID) - (4:0) - Dir. Física: 112 - Tamaño: 4
+2024/12/06 13:12:32 ## Contexto actualizado - (PID:TID) - (4:0)
+2024/12/06 13:12:32 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:12:32 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 12 0}
+2024/12/06 13:12:32 ## Proceso creado -  PID: 5 - Tamaño: 12
+2024/12/06 13:12:32 ## Hilo creado - (PID:TID) - (5:0)
+2024/12/06 13:12:32 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:12:32 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 13:12:33 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {IO 12000}
+2024/12/06 13:12:33 ## Contexto actualizado - (PID:TID) - (3:0)
+2024/12/06 13:12:33 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 13:12:33 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 13:12:33 ## Leer Memoria - Direccion:  112
+2024/12/06 13:12:33 ## Nuevo Valor: 64
+2024/12/06 13:12:33 ## Lectura - (PID:TID) - (4:0) - Dir. Física: 112 - Tamaño: 4
+2024/12/06 13:12:34 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {LOG BX}
+2024/12/06 13:12:34 ## Contexto actualizado - (PID:TID) - (4:0)
+2024/12/06 13:12:34 ## Contexto solicitado - (PID:TID) - (5:0)
+2024/12/06 13:12:34 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {SET DX 0}
+2024/12/06 13:12:34 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {SET AX 64}
+2024/12/06 13:12:35 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 13:12:35 ## Escritura - (PID:TID) - (5:0) - Dir. Física: 240 - Tamaño: 4
+2024/12/06 13:12:35 ## Contexto actualizado - (PID:TID) - (5:0)
+2024/12/06 13:12:35 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:12:35 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 13:12:35 El proceso 6 no pudo ser inicializado
+2024/12/06 13:12:36 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:12:36 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 13:12:36 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {IO 12000}
+2024/12/06 13:12:36 ## Contexto actualizado - (PID:TID) - (4:0)
+2024/12/06 13:12:36 ## Contexto solicitado - (PID:TID) - (5:0)
+2024/12/06 13:12:37 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 13:12:37 ## Leer Memoria - Direccion:  240
+2024/12/06 13:12:37 ## Nuevo Valor: 64
+2024/12/06 13:12:37 ## Lectura - (PID:TID) - (5:0) - Dir. Física: 240 - Tamaño: 4
+2024/12/06 13:12:37 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {LOG BX}
+2024/12/06 13:12:37 ## Contexto actualizado - (PID:TID) - (5:0)
+2024/12/06 13:12:37 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:12:38 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 13:12:38 El proceso 7 no pudo ser inicializado
+2024/12/06 13:12:38 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:12:38 ## Contexto solicitado - (PID:TID) - (5:0)
+2024/12/06 13:12:38 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {IO 12000}
+2024/12/06 13:12:38 ## Contexto actualizado - (PID:TID) - (5:0)
+2024/12/06 13:12:39 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:12:39 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 13:12:39 El proceso 8 no pudo ser inicializado
+2024/12/06 13:12:39 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:12:39 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:12:39 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 13:12:39 El proceso 9 no pudo ser inicializado
+2024/12/06 13:12:40 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:12:40 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:12:40 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/06 13:12:40 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 64}
+2024/12/06 13:12:40 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 13:12:41 ## Escritura - (PID:TID) - (1:0) - Dir. Física: 0 - Tamaño: 4
+2024/12/06 13:12:41 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:12:41 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:12:41 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 13:12:41 ## Leer Memoria - Direccion:  0
+2024/12/06 13:12:41 ## Nuevo Valor: 64
+2024/12/06 13:12:41 ## Lectura - (PID:TID) - (1:0) - Dir. Física: 0 - Tamaño: 4
+2024/12/06 13:12:42 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {LOG BX}
+2024/12/06 13:19:19 Memoria inicializada con éxito.
+2024/12/06 13:19:19 El módulo memoria está a la escucha en el puerto :8002
+2024/12/06 13:19:28 ## Proceso creado -  PID: 1 - Tamaño: 12
+2024/12/06 13:19:28 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/06 13:19:28 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:19:28 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 13:19:28 ## Proceso creado -  PID: 2 - Tamaño: 8
+2024/12/06 13:19:28 ## Hilo creado - (PID:TID) - (2:0)
+2024/12/06 13:19:28 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:19:28 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 13:19:29 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {SET DX 0}
+2024/12/06 13:19:29 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {SET AX 64}
+2024/12/06 13:19:29 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 13:19:29 ## Escritura - (PID:TID) - (2:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 13:19:29 ## Contexto actualizado - (PID:TID) - (2:0)
+2024/12/06 13:19:30 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:19:30 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 48 0}
+2024/12/06 13:19:30 ## Proceso creado -  PID: 3 - Tamaño: 48
+2024/12/06 13:19:30 ## Hilo creado - (PID:TID) - (3:0)
+2024/12/06 13:19:30 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:19:30 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 13:19:30 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 13:19:31 ## Leer Memoria - Direccion:  32
+2024/12/06 13:19:31 ## Nuevo Valor: 64
+2024/12/06 13:19:31 ## Lectura - (PID:TID) - (2:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 13:19:31 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {LOG BX}
+2024/12/06 13:19:31 ## Contexto actualizado - (PID:TID) - (2:0)
+2024/12/06 13:19:31 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 13:19:31 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {SET DX 0}
+2024/12/06 13:19:32 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {SET AX 64}
+2024/12/06 13:19:32 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 13:19:32 ## Escritura - (PID:TID) - (3:0) - Dir. Física: 48 - Tamaño: 4
+2024/12/06 13:19:32 ## Contexto actualizado - (PID:TID) - (3:0)
+2024/12/06 13:19:32 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:19:33 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 96 0}
+2024/12/06 13:19:33 ## Proceso creado -  PID: 4 - Tamaño: 96
+2024/12/06 13:19:33 ## Hilo creado - (PID:TID) - (4:0)
+2024/12/06 13:19:33 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:19:33 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 13:19:33 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {IO 12000}
+2024/12/06 13:19:33 ## Contexto actualizado - (PID:TID) - (2:0)
+2024/12/06 13:19:34 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 13:19:34 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 13:19:34 ## Leer Memoria - Direccion:  48
+2024/12/06 13:19:34 ## Nuevo Valor: 64
+2024/12/06 13:19:34 ## Lectura - (PID:TID) - (3:0) - Dir. Física: 48 - Tamaño: 4
+2024/12/06 13:19:34 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {LOG BX}
+2024/12/06 13:19:34 ## Contexto actualizado - (PID:TID) - (3:0)
+2024/12/06 13:19:35 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 13:19:35 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {SET DX 0}
+2024/12/06 13:19:35 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {SET AX 64}
+2024/12/06 13:19:35 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 13:19:35 ## Escritura - (PID:TID) - (4:0) - Dir. Física: 112 - Tamaño: 4
+2024/12/06 13:19:36 ## Contexto actualizado - (PID:TID) - (4:0)
+2024/12/06 13:19:36 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:19:36 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 12 0}
+2024/12/06 13:19:36 ## Proceso creado -  PID: 5 - Tamaño: 12
+2024/12/06 13:19:36 ## Hilo creado - (PID:TID) - (5:0)
+2024/12/06 13:19:36 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:19:36 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 13:19:37 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {PROCESS_EXIT}
+2024/12/06 13:19:37 ## Hilo destruido - (PID:TID) - (2:0)
+2024/12/06 13:19:37 ## Proceso destruido -  PID: 2 - Tamaño: 16
+2024/12/06 13:19:37 http: panic serving 127.0.0.1:50598: runtime error: invalid memory address or nil pointer dereference
+goroutine 81 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
+panic({0xee1a40?, 0x1197a20?})
+	C:/Program Files/Go/src/runtime/panic.go:785 +0x132
+github.com/sisoputnfrba/tp-golang/memoria/globals/functions.ObtenerBaseLimite(...)
+	C:/Users/ramir/Desktop/tp-2024-2c-Equipo-Operativo/memoria/globals/functions/funciones.go:26
+github.com/sisoputnfrba/tp-golang/memoria/handlers.HandleDevolverContexto({0xfc2810, 0xc0000d7260}, 0xc0000e3a40)
+	C:/Users/ramir/Desktop/tp-2024-2c-Equipo-Operativo/memoria/handlers/handlers.go:38 +0x13c
+net/http.HandlerFunc.ServeHTTP(0xc00012e0e0?, {0xfc2810?, 0xc0000d7260?}, 0x67532419?)
+	C:/Program Files/Go/src/net/http/server.go:2220 +0x29
+net/http.(*ServeMux).ServeHTTP(0xc0da05?, {0xfc2810, 0xc0000d7260}, 0xc0000e3a40)
+	C:/Program Files/Go/src/net/http/server.go:2747 +0x1ca
+net/http.serverHandler.ServeHTTP({0xfc13d8?}, {0xfc2810?, 0xc0000d7260?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3210 +0x8e
+net/http.(*conn).serve(0xc0000a74d0, {0xfc2cd8, 0xc00008a1e0})
+	C:/Program Files/Go/src/net/http/server.go:2092 +0x5d0
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3360 +0x485
+2024/12/06 13:51:43 Memoria inicializada con éxito.
+2024/12/06 13:51:43 El módulo memoria está a la escucha en el puerto :8002
+2024/12/06 13:51:53 ## Proceso creado -  PID: 1 - Tamaño: 12
+2024/12/06 13:51:53 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/06 13:51:54 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:51:54 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 13:51:54 ## Proceso creado -  PID: 2 - Tamaño: 8
+2024/12/06 13:51:54 ## Hilo creado - (PID:TID) - (2:0)
+2024/12/06 13:51:54 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:51:54 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 13:51:54 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {SET DX 0}
+2024/12/06 13:51:55 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {SET AX 64}
+2024/12/06 13:51:55 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 13:51:55 ## Escritura - (PID:TID) - (2:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 13:51:55 ## Contexto actualizado - (PID:TID) - (2:0)
+2024/12/06 13:51:55 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:51:56 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 48 0}
+2024/12/06 13:51:56 ## Proceso creado -  PID: 3 - Tamaño: 48
+2024/12/06 13:51:56 ## Hilo creado - (PID:TID) - (3:0)
+2024/12/06 13:51:56 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:51:56 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 13:51:56 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 13:51:56 ## Leer Memoria - Direccion:  32
+2024/12/06 13:51:56 ## Nuevo Valor: 64
+2024/12/06 13:51:56 ## Lectura - (PID:TID) - (2:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 13:51:57 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {LOG BX}
+2024/12/06 13:51:57 ## Contexto actualizado - (PID:TID) - (2:0)
+2024/12/06 13:51:57 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 13:51:57 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {SET DX 0}
+2024/12/06 13:51:57 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {SET AX 64}
+2024/12/06 13:51:58 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 13:51:58 ## Escritura - (PID:TID) - (3:0) - Dir. Física: 48 - Tamaño: 4
+2024/12/06 13:51:58 ## Contexto actualizado - (PID:TID) - (3:0)
+2024/12/06 13:51:58 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:51:58 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 96 0}
+2024/12/06 13:51:58 ## Proceso creado -  PID: 4 - Tamaño: 96
+2024/12/06 13:51:58 ## Hilo creado - (PID:TID) - (4:0)
+2024/12/06 13:51:59 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:51:59 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 13:51:59 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {IO 12000}
+2024/12/06 13:51:59 ## Contexto actualizado - (PID:TID) - (2:0)
+2024/12/06 13:51:59 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 13:52:00 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 13:52:00 ## Leer Memoria - Direccion:  48
+2024/12/06 13:52:00 ## Nuevo Valor: 64
+2024/12/06 13:52:00 ## Lectura - (PID:TID) - (3:0) - Dir. Física: 48 - Tamaño: 4
+2024/12/06 13:52:00 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {LOG BX}
+2024/12/06 13:52:00 ## Contexto actualizado - (PID:TID) - (3:0)
+2024/12/06 13:52:00 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 13:52:01 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {SET DX 0}
+2024/12/06 13:52:01 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {SET AX 64}
+2024/12/06 13:52:01 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 13:52:01 ## Escritura - (PID:TID) - (4:0) - Dir. Física: 112 - Tamaño: 4
+2024/12/06 13:52:01 ## Contexto actualizado - (PID:TID) - (4:0)
+2024/12/06 13:52:02 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:52:02 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 12 0}
+2024/12/06 13:52:02 ## Proceso creado -  PID: 5 - Tamaño: 12
+2024/12/06 13:52:02 ## Hilo creado - (PID:TID) - (5:0)
+2024/12/06 13:52:02 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:52:02 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 13:52:02 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {IO 12000}
+2024/12/06 13:52:03 ## Contexto actualizado - (PID:TID) - (3:0)
+2024/12/06 13:52:03 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 13:52:03 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 13:52:03 ## Leer Memoria - Direccion:  112
+2024/12/06 13:52:03 ## Nuevo Valor: 64
+2024/12/06 13:52:03 ## Lectura - (PID:TID) - (4:0) - Dir. Física: 112 - Tamaño: 4
+2024/12/06 13:52:03 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {LOG BX}
+2024/12/06 13:52:04 ## Contexto actualizado - (PID:TID) - (4:0)
+2024/12/06 13:52:04 ## Contexto solicitado - (PID:TID) - (5:0)
+2024/12/06 13:52:04 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {SET DX 0}
+2024/12/06 13:52:04 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {SET AX 64}
+2024/12/06 13:52:05 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 13:52:05 ## Escritura - (PID:TID) - (5:0) - Dir. Física: 240 - Tamaño: 4
+2024/12/06 13:52:05 ## Contexto actualizado - (PID:TID) - (5:0)
+2024/12/06 13:52:05 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:52:05 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 13:52:05 El proceso 6 no pudo ser inicializado
+2024/12/06 13:52:06 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:52:06 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 13:52:06 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {IO 12000}
+2024/12/06 13:52:06 ## Contexto actualizado - (PID:TID) - (4:0)
+2024/12/06 13:52:06 ## Contexto solicitado - (PID:TID) - (5:0)
+2024/12/06 13:52:07 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 13:52:07 ## Leer Memoria - Direccion:  240
+2024/12/06 13:52:07 ## Nuevo Valor: 64
+2024/12/06 13:52:07 ## Lectura - (PID:TID) - (5:0) - Dir. Física: 240 - Tamaño: 4
+2024/12/06 13:52:07 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {LOG BX}
+2024/12/06 13:52:07 ## Contexto actualizado - (PID:TID) - (5:0)
+2024/12/06 13:52:07 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:52:08 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 13:52:08 El proceso 7 no pudo ser inicializado
+2024/12/06 13:52:08 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:52:08 ## Contexto solicitado - (PID:TID) - (5:0)
+2024/12/06 13:52:08 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {IO 12000}
+2024/12/06 13:52:08 ## Contexto actualizado - (PID:TID) - (5:0)
+2024/12/06 13:52:09 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:52:09 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 13:52:09 El proceso 8 no pudo ser inicializado
+2024/12/06 13:52:09 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:52:09 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:52:09 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 13:52:09 El proceso 9 no pudo ser inicializado
+2024/12/06 13:52:10 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:52:10 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:52:10 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/06 13:52:10 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 64}
+2024/12/06 13:52:10 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 13:52:11 ## Escritura - (PID:TID) - (1:0) - Dir. Física: 0 - Tamaño: 4
+2024/12/06 13:52:11 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:52:11 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:52:11 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 13:52:11 ## Leer Memoria - Direccion:  0
+2024/12/06 13:52:11 ## Nuevo Valor: 64
+2024/12/06 13:52:11 ## Lectura - (PID:TID) - (1:0) - Dir. Física: 0 - Tamaño: 4
+2024/12/06 13:52:12 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {LOG BX}
+2024/12/06 13:52:12 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:52:12 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 13:52:12 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {PROCESS_EXIT}
+2024/12/06 13:52:12 ## Hilo destruido - (PID:TID) - (2:0)
+2024/12/06 13:52:12 ## Proceso destruido -  PID: 2 - Tamaño: 16
+2024/12/06 13:52:12 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:52:13 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {IO 12000}
+2024/12/06 13:52:13 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:52:23 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 13:52:23 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {PROCESS_EXIT}
+2024/12/06 13:52:23 ## Hilo destruido - (PID:TID) - (3:0)
+2024/12/06 13:52:23 ## Proceso destruido -  PID: 3 - Tamaño: 64
+2024/12/06 13:52:35 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 13:52:35 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {PROCESS_EXIT}
+2024/12/06 13:52:35 ## Hilo destruido - (PID:TID) - (4:0)
+2024/12/06 13:52:35 ## Proceso destruido -  PID: 4 - Tamaño: 128
+2024/12/06 13:52:47 ## Contexto solicitado - (PID:TID) - (5:0)
+2024/12/06 13:52:47 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {PROCESS_EXIT}
+2024/12/06 13:52:47 ## Hilo destruido - (PID:TID) - (5:0)
+2024/12/06 13:52:47 ## Proceso destruido -  PID: 5 - Tamaño: 16
+2024/12/06 13:52:59 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:52:59 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_EXIT}
+2024/12/06 13:52:59 ## Hilo destruido - (PID:TID) - (1:0)
+2024/12/06 13:52:59 ## Proceso destruido -  PID: 1 - Tamaño: 32
+2024/12/06 13:56:05 Memoria inicializada con éxito.
+2024/12/06 13:56:05 El módulo memoria está a la escucha en el puerto :8002
+2024/12/06 13:56:12 ## Proceso creado -  PID: 1 - Tamaño: 12
+2024/12/06 13:56:12 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/06 13:56:13 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:56:13 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 13:56:13 ## Proceso creado -  PID: 2 - Tamaño: 8
+2024/12/06 13:56:13 ## Hilo creado - (PID:TID) - (2:0)
+2024/12/06 13:56:13 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:56:13 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 13:56:14 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {SET DX 0}
+2024/12/06 13:56:14 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {SET AX 64}
+2024/12/06 13:56:14 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 13:56:14 ## Escritura - (PID:TID) - (2:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 13:56:14 ## Contexto actualizado - (PID:TID) - (2:0)
+2024/12/06 13:56:15 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:56:15 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 48 0}
+2024/12/06 13:56:15 ## Proceso creado -  PID: 3 - Tamaño: 48
+2024/12/06 13:56:15 ## Hilo creado - (PID:TID) - (3:0)
+2024/12/06 13:56:15 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:56:15 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 13:56:15 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 13:56:16 ## Leer Memoria - Direccion:  32
+2024/12/06 13:56:16 ## Nuevo Valor: 64
+2024/12/06 13:56:16 ## Lectura - (PID:TID) - (2:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 13:56:16 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {LOG BX}
+2024/12/06 13:56:16 ## Contexto actualizado - (PID:TID) - (2:0)
+2024/12/06 13:56:16 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 13:56:16 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {SET DX 0}
+2024/12/06 13:56:17 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {SET AX 64}
+2024/12/06 13:56:17 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 13:56:17 ## Escritura - (PID:TID) - (3:0) - Dir. Física: 48 - Tamaño: 4
+2024/12/06 13:56:17 ## Contexto actualizado - (PID:TID) - (3:0)
+2024/12/06 13:56:17 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:56:18 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 96 0}
+2024/12/06 13:56:18 ## Proceso creado -  PID: 4 - Tamaño: 96
+2024/12/06 13:56:18 ## Hilo creado - (PID:TID) - (4:0)
+2024/12/06 13:56:18 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:56:18 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 13:56:18 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {IO 12000}
+2024/12/06 13:56:18 ## Contexto actualizado - (PID:TID) - (2:0)
+2024/12/06 13:56:19 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 13:56:19 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 13:56:19 ## Leer Memoria - Direccion:  48
+2024/12/06 13:56:19 ## Nuevo Valor: 64
+2024/12/06 13:56:19 ## Lectura - (PID:TID) - (3:0) - Dir. Física: 48 - Tamaño: 4
+2024/12/06 13:56:19 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {LOG BX}
+2024/12/06 13:56:19 ## Contexto actualizado - (PID:TID) - (3:0)
+2024/12/06 13:56:20 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 13:56:20 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {SET DX 0}
+2024/12/06 13:56:20 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {SET AX 64}
+2024/12/06 13:56:20 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 13:56:20 ## Escritura - (PID:TID) - (4:0) - Dir. Física: 112 - Tamaño: 4
+2024/12/06 13:56:21 ## Contexto actualizado - (PID:TID) - (4:0)
+2024/12/06 13:56:21 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:56:21 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 12 0}
+2024/12/06 13:56:21 ## Proceso creado -  PID: 5 - Tamaño: 12
+2024/12/06 13:56:21 ## Hilo creado - (PID:TID) - (5:0)
+2024/12/06 13:56:21 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:56:21 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 13:56:22 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {IO 12000}
+2024/12/06 13:56:22 ## Contexto actualizado - (PID:TID) - (3:0)
+2024/12/06 13:56:22 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 13:56:22 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 13:56:22 ## Leer Memoria - Direccion:  112
+2024/12/06 13:56:22 ## Nuevo Valor: 64
+2024/12/06 13:56:22 ## Lectura - (PID:TID) - (4:0) - Dir. Física: 112 - Tamaño: 4
+2024/12/06 13:56:23 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {LOG BX}
+2024/12/06 13:56:23 ## Contexto actualizado - (PID:TID) - (4:0)
+2024/12/06 13:56:23 ## Contexto solicitado - (PID:TID) - (5:0)
+2024/12/06 13:56:23 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {SET DX 0}
+2024/12/06 13:56:23 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {SET AX 64}
+2024/12/06 13:56:24 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 13:56:24 ## Escritura - (PID:TID) - (5:0) - Dir. Física: 240 - Tamaño: 4
+2024/12/06 13:56:24 ## Contexto actualizado - (PID:TID) - (5:0)
+2024/12/06 13:56:24 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:56:25 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 13:56:25 El proceso 6 no pudo ser inicializado
+2024/12/06 13:56:25 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:56:25 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 13:56:25 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {IO 12000}
+2024/12/06 13:56:25 ## Contexto actualizado - (PID:TID) - (4:0)
+2024/12/06 13:56:26 ## Contexto solicitado - (PID:TID) - (5:0)
+2024/12/06 13:56:26 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 13:56:26 ## Leer Memoria - Direccion:  240
+2024/12/06 13:56:26 ## Nuevo Valor: 64
+2024/12/06 13:56:26 ## Lectura - (PID:TID) - (5:0) - Dir. Física: 240 - Tamaño: 4
+2024/12/06 13:56:26 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {LOG BX}
+2024/12/06 13:56:26 ## Contexto actualizado - (PID:TID) - (5:0)
+2024/12/06 13:56:27 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:56:27 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 13:56:27 El proceso 7 no pudo ser inicializado
+2024/12/06 13:56:27 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:56:27 ## Contexto solicitado - (PID:TID) - (5:0)
+2024/12/06 13:56:27 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {IO 12000}
+2024/12/06 13:56:28 ## Contexto actualizado - (PID:TID) - (5:0)
+2024/12/06 13:56:28 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:56:28 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 13:56:28 El proceso 8 no pudo ser inicializado
+2024/12/06 13:56:28 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:56:28 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:56:29 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 13:56:29 El proceso 9 no pudo ser inicializado
+2024/12/06 13:56:29 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:56:29 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:56:29 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/06 13:56:29 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 64}
+2024/12/06 13:56:30 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 13:56:30 ## Escritura - (PID:TID) - (1:0) - Dir. Física: 0 - Tamaño: 4
+2024/12/06 13:56:30 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:56:30 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:56:30 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 13:56:31 ## Leer Memoria - Direccion:  0
+2024/12/06 13:56:31 ## Nuevo Valor: 64
+2024/12/06 13:56:31 ## Lectura - (PID:TID) - (1:0) - Dir. Física: 0 - Tamaño: 4
+2024/12/06 13:56:31 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {LOG BX}
+2024/12/06 13:56:31 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:56:31 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 13:56:31 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {PROCESS_EXIT}
+2024/12/06 13:56:31 ## Hilo destruido - (PID:TID) - (2:0)
+2024/12/06 13:56:31 ## Proceso destruido -  PID: 2 - Tamaño: 16
+2024/12/06 13:56:32 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:56:32 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {IO 12000}
+2024/12/06 13:56:32 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 13:56:42 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 13:56:43 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {PROCESS_EXIT}
+2024/12/06 13:56:43 ## Hilo destruido - (PID:TID) - (3:0)
+2024/12/06 13:56:43 ## Proceso destruido -  PID: 3 - Tamaño: 64
+2024/12/06 13:56:54 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 13:56:55 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {PROCESS_EXIT}
+2024/12/06 13:56:55 ## Hilo destruido - (PID:TID) - (4:0)
+2024/12/06 13:56:55 ## Proceso destruido -  PID: 4 - Tamaño: 128
+2024/12/06 13:57:06 ## Contexto solicitado - (PID:TID) - (5:0)
+2024/12/06 13:57:07 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {PROCESS_EXIT}
+2024/12/06 13:57:07 ## Hilo destruido - (PID:TID) - (5:0)
+2024/12/06 13:57:07 ## Proceso destruido -  PID: 5 - Tamaño: 16
+2024/12/06 13:57:18 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 13:57:19 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_EXIT}
+2024/12/06 13:57:19 ## Hilo destruido - (PID:TID) - (1:0)
+2024/12/06 13:57:19 ## Proceso destruido -  PID: 1 - Tamaño: 32
+2024/12/06 14:00:52 Memoria inicializada con éxito.
+2024/12/06 14:00:52 El módulo memoria está a la escucha en el puerto :8002
+2024/12/06 14:00:59 ## Proceso creado -  PID: 1 - Tamaño: 12
+2024/12/06 14:00:59 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/06 14:00:59 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 14:01:00 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 14:01:00 ## Proceso creado -  PID: 2 - Tamaño: 8
+2024/12/06 14:01:00 ## Hilo creado - (PID:TID) - (2:0)
+2024/12/06 14:01:00 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 14:01:00 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 14:01:00 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {SET DX 0}
+2024/12/06 14:01:00 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {SET AX 64}
+2024/12/06 14:01:01 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 14:01:01 ## Escritura - (PID:TID) - (2:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 14:01:01 ## Contexto actualizado - (PID:TID) - (2:0)
+2024/12/06 14:01:01 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 14:01:01 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 48 0}
+2024/12/06 14:01:01 ## Proceso creado -  PID: 3 - Tamaño: 48
+2024/12/06 14:01:01 ## Hilo creado - (PID:TID) - (3:0)
+2024/12/06 14:01:02 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 14:01:02 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 14:01:02 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 14:01:02 ## Leer Memoria - Direccion:  32
+2024/12/06 14:01:02 ## Nuevo Valor: 64
+2024/12/06 14:01:02 ## Lectura - (PID:TID) - (2:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 14:01:02 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {LOG BX}
+2024/12/06 14:01:03 ## Contexto actualizado - (PID:TID) - (2:0)
+2024/12/06 14:01:03 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 14:01:03 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {SET DX 0}
+2024/12/06 14:01:03 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {SET AX 64}
+2024/12/06 14:01:03 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 14:01:04 ## Escritura - (PID:TID) - (3:0) - Dir. Física: 48 - Tamaño: 4
+2024/12/06 14:01:04 ## Contexto actualizado - (PID:TID) - (3:0)
+2024/12/06 14:01:04 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 14:01:04 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 96 0}
+2024/12/06 14:01:04 ## Proceso creado -  PID: 4 - Tamaño: 96
+2024/12/06 14:01:04 ## Hilo creado - (PID:TID) - (4:0)
+2024/12/06 14:01:04 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 14:01:05 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 14:01:05 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {IO 12000}
+2024/12/06 14:01:05 ## Contexto actualizado - (PID:TID) - (2:0)
+2024/12/06 14:01:05 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 14:01:05 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 14:01:06 ## Leer Memoria - Direccion:  48
+2024/12/06 14:01:06 ## Nuevo Valor: 64
+2024/12/06 14:01:06 ## Lectura - (PID:TID) - (3:0) - Dir. Física: 48 - Tamaño: 4
+2024/12/06 14:01:06 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {LOG BX}
+2024/12/06 14:01:06 ## Contexto actualizado - (PID:TID) - (3:0)
+2024/12/06 14:01:06 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 14:01:06 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {SET DX 0}
+2024/12/06 14:01:07 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {SET AX 64}
+2024/12/06 14:01:07 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 14:01:07 ## Escritura - (PID:TID) - (4:0) - Dir. Física: 112 - Tamaño: 4
+2024/12/06 14:01:07 ## Contexto actualizado - (PID:TID) - (4:0)
+2024/12/06 14:01:07 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 14:01:08 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 12 0}
+2024/12/06 14:01:08 ## Proceso creado -  PID: 5 - Tamaño: 12
+2024/12/06 14:01:08 ## Hilo creado - (PID:TID) - (5:0)
+2024/12/06 14:01:08 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 14:01:08 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 14:01:08 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {IO 12000}
+2024/12/06 14:01:08 ## Contexto actualizado - (PID:TID) - (3:0)
+2024/12/06 14:01:09 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 14:01:09 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 14:01:09 ## Leer Memoria - Direccion:  112
+2024/12/06 14:01:09 ## Nuevo Valor: 64
+2024/12/06 14:01:09 ## Lectura - (PID:TID) - (4:0) - Dir. Física: 112 - Tamaño: 4
+2024/12/06 14:01:09 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {LOG BX}
+2024/12/06 14:01:09 ## Contexto actualizado - (PID:TID) - (4:0)
+2024/12/06 14:01:10 ## Contexto solicitado - (PID:TID) - (5:0)
+2024/12/06 14:01:10 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {SET DX 0}
+2024/12/06 14:01:10 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {SET AX 64}
+2024/12/06 14:01:10 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 14:01:10 ## Escritura - (PID:TID) - (5:0) - Dir. Física: 240 - Tamaño: 4
+2024/12/06 14:01:11 ## Contexto actualizado - (PID:TID) - (5:0)
+2024/12/06 14:01:11 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 14:01:11 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 14:01:11 El proceso 6 no pudo ser inicializado
+2024/12/06 14:01:11 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 14:01:11 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 14:01:12 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {IO 12000}
+2024/12/06 14:01:12 ## Contexto actualizado - (PID:TID) - (4:0)
+2024/12/06 14:01:12 ## Contexto solicitado - (PID:TID) - (5:0)
+2024/12/06 14:01:12 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 14:01:12 ## Leer Memoria - Direccion:  240
+2024/12/06 14:01:12 ## Nuevo Valor: 64
+2024/12/06 14:01:12 ## Lectura - (PID:TID) - (5:0) - Dir. Física: 240 - Tamaño: 4
+2024/12/06 14:01:13 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {LOG BX}
+2024/12/06 14:01:13 ## Contexto actualizado - (PID:TID) - (5:0)
+2024/12/06 14:01:13 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 14:01:13 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 14:01:13 El proceso 7 no pudo ser inicializado
+2024/12/06 14:01:13 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 14:01:14 ## Contexto solicitado - (PID:TID) - (5:0)
+2024/12/06 14:01:14 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {IO 12000}
+2024/12/06 14:01:14 ## Contexto actualizado - (PID:TID) - (5:0)
+2024/12/06 14:01:14 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 14:01:15 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 14:01:15 El proceso 8 no pudo ser inicializado
+2024/12/06 14:01:15 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 14:01:15 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 14:01:15 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 14:01:15 El proceso 9 no pudo ser inicializado
+2024/12/06 14:01:15 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 14:01:16 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 14:01:16 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/06 14:01:16 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 64}
+2024/12/06 14:01:16 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 14:01:16 ## Escritura - (PID:TID) - (1:0) - Dir. Física: 0 - Tamaño: 4
+2024/12/06 14:01:17 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 14:01:17 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 14:01:17 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 14:01:17 ## Leer Memoria - Direccion:  0
+2024/12/06 14:01:17 ## Nuevo Valor: 64
+2024/12/06 14:01:17 ## Lectura - (PID:TID) - (1:0) - Dir. Física: 0 - Tamaño: 4
+2024/12/06 14:01:17 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {LOG BX}
+2024/12/06 14:01:18 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 14:01:18 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 14:01:18 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {PROCESS_EXIT}
+2024/12/06 14:01:18 ## Hilo destruido - (PID:TID) - (2:0)
+2024/12/06 14:01:18 ## Proceso destruido -  PID: 2 - Tamaño: 16
+2024/12/06 14:01:18 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 14:01:18 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {IO 12000}
+2024/12/06 14:01:19 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 14:01:29 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 14:01:29 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {PROCESS_EXIT}
+2024/12/06 14:01:29 ## Hilo destruido - (PID:TID) - (3:0)
+2024/12/06 14:01:29 ## Proceso destruido -  PID: 3 - Tamaño: 64
+2024/12/06 14:01:41 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 14:01:41 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {PROCESS_EXIT}
+2024/12/06 14:01:41 ## Hilo destruido - (PID:TID) - (4:0)
+2024/12/06 14:01:41 ## Proceso destruido -  PID: 4 - Tamaño: 128
+2024/12/06 14:01:53 ## Contexto solicitado - (PID:TID) - (5:0)
+2024/12/06 14:01:53 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {PROCESS_EXIT}
+2024/12/06 14:01:53 ## Hilo destruido - (PID:TID) - (5:0)
+2024/12/06 14:01:53 ## Proceso destruido -  PID: 5 - Tamaño: 16
+2024/12/06 14:02:05 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 14:02:05 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_EXIT}
+2024/12/06 14:02:05 ## Hilo destruido - (PID:TID) - (1:0)
+2024/12/06 14:02:05 ## Proceso destruido -  PID: 1 - Tamaño: 32
+2024/12/06 14:04:27 Memoria inicializada con éxito.
+2024/12/06 14:04:27 El módulo memoria está a la escucha en el puerto :8002
+2024/12/06 14:04:37 ## Proceso creado -  PID: 1 - Tamaño: 12
+2024/12/06 14:04:37 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/06 14:04:37 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 14:04:37 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 14:04:37 ## Proceso creado -  PID: 2 - Tamaño: 8
+2024/12/06 14:04:37 ## Hilo creado - (PID:TID) - (2:0)
+2024/12/06 14:04:37 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 14:04:37 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 14:04:38 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {SET DX 0}
+2024/12/06 14:04:38 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {SET AX 64}
+2024/12/06 14:04:38 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 14:04:38 ## Escritura - (PID:TID) - (2:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 14:04:38 ## Contexto actualizado - (PID:TID) - (2:0)
+2024/12/06 14:04:39 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 14:04:39 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 48 0}
+2024/12/06 14:04:39 ## Proceso creado -  PID: 3 - Tamaño: 48
+2024/12/06 14:04:39 ## Hilo creado - (PID:TID) - (3:0)
+2024/12/06 14:04:39 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 14:04:39 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 14:04:39 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 14:04:40 ## Leer Memoria - Direccion:  32
+2024/12/06 14:04:40 ## Nuevo Valor: 64
+2024/12/06 14:04:40 ## Lectura - (PID:TID) - (2:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 14:04:40 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {LOG BX}
+2024/12/06 14:04:40 ## Contexto actualizado - (PID:TID) - (2:0)
+2024/12/06 14:04:40 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 14:04:40 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {SET DX 0}
+2024/12/06 14:04:41 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {SET AX 64}
+2024/12/06 14:04:41 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 14:04:41 ## Escritura - (PID:TID) - (3:0) - Dir. Física: 48 - Tamaño: 4
+2024/12/06 14:04:41 ## Contexto actualizado - (PID:TID) - (3:0)
+2024/12/06 14:04:41 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 14:04:42 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 96 0}
+2024/12/06 14:04:42 ## Proceso creado -  PID: 4 - Tamaño: 96
+2024/12/06 14:04:42 ## Hilo creado - (PID:TID) - (4:0)
+2024/12/06 14:04:42 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 14:04:42 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 14:04:42 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {IO 12000}
+2024/12/06 14:04:42 ## Contexto actualizado - (PID:TID) - (2:0)
+2024/12/06 14:04:43 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 14:04:43 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 14:04:43 ## Leer Memoria - Direccion:  48
+2024/12/06 14:04:43 ## Nuevo Valor: 64
+2024/12/06 14:04:43 ## Lectura - (PID:TID) - (3:0) - Dir. Física: 48 - Tamaño: 4
+2024/12/06 14:04:43 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {LOG BX}
+2024/12/06 14:04:43 ## Contexto actualizado - (PID:TID) - (3:0)
+2024/12/06 14:04:44 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 14:04:44 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {SET DX 0}
+2024/12/06 14:04:44 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {SET AX 64}
+2024/12/06 14:04:44 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 14:04:44 ## Escritura - (PID:TID) - (4:0) - Dir. Física: 112 - Tamaño: 4
+2024/12/06 14:04:45 ## Contexto actualizado - (PID:TID) - (4:0)
+2024/12/06 14:04:45 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 14:04:45 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 12 0}
+2024/12/06 14:04:45 ## Proceso creado -  PID: 5 - Tamaño: 12
+2024/12/06 14:04:45 ## Hilo creado - (PID:TID) - (5:0)
+2024/12/06 14:04:45 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 14:04:46 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 14:04:46 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {IO 12000}
+2024/12/06 14:04:46 ## Contexto actualizado - (PID:TID) - (3:0)
+2024/12/06 14:04:46 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 14:04:46 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 14:04:47 ## Leer Memoria - Direccion:  112
+2024/12/06 14:04:47 ## Nuevo Valor: 64
+2024/12/06 14:04:47 ## Lectura - (PID:TID) - (4:0) - Dir. Física: 112 - Tamaño: 4
+2024/12/06 14:04:47 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {LOG BX}
+2024/12/06 14:04:47 ## Contexto actualizado - (PID:TID) - (4:0)
+2024/12/06 14:04:47 ## Contexto solicitado - (PID:TID) - (5:0)
+2024/12/06 14:04:47 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {SET DX 0}
+2024/12/06 14:04:48 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {SET AX 64}
+2024/12/06 14:04:48 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 14:04:48 ## Escritura - (PID:TID) - (5:0) - Dir. Física: 240 - Tamaño: 4
+2024/12/06 14:04:48 ## Contexto actualizado - (PID:TID) - (5:0)
+2024/12/06 14:04:48 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 14:04:49 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 14:04:49 El proceso 6 no pudo ser inicializado
+2024/12/06 14:04:49 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 14:04:49 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 14:04:49 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {IO 12000}
+2024/12/06 14:04:49 ## Contexto actualizado - (PID:TID) - (4:0)
+2024/12/06 14:04:50 ## Contexto solicitado - (PID:TID) - (5:0)
+2024/12/06 14:04:50 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 14:04:50 ## Leer Memoria - Direccion:  240
+2024/12/06 14:04:50 ## Nuevo Valor: 64
+2024/12/06 14:04:50 ## Lectura - (PID:TID) - (5:0) - Dir. Física: 240 - Tamaño: 4
+2024/12/06 14:04:50 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {LOG BX}
+2024/12/06 14:04:50 ## Contexto actualizado - (PID:TID) - (5:0)
+2024/12/06 14:04:51 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 14:04:51 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 14:04:51 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 14:04:51 ## Contexto solicitado - (PID:TID) - (5:0)
+2024/12/06 14:04:51 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {IO 12000}
+2024/12/06 14:04:52 ## Contexto actualizado - (PID:TID) - (5:0)
+2024/12/06 14:04:52 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 14:04:52 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 14:04:52 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 14:04:52 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 14:04:53 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 14:04:53 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 14:04:53 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 14:04:53 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/06 14:04:53 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 64}
+2024/12/06 14:04:54 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 14:04:54 ## Escritura - (PID:TID) - (1:0) - Dir. Física: 0 - Tamaño: 4
+2024/12/06 14:04:54 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 14:04:54 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 14:04:54 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 14:04:55 ## Leer Memoria - Direccion:  0
+2024/12/06 14:04:55 ## Nuevo Valor: 64
+2024/12/06 14:04:55 ## Lectura - (PID:TID) - (1:0) - Dir. Física: 0 - Tamaño: 4
+2024/12/06 14:04:55 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {LOG BX}
+2024/12/06 14:04:55 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 14:04:55 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 14:04:55 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {PROCESS_EXIT}
+2024/12/06 14:04:55 ## Hilo destruido - (PID:TID) - (2:0)
+2024/12/06 14:04:55 ## Proceso destruido -  PID: 2 - Tamaño: 16
+2024/12/06 14:04:55 ## Proceso creado -  PID: 6 - Tamaño: 8
+2024/12/06 14:04:55 ## Hilo creado - (PID:TID) - (6:0)
+2024/12/06 14:04:56 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 14:04:56 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {IO 12000}
+2024/12/06 14:04:56 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 14:04:56 ## Contexto solicitado - (PID:TID) - (6:0)
+2024/12/06 14:04:56 ## Obtener instrucción - (PID:TID) - (6:0) - Instrucción: {SET DX 0}
+2024/12/06 14:04:57 ## Obtener instrucción - (PID:TID) - (6:0) - Instrucción: {SET AX 64}
+2024/12/06 14:04:57 ## Obtener instrucción - (PID:TID) - (6:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 14:04:57 ## Escritura - (PID:TID) - (6:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 14:04:57 ## Contexto actualizado - (PID:TID) - (6:0)
+2024/12/06 14:04:57 ## Contexto solicitado - (PID:TID) - (6:0)
+2024/12/06 14:04:58 ## Obtener instrucción - (PID:TID) - (6:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 14:04:58 ## Leer Memoria - Direccion:  32
+2024/12/06 14:04:58 ## Nuevo Valor: 64
+2024/12/06 14:04:58 ## Lectura - (PID:TID) - (6:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 14:04:58 ## Obtener instrucción - (PID:TID) - (6:0) - Instrucción: {LOG BX}
+2024/12/06 14:04:58 ## Contexto actualizado - (PID:TID) - (6:0)
+2024/12/06 14:04:58 ## Contexto solicitado - (PID:TID) - (6:0)
+2024/12/06 14:04:59 ## Obtener instrucción - (PID:TID) - (6:0) - Instrucción: {IO 12000}
+2024/12/06 14:04:59 ## Contexto actualizado - (PID:TID) - (6:0)
+2024/12/06 14:04:59 ## Contexto solicitado - (PID:TID) - (6:0)
+2024/12/06 14:04:59 ## Obtener instrucción - (PID:TID) - (6:0) - Instrucción: {PROCESS_EXIT}
+2024/12/06 14:04:59 ## Hilo destruido - (PID:TID) - (6:0)
+2024/12/06 14:04:59 ## Proceso destruido -  PID: 6 - Tamaño: 16
+2024/12/06 14:04:59 ## Proceso creado -  PID: 7 - Tamaño: 8
+2024/12/06 14:04:59 ## Hilo creado - (PID:TID) - (7:0)
+2024/12/06 14:04:59 ## Contexto solicitado - (PID:TID) - (7:0)
+2024/12/06 14:05:00 ## Obtener instrucción - (PID:TID) - (7:0) - Instrucción: {SET DX 0}
+2024/12/06 14:05:00 ## Obtener instrucción - (PID:TID) - (7:0) - Instrucción: {SET AX 64}
+2024/12/06 14:05:00 ## Obtener instrucción - (PID:TID) - (7:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 14:05:00 ## Escritura - (PID:TID) - (7:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 14:05:00 ## Contexto actualizado - (PID:TID) - (7:0)
+2024/12/06 14:05:01 ## Contexto solicitado - (PID:TID) - (7:0)
+2024/12/06 14:05:01 ## Obtener instrucción - (PID:TID) - (7:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 14:05:01 ## Leer Memoria - Direccion:  32
+2024/12/06 14:05:01 ## Nuevo Valor: 64
+2024/12/06 14:05:01 ## Lectura - (PID:TID) - (7:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 14:05:01 ## Obtener instrucción - (PID:TID) - (7:0) - Instrucción: {LOG BX}
+2024/12/06 14:05:01 ## Contexto actualizado - (PID:TID) - (7:0)
+2024/12/06 14:05:02 ## Contexto solicitado - (PID:TID) - (7:0)
+2024/12/06 14:05:02 ## Obtener instrucción - (PID:TID) - (7:0) - Instrucción: {IO 12000}
+2024/12/06 14:05:02 ## Contexto actualizado - (PID:TID) - (7:0)
+2024/12/06 14:05:02 ## Contexto solicitado - (PID:TID) - (7:0)
+2024/12/06 14:05:02 ## Obtener instrucción - (PID:TID) - (7:0) - Instrucción: {PROCESS_EXIT}
+2024/12/06 14:05:02 ## Hilo destruido - (PID:TID) - (7:0)
+2024/12/06 14:05:02 ## Proceso destruido -  PID: 7 - Tamaño: 16
+2024/12/06 14:05:02 ## Proceso creado -  PID: 8 - Tamaño: 8
+2024/12/06 14:05:02 ## Hilo creado - (PID:TID) - (8:0)
+2024/12/06 14:05:03 ## Contexto solicitado - (PID:TID) - (8:0)
+2024/12/06 14:05:03 ## Obtener instrucción - (PID:TID) - (8:0) - Instrucción: {SET DX 0}
+2024/12/06 14:05:03 ## Obtener instrucción - (PID:TID) - (8:0) - Instrucción: {SET AX 64}
+2024/12/06 14:05:03 ## Obtener instrucción - (PID:TID) - (8:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 14:05:03 ## Escritura - (PID:TID) - (8:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 14:05:04 ## Contexto actualizado - (PID:TID) - (8:0)
+2024/12/06 14:05:04 ## Contexto solicitado - (PID:TID) - (8:0)
+2024/12/06 14:05:04 ## Obtener instrucción - (PID:TID) - (8:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 14:05:04 ## Leer Memoria - Direccion:  32
+2024/12/06 14:05:04 ## Nuevo Valor: 64
+2024/12/06 14:05:04 ## Lectura - (PID:TID) - (8:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 14:05:04 ## Obtener instrucción - (PID:TID) - (8:0) - Instrucción: {LOG BX}
+2024/12/06 14:05:05 ## Contexto actualizado - (PID:TID) - (8:0)
+2024/12/06 14:05:05 ## Contexto solicitado - (PID:TID) - (8:0)
+2024/12/06 14:05:05 ## Obtener instrucción - (PID:TID) - (8:0) - Instrucción: {IO 12000}
+2024/12/06 14:05:05 ## Contexto actualizado - (PID:TID) - (8:0)
+2024/12/06 14:05:05 ## Contexto solicitado - (PID:TID) - (8:0)
+2024/12/06 14:05:06 ## Obtener instrucción - (PID:TID) - (8:0) - Instrucción: {PROCESS_EXIT}
+2024/12/06 14:05:06 ## Hilo destruido - (PID:TID) - (8:0)
+2024/12/06 14:05:06 ## Proceso destruido -  PID: 8 - Tamaño: 16
+2024/12/06 14:05:06 ## Proceso creado -  PID: 9 - Tamaño: 8
+2024/12/06 14:05:06 ## Hilo creado - (PID:TID) - (9:0)
+2024/12/06 14:05:06 ## Contexto solicitado - (PID:TID) - (9:0)
+2024/12/06 14:05:06 ## Obtener instrucción - (PID:TID) - (9:0) - Instrucción: {SET DX 0}
+2024/12/06 14:05:06 ## Obtener instrucción - (PID:TID) - (9:0) - Instrucción: {SET AX 64}
+2024/12/06 14:05:06 ## Obtener instrucción - (PID:TID) - (9:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 14:05:07 ## Escritura - (PID:TID) - (9:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 14:05:07 ## Contexto actualizado - (PID:TID) - (9:0)
+2024/12/06 14:05:07 ## Contexto solicitado - (PID:TID) - (9:0)
+2024/12/06 14:05:07 ## Obtener instrucción - (PID:TID) - (9:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 14:05:08 ## Leer Memoria - Direccion:  32
+2024/12/06 14:05:08 ## Nuevo Valor: 64
+2024/12/06 14:05:08 ## Lectura - (PID:TID) - (9:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 14:05:08 ## Obtener instrucción - (PID:TID) - (9:0) - Instrucción: {LOG BX}
+2024/12/06 14:05:08 ## Contexto actualizado - (PID:TID) - (9:0)
+2024/12/06 14:05:08 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 14:05:08 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {PROCESS_EXIT}
+2024/12/06 14:05:08 ## Hilo destruido - (PID:TID) - (3:0)
+2024/12/06 14:05:08 ## Proceso destruido -  PID: 3 - Tamaño: 64
+2024/12/06 14:05:09 ## Contexto solicitado - (PID:TID) - (9:0)
+2024/12/06 14:05:09 ## Obtener instrucción - (PID:TID) - (9:0) - Instrucción: {IO 12000}
+2024/12/06 14:05:09 ## Contexto actualizado - (PID:TID) - (9:0)
+2024/12/06 14:05:09 ## Contexto solicitado - (PID:TID) - (9:0)
+2024/12/06 14:05:09 ## Obtener instrucción - (PID:TID) - (9:0) - Instrucción: {PROCESS_EXIT}
+2024/12/06 14:05:09 ## Hilo destruido - (PID:TID) - (9:0)
+2024/12/06 14:05:09 ## Proceso destruido -  PID: 9 - Tamaño: 16
+2024/12/06 14:05:18 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 14:05:19 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {PROCESS_EXIT}
+2024/12/06 14:05:19 ## Hilo destruido - (PID:TID) - (4:0)
+2024/12/06 14:05:19 ## Proceso destruido -  PID: 4 - Tamaño: 128
+2024/12/06 14:05:30 ## Contexto solicitado - (PID:TID) - (5:0)
+2024/12/06 14:05:31 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {PROCESS_EXIT}
+2024/12/06 14:05:31 ## Hilo destruido - (PID:TID) - (5:0)
+2024/12/06 14:05:31 ## Proceso destruido -  PID: 5 - Tamaño: 16
+2024/12/06 14:11:57 Memoria inicializada con éxito.
+2024/12/06 14:11:57 El módulo memoria está a la escucha en el puerto :8002
+2024/12/06 14:12:08 particion base: 0, particion limite: 32 particion pid: 1
+2024/12/06 14:12:08 ## Proceso creado -  PID: 1 - Tamaño: 12
+2024/12/06 14:12:08 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/06 14:12:08 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 14:12:08 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 14:12:08 particion base: 32, particion limite: 48 particion pid: 2
+2024/12/06 14:12:08 ## Proceso creado -  PID: 2 - Tamaño: 8
+2024/12/06 14:12:08 ## Hilo creado - (PID:TID) - (2:0)
+2024/12/06 14:12:09 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 14:12:09 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 14:12:09 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {SET DX 0}
+2024/12/06 14:12:09 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {SET AX 64}
+2024/12/06 14:12:09 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 14:12:10 ## Escritura - (PID:TID) - (2:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 14:12:10 ## Contexto actualizado - (PID:TID) - (2:0)
+2024/12/06 14:12:10 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 14:12:10 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 48 0}
+2024/12/06 14:12:10 particion base: 48, particion limite: 112 particion pid: 3
+2024/12/06 14:12:10 ## Proceso creado -  PID: 3 - Tamaño: 48
+2024/12/06 14:12:10 ## Hilo creado - (PID:TID) - (3:0)
+2024/12/06 14:12:10 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 14:12:11 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 14:12:11 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 14:12:11 ## Leer Memoria - Direccion:  32
+2024/12/06 14:12:11 ## Nuevo Valor: 64
+2024/12/06 14:12:11 ## Lectura - (PID:TID) - (2:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 14:12:11 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {LOG BX}
+2024/12/06 14:12:11 ## Contexto actualizado - (PID:TID) - (2:0)
+2024/12/06 14:12:12 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 14:12:12 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {SET DX 0}
+2024/12/06 14:12:12 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {SET AX 64}
+2024/12/06 14:12:12 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 14:12:12 ## Escritura - (PID:TID) - (3:0) - Dir. Física: 48 - Tamaño: 4
+2024/12/06 14:12:13 ## Contexto actualizado - (PID:TID) - (3:0)
+2024/12/06 14:12:13 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 14:12:13 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 96 0}
+2024/12/06 14:12:13 particion base: 112, particion limite: 240 particion pid: 4
+2024/12/06 14:12:13 ## Proceso creado -  PID: 4 - Tamaño: 96
+2024/12/06 14:12:13 ## Hilo creado - (PID:TID) - (4:0)
+2024/12/06 14:12:13 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 14:12:13 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 14:12:14 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {IO 12000}
+2024/12/06 14:12:14 ## Contexto actualizado - (PID:TID) - (2:0)
+2024/12/06 14:12:14 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 14:12:14 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 14:12:14 ## Leer Memoria - Direccion:  48
+2024/12/06 14:12:14 ## Nuevo Valor: 64
+2024/12/06 14:12:14 ## Lectura - (PID:TID) - (3:0) - Dir. Física: 48 - Tamaño: 4
+2024/12/06 14:12:15 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {LOG BX}
+2024/12/06 14:12:15 ## Contexto actualizado - (PID:TID) - (3:0)
+2024/12/06 14:12:15 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 14:12:15 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {SET DX 0}
+2024/12/06 14:12:15 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {SET AX 64}
+2024/12/06 14:12:16 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 14:12:16 ## Escritura - (PID:TID) - (4:0) - Dir. Física: 112 - Tamaño: 4
+2024/12/06 14:12:16 ## Contexto actualizado - (PID:TID) - (4:0)
+2024/12/06 14:12:16 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 14:12:16 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 12 0}
+2024/12/06 14:12:16 particion base: 240, particion limite: 256 particion pid: 5
+2024/12/06 14:12:16 ## Proceso creado -  PID: 5 - Tamaño: 12
+2024/12/06 14:12:16 ## Hilo creado - (PID:TID) - (5:0)
+2024/12/06 14:12:17 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 14:12:17 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 14:12:17 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {IO 12000}
+2024/12/06 14:12:17 ## Contexto actualizado - (PID:TID) - (3:0)
+2024/12/06 14:12:17 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 14:12:18 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 14:12:18 ## Leer Memoria - Direccion:  112
+2024/12/06 14:12:18 ## Nuevo Valor: 64
+2024/12/06 14:12:18 ## Lectura - (PID:TID) - (4:0) - Dir. Física: 112 - Tamaño: 4
+2024/12/06 14:12:18 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {LOG BX}
+2024/12/06 14:12:18 ## Contexto actualizado - (PID:TID) - (4:0)
+2024/12/06 14:12:18 ## Contexto solicitado - (PID:TID) - (5:0)
+2024/12/06 14:12:19 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {SET DX 0}
+2024/12/06 14:12:19 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {SET AX 64}
+2024/12/06 14:12:19 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 14:12:19 ## Escritura - (PID:TID) - (5:0) - Dir. Física: 240 - Tamaño: 4
+2024/12/06 14:12:19 ## Contexto actualizado - (PID:TID) - (5:0)
+2024/12/06 14:12:20 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 14:12:20 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 14:12:20 El proceso 6 no pudo ser inicializado
+2024/12/06 14:12:20 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 14:12:20 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 14:12:20 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {IO 12000}
+2024/12/06 14:12:21 ## Contexto actualizado - (PID:TID) - (4:0)
+2024/12/06 14:12:21 ## Contexto solicitado - (PID:TID) - (5:0)
+2024/12/06 14:12:21 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 14:12:21 ## Leer Memoria - Direccion:  240
+2024/12/06 14:12:21 ## Nuevo Valor: 64
+2024/12/06 14:12:21 ## Lectura - (PID:TID) - (5:0) - Dir. Física: 240 - Tamaño: 4
+2024/12/06 14:12:21 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {LOG BX}
+2024/12/06 14:12:22 ## Contexto actualizado - (PID:TID) - (5:0)
+2024/12/06 14:12:22 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 14:12:22 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 14:12:22 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 14:12:22 ## Contexto solicitado - (PID:TID) - (5:0)
+2024/12/06 14:12:23 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {IO 12000}
+2024/12/06 14:12:23 ## Contexto actualizado - (PID:TID) - (5:0)
+2024/12/06 14:12:23 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 14:12:23 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 14:12:23 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 14:12:24 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 14:12:24 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 14:12:24 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 14:12:24 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 14:12:25 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/06 14:12:25 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 64}
+2024/12/06 14:12:25 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 14:12:25 ## Escritura - (PID:TID) - (1:0) - Dir. Física: 0 - Tamaño: 4
+2024/12/06 14:12:25 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 14:12:26 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 14:12:26 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 14:12:26 ## Leer Memoria - Direccion:  0
+2024/12/06 14:12:26 ## Nuevo Valor: 64
+2024/12/06 14:12:26 ## Lectura - (PID:TID) - (1:0) - Dir. Física: 0 - Tamaño: 4
+2024/12/06 14:12:26 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {LOG BX}
+2024/12/06 14:12:26 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 14:12:27 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 14:12:27 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {PROCESS_EXIT}
+2024/12/06 14:12:27 ## Hilo destruido - (PID:TID) - (2:0)
+2024/12/06 14:12:27 ## Proceso destruido -  PID: 2 - Tamaño: 16
+2024/12/06 14:12:27 particion base: 32, particion limite: 48 particion pid: 6
+2024/12/06 14:12:27 ## Proceso creado -  PID: 6 - Tamaño: 8
+2024/12/06 14:12:27 ## Hilo creado - (PID:TID) - (6:0)
+2024/12/06 14:12:27 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 14:12:27 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {IO 12000}
+2024/12/06 14:12:27 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 14:12:28 ## Contexto solicitado - (PID:TID) - (6:0)
+2024/12/06 14:12:28 ## Obtener instrucción - (PID:TID) - (6:0) - Instrucción: {SET DX 0}
+2024/12/06 14:12:28 ## Obtener instrucción - (PID:TID) - (6:0) - Instrucción: {SET AX 64}
+2024/12/06 14:12:28 ## Obtener instrucción - (PID:TID) - (6:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 14:12:28 ## Escritura - (PID:TID) - (6:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 14:12:29 ## Contexto actualizado - (PID:TID) - (6:0)
+2024/12/06 14:12:29 ## Contexto solicitado - (PID:TID) - (6:0)
+2024/12/06 14:12:29 ## Obtener instrucción - (PID:TID) - (6:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 14:12:29 ## Leer Memoria - Direccion:  32
+2024/12/06 14:12:29 ## Nuevo Valor: 64
+2024/12/06 14:12:29 ## Lectura - (PID:TID) - (6:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 14:12:29 ## Obtener instrucción - (PID:TID) - (6:0) - Instrucción: {LOG BX}
+2024/12/06 14:12:30 ## Contexto actualizado - (PID:TID) - (6:0)
+2024/12/06 14:12:30 ## Contexto solicitado - (PID:TID) - (6:0)
+2024/12/06 14:12:30 ## Obtener instrucción - (PID:TID) - (6:0) - Instrucción: {IO 12000}
+2024/12/06 14:12:30 ## Contexto actualizado - (PID:TID) - (6:0)
+2024/12/06 14:12:30 ## Contexto solicitado - (PID:TID) - (6:0)
+2024/12/06 14:12:31 ## Obtener instrucción - (PID:TID) - (6:0) - Instrucción: {PROCESS_EXIT}
+2024/12/06 14:12:31 ## Hilo destruido - (PID:TID) - (6:0)
+2024/12/06 14:12:31 ## Proceso destruido -  PID: 6 - Tamaño: 16
+2024/12/06 14:12:31 particion base: 32, particion limite: 48 particion pid: 7
+2024/12/06 14:12:31 ## Proceso creado -  PID: 7 - Tamaño: 8
+2024/12/06 14:12:31 ## Hilo creado - (PID:TID) - (7:0)
+2024/12/06 14:12:31 ## Contexto solicitado - (PID:TID) - (7:0)
+2024/12/06 14:12:31 ## Obtener instrucción - (PID:TID) - (7:0) - Instrucción: {SET DX 0}
+2024/12/06 14:12:31 ## Obtener instrucción - (PID:TID) - (7:0) - Instrucción: {SET AX 64}
+2024/12/06 14:12:31 ## Obtener instrucción - (PID:TID) - (7:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 14:12:32 ## Escritura - (PID:TID) - (7:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 14:12:32 ## Contexto actualizado - (PID:TID) - (7:0)
+2024/12/06 14:12:32 ## Contexto solicitado - (PID:TID) - (7:0)
+2024/12/06 14:12:32 ## Obtener instrucción - (PID:TID) - (7:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 14:12:32 ## Leer Memoria - Direccion:  32
+2024/12/06 14:12:32 ## Nuevo Valor: 64
+2024/12/06 14:12:32 ## Lectura - (PID:TID) - (7:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 14:12:33 ## Obtener instrucción - (PID:TID) - (7:0) - Instrucción: {LOG BX}
+2024/12/06 14:12:33 ## Contexto actualizado - (PID:TID) - (7:0)
+2024/12/06 14:12:33 ## Contexto solicitado - (PID:TID) - (7:0)
+2024/12/06 14:12:33 ## Obtener instrucción - (PID:TID) - (7:0) - Instrucción: {IO 12000}
+2024/12/06 14:12:33 ## Contexto actualizado - (PID:TID) - (7:0)
+2024/12/06 14:12:34 ## Contexto solicitado - (PID:TID) - (7:0)
+2024/12/06 14:12:34 ## Obtener instrucción - (PID:TID) - (7:0) - Instrucción: {PROCESS_EXIT}
+2024/12/06 14:12:34 ## Hilo destruido - (PID:TID) - (7:0)
+2024/12/06 14:12:34 ## Proceso destruido -  PID: 7 - Tamaño: 16
+2024/12/06 14:12:34 particion base: 32, particion limite: 48 particion pid: 8
+2024/12/06 14:12:34 ## Proceso creado -  PID: 8 - Tamaño: 8
+2024/12/06 14:12:34 ## Hilo creado - (PID:TID) - (8:0)
+2024/12/06 14:12:34 ## Contexto solicitado - (PID:TID) - (8:0)
+2024/12/06 14:12:34 ## Obtener instrucción - (PID:TID) - (8:0) - Instrucción: {SET DX 0}
+2024/12/06 14:12:34 ## Obtener instrucción - (PID:TID) - (8:0) - Instrucción: {SET AX 64}
+2024/12/06 14:12:35 ## Obtener instrucción - (PID:TID) - (8:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 14:12:35 ## Escritura - (PID:TID) - (8:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 14:12:35 ## Contexto actualizado - (PID:TID) - (8:0)
+2024/12/06 14:12:35 ## Contexto solicitado - (PID:TID) - (8:0)
+2024/12/06 14:12:35 ## Obtener instrucción - (PID:TID) - (8:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 14:12:36 ## Leer Memoria - Direccion:  32
+2024/12/06 14:12:36 ## Nuevo Valor: 64
+2024/12/06 14:12:36 ## Lectura - (PID:TID) - (8:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 14:12:36 ## Obtener instrucción - (PID:TID) - (8:0) - Instrucción: {LOG BX}
+2024/12/06 14:12:36 ## Contexto actualizado - (PID:TID) - (8:0)
+2024/12/06 14:12:36 ## Contexto solicitado - (PID:TID) - (8:0)
+2024/12/06 14:12:36 ## Obtener instrucción - (PID:TID) - (8:0) - Instrucción: {IO 12000}
+2024/12/06 14:12:37 ## Contexto actualizado - (PID:TID) - (8:0)
+2024/12/06 14:12:37 ## Contexto solicitado - (PID:TID) - (8:0)
+2024/12/06 14:12:37 ## Obtener instrucción - (PID:TID) - (8:0) - Instrucción: {PROCESS_EXIT}
+2024/12/06 14:12:37 ## Hilo destruido - (PID:TID) - (8:0)
+2024/12/06 14:12:37 ## Proceso destruido -  PID: 8 - Tamaño: 16
+2024/12/06 14:12:37 particion base: 32, particion limite: 48 particion pid: 9
+2024/12/06 14:12:37 ## Proceso creado -  PID: 9 - Tamaño: 8
+2024/12/06 14:12:37 ## Hilo creado - (PID:TID) - (9:0)
+2024/12/06 14:12:37 ## Contexto solicitado - (PID:TID) - (9:0)
+2024/12/06 14:12:37 ## Obtener instrucción - (PID:TID) - (9:0) - Instrucción: {SET DX 0}
+2024/12/06 14:12:38 ## Obtener instrucción - (PID:TID) - (9:0) - Instrucción: {SET AX 64}
+2024/12/06 14:12:38 ## Obtener instrucción - (PID:TID) - (9:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 14:12:38 ## Escritura - (PID:TID) - (9:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 14:12:38 ## Contexto actualizado - (PID:TID) - (9:0)
+2024/12/06 14:12:38 ## Contexto solicitado - (PID:TID) - (9:0)
+2024/12/06 14:12:39 ## Obtener instrucción - (PID:TID) - (9:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 14:12:39 ## Leer Memoria - Direccion:  32
+2024/12/06 14:12:39 ## Nuevo Valor: 64
+2024/12/06 14:12:39 ## Lectura - (PID:TID) - (9:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 14:12:39 ## Obtener instrucción - (PID:TID) - (9:0) - Instrucción: {LOG BX}
+2024/12/06 14:12:39 ## Contexto actualizado - (PID:TID) - (9:0)
+2024/12/06 14:12:39 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 14:12:40 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {PROCESS_EXIT}
+2024/12/06 14:12:40 ## Hilo destruido - (PID:TID) - (3:0)
+2024/12/06 14:12:40 ## Proceso destruido -  PID: 3 - Tamaño: 64
+2024/12/06 14:12:40 ## Contexto solicitado - (PID:TID) - (9:0)
+2024/12/06 14:12:40 ## Obtener instrucción - (PID:TID) - (9:0) - Instrucción: {IO 12000}
+2024/12/06 14:12:40 ## Contexto actualizado - (PID:TID) - (9:0)
+2024/12/06 14:12:40 ## Contexto solicitado - (PID:TID) - (9:0)
+2024/12/06 14:12:41 ## Obtener instrucción - (PID:TID) - (9:0) - Instrucción: {PROCESS_EXIT}
+2024/12/06 14:12:41 ## Hilo destruido - (PID:TID) - (9:0)
+2024/12/06 14:12:41 ## Proceso destruido -  PID: 9 - Tamaño: 16
+2024/12/06 14:12:50 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 14:12:50 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {PROCESS_EXIT}
+2024/12/06 14:12:50 ## Hilo destruido - (PID:TID) - (4:0)
+2024/12/06 14:12:50 ## Proceso destruido -  PID: 4 - Tamaño: 128
+2024/12/06 14:13:02 ## Contexto solicitado - (PID:TID) - (5:0)
+2024/12/06 14:13:02 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {PROCESS_EXIT}
+2024/12/06 14:13:02 ## Hilo destruido - (PID:TID) - (5:0)
+2024/12/06 14:13:02 ## Proceso destruido -  PID: 5 - Tamaño: 16
+2024/12/06 14:19:31 Memoria inicializada con éxito.
+2024/12/06 14:19:31 El módulo memoria está a la escucha en el puerto :8002
+2024/12/06 14:19:41 particion base: 0, particion limite: 32 particion pid: 1
+2024/12/06 14:19:41 ## Proceso creado -  PID: 1 - Tamaño: 12
+2024/12/06 14:19:41 ## Hilo creado - (PID:TID) - (1:0)
+2024/12/06 14:19:41 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 14:19:42 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 14:19:42 particion base: 32, particion limite: 48 particion pid: 2
+2024/12/06 14:19:42 ## Proceso creado -  PID: 2 - Tamaño: 8
+2024/12/06 14:19:42 ## Hilo creado - (PID:TID) - (2:0)
+2024/12/06 14:19:42 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 14:19:42 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 14:19:42 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {SET DX 0}
+2024/12/06 14:19:42 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {SET AX 64}
+2024/12/06 14:19:43 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 14:19:43 ## Escritura - (PID:TID) - (2:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 14:19:43 ## Contexto actualizado - (PID:TID) - (2:0)
+2024/12/06 14:19:43 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 14:19:43 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 48 0}
+2024/12/06 14:19:43 particion base: 48, particion limite: 112 particion pid: 3
+2024/12/06 14:19:43 ## Proceso creado -  PID: 3 - Tamaño: 48
+2024/12/06 14:19:43 ## Hilo creado - (PID:TID) - (3:0)
+2024/12/06 14:19:44 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 14:19:44 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 14:19:44 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 14:19:44 ## Leer Memoria - Direccion:  32
+2024/12/06 14:19:44 ## Nuevo Valor: 64
+2024/12/06 14:19:44 ## Lectura - (PID:TID) - (2:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 14:19:44 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {LOG BX}
+2024/12/06 14:19:45 ## Contexto actualizado - (PID:TID) - (2:0)
+2024/12/06 14:19:45 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 14:19:45 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {SET DX 0}
+2024/12/06 14:19:45 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {SET AX 64}
+2024/12/06 14:19:45 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 14:19:46 ## Escritura - (PID:TID) - (3:0) - Dir. Física: 48 - Tamaño: 4
+2024/12/06 14:19:46 ## Contexto actualizado - (PID:TID) - (3:0)
+2024/12/06 14:19:46 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 14:19:46 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 96 0}
+2024/12/06 14:19:46 particion base: 112, particion limite: 240 particion pid: 4
+2024/12/06 14:19:46 ## Proceso creado -  PID: 4 - Tamaño: 96
+2024/12/06 14:19:46 ## Hilo creado - (PID:TID) - (4:0)
+2024/12/06 14:19:46 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 14:19:47 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 14:19:47 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {IO 12000}
+2024/12/06 14:19:47 ## Contexto actualizado - (PID:TID) - (2:0)
+2024/12/06 14:19:47 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 14:19:47 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 14:19:48 ## Leer Memoria - Direccion:  48
+2024/12/06 14:19:48 ## Nuevo Valor: 64
+2024/12/06 14:19:48 ## Lectura - (PID:TID) - (3:0) - Dir. Física: 48 - Tamaño: 4
+2024/12/06 14:19:48 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {LOG BX}
+2024/12/06 14:19:48 ## Contexto actualizado - (PID:TID) - (3:0)
+2024/12/06 14:19:48 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 14:19:48 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {SET DX 0}
+2024/12/06 14:19:49 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {SET AX 64}
+2024/12/06 14:19:49 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 14:19:49 ## Escritura - (PID:TID) - (4:0) - Dir. Física: 112 - Tamaño: 4
+2024/12/06 14:19:49 ## Contexto actualizado - (PID:TID) - (4:0)
+2024/12/06 14:19:49 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 14:19:50 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 12 0}
+2024/12/06 14:19:50 particion base: 240, particion limite: 256 particion pid: 5
+2024/12/06 14:19:50 ## Proceso creado -  PID: 5 - Tamaño: 12
+2024/12/06 14:19:50 ## Hilo creado - (PID:TID) - (5:0)
+2024/12/06 14:19:50 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 14:19:50 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 14:19:50 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {IO 12000}
+2024/12/06 14:19:50 ## Contexto actualizado - (PID:TID) - (3:0)
+2024/12/06 14:19:51 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 14:19:51 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 14:19:51 ## Leer Memoria - Direccion:  112
+2024/12/06 14:19:51 ## Nuevo Valor: 64
+2024/12/06 14:19:51 ## Lectura - (PID:TID) - (4:0) - Dir. Física: 112 - Tamaño: 4
+2024/12/06 14:19:51 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {LOG BX}
+2024/12/06 14:19:51 ## Contexto actualizado - (PID:TID) - (4:0)
+2024/12/06 14:19:52 ## Contexto solicitado - (PID:TID) - (5:0)
+2024/12/06 14:19:52 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {SET DX 0}
+2024/12/06 14:19:52 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {SET AX 64}
+2024/12/06 14:19:52 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 14:19:52 ## Escritura - (PID:TID) - (5:0) - Dir. Física: 240 - Tamaño: 4
+2024/12/06 14:19:53 ## Contexto actualizado - (PID:TID) - (5:0)
+2024/12/06 14:19:53 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 14:19:53 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 14:19:53 El proceso 6 no pudo ser inicializado
+2024/12/06 14:19:53 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 14:19:53 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 14:19:54 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {IO 12000}
+2024/12/06 14:19:54 ## Contexto actualizado - (PID:TID) - (4:0)
+2024/12/06 14:19:54 ## Contexto solicitado - (PID:TID) - (5:0)
+2024/12/06 14:19:54 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 14:19:54 ## Leer Memoria - Direccion:  240
+2024/12/06 14:19:54 ## Nuevo Valor: 64
+2024/12/06 14:19:54 ## Lectura - (PID:TID) - (5:0) - Dir. Física: 240 - Tamaño: 4
+2024/12/06 14:19:55 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {LOG BX}
+2024/12/06 14:19:55 ## Contexto actualizado - (PID:TID) - (5:0)
+2024/12/06 14:19:55 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 14:19:55 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 14:19:55 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 14:19:56 ## Contexto solicitado - (PID:TID) - (5:0)
+2024/12/06 14:19:56 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {IO 12000}
+2024/12/06 14:19:56 ## Contexto actualizado - (PID:TID) - (5:0)
+2024/12/06 14:19:56 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 14:19:56 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 14:19:57 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 14:19:57 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 14:19:57 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {PROCESS_CREATE MEM_FIJAS 8 0}
+2024/12/06 14:19:57 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 14:19:58 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 14:19:58 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET DX 0}
+2024/12/06 14:19:58 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {SET AX 64}
+2024/12/06 14:19:58 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 14:19:58 ## Escritura - (PID:TID) - (1:0) - Dir. Física: 0 - Tamaño: 4
+2024/12/06 14:19:59 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 14:19:59 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 14:19:59 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 14:19:59 ## Leer Memoria - Direccion:  0
+2024/12/06 14:19:59 ## Nuevo Valor: 64
+2024/12/06 14:19:59 ## Lectura - (PID:TID) - (1:0) - Dir. Física: 0 - Tamaño: 4
+2024/12/06 14:19:59 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {LOG BX}
+2024/12/06 14:20:00 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 14:20:00 ## Contexto solicitado - (PID:TID) - (2:0)
+2024/12/06 14:20:00 ## Obtener instrucción - (PID:TID) - (2:0) - Instrucción: {PROCESS_EXIT}
+2024/12/06 14:20:00 ## Hilo destruido - (PID:TID) - (2:0)
+2024/12/06 14:20:00 ## Proceso destruido -  PID: 2 - Tamaño: 16
+2024/12/06 14:20:00 particion base: 32, particion limite: 48 particion pid: 6
+2024/12/06 14:20:00 ## Proceso creado -  PID: 6 - Tamaño: 8
+2024/12/06 14:20:00 ## Hilo creado - (PID:TID) - (6:0)
+2024/12/06 14:20:00 ## Contexto solicitado - (PID:TID) - (1:0)
+2024/12/06 14:20:00 ## Obtener instrucción - (PID:TID) - (1:0) - Instrucción: {IO 12000}
+2024/12/06 14:20:01 ## Contexto actualizado - (PID:TID) - (1:0)
+2024/12/06 14:20:01 ## Contexto solicitado - (PID:TID) - (6:0)
+2024/12/06 14:20:01 ## Obtener instrucción - (PID:TID) - (6:0) - Instrucción: {SET DX 0}
+2024/12/06 14:20:01 ## Obtener instrucción - (PID:TID) - (6:0) - Instrucción: {SET AX 64}
+2024/12/06 14:20:01 ## Obtener instrucción - (PID:TID) - (6:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 14:20:02 ## Escritura - (PID:TID) - (6:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 14:20:02 ## Contexto actualizado - (PID:TID) - (6:0)
+2024/12/06 14:20:02 ## Contexto solicitado - (PID:TID) - (6:0)
+2024/12/06 14:20:02 ## Obtener instrucción - (PID:TID) - (6:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 14:20:02 ## Leer Memoria - Direccion:  32
+2024/12/06 14:20:02 ## Nuevo Valor: 64
+2024/12/06 14:20:02 ## Lectura - (PID:TID) - (6:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 14:20:03 ## Obtener instrucción - (PID:TID) - (6:0) - Instrucción: {LOG BX}
+2024/12/06 14:20:03 ## Contexto actualizado - (PID:TID) - (6:0)
+2024/12/06 14:20:03 ## Contexto solicitado - (PID:TID) - (6:0)
+2024/12/06 14:20:03 ## Obtener instrucción - (PID:TID) - (6:0) - Instrucción: {IO 12000}
+2024/12/06 14:20:03 ## Contexto actualizado - (PID:TID) - (6:0)
+2024/12/06 14:20:04 ## Contexto solicitado - (PID:TID) - (6:0)
+2024/12/06 14:20:04 ## Obtener instrucción - (PID:TID) - (6:0) - Instrucción: {PROCESS_EXIT}
+2024/12/06 14:20:04 ## Hilo destruido - (PID:TID) - (6:0)
+2024/12/06 14:20:04 ## Proceso destruido -  PID: 6 - Tamaño: 16
+2024/12/06 14:20:04 particion base: 32, particion limite: 48 particion pid: 7
+2024/12/06 14:20:04 ## Proceso creado -  PID: 7 - Tamaño: 8
+2024/12/06 14:20:04 ## Hilo creado - (PID:TID) - (7:0)
+2024/12/06 14:20:04 ## Contexto solicitado - (PID:TID) - (7:0)
+2024/12/06 14:20:04 ## Obtener instrucción - (PID:TID) - (7:0) - Instrucción: {SET DX 0}
+2024/12/06 14:20:04 ## Obtener instrucción - (PID:TID) - (7:0) - Instrucción: {SET AX 64}
+2024/12/06 14:20:05 ## Obtener instrucción - (PID:TID) - (7:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 14:20:05 ## Escritura - (PID:TID) - (7:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 14:20:05 ## Contexto actualizado - (PID:TID) - (7:0)
+2024/12/06 14:20:05 ## Contexto solicitado - (PID:TID) - (7:0)
+2024/12/06 14:20:05 ## Obtener instrucción - (PID:TID) - (7:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 14:20:06 ## Leer Memoria - Direccion:  32
+2024/12/06 14:20:06 ## Nuevo Valor: 64
+2024/12/06 14:20:06 ## Lectura - (PID:TID) - (7:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 14:20:06 ## Obtener instrucción - (PID:TID) - (7:0) - Instrucción: {LOG BX}
+2024/12/06 14:20:06 ## Contexto actualizado - (PID:TID) - (7:0)
+2024/12/06 14:20:06 ## Contexto solicitado - (PID:TID) - (7:0)
+2024/12/06 14:20:06 ## Obtener instrucción - (PID:TID) - (7:0) - Instrucción: {IO 12000}
+2024/12/06 14:20:07 ## Contexto actualizado - (PID:TID) - (7:0)
+2024/12/06 14:20:07 ## Contexto solicitado - (PID:TID) - (7:0)
+2024/12/06 14:20:07 ## Obtener instrucción - (PID:TID) - (7:0) - Instrucción: {PROCESS_EXIT}
+2024/12/06 14:20:07 ## Hilo destruido - (PID:TID) - (7:0)
+2024/12/06 14:20:07 ## Proceso destruido -  PID: 7 - Tamaño: 16
+2024/12/06 14:20:07 particion base: 32, particion limite: 48 particion pid: 8
+2024/12/06 14:20:07 ## Proceso creado -  PID: 8 - Tamaño: 8
+2024/12/06 14:20:07 ## Hilo creado - (PID:TID) - (8:0)
+2024/12/06 14:20:07 ## Contexto solicitado - (PID:TID) - (8:0)
+2024/12/06 14:20:07 ## Obtener instrucción - (PID:TID) - (8:0) - Instrucción: {SET DX 0}
+2024/12/06 14:20:08 ## Obtener instrucción - (PID:TID) - (8:0) - Instrucción: {SET AX 64}
+2024/12/06 14:20:08 ## Obtener instrucción - (PID:TID) - (8:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 14:20:08 ## Escritura - (PID:TID) - (8:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 14:20:08 ## Contexto actualizado - (PID:TID) - (8:0)
+2024/12/06 14:20:09 ## Contexto solicitado - (PID:TID) - (8:0)
+2024/12/06 14:20:09 ## Obtener instrucción - (PID:TID) - (8:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 14:20:09 ## Leer Memoria - Direccion:  32
+2024/12/06 14:20:09 ## Nuevo Valor: 64
+2024/12/06 14:20:09 ## Lectura - (PID:TID) - (8:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 14:20:09 ## Obtener instrucción - (PID:TID) - (8:0) - Instrucción: {LOG BX}
+2024/12/06 14:20:09 ## Contexto actualizado - (PID:TID) - (8:0)
+2024/12/06 14:20:10 ## Contexto solicitado - (PID:TID) - (8:0)
+2024/12/06 14:20:10 ## Obtener instrucción - (PID:TID) - (8:0) - Instrucción: {IO 12000}
+2024/12/06 14:20:10 ## Contexto actualizado - (PID:TID) - (8:0)
+2024/12/06 14:20:10 ## Contexto solicitado - (PID:TID) - (8:0)
+2024/12/06 14:20:10 ## Obtener instrucción - (PID:TID) - (8:0) - Instrucción: {PROCESS_EXIT}
+2024/12/06 14:20:10 ## Hilo destruido - (PID:TID) - (8:0)
+2024/12/06 14:20:10 ## Proceso destruido -  PID: 8 - Tamaño: 16
+2024/12/06 14:20:10 particion base: 32, particion limite: 48 particion pid: 9
+2024/12/06 14:20:10 ## Proceso creado -  PID: 9 - Tamaño: 8
+2024/12/06 14:20:10 ## Hilo creado - (PID:TID) - (9:0)
+2024/12/06 14:20:11 ## Contexto solicitado - (PID:TID) - (9:0)
+2024/12/06 14:20:11 ## Obtener instrucción - (PID:TID) - (9:0) - Instrucción: {SET DX 0}
+2024/12/06 14:20:11 ## Obtener instrucción - (PID:TID) - (9:0) - Instrucción: {SET AX 64}
+2024/12/06 14:20:11 ## Obtener instrucción - (PID:TID) - (9:0) - Instrucción: {WRITE_MEM DX AX}
+2024/12/06 14:20:11 ## Escritura - (PID:TID) - (9:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 14:20:12 ## Contexto actualizado - (PID:TID) - (9:0)
+2024/12/06 14:20:12 ## Contexto solicitado - (PID:TID) - (9:0)
+2024/12/06 14:20:12 ## Obtener instrucción - (PID:TID) - (9:0) - Instrucción: {READ_MEM BX DX}
+2024/12/06 14:20:12 ## Leer Memoria - Direccion:  32
+2024/12/06 14:20:12 ## Nuevo Valor: 64
+2024/12/06 14:20:12 ## Lectura - (PID:TID) - (9:0) - Dir. Física: 32 - Tamaño: 4
+2024/12/06 14:20:12 ## Obtener instrucción - (PID:TID) - (9:0) - Instrucción: {LOG BX}
+2024/12/06 14:20:13 ## Contexto actualizado - (PID:TID) - (9:0)
+2024/12/06 14:20:13 ## Contexto solicitado - (PID:TID) - (3:0)
+2024/12/06 14:20:13 ## Obtener instrucción - (PID:TID) - (3:0) - Instrucción: {PROCESS_EXIT}
+2024/12/06 14:20:13 ## Hilo destruido - (PID:TID) - (3:0)
+2024/12/06 14:20:13 ## Proceso destruido -  PID: 3 - Tamaño: 64
+2024/12/06 14:20:13 ## Contexto solicitado - (PID:TID) - (9:0)
+2024/12/06 14:20:13 ## Obtener instrucción - (PID:TID) - (9:0) - Instrucción: {IO 12000}
+2024/12/06 14:20:14 ## Contexto actualizado - (PID:TID) - (9:0)
+2024/12/06 14:20:14 ## Contexto solicitado - (PID:TID) - (9:0)
+2024/12/06 14:20:14 ## Obtener instrucción - (PID:TID) - (9:0) - Instrucción: {PROCESS_EXIT}
+2024/12/06 14:20:14 ## Hilo destruido - (PID:TID) - (9:0)
+2024/12/06 14:20:14 ## Proceso destruido -  PID: 9 - Tamaño: 16
+2024/12/06 14:20:23 ## Contexto solicitado - (PID:TID) - (4:0)
+2024/12/06 14:20:23 ## Obtener instrucción - (PID:TID) - (4:0) - Instrucción: {PROCESS_EXIT}
+2024/12/06 14:20:23 ## Hilo destruido - (PID:TID) - (4:0)
+2024/12/06 14:20:23 ## Proceso destruido -  PID: 4 - Tamaño: 128
+2024/12/06 14:20:35 ## Contexto solicitado - (PID:TID) - (5:0)
+2024/12/06 14:20:35 ## Obtener instrucción - (PID:TID) - (5:0) - Instrucción: {PROCESS_EXIT}
+2024/12/06 14:20:35 ## Hilo destruido - (PID:TID) - (5:0)
+2024/12/06 14:20:35 ## Proceso destruido -  PID: 5 - Tamaño: 16

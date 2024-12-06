@@ -43,6 +43,8 @@ func AsignarParticion(pid int, tamanioProceso int) error {
 		globals.MemoriaSistema.TablaProcesos[pid] = &globals.ContextoProceso{Base: particion.Base, Limite: particion.Limite}
 	}
 
+	log.Printf("particion base: %d, particion limite: %d particion pid: %d\n", particion.Base, particion.Limite, particion.Pid)
+
 	return nil
 }
 

@@ -28,6 +28,8 @@ func main() {
 		log.Fatalln("Error al cargar la configuración")
 	}
 
+	handlers.Init()
+
 	//// Logger ////
 	configs.ConfigurarLogger("kernel")
 
@@ -40,7 +42,7 @@ func main() {
 	//// Proceso Inicial ////
 	processes.ProcesoInicial(os.Args)
 
-	go handlers.ManejadorIO()
+	//go handlers.ManejadorIO()
 
 	//// Servidor ////
 	mux := http.NewServeMux()

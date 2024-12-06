@@ -67,11 +67,9 @@ func ReadMem(operandos []string, registros *commons.Registros, base int, limite 
 
 	nuevoValor := binary.BigEndian.Uint32(byteSolicitados)
 
-	log.Println("## Nuevo Valor: ", nuevoValor)
-
 	globals.CambiarValorRegistros(operandos[0], nuevoValor, registros)
 
-	log.Printf("## TID: %d - Acción: LEER - Dirección Física: %d.", tid, direccionFísica)
+	log.Printf("## PID: %d TID: %d - Acción: LEER - Dirección Física: %d.", pid, tid, direccionFísica)
 
 	return 0
 }
@@ -101,7 +99,7 @@ func WriteMem(operandos []string, registros *commons.Registros, base int, limite
 
 	log.Printf("Respuesta de memoria a escribir memoria: %s\n", string(mensaje))
 
-	log.Printf("## TID: %d - Acción: ESCRIBIR - Dirección Física: %d.", tid, direccionFísica)
+	log.Printf("## PID: %d -TID: %d - Acción: ESCRIBIR - Dirección Física: %d.", pid, tid, direccionFísica)
 
 	return 0
 }
@@ -234,5 +232,5 @@ func EnviarRegistrosActualizados(registros *commons.Registros, pid int, tid int)
 
 	cliente.Post(globals.CConfig.IpMemory, globals.CConfig.PortMemory, "actualizar_contexto", reqCodificada)
 
-	log.Printf("## TID: %d - Actualizo Contexto Ejecución.", tid)
+	log.Printf("## PID: %d TID: %d - Actualizo Contexto Ejecución.", pid, tid)
 }

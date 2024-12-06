@@ -73,9 +73,6 @@ func ManejarHiloRunning() {
 		mu.Unlock()
 
 		ExecuteThread(hiloAEjecutar.Pid, hiloAEjecutar.Tid)
-		/*if globals.KConfig.SchedulerAlgorithm == "CMN" {
-			go Quantum(globals.Estructura.HiloExecute.Pid, globals.Estructura.HiloExecute.Tid)
-		}*/
 	}
 }
 
@@ -88,6 +85,11 @@ func PrintColaReady() {
 	fmt.Println("Estado actual de ColaBlock:")
 	for _, hilo := range globals.Estructura.ColaBloqueados {
 		fmt.Printf("Pid: %d, Tid: %d, Prioridad: %d, Estado: %s\n", hilo.Pid, hilo.Tid, hilo.Prioridad, hilo.Estado)
+	}
+	fmt.Println("---------------")
+	fmt.Println("Estado actual de ColaNew:")
+	for _, proceso := range globals.Estructura.ColaNew {
+		fmt.Printf("Pid: %d, Estado: %s\n", proceso.Pid, proceso.Estado)
 	}
 	fmt.Println("---------------")
 }

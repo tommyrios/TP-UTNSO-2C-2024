@@ -4,7 +4,6 @@ import (
 	"bytes"
 	"fmt"
 	"io"
-	"log"
 	"net/http"
 )
 
@@ -38,7 +37,7 @@ func Post2(ip string, port int, ruta string, jsonData []byte) (*http.Response, [
 		return nil, nil
 	}
 
-	log.Println("Respuesta POST:", response.Status)
+	//log.Println("Respuesta POST:", response.Status)
 
 	return response, bodyBytes
 }

@@ -5,8 +5,8 @@ import (
 	"github.com/sisoputnfrba/tp-golang/utils/commons"
 )
 
-func AgregarProcesoACola(pcb *commons.PCB, cola []*commons.PCB) {
-	cola = append(cola, pcb)
+func AgregarProcesoACola(pcb *commons.PCB, cola *[]*commons.PCB) {
+	*cola = append(*cola, pcb)
 }
 
 func SacarProcesoDeCola(pid int, cola *[]*commons.PCB) {

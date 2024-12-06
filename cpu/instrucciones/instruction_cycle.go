@@ -95,7 +95,7 @@ func solicitarContexto(pid int, tid int) (requests.ResponseContexto, error) {
 		return responseContexto, err
 	}
 
-	log.Printf("## TID: %d - Solicito Contexto Ejecución.\n", tid)
+	log.Printf("## PID %d - TID: %d - Solicito Contexto Ejecución.\n", pid, tid)
 
 	return responseContexto, nil
 }
@@ -111,7 +111,7 @@ func Fetch(pid int, tid int, pc int) string {
 
 	defer response.Body.Close()
 
-	log.Printf("## TID: %d - FETCH - Program Counter: %d.", tid, pc)
+	log.Printf("## PID: %d TID: %d - FETCH - Program Counter: %d.", pid, tid, pc)
 
 	return string(instruccion)
 }
@@ -126,7 +126,7 @@ func Decode(instruccion string) globals.InstruccionStruct {
 
 func Execute(instruccion globals.InstruccionStruct, registros *commons.Registros, base int, limite int, pid int, tid int) int {
 
-	log.Printf("## TID: %d - Ejecutando: %s - %s.", tid, instruccion.CodOperacion, instruccion.Operandos)
+	log.Printf("## PID: %d TID: %d - Ejecutando: %s - %s.", pid, tid, instruccion.CodOperacion, instruccion.Operandos)
 
 	switch instruccion.CodOperacion {
 	case "SET":

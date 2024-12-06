@@ -14080,3 +14080,1527 @@ created by net/http.(*Server).Serve in goroutine 1
 2024/12/06 11:33:58 Respuesta de la creación de proceso:  200
 2024/12/06 11:33:58 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
 2024/12/06 11:33:59 ## (3:0) - Solicitó syscall: IO
+2024/12/06 11:45:17 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/06 11:45:17 Cola NEW está vacía, solicitando memoria.
+2024/12/06 11:45:17 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/06 11:45:17 El módulo kernel está a la escucha en el puerto :8001
+2024/12/06 11:45:18 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 11:45:18 ## (2:0) Se crea el proceso - Estado: NEW
+2024/12/06 11:45:18 Cola NEW está vacía, solicitando memoria.
+2024/12/06 11:45:18 ## (2:0) Se crea el Hilo - Estado: READY
+2024/12/06 11:45:18 Respuesta de la creación de proceso:  200
+2024/12/06 11:45:18 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 11:45:19 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 11:45:20 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 11:45:20 ## (3:0) Se crea el proceso - Estado: NEW
+2024/12/06 11:45:20 Cola NEW está vacía, solicitando memoria.
+2024/12/06 11:45:20 ## (3:0) Se crea el Hilo - Estado: READY
+2024/12/06 11:45:20 Respuesta de la creación de proceso:  200
+2024/12/06 11:45:20 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 11:45:21 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 11:45:22 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 11:45:22 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 11:45:22 ## (4:0) Se crea el proceso - Estado: NEW
+2024/12/06 11:45:22 Cola NEW está vacía, solicitando memoria.
+2024/12/06 11:45:22 ## (4:0) Se crea el Hilo - Estado: READY
+2024/12/06 11:45:22 Respuesta de la creación de proceso:  200
+2024/12/06 11:45:22 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 11:45:23 ## (2:0) - Solicitó syscall: IO
+2024/12/06 11:45:23 ## (2:0) finalizó IO y pasa a READY
+2024/12/06 11:45:23 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 11:45:24 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 11:45:25 ## (PID:TID) - (4:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 11:45:26 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 11:45:26 ## (5:0) Se crea el proceso - Estado: NEW
+2024/12/06 11:45:26 Cola NEW está vacía, solicitando memoria.
+2024/12/06 11:45:26 ## (5:0) Se crea el Hilo - Estado: READY
+2024/12/06 11:45:26 Respuesta de la creación de proceso:  200
+2024/12/06 11:45:26 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 11:45:26 ## (3:0) - Solicitó syscall: IO
+2024/12/06 11:45:26 ## (3:0) finalizó IO y pasa a READY
+2024/12/06 11:45:26 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 11:45:27 ## (PID:TID) - (4:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 11:45:29 ## (PID:TID) - (5:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 11:45:29 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 11:45:29 ## (6:0) Se crea el proceso - Estado: NEW
+2024/12/06 11:45:29 Cola NEW está vacía, solicitando memoria.
+2024/12/06 11:45:29 Memoria no tiene suficiente espacio. Proceso en espera.
+2024/12/06 11:45:29 Respuesta de la creación de proceso:  400
+2024/12/06 11:45:29 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 11:45:30 ## (3:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/06 11:45:30 ## (3:0) Finaliza el hilo
+2024/12/06 11:45:30 ## Finaliza el proceso 3
+2024/12/06 11:45:30 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/06 11:45:30 ## (4:0) - Solicitó syscall: IO
+2024/12/06 12:13:27 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/06 12:13:27 Cola NEW está vacía, solicitando memoria.
+2024/12/06 12:13:27 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/06 12:13:27 El módulo kernel está a la escucha en el puerto :8001
+2024/12/06 12:13:27 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 12:13:27 ## (2:0) Se crea el proceso - Estado: NEW
+2024/12/06 12:13:27 Cola NEW está vacía, solicitando memoria.
+2024/12/06 12:13:27 ## (2:0) Se crea el Hilo - Estado: READY
+2024/12/06 12:13:27 Respuesta de la creación de proceso:  200
+2024/12/06 12:13:27 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:13:29 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:13:29 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 12:13:29 ## (3:0) Se crea el proceso - Estado: NEW
+2024/12/06 12:13:29 Cola NEW está vacía, solicitando memoria.
+2024/12/06 12:13:29 ## (3:0) Se crea el Hilo - Estado: READY
+2024/12/06 12:13:29 Respuesta de la creación de proceso:  200
+2024/12/06 12:13:29 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:13:30 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:13:32 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:13:32 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 12:13:32 ## (4:0) Se crea el proceso - Estado: NEW
+2024/12/06 12:13:32 Cola NEW está vacía, solicitando memoria.
+2024/12/06 12:13:32 ## (4:0) Se crea el Hilo - Estado: READY
+2024/12/06 12:13:32 Respuesta de la creación de proceso:  200
+2024/12/06 12:13:32 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:13:33 ## (2:0) - Solicitó syscall: IO
+2024/12/06 12:13:33 ## (2:0) finalizó IO y pasa a READY
+2024/12/06 12:13:33 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:13:34 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:13:35 ## (PID:TID) - (4:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:13:36 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 12:13:36 ## (5:0) Se crea el proceso - Estado: NEW
+2024/12/06 12:13:36 Cola NEW está vacía, solicitando memoria.
+2024/12/06 12:13:36 ## (5:0) Se crea el Hilo - Estado: READY
+2024/12/06 12:13:36 Respuesta de la creación de proceso:  200
+2024/12/06 12:13:36 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:13:36 ## (3:0) - Solicitó syscall: IO
+2024/12/06 12:13:36 ## (3:0) finalizó IO y pasa a READY
+2024/12/06 12:13:36 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:13:37 ## (PID:TID) - (4:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:13:38 ## (PID:TID) - (5:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:13:39 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 12:13:39 ## (6:0) Se crea el proceso - Estado: NEW
+2024/12/06 12:13:39 Cola NEW está vacía, solicitando memoria.
+2024/12/06 12:13:39 Memoria no tiene suficiente espacio. Proceso en espera.
+2024/12/06 12:13:39 Respuesta de la creación de proceso:  400
+2024/12/06 12:13:39 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:13:40 ## (3:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/06 12:13:40 ## (3:0) Finaliza el hilo
+2024/12/06 12:13:40 ## Finaliza el proceso 3
+2024/12/06 12:13:40 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/06 12:13:40 ## (4:0) - Solicitó syscall: IO
+2024/12/06 12:25:25 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/06 12:25:25 Cola NEW está vacía, solicitando memoria.
+2024/12/06 12:25:25 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/06 12:25:25 El módulo kernel está a la escucha en el puerto :8001
+2024/12/06 12:25:26 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 12:25:26 ## (2:0) Se crea el proceso - Estado: NEW
+2024/12/06 12:25:26 Cola NEW está vacía, solicitando memoria.
+2024/12/06 12:25:26 ## (2:0) Se crea el Hilo - Estado: READY
+2024/12/06 12:25:26 Respuesta de la creación de proceso:  200
+2024/12/06 12:25:26 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:25:27 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:25:27 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 12:25:27 ## (3:0) Se crea el proceso - Estado: NEW
+2024/12/06 12:25:27 Cola NEW está vacía, solicitando memoria.
+2024/12/06 12:25:27 ## (3:0) Se crea el Hilo - Estado: READY
+2024/12/06 12:25:27 Respuesta de la creación de proceso:  200
+2024/12/06 12:25:27 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:25:28 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:25:30 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:25:30 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 12:25:30 ## (4:0) Se crea el proceso - Estado: NEW
+2024/12/06 12:25:30 Cola NEW está vacía, solicitando memoria.
+2024/12/06 12:25:30 ## (4:0) Se crea el Hilo - Estado: READY
+2024/12/06 12:25:30 Respuesta de la creación de proceso:  200
+2024/12/06 12:25:30 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:25:31 ## (2:0) - Solicitó syscall: IO
+2024/12/06 12:25:31 ## (2:0) finalizó IO y pasa a READY
+2024/12/06 12:25:31 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:25:32 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:25:33 ## (PID:TID) - (4:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:25:34 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 12:25:34 ## (5:0) Se crea el proceso - Estado: NEW
+2024/12/06 12:25:34 Cola NEW está vacía, solicitando memoria.
+2024/12/06 12:25:34 ## (5:0) Se crea el Hilo - Estado: READY
+2024/12/06 12:25:34 Respuesta de la creación de proceso:  200
+2024/12/06 12:25:34 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:25:34 ## (2:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/06 12:25:34 ## (2:0) Finaliza el hilo
+2024/12/06 12:25:34 ## Finaliza el proceso 2
+2024/12/06 12:25:34 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/06 12:25:35 ## (3:0) - Solicitó syscall: IO
+2024/12/06 12:25:35 ## (3:0) finalizó IO y pasa a READY
+2024/12/06 12:25:35 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:25:36 ## (PID:TID) - (4:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:25:37 ## (PID:TID) - (5:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:25:37 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 12:25:37 ## (6:0) Se crea el proceso - Estado: NEW
+2024/12/06 12:25:37 Cola NEW está vacía, solicitando memoria.
+2024/12/06 12:25:37 ## (6:0) Se crea el Hilo - Estado: READY
+2024/12/06 12:25:37 Respuesta de la creación de proceso:  200
+2024/12/06 12:25:37 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:25:38 ## (3:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/06 12:25:38 ## (3:0) Finaliza el hilo
+2024/12/06 12:25:38 ## Finaliza el proceso 3
+2024/12/06 12:25:38 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/06 12:25:38 ## (4:0) - Solicitó syscall: IO
+2024/12/06 12:25:38 ## (4:0) finalizó IO y pasa a READY
+2024/12/06 12:25:38 ## (PID:TID) - (4:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:25:39 ## (PID:TID) - (5:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:25:41 ## (PID:TID) - (6:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:25:41 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 12:25:41 ## (7:0) Se crea el proceso - Estado: NEW
+2024/12/06 12:25:41 Cola NEW está vacía, solicitando memoria.
+2024/12/06 12:25:41 ## (7:0) Se crea el Hilo - Estado: READY
+2024/12/06 12:25:41 Respuesta de la creación de proceso:  200
+2024/12/06 12:25:41 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:25:42 ## (4:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/06 12:25:42 ## (4:0) Finaliza el hilo
+2024/12/06 12:25:42 ## Finaliza el proceso 4
+2024/12/06 12:25:42 ## (PID:TID) - (4:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/06 12:25:42 ## (5:0) - Solicitó syscall: IO
+2024/12/06 12:25:42 ## (5:0) finalizó IO y pasa a READY
+2024/12/06 12:25:42 ## (PID:TID) - (5:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:25:43 ## (PID:TID) - (6:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:25:44 ## (PID:TID) - (7:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:25:45 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 12:25:45 ## (8:0) Se crea el proceso - Estado: NEW
+2024/12/06 12:25:45 Cola NEW está vacía, solicitando memoria.
+2024/12/06 12:25:45 ## (8:0) Se crea el Hilo - Estado: READY
+2024/12/06 12:25:45 Respuesta de la creación de proceso:  200
+2024/12/06 12:25:45 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:25:46 ## (5:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/06 12:25:46 ## (5:0) Finaliza el hilo
+2024/12/06 12:25:46 ## Finaliza el proceso 5
+2024/12/06 12:25:46 ## (PID:TID) - (5:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/06 12:25:46 ## (6:0) - Solicitó syscall: IO
+2024/12/06 12:25:46 ## (6:0) finalizó IO y pasa a READY
+2024/12/06 12:25:46 ## (PID:TID) - (6:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:25:47 ## (PID:TID) - (7:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:25:48 ## (PID:TID) - (8:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:25:49 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 12:25:49 ## (9:0) Se crea el proceso - Estado: NEW
+2024/12/06 12:25:49 Cola NEW está vacía, solicitando memoria.
+2024/12/06 12:25:49 ## (9:0) Se crea el Hilo - Estado: READY
+2024/12/06 12:25:49 Respuesta de la creación de proceso:  200
+2024/12/06 12:25:49 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:25:50 ## (6:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/06 12:25:50 ## (6:0) Finaliza el hilo
+2024/12/06 12:25:50 ## Finaliza el proceso 6
+2024/12/06 12:25:50 ## (PID:TID) - (6:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/06 12:25:50 ## (7:0) - Solicitó syscall: IO
+2024/12/06 12:25:50 ## (7:0) finalizó IO y pasa a READY
+2024/12/06 12:25:50 ## (PID:TID) - (7:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:25:51 ## (PID:TID) - (8:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:25:52 ## (PID:TID) - (9:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:25:53 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:25:54 ## (7:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/06 12:25:54 ## (7:0) Finaliza el hilo
+2024/12/06 12:25:54 ## Finaliza el proceso 7
+2024/12/06 12:25:54 ## (PID:TID) - (7:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/06 12:25:54 ## (8:0) - Solicitó syscall: IO
+2024/12/06 12:25:54 ## (8:0) finalizó IO y pasa a READY
+2024/12/06 12:25:54 ## (PID:TID) - (8:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:25:55 ## (PID:TID) - (9:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:25:56 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:25:57 ## (8:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/06 12:25:57 ## (8:0) Finaliza el hilo
+2024/12/06 12:25:57 ## Finaliza el proceso 8
+2024/12/06 12:25:57 ## (PID:TID) - (8:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/06 12:25:57 ## (9:0) - Solicitó syscall: IO
+2024/12/06 12:25:57 ## (9:0) finalizó IO y pasa a READY
+2024/12/06 12:25:57 ## (PID:TID) - (9:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:25:58 ## (1:0) - Solicitó syscall: IO
+2024/12/06 12:25:58 ## (1:0) finalizó IO y pasa a READY
+2024/12/06 12:25:58 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:25:59 ## (9:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/06 12:25:59 ## (9:0) Finaliza el hilo
+2024/12/06 12:25:59 ## Finaliza el proceso 9
+2024/12/06 12:25:59 ## (PID:TID) - (9:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/06 12:25:59 ## (1:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/06 12:25:59 ## (1:0) Finaliza el hilo
+2024/12/06 12:25:59 ## Finaliza el proceso 1
+2024/12/06 12:25:59 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/06 12:33:59 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/06 12:33:59 Cola NEW está vacía, solicitando memoria.
+2024/12/06 12:33:59 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/06 12:33:59 El módulo kernel está a la escucha en el puerto :8001
+2024/12/06 12:33:59 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 12:33:59 ## (2:0) Se crea el proceso - Estado: NEW
+2024/12/06 12:33:59 Cola NEW está vacía, solicitando memoria.
+2024/12/06 12:33:59 ## (2:0) Se crea el Hilo - Estado: READY
+2024/12/06 12:33:59 Respuesta de la creación de proceso:  200
+2024/12/06 12:33:59 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:34:01 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:34:01 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 12:34:01 ## (3:0) Se crea el proceso - Estado: NEW
+2024/12/06 12:34:01 Cola NEW está vacía, solicitando memoria.
+2024/12/06 12:34:01 ## (3:0) Se crea el Hilo - Estado: READY
+2024/12/06 12:34:01 Respuesta de la creación de proceso:  200
+2024/12/06 12:34:01 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:34:02 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:34:03 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:34:04 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 12:34:04 ## (4:0) Se crea el proceso - Estado: NEW
+2024/12/06 12:34:04 Cola NEW está vacía, solicitando memoria.
+2024/12/06 12:34:04 ## (4:0) Se crea el Hilo - Estado: READY
+2024/12/06 12:34:04 Respuesta de la creación de proceso:  200
+2024/12/06 12:34:04 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:34:05 ## (2:0) - Solicitó syscall: IO
+2024/12/06 12:34:05 ## (2:0) finalizó IO y pasa a READY
+2024/12/06 12:34:05 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:34:06 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:34:07 ## (PID:TID) - (4:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:34:08 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 12:34:08 ## (5:0) Se crea el proceso - Estado: NEW
+2024/12/06 12:34:08 Cola NEW está vacía, solicitando memoria.
+2024/12/06 12:34:08 ## (5:0) Se crea el Hilo - Estado: READY
+2024/12/06 12:34:08 Respuesta de la creación de proceso:  200
+2024/12/06 12:34:08 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:34:08 ## (3:0) - Solicitó syscall: IO
+2024/12/06 12:34:08 ## (3:0) finalizó IO y pasa a READY
+2024/12/06 12:34:08 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:34:09 ## (PID:TID) - (4:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:34:10 ## (PID:TID) - (5:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:34:11 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 12:34:11 ## (6:0) Se crea el proceso - Estado: NEW
+2024/12/06 12:34:11 Cola NEW está vacía, solicitando memoria.
+2024/12/06 12:34:11 Memoria no tiene suficiente espacio. Proceso en espera.
+2024/12/06 12:34:11 Respuesta de la creación de proceso:  400
+2024/12/06 12:34:11 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:34:12 ## (4:0) - Solicitó syscall: IO
+2024/12/06 12:53:15 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/06 12:53:15 Cola NEW está vacía, solicitando memoria.
+2024/12/06 12:53:15 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/06 12:53:15 El módulo kernel está a la escucha en el puerto :8001
+2024/12/06 12:53:16 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 12:53:16 ## (2:0) Se crea el proceso - Estado: NEW
+2024/12/06 12:53:16 Cola NEW está vacía, solicitando memoria.
+2024/12/06 12:53:16 ## (2:0) Se crea el Hilo - Estado: READY
+2024/12/06 12:53:16 Respuesta de la creación de proceso:  200
+2024/12/06 12:53:16 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:53:17 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:53:18 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 12:53:18 ## (3:0) Se crea el proceso - Estado: NEW
+2024/12/06 12:53:18 Cola NEW está vacía, solicitando memoria.
+2024/12/06 12:53:18 ## (3:0) Se crea el Hilo - Estado: READY
+2024/12/06 12:53:18 Respuesta de la creación de proceso:  200
+2024/12/06 12:53:18 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:53:19 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:53:20 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:53:20 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 12:53:20 ## (4:0) Se crea el proceso - Estado: NEW
+2024/12/06 12:53:20 Cola NEW está vacía, solicitando memoria.
+2024/12/06 12:53:20 ## (4:0) Se crea el Hilo - Estado: READY
+2024/12/06 12:53:20 Respuesta de la creación de proceso:  200
+2024/12/06 12:53:20 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:53:21 ## (2:0) - Solicitó syscall: IO
+2024/12/06 12:53:21 ## (2:0) finalizó IO y pasa a READY
+2024/12/06 12:53:21 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:53:22 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:53:23 ## (PID:TID) - (4:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:53:24 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 12:53:24 ## (5:0) Se crea el proceso - Estado: NEW
+2024/12/06 12:53:24 Cola NEW está vacía, solicitando memoria.
+2024/12/06 12:53:24 ## (5:0) Se crea el Hilo - Estado: READY
+2024/12/06 12:53:24 Respuesta de la creación de proceso:  200
+2024/12/06 12:53:24 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:53:24 ## (3:0) - Solicitó syscall: IO
+2024/12/06 12:53:24 ## (3:0) finalizó IO y pasa a READY
+2024/12/06 12:53:24 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:53:25 ## (PID:TID) - (4:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:53:27 ## (PID:TID) - (5:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:53:27 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 12:53:27 ## (6:0) Se crea el proceso - Estado: NEW
+2024/12/06 12:53:27 Cola NEW está vacía, solicitando memoria.
+2024/12/06 12:53:27 Memoria no tiene suficiente espacio. Proceso en espera.
+2024/12/06 12:53:27 Respuesta de la creación de proceso:  400
+2024/12/06 12:53:27 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:53:28 ## (4:0) - Solicitó syscall: IO
+2024/12/06 12:53:28 ## (4:0) finalizó IO y pasa a READY
+2024/12/06 12:53:28 ## (PID:TID) - (4:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:53:29 ## (PID:TID) - (5:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:53:29 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 12:53:29 ## (7:0) Se crea el proceso - Estado: NEW
+2024/12/06 12:53:29 Cola NEW está vacía, solicitando memoria.
+2024/12/06 12:53:29 Memoria no tiene suficiente espacio. Proceso en espera.
+2024/12/06 12:53:29 Respuesta de la creación de proceso:  400
+2024/12/06 12:53:29 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:53:30 ## (5:0) - Solicitó syscall: IO
+2024/12/06 12:53:30 ## (5:0) finalizó IO y pasa a READY
+2024/12/06 12:53:30 ## (PID:TID) - (5:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:53:31 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 12:53:31 ## (8:0) Se crea el proceso - Estado: NEW
+2024/12/06 12:53:31 Cola NEW está vacía, solicitando memoria.
+2024/12/06 12:53:31 Memoria no tiene suficiente espacio. Proceso en espera.
+2024/12/06 12:53:31 Respuesta de la creación de proceso:  400
+2024/12/06 12:53:31 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:53:31 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 12:53:31 ## (9:0) Se crea el proceso - Estado: NEW
+2024/12/06 12:53:31 Cola NEW está vacía, solicitando memoria.
+2024/12/06 12:53:31 Memoria no tiene suficiente espacio. Proceso en espera.
+2024/12/06 12:53:31 Respuesta de la creación de proceso:  400
+2024/12/06 12:53:31 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:53:32 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:53:34 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:53:34 ## (1:0) - Solicitó syscall: IO
+2024/12/06 12:53:34 ## (1:0) finalizó IO y pasa a READY
+2024/12/06 12:53:34 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:54:52 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/06 12:54:52 Cola NEW está vacía, solicitando memoria.
+2024/12/06 12:54:52 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/06 12:54:52 El módulo kernel está a la escucha en el puerto :8001
+2024/12/06 12:54:52 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 12:54:52 ## (2:0) Se crea el proceso - Estado: NEW
+2024/12/06 12:54:52 Cola NEW está vacía, solicitando memoria.
+2024/12/06 12:54:52 ## (2:0) Se crea el Hilo - Estado: READY
+2024/12/06 12:54:52 Respuesta de la creación de proceso:  200
+2024/12/06 12:54:52 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:54:53 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:54:54 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 12:54:54 ## (3:0) Se crea el proceso - Estado: NEW
+2024/12/06 12:54:54 Cola NEW está vacía, solicitando memoria.
+2024/12/06 12:54:54 ## (3:0) Se crea el Hilo - Estado: READY
+2024/12/06 12:54:54 Respuesta de la creación de proceso:  200
+2024/12/06 12:54:54 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:54:55 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:54:56 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:54:57 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 12:54:57 ## (4:0) Se crea el proceso - Estado: NEW
+2024/12/06 12:54:57 Cola NEW está vacía, solicitando memoria.
+2024/12/06 12:54:57 ## (4:0) Se crea el Hilo - Estado: READY
+2024/12/06 12:54:57 Respuesta de la creación de proceso:  200
+2024/12/06 12:54:57 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:54:57 ## (2:0) - Solicitó syscall: IO
+2024/12/06 12:54:57 ## (2:0) finalizó IO y pasa a READY
+2024/12/06 12:54:57 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:54:58 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:55:00 ## (PID:TID) - (4:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:55:00 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 12:55:00 ## (5:0) Se crea el proceso - Estado: NEW
+2024/12/06 12:55:00 Cola NEW está vacía, solicitando memoria.
+2024/12/06 12:55:00 ## (5:0) Se crea el Hilo - Estado: READY
+2024/12/06 12:55:00 Respuesta de la creación de proceso:  200
+2024/12/06 12:55:00 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:55:01 ## (3:0) - Solicitó syscall: IO
+2024/12/06 12:55:01 ## (3:0) finalizó IO y pasa a READY
+2024/12/06 12:55:01 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:55:02 ## (PID:TID) - (4:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:55:03 ## (PID:TID) - (5:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:55:04 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 12:55:04 ## (6:0) Se crea el proceso - Estado: NEW
+2024/12/06 12:55:04 Cola NEW está vacía, solicitando memoria.
+2024/12/06 12:55:04 Memoria no tiene suficiente espacio. Proceso en espera.
+2024/12/06 12:55:04 Respuesta de la creación de proceso:  400
+2024/12/06 12:55:04 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:55:04 ## (4:0) - Solicitó syscall: IO
+2024/12/06 12:55:04 ## (4:0) finalizó IO y pasa a READY
+2024/12/06 12:55:04 ## (PID:TID) - (4:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:55:05 ## (PID:TID) - (5:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:55:06 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 12:55:06 ## (7:0) Se crea el proceso - Estado: NEW
+2024/12/06 12:55:06 Cola NEW está vacía, solicitando memoria.
+2024/12/06 12:55:06 Memoria no tiene suficiente espacio. Proceso en espera.
+2024/12/06 12:55:06 Respuesta de la creación de proceso:  400
+2024/12/06 12:55:06 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:55:06 ## (5:0) - Solicitó syscall: IO
+2024/12/06 12:55:06 ## (5:0) finalizó IO y pasa a READY
+2024/12/06 12:55:06 ## (PID:TID) - (5:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:55:07 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 12:55:07 ## (8:0) Se crea el proceso - Estado: NEW
+2024/12/06 12:55:07 Cola NEW está vacía, solicitando memoria.
+2024/12/06 12:55:07 Memoria no tiene suficiente espacio. Proceso en espera.
+2024/12/06 12:55:07 Respuesta de la creación de proceso:  400
+2024/12/06 12:55:07 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:55:08 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 12:55:08 ## (9:0) Se crea el proceso - Estado: NEW
+2024/12/06 12:55:08 Cola NEW está vacía, solicitando memoria.
+2024/12/06 12:55:08 Memoria no tiene suficiente espacio. Proceso en espera.
+2024/12/06 12:55:08 Respuesta de la creación de proceso:  400
+2024/12/06 12:55:08 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:55:09 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:55:10 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:55:11 ## (1:0) - Solicitó syscall: IO
+2024/12/06 12:55:11 ## (1:0) finalizó IO y pasa a READY
+2024/12/06 12:55:11 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:55:47 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/06 12:55:47 Cola NEW está vacía, solicitando memoria.
+2024/12/06 12:55:47 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/06 12:55:47 El módulo kernel está a la escucha en el puerto :8001
+2024/12/06 12:55:47 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 12:55:47 ## (2:0) Se crea el proceso - Estado: NEW
+2024/12/06 12:55:47 Cola NEW está vacía, solicitando memoria.
+2024/12/06 12:55:47 ## (2:0) Se crea el Hilo - Estado: READY
+2024/12/06 12:55:47 Respuesta de la creación de proceso:  200
+2024/12/06 12:55:47 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:55:48 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:55:49 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 12:55:49 ## (3:0) Se crea el proceso - Estado: NEW
+2024/12/06 12:55:49 Cola NEW está vacía, solicitando memoria.
+2024/12/06 12:55:49 ## (3:0) Se crea el Hilo - Estado: READY
+2024/12/06 12:55:49 Respuesta de la creación de proceso:  200
+2024/12/06 12:55:49 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:55:50 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:55:51 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:55:52 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 12:55:52 ## (4:0) Se crea el proceso - Estado: NEW
+2024/12/06 12:55:52 Cola NEW está vacía, solicitando memoria.
+2024/12/06 12:55:52 ## (4:0) Se crea el Hilo - Estado: READY
+2024/12/06 12:55:52 Respuesta de la creación de proceso:  200
+2024/12/06 12:55:52 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:55:52 ## (2:0) - Solicitó syscall: IO
+2024/12/06 12:55:52 ## (2:0) finalizó IO y pasa a READY
+2024/12/06 12:55:52 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:55:53 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:55:55 ## (PID:TID) - (4:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:55:55 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 12:55:55 ## (5:0) Se crea el proceso - Estado: NEW
+2024/12/06 12:55:55 Cola NEW está vacía, solicitando memoria.
+2024/12/06 12:55:55 ## (5:0) Se crea el Hilo - Estado: READY
+2024/12/06 12:55:55 Respuesta de la creación de proceso:  200
+2024/12/06 12:55:55 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:55:56 ## (3:0) - Solicitó syscall: IO
+2024/12/06 12:55:56 ## (3:0) finalizó IO y pasa a READY
+2024/12/06 12:55:56 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:55:57 ## (PID:TID) - (4:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:55:58 ## (PID:TID) - (5:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:55:59 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 12:55:59 ## (6:0) Se crea el proceso - Estado: NEW
+2024/12/06 12:55:59 Cola NEW está vacía, solicitando memoria.
+2024/12/06 12:55:59 Memoria no tiene suficiente espacio. Proceso en espera.
+2024/12/06 12:55:59 Respuesta de la creación de proceso:  400
+2024/12/06 12:55:59 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:55:59 ## (4:0) - Solicitó syscall: IO
+2024/12/06 12:55:59 ## (4:0) finalizó IO y pasa a READY
+2024/12/06 12:55:59 ## (PID:TID) - (4:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:56:00 ## (PID:TID) - (5:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:56:01 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 12:56:01 ## (7:0) Se crea el proceso - Estado: NEW
+2024/12/06 12:56:01 Cola NEW está vacía, solicitando memoria.
+2024/12/06 12:56:01 Memoria no tiene suficiente espacio. Proceso en espera.
+2024/12/06 12:56:01 Respuesta de la creación de proceso:  400
+2024/12/06 12:56:01 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:56:01 ## (5:0) - Solicitó syscall: IO
+2024/12/06 12:56:01 ## (5:0) finalizó IO y pasa a READY
+2024/12/06 12:56:01 ## (PID:TID) - (5:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:56:02 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 12:56:02 ## (8:0) Se crea el proceso - Estado: NEW
+2024/12/06 12:56:02 Cola NEW está vacía, solicitando memoria.
+2024/12/06 12:56:02 Memoria no tiene suficiente espacio. Proceso en espera.
+2024/12/06 12:56:02 Respuesta de la creación de proceso:  400
+2024/12/06 12:56:02 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:56:03 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 12:56:03 ## (9:0) Se crea el proceso - Estado: NEW
+2024/12/06 12:56:03 Cola NEW está vacía, solicitando memoria.
+2024/12/06 12:56:03 Memoria no tiene suficiente espacio. Proceso en espera.
+2024/12/06 12:56:03 Respuesta de la creación de proceso:  400
+2024/12/06 12:56:03 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 12:56:04 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:56:05 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 12:56:05 ## (1:0) - Solicitó syscall: IO
+2024/12/06 12:56:05 ## (1:0) finalizó IO y pasa a READY
+2024/12/06 12:56:05 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:04:18 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:04:18 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:04:18 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/06 13:04:18 El módulo kernel está a la escucha en el puerto :8001
+2024/12/06 13:04:18 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 13:04:18 ## (2:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:04:18 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:04:18 ## (2:0) Se crea el Hilo - Estado: READY
+2024/12/06 13:04:18 Respuesta de la creación de proceso:  200
+2024/12/06 13:04:18 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:04:20 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:04:20 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 13:04:20 ## (3:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:04:20 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:04:20 ## (3:0) Se crea el Hilo - Estado: READY
+2024/12/06 13:04:20 Respuesta de la creación de proceso:  200
+2024/12/06 13:04:20 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:04:21 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:04:22 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:04:23 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 13:04:23 ## (4:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:04:23 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:04:23 ## (4:0) Se crea el Hilo - Estado: READY
+2024/12/06 13:04:23 Respuesta de la creación de proceso:  200
+2024/12/06 13:04:23 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:04:24 ## (2:0) - Solicitó syscall: IO
+2024/12/06 13:04:24 ## (2:0) finalizó IO y pasa a READY
+2024/12/06 13:04:24 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:04:25 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:04:26 ## (PID:TID) - (4:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:04:27 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 13:04:27 ## (5:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:04:27 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:04:27 ## (5:0) Se crea el Hilo - Estado: READY
+2024/12/06 13:04:27 Respuesta de la creación de proceso:  200
+2024/12/06 13:04:27 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:04:27 ## (3:0) - Solicitó syscall: IO
+2024/12/06 13:04:27 ## (3:0) finalizó IO y pasa a READY
+2024/12/06 13:04:27 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:04:28 ## (PID:TID) - (4:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:04:29 ## (PID:TID) - (5:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:04:30 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 13:04:30 ## (6:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:04:30 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:04:30 Memoria no tiene suficiente espacio. Proceso en espera.
+2024/12/06 13:04:30 Respuesta de la creación de proceso:  400
+2024/12/06 13:04:30 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:04:31 ## (4:0) - Solicitó syscall: IO
+2024/12/06 13:04:31 ## (4:0) finalizó IO y pasa a READY
+2024/12/06 13:04:31 ## (PID:TID) - (4:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:04:32 ## (PID:TID) - (5:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:04:32 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 13:04:32 ## (7:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:04:32 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:04:32 Memoria no tiene suficiente espacio. Proceso en espera.
+2024/12/06 13:04:32 Respuesta de la creación de proceso:  400
+2024/12/06 13:04:32 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:04:33 ## (5:0) - Solicitó syscall: IO
+2024/12/06 13:04:33 ## (5:0) finalizó IO y pasa a READY
+2024/12/06 13:04:33 ## (PID:TID) - (5:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:04:33 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 13:04:33 ## (8:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:04:33 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:04:33 Memoria no tiene suficiente espacio. Proceso en espera.
+2024/12/06 13:04:33 Respuesta de la creación de proceso:  400
+2024/12/06 13:04:33 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:04:34 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 13:04:34 ## (9:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:04:34 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:04:34 Memoria no tiene suficiente espacio. Proceso en espera.
+2024/12/06 13:04:34 Respuesta de la creación de proceso:  400
+2024/12/06 13:04:34 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:04:35 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:04:36 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:04:37 ## (1:0) - Solicitó syscall: IO
+2024/12/06 13:04:37 ## (1:0) finalizó IO y pasa a READY
+2024/12/06 13:04:37 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:05:25 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:05:25 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:05:25 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/06 13:05:25 El módulo kernel está a la escucha en el puerto :8001
+2024/12/06 13:05:25 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 13:05:25 ## (2:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:05:25 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:05:25 ## (2:0) Se crea el Hilo - Estado: READY
+2024/12/06 13:05:25 Respuesta de la creación de proceso:  200
+2024/12/06 13:05:25 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:05:26 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:05:27 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 13:05:27 ## (3:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:05:27 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:05:27 ## (3:0) Se crea el Hilo - Estado: READY
+2024/12/06 13:05:27 Respuesta de la creación de proceso:  200
+2024/12/06 13:05:27 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:05:28 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:05:29 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:05:30 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 13:05:30 ## (4:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:05:30 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:05:30 ## (4:0) Se crea el Hilo - Estado: READY
+2024/12/06 13:05:30 Respuesta de la creación de proceso:  200
+2024/12/06 13:05:30 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:05:30 ## (2:0) - Solicitó syscall: IO
+2024/12/06 13:05:30 ## (2:0) finalizó IO y pasa a READY
+2024/12/06 13:05:30 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:05:31 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:05:33 ## (PID:TID) - (4:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:05:33 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 13:05:33 ## (5:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:05:33 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:05:33 ## (5:0) Se crea el Hilo - Estado: READY
+2024/12/06 13:05:33 Respuesta de la creación de proceso:  200
+2024/12/06 13:05:33 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:05:34 ## (3:0) - Solicitó syscall: IO
+2024/12/06 13:05:34 ## (3:0) finalizó IO y pasa a READY
+2024/12/06 13:05:34 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:05:35 ## (PID:TID) - (4:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:05:36 ## (PID:TID) - (5:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:05:37 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 13:05:37 ## (6:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:05:37 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:05:37 Memoria no tiene suficiente espacio. Proceso en espera.
+2024/12/06 13:05:37 Respuesta de la creación de proceso:  400
+2024/12/06 13:05:37 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:05:37 ## (4:0) - Solicitó syscall: IO
+2024/12/06 13:05:37 ## (4:0) finalizó IO y pasa a READY
+2024/12/06 13:05:37 ## (PID:TID) - (4:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:05:38 ## (PID:TID) - (5:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:05:39 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 13:05:39 ## (7:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:05:39 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:05:39 Memoria no tiene suficiente espacio. Proceso en espera.
+2024/12/06 13:05:39 Respuesta de la creación de proceso:  400
+2024/12/06 13:05:39 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:05:40 ## (5:0) - Solicitó syscall: IO
+2024/12/06 13:05:40 ## (5:0) finalizó IO y pasa a READY
+2024/12/06 13:05:40 ## (PID:TID) - (5:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:05:40 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 13:05:40 ## (8:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:05:40 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:05:40 Memoria no tiene suficiente espacio. Proceso en espera.
+2024/12/06 13:05:40 Respuesta de la creación de proceso:  400
+2024/12/06 13:05:40 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:05:41 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 13:05:41 ## (9:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:05:41 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:05:41 Memoria no tiene suficiente espacio. Proceso en espera.
+2024/12/06 13:05:41 Respuesta de la creación de proceso:  400
+2024/12/06 13:05:41 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:05:42 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:05:43 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:10:59 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:10:59 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:10:59 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/06 13:10:59 El módulo kernel está a la escucha en el puerto :8001
+2024/12/06 13:11:00 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 13:11:00 ## (2:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:11:00 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:11:00 ## (2:0) Se crea el Hilo - Estado: READY
+2024/12/06 13:11:00 Respuesta de la creación de proceso:  200
+2024/12/06 13:11:00 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:11:01 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:11:02 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 13:11:02 ## (3:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:11:02 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:11:02 ## (3:0) Se crea el Hilo - Estado: READY
+2024/12/06 13:11:02 Respuesta de la creación de proceso:  200
+2024/12/06 13:11:02 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:11:03 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:11:04 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:11:04 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 13:11:04 ## (4:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:11:04 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:11:04 ## (4:0) Se crea el Hilo - Estado: READY
+2024/12/06 13:11:04 Respuesta de la creación de proceso:  200
+2024/12/06 13:11:04 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:11:05 ## (2:0) - Solicitó syscall: IO
+2024/12/06 13:11:05 ## (2:0) finalizó IO y pasa a READY
+2024/12/06 13:11:05 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:11:06 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:11:07 ## (PID:TID) - (4:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:11:08 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 13:11:08 ## (5:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:11:08 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:11:08 ## (5:0) Se crea el Hilo - Estado: READY
+2024/12/06 13:11:08 Respuesta de la creación de proceso:  200
+2024/12/06 13:11:08 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:11:09 ## (3:0) - Solicitó syscall: IO
+2024/12/06 13:11:09 ## (3:0) finalizó IO y pasa a READY
+2024/12/06 13:11:09 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:11:10 ## (PID:TID) - (4:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:11:11 ## (PID:TID) - (5:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:11:11 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 13:11:11 ## (6:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:11:11 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:11:11 Memoria no tiene suficiente espacio. Proceso en espera.
+2024/12/06 13:11:11 Respuesta de la creación de proceso:  400
+2024/12/06 13:11:11 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:11:12 ## (4:0) - Solicitó syscall: IO
+2024/12/06 13:11:12 ## (4:0) finalizó IO y pasa a READY
+2024/12/06 13:11:12 ## (PID:TID) - (4:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:11:13 ## (PID:TID) - (5:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:11:14 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 13:11:14 ## (7:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:11:14 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:11:14 Memoria no tiene suficiente espacio. Proceso en espera.
+2024/12/06 13:11:14 Respuesta de la creación de proceso:  400
+2024/12/06 13:11:14 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:11:14 ## (5:0) - Solicitó syscall: IO
+2024/12/06 13:11:14 ## (5:0) finalizó IO y pasa a READY
+2024/12/06 13:11:14 ## (PID:TID) - (5:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:11:15 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 13:11:15 ## (8:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:11:15 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:11:15 Memoria no tiene suficiente espacio. Proceso en espera.
+2024/12/06 13:11:15 Respuesta de la creación de proceso:  400
+2024/12/06 13:11:15 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:11:15 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 13:11:15 ## (9:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:11:15 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:11:15 Memoria no tiene suficiente espacio. Proceso en espera.
+2024/12/06 13:11:15 Respuesta de la creación de proceso:  400
+2024/12/06 13:11:15 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:11:17 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:11:18 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:12:24 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:12:24 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:12:24 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/06 13:12:24 El módulo kernel está a la escucha en el puerto :8001
+2024/12/06 13:12:24 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 13:12:24 ## (2:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:12:24 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:12:24 ## (2:0) Se crea el Hilo - Estado: READY
+2024/12/06 13:12:24 Respuesta de la creación de proceso:  200
+2024/12/06 13:12:24 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:12:25 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:12:26 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 13:12:26 ## (3:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:12:26 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:12:26 ## (3:0) Se crea el Hilo - Estado: READY
+2024/12/06 13:12:26 Respuesta de la creación de proceso:  200
+2024/12/06 13:12:26 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:12:27 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:12:28 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:12:29 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 13:12:29 ## (4:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:12:29 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:12:29 ## (4:0) Se crea el Hilo - Estado: READY
+2024/12/06 13:12:29 Respuesta de la creación de proceso:  200
+2024/12/06 13:12:29 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:12:29 ## (2:0) - Solicitó syscall: IO
+2024/12/06 13:12:29 ## (2:0) finalizó IO y pasa a READY
+2024/12/06 13:12:29 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:12:30 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:12:31 ## (PID:TID) - (4:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:12:32 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 13:12:32 ## (5:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:12:32 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:12:32 ## (5:0) Se crea el Hilo - Estado: READY
+2024/12/06 13:12:32 Respuesta de la creación de proceso:  200
+2024/12/06 13:12:32 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:12:33 ## (3:0) - Solicitó syscall: IO
+2024/12/06 13:12:33 ## (3:0) finalizó IO y pasa a READY
+2024/12/06 13:12:33 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:12:34 ## (PID:TID) - (4:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:12:35 ## (PID:TID) - (5:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:12:35 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 13:12:35 ## (6:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:12:35 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:12:35 Memoria no tiene suficiente espacio. Proceso en espera.
+2024/12/06 13:12:35 Respuesta de la creación de proceso:  400
+2024/12/06 13:12:35 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:12:36 ## (4:0) - Solicitó syscall: IO
+2024/12/06 13:12:36 ## (4:0) finalizó IO y pasa a READY
+2024/12/06 13:12:36 ## (PID:TID) - (4:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:12:37 ## (PID:TID) - (5:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:12:38 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 13:12:38 ## (7:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:12:38 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:12:38 Memoria no tiene suficiente espacio. Proceso en espera.
+2024/12/06 13:12:38 Respuesta de la creación de proceso:  400
+2024/12/06 13:12:38 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:12:38 ## (5:0) - Solicitó syscall: IO
+2024/12/06 13:12:38 ## (5:0) finalizó IO y pasa a READY
+2024/12/06 13:12:38 ## (PID:TID) - (5:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:12:39 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 13:12:39 ## (8:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:12:39 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:12:39 Memoria no tiene suficiente espacio. Proceso en espera.
+2024/12/06 13:12:39 Respuesta de la creación de proceso:  400
+2024/12/06 13:12:39 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:12:39 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 13:12:39 ## (9:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:12:39 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:12:39 Memoria no tiene suficiente espacio. Proceso en espera.
+2024/12/06 13:12:39 Respuesta de la creación de proceso:  400
+2024/12/06 13:12:39 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:12:41 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:12:42 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:19:28 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:19:28 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:19:28 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/06 13:19:28 El módulo kernel está a la escucha en el puerto :8001
+2024/12/06 13:19:28 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 13:19:28 ## (2:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:19:28 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:19:28 ## (2:0) Se crea el Hilo - Estado: READY
+2024/12/06 13:19:28 Respuesta de la creación de proceso:  200
+2024/12/06 13:19:28 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:19:29 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:19:30 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 13:19:30 ## (3:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:19:30 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:19:30 ## (3:0) Se crea el Hilo - Estado: READY
+2024/12/06 13:19:30 Respuesta de la creación de proceso:  200
+2024/12/06 13:19:30 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:19:31 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:19:32 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:19:33 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 13:19:33 ## (4:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:19:33 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:19:33 ## (4:0) Se crea el Hilo - Estado: READY
+2024/12/06 13:19:33 Respuesta de la creación de proceso:  200
+2024/12/06 13:19:33 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:19:33 ## (2:0) - Solicitó syscall: IO
+2024/12/06 13:19:33 ## (2:0) finalizó IO y pasa a READY
+2024/12/06 13:19:33 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:19:34 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:19:35 ## (PID:TID) - (4:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:19:36 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 13:19:36 ## (5:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:19:36 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:19:36 ## (5:0) Se crea el Hilo - Estado: READY
+2024/12/06 13:19:36 Respuesta de la creación de proceso:  200
+2024/12/06 13:19:36 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:19:37 ## (2:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/06 13:19:37 ## (2:0) Finaliza el hilo
+2024/12/06 13:19:37 ## Finaliza el proceso 2
+2024/12/06 13:19:37 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/06 13:51:53 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:51:53 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:51:53 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/06 13:51:53 El módulo kernel está a la escucha en el puerto :8001
+2024/12/06 13:51:54 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 13:51:54 ## (2:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:51:54 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:51:54 ## (2:0) Se crea el Hilo - Estado: READY
+2024/12/06 13:51:54 Respuesta de la creación de proceso:  200
+2024/12/06 13:51:54 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:51:55 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:51:56 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 13:51:56 ## (3:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:51:56 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:51:56 ## (3:0) Se crea el Hilo - Estado: READY
+2024/12/06 13:51:56 Respuesta de la creación de proceso:  200
+2024/12/06 13:51:56 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:51:57 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:51:58 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:51:58 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 13:51:58 ## (4:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:51:58 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:51:58 ## (4:0) Se crea el Hilo - Estado: READY
+2024/12/06 13:51:58 Respuesta de la creación de proceso:  200
+2024/12/06 13:51:58 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:51:59 ## (2:0) - Solicitó syscall: IO por 12000 ms
+2024/12/06 13:51:59 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:52:00 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:52:01 ## (PID:TID) - (4:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:52:02 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 13:52:02 ## (5:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:52:02 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:52:02 ## (5:0) Se crea el Hilo - Estado: READY
+2024/12/06 13:52:02 Respuesta de la creación de proceso:  200
+2024/12/06 13:52:02 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:52:02 ## (3:0) - Solicitó syscall: IO por 12000 ms
+2024/12/06 13:52:02 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:52:03 ## (PID:TID) - (4:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:52:05 ## (PID:TID) - (5:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:52:05 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 13:52:05 ## (6:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:52:05 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:52:05 Memoria no tiene suficiente espacio. Proceso en espera.
+2024/12/06 13:52:05 Respuesta de la creación de proceso:  400
+2024/12/06 13:52:05 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:52:06 ## (4:0) - Solicitó syscall: IO por 12000 ms
+2024/12/06 13:52:06 ## (PID:TID) - (4:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:52:07 ## (PID:TID) - (5:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:52:08 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 13:52:08 ## (7:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:52:08 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:52:08 Memoria no tiene suficiente espacio. Proceso en espera.
+2024/12/06 13:52:08 Respuesta de la creación de proceso:  400
+2024/12/06 13:52:08 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:52:08 ## (5:0) - Solicitó syscall: IO por 12000 ms
+2024/12/06 13:52:08 ## (PID:TID) - (5:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:52:09 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 13:52:09 ## (8:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:52:09 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:52:09 Memoria no tiene suficiente espacio. Proceso en espera.
+2024/12/06 13:52:09 Respuesta de la creación de proceso:  400
+2024/12/06 13:52:09 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:52:09 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 13:52:09 ## (9:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:52:09 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:52:09 Memoria no tiene suficiente espacio. Proceso en espera.
+2024/12/06 13:52:09 Respuesta de la creación de proceso:  400
+2024/12/06 13:52:09 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:52:11 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:52:11 ## (2:0) - Finalizó IO y pasa a READY
+2024/12/06 13:52:12 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:52:12 ## (2:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/06 13:52:12 ## (2:0) Finaliza el hilo
+2024/12/06 13:52:12 ## Finaliza el proceso 2
+2024/12/06 13:52:12 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/06 13:52:13 ## (1:0) - Solicitó syscall: IO por 12000 ms
+2024/12/06 13:52:13 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:52:23 ## (3:0) - Finalizó IO y pasa a READY
+2024/12/06 13:52:23 ## (3:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/06 13:52:23 ## (3:0) Finaliza el hilo
+2024/12/06 13:52:23 ## Finaliza el proceso 3
+2024/12/06 13:52:23 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/06 13:52:35 ## (4:0) - Finalizó IO y pasa a READY
+2024/12/06 13:52:35 ## (4:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/06 13:52:35 ## (4:0) Finaliza el hilo
+2024/12/06 13:52:35 ## Finaliza el proceso 4
+2024/12/06 13:52:35 ## (PID:TID) - (4:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/06 13:52:47 ## (5:0) - Finalizó IO y pasa a READY
+2024/12/06 13:52:47 ## (5:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/06 13:52:47 ## (5:0) Finaliza el hilo
+2024/12/06 13:52:47 ## Finaliza el proceso 5
+2024/12/06 13:52:47 ## (PID:TID) - (5:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/06 13:52:59 ## (1:0) - Finalizó IO y pasa a READY
+2024/12/06 13:52:59 ## (1:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/06 13:52:59 ## (1:0) Finaliza el hilo
+2024/12/06 13:52:59 ## Finaliza el proceso 1
+2024/12/06 13:52:59 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/06 13:56:12 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:56:12 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:56:12 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/06 13:56:12 El módulo kernel está a la escucha en el puerto :8001
+2024/12/06 13:56:13 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 13:56:13 ## (2:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:56:13 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:56:13 ## (2:0) Se crea el Hilo - Estado: READY
+2024/12/06 13:56:13 Respuesta de la creación de proceso:  200
+2024/12/06 13:56:13 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:56:14 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:56:15 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 13:56:15 ## (3:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:56:15 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:56:15 ## (3:0) Se crea el Hilo - Estado: READY
+2024/12/06 13:56:15 Respuesta de la creación de proceso:  200
+2024/12/06 13:56:15 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:56:16 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:56:17 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:56:18 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 13:56:18 ## (4:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:56:18 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:56:18 ## (4:0) Se crea el Hilo - Estado: READY
+2024/12/06 13:56:18 Respuesta de la creación de proceso:  200
+2024/12/06 13:56:18 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:56:18 ## (2:0) - Solicitó syscall: IO por 12000 ms
+2024/12/06 13:56:18 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:56:19 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:56:20 ## (PID:TID) - (4:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:56:21 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 13:56:21 ## (5:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:56:21 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:56:21 ## (5:0) Se crea el Hilo - Estado: READY
+2024/12/06 13:56:21 Respuesta de la creación de proceso:  200
+2024/12/06 13:56:21 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:56:22 ## (3:0) - Solicitó syscall: IO por 12000 ms
+2024/12/06 13:56:22 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:56:23 ## (PID:TID) - (4:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:56:24 ## (PID:TID) - (5:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:56:25 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 13:56:25 ## (6:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:56:25 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:56:25 Memoria no tiene suficiente espacio. Proceso en espera.
+2024/12/06 13:56:25 Respuesta de la creación de proceso:  400
+2024/12/06 13:56:25 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:56:25 ## (4:0) - Solicitó syscall: IO por 12000 ms
+2024/12/06 13:56:25 ## (PID:TID) - (4:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:56:26 ## (PID:TID) - (5:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:56:27 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 13:56:27 ## (7:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:56:27 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:56:27 Memoria no tiene suficiente espacio. Proceso en espera.
+2024/12/06 13:56:27 Respuesta de la creación de proceso:  400
+2024/12/06 13:56:27 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:56:27 ## (5:0) - Solicitó syscall: IO por 12000 ms
+2024/12/06 13:56:27 ## (PID:TID) - (5:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:56:28 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 13:56:28 ## (8:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:56:28 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:56:28 Memoria no tiene suficiente espacio. Proceso en espera.
+2024/12/06 13:56:28 Respuesta de la creación de proceso:  400
+2024/12/06 13:56:28 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:56:29 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 13:56:29 ## (9:0) Se crea el proceso - Estado: NEW
+2024/12/06 13:56:29 Cola NEW está vacía, solicitando memoria.
+2024/12/06 13:56:29 Memoria no tiene suficiente espacio. Proceso en espera.
+2024/12/06 13:56:29 Respuesta de la creación de proceso:  400
+2024/12/06 13:56:29 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:56:30 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:56:30 ## (2:0) - Finalizó IO y pasa a READY
+2024/12/06 13:56:31 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 13:56:31 ## (2:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/06 13:56:31 ## (2:0) Finaliza el hilo
+2024/12/06 13:56:31 ## Finaliza el proceso 2
+2024/12/06 13:56:31 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/06 13:56:32 ## (1:0) - Solicitó syscall: IO por 12000 ms
+2024/12/06 13:56:32 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 13:56:42 ## (3:0) - Finalizó IO y pasa a READY
+2024/12/06 13:56:43 ## (3:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/06 13:56:43 ## (3:0) Finaliza el hilo
+2024/12/06 13:56:43 ## Finaliza el proceso 3
+2024/12/06 13:56:43 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/06 13:56:54 ## (4:0) - Finalizó IO y pasa a READY
+2024/12/06 13:56:55 ## (4:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/06 13:56:55 ## (4:0) Finaliza el hilo
+2024/12/06 13:56:55 ## Finaliza el proceso 4
+2024/12/06 13:56:55 ## (PID:TID) - (4:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/06 13:57:06 ## (5:0) - Finalizó IO y pasa a READY
+2024/12/06 13:57:07 ## (5:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/06 13:57:07 ## (5:0) Finaliza el hilo
+2024/12/06 13:57:07 ## Finaliza el proceso 5
+2024/12/06 13:57:07 ## (PID:TID) - (5:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/06 13:57:18 ## (1:0) - Finalizó IO y pasa a READY
+2024/12/06 13:57:19 ## (1:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/06 13:57:19 ## (1:0) Finaliza el hilo
+2024/12/06 13:57:19 ## Finaliza el proceso 1
+2024/12/06 13:57:19 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/06 14:00:59 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/06 14:00:59 Cola NEW está vacía, solicitando memoria.
+2024/12/06 14:00:59 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/06 14:00:59 El módulo kernel está a la escucha en el puerto :8001
+2024/12/06 14:01:00 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 14:01:00 ## (2:0) Se crea el proceso - Estado: NEW
+2024/12/06 14:01:00 Cola NEW está vacía, solicitando memoria.
+2024/12/06 14:01:00 ## (2:0) Se crea el Hilo - Estado: READY
+2024/12/06 14:01:00 Respuesta de la creación de proceso:  200
+2024/12/06 14:01:00 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:01:01 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:01:01 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 14:01:01 ## (3:0) Se crea el proceso - Estado: NEW
+2024/12/06 14:01:01 Cola NEW está vacía, solicitando memoria.
+2024/12/06 14:01:01 ## (3:0) Se crea el Hilo - Estado: READY
+2024/12/06 14:01:01 Respuesta de la creación de proceso:  200
+2024/12/06 14:01:01 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:01:02 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:01:04 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:01:04 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 14:01:04 ## (4:0) Se crea el proceso - Estado: NEW
+2024/12/06 14:01:04 Cola NEW está vacía, solicitando memoria.
+2024/12/06 14:01:04 ## (4:0) Se crea el Hilo - Estado: READY
+2024/12/06 14:01:04 Respuesta de la creación de proceso:  200
+2024/12/06 14:01:04 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:01:05 ## (2:0) - Solicitó syscall: IO por 12000 ms
+2024/12/06 14:01:05 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:01:06 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:01:07 ## (PID:TID) - (4:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:01:08 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 14:01:08 ## (5:0) Se crea el proceso - Estado: NEW
+2024/12/06 14:01:08 Cola NEW está vacía, solicitando memoria.
+2024/12/06 14:01:08 ## (5:0) Se crea el Hilo - Estado: READY
+2024/12/06 14:01:08 Respuesta de la creación de proceso:  200
+2024/12/06 14:01:08 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:01:08 ## (3:0) - Solicitó syscall: IO por 12000 ms
+2024/12/06 14:01:08 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:01:09 ## (PID:TID) - (4:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:01:10 ## (PID:TID) - (5:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:01:11 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 14:01:11 ## (6:0) Se crea el proceso - Estado: NEW
+2024/12/06 14:01:11 Cola NEW está vacía, solicitando memoria.
+2024/12/06 14:01:11 Memoria no tiene suficiente espacio. Proceso en espera.
+2024/12/06 14:01:11 Respuesta de la creación de proceso:  400
+2024/12/06 14:01:11 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:01:12 ## (4:0) - Solicitó syscall: IO por 12000 ms
+2024/12/06 14:01:12 ## (PID:TID) - (4:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:01:13 ## (PID:TID) - (5:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:01:13 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 14:01:13 ## (7:0) Se crea el proceso - Estado: NEW
+2024/12/06 14:01:13 Cola NEW está vacía, solicitando memoria.
+2024/12/06 14:01:13 Memoria no tiene suficiente espacio. Proceso en espera.
+2024/12/06 14:01:13 Respuesta de la creación de proceso:  400
+2024/12/06 14:01:13 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:01:14 ## (5:0) - Solicitó syscall: IO por 12000 ms
+2024/12/06 14:01:14 ## (PID:TID) - (5:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:01:15 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 14:01:15 ## (8:0) Se crea el proceso - Estado: NEW
+2024/12/06 14:01:15 Cola NEW está vacía, solicitando memoria.
+2024/12/06 14:01:15 Memoria no tiene suficiente espacio. Proceso en espera.
+2024/12/06 14:01:15 Respuesta de la creación de proceso:  400
+2024/12/06 14:01:15 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:01:15 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 14:01:15 ## (9:0) Se crea el proceso - Estado: NEW
+2024/12/06 14:01:15 Cola NEW está vacía, solicitando memoria.
+2024/12/06 14:01:15 Memoria no tiene suficiente espacio. Proceso en espera.
+2024/12/06 14:01:15 Respuesta de la creación de proceso:  400
+2024/12/06 14:01:15 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:01:16 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:01:17 ## (2:0) - Finalizó IO y pasa a READY
+2024/12/06 14:01:17 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:01:18 ## (2:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/06 14:01:18 ## (2:0) Finaliza el hilo
+2024/12/06 14:01:18 ## Finaliza el proceso 2
+2024/12/06 14:01:18 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/06 14:01:18 ## (1:0) - Solicitó syscall: IO por 12000 ms
+2024/12/06 14:01:18 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:01:29 ## (3:0) - Finalizó IO y pasa a READY
+2024/12/06 14:01:29 ## (3:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/06 14:01:29 ## (3:0) Finaliza el hilo
+2024/12/06 14:01:29 ## Finaliza el proceso 3
+2024/12/06 14:01:29 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/06 14:01:41 ## (4:0) - Finalizó IO y pasa a READY
+2024/12/06 14:01:41 ## (4:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/06 14:01:41 ## (4:0) Finaliza el hilo
+2024/12/06 14:01:41 ## Finaliza el proceso 4
+2024/12/06 14:01:41 ## (PID:TID) - (4:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/06 14:01:53 ## (5:0) - Finalizó IO y pasa a READY
+2024/12/06 14:01:53 ## (5:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/06 14:01:53 ## (5:0) Finaliza el hilo
+2024/12/06 14:01:53 ## Finaliza el proceso 5
+2024/12/06 14:01:53 ## (PID:TID) - (5:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/06 14:02:05 ## (1:0) - Finalizó IO y pasa a READY
+2024/12/06 14:02:05 ## (1:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/06 14:02:05 ## (1:0) Finaliza el hilo
+2024/12/06 14:02:05 ## Finaliza el proceso 1
+2024/12/06 14:02:05 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/06 14:04:37 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/06 14:04:37 Cola NEW está vacía, solicitando memoria.
+2024/12/06 14:04:37 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/06 14:04:37 El módulo kernel está a la escucha en el puerto :8001
+2024/12/06 14:04:37 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 14:04:37 ## (2:0) Se crea el proceso - Estado: NEW
+2024/12/06 14:04:37 Cola NEW está vacía, solicitando memoria.
+2024/12/06 14:04:37 ## (2:0) Se crea el Hilo - Estado: READY
+2024/12/06 14:04:37 Respuesta de la creación de proceso:  200
+2024/12/06 14:04:37 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:04:38 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:04:39 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 14:04:39 ## (3:0) Se crea el proceso - Estado: NEW
+2024/12/06 14:04:39 Cola NEW está vacía, solicitando memoria.
+2024/12/06 14:04:39 ## (3:0) Se crea el Hilo - Estado: READY
+2024/12/06 14:04:39 Respuesta de la creación de proceso:  200
+2024/12/06 14:04:39 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:04:40 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:04:41 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:04:42 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 14:04:42 ## (4:0) Se crea el proceso - Estado: NEW
+2024/12/06 14:04:42 Cola NEW está vacía, solicitando memoria.
+2024/12/06 14:04:42 ## (4:0) Se crea el Hilo - Estado: READY
+2024/12/06 14:04:42 Respuesta de la creación de proceso:  200
+2024/12/06 14:04:42 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:04:42 ## (2:0) - Solicitó syscall: IO por 12000 ms
+2024/12/06 14:04:42 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:04:43 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:04:44 ## (PID:TID) - (4:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:04:45 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 14:04:45 ## (5:0) Se crea el proceso - Estado: NEW
+2024/12/06 14:04:45 Cola NEW está vacía, solicitando memoria.
+2024/12/06 14:04:45 ## (5:0) Se crea el Hilo - Estado: READY
+2024/12/06 14:04:45 Respuesta de la creación de proceso:  200
+2024/12/06 14:04:45 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:04:46 ## (3:0) - Solicitó syscall: IO por 12000 ms
+2024/12/06 14:04:46 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:04:47 ## (PID:TID) - (4:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:04:48 ## (PID:TID) - (5:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:04:49 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 14:04:49 ## (6:0) Se crea el proceso - Estado: NEW
+2024/12/06 14:04:49 Cola NEW está vacía, solicitando memoria.
+2024/12/06 14:04:49 Memoria no tiene suficiente espacio. Proceso en espera.
+2024/12/06 14:04:49 Respuesta de la creación de proceso:  400
+2024/12/06 14:04:49 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:04:49 ## (4:0) - Solicitó syscall: IO por 12000 ms
+2024/12/06 14:04:49 ## (PID:TID) - (4:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:04:50 ## (PID:TID) - (5:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:04:51 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 14:04:51 ## (7:0) Se crea el proceso - Estado: NEW
+2024/12/06 14:04:51 Cola NEW no está vacía, proceso se encola en NEW.
+2024/12/06 14:04:51 Respuesta de la creación de proceso:  200
+2024/12/06 14:04:51 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:04:51 ## (5:0) - Solicitó syscall: IO por 12000 ms
+2024/12/06 14:04:51 ## (PID:TID) - (5:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:04:52 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 14:04:52 ## (8:0) Se crea el proceso - Estado: NEW
+2024/12/06 14:04:52 Cola NEW no está vacía, proceso se encola en NEW.
+2024/12/06 14:04:52 Respuesta de la creación de proceso:  200
+2024/12/06 14:04:52 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:04:53 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 14:04:53 ## (9:0) Se crea el proceso - Estado: NEW
+2024/12/06 14:04:53 Cola NEW no está vacía, proceso se encola en NEW.
+2024/12/06 14:04:53 Respuesta de la creación de proceso:  200
+2024/12/06 14:04:53 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:04:54 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:04:54 ## (2:0) - Finalizó IO y pasa a READY
+2024/12/06 14:04:55 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:04:55 ## (2:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/06 14:04:55 ## (2:0) Finaliza el hilo
+2024/12/06 14:04:55 ## Finaliza el proceso 2
+2024/12/06 14:04:55 ## (6:0) Se crea el Hilo - Estado: READY
+2024/12/06 14:04:55 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/06 14:04:56 ## (1:0) - Solicitó syscall: IO por 12000 ms
+2024/12/06 14:04:56 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:04:57 ## (PID:TID) - (6:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:04:58 ## (PID:TID) - (6:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:04:59 ## (6:0) - Solicitó syscall: IO por 12000 ms
+2024/12/06 14:04:59 ## (PID:TID) - (6:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:04:59 ## (6:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/06 14:04:59 ## (6:0) Finaliza el hilo
+2024/12/06 14:04:59 ## Finaliza el proceso 6
+2024/12/06 14:04:59 ## (7:0) Se crea el Hilo - Estado: READY
+2024/12/06 14:04:59 ## (PID:TID) - (6:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/06 14:05:00 ## (PID:TID) - (7:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:05:01 ## (PID:TID) - (7:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:05:02 ## (7:0) - Solicitó syscall: IO por 12000 ms
+2024/12/06 14:05:02 ## (PID:TID) - (7:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:05:02 ## (7:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/06 14:05:02 ## (7:0) Finaliza el hilo
+2024/12/06 14:05:02 ## Finaliza el proceso 7
+2024/12/06 14:05:02 ## (8:0) Se crea el Hilo - Estado: READY
+2024/12/06 14:05:02 ## (PID:TID) - (7:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/06 14:05:03 ## (PID:TID) - (8:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:05:04 ## (PID:TID) - (8:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:05:05 ## (8:0) - Solicitó syscall: IO por 12000 ms
+2024/12/06 14:05:05 ## (PID:TID) - (8:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:05:06 ## (8:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/06 14:05:06 ## (8:0) Finaliza el hilo
+2024/12/06 14:05:06 ## Finaliza el proceso 8
+2024/12/06 14:05:06 ## (9:0) Se crea el Hilo - Estado: READY
+2024/12/06 14:05:06 ## (PID:TID) - (8:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/06 14:05:06 ## (3:0) - Finalizó IO y pasa a READY
+2024/12/06 14:05:07 ## (PID:TID) - (9:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:05:08 ## (PID:TID) - (9:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:05:08 ## (3:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/06 14:05:08 ## (3:0) Finaliza el hilo
+2024/12/06 14:05:08 ## Finaliza el proceso 3
+2024/12/06 14:05:08 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/06 14:05:09 ## (9:0) - Solicitó syscall: IO por 12000 ms
+2024/12/06 14:05:09 ## (PID:TID) - (9:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:05:09 ## (9:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/06 14:05:09 ## (9:0) Finaliza el hilo
+2024/12/06 14:05:09 ## Finaliza el proceso 9
+2024/12/06 14:05:09 ## (PID:TID) - (9:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/06 14:05:18 ## (4:0) - Finalizó IO y pasa a READY
+2024/12/06 14:05:19 ## (4:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/06 14:05:19 ## (4:0) Finaliza el hilo
+2024/12/06 14:05:19 ## Finaliza el proceso 4
+2024/12/06 14:05:19 ## (PID:TID) - (4:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/06 14:05:30 ## (5:0) - Finalizó IO y pasa a READY
+2024/12/06 14:05:31 ## (5:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/06 14:05:31 ## (5:0) Finaliza el hilo
+2024/12/06 14:05:31 ## Finaliza el proceso 5
+2024/12/06 14:05:31 ## (PID:TID) - (5:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/06 14:05:42 ## (1:0) - Finalizó IO y pasa a READY
+2024/12/06 14:12:08 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/06 14:12:08 Cola NEW está vacía, solicitando memoria.
+2024/12/06 14:12:08 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/06 14:12:08 El módulo kernel está a la escucha en el puerto :8001
+2024/12/06 14:12:08 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 14:12:08 ## (2:0) Se crea el proceso - Estado: NEW
+2024/12/06 14:12:08 Cola NEW está vacía, solicitando memoria.
+2024/12/06 14:12:08 ## (2:0) Se crea el Hilo - Estado: READY
+2024/12/06 14:12:08 Respuesta de la creación de proceso:  200
+2024/12/06 14:12:08 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:12:10 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:12:10 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 14:12:10 ## (3:0) Se crea el proceso - Estado: NEW
+2024/12/06 14:12:10 Cola NEW está vacía, solicitando memoria.
+2024/12/06 14:12:10 ## (3:0) Se crea el Hilo - Estado: READY
+2024/12/06 14:12:10 Respuesta de la creación de proceso:  200
+2024/12/06 14:12:10 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:12:11 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:12:12 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:12:13 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 14:12:13 ## (4:0) Se crea el proceso - Estado: NEW
+2024/12/06 14:12:13 Cola NEW está vacía, solicitando memoria.
+2024/12/06 14:12:13 ## (4:0) Se crea el Hilo - Estado: READY
+2024/12/06 14:12:13 Respuesta de la creación de proceso:  200
+2024/12/06 14:12:13 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:12:14 ## (2:0) - Solicitó syscall: IO por 12000 ms
+2024/12/06 14:12:14 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:12:15 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:12:16 ## (PID:TID) - (4:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:12:16 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 14:12:16 ## (5:0) Se crea el proceso - Estado: NEW
+2024/12/06 14:12:16 Cola NEW está vacía, solicitando memoria.
+2024/12/06 14:12:16 ## (5:0) Se crea el Hilo - Estado: READY
+2024/12/06 14:12:16 Respuesta de la creación de proceso:  200
+2024/12/06 14:12:16 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:12:17 ## (3:0) - Solicitó syscall: IO por 12000 ms
+2024/12/06 14:12:17 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:12:18 ## (PID:TID) - (4:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:12:19 ## (PID:TID) - (5:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:12:20 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 14:12:20 ## (6:0) Se crea el proceso - Estado: NEW
+2024/12/06 14:12:20 Cola NEW está vacía, solicitando memoria.
+2024/12/06 14:12:20 Memoria no tiene suficiente espacio. Proceso en espera.
+2024/12/06 14:12:20 Respuesta de la creación de proceso:  400
+2024/12/06 14:12:20 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:12:20 ## (4:0) - Solicitó syscall: IO por 12000 ms
+2024/12/06 14:12:20 ## (PID:TID) - (4:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:12:21 ## (PID:TID) - (5:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:12:22 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 14:12:22 ## (7:0) Se crea el proceso - Estado: NEW
+2024/12/06 14:12:22 Cola NEW no está vacía, proceso se encola en NEW.
+2024/12/06 14:12:22 Respuesta de la creación de proceso:  200
+2024/12/06 14:12:22 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:12:23 ## (5:0) - Solicitó syscall: IO por 12000 ms
+2024/12/06 14:12:23 ## (PID:TID) - (5:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:12:23 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 14:12:23 ## (8:0) Se crea el proceso - Estado: NEW
+2024/12/06 14:12:23 Cola NEW no está vacía, proceso se encola en NEW.
+2024/12/06 14:12:23 Respuesta de la creación de proceso:  200
+2024/12/06 14:12:23 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:12:24 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 14:12:24 ## (9:0) Se crea el proceso - Estado: NEW
+2024/12/06 14:12:24 Cola NEW no está vacía, proceso se encola en NEW.
+2024/12/06 14:12:24 Respuesta de la creación de proceso:  200
+2024/12/06 14:12:24 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:12:25 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:12:26 ## (2:0) - Finalizó IO y pasa a READY
+2024/12/06 14:12:26 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:12:27 ## (2:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/06 14:12:27 ## (2:0) Finaliza el hilo
+2024/12/06 14:12:27 ## Finaliza el proceso 2
+2024/12/06 14:12:27 ## (6:0) Se crea el Hilo - Estado: READY
+2024/12/06 14:12:27 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/06 14:12:27 ## (1:0) - Solicitó syscall: IO por 12000 ms
+2024/12/06 14:12:27 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:12:28 ## (PID:TID) - (6:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:12:29 ## (PID:TID) - (6:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:12:30 ## (6:0) - Solicitó syscall: IO por 12000 ms
+2024/12/06 14:12:30 ## (PID:TID) - (6:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:12:31 ## (6:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/06 14:12:31 ## (6:0) Finaliza el hilo
+2024/12/06 14:12:31 ## Finaliza el proceso 6
+2024/12/06 14:12:31 ## (7:0) Se crea el Hilo - Estado: READY
+2024/12/06 14:12:31 ## (PID:TID) - (6:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/06 14:12:32 ## (PID:TID) - (7:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:12:33 ## (PID:TID) - (7:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:12:33 ## (7:0) - Solicitó syscall: IO por 12000 ms
+2024/12/06 14:12:33 ## (PID:TID) - (7:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:12:34 ## (7:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/06 14:12:34 ## (7:0) Finaliza el hilo
+2024/12/06 14:12:34 ## Finaliza el proceso 7
+2024/12/06 14:12:34 ## (8:0) Se crea el Hilo - Estado: READY
+2024/12/06 14:12:34 ## (PID:TID) - (7:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/06 14:12:35 ## (PID:TID) - (8:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:12:36 ## (PID:TID) - (8:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:12:36 ## (8:0) - Solicitó syscall: IO por 12000 ms
+2024/12/06 14:12:36 ## (PID:TID) - (8:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:12:37 ## (8:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/06 14:12:37 ## (8:0) Finaliza el hilo
+2024/12/06 14:12:37 ## Finaliza el proceso 8
+2024/12/06 14:12:37 ## (9:0) Se crea el Hilo - Estado: READY
+2024/12/06 14:12:37 ## (PID:TID) - (8:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/06 14:12:38 ## (3:0) - Finalizó IO y pasa a READY
+2024/12/06 14:12:38 ## (PID:TID) - (9:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:12:39 ## (PID:TID) - (9:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:12:40 ## (3:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/06 14:12:40 ## (3:0) Finaliza el hilo
+2024/12/06 14:12:40 ## Finaliza el proceso 3
+2024/12/06 14:12:40 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/06 14:12:40 ## (9:0) - Solicitó syscall: IO por 12000 ms
+2024/12/06 14:12:40 ## (PID:TID) - (9:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:12:41 ## (9:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/06 14:12:41 ## (9:0) Finaliza el hilo
+2024/12/06 14:12:41 ## Finaliza el proceso 9
+2024/12/06 14:12:41 ## (PID:TID) - (9:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/06 14:12:50 ## (4:0) - Finalizó IO y pasa a READY
+2024/12/06 14:12:50 ## (4:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/06 14:12:50 ## (4:0) Finaliza el hilo
+2024/12/06 14:12:50 ## Finaliza el proceso 4
+2024/12/06 14:12:50 ## (PID:TID) - (4:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/06 14:13:02 ## (5:0) - Finalizó IO y pasa a READY
+2024/12/06 14:13:02 ## (5:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/06 14:13:02 ## (5:0) Finaliza el hilo
+2024/12/06 14:13:02 ## Finaliza el proceso 5
+2024/12/06 14:13:02 ## (PID:TID) - (5:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/06 14:13:14 ## (1:0) - Finalizó IO y pasa a READY
+2024/12/06 14:19:41 ## (1:0) Se crea el proceso - Estado: NEW
+2024/12/06 14:19:41 Cola NEW está vacía, solicitando memoria.
+2024/12/06 14:19:41 ## (1:0) Se crea el Hilo - Estado: READY
+2024/12/06 14:19:41 El módulo kernel está a la escucha en el puerto :8001
+2024/12/06 14:19:42 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 14:19:42 ## (2:0) Se crea el proceso - Estado: NEW
+2024/12/06 14:19:42 Cola NEW está vacía, solicitando memoria.
+2024/12/06 14:19:42 ## (2:0) Se crea el Hilo - Estado: READY
+2024/12/06 14:19:42 Respuesta de la creación de proceso:  200
+2024/12/06 14:19:42 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:19:43 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:19:43 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 14:19:43 ## (3:0) Se crea el proceso - Estado: NEW
+2024/12/06 14:19:43 Cola NEW está vacía, solicitando memoria.
+2024/12/06 14:19:43 ## (3:0) Se crea el Hilo - Estado: READY
+2024/12/06 14:19:43 Respuesta de la creación de proceso:  200
+2024/12/06 14:19:43 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:19:44 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:19:46 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:19:46 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 14:19:46 ## (4:0) Se crea el proceso - Estado: NEW
+2024/12/06 14:19:46 Cola NEW está vacía, solicitando memoria.
+2024/12/06 14:19:46 ## (4:0) Se crea el Hilo - Estado: READY
+2024/12/06 14:19:46 Respuesta de la creación de proceso:  200
+2024/12/06 14:19:46 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:19:47 ## (2:0) - Solicitó syscall: IO por 12000 ms
+2024/12/06 14:19:47 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:19:48 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:19:49 ## (PID:TID) - (4:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:19:50 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 14:19:50 ## (5:0) Se crea el proceso - Estado: NEW
+2024/12/06 14:19:50 Cola NEW está vacía, solicitando memoria.
+2024/12/06 14:19:50 ## (5:0) Se crea el Hilo - Estado: READY
+2024/12/06 14:19:50 Respuesta de la creación de proceso:  200
+2024/12/06 14:19:50 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:19:50 ## (3:0) - Solicitó syscall: IO por 12000 ms
+2024/12/06 14:19:50 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:19:51 ## (PID:TID) - (4:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:19:52 ## (PID:TID) - (5:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:19:53 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 14:19:53 ## (6:0) Se crea el proceso - Estado: NEW
+2024/12/06 14:19:53 Cola NEW está vacía, solicitando memoria.
+2024/12/06 14:19:53 Memoria no tiene suficiente espacio. Proceso en espera.
+2024/12/06 14:19:53 Respuesta de la creación de proceso:  400
+2024/12/06 14:19:53 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:19:54 ## (4:0) - Solicitó syscall: IO por 12000 ms
+2024/12/06 14:19:54 ## (PID:TID) - (4:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:19:55 ## (PID:TID) - (5:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:19:55 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 14:19:55 ## (7:0) Se crea el proceso - Estado: NEW
+2024/12/06 14:19:55 Cola NEW no está vacía, proceso se encola en NEW.
+2024/12/06 14:19:55 Respuesta de la creación de proceso:  200
+2024/12/06 14:19:55 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:19:56 ## (5:0) - Solicitó syscall: IO por 12000 ms
+2024/12/06 14:19:56 ## (PID:TID) - (5:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:19:56 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 14:19:56 ## (8:0) Se crea el proceso - Estado: NEW
+2024/12/06 14:19:56 Cola NEW no está vacía, proceso se encola en NEW.
+2024/12/06 14:19:56 Respuesta de la creación de proceso:  200
+2024/12/06 14:19:56 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:19:57 ## (1:0) - Solicitó syscall: PROCESS_CREATE
+2024/12/06 14:19:57 ## (9:0) Se crea el proceso - Estado: NEW
+2024/12/06 14:19:57 Cola NEW no está vacía, proceso se encola en NEW.
+2024/12/06 14:19:57 Respuesta de la creación de proceso:  200
+2024/12/06 14:19:57 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:19:58 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:19:59 ## (2:0) - Finalizó IO y pasa a READY
+2024/12/06 14:19:59 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:20:00 ## (2:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/06 14:20:00 ## (2:0) Finaliza el hilo
+2024/12/06 14:20:00 ## Finaliza el proceso 2
+2024/12/06 14:20:00 ## (6:0) Se crea el Hilo - Estado: READY
+2024/12/06 14:20:00 ## (PID:TID) - (2:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/06 14:20:00 ## (1:0) - Solicitó syscall: IO por 12000 ms
+2024/12/06 14:20:00 ## (PID:TID) - (1:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:20:02 ## (PID:TID) - (6:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:20:03 ## (PID:TID) - (6:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:20:03 ## (6:0) - Solicitó syscall: IO por 12000 ms
+2024/12/06 14:20:03 ## (PID:TID) - (6:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:20:04 ## (6:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/06 14:20:04 ## (6:0) Finaliza el hilo
+2024/12/06 14:20:04 ## Finaliza el proceso 6
+2024/12/06 14:20:04 ## (7:0) Se crea el Hilo - Estado: READY
+2024/12/06 14:20:04 ## (PID:TID) - (6:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/06 14:20:05 ## (PID:TID) - (7:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:20:06 ## (PID:TID) - (7:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:20:06 ## (7:0) - Solicitó syscall: IO por 12000 ms
+2024/12/06 14:20:06 ## (PID:TID) - (7:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:20:07 ## (7:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/06 14:20:07 ## (7:0) Finaliza el hilo
+2024/12/06 14:20:07 ## Finaliza el proceso 7
+2024/12/06 14:20:07 ## (8:0) Se crea el Hilo - Estado: READY
+2024/12/06 14:20:07 ## (PID:TID) - (7:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/06 14:20:08 ## (PID:TID) - (8:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:20:09 ## (PID:TID) - (8:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:20:10 ## (8:0) - Solicitó syscall: IO por 12000 ms
+2024/12/06 14:20:10 ## (PID:TID) - (8:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:20:10 ## (8:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/06 14:20:10 ## (8:0) Finaliza el hilo
+2024/12/06 14:20:10 ## Finaliza el proceso 8
+2024/12/06 14:20:10 ## (9:0) Se crea el Hilo - Estado: READY
+2024/12/06 14:20:10 ## (PID:TID) - (8:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/06 14:20:11 ## (3:0) - Finalizó IO y pasa a READY
+2024/12/06 14:20:11 ## (PID:TID) - (9:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:20:12 ## (PID:TID) - (9:0) - Hilo recibido de CPU - Razon: INTERRUPCION
+2024/12/06 14:20:13 ## (3:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/06 14:20:13 ## (3:0) Finaliza el hilo
+2024/12/06 14:20:13 ## Finaliza el proceso 3
+2024/12/06 14:20:13 ## (PID:TID) - (3:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/06 14:20:13 ## (9:0) - Solicitó syscall: IO por 12000 ms
+2024/12/06 14:20:13 ## (PID:TID) - (9:0) - Hilo recibido de CPU - Razon: SYSCALL
+2024/12/06 14:20:14 ## (9:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/06 14:20:14 ## (9:0) Finaliza el hilo
+2024/12/06 14:20:14 ## Finaliza el proceso 9
+2024/12/06 14:20:14 ## (PID:TID) - (9:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/06 14:20:23 ## (4:0) - Finalizó IO y pasa a READY
+2024/12/06 14:20:23 ## (4:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/06 14:20:23 ## (4:0) Finaliza el hilo
+2024/12/06 14:20:23 ## Finaliza el proceso 4
+2024/12/06 14:20:23 ## (PID:TID) - (4:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/06 14:20:35 ## (5:0) - Finalizó IO y pasa a READY
+2024/12/06 14:20:35 ## (5:0) - Solicitó syscall: PROCESS_EXIT
+2024/12/06 14:20:35 ## (5:0) Finaliza el hilo
+2024/12/06 14:20:35 ## Finaliza el proceso 5
+2024/12/06 14:20:35 ## (PID:TID) - (5:0) - Hilo recibido de CPU - Razon: PROCESS_EXIT
+2024/12/06 14:20:47 ## (1:0) - Finalizó IO y pasa a READY

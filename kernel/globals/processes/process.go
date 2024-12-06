@@ -37,17 +37,18 @@ func CrearProceso(pseudocodigo string, tamanioMemoria int, prioridad int) int {
 		}
 
 		if respuestaMemoria.StatusCode == http.StatusOK {
+
 			threads.CrearHilo(pcb.Pid, prioridad, pseudocodigo)
 		} else {
 			log.Println("Memoria no tiene suficiente espacio. Proceso en espera.")
 
-			queues.AgregarProcesoACola(pcb, globals.Estructura.ColaNew)
+			queues.AgregarProcesoACola(pcb, &globals.Estructura.ColaNew)
 
 			return http.StatusBadRequest
 		}
 	} else {
 		log.Println("Cola NEW no está vacía, proceso se encola en NEW.")
-		queues.AgregarProcesoACola(pcb, globals.Estructura.ColaNew)
+		queues.AgregarProcesoACola(pcb, &globals.Estructura.ColaNew)
 	}
 	return http.StatusOK
 }
@@ -100,9 +101,12 @@ func FinalizarProceso(pid int) {
 
 		if len(globals.Estructura.ColaNew) != 0 {
 			procesoNuevo := globals.Estructura.ColaNew[0]
-			queues.SacarProcesoDeCola(procesoNuevo.Pid, &globals.Estructura.ColaNew)
-			threads.CrearHilo(procesoNuevo.Pid, procesoNuevo.PrioridadTID0, procesoNuevo.PseudoCodigoHilo0)
-			queues.AgregarHiloACola(threads.BuscarHiloEnPCB(procesoNuevo.Pid, 0), &globals.Estructura.ColaReady)
+			response, _ := SolicitarProcesoMemoria(procesoNuevo.Pid, procesoNuevo.PseudoCodigoHilo0, procesoNuevo.Tamanio)
+			if response.StatusCode == http.StatusOK {
+				queues.SacarProcesoDeCola(procesoNuevo.Pid, &globals.Estructura.ColaNew)
+				threads.CrearHilo(procesoNuevo.Pid, procesoNuevo.PrioridadTID0, procesoNuevo.PseudoCodigoHilo0)
+				queues.AgregarHiloACola(threads.BuscarHiloEnPCB(procesoNuevo.Pid, 0), &globals.Estructura.ColaReady)
+			}
 		}
 
 	} else {

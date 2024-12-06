@@ -12,11 +12,10 @@ import (
 	"github.com/sisoputnfrba/tp-golang/utils/commons"
 	"log"
 	"net/http"
-	"sync"
 	"time"
 )
 
-var mtxIO sync.Mutex
+//var mtxIO sync.Mutex
 
 func HandleProcessCreate(w http.ResponseWriter, r *http.Request) {
 	var req request.RequestProcessCreate
@@ -262,46 +261,58 @@ func HandleIO(w http.ResponseWriter, r *http.Request) {
 	var req request.RequestIO
 
 	err := commons.DecodificarJSON(r.Body, &req)
-
 	if err != nil {
 		http.Error(w, "Error al decodificar el JSON", http.StatusBadRequest)
 		return
 	}
 
-	log.Printf("## (%d:%d) - Solicitó syscall: IO", req.Pid, req.Tid)
+	log.Printf("## (%d:%d) - Solicitó syscall: IO por %d ms", req.Pid, req.Tid, req.Tiempo)
 
-	mtxIO.Lock()
-	globals.Estructura.ColaIO = append(globals.Estructura.ColaIO, &req)
-	mtxIO.Unlock()
+	tcb := threads.BuscarHiloEnPCB(req.Pid, req.Tid)
+	if tcb == nil {
+		http.Error(w, "No se encontró el hilo", http.StatusNotFound)
+		return
+	}
 
-	globals.IO <- true
+	threads.BloquearHilo(tcb)
+	globals.Estructura.ColaIO = append(globals.Estructura.ColaIO, tcb)
 
-	log.Printf("## (%d:%d) finalizó IO y pasa a READY", req.Pid, req.Tid)
+	globals.IOChannel <- req
+
+	w.WriteHeader(http.StatusOK)
 }
 
-func ManejadorIO() {
-	for {
-		<-globals.IO
-		mtxIO.Lock()
-		if len(globals.Estructura.ColaIO) > 0 {
-			req := globals.Estructura.ColaIO[0]
-			globals.Estructura.ColaIO = globals.Estructura.ColaIO[1:]
-			mtxIO.Unlock()
-			threads.BloquearHilo(threads.BuscarHiloEnPCB(req.Pid, req.Tid))
-			time.Sleep(time.Duration(req.Tiempo) * time.Millisecond)
-			threads.DesbloquearHilo(threads.BuscarHiloEnPCB(req.Pid, req.Tid))
-		} else {
-			mtxIO.Unlock()
+func ProcesarIO() {
+	for req := range globals.IOChannel {
+		tcb := threads.BuscarHiloEnPCB(req.Pid, req.Tid)
+		if tcb == nil {
+			continue
 		}
+
+		time.Sleep(time.Duration(req.Tiempo) * time.Millisecond)
+
+		globals.Estructura.MtxReady.Lock()
+		tcb.Estado = "READY"
+		queues.SacarHiloDeCola(tcb.Tid, tcb.Pid, &globals.Estructura.ColaBloqueados)
+		queues.AgregarHiloACola(tcb, &globals.Estructura.ColaReady)
+		globals.Estructura.MtxReady.Unlock()
+
+		log.Printf("## (%d:%d) - Finalizó IO y pasa a READY", tcb.Pid, tcb.Tid)
+		globals.Planificar <- true
 	}
+}
+
+func Init() {
+	globals.IOChannel = make(chan request.RequestIO, 100)
+	go ProcesarIO()
 }
 
 func SolicitarDumpMemory(pid int, tid int) (int, error) {
-	request := request.RequestDumpMemory{
+	req := request.RequestDumpMemory{
 		Pid: pid,
 		Tid: tid,
 	}
-	requestCodificado, _ := commons.CodificarJSON(request)
+	requestCodificado, _ := commons.CodificarJSON(req)
 	response := cliente.Post(globals.KConfig.IpMemory, globals.KConfig.PortMemory, "dump", requestCodificado)
 	return response.StatusCode, nil
 }
