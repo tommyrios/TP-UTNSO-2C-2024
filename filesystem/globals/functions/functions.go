@@ -139,7 +139,7 @@ func DividirEnBloques(contenido []byte, size int) [][]byte {
 func SliceToBytes(ints []int) []byte {
 	buf := new(bytes.Buffer)
 	for _, n := range ints {
-		binary.Write(buf, binary.LittleEndian, int32(n)) // Convierte cada entero a un int32 en formato LittleEndian
+		binary.Write(buf, binary.BigEndian, int32(n)) // Convierte cada entero a un int32 en formato BigEndian
 	}
 	return buf.Bytes()
 }

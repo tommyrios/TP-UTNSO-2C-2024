@@ -45,6 +45,6 @@ var KConfig *Config
 
 var CpuLibre = make(chan bool, 1)
 
-var IO = make(chan int)
+var IO = make(chan bool)
 
 var Planificar = make(chan bool)

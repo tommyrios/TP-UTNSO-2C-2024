@@ -133,19 +133,12 @@ func HandleReadMemory(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	nuevoValor := binary.LittleEndian.Uint32(response)
+	nuevoValor := binary.BigEndian.Uint32(response)
 
-	log.Println(nuevoValor)
-
-	bytesSolicitados, err := commons.CodificarJSON(response)
-
-	if err != nil {
-		http.Error(w, "Error al codificar el JSON", http.StatusBadRequest)
-		return
-	}
+	log.Printf("## Nuevo Valor: %d\n", nuevoValor)
 
 	w.WriteHeader(http.StatusOK)
-	_, err = w.Write(bytesSolicitados)
+	_, err = w.Write(response)
 	if err != nil {
 		return
 	}

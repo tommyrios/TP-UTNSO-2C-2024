@@ -15,7 +15,7 @@ import (
 func ProcesoInicial(argumentos []string) {
 	pseudocodigo := argumentos[1]
 	tamanio, _ := strconv.Atoi(argumentos[2])
-	prioridadHiloMain, _ := strconv.Atoi(argumentos[3])
+	prioridadHiloMain := 0
 
 	CrearProceso(pseudocodigo, tamanio, prioridadHiloMain)
 

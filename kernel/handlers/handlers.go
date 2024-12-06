@@ -261,19 +261,20 @@ func HandleDesalojoCpu(w http.ResponseWriter, r *http.Request) {
 func HandleIO(w http.ResponseWriter, r *http.Request) {
 	var req request.RequestIO
 
-	log.Printf("## (%d:%d) - Solicitó syscall: IO", req.Pid, req.Tid)
-
 	err := commons.DecodificarJSON(r.Body, &req)
+
 	if err != nil {
 		http.Error(w, "Error al decodificar el JSON", http.StatusBadRequest)
 		return
 	}
 
+	log.Printf("## (%d:%d) - Solicitó syscall: IO", req.Pid, req.Tid)
+
 	mtxIO.Lock()
 	globals.Estructura.ColaIO = append(globals.Estructura.ColaIO, &req)
 	mtxIO.Unlock()
 
-	globals.IO <- 1
+	globals.IO <- true
 
 	log.Printf("## (%d:%d) finalizó IO y pasa a READY", req.Pid, req.Tid)
 }
@@ -287,7 +288,7 @@ func ManejadorIO() {
 			globals.Estructura.ColaIO = globals.Estructura.ColaIO[1:]
 			mtxIO.Unlock()
 			threads.BloquearHilo(threads.BuscarHiloEnPCB(req.Pid, req.Tid))
-			time.Sleep(time.Duration(req.Tiempo))
+			time.Sleep(time.Duration(req.Tiempo) * time.Millisecond)
 			threads.DesbloquearHilo(threads.BuscarHiloEnPCB(req.Pid, req.Tid))
 		} else {
 			mtxIO.Unlock()

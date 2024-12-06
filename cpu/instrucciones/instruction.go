@@ -45,7 +45,11 @@ func Log(operandos []string, registros *commons.Registros) {
 func ReadMem(operandos []string, registros *commons.Registros, base int, limite int, pid int, tid int) int {
 	registroDireccion := globals.ValorRegistros(operandos[1], registros)
 
+	log.Println("## Registro Direccion: ", registroDireccion)
+
 	direccionFísica, err := globals.Mmu(int(registroDireccion), base, limite)
+
+	log.Println("## Direccion Fisica: ", direccionFísica)
 
 	if err == 1 {
 		globals.DevolverPCB(pid, tid, "SEGMENTATION FAULT")
@@ -61,7 +65,9 @@ func ReadMem(operandos []string, registros *commons.Registros, base int, limite 
 
 	defer response.Body.Close()
 
-	nuevoValor := binary.LittleEndian.Uint32(byteSolicitados)
+	nuevoValor := binary.BigEndian.Uint32(byteSolicitados)
+
+	log.Println("## Nuevo Valor: ", nuevoValor)
 
 	globals.CambiarValorRegistros(operandos[0], nuevoValor, registros)
 
@@ -83,7 +89,7 @@ func WriteMem(operandos []string, registros *commons.Registros, base int, limite
 
 	datos := make([]byte, 4)
 
-	binary.LittleEndian.PutUint32(datos, globals.ValorRegistros(operandos[1], registros))
+	binary.BigEndian.PutUint32(datos, globals.ValorRegistros(operandos[1], registros))
 
 	reqWriteMemory := requests.RequestWriteMemory{Direccion: direccionFísica, Pid: pid, Tid: tid, Datos: datos}
 

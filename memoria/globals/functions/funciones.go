@@ -2,7 +2,6 @@ package functions
 
 import (
 	"bufio"
-	"encoding/binary"
 	"errors"
 	"fmt"
 	"github.com/sisoputnfrba/tp-golang/memoria/globals"
@@ -72,12 +71,16 @@ func ObtenerTamanioMemoria(pid int) int {
 
 func LeerMemoria(direccion int, pid int) ([]byte, error) {
 
+	log.Println("## Leer Memoria - Direccion: ", direccion)
+
 	if direccion < 0 || direccion+4 >= len(globals.MemoriaUsuario.Datos) {
 		return nil, fmt.Errorf("dirección de memoria inválida")
 	}
+
 	for _, particion := range globals.MemoriaUsuario.Particiones {
-		if direccion >= particion.Base && direccion+4 <= particion.Limite && particion.Pid == pid {
-			return globals.MemoriaUsuario.Datos[direccion : direccion+4], nil
+		if particion.Pid == pid && direccion >= particion.Base && direccion+4 <= particion.Limite {
+			bytes := globals.MemoriaUsuario.Datos[direccion : direccion+4]
+			return bytes, nil
 		}
 	}
 
@@ -98,9 +101,6 @@ func EscribirMemoria(direccion int, pid int, datos []byte) error {
 			return fmt.Errorf("segmentation fault")
 		}
 	}
-	value := binary.LittleEndian.Uint32(globals.MemoriaUsuario.Datos[direccion : direccion+4])
-
-	log.Println(value)
 
 	return nil
 }
