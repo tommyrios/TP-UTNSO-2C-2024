@@ -12,10 +12,11 @@ import (
 	"github.com/sisoputnfrba/tp-golang/utils/commons"
 	"log"
 	"net/http"
+	"sync"
 	"time"
 )
 
-//var mtxIO sync.Mutex
+var mtxIO sync.Mutex
 
 func HandleProcessCreate(w http.ResponseWriter, r *http.Request) {
 	var req request.RequestProcessCreate
@@ -46,6 +47,7 @@ func HandleProcessExit(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "Error al decodificar el JSON", http.StatusBadRequest)
 		return
 	}
+
 	if req.Tid == 0 {
 		processes.FinalizarProceso(req.Pid)
 		w.WriteHeader(http.StatusOK)
@@ -232,6 +234,8 @@ func HandleDesalojoCpu(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
+	globals.Estructura.HiloExecute = nil
+
 	if req.Razon == "SEGMENTATION FAULT" {
 		processes.FinalizarProceso(req.Pid)
 	} else {
@@ -248,13 +252,14 @@ func HandleDesalojoCpu(w http.ResponseWriter, r *http.Request) {
 		}
 	}
 
-	globals.Estructura.HiloExecute = nil
-
 	log.Printf("## (PID:TID) - (%d:%d) - Hilo recibido de CPU - Razon: %s", req.Pid, req.Tid, req.Razon)
 	w.WriteHeader(http.StatusOK)
 
-	globals.Planificar <- true
-	globals.CpuLibre <- true
+	if len(globals.Estructura.ColaReady) != 0 {
+		globals.Planificar <- true
+		globals.CpuLibre <- true
+	}
+
 }
 
 func HandleIO(w http.ResponseWriter, r *http.Request) {
@@ -274,7 +279,10 @@ func HandleIO(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	threads.BloquearHilo(tcb)
+	tcb.Estado = "BLOCKED"
+
+	queues.AgregarHiloACola(tcb, &globals.Estructura.ColaBloqueados)
+
 	globals.Estructura.ColaIO = append(globals.Estructura.ColaIO, tcb)
 
 	globals.IOChannel <- req
@@ -286,6 +294,7 @@ func ProcesarIO() {
 	for req := range globals.IOChannel {
 		tcb := threads.BuscarHiloEnPCB(req.Pid, req.Tid)
 		if tcb == nil {
+			mtxIO.Unlock()
 			continue
 		}
 
@@ -298,7 +307,11 @@ func ProcesarIO() {
 		globals.Estructura.MtxReady.Unlock()
 
 		log.Printf("## (%d:%d) - Finalizó IO y pasa a READY", tcb.Pid, tcb.Tid)
+		/*log.Println("ProcesarIOOOOOOOOOOOOOOOOOOOOOOOOO")
 		globals.Planificar <- true
+		log.Println("ProcesarIO123123123123123123121212")
+		globals.CpuLibre <- true
+		log.Println("ProcesarIO676767676767676767676767")*/
 	}
 }
 

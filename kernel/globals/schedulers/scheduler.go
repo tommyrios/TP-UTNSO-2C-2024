@@ -43,6 +43,9 @@ func ManejarColaReadyPriority() {
 				globals.Estructura.HiloExecute = globals.Estructura.ColaReady[0]
 			}
 			mu.Unlock()
+		} else {
+			globals.Estructura.ColaReady = []*commons.TCB{}
+			globals.Estructura.HiloExecute = nil
 		}
 	}
 }
@@ -57,7 +60,6 @@ func ManejarHiloRunning() {
 			globals.CpuLibre <- true
 			continue
 		}
-
 		hiloAEjecutar := globals.Estructura.ColaReady[0]
 
 		globals.Estructura.HiloExecute = hiloAEjecutar
@@ -91,6 +93,15 @@ func PrintColaReady() {
 	for _, proceso := range globals.Estructura.ColaNew {
 		fmt.Printf("Pid: %d, Estado: %s\n", proceso.Pid, proceso.Estado)
 	}
+	fmt.Println("---------------")
+	fmt.Println("Estado actual de ColaExit:")
+	for _, hilo := range globals.Estructura.ColaExit {
+		fmt.Printf("Pid: %d, Tid: %d, Prioridad: %d, Estado: %s\n", hilo.Pid, hilo.Tid, hilo.Prioridad, hilo.Estado)
+	}
+	fmt.Println("---------------")
+	fmt.Println("Estado actual de Hilo Execute:")
+	hilo := globals.Estructura.HiloExecute
+	fmt.Printf("Pid: %d, Tid: %d, Prioridad: %d, Estado: %s\n", hilo.Pid, hilo.Tid, hilo.Prioridad, hilo.Estado)
 	fmt.Println("---------------")
 }
 

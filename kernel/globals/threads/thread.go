@@ -66,9 +66,8 @@ func FinalizarHilo(pid int, tid int) {
 		pcb := queues.BuscarPCBEnColas(pid)
 		tcb := BuscarHiloEnPCB(pid, tid)
 
-		if tcb.Estado != "EXEC" {
-			queues.SacarHiloDeCola(tid, pid, &globals.Estructura.ColaReady)
-		}
+		queues.SacarHiloDeCola(tcb.Tid, tcb.Pid, &globals.Estructura.ColaReady)
+		queues.SacarHiloDeCola(tcb.Tid, tcb.Pid, &globals.Estructura.ColaBloqueados)
 
 		tcb.Estado = "EXIT"
 
@@ -112,7 +111,7 @@ func DesbloquearHilo(tcb *commons.TCB) {
 
 func BloquearHilo(tcb *commons.TCB) {
 	tcb.Estado = "BLOCKED"
-	
+
 	globals.Estructura.HiloExecute = nil
 
 	queues.AgregarHiloACola(tcb, &globals.Estructura.ColaBloqueados)

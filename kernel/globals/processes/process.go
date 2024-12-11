@@ -105,7 +105,6 @@ func FinalizarProceso(pid int) {
 			if response.StatusCode == http.StatusOK {
 				queues.SacarProcesoDeCola(procesoNuevo.Pid, &globals.Estructura.ColaNew)
 				threads.CrearHilo(procesoNuevo.Pid, procesoNuevo.PrioridadTID0, procesoNuevo.PseudoCodigoHilo0)
-				queues.AgregarHiloACola(threads.BuscarHiloEnPCB(procesoNuevo.Pid, 0), &globals.Estructura.ColaReady)
 			}
 		}
 
@@ -129,3 +128,21 @@ func SolicitarProcesoMemoria(pid int, pseudocodigo string, tamanio int) (*http.R
 
 	return cliente.Post(globals.KConfig.IpMemory, globals.KConfig.PortMemory, "crear_proceso", solicitudCodificada), nil
 }
+
+/*func CrearProcesoNew() {
+	<-globals.ProcesoEsperando
+
+	pcb := globals.Estructura.ColaNew[0]
+
+	_, err := SolicitarProcesoMemoria(pcb.Pid, pcb.PseudoCodigoHilo0, pcb.Tamanio)
+
+	if err != nil {
+		log.Println("Error al solicitar espacio en memoria.")
+	}
+
+	queues.SacarProcesoDeCola(pcb.Pid, &globals.Estructura.ColaNew)
+
+	threads.CrearHilo(pcb.Pid, pcb.PrioridadTID0, pcb.PseudoCodigoHilo0)
+
+	globals.Estructura.Procesos[pcb.Pid] = pcb
+}*/

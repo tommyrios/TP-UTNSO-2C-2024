@@ -42,7 +42,7 @@ func main() {
 	//// Proceso Inicial ////
 	processes.ProcesoInicial(os.Args)
 
-	//go handlers.ManejadorIO()
+	//go processes.CrearProcesoNew()
 
 	//// Servidor ////
 	mux := http.NewServeMux()
