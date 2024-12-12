@@ -80,9 +80,14 @@ func ManejarHiloRunning() {
 
 func PrintColaReady() {
 	fmt.Println("Estado actual de ColaReady:")
-	for _, hilo := range globals.Estructura.ColaReady {
-		fmt.Printf("Pid: %d, Tid: %d, Prioridad: %d, Estado: %s\n", hilo.Pid, hilo.Tid, hilo.Prioridad, hilo.Estado)
+	if len(globals.Estructura.ColaReady) != 0 {
+		for _, hilo := range globals.Estructura.ColaReady {
+			fmt.Printf("Pid: %d, Tid: %d, Prioridad: %d, Estado: %s\n", hilo.Pid, hilo.Tid, hilo.Prioridad, hilo.Estado)
+		}
+	} else {
+		fmt.Printf("Cola Ready vacía\n")
 	}
+
 	fmt.Println("---------------")
 	fmt.Println("Estado actual de ColaBlock:")
 	for _, hilo := range globals.Estructura.ColaBloqueados {
@@ -102,6 +107,11 @@ func PrintColaReady() {
 	fmt.Println("Estado actual de Hilo Execute:")
 	hilo := globals.Estructura.HiloExecute
 	fmt.Printf("Pid: %d, Tid: %d, Prioridad: %d, Estado: %s\n", hilo.Pid, hilo.Tid, hilo.Prioridad, hilo.Estado)
+	fmt.Println("---------------")
+	fmt.Println("Estado actual de Cola IO:")
+	for _, io := range globals.Estructura.ColaIO {
+		fmt.Printf("Pid: %d, Tid: %d, Tiempo: %d,\n", io.Tcb.Pid, io.Tcb.Tid, io.Tiempo)
+	}
 	fmt.Println("---------------")
 }
 

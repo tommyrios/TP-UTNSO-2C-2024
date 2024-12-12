@@ -12,11 +12,10 @@ import (
 	"github.com/sisoputnfrba/tp-golang/utils/commons"
 	"log"
 	"net/http"
-	"sync"
 	"time"
 )
 
-var mtxIO sync.Mutex
+//var mtxIO sync.Mutex
 
 func HandleProcessCreate(w http.ResponseWriter, r *http.Request) {
 	var req request.RequestProcessCreate
@@ -262,7 +261,7 @@ func HandleDesalojoCpu(w http.ResponseWriter, r *http.Request) {
 
 }
 
-func HandleIO(w http.ResponseWriter, r *http.Request) {
+/*func HandleIO(w http.ResponseWriter, r *http.Request) {
 	var req request.RequestIO
 
 	err := commons.DecodificarJSON(r.Body, &req)
@@ -307,17 +306,58 @@ func ProcesarIO() {
 		globals.Estructura.MtxReady.Unlock()
 
 		log.Printf("## (%d:%d) - Finalizó IO y pasa a READY", tcb.Pid, tcb.Tid)
-		/*log.Println("ProcesarIOOOOOOOOOOOOOOOOOOOOOOOOO")
-		globals.Planificar <- true
-		log.Println("ProcesarIO123123123123123123121212")
-		globals.CpuLibre <- true
-		log.Println("ProcesarIO676767676767676767676767")*/
 	}
 }
 
 func Init() {
 	globals.IOChannel = make(chan request.RequestIO, 100)
 	go ProcesarIO()
+}*/
+
+func HandleIO(w http.ResponseWriter, r *http.Request) {
+	var req request.RequestIO
+
+	err := commons.DecodificarJSON(r.Body, &req)
+	if err != nil {
+		http.Error(w, "Error al decodificar el JSON", http.StatusBadRequest)
+		return
+	}
+
+	log.Printf("## (%d:%d) - Solicitó syscall: IO por %d ms", req.Pid, req.Tid, req.Tiempo)
+
+	tcb := threads.BuscarHiloEnPCB(req.Pid, req.Tid)
+
+	IO := globals.IO{Tcb: tcb, Tiempo: req.Tiempo}
+
+	if len(globals.Estructura.ColaIO) == 0 {
+		threads.BloquearHilo(tcb)
+		globals.Estructura.ColaIO = append(globals.Estructura.ColaIO, &IO)
+		go ejecutarIO()
+	} else {
+		threads.BloquearHilo(tcb)
+		globals.Estructura.ColaIO = append(globals.Estructura.ColaIO, &IO)
+	}
+}
+
+func ejecutarIO() {
+	for len(globals.Estructura.ColaIO) != 0 {
+		IO := globals.Estructura.ColaIO[0]
+
+		time.Sleep(time.Duration(IO.Tiempo) * time.Millisecond)
+
+		if len(globals.Estructura.ColaReady) == 0 {
+			threads.DesbloquearHilo(IO.Tcb)
+
+			globals.Planificar <- true
+			globals.CpuLibre <- true
+		} else {
+			threads.DesbloquearHilo(IO.Tcb)
+		}
+
+		log.Printf("## (%d:%d) - Finalizó IO y pasa a READY", IO.Tcb.Pid, IO.Tcb.Tid)
+
+		globals.Estructura.ColaIO = globals.Estructura.ColaIO[1:]
+	}
 }
 
 func SolicitarDumpMemory(pid int, tid int) (int, error) {

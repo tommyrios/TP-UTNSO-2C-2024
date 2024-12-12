@@ -1,7 +1,6 @@
 package globals
 
 import (
-	"github.com/sisoputnfrba/tp-golang/kernel/handlers/request"
 	"github.com/sisoputnfrba/tp-golang/utils/commons"
 	"sync"
 )
@@ -19,14 +18,19 @@ type Config struct {
 
 type Kernel struct {
 	Procesos       map[int]*commons.PCB // Mapa de Procesos activos
-	ColaNew        []*commons.PCB       // Cola de hilos nuevo
+	ColaNew        []*commons.PCB       // Cola de hilos nueva
 	ColaReady      []*commons.TCB       // Cola de hilos listos para ejecución
 	ColaBloqueados []*commons.TCB       // Cola de hilos bloqueados
 	ColaExit       []*commons.TCB       // Cola de hilos finalizados
-	ColaIO         []*commons.TCB       // Cola de hilos esperando por IO
+	ColaIO         []*IO                // Cola de hilos esperando por IO
 	HiloExecute    *commons.TCB         // Hilo en ejecución
-	ContadorPid    int                  // PID autoincremental
+	ContadorPid    int                  // PID autoincrement
 	MtxReady       *sync.Mutex
+}
+
+type IO struct {
+	Tcb    *commons.TCB
+	Tiempo int
 }
 
 var Estructura = &Kernel{
@@ -35,13 +39,11 @@ var Estructura = &Kernel{
 	ColaReady:      []*commons.TCB{},
 	ColaBloqueados: []*commons.TCB{},
 	ColaExit:       []*commons.TCB{},
-	ColaIO:         []*commons.TCB{},
+	ColaIO:         []*IO{},
 	HiloExecute:    nil,
 	ContadorPid:    1,
 	MtxReady:       &sync.Mutex{},
 }
-
-var IOChannel chan request.RequestIO
 
 var KConfig *Config
 

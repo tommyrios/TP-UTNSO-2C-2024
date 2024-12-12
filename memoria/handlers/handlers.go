@@ -185,17 +185,21 @@ func HandleCrearProceso(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	// Lógica de asignación de espacio
-	err = schemes.AsignarParticion(procesoRequest.Pid, procesoRequest.TamanioMemoria)
+	if procesoRequest.TamanioMemoria != -1 {
+		// Lógica de asignación de espacio
+		err = schemes.AsignarParticion(procesoRequest.Pid, procesoRequest.TamanioMemoria)
 
-	if err != nil {
-		w.WriteHeader(http.StatusInternalServerError)
-		log.Printf("El proceso %d no pudo ser inicializado\n", procesoRequest.Pid)
-		return
+		if err != nil {
+			w.WriteHeader(http.StatusInternalServerError)
+			log.Printf("El proceso %d no pudo ser inicializado por falta de particion\n", procesoRequest.Pid)
+			return
+		}
+
+		w.WriteHeader(http.StatusOK)
+		log.Printf("## Proceso creado -  PID: %d - Tamaño: %d", procesoRequest.Pid, procesoRequest.TamanioMemoria)
+	} else {
+		log.Printf("El proceso %d no pudo ser inicializado porque la cola new no está vacía\n", procesoRequest.Pid)
 	}
-
-	w.WriteHeader(http.StatusOK)
-	log.Printf("## Proceso creado -  PID: %d - Tamaño: %d", procesoRequest.Pid, procesoRequest.TamanioMemoria)
 }
 
 func HandleFinalizarProceso(w http.ResponseWriter, r *http.Request) {

@@ -28,8 +28,6 @@ func main() {
 		log.Fatalln("Error al cargar la configuración")
 	}
 
-	handlers.Init()
-
 	//// Logger ////
 	configs.ConfigurarLogger("kernel")
 

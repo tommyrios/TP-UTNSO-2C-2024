@@ -10,7 +10,7 @@
   "ip_filesystem": "127.0.0.1",
   "port_filesystem": 8003,
   "scheme": "FIJAS",
-  "search_algorithm": "FIRST",
+  "search_algorithm": "WORST",
   "log_level": "TRACE",
   "partitions": [32,16,64,128,16]
 }

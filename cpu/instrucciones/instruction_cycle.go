@@ -60,7 +60,7 @@ func EjecutarInstruccion(pid int, tid int, quantum int, scheduler string) error 
 
 		tiempo := int(time.Since(inicio).Milliseconds())
 
-		if checkInterrupt(pid, tid, scheduler, quantum, tiempo) {
+		if checkQuantum(pid, tid, scheduler, quantum, tiempo) {
 			break
 		}
 	}
@@ -160,19 +160,20 @@ func Execute(instruccion globals.InstruccionStruct, registros *commons.Registros
 		globals.DevolverPCB(pid, tid, "THREAD_EXIT")
 		return 1
 
-	case "DUMP_MEMORY", "IO", "PROCESS_CREATE", "THREAD_CREATE",
-		"THREAD_JOIN", "THREAD_CANCEL", "MUTEX_CREATE",
-		"MUTEX_LOCK", "MUTEX_UNLOCK":
+	case "DUMP_MEMORY", "IO", "THREAD_JOIN", "MUTEX_LOCK":
 		Syscall(instruccion, pid, tid)
 		globals.DevolverPCB(pid, tid, "SYSCALL")
-
 		return 1
+
+	case "PROCESS_CREATE", "THREAD_CREATE", "THREAD_CANCEL", "MUTEX_CREATE", "MUTEX_UNLOCK":
+		Syscall(instruccion, pid, tid)
+		return 0
 	}
 
 	return 4
 }
 
-func checkInterrupt(pid int, tid int, scheduler string, quantum int, tiempo int) bool {
+func checkQuantum(pid int, tid int, scheduler string, quantum int, tiempo int) bool {
 	if scheduler == "CMN" {
 		if tiempo > quantum {
 			log.Printf("END OF QUANTUM - (PID:TID) - (%d:%d)", pid, tid)

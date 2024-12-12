@@ -48,7 +48,12 @@ func CrearProceso(pseudocodigo string, tamanioMemoria int, prioridad int) int {
 		}
 	} else {
 		log.Println("Cola NEW no está vacía, proceso se encola en NEW.")
+
 		queues.AgregarProcesoACola(pcb, &globals.Estructura.ColaNew)
+
+		SolicitarProcesoMemoria(pcb.Pid, pseudocodigo, -1)
+
+		return http.StatusBadRequest
 	}
 	return http.StatusOK
 }
@@ -99,15 +104,16 @@ func FinalizarProceso(pid int) {
 
 		log.Printf("## Finaliza el proceso %d", pid)
 
-		if len(globals.Estructura.ColaNew) != 0 {
+		for len(globals.Estructura.ColaNew) != 0 {
 			procesoNuevo := globals.Estructura.ColaNew[0]
 			response, _ := SolicitarProcesoMemoria(procesoNuevo.Pid, procesoNuevo.PseudoCodigoHilo0, procesoNuevo.Tamanio)
 			if response.StatusCode == http.StatusOK {
 				queues.SacarProcesoDeCola(procesoNuevo.Pid, &globals.Estructura.ColaNew)
 				threads.CrearHilo(procesoNuevo.Pid, procesoNuevo.PrioridadTID0, procesoNuevo.PseudoCodigoHilo0)
+			} else {
+				break
 			}
 		}
-
 	} else {
 		log.Printf("## Error al finalizar el proceso %d", pid)
 	}
