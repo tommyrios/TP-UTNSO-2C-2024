@@ -1,7 +1,6 @@
 package handlers
 
 import (
-	"encoding/binary"
 	"fmt"
 	"github.com/sisoputnfrba/tp-golang/memoria/globals"
 	"github.com/sisoputnfrba/tp-golang/memoria/globals/functions"
@@ -133,16 +132,12 @@ func HandleReadMemory(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	nuevoValor := binary.BigEndian.Uint32(response)
-
-	log.Printf("## Nuevo Valor: %d\n", nuevoValor)
-
 	w.WriteHeader(http.StatusOK)
 	_, err = w.Write(response)
 	if err != nil {
 		return
 	}
-	log.Printf("## Lectura - (PID:TID) - (%d:%d) - Dir. Física: %d - Tamaño: %d\n", request.Pid, request.Tid, request.Direccion, len(response))
+	log.Printf("## Lectura - (PID:TID) - (%d:%d) - Dir. Física: %d", request.Pid, request.Tid, request.Direccion)
 }
 
 func HandleWriteMemory(w http.ResponseWriter, r *http.Request) {
@@ -170,7 +165,7 @@ func HandleWriteMemory(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		return
 	}
-	log.Printf("## Escritura - (PID:TID) - (%d:%d) - Dir. Física: %d - Tamaño: %d\n", request.Pid, request.Tid, request.Direccion, len(request.Datos))
+	log.Printf("## Escritura - (PID:TID) - (%d:%d) - Dir. Física: %d", request.Pid, request.Tid, request.Direccion)
 }
 
 // ¡¡¡¡¡HANDLERS KERNEL!!!!!

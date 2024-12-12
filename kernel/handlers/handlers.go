@@ -7,7 +7,6 @@ import (
 	"github.com/sisoputnfrba/tp-golang/kernel/globals/queues"
 	"github.com/sisoputnfrba/tp-golang/kernel/globals/threads"
 	"github.com/sisoputnfrba/tp-golang/kernel/handlers/request"
-	"github.com/sisoputnfrba/tp-golang/memoria/globals/schemes"
 	"github.com/sisoputnfrba/tp-golang/utils/cliente"
 	"github.com/sisoputnfrba/tp-golang/utils/commons"
 	"log"
@@ -206,21 +205,16 @@ func HandleDumpMemory(w http.ResponseWriter, r *http.Request) {
 }
 
 func HandleCompactacion(w http.ResponseWriter, r *http.Request) {
-	PausarPlanificacion() // Pausar planificación de corto plazo
+	PausarPlanificacion()
 
-	// Responder a Memoria para permitir la compactación
 	w.WriteHeader(http.StatusOK)
-
-	// Notificar a Memoria que puede proceder
-	schemes.CompactacionCond.L.Lock()
-	schemes.CompactacionCond.Signal() // Aviso a Memoria que puede comenzar la compactación
-	schemes.CompactacionCond.L.Unlock()
 
 	log.Println("Compactación aceptada")
 }
 
 func HandleCompactacionFinalizada(w http.ResponseWriter, r *http.Request) {
-	ReanudarPlanificacion() // Reanudar planificación
+	ReanudarPlanificacion()
+
 	w.WriteHeader(http.StatusOK)
 }
 
@@ -260,59 +254,6 @@ func HandleDesalojoCpu(w http.ResponseWriter, r *http.Request) {
 	}
 
 }
-
-/*func HandleIO(w http.ResponseWriter, r *http.Request) {
-	var req request.RequestIO
-
-	err := commons.DecodificarJSON(r.Body, &req)
-	if err != nil {
-		http.Error(w, "Error al decodificar el JSON", http.StatusBadRequest)
-		return
-	}
-
-	log.Printf("## (%d:%d) - Solicitó syscall: IO por %d ms", req.Pid, req.Tid, req.Tiempo)
-
-	tcb := threads.BuscarHiloEnPCB(req.Pid, req.Tid)
-	if tcb == nil {
-		http.Error(w, "No se encontró el hilo", http.StatusNotFound)
-		return
-	}
-
-	tcb.Estado = "BLOCKED"
-
-	queues.AgregarHiloACola(tcb, &globals.Estructura.ColaBloqueados)
-
-	globals.Estructura.ColaIO = append(globals.Estructura.ColaIO, tcb)
-
-	globals.IOChannel <- req
-
-	w.WriteHeader(http.StatusOK)
-}
-
-func ProcesarIO() {
-	for req := range globals.IOChannel {
-		tcb := threads.BuscarHiloEnPCB(req.Pid, req.Tid)
-		if tcb == nil {
-			mtxIO.Unlock()
-			continue
-		}
-
-		time.Sleep(time.Duration(req.Tiempo) * time.Millisecond)
-
-		globals.Estructura.MtxReady.Lock()
-		tcb.Estado = "READY"
-		queues.SacarHiloDeCola(tcb.Tid, tcb.Pid, &globals.Estructura.ColaBloqueados)
-		queues.AgregarHiloACola(tcb, &globals.Estructura.ColaReady)
-		globals.Estructura.MtxReady.Unlock()
-
-		log.Printf("## (%d:%d) - Finalizó IO y pasa a READY", tcb.Pid, tcb.Tid)
-	}
-}
-
-func Init() {
-	globals.IOChannel = make(chan request.RequestIO, 100)
-	go ProcesarIO()
-}*/
 
 func HandleIO(w http.ResponseWriter, r *http.Request) {
 	var req request.RequestIO
@@ -392,7 +333,7 @@ func Interrupt(interruption string, pid int, tid int) *http.Response {
 
 func PausarPlanificacion() {
 	globals.Estructura.MtxReady.Lock()
-} // check
+}
 
 func ReanudarPlanificacion() {
 	globals.Estructura.MtxReady.Unlock()

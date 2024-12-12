@@ -66,7 +66,7 @@ func ObtenerInstruccion(pid int, tid int, pc int) (requests.ResponseObtenerInstr
 }
 
 func ObtenerTamanioMemoria(pid int) int {
-	return globals.MemoriaSistema.TablaProcesos[pid].Limite - globals.MemoriaSistema.TablaProcesos[pid].Base
+	return globals.MemoriaSistema.TablaProcesos[pid].Limite - globals.MemoriaSistema.TablaProcesos[pid].Base + 1
 }
 
 func LeerMemoria(direccion int, pid int) ([]byte, error) {
@@ -216,10 +216,9 @@ func EspacioLibreTotal() int {
 }
 
 func SolicitarCompactacion() bool {
-	// Enviar solicitud HTTP al Kernel para compactación
 	response, err := http.Post(fmt.Sprintf("http://%s:%d/compactacion", globals.MConfig.IpKernel, globals.MConfig.PortKernel), "application/json", nil)
 	if err != nil || response.StatusCode != http.StatusOK {
-		return false // Falló la solicitud o el Kernel no aprobó la compactación
+		return false
 	}
 	log.Println("Compactacion solicitada.")
 	return true

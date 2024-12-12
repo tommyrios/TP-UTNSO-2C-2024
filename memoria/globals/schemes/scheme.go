@@ -7,10 +7,7 @@ import (
 	"github.com/sisoputnfrba/tp-golang/memoria/globals/functions"
 	"log"
 	"math"
-	"sync"
 )
-
-var CompactacionCond = sync.NewCond(&sync.Mutex{})
 
 func AsignarParticion(pid int, tamanioProceso int) error {
 	indice, err := buscarParticion(tamanioProceso)
@@ -47,33 +44,40 @@ func AsignarParticion(pid int, tamanioProceso int) error {
 
 	return nil
 }
-
-func buscarParticion(tamanioProceso int) (int, error) {
+func buscarIndiceParticion(tamanioProceso int) (int, error) {
 	estrategia := globals.MConfig.SearchAlgorithm
 	mejorIndice := -1
 	mejorValor := math.MaxInt32
 	peorValor := -1
 
 	for i, particion := range globals.MemoriaUsuario.Particiones {
-		if particion.Libre && particion.Limite-particion.Base >= tamanioProceso {
+		if particion.Libre && particion.Limite-particion.Base+1 >= tamanioProceso {
 			espacioLibre := particion.Limite - particion.Base
-
 			switch estrategia {
 			case "FIRST":
-				return i, nil // Devuelve la primera partición encontrada
+				return i, nil
 			case "BEST":
 				if espacioLibre < mejorValor {
 					mejorValor = espacioLibre
 					mejorIndice = i
+					return mejorIndice, nil
 				}
 			case "WORST":
 				if espacioLibre > peorValor {
 					peorValor = espacioLibre
 					mejorIndice = i
+					return mejorIndice, nil
 				}
 			}
 		}
 	}
+
+	return mejorIndice, nil
+}
+
+func buscarParticion(tamanioProceso int) (int, error) {
+
+	mejorIndice, _ := buscarIndiceParticion(tamanioProceso)
 
 	if mejorIndice != -1 {
 		return mejorIndice, nil
@@ -83,18 +87,12 @@ func buscarParticion(tamanioProceso int) (int, error) {
 	if globals.MConfig.Scheme == "DINAMICAS" {
 		if functions.EspacioLibreTotal() >= tamanioProceso {
 			if functions.SolicitarCompactacion() {
-				// Espera a que el Kernel confirme que se puede compactar
-				CompactacionCond.L.Lock()
-				CompactacionCond.Wait() // Espera hasta que Kernel confirme que puede compactar
-				CompactacionCond.L.Unlock()
-
-				// Realiza la compactación
 				compactarMemoria()
 
-				// Notifica al Kernel que la compactación ha finalizado
 				functions.NotificarFinalizacionCompactacion()
 
-				particionIndice, _ := buscarParticion(tamanioProceso)
+				particionIndice, _ := buscarIndiceParticion(tamanioProceso)
+
 				return particionIndice, nil
 			}
 		}
@@ -123,6 +121,9 @@ func compactarMemoria() {
 				Libre:  false,
 				Pid:    particion.Pid,
 			}
+
+			globals.MemoriaSistema.TablaProcesos[particion.Pid] = &globals.ContextoProceso{Base: nuevaPosicion, Limite: nuevaPosicion + tamanio - 1}
+
 			nuevasParticiones = append(nuevasParticiones, nuevaParticion)
 			nuevaPosicion += tamanio
 		}
@@ -141,9 +142,6 @@ func compactarMemoria() {
 
 	// Actualizar las particiones y limpiar los datos no usados
 	globals.MemoriaUsuario.Particiones = nuevasParticiones
-	for i := nuevaPosicion; i < len(globals.MemoriaUsuario.Datos); i++ {
-		globals.MemoriaUsuario.Datos[i] = 0
-	}
 
 	log.Println("Compactacion finalizada.")
 }

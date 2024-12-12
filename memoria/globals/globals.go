@@ -101,7 +101,7 @@ func InicializarMemoria() {
 	} else {
 		nuevaParticion := Particion{
 			Base:   0,
-			Limite: MConfig.MemorySize,
+			Limite: MConfig.MemorySize - 1,
 			Libre:  true,
 			Pid:    -1,
 		}
