@@ -167,7 +167,7 @@ func CrearHiloMemoria(pid int, tid int, pseudocodigo string) error {
 }
 
 func DesglosarPseudocodigo(pseudocodigo string) ([]string, error) {
-	archivo, err := os.Open("../the-last-of-c-pruebas/" + pseudocodigo)
+	archivo, err := os.Open("../the-last-of-c-pruebas2/" + pseudocodigo)
 	if err != nil {
 		return nil, fmt.Errorf("error al abrir el archivo: %w", err)
 	}

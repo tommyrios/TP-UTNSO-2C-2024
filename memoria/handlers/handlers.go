@@ -296,8 +296,8 @@ func HandleMemoryDump(w http.ResponseWriter, r *http.Request) {
 	// Solicitar al FileSystem la creación del archivo y escribir el contenido
 
 	solicitud := requests.DumpMemoryFS{
-		Pid:       req.Pid,
-		Tid:       req.Tid,
+		Pid:       uint32(req.Pid),
+		Tid:       uint32(req.Tid),
 		Tamanio:   TamanioMemoriaProceso,
 		Contenido: ContenidoProceso,
 	}

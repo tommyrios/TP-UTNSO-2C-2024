@@ -72,8 +72,8 @@ type RequestDumpMemory struct {
 }
 
 type DumpMemoryFS struct {
-	Pid       int    `json:"pid"`
-	Tid       int    `json:"tid"`
+	Pid       uint32 `json:"pid"`
+	Tid       uint32 `json:"tid"`
 	Tamanio   int    `json:"tamanio"`
 	Contenido []byte `json:"contenido"`
 }

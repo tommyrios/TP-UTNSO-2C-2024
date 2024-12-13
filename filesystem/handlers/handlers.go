@@ -1,70 +1,97 @@
 package handlers
 
-//debo recibir el json de La creación de los archivos de DUMP de memoria se crearán al recibir desde Memoria
-//la petición de creación de un nuevo archivo de DUMP.
-//En la petición deberá venir el nombre del archivo, el tamaño y el contenido a grabar en el mismo
 import (
-	"github.com/sisoputnfrba/tp-golang/filesystem/globals"
-	"github.com/sisoputnfrba/tp-golang/filesystem/globals/functions"
+	"encoding/json"
+	"github.com/sisoputnfrba/tp-golang/filesystem/functions"
 	"github.com/sisoputnfrba/tp-golang/filesystem/handlers/requests"
-	"github.com/sisoputnfrba/tp-golang/filesystem/inicializacion"
-	"github.com/sisoputnfrba/tp-golang/utils/commons"
-	"log"
+	"io"
+	"log/slog"
 	"net/http"
-	"path/filepath"
+	"strings"
+	"time"
 )
 
-func CrearArchivoDump(w http.ResponseWriter, r *http.Request) {
-	var archivo requests.RequestDumpMemory
-	var nombreArchivo string
-	//var puntero uint32
-	err := commons.DecodificarJSON(r.Body, &archivo)
-
+/*func CrearArchivoDump(w http.ResponseWriter, r *http.Request) {
+	// Leer el cuerpo de la solicitud
+	body, err := io.ReadAll(r.Body)
 	if err != nil {
-		http.Error(w, "Error al decodificar el JSON", http.StatusBadRequest)
+		http.Error(w, "Error al leer el cuerpo de la solicitud", http.StatusInternalServerError)
+		return
+	}
+	defer r.Body.Close()
+
+	// Aquí agregas el log para inspeccionar el JSON recibido
+	slog.Info("Cuerpo recibido", "body", string(body))
+
+	var archivo requests.Archivo
+
+	err = json.Unmarshal(body, &archivo)
+	if err != nil {
+		http.Error(w, "Error al deserializar el JSON", http.StatusBadRequest)
+		slog.Error("Error al deserializar el JSON", "Error", err)
 		return
 	}
 
-	//Paso1: Verificar si hay espacio disponible en el FS
+	timestamp := time.Now().Format("15:04:05.000")
+	timestamp = strings.Replace(timestamp, ".", ":", 1)
 
-	espacioDisponible, bloquesNecesarios := functions.VerificarEspacioDisponible(archivo.Tamanio)
+	resp := functions.CrearArchivo(archivo.Pid, archivo.Tid, timestamp, archivo.Tamanio, archivo.Contenido)
 
-	if !espacioDisponible {
-		w.WriteHeader(http.StatusInternalServerError)
-		w.Write([]byte("Error al realizar el dump de memoria: No hay espacio disponible"))
-		log.Printf("Error al realizar el dump de memoria - (PID:TID) - (%d:%d)", archivo.Pid, archivo.Tid)
+	if resp == 0 {
+		http.Error(w, "Error al crear el archivo", http.StatusInternalServerError)
+	} else if resp == 1 {
+		// Responder con un mensaje de éxito
+		w.WriteHeader(http.StatusOK)
+	} else {
+		http.Error(w, "Error al crear el archivo", http.StatusInternalServerError)
 	}
 
-	//Paso2: Reservar espacio en el FS para el archivo
-	bloqueIndice, bloquesReservados, err := functions.ReservarBloques(bloquesNecesarios)
+}*/
+
+func CrearArchivo(w http.ResponseWriter, r *http.Request) {
+
+	if r.Method != http.MethodPost {
+		http.Error(w, "Método no permitido", http.StatusMethodNotAllowed)
+		return
+	}
+
+	// Leer el cuerpo de la solicitud
+	body, err := io.ReadAll(r.Body)
 	if err != nil {
-		w.WriteHeader(http.StatusInternalServerError)
-		w.Write([]byte("Error al realizar el dump de memoria: No se pudieron reservar los bloques necesarios"))
-		log.Printf("Error al realizar el dump de memoria - (PID:TID) - (%d:%d)", archivo.Pid, archivo.Tid)
+		http.Error(w, "Error al leer el cuerpo de la solicitud", http.StatusBadRequest)
+		return
 	}
+	defer func(Body io.ReadCloser) {
+		err := Body.Close()
+		if err != nil {
+			http.Error(w, "Error al leer el cuerpo de la solicitud", http.StatusInternalServerError)
+			return
+		}
+	}(r.Body)
 
-	//Paso3: Crear el archivo de metadata
-	ruta := filepath.Join(globals.FSConfig.MountDir, "/files")
-	err, nombreArchivo = inicializacion.CrearMetadata(ruta, archivo.Pid, archivo.Tid, archivo.Tamanio, bloqueIndice)
+	var archivo requests.Archivo
 
+	// Deserealizo el JSON a la estructura
+	err = json.Unmarshal(body, &archivo)
 	if err != nil {
-		w.WriteHeader(http.StatusInternalServerError)
-		w.Write([]byte("Error al realizar el dump de memoria: No se pudo crear el archivo de metadata"))
-		log.Printf("Error al realizar el dump de memoria - (PID:TID) - (%d:%d)", archivo.Pid, archivo.Tid)
+		http.Error(w, "Error al deserializar el JSON", http.StatusBadRequest)
+		slog.Error("Error al deserializar el JSON", "Error", err)
+		return
 	}
 
-	log.Printf("## Bloque asignado: %d - Archivo: %s - Bloques Libres: %d", bloqueIndice, nombreArchivo, functions.CuantosLibresHay())
-	log.Printf("## Archivo Creado: %s - Tamaño: %d", nombreArchivo, archivo.Tamanio)
+	timestamp := time.Now().Format("15:04:05.000")
+	timestamp = strings.Replace(timestamp, ".", ":", 1)
 
-	//Paso4: Escribir el contenido en los bloques reservados
-	err = functions.EscribirContenido(bloqueIndice, bloquesReservados, nombreArchivo, archivo.Contenido)
+	slog.Info("Se recibió el archivo ", "archivo", archivo)
+	resp := functions.CrearArchivo(archivo.Pid, archivo.Tid, timestamp, archivo.Tamanio, archivo.Contenido)
 
-	if err != nil {
-		w.WriteHeader(http.StatusInternalServerError)
-		w.Write([]byte("Error al realizar el dump de memoria: No se pudo escribir el contenido en los bloques reservados"))
-		log.Printf("Error al realizar el dump de memoria - (PID:TID) - (%d:%d)", archivo.Pid, archivo.Tid)
+	if resp == 0 {
+		http.Error(w, "Error al crear el archivo", http.StatusInternalServerError)
+	} else if resp == 1 {
+		// Responder con un mensaje de éxito
+		w.WriteHeader(http.StatusOK)
+	} else {
+		http.Error(w, "Error al crear el archivo", http.StatusInternalServerError)
 	}
-
-	log.Printf("## Fin de solicitud - Archivo: %s", nombreArchivo)
 
 }
