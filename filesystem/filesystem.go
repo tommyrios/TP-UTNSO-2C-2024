@@ -32,7 +32,9 @@ func main() {
 	configs.ConfigurarLogger("filesystem")
 
 	//// Inicialización ////
+
 	err = inicializacion.IniciarFS(globals.FSConfig.MountDir)
+
 	if err != nil {
 		log.Fatalf("Error al inicializar el File System: %v", err)
 	}
@@ -40,7 +42,7 @@ func main() {
 
 	//// Conexión ////
 	mux := http.NewServeMux()
-	mux.HandleFunc("/filesystem/crear", handlers.CrearArchivo)
+	mux.HandleFunc("/memory_dump", handlers.CrearArchivo)
 
 	port := fmt.Sprintf(":%d", globals.FSConfig.Port)
 

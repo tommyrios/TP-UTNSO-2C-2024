@@ -193,10 +193,11 @@ func HandleDumpMemory(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	threads.BloquearHilo(tcb)
-	statusCode, _ := SolicitarDumpMemory(req.Pid, req.Tid)
+	statusCode, _, mensaje := SolicitarDumpMemory(req.Pid, req.Tid)
+
+	log.Printf("Respuesta al solicitar el dump de memoria: %s", mensaje)
 
 	if statusCode != http.StatusOK {
-		http.Error(w, "Error al solicitar el dump de memoria", http.StatusInternalServerError)
 		processes.FinalizarProceso(req.Pid)
 		return
 	}
@@ -231,8 +232,10 @@ func HandleDesalojoCpu(w http.ResponseWriter, r *http.Request) {
 
 	if req.Razon == "SEGMENTATION FAULT" {
 		processes.FinalizarProceso(req.Pid)
+
+		log.Printf("## (PID:TID) - (%d:%d) - Hilo recibido de CPU - Razon: %s", req.Pid, req.Tid, req.Razon)
 	} else {
-		if req.Razon == "SYSCALL" || req.Razon == "INTERRUPCION" {
+		if req.Razon == "SYSCALL" || req.Razon == "INTERRUPCION" || (req.Razon == "MEMORY_DUMP" && !queues.ConsultaExit(req.Pid, req.Tid)) {
 			globals.Estructura.MtxReady.Lock()
 			if !queues.ConsultaBloqueado(req.Pid, req.Tid) {
 				tcb := threads.BuscarHiloEnPCB(req.Pid, req.Tid)
@@ -240,12 +243,13 @@ func HandleDesalojoCpu(w http.ResponseWriter, r *http.Request) {
 				tcb.Estado = "READY"
 
 				queues.AgregarHiloACola(threads.BuscarHiloEnPCB(req.Pid, req.Tid), &globals.Estructura.ColaReady)
+
+				log.Printf("## (PID:TID) - (%d:%d) - Hilo recibido de CPU - Razon: %s", req.Pid, req.Tid, req.Razon)
 			}
 			globals.Estructura.MtxReady.Unlock()
 		}
 	}
 
-	log.Printf("## (PID:TID) - (%d:%d) - Hilo recibido de CPU - Razon: %s", req.Pid, req.Tid, req.Razon)
 	w.WriteHeader(http.StatusOK)
 
 	if len(globals.Estructura.ColaReady) != 0 {
@@ -301,14 +305,19 @@ func ejecutarIO() {
 	}
 }
 
-func SolicitarDumpMemory(pid int, tid int) (int, error) {
+func SolicitarDumpMemory(pid int, tid int) (int, error, string) {
 	req := request.RequestDumpMemory{
 		Pid: pid,
 		Tid: tid,
 	}
+
 	requestCodificado, _ := commons.CodificarJSON(req)
-	response := cliente.Post(globals.KConfig.IpMemory, globals.KConfig.PortMemory, "dump", requestCodificado)
-	return response.StatusCode, nil
+
+	response, mensaje := cliente.Post2(globals.KConfig.IpMemory, globals.KConfig.PortMemory, "memory_dump", requestCodificado)
+
+	defer response.Body.Close()
+
+	return response.StatusCode, nil, string(mensaje)
 }
 
 func Dispatch(pid int, tid int) (*http.Response, error) {

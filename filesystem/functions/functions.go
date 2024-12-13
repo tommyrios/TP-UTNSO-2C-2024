@@ -45,7 +45,7 @@ func cantidadBloquesLibres() int {
 }
 
 func ActualizarBitmap() {
-	archivoBitmap, err := os.OpenFile("/home/utnso/mount_dir/bitmap.dat", os.O_WRONLY, 0644)
+	archivoBitmap, err := os.OpenFile(globals.FSConfig.MountDir+"/bitmap.dat", os.O_WRONLY, 0644)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -98,7 +98,7 @@ func CargarBitmap(path string, tamanio int) {
 }
 
 func VerContenidoBitmapHexa() {
-	path := "/home/utnso/mount_dir/bitmap.dat"
+	path := globals.FSConfig.MountDir + "/bitmap.dat"
 	file, err := os.ReadFile(path)
 	if err != nil {
 		log.Fatal(err)

@@ -310,21 +310,30 @@ func HandleMemoryDump(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "Error al codificar JSON", http.StatusBadRequest)
 	}
 
-	response := cliente.Post(globals.MConfig.IpFileSystem, globals.MConfig.PortFileSystem, "/dump_memory", solicitudCodificada)
+	response, mensaje := cliente.Post2(globals.MConfig.IpFileSystem, globals.MConfig.PortFileSystem, "memory_dump", solicitudCodificada)
+
+	defer response.Body.Close()
+
+	log.Printf("## Memory Dump solicitado - (PID:TID) - (%d:%d)", req.Pid, req.Tid)
 
 	if response != nil && response.StatusCode == http.StatusOK {
 		w.WriteHeader(http.StatusOK)
+
 		_, err = w.Write([]byte("OK"))
+
 		if err != nil {
 			return
 		}
-		log.Printf("## Memory Dump solicitado - (PID:TID) - (%d:%d)", req.Pid, req.Tid)
+
 	} else {
 		w.WriteHeader(http.StatusInternalServerError)
-		_, err = w.Write([]byte("Error al realizar el dump de memoria"))
+
+		_, err = w.Write(mensaje)
+
 		if err != nil {
 			return
 		}
+
 		log.Printf("Error al realizar el dump de memoria - (PID:TID) - (%d:%d)", req.Pid, req.Tid)
 	}
 }

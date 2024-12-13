@@ -160,7 +160,12 @@ func Execute(instruccion globals.InstruccionStruct, registros *commons.Registros
 		globals.DevolverPCB(pid, tid, "THREAD_EXIT")
 		return 1
 
-	case "DUMP_MEMORY", "IO", "THREAD_JOIN", "MUTEX_LOCK":
+	case "DUMP_MEMORY":
+		Syscall(instruccion, pid, tid)
+		globals.DevolverPCB(pid, tid, "MEMORY_DUMP")
+		return 1
+
+	case "IO", "THREAD_JOIN", "MUTEX_LOCK":
 		Syscall(instruccion, pid, tid)
 		globals.DevolverPCB(pid, tid, "SYSCALL")
 		return 1

@@ -14,7 +14,7 @@ func CrearArchivo(pid uint32, tid uint32, timestamp string, tamanio int, conteni
 
 	nombreArchivo := strconv.Itoa(int(pid)) + "_" + strconv.Itoa(int(tid)) + "_" + timestamp
 	log.Printf("nombreArchivo: %s", nombreArchivo)
-	err := CrearDirectorio("/home/utnso/mount_dir/files")
+	err := CrearDirectorio(globals.FSConfig.MountDir + "/files")
 	if err != nil {
 		return -1
 	}
@@ -24,7 +24,7 @@ func CrearArchivo(pid uint32, tid uint32, timestamp string, tamanio int, conteni
 
 	if HayEspacioDisponible(bloquesNecesarios + 1) {
 
-		directorioArchivo, errBloques := os.OpenFile("/home/utnso/mount_dir/bloques.dat", os.O_RDWR, 0666)
+		directorioArchivo, errBloques := os.OpenFile(globals.FSConfig.MountDir+"/bloques.dat", os.O_RDWR, 0666)
 		if errBloques != nil {
 			slog.Error("Error al abrir el archivo de bloques", "Error", errBloques)
 		}
@@ -89,13 +89,13 @@ func crearMetadata(nombreArchivo string, pos int, tamanio int) {
 
 	nombreArchivo = strings.ReplaceAll(nombreArchivo, ":", "-") // Cambia ":" por "-"
 
-	pathArchivoMetadata := "mount_dir/files/" + nombreArchivo + ".dmp"
+	pathArchivoMetadata := globals.FSConfig.MountDir + "/files/" + nombreArchivo + ".dmp"
 
 	// Crea el archivo si no existe, si existe lo abre
 	archivo, err := os.OpenFile(pathArchivoMetadata, os.O_CREATE|os.O_RDWR, 0666)
 
 	if err != nil {
-		slog.Error("Error al crear el archivo", "Error", err)
+		slog.Error("Error al crear el archivo:", err)
 		return
 	}
 	defer archivo.Close()

@@ -3,7 +3,7 @@ package requests
 type Archivo struct {
 	Pid       uint32 `json:"pid"`
 	Tid       uint32 `json:"tid"`
-	Tamanio   int    `json:"size"`
+	Tamanio   int    `json:"tamanio"`
 	Contenido []byte `json:"contenido"`
 }
 

@@ -60,3 +60,13 @@ func ConsultaBloqueado(pid int, tid int) bool {
 
 	return false
 }
+
+func ConsultaExit(pid int, tid int) bool {
+	for _, tcb := range globals.Estructura.ColaExit {
+		if tcb.Pid == pid && tcb.Tid == tid {
+			return true
+		}
+	}
+
+	return false
+}
