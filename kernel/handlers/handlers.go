@@ -14,8 +14,6 @@ import (
 	"time"
 )
 
-//var mtxIO sync.Mutex
-
 func HandleProcessCreate(w http.ResponseWriter, r *http.Request) {
 	var req request.RequestProcessCreate
 

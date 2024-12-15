@@ -16,7 +16,7 @@ func AsignarParticion(pid int, tamanioProceso int) error {
 		return err
 	}
 
-	particion := &globals.MemoriaUsuario.Particiones[indice]
+	particion := globals.MemoriaUsuario.Particiones[indice]
 	particion.Libre = false
 	particion.Pid = pid
 
@@ -24,7 +24,6 @@ func AsignarParticion(pid int, tamanioProceso int) error {
 		globals.MemoriaSistema.TablaProcesos[pid] = &globals.ContextoProceso{Base: particion.Base, Limite: particion.Limite}
 	}
 
-	// Ajusta la partición si sobra espacio (solo en dinámicas)
 	if globals.MConfig.Scheme == "DINAMICAS" {
 		espacioSobrante := particion.Limite - particion.Base - tamanioProceso
 		if espacioSobrante > 0 {
@@ -35,15 +34,15 @@ func AsignarParticion(pid int, tamanioProceso int) error {
 				Pid:    -1,
 			}
 			particion.Limite = particion.Base + tamanioProceso - 1
-			globals.MemoriaUsuario.Particiones = append(globals.MemoriaUsuario.Particiones[:indice+1], append([]globals.Particion{nuevaParticion}, globals.MemoriaUsuario.Particiones[indice+1:]...)...)
+			globals.MemoriaUsuario.Particiones = append(globals.MemoriaUsuario.Particiones[:indice+1], append([]*globals.Particion{&nuevaParticion}, globals.MemoriaUsuario.Particiones[indice+1:]...)...)
+			log.Println(functions.EspacioLibreTotal())
 		}
 		globals.MemoriaSistema.TablaProcesos[pid] = &globals.ContextoProceso{Base: particion.Base, Limite: particion.Limite}
 	}
 
-	log.Printf("particion base: %d, particion limite: %d particion pid: %d\n", particion.Base, particion.Limite, particion.Pid)
-
 	return nil
 }
+
 func buscarIndiceParticion(tamanioProceso int) (int, error) {
 	estrategia := globals.MConfig.SearchAlgorithm
 	mejorIndice := -1
@@ -52,7 +51,7 @@ func buscarIndiceParticion(tamanioProceso int) (int, error) {
 
 	for i, particion := range globals.MemoriaUsuario.Particiones {
 		if particion.Libre && particion.Limite-particion.Base+1 >= tamanioProceso {
-			espacioLibre := particion.Limite - particion.Base
+			espacioLibre := particion.Limite - particion.Base + 1
 			switch estrategia {
 			case "FIRST":
 				return i, nil
@@ -76,14 +75,12 @@ func buscarIndiceParticion(tamanioProceso int) (int, error) {
 }
 
 func buscarParticion(tamanioProceso int) (int, error) {
-
 	mejorIndice, _ := buscarIndiceParticion(tamanioProceso)
 
 	if mejorIndice != -1 {
 		return mejorIndice, nil
 	}
 
-	// Caso de que haya espacio total pero no contiguo
 	if globals.MConfig.Scheme == "DINAMICAS" {
 		if functions.EspacioLibreTotal() >= tamanioProceso {
 			if functions.SolicitarCompactacion() {
@@ -105,16 +102,14 @@ func buscarParticion(tamanioProceso int) (int, error) {
 
 func compactarMemoria() {
 	nuevaPosicion := 0
-	var nuevasParticiones []globals.Particion
+	var nuevasParticiones []*globals.Particion
 
 	for _, particion := range globals.MemoriaUsuario.Particiones {
 		if !particion.Libre {
 			tamanio := particion.Limite - particion.Base + 1
 
-			// Mover datos al nuevo espacio
 			copy(globals.MemoriaUsuario.Datos[nuevaPosicion:], globals.MemoriaUsuario.Datos[particion.Base:particion.Limite+1])
 
-			// Crear una partición actualizada
 			nuevaParticion := globals.Particion{
 				Base:   nuevaPosicion,
 				Limite: nuevaPosicion + tamanio - 1,
@@ -124,12 +119,12 @@ func compactarMemoria() {
 
 			globals.MemoriaSistema.TablaProcesos[particion.Pid] = &globals.ContextoProceso{Base: nuevaPosicion, Limite: nuevaPosicion + tamanio - 1}
 
-			nuevasParticiones = append(nuevasParticiones, nuevaParticion)
+			nuevasParticiones = append(nuevasParticiones, &nuevaParticion)
+
 			nuevaPosicion += tamanio
 		}
 	}
 
-	// Crear una partición libre con el resto de la memoria
 	if nuevaPosicion < len(globals.MemoriaUsuario.Datos) {
 		nuevaParticionLibre := globals.Particion{
 			Base:   nuevaPosicion,
@@ -137,10 +132,10 @@ func compactarMemoria() {
 			Libre:  true,
 			Pid:    -1,
 		}
-		nuevasParticiones = append(nuevasParticiones, nuevaParticionLibre)
+
+		nuevasParticiones = append(nuevasParticiones, &nuevaParticionLibre)
 	}
 
-	// Actualizar las particiones y limpiar los datos no usados
 	globals.MemoriaUsuario.Particiones = nuevasParticiones
 
 	log.Println("Compactacion finalizada.")

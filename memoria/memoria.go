@@ -2,14 +2,13 @@ package main
 
 import (
 	"fmt"
+	"github.com/sisoputnfrba/tp-golang/memoria/globals"
+	"github.com/sisoputnfrba/tp-golang/memoria/handlers"
+	configs "github.com/sisoputnfrba/tp-golang/utils/config"
 	"log"
 	"net/http"
 	"os"
 	"path/filepath"
-
-	"github.com/sisoputnfrba/tp-golang/memoria/globals"
-	"github.com/sisoputnfrba/tp-golang/memoria/handlers"
-	configs "github.com/sisoputnfrba/tp-golang/utils/config"
 )
 
 func main() {

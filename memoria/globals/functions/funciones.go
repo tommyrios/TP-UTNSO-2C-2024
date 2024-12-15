@@ -109,8 +109,9 @@ func EscribirMemoria(direccion int, pid int, datos []byte) error {
 
 func LiberarProceso(pid int) error {
 	indice := -1
+
 	particiones := globals.MemoriaUsuario.Particiones
-	// Buscar la partición correspondiente al PID
+
 	for i, particion := range particiones {
 		if particion.Pid == pid && !particion.Libre {
 			indice = i
@@ -122,24 +123,23 @@ func LiberarProceso(pid int) error {
 		return errors.New("proceso no encontrado o ya está liberado")
 	}
 
-	// Liberar la partición
 	particiones[indice].Pid = -1
 	particiones[indice].Libre = true
 
 	if globals.MConfig.Scheme == "DINAMICAS" {
-		// Consolidar con partición anterior si está libre
 		if indice > 0 && particiones[indice-1].Libre {
 			particiones[indice-1].Limite = particiones[indice].Limite
 			particiones = append(particiones[:indice], particiones[indice+1:]...)
-			indice-- // Actualiza índice después de la consolidación
+			indice--
 		}
 
-		// Consolidar con partición siguiente si está libre
 		if indice < len(particiones)-1 && particiones[indice+1].Libre {
 			particiones[indice].Limite = particiones[indice+1].Limite
 			particiones = append(particiones[:indice+1], particiones[indice+2:]...)
 		}
 	}
+
+	globals.MemoriaUsuario.Particiones = particiones
 
 	return nil
 }
@@ -208,7 +208,7 @@ func EspacioLibreTotal() int {
 
 	for _, particion := range particiones {
 		if particion.Libre { // 0 indica espacio libre
-			espacioLibre += 1 + (particion.Limite - particion.Base)
+			espacioLibre += particion.Limite - particion.Base + 1
 		}
 	}
 

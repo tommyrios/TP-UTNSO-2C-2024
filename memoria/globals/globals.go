@@ -46,7 +46,7 @@ var MemoriaSistema MemSistema
 
 type MemUsuario struct {
 	Datos       []byte
-	Particiones []Particion
+	Particiones []*Particion
 	MutexDatos  sync.Mutex
 }
 
@@ -59,7 +59,7 @@ func InicializarMemoriaUsuario() {
 
 	MemoriaUsuario = MemUsuario{
 		Datos:       make([]byte, MConfig.MemorySize),
-		Particiones: []Particion{},
+		Particiones: []*Particion{},
 	}
 }
 
@@ -81,7 +81,7 @@ func InicializarMemoria() {
 		base := 0
 		for _, tamanio := range MConfig.Partitions {
 			if base+tamanio > MConfig.MemorySize {
-				errors.New("error: Particiones fijas exceden el tamaño total de memoria")
+				_ = errors.New("error: Particiones fijas exceden el tamaño total de memoria")
 			}
 
 			// Crear una nueva partición y agregarla a la lista
@@ -91,7 +91,7 @@ func InicializarMemoria() {
 				Libre:  true,
 				Pid:    -1,
 			}
-			MemoriaUsuario.Particiones = append(MemoriaUsuario.Particiones, nuevaParticion)
+			MemoriaUsuario.Particiones = append(MemoriaUsuario.Particiones, &nuevaParticion)
 			base += tamanio
 		}
 
@@ -105,7 +105,7 @@ func InicializarMemoria() {
 			Libre:  true,
 			Pid:    -1,
 		}
-		MemoriaUsuario.Particiones = append(MemoriaUsuario.Particiones, nuevaParticion)
+		MemoriaUsuario.Particiones = append(MemoriaUsuario.Particiones, &nuevaParticion)
 	}
 
 	log.Println("Memoria inicializada con éxito.")

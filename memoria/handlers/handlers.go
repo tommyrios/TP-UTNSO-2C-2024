@@ -217,10 +217,21 @@ func HandleFinalizarProceso(w http.ResponseWriter, r *http.Request) {
 
 	tamanioProceso := functions.ObtenerTamanioMemoria(req.Pid)
 
-	// Eliminar las estructuras correspondientes del proceso en la Memoria del Sistema
+	if hilos, ok := globals.MemoriaSistema.TablaHilos[req.Pid]; ok {
+		for tid := range hilos {
+			delete(hilos, tid)
+		}
+		delete(globals.MemoriaSistema.TablaHilos, req.Pid)
+	}
+
+	if pseudocodigos, ok := globals.MemoriaSistema.Pseudocodigos[req.Pid]; ok {
+		for tid := range pseudocodigos {
+			delete(pseudocodigos, tid)
+		}
+		delete(globals.MemoriaSistema.Pseudocodigos, req.Pid)
+	}
+
 	delete(globals.MemoriaSistema.TablaProcesos, req.Pid)
-	delete(globals.MemoriaSistema.TablaHilos, req.Pid)
-	delete(globals.MemoriaSistema.Pseudocodigos, req.Pid)
 
 	w.WriteHeader(http.StatusOK)
 	_, err = w.Write([]byte("OK"))
