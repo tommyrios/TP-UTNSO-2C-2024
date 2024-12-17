@@ -65,9 +65,11 @@ func ReadMem(operandos []string, registros *commons.Registros, base int, limite 
 
 	defer response.Body.Close()
 
-	nuevoValor := binary.BigEndian.Uint32(byteSolicitados)
+	if response.StatusCode == 200 {
+		nuevoValor := binary.BigEndian.Uint32(byteSolicitados)
 
-	globals.CambiarValorRegistros(operandos[0], nuevoValor, registros)
+		globals.CambiarValorRegistros(operandos[0], nuevoValor, registros)
+	}
 
 	log.Printf("## PID: %d TID: %d - Acción: LEER - Dirección Física: %d.", pid, tid, direccionFísica)
 

@@ -129,6 +129,7 @@ func HandleReadMemory(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		http.Error(w, fmt.Sprintf("Error al leer la memoria: %s", err.Error()), http.StatusInternalServerError)
 		log.Printf("Error al leer la memoria - (PID:TID) - (%d:%d)\n", request.Pid, request.Tid)
+		w.WriteHeader(http.StatusInternalServerError)
 		return
 	}
 

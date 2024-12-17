@@ -5728,3 +5728,614 @@
 2024/12/15 18:45:31 INFO ## "Acceso Bloque - Archivo:"=72_0_18:45:30:930 "Tipo Bloque:"=DATO "Bloque File System:"=19
 2024/12/15 18:45:31 INFO ## "Acceso Bloque - Archivo:"=72_0_18:45:30:930 "Tipo Bloque:"=DATO "Bloque File System:"=20
 2024/12/15 18:45:31 INFO ## "Fin de solicitud - Archivo:"=72_0_18:45:30:930
+2024/12/16 13:18:05 INFO creando bitmap.dat
+2024/12/16 13:18:05 INFO creando bloques.dat
+2024/12/16 13:18:05 Inicialización del File System completada.
+2024/12/16 13:18:05 El módulo filesystem está a la escucha en el puerto :8003
+2024/12/16 13:18:27 INFO Se recibió el archivo:  !BADKEY="{Pid:2 Tid:0 Tamanio:96 Contenido:[0 0 0 72 0 0 0 69 0 0 0 65 0 0 0 86 0 0 0 89 0 0 0 32 0 0 0 73 0 0 0 83 0 0 0 32 0 0 0 84 0 0 0 72 0 0 0 69 0 0 0 32 0 0 0 67 0 0 0 82 0 0 0 79 0 0 0 87 0 0 0 78 0 0 0 33 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]}"
+2024/12/16 13:18:27 nombreArchivo: 2_0_13:18:27:677
+2024/12/16 13:18:27 INFO ## "Bloque INDICE asignado:"=0 Archivo:=2_0_13:18:27:677 "Bloques Libres:"=199
+2024/12/16 13:18:27 INFO ## "Bloque DATOS asignado:"=1 Archivo:=2_0_13:18:27:677 "Bloques Libres:"=198
+2024/12/16 13:18:27 INFO ## "Bloque DATOS asignado:"=2 Archivo:=2_0_13:18:27:677 "Bloques Libres:"=197
+2024/12/16 13:18:27 INFO ## "Bloque DATOS asignado:"=3 Archivo:=2_0_13:18:27:677 "Bloques Libres:"=196
+2024/12/16 13:18:27 INFO ## "Acceso Bloque - Archivo:"=2_0_13:18:27:677 "Tipo Bloque:"=INDICE "Bloque File System:"=0
+2024/12/16 13:18:27 INFO ## "Acceso Bloque - Archivo:"=2_0_13:18:27:677 "Tipo Bloque:"=DATO "Bloque File System:"=1
+2024/12/16 13:18:27 INFO ## "Acceso Bloque - Archivo:"=2_0_13:18:27:677 "Tipo Bloque:"=DATO "Bloque File System:"=2
+2024/12/16 13:18:27 INFO ## "Acceso Bloque - Archivo:"=2_0_13:18:27:677 "Tipo Bloque:"=DATO "Bloque File System:"=3
+2024/12/16 13:18:27 INFO ## "Fin de solicitud - Archivo:"=2_0_13:18:27:677
+2024/12/16 13:18:34 INFO Se recibió el archivo:  !BADKEY="{Pid:3 Tid:0 Tamanio:64 Contenido:[0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]}"
+2024/12/16 13:18:34 nombreArchivo: 3_0_13:18:34:234
+2024/12/16 13:18:34 INFO ## "Bloque INDICE asignado:"=4 Archivo:=3_0_13:18:34:234 "Bloques Libres:"=195
+2024/12/16 13:18:34 INFO ## "Bloque DATOS asignado:"=5 Archivo:=3_0_13:18:34:234 "Bloques Libres:"=194
+2024/12/16 13:18:34 INFO ## "Bloque DATOS asignado:"=6 Archivo:=3_0_13:18:34:234 "Bloques Libres:"=193
+2024/12/16 13:18:34 INFO ## "Acceso Bloque - Archivo:"=3_0_13:18:34:234 "Tipo Bloque:"=INDICE "Bloque File System:"=4
+2024/12/16 13:18:34 INFO ## "Acceso Bloque - Archivo:"=3_0_13:18:34:234 "Tipo Bloque:"=DATO "Bloque File System:"=5
+2024/12/16 13:18:34 INFO ## "Acceso Bloque - Archivo:"=3_0_13:18:34:234 "Tipo Bloque:"=DATO "Bloque File System:"=6
+2024/12/16 13:18:34 INFO ## "Fin de solicitud - Archivo:"=3_0_13:18:34:234
+2024/12/16 13:18:42 INFO Se recibió el archivo:  !BADKEY="{Pid:4 Tid:0 Tamanio:128 Contenido:[0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34 0 0 0 55 0 0 0 89 0 0 0 144 0 0 0 233 0 0 1 121 0 0 2 98 0 0 3 219 0 0 6 61 0 0 10 24 0 0 16 85 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]}"
+2024/12/16 13:18:42 nombreArchivo: 4_0_13:18:42:894
+2024/12/16 13:18:42 INFO ## "Bloque INDICE asignado:"=7 Archivo:=4_0_13:18:42:894 "Bloques Libres:"=192
+2024/12/16 13:18:42 INFO ## "Bloque DATOS asignado:"=8 Archivo:=4_0_13:18:42:894 "Bloques Libres:"=191
+2024/12/16 13:18:42 INFO ## "Bloque DATOS asignado:"=9 Archivo:=4_0_13:18:42:894 "Bloques Libres:"=190
+2024/12/16 13:18:42 INFO ## "Bloque DATOS asignado:"=10 Archivo:=4_0_13:18:42:894 "Bloques Libres:"=189
+2024/12/16 13:18:42 INFO ## "Bloque DATOS asignado:"=11 Archivo:=4_0_13:18:42:894 "Bloques Libres:"=188
+2024/12/16 13:18:42 INFO ## "Acceso Bloque - Archivo:"=4_0_13:18:42:894 "Tipo Bloque:"=INDICE "Bloque File System:"=7
+2024/12/16 13:18:42 INFO ## "Acceso Bloque - Archivo:"=4_0_13:18:42:894 "Tipo Bloque:"=DATO "Bloque File System:"=8
+2024/12/16 13:18:42 INFO ## "Acceso Bloque - Archivo:"=4_0_13:18:42:894 "Tipo Bloque:"=DATO "Bloque File System:"=9
+2024/12/16 13:18:42 INFO ## "Acceso Bloque - Archivo:"=4_0_13:18:42:894 "Tipo Bloque:"=DATO "Bloque File System:"=10
+2024/12/16 13:18:43 INFO ## "Acceso Bloque - Archivo:"=4_0_13:18:42:894 "Tipo Bloque:"=DATO "Bloque File System:"=11
+2024/12/16 13:18:43 INFO ## "Fin de solicitud - Archivo:"=4_0_13:18:42:894
+2024/12/16 13:18:49 INFO Se recibió el archivo:  !BADKEY="{Pid:8 Tid:0 Tamanio:64 Contenido:[0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34 0 0 0 72 0 0 0 69 0 0 0 32 0 0 0 67 0 0 0 82 0 0 0 79]}"
+2024/12/16 13:18:49 nombreArchivo: 8_0_13:18:49:177
+2024/12/16 13:18:49 INFO ## "Bloque INDICE asignado:"=12 Archivo:=8_0_13:18:49:177 "Bloques Libres:"=187
+2024/12/16 13:18:49 INFO ## "Bloque DATOS asignado:"=13 Archivo:=8_0_13:18:49:177 "Bloques Libres:"=186
+2024/12/16 13:18:49 INFO ## "Bloque DATOS asignado:"=14 Archivo:=8_0_13:18:49:177 "Bloques Libres:"=185
+2024/12/16 13:18:49 INFO ## "Acceso Bloque - Archivo:"=8_0_13:18:49:177 "Tipo Bloque:"=INDICE "Bloque File System:"=12
+2024/12/16 13:18:49 INFO ## "Acceso Bloque - Archivo:"=8_0_13:18:49:177 "Tipo Bloque:"=DATO "Bloque File System:"=13
+2024/12/16 13:18:49 INFO ## "Acceso Bloque - Archivo:"=8_0_13:18:49:177 "Tipo Bloque:"=DATO "Bloque File System:"=14
+2024/12/16 13:18:49 INFO ## "Fin de solicitud - Archivo:"=8_0_13:18:49:177
+2024/12/16 13:18:55 INFO Se recibió el archivo:  !BADKEY="{Pid:5 Tid:0 Tamanio:256 Contenido:[0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34 0 0 0 55 0 0 0 89 0 0 0 144 0 0 0 233 0 0 1 121 0 0 2 98 0 0 3 219 0 0 6 61 0 0 10 24 0 0 16 85 0 0 26 109 0 0 42 194 0 0 69 47 0 0 111 241 0 0 181 32 0 1 37 17 0 1 218 49 0 2 255 66 0 4 217 115 0 7 216 181 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]}"
+2024/12/16 13:18:55 nombreArchivo: 5_0_13:18:55:536
+2024/12/16 13:18:55 INFO ## "Bloque INDICE asignado:"=15 Archivo:=5_0_13:18:55:536 "Bloques Libres:"=184
+2024/12/16 13:18:55 INFO ## "Bloque DATOS asignado:"=16 Archivo:=5_0_13:18:55:536 "Bloques Libres:"=183
+2024/12/16 13:18:55 INFO ## "Bloque DATOS asignado:"=17 Archivo:=5_0_13:18:55:536 "Bloques Libres:"=182
+2024/12/16 13:18:55 INFO ## "Bloque DATOS asignado:"=18 Archivo:=5_0_13:18:55:536 "Bloques Libres:"=181
+2024/12/16 13:18:55 INFO ## "Bloque DATOS asignado:"=19 Archivo:=5_0_13:18:55:536 "Bloques Libres:"=180
+2024/12/16 13:18:55 INFO ## "Bloque DATOS asignado:"=20 Archivo:=5_0_13:18:55:536 "Bloques Libres:"=179
+2024/12/16 13:18:55 INFO ## "Bloque DATOS asignado:"=21 Archivo:=5_0_13:18:55:536 "Bloques Libres:"=178
+2024/12/16 13:18:55 INFO ## "Bloque DATOS asignado:"=22 Archivo:=5_0_13:18:55:536 "Bloques Libres:"=177
+2024/12/16 13:18:55 INFO ## "Bloque DATOS asignado:"=23 Archivo:=5_0_13:18:55:536 "Bloques Libres:"=176
+2024/12/16 13:18:55 INFO ## "Acceso Bloque - Archivo:"=5_0_13:18:55:536 "Tipo Bloque:"=INDICE "Bloque File System:"=15
+2024/12/16 13:18:55 INFO ## "Acceso Bloque - Archivo:"=5_0_13:18:55:536 "Tipo Bloque:"=DATO "Bloque File System:"=16
+2024/12/16 13:18:55 INFO ## "Acceso Bloque - Archivo:"=5_0_13:18:55:536 "Tipo Bloque:"=DATO "Bloque File System:"=17
+2024/12/16 13:18:55 INFO ## "Acceso Bloque - Archivo:"=5_0_13:18:55:536 "Tipo Bloque:"=DATO "Bloque File System:"=18
+2024/12/16 13:18:55 INFO ## "Acceso Bloque - Archivo:"=5_0_13:18:55:536 "Tipo Bloque:"=DATO "Bloque File System:"=19
+2024/12/16 13:18:55 INFO ## "Acceso Bloque - Archivo:"=5_0_13:18:55:536 "Tipo Bloque:"=DATO "Bloque File System:"=20
+2024/12/16 13:18:55 INFO ## "Acceso Bloque - Archivo:"=5_0_13:18:55:536 "Tipo Bloque:"=DATO "Bloque File System:"=21
+2024/12/16 13:18:55 INFO ## "Acceso Bloque - Archivo:"=5_0_13:18:55:536 "Tipo Bloque:"=DATO "Bloque File System:"=22
+2024/12/16 13:18:55 INFO ## "Acceso Bloque - Archivo:"=5_0_13:18:55:536 "Tipo Bloque:"=DATO "Bloque File System:"=23
+2024/12/16 13:18:55 INFO ## "Fin de solicitud - Archivo:"=5_0_13:18:55:536
+2024/12/16 13:19:00 INFO Se recibió el archivo:  !BADKEY="{Pid:13 Tid:0 Tamanio:64 Contenido:[0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13]}"
+2024/12/16 13:19:00 nombreArchivo: 13_0_13:19:00:907
+2024/12/16 13:19:00 INFO ## "Bloque INDICE asignado:"=24 Archivo:=13_0_13:19:00:907 "Bloques Libres:"=175
+2024/12/16 13:19:00 INFO ## "Bloque DATOS asignado:"=25 Archivo:=13_0_13:19:00:907 "Bloques Libres:"=174
+2024/12/16 13:19:00 INFO ## "Bloque DATOS asignado:"=26 Archivo:=13_0_13:19:00:907 "Bloques Libres:"=173
+2024/12/16 13:19:00 INFO ## "Acceso Bloque - Archivo:"=13_0_13:19:00:907 "Tipo Bloque:"=INDICE "Bloque File System:"=24
+2024/12/16 13:19:00 INFO ## "Acceso Bloque - Archivo:"=13_0_13:19:00:907 "Tipo Bloque:"=DATO "Bloque File System:"=25
+2024/12/16 13:19:00 INFO ## "Acceso Bloque - Archivo:"=13_0_13:19:00:907 "Tipo Bloque:"=DATO "Bloque File System:"=26
+2024/12/16 13:19:00 INFO ## "Fin de solicitud - Archivo:"=13_0_13:19:00:907
+2024/12/16 13:19:01 INFO Se recibió el archivo:  !BADKEY="{Pid:9 Tid:0 Tamanio:128 Contenido:[0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34 0 0 0 55 0 0 0 89 0 0 0 144 0 0 0 233 0 0 1 121 0 0 2 98 0 0 3 219 0 0 6 61 0 0 10 24 0 0 16 85 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]}"
+2024/12/16 13:19:01 nombreArchivo: 9_0_13:19:01:996
+2024/12/16 13:19:01 INFO ## "Bloque INDICE asignado:"=27 Archivo:=9_0_13:19:01:996 "Bloques Libres:"=172
+2024/12/16 13:19:01 INFO ## "Bloque DATOS asignado:"=28 Archivo:=9_0_13:19:01:996 "Bloques Libres:"=171
+2024/12/16 13:19:01 INFO ## "Bloque DATOS asignado:"=29 Archivo:=9_0_13:19:01:996 "Bloques Libres:"=170
+2024/12/16 13:19:01 INFO ## "Bloque DATOS asignado:"=30 Archivo:=9_0_13:19:01:996 "Bloques Libres:"=169
+2024/12/16 13:19:01 INFO ## "Bloque DATOS asignado:"=31 Archivo:=9_0_13:19:01:996 "Bloques Libres:"=168
+2024/12/16 13:19:01 INFO ## "Acceso Bloque - Archivo:"=9_0_13:19:01:996 "Tipo Bloque:"=INDICE "Bloque File System:"=27
+2024/12/16 13:19:02 INFO ## "Acceso Bloque - Archivo:"=9_0_13:19:01:996 "Tipo Bloque:"=DATO "Bloque File System:"=28
+2024/12/16 13:19:02 INFO ## "Acceso Bloque - Archivo:"=9_0_13:19:01:996 "Tipo Bloque:"=DATO "Bloque File System:"=29
+2024/12/16 13:19:02 INFO ## "Acceso Bloque - Archivo:"=9_0_13:19:01:996 "Tipo Bloque:"=DATO "Bloque File System:"=30
+2024/12/16 13:19:02 INFO ## "Acceso Bloque - Archivo:"=9_0_13:19:01:996 "Tipo Bloque:"=DATO "Bloque File System:"=31
+2024/12/16 13:19:02 INFO ## "Fin de solicitud - Archivo:"=9_0_13:19:01:996
+2024/12/16 13:19:06 INFO Se recibió el archivo:  !BADKEY="{Pid:6 Tid:0 Tamanio:256 Contenido:[0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34 0 0 0 55 0 0 0 89 0 0 0 144 0 0 0 233 0 0 1 121 0 0 2 98 0 0 3 219 0 0 6 61 0 0 10 24 0 0 16 85 0 0 26 109 0 0 42 194 0 0 69 47 0 0 111 241 0 0 181 32 0 1 37 17 0 1 218 49 0 2 255 66 0 4 217 115 0 7 216 181 0 12 178 40 0 20 138 221 0 33 61 5 0 53 199 226 0 87 4 231 0 140 204 201 0 227 209 176 1 112 158 121 2 84 112 41 3 197 14 162 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]}"
+2024/12/16 13:19:06 nombreArchivo: 6_0_13:19:06:378
+2024/12/16 13:19:06 INFO ## "Bloque INDICE asignado:"=32 Archivo:=6_0_13:19:06:378 "Bloques Libres:"=167
+2024/12/16 13:19:06 INFO ## "Bloque DATOS asignado:"=33 Archivo:=6_0_13:19:06:378 "Bloques Libres:"=166
+2024/12/16 13:19:06 INFO ## "Bloque DATOS asignado:"=34 Archivo:=6_0_13:19:06:378 "Bloques Libres:"=165
+2024/12/16 13:19:06 INFO ## "Bloque DATOS asignado:"=35 Archivo:=6_0_13:19:06:378 "Bloques Libres:"=164
+2024/12/16 13:19:06 INFO ## "Bloque DATOS asignado:"=36 Archivo:=6_0_13:19:06:378 "Bloques Libres:"=163
+2024/12/16 13:19:06 INFO ## "Bloque DATOS asignado:"=37 Archivo:=6_0_13:19:06:378 "Bloques Libres:"=162
+2024/12/16 13:19:06 INFO ## "Bloque DATOS asignado:"=38 Archivo:=6_0_13:19:06:378 "Bloques Libres:"=161
+2024/12/16 13:19:06 INFO ## "Bloque DATOS asignado:"=39 Archivo:=6_0_13:19:06:378 "Bloques Libres:"=160
+2024/12/16 13:19:06 INFO ## "Bloque DATOS asignado:"=40 Archivo:=6_0_13:19:06:378 "Bloques Libres:"=159
+2024/12/16 13:19:06 INFO ## "Acceso Bloque - Archivo:"=6_0_13:19:06:378 "Tipo Bloque:"=INDICE "Bloque File System:"=32
+2024/12/16 13:19:06 INFO ## "Acceso Bloque - Archivo:"=6_0_13:19:06:378 "Tipo Bloque:"=DATO "Bloque File System:"=33
+2024/12/16 13:19:06 INFO ## "Acceso Bloque - Archivo:"=6_0_13:19:06:378 "Tipo Bloque:"=DATO "Bloque File System:"=34
+2024/12/16 13:19:06 INFO ## "Acceso Bloque - Archivo:"=6_0_13:19:06:378 "Tipo Bloque:"=DATO "Bloque File System:"=35
+2024/12/16 13:19:06 INFO ## "Acceso Bloque - Archivo:"=6_0_13:19:06:378 "Tipo Bloque:"=DATO "Bloque File System:"=36
+2024/12/16 13:19:06 INFO ## "Acceso Bloque - Archivo:"=6_0_13:19:06:378 "Tipo Bloque:"=DATO "Bloque File System:"=37
+2024/12/16 13:19:06 INFO ## "Acceso Bloque - Archivo:"=6_0_13:19:06:378 "Tipo Bloque:"=DATO "Bloque File System:"=38
+2024/12/16 13:19:06 INFO ## "Acceso Bloque - Archivo:"=6_0_13:19:06:378 "Tipo Bloque:"=DATO "Bloque File System:"=39
+2024/12/16 13:19:06 INFO ## "Acceso Bloque - Archivo:"=6_0_13:19:06:378 "Tipo Bloque:"=DATO "Bloque File System:"=40
+2024/12/16 13:19:06 INFO ## "Fin de solicitud - Archivo:"=6_0_13:19:06:378
+2024/12/16 13:19:11 INFO Se recibió el archivo:  !BADKEY="{Pid:14 Tid:0 Tamanio:128 Contenido:[0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34 0 0 0 55 0 0 0 89 0 0 0 144 0 0 0 233 0 0 1 121 0 0 2 98 0 0 3 219 0 0 6 61 0 0 10 24 0 0 16 85 0 0 0 144 0 0 0 233 0 0 1 121 0 0 2 98 0 0 3 219 0 0 6 61 0 0 10 24 0 0 16 85 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]}"
+2024/12/16 13:19:11 nombreArchivo: 14_0_13:19:11:735
+2024/12/16 13:19:11 INFO ## "Bloque INDICE asignado:"=41 Archivo:=14_0_13:19:11:735 "Bloques Libres:"=158
+2024/12/16 13:19:11 INFO ## "Bloque DATOS asignado:"=42 Archivo:=14_0_13:19:11:735 "Bloques Libres:"=157
+2024/12/16 13:19:11 INFO ## "Bloque DATOS asignado:"=43 Archivo:=14_0_13:19:11:735 "Bloques Libres:"=156
+2024/12/16 13:19:11 INFO ## "Bloque DATOS asignado:"=44 Archivo:=14_0_13:19:11:735 "Bloques Libres:"=155
+2024/12/16 13:19:11 INFO ## "Bloque DATOS asignado:"=45 Archivo:=14_0_13:19:11:735 "Bloques Libres:"=154
+2024/12/16 13:19:11 INFO ## "Acceso Bloque - Archivo:"=14_0_13:19:11:735 "Tipo Bloque:"=INDICE "Bloque File System:"=41
+2024/12/16 13:19:11 INFO ## "Acceso Bloque - Archivo:"=14_0_13:19:11:735 "Tipo Bloque:"=DATO "Bloque File System:"=42
+2024/12/16 13:19:11 INFO ## "Acceso Bloque - Archivo:"=14_0_13:19:11:735 "Tipo Bloque:"=DATO "Bloque File System:"=43
+2024/12/16 13:19:11 INFO ## "Acceso Bloque - Archivo:"=14_0_13:19:11:735 "Tipo Bloque:"=DATO "Bloque File System:"=44
+2024/12/16 13:19:11 INFO ## "Acceso Bloque - Archivo:"=14_0_13:19:11:735 "Tipo Bloque:"=DATO "Bloque File System:"=45
+2024/12/16 13:19:11 INFO ## "Fin de solicitud - Archivo:"=14_0_13:19:11:735
+2024/12/16 13:19:12 INFO Se recibió el archivo:  !BADKEY="{Pid:10 Tid:0 Tamanio:256 Contenido:[0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34 0 0 0 55 0 0 0 89 0 0 0 144 0 0 0 233 0 0 1 121 0 0 2 98 0 0 3 219 0 0 6 61 0 0 10 24 0 0 16 85 0 0 26 109 0 0 42 194 0 0 69 47 0 0 111 241 0 0 181 32 0 1 37 17 0 1 218 49 0 2 255 66 0 4 217 115 0 7 216 181 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]}"
+2024/12/16 13:19:12 nombreArchivo: 10_0_13:19:12:340
+2024/12/16 13:19:12 INFO ## "Bloque INDICE asignado:"=46 Archivo:=10_0_13:19:12:340 "Bloques Libres:"=153
+2024/12/16 13:19:12 INFO ## "Bloque DATOS asignado:"=47 Archivo:=10_0_13:19:12:340 "Bloques Libres:"=152
+2024/12/16 13:19:12 INFO ## "Bloque DATOS asignado:"=48 Archivo:=10_0_13:19:12:340 "Bloques Libres:"=151
+2024/12/16 13:19:12 INFO ## "Bloque DATOS asignado:"=49 Archivo:=10_0_13:19:12:340 "Bloques Libres:"=150
+2024/12/16 13:19:12 INFO ## "Bloque DATOS asignado:"=50 Archivo:=10_0_13:19:12:340 "Bloques Libres:"=149
+2024/12/16 13:19:12 INFO ## "Bloque DATOS asignado:"=51 Archivo:=10_0_13:19:12:340 "Bloques Libres:"=148
+2024/12/16 13:19:12 INFO ## "Bloque DATOS asignado:"=52 Archivo:=10_0_13:19:12:340 "Bloques Libres:"=147
+2024/12/16 13:19:12 INFO ## "Bloque DATOS asignado:"=53 Archivo:=10_0_13:19:12:340 "Bloques Libres:"=146
+2024/12/16 13:19:12 INFO ## "Bloque DATOS asignado:"=54 Archivo:=10_0_13:19:12:340 "Bloques Libres:"=145
+2024/12/16 13:19:12 INFO ## "Acceso Bloque - Archivo:"=10_0_13:19:12:340 "Tipo Bloque:"=INDICE "Bloque File System:"=46
+2024/12/16 13:19:12 INFO ## "Acceso Bloque - Archivo:"=10_0_13:19:12:340 "Tipo Bloque:"=DATO "Bloque File System:"=47
+2024/12/16 13:19:12 INFO ## "Acceso Bloque - Archivo:"=10_0_13:19:12:340 "Tipo Bloque:"=DATO "Bloque File System:"=48
+2024/12/16 13:19:12 INFO ## "Acceso Bloque - Archivo:"=10_0_13:19:12:340 "Tipo Bloque:"=DATO "Bloque File System:"=49
+2024/12/16 13:19:12 INFO ## "Acceso Bloque - Archivo:"=10_0_13:19:12:340 "Tipo Bloque:"=DATO "Bloque File System:"=50
+2024/12/16 13:19:12 INFO ## "Acceso Bloque - Archivo:"=10_0_13:19:12:340 "Tipo Bloque:"=DATO "Bloque File System:"=51
+2024/12/16 13:19:12 INFO ## "Acceso Bloque - Archivo:"=10_0_13:19:12:340 "Tipo Bloque:"=DATO "Bloque File System:"=52
+2024/12/16 13:19:12 INFO ## "Acceso Bloque - Archivo:"=10_0_13:19:12:340 "Tipo Bloque:"=DATO "Bloque File System:"=53
+2024/12/16 13:19:12 INFO ## "Acceso Bloque - Archivo:"=10_0_13:19:12:340 "Tipo Bloque:"=DATO "Bloque File System:"=54
+2024/12/16 13:19:12 INFO ## "Fin de solicitud - Archivo:"=10_0_13:19:12:340
+2024/12/16 13:19:13 INFO Se recibió el archivo:  !BADKEY="{Pid:7 Tid:0 Tamanio:256 Contenido:[0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34 0 0 0 55 0 0 0 89 0 0 0 144 0 0 0 233 0 0 1 121 0 0 2 98 0 0 3 219 0 0 6 61 0 0 10 24 0 0 16 85 0 0 26 109 0 0 42 194 0 0 69 47 0 0 111 241 0 0 181 32 0 1 37 17 0 1 218 49 0 2 255 66 0 4 217 115 0 7 216 181 0 12 178 40 0 20 138 221 0 33 61 5 0 53 199 226 0 87 4 231 0 140 204 201 0 227 209 176 1 112 158 121 2 84 112 41 3 197 14 162 6 25 126 203 9 222 141 109 15 248 12 56 25 214 153 165 41 206 165 221 67 165 63 130 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]}"
+2024/12/16 13:19:13 nombreArchivo: 7_0_13:19:13:829
+2024/12/16 13:19:13 INFO ## "Bloque INDICE asignado:"=55 Archivo:=7_0_13:19:13:829 "Bloques Libres:"=144
+2024/12/16 13:19:13 INFO ## "Bloque DATOS asignado:"=56 Archivo:=7_0_13:19:13:829 "Bloques Libres:"=143
+2024/12/16 13:19:13 INFO ## "Bloque DATOS asignado:"=57 Archivo:=7_0_13:19:13:829 "Bloques Libres:"=142
+2024/12/16 13:19:13 INFO ## "Bloque DATOS asignado:"=58 Archivo:=7_0_13:19:13:829 "Bloques Libres:"=141
+2024/12/16 13:19:13 INFO ## "Bloque DATOS asignado:"=59 Archivo:=7_0_13:19:13:829 "Bloques Libres:"=140
+2024/12/16 13:19:13 INFO ## "Bloque DATOS asignado:"=60 Archivo:=7_0_13:19:13:829 "Bloques Libres:"=139
+2024/12/16 13:19:13 INFO ## "Bloque DATOS asignado:"=61 Archivo:=7_0_13:19:13:829 "Bloques Libres:"=138
+2024/12/16 13:19:13 INFO ## "Bloque DATOS asignado:"=62 Archivo:=7_0_13:19:13:829 "Bloques Libres:"=137
+2024/12/16 13:19:13 INFO ## "Bloque DATOS asignado:"=63 Archivo:=7_0_13:19:13:829 "Bloques Libres:"=136
+2024/12/16 13:19:13 INFO ## "Acceso Bloque - Archivo:"=7_0_13:19:13:829 "Tipo Bloque:"=INDICE "Bloque File System:"=55
+2024/12/16 13:19:13 INFO ## "Acceso Bloque - Archivo:"=7_0_13:19:13:829 "Tipo Bloque:"=DATO "Bloque File System:"=56
+2024/12/16 13:19:13 INFO ## "Acceso Bloque - Archivo:"=7_0_13:19:13:829 "Tipo Bloque:"=DATO "Bloque File System:"=57
+2024/12/16 13:19:13 INFO ## "Acceso Bloque - Archivo:"=7_0_13:19:13:829 "Tipo Bloque:"=DATO "Bloque File System:"=58
+2024/12/16 13:19:13 INFO ## "Acceso Bloque - Archivo:"=7_0_13:19:13:829 "Tipo Bloque:"=DATO "Bloque File System:"=59
+2024/12/16 13:19:13 INFO ## "Acceso Bloque - Archivo:"=7_0_13:19:13:829 "Tipo Bloque:"=DATO "Bloque File System:"=60
+2024/12/16 13:19:13 INFO ## "Acceso Bloque - Archivo:"=7_0_13:19:13:829 "Tipo Bloque:"=DATO "Bloque File System:"=61
+2024/12/16 13:19:14 INFO ## "Acceso Bloque - Archivo:"=7_0_13:19:13:829 "Tipo Bloque:"=DATO "Bloque File System:"=62
+2024/12/16 13:19:14 INFO ## "Acceso Bloque - Archivo:"=7_0_13:19:13:829 "Tipo Bloque:"=DATO "Bloque File System:"=63
+2024/12/16 13:19:14 INFO ## "Fin de solicitud - Archivo:"=7_0_13:19:13:829
+2024/12/16 13:19:19 INFO Se recibió el archivo:  !BADKEY="{Pid:18 Tid:0 Tamanio:64 Contenido:[0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]}"
+2024/12/16 13:19:19 nombreArchivo: 18_0_13:19:19:660
+2024/12/16 13:19:19 INFO ## "Bloque INDICE asignado:"=64 Archivo:=18_0_13:19:19:660 "Bloques Libres:"=135
+2024/12/16 13:19:19 INFO ## "Bloque DATOS asignado:"=65 Archivo:=18_0_13:19:19:660 "Bloques Libres:"=134
+2024/12/16 13:19:19 INFO ## "Bloque DATOS asignado:"=66 Archivo:=18_0_13:19:19:660 "Bloques Libres:"=133
+2024/12/16 13:19:19 INFO ## "Acceso Bloque - Archivo:"=18_0_13:19:19:660 "Tipo Bloque:"=INDICE "Bloque File System:"=64
+2024/12/16 13:19:19 INFO ## "Acceso Bloque - Archivo:"=18_0_13:19:19:660 "Tipo Bloque:"=DATO "Bloque File System:"=65
+2024/12/16 13:19:19 INFO ## "Acceso Bloque - Archivo:"=18_0_13:19:19:660 "Tipo Bloque:"=DATO "Bloque File System:"=66
+2024/12/16 13:19:19 INFO ## "Fin de solicitud - Archivo:"=18_0_13:19:19:660
+2024/12/16 13:19:23 INFO Se recibió el archivo:  !BADKEY="{Pid:11 Tid:0 Tamanio:256 Contenido:[0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34 0 0 0 55 0 0 0 89 0 0 0 144 0 0 0 233 0 0 1 121 0 0 2 98 0 0 3 219 0 0 6 61 0 0 10 24 0 0 16 85 0 0 26 109 0 0 42 194 0 0 69 47 0 0 111 241 0 0 181 32 0 1 37 17 0 1 218 49 0 2 255 66 0 4 217 115 0 7 216 181 0 12 178 40 0 20 138 221 0 33 61 5 0 53 199 226 0 87 4 231 0 140 204 201 0 227 209 176 1 112 158 121 2 84 112 41 3 197 14 162 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]}"
+2024/12/16 13:19:23 nombreArchivo: 11_0_13:19:23:280
+2024/12/16 13:19:23 INFO ## "Bloque INDICE asignado:"=67 Archivo:=11_0_13:19:23:280 "Bloques Libres:"=132
+2024/12/16 13:19:23 INFO ## "Bloque DATOS asignado:"=68 Archivo:=11_0_13:19:23:280 "Bloques Libres:"=131
+2024/12/16 13:19:23 INFO ## "Bloque DATOS asignado:"=69 Archivo:=11_0_13:19:23:280 "Bloques Libres:"=130
+2024/12/16 13:19:23 INFO ## "Bloque DATOS asignado:"=70 Archivo:=11_0_13:19:23:280 "Bloques Libres:"=129
+2024/12/16 13:19:23 INFO ## "Bloque DATOS asignado:"=71 Archivo:=11_0_13:19:23:280 "Bloques Libres:"=128
+2024/12/16 13:19:23 INFO ## "Bloque DATOS asignado:"=72 Archivo:=11_0_13:19:23:280 "Bloques Libres:"=127
+2024/12/16 13:19:23 INFO ## "Bloque DATOS asignado:"=73 Archivo:=11_0_13:19:23:280 "Bloques Libres:"=126
+2024/12/16 13:19:23 INFO ## "Bloque DATOS asignado:"=74 Archivo:=11_0_13:19:23:280 "Bloques Libres:"=125
+2024/12/16 13:19:23 INFO ## "Bloque DATOS asignado:"=75 Archivo:=11_0_13:19:23:280 "Bloques Libres:"=124
+2024/12/16 13:19:23 INFO ## "Acceso Bloque - Archivo:"=11_0_13:19:23:280 "Tipo Bloque:"=INDICE "Bloque File System:"=67
+2024/12/16 13:19:23 INFO ## "Acceso Bloque - Archivo:"=11_0_13:19:23:280 "Tipo Bloque:"=DATO "Bloque File System:"=68
+2024/12/16 13:19:23 INFO ## "Acceso Bloque - Archivo:"=11_0_13:19:23:280 "Tipo Bloque:"=DATO "Bloque File System:"=69
+2024/12/16 13:19:23 INFO ## "Acceso Bloque - Archivo:"=11_0_13:19:23:280 "Tipo Bloque:"=DATO "Bloque File System:"=70
+2024/12/16 13:19:23 INFO ## "Acceso Bloque - Archivo:"=11_0_13:19:23:280 "Tipo Bloque:"=DATO "Bloque File System:"=71
+2024/12/16 13:19:23 INFO ## "Acceso Bloque - Archivo:"=11_0_13:19:23:280 "Tipo Bloque:"=DATO "Bloque File System:"=72
+2024/12/16 13:19:23 INFO ## "Acceso Bloque - Archivo:"=11_0_13:19:23:280 "Tipo Bloque:"=DATO "Bloque File System:"=73
+2024/12/16 13:19:23 INFO ## "Acceso Bloque - Archivo:"=11_0_13:19:23:280 "Tipo Bloque:"=DATO "Bloque File System:"=74
+2024/12/16 13:19:23 INFO ## "Acceso Bloque - Archivo:"=11_0_13:19:23:280 "Tipo Bloque:"=DATO "Bloque File System:"=75
+2024/12/16 13:19:23 INFO ## "Fin de solicitud - Archivo:"=11_0_13:19:23:280
+2024/12/16 13:19:29 INFO Se recibió el archivo:  !BADKEY="{Pid:12 Tid:0 Tamanio:256 Contenido:[0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34 0 0 0 55 0 0 0 89 0 0 0 144 0 0 0 233 0 0 1 121 0 0 2 98 0 0 3 219 0 0 6 61 0 0 10 24 0 0 16 85 0 0 26 109 0 0 42 194 0 0 69 47 0 0 111 241 0 0 181 32 0 1 37 17 0 1 218 49 0 2 255 66 0 4 217 115 0 7 216 181 0 12 178 40 0 20 138 221 0 33 61 5 0 53 199 226 0 87 4 231 0 140 204 201 0 227 209 176 1 112 158 121 2 84 112 41 3 197 14 162 6 25 126 203 9 222 141 109 15 248 12 56 25 214 153 165 41 206 165 221 67 165 63 130 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]}"
+2024/12/16 13:19:29 nombreArchivo: 12_0_13:19:29:924
+2024/12/16 13:19:29 INFO ## "Bloque INDICE asignado:"=76 Archivo:=12_0_13:19:29:924 "Bloques Libres:"=123
+2024/12/16 13:19:29 INFO ## "Bloque DATOS asignado:"=77 Archivo:=12_0_13:19:29:924 "Bloques Libres:"=122
+2024/12/16 13:19:29 INFO ## "Bloque DATOS asignado:"=78 Archivo:=12_0_13:19:29:924 "Bloques Libres:"=121
+2024/12/16 13:19:29 INFO ## "Bloque DATOS asignado:"=79 Archivo:=12_0_13:19:29:924 "Bloques Libres:"=120
+2024/12/16 13:19:29 INFO ## "Bloque DATOS asignado:"=80 Archivo:=12_0_13:19:29:924 "Bloques Libres:"=119
+2024/12/16 13:19:29 INFO ## "Bloque DATOS asignado:"=81 Archivo:=12_0_13:19:29:924 "Bloques Libres:"=118
+2024/12/16 13:19:29 INFO ## "Bloque DATOS asignado:"=82 Archivo:=12_0_13:19:29:924 "Bloques Libres:"=117
+2024/12/16 13:19:29 INFO ## "Bloque DATOS asignado:"=83 Archivo:=12_0_13:19:29:924 "Bloques Libres:"=116
+2024/12/16 13:19:29 INFO ## "Bloque DATOS asignado:"=84 Archivo:=12_0_13:19:29:924 "Bloques Libres:"=115
+2024/12/16 13:19:29 INFO ## "Acceso Bloque - Archivo:"=12_0_13:19:29:924 "Tipo Bloque:"=INDICE "Bloque File System:"=76
+2024/12/16 13:19:29 INFO ## "Acceso Bloque - Archivo:"=12_0_13:19:29:924 "Tipo Bloque:"=DATO "Bloque File System:"=77
+2024/12/16 13:19:29 INFO ## "Acceso Bloque - Archivo:"=12_0_13:19:29:924 "Tipo Bloque:"=DATO "Bloque File System:"=78
+2024/12/16 13:19:30 INFO ## "Acceso Bloque - Archivo:"=12_0_13:19:29:924 "Tipo Bloque:"=DATO "Bloque File System:"=79
+2024/12/16 13:19:30 INFO ## "Acceso Bloque - Archivo:"=12_0_13:19:29:924 "Tipo Bloque:"=DATO "Bloque File System:"=80
+2024/12/16 13:19:30 INFO ## "Acceso Bloque - Archivo:"=12_0_13:19:29:924 "Tipo Bloque:"=DATO "Bloque File System:"=81
+2024/12/16 13:19:30 INFO ## "Acceso Bloque - Archivo:"=12_0_13:19:29:924 "Tipo Bloque:"=DATO "Bloque File System:"=82
+2024/12/16 13:19:30 INFO ## "Acceso Bloque - Archivo:"=12_0_13:19:29:924 "Tipo Bloque:"=DATO "Bloque File System:"=83
+2024/12/16 13:19:30 INFO ## "Acceso Bloque - Archivo:"=12_0_13:19:29:924 "Tipo Bloque:"=DATO "Bloque File System:"=84
+2024/12/16 13:19:30 INFO ## "Fin de solicitud - Archivo:"=12_0_13:19:29:924
+2024/12/16 13:19:31 INFO Se recibió el archivo:  !BADKEY="{Pid:15 Tid:0 Tamanio:256 Contenido:[0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34 0 0 0 55 0 0 0 89 0 0 0 144 0 0 0 233 0 0 1 121 0 0 2 98 0 0 3 219 0 0 6 61 0 0 10 24 0 0 16 85 0 0 26 109 0 0 42 194 0 0 69 47 0 0 111 241 0 0 181 32 0 1 37 17 0 1 218 49 0 2 255 66 0 4 217 115 0 7 216 181 0 0 69 47 0 0 111 241 0 0 181 32 0 1 37 17 0 1 218 49 0 2 255 66 0 4 217 115 0 7 216 181 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]}"
+2024/12/16 13:19:31 nombreArchivo: 15_0_13:19:31:307
+2024/12/16 13:19:31 INFO ## "Bloque INDICE asignado:"=85 Archivo:=15_0_13:19:31:307 "Bloques Libres:"=114
+2024/12/16 13:19:31 INFO ## "Bloque DATOS asignado:"=86 Archivo:=15_0_13:19:31:307 "Bloques Libres:"=113
+2024/12/16 13:19:31 INFO ## "Bloque DATOS asignado:"=87 Archivo:=15_0_13:19:31:307 "Bloques Libres:"=112
+2024/12/16 13:19:31 INFO ## "Bloque DATOS asignado:"=88 Archivo:=15_0_13:19:31:307 "Bloques Libres:"=111
+2024/12/16 13:19:31 INFO ## "Bloque DATOS asignado:"=89 Archivo:=15_0_13:19:31:307 "Bloques Libres:"=110
+2024/12/16 13:19:31 INFO ## "Bloque DATOS asignado:"=90 Archivo:=15_0_13:19:31:307 "Bloques Libres:"=109
+2024/12/16 13:19:31 INFO ## "Bloque DATOS asignado:"=91 Archivo:=15_0_13:19:31:307 "Bloques Libres:"=108
+2024/12/16 13:19:31 INFO ## "Bloque DATOS asignado:"=92 Archivo:=15_0_13:19:31:307 "Bloques Libres:"=107
+2024/12/16 13:19:31 INFO ## "Bloque DATOS asignado:"=93 Archivo:=15_0_13:19:31:307 "Bloques Libres:"=106
+2024/12/16 13:19:31 INFO ## "Acceso Bloque - Archivo:"=15_0_13:19:31:307 "Tipo Bloque:"=INDICE "Bloque File System:"=85
+2024/12/16 13:19:31 INFO ## "Acceso Bloque - Archivo:"=15_0_13:19:31:307 "Tipo Bloque:"=DATO "Bloque File System:"=86
+2024/12/16 13:19:31 INFO ## "Acceso Bloque - Archivo:"=15_0_13:19:31:307 "Tipo Bloque:"=DATO "Bloque File System:"=87
+2024/12/16 13:19:31 INFO ## "Acceso Bloque - Archivo:"=15_0_13:19:31:307 "Tipo Bloque:"=DATO "Bloque File System:"=88
+2024/12/16 13:19:31 INFO ## "Acceso Bloque - Archivo:"=15_0_13:19:31:307 "Tipo Bloque:"=DATO "Bloque File System:"=89
+2024/12/16 13:19:31 INFO ## "Acceso Bloque - Archivo:"=15_0_13:19:31:307 "Tipo Bloque:"=DATO "Bloque File System:"=90
+2024/12/16 13:19:31 INFO ## "Acceso Bloque - Archivo:"=15_0_13:19:31:307 "Tipo Bloque:"=DATO "Bloque File System:"=91
+2024/12/16 13:19:31 INFO ## "Acceso Bloque - Archivo:"=15_0_13:19:31:307 "Tipo Bloque:"=DATO "Bloque File System:"=92
+2024/12/16 13:19:31 INFO ## "Acceso Bloque - Archivo:"=15_0_13:19:31:307 "Tipo Bloque:"=DATO "Bloque File System:"=93
+2024/12/16 13:19:31 INFO ## "Fin de solicitud - Archivo:"=15_0_13:19:31:307
+2024/12/16 13:19:35 INFO Se recibió el archivo:  !BADKEY="{Pid:19 Tid:0 Tamanio:128 Contenido:[0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34 0 0 0 55 0 0 0 89 0 0 0 144 0 0 0 233 0 0 1 121 0 0 2 98 0 0 3 219 0 0 6 61 0 0 10 24 0 0 16 85 0 0 0 144 0 0 0 233 0 0 1 121 0 0 2 98 0 0 3 219 0 0 6 61 0 0 10 24 0 0 16 85 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]}"
+2024/12/16 13:19:35 nombreArchivo: 19_0_13:19:35:535
+2024/12/16 13:19:35 INFO ## "Bloque INDICE asignado:"=94 Archivo:=19_0_13:19:35:535 "Bloques Libres:"=105
+2024/12/16 13:19:35 INFO ## "Bloque DATOS asignado:"=95 Archivo:=19_0_13:19:35:535 "Bloques Libres:"=104
+2024/12/16 13:19:35 INFO ## "Bloque DATOS asignado:"=96 Archivo:=19_0_13:19:35:535 "Bloques Libres:"=103
+2024/12/16 13:19:35 INFO ## "Bloque DATOS asignado:"=97 Archivo:=19_0_13:19:35:535 "Bloques Libres:"=102
+2024/12/16 13:19:35 INFO ## "Bloque DATOS asignado:"=98 Archivo:=19_0_13:19:35:535 "Bloques Libres:"=101
+2024/12/16 13:19:35 INFO ## "Acceso Bloque - Archivo:"=19_0_13:19:35:535 "Tipo Bloque:"=INDICE "Bloque File System:"=94
+2024/12/16 13:19:35 INFO ## "Acceso Bloque - Archivo:"=19_0_13:19:35:535 "Tipo Bloque:"=DATO "Bloque File System:"=95
+2024/12/16 13:19:35 INFO ## "Acceso Bloque - Archivo:"=19_0_13:19:35:535 "Tipo Bloque:"=DATO "Bloque File System:"=96
+2024/12/16 13:19:35 INFO ## "Acceso Bloque - Archivo:"=19_0_13:19:35:535 "Tipo Bloque:"=DATO "Bloque File System:"=97
+2024/12/16 13:19:35 INFO ## "Acceso Bloque - Archivo:"=19_0_13:19:35:535 "Tipo Bloque:"=DATO "Bloque File System:"=98
+2024/12/16 13:19:35 INFO ## "Fin de solicitud - Archivo:"=19_0_13:19:35:535
+2024/12/16 13:19:36 INFO Se recibió el archivo:  !BADKEY="{Pid:23 Tid:0 Tamanio:64 Contenido:[0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]}"
+2024/12/16 13:19:36 nombreArchivo: 23_0_13:19:36:277
+2024/12/16 13:19:36 INFO ## "Bloque INDICE asignado:"=99 Archivo:=23_0_13:19:36:277 "Bloques Libres:"=100
+2024/12/16 13:19:36 INFO ## "Bloque DATOS asignado:"=100 Archivo:=23_0_13:19:36:277 "Bloques Libres:"=99
+2024/12/16 13:19:36 INFO ## "Bloque DATOS asignado:"=101 Archivo:=23_0_13:19:36:277 "Bloques Libres:"=98
+2024/12/16 13:19:36 INFO ## "Acceso Bloque - Archivo:"=23_0_13:19:36:277 "Tipo Bloque:"=INDICE "Bloque File System:"=99
+2024/12/16 13:19:36 INFO ## "Acceso Bloque - Archivo:"=23_0_13:19:36:277 "Tipo Bloque:"=DATO "Bloque File System:"=100
+2024/12/16 13:19:36 INFO ## "Acceso Bloque - Archivo:"=23_0_13:19:36:277 "Tipo Bloque:"=DATO "Bloque File System:"=101
+2024/12/16 13:19:36 INFO ## "Fin de solicitud - Archivo:"=23_0_13:19:36:277
+2024/12/16 13:19:45 INFO Se recibió el archivo:  !BADKEY="{Pid:20 Tid:0 Tamanio:256 Contenido:[0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34 0 0 0 55 0 0 0 89 0 0 0 144 0 0 0 233 0 0 1 121 0 0 2 98 0 0 3 219 0 0 6 61 0 0 10 24 0 0 16 85 0 0 26 109 0 0 42 194 0 0 69 47 0 0 111 241 0 0 181 32 0 1 37 17 0 1 218 49 0 2 255 66 0 4 217 115 0 7 216 181 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]}"
+2024/12/16 13:19:45 nombreArchivo: 20_0_13:19:45:749
+2024/12/16 13:19:45 INFO ## "Bloque INDICE asignado:"=102 Archivo:=20_0_13:19:45:749 "Bloques Libres:"=97
+2024/12/16 13:19:45 INFO ## "Bloque DATOS asignado:"=103 Archivo:=20_0_13:19:45:749 "Bloques Libres:"=96
+2024/12/16 13:19:45 INFO ## "Bloque DATOS asignado:"=104 Archivo:=20_0_13:19:45:749 "Bloques Libres:"=95
+2024/12/16 13:19:45 INFO ## "Bloque DATOS asignado:"=105 Archivo:=20_0_13:19:45:749 "Bloques Libres:"=94
+2024/12/16 13:19:45 INFO ## "Bloque DATOS asignado:"=106 Archivo:=20_0_13:19:45:749 "Bloques Libres:"=93
+2024/12/16 13:19:45 INFO ## "Bloque DATOS asignado:"=107 Archivo:=20_0_13:19:45:749 "Bloques Libres:"=92
+2024/12/16 13:19:45 INFO ## "Bloque DATOS asignado:"=108 Archivo:=20_0_13:19:45:749 "Bloques Libres:"=91
+2024/12/16 13:19:45 INFO ## "Bloque DATOS asignado:"=109 Archivo:=20_0_13:19:45:749 "Bloques Libres:"=90
+2024/12/16 13:19:45 INFO ## "Bloque DATOS asignado:"=110 Archivo:=20_0_13:19:45:749 "Bloques Libres:"=89
+2024/12/16 13:19:45 INFO ## "Acceso Bloque - Archivo:"=20_0_13:19:45:749 "Tipo Bloque:"=INDICE "Bloque File System:"=102
+2024/12/16 13:19:45 INFO ## "Acceso Bloque - Archivo:"=20_0_13:19:45:749 "Tipo Bloque:"=DATO "Bloque File System:"=103
+2024/12/16 13:19:45 INFO ## "Acceso Bloque - Archivo:"=20_0_13:19:45:749 "Tipo Bloque:"=DATO "Bloque File System:"=104
+2024/12/16 13:19:45 INFO ## "Acceso Bloque - Archivo:"=20_0_13:19:45:749 "Tipo Bloque:"=DATO "Bloque File System:"=105
+2024/12/16 13:19:45 INFO ## "Acceso Bloque - Archivo:"=20_0_13:19:45:749 "Tipo Bloque:"=DATO "Bloque File System:"=106
+2024/12/16 13:19:45 INFO ## "Acceso Bloque - Archivo:"=20_0_13:19:45:749 "Tipo Bloque:"=DATO "Bloque File System:"=107
+2024/12/16 13:19:45 INFO ## "Acceso Bloque - Archivo:"=20_0_13:19:45:749 "Tipo Bloque:"=DATO "Bloque File System:"=108
+2024/12/16 13:19:45 INFO ## "Acceso Bloque - Archivo:"=20_0_13:19:45:749 "Tipo Bloque:"=DATO "Bloque File System:"=109
+2024/12/16 13:19:45 INFO ## "Acceso Bloque - Archivo:"=20_0_13:19:45:749 "Tipo Bloque:"=DATO "Bloque File System:"=110
+2024/12/16 13:19:45 INFO ## "Fin de solicitud - Archivo:"=20_0_13:19:45:749
+2024/12/16 13:19:46 INFO Se recibió el archivo:  !BADKEY="{Pid:16 Tid:0 Tamanio:256 Contenido:[0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34 0 0 0 55 0 0 0 89 0 0 0 144 0 0 0 233 0 0 1 121 0 0 2 98 0 0 3 219 0 0 6 61 0 0 10 24 0 0 16 85 0 0 26 109 0 0 42 194 0 0 69 47 0 0 111 241 0 0 181 32 0 1 37 17 0 1 218 49 0 2 255 66 0 4 217 115 0 7 216 181 0 12 178 40 0 20 138 221 0 33 61 5 0 53 199 226 0 87 4 231 0 140 204 201 0 227 209 176 1 112 158 121 2 84 112 41 3 197 14 162 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]}"
+2024/12/16 13:19:46 nombreArchivo: 16_0_13:19:46:400
+2024/12/16 13:19:46 INFO ## "Bloque INDICE asignado:"=111 Archivo:=16_0_13:19:46:400 "Bloques Libres:"=88
+2024/12/16 13:19:46 INFO ## "Bloque DATOS asignado:"=112 Archivo:=16_0_13:19:46:400 "Bloques Libres:"=87
+2024/12/16 13:19:46 INFO ## "Bloque DATOS asignado:"=113 Archivo:=16_0_13:19:46:400 "Bloques Libres:"=86
+2024/12/16 13:19:46 INFO ## "Bloque DATOS asignado:"=114 Archivo:=16_0_13:19:46:400 "Bloques Libres:"=85
+2024/12/16 13:19:46 INFO ## "Bloque DATOS asignado:"=115 Archivo:=16_0_13:19:46:400 "Bloques Libres:"=84
+2024/12/16 13:19:46 INFO ## "Bloque DATOS asignado:"=116 Archivo:=16_0_13:19:46:400 "Bloques Libres:"=83
+2024/12/16 13:19:46 INFO ## "Bloque DATOS asignado:"=117 Archivo:=16_0_13:19:46:400 "Bloques Libres:"=82
+2024/12/16 13:19:46 INFO ## "Bloque DATOS asignado:"=118 Archivo:=16_0_13:19:46:400 "Bloques Libres:"=81
+2024/12/16 13:19:46 INFO ## "Bloque DATOS asignado:"=119 Archivo:=16_0_13:19:46:400 "Bloques Libres:"=80
+2024/12/16 13:19:46 INFO ## "Acceso Bloque - Archivo:"=16_0_13:19:46:400 "Tipo Bloque:"=INDICE "Bloque File System:"=111
+2024/12/16 13:19:46 INFO ## "Acceso Bloque - Archivo:"=16_0_13:19:46:400 "Tipo Bloque:"=DATO "Bloque File System:"=112
+2024/12/16 13:19:46 INFO ## "Acceso Bloque - Archivo:"=16_0_13:19:46:400 "Tipo Bloque:"=DATO "Bloque File System:"=113
+2024/12/16 13:19:46 INFO ## "Acceso Bloque - Archivo:"=16_0_13:19:46:400 "Tipo Bloque:"=DATO "Bloque File System:"=114
+2024/12/16 13:19:46 INFO ## "Acceso Bloque - Archivo:"=16_0_13:19:46:400 "Tipo Bloque:"=DATO "Bloque File System:"=115
+2024/12/16 13:19:46 INFO ## "Acceso Bloque - Archivo:"=16_0_13:19:46:400 "Tipo Bloque:"=DATO "Bloque File System:"=116
+2024/12/16 13:19:46 INFO ## "Acceso Bloque - Archivo:"=16_0_13:19:46:400 "Tipo Bloque:"=DATO "Bloque File System:"=117
+2024/12/16 13:19:46 INFO ## "Acceso Bloque - Archivo:"=16_0_13:19:46:400 "Tipo Bloque:"=DATO "Bloque File System:"=118
+2024/12/16 13:19:46 INFO ## "Acceso Bloque - Archivo:"=16_0_13:19:46:400 "Tipo Bloque:"=DATO "Bloque File System:"=119
+2024/12/16 13:19:46 INFO ## "Fin de solicitud - Archivo:"=16_0_13:19:46:400
+2024/12/16 13:19:51 INFO Se recibió el archivo:  !BADKEY="{Pid:24 Tid:0 Tamanio:128 Contenido:[0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34 0 0 0 55 0 0 0 89 0 0 0 144 0 0 0 233 0 0 1 121 0 0 2 98 0 0 3 219 0 0 6 61 0 0 10 24 0 0 16 85 0 0 26 109 0 0 42 194 0 0 69 47 0 0 111 241 0 0 181 32 0 1 37 17 0 1 218 49 0 2 255 66 0 4 217 115 0 7 216 181 0 12 178 40 0 20 138 221]}"
+2024/12/16 13:19:51 nombreArchivo: 24_0_13:19:51:446
+2024/12/16 13:19:51 INFO ## "Bloque INDICE asignado:"=120 Archivo:=24_0_13:19:51:446 "Bloques Libres:"=79
+2024/12/16 13:19:51 INFO ## "Bloque DATOS asignado:"=121 Archivo:=24_0_13:19:51:446 "Bloques Libres:"=78
+2024/12/16 13:19:51 INFO ## "Bloque DATOS asignado:"=122 Archivo:=24_0_13:19:51:446 "Bloques Libres:"=77
+2024/12/16 13:19:51 INFO ## "Bloque DATOS asignado:"=123 Archivo:=24_0_13:19:51:446 "Bloques Libres:"=76
+2024/12/16 13:19:51 INFO ## "Bloque DATOS asignado:"=124 Archivo:=24_0_13:19:51:446 "Bloques Libres:"=75
+2024/12/16 13:19:51 INFO ## "Acceso Bloque - Archivo:"=24_0_13:19:51:446 "Tipo Bloque:"=INDICE "Bloque File System:"=120
+2024/12/16 13:19:51 INFO ## "Acceso Bloque - Archivo:"=24_0_13:19:51:446 "Tipo Bloque:"=DATO "Bloque File System:"=121
+2024/12/16 13:19:51 INFO ## "Acceso Bloque - Archivo:"=24_0_13:19:51:446 "Tipo Bloque:"=DATO "Bloque File System:"=122
+2024/12/16 13:19:51 INFO ## "Acceso Bloque - Archivo:"=24_0_13:19:51:446 "Tipo Bloque:"=DATO "Bloque File System:"=123
+2024/12/16 13:19:51 INFO ## "Acceso Bloque - Archivo:"=24_0_13:19:51:446 "Tipo Bloque:"=DATO "Bloque File System:"=124
+2024/12/16 13:19:51 INFO ## "Fin de solicitud - Archivo:"=24_0_13:19:51:446
+2024/12/16 13:19:54 INFO Se recibió el archivo:  !BADKEY="{Pid:17 Tid:0 Tamanio:256 Contenido:[0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34 0 0 0 55 0 0 0 89 0 0 0 144 0 0 0 233 0 0 1 121 0 0 2 98 0 0 3 219 0 0 6 61 0 0 10 24 0 0 16 85 0 0 26 109 0 0 42 194 0 0 69 47 0 0 111 241 0 0 181 32 0 1 37 17 0 1 218 49 0 2 255 66 0 4 217 115 0 7 216 181 0 12 178 40 0 20 138 221 0 33 61 5 0 53 199 226 0 87 4 231 0 140 204 201 0 227 209 176 1 112 158 121 2 84 112 41 3 197 14 162 6 25 126 203 9 222 141 109 15 248 12 56 25 214 153 165 41 206 165 221 67 165 63 130 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]}"
+2024/12/16 13:19:54 nombreArchivo: 17_0_13:19:54:958
+2024/12/16 13:19:54 INFO ## "Bloque INDICE asignado:"=125 Archivo:=17_0_13:19:54:958 "Bloques Libres:"=74
+2024/12/16 13:19:54 INFO ## "Bloque DATOS asignado:"=126 Archivo:=17_0_13:19:54:958 "Bloques Libres:"=73
+2024/12/16 13:19:54 INFO ## "Bloque DATOS asignado:"=127 Archivo:=17_0_13:19:54:958 "Bloques Libres:"=72
+2024/12/16 13:19:54 INFO ## "Bloque DATOS asignado:"=128 Archivo:=17_0_13:19:54:958 "Bloques Libres:"=71
+2024/12/16 13:19:54 INFO ## "Bloque DATOS asignado:"=129 Archivo:=17_0_13:19:54:958 "Bloques Libres:"=70
+2024/12/16 13:19:54 INFO ## "Bloque DATOS asignado:"=130 Archivo:=17_0_13:19:54:958 "Bloques Libres:"=69
+2024/12/16 13:19:54 INFO ## "Bloque DATOS asignado:"=131 Archivo:=17_0_13:19:54:958 "Bloques Libres:"=68
+2024/12/16 13:19:54 INFO ## "Bloque DATOS asignado:"=132 Archivo:=17_0_13:19:54:958 "Bloques Libres:"=67
+2024/12/16 13:19:54 INFO ## "Bloque DATOS asignado:"=133 Archivo:=17_0_13:19:54:958 "Bloques Libres:"=66
+2024/12/16 13:19:54 INFO ## "Acceso Bloque - Archivo:"=17_0_13:19:54:958 "Tipo Bloque:"=INDICE "Bloque File System:"=125
+2024/12/16 13:19:54 INFO ## "Acceso Bloque - Archivo:"=17_0_13:19:54:958 "Tipo Bloque:"=DATO "Bloque File System:"=126
+2024/12/16 13:19:55 INFO ## "Acceso Bloque - Archivo:"=17_0_13:19:54:958 "Tipo Bloque:"=DATO "Bloque File System:"=127
+2024/12/16 13:19:55 INFO ## "Acceso Bloque - Archivo:"=17_0_13:19:54:958 "Tipo Bloque:"=DATO "Bloque File System:"=128
+2024/12/16 13:19:55 INFO ## "Acceso Bloque - Archivo:"=17_0_13:19:54:958 "Tipo Bloque:"=DATO "Bloque File System:"=129
+2024/12/16 13:19:55 INFO ## "Acceso Bloque - Archivo:"=17_0_13:19:54:958 "Tipo Bloque:"=DATO "Bloque File System:"=130
+2024/12/16 13:19:55 INFO ## "Acceso Bloque - Archivo:"=17_0_13:19:54:958 "Tipo Bloque:"=DATO "Bloque File System:"=131
+2024/12/16 13:19:55 INFO ## "Acceso Bloque - Archivo:"=17_0_13:19:54:958 "Tipo Bloque:"=DATO "Bloque File System:"=132
+2024/12/16 13:19:55 INFO ## "Acceso Bloque - Archivo:"=17_0_13:19:54:958 "Tipo Bloque:"=DATO "Bloque File System:"=133
+2024/12/16 13:19:55 INFO ## "Fin de solicitud - Archivo:"=17_0_13:19:54:958
+2024/12/16 13:19:55 INFO Se recibió el archivo:  !BADKEY="{Pid:21 Tid:0 Tamanio:256 Contenido:[0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34 0 0 0 55 0 0 0 89 0 0 0 144 0 0 0 233 0 0 1 121 0 0 2 98 0 0 3 219 0 0 6 61 0 0 10 24 0 0 16 85 0 0 26 109 0 0 42 194 0 0 69 47 0 0 111 241 0 0 181 32 0 1 37 17 0 1 218 49 0 2 255 66 0 4 217 115 0 7 216 181 0 12 178 40 0 20 138 221 0 33 61 5 0 53 199 226 0 87 4 231 0 140 204 201 0 227 209 176 1 112 158 121 2 84 112 41 3 197 14 162 6 25 126 203 9 222 141 109 15 248 12 56 25 214 153 165 41 206 165 221 67 165 63 130 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]}"
+2024/12/16 13:19:55 nombreArchivo: 21_0_13:19:55:428
+2024/12/16 13:19:55 INFO ## "Bloque INDICE asignado:"=134 Archivo:=21_0_13:19:55:428 "Bloques Libres:"=65
+2024/12/16 13:19:55 INFO ## "Bloque DATOS asignado:"=135 Archivo:=21_0_13:19:55:428 "Bloques Libres:"=64
+2024/12/16 13:19:55 INFO ## "Bloque DATOS asignado:"=136 Archivo:=21_0_13:19:55:428 "Bloques Libres:"=63
+2024/12/16 13:19:55 INFO ## "Bloque DATOS asignado:"=137 Archivo:=21_0_13:19:55:428 "Bloques Libres:"=62
+2024/12/16 13:19:55 INFO ## "Bloque DATOS asignado:"=138 Archivo:=21_0_13:19:55:428 "Bloques Libres:"=61
+2024/12/16 13:19:55 INFO ## "Bloque DATOS asignado:"=139 Archivo:=21_0_13:19:55:428 "Bloques Libres:"=60
+2024/12/16 13:19:55 INFO ## "Bloque DATOS asignado:"=140 Archivo:=21_0_13:19:55:428 "Bloques Libres:"=59
+2024/12/16 13:19:55 INFO ## "Bloque DATOS asignado:"=141 Archivo:=21_0_13:19:55:428 "Bloques Libres:"=58
+2024/12/16 13:19:55 INFO ## "Bloque DATOS asignado:"=142 Archivo:=21_0_13:19:55:428 "Bloques Libres:"=57
+2024/12/16 13:19:55 INFO ## "Acceso Bloque - Archivo:"=21_0_13:19:55:428 "Tipo Bloque:"=INDICE "Bloque File System:"=134
+2024/12/16 13:19:55 INFO ## "Acceso Bloque - Archivo:"=21_0_13:19:55:428 "Tipo Bloque:"=DATO "Bloque File System:"=135
+2024/12/16 13:19:55 INFO ## "Acceso Bloque - Archivo:"=21_0_13:19:55:428 "Tipo Bloque:"=DATO "Bloque File System:"=136
+2024/12/16 13:19:55 INFO ## "Acceso Bloque - Archivo:"=21_0_13:19:55:428 "Tipo Bloque:"=DATO "Bloque File System:"=137
+2024/12/16 13:19:55 INFO ## "Acceso Bloque - Archivo:"=21_0_13:19:55:428 "Tipo Bloque:"=DATO "Bloque File System:"=138
+2024/12/16 13:19:55 INFO ## "Acceso Bloque - Archivo:"=21_0_13:19:55:428 "Tipo Bloque:"=DATO "Bloque File System:"=139
+2024/12/16 13:19:55 INFO ## "Acceso Bloque - Archivo:"=21_0_13:19:55:428 "Tipo Bloque:"=DATO "Bloque File System:"=140
+2024/12/16 13:19:55 INFO ## "Acceso Bloque - Archivo:"=21_0_13:19:55:428 "Tipo Bloque:"=DATO "Bloque File System:"=141
+2024/12/16 13:19:55 INFO ## "Acceso Bloque - Archivo:"=21_0_13:19:55:428 "Tipo Bloque:"=DATO "Bloque File System:"=142
+2024/12/16 13:19:55 INFO ## "Fin de solicitud - Archivo:"=21_0_13:19:55:428
+2024/12/16 13:19:58 INFO Se recibió el archivo:  !BADKEY="{Pid:25 Tid:0 Tamanio:256 Contenido:[0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34 0 0 0 55 0 0 0 89 0 0 0 144 0 0 0 233 0 0 1 121 0 0 2 98 0 0 3 219 0 0 6 61 0 0 10 24 0 0 16 85 0 0 26 109 0 0 42 194 0 0 69 47 0 0 111 241 0 0 181 32 0 1 37 17 0 1 218 49 0 2 255 66 0 4 217 115 0 7 216 181 0 0 69 47 0 0 111 241 0 0 181 32 0 1 37 17 0 1 218 49 0 2 255 66 0 4 217 115 0 7 216 181 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]}"
+2024/12/16 13:19:58 nombreArchivo: 25_0_13:19:58:554
+2024/12/16 13:19:58 INFO ## "Bloque INDICE asignado:"=143 Archivo:=25_0_13:19:58:554 "Bloques Libres:"=56
+2024/12/16 13:19:58 INFO ## "Bloque DATOS asignado:"=144 Archivo:=25_0_13:19:58:554 "Bloques Libres:"=55
+2024/12/16 13:19:58 INFO ## "Bloque DATOS asignado:"=145 Archivo:=25_0_13:19:58:554 "Bloques Libres:"=54
+2024/12/16 13:19:58 INFO ## "Bloque DATOS asignado:"=146 Archivo:=25_0_13:19:58:554 "Bloques Libres:"=53
+2024/12/16 13:19:58 INFO ## "Bloque DATOS asignado:"=147 Archivo:=25_0_13:19:58:554 "Bloques Libres:"=52
+2024/12/16 13:19:58 INFO ## "Bloque DATOS asignado:"=148 Archivo:=25_0_13:19:58:554 "Bloques Libres:"=51
+2024/12/16 13:19:58 INFO ## "Bloque DATOS asignado:"=149 Archivo:=25_0_13:19:58:554 "Bloques Libres:"=50
+2024/12/16 13:19:58 INFO ## "Bloque DATOS asignado:"=150 Archivo:=25_0_13:19:58:554 "Bloques Libres:"=49
+2024/12/16 13:19:58 INFO ## "Bloque DATOS asignado:"=151 Archivo:=25_0_13:19:58:554 "Bloques Libres:"=48
+2024/12/16 13:19:58 INFO ## "Acceso Bloque - Archivo:"=25_0_13:19:58:554 "Tipo Bloque:"=INDICE "Bloque File System:"=143
+2024/12/16 13:19:58 INFO ## "Acceso Bloque - Archivo:"=25_0_13:19:58:554 "Tipo Bloque:"=DATO "Bloque File System:"=144
+2024/12/16 13:19:58 INFO ## "Acceso Bloque - Archivo:"=25_0_13:19:58:554 "Tipo Bloque:"=DATO "Bloque File System:"=145
+2024/12/16 13:19:58 INFO ## "Acceso Bloque - Archivo:"=25_0_13:19:58:554 "Tipo Bloque:"=DATO "Bloque File System:"=146
+2024/12/16 13:19:58 INFO ## "Acceso Bloque - Archivo:"=25_0_13:19:58:554 "Tipo Bloque:"=DATO "Bloque File System:"=147
+2024/12/16 13:19:58 INFO ## "Acceso Bloque - Archivo:"=25_0_13:19:58:554 "Tipo Bloque:"=DATO "Bloque File System:"=148
+2024/12/16 13:19:58 INFO ## "Acceso Bloque - Archivo:"=25_0_13:19:58:554 "Tipo Bloque:"=DATO "Bloque File System:"=149
+2024/12/16 13:19:58 INFO ## "Acceso Bloque - Archivo:"=25_0_13:19:58:554 "Tipo Bloque:"=DATO "Bloque File System:"=150
+2024/12/16 13:19:58 INFO ## "Acceso Bloque - Archivo:"=25_0_13:19:58:554 "Tipo Bloque:"=DATO "Bloque File System:"=151
+2024/12/16 13:19:58 INFO ## "Fin de solicitud - Archivo:"=25_0_13:19:58:554
+2024/12/16 13:20:02 INFO Se recibió el archivo:  !BADKEY="{Pid:22 Tid:0 Tamanio:256 Contenido:[0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34 0 0 0 55 0 0 0 89 0 0 0 144 0 0 0 233 0 0 1 121 0 0 2 98 0 0 3 219 0 0 6 61 0 0 10 24 0 0 16 85 0 0 26 109 0 0 42 194 0 0 69 47 0 0 111 241 0 0 181 32 0 1 37 17 0 1 218 49 0 2 255 66 0 4 217 115 0 7 216 181 0 12 178 40 0 20 138 221 0 33 61 5 0 53 199 226 0 87 4 231 0 140 204 201 0 227 209 176 1 112 158 121 2 84 112 41 3 197 14 162 6 25 126 203 9 222 141 109 15 248 12 56 25 214 153 165 41 206 165 221 67 165 63 130 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]}"
+2024/12/16 13:20:02 nombreArchivo: 22_0_13:20:02:424
+2024/12/16 13:20:02 INFO ## "Bloque INDICE asignado:"=152 Archivo:=22_0_13:20:02:424 "Bloques Libres:"=47
+2024/12/16 13:20:02 INFO ## "Bloque DATOS asignado:"=153 Archivo:=22_0_13:20:02:424 "Bloques Libres:"=46
+2024/12/16 13:20:02 INFO ## "Bloque DATOS asignado:"=154 Archivo:=22_0_13:20:02:424 "Bloques Libres:"=45
+2024/12/16 13:20:02 INFO ## "Bloque DATOS asignado:"=155 Archivo:=22_0_13:20:02:424 "Bloques Libres:"=44
+2024/12/16 13:20:02 INFO ## "Bloque DATOS asignado:"=156 Archivo:=22_0_13:20:02:424 "Bloques Libres:"=43
+2024/12/16 13:20:02 INFO ## "Bloque DATOS asignado:"=157 Archivo:=22_0_13:20:02:424 "Bloques Libres:"=42
+2024/12/16 13:20:02 INFO ## "Bloque DATOS asignado:"=158 Archivo:=22_0_13:20:02:424 "Bloques Libres:"=41
+2024/12/16 13:20:02 INFO ## "Bloque DATOS asignado:"=159 Archivo:=22_0_13:20:02:424 "Bloques Libres:"=40
+2024/12/16 13:20:02 INFO ## "Bloque DATOS asignado:"=160 Archivo:=22_0_13:20:02:424 "Bloques Libres:"=39
+2024/12/16 13:20:02 INFO ## "Acceso Bloque - Archivo:"=22_0_13:20:02:424 "Tipo Bloque:"=INDICE "Bloque File System:"=152
+2024/12/16 13:20:02 INFO ## "Acceso Bloque - Archivo:"=22_0_13:20:02:424 "Tipo Bloque:"=DATO "Bloque File System:"=153
+2024/12/16 13:20:02 INFO ## "Acceso Bloque - Archivo:"=22_0_13:20:02:424 "Tipo Bloque:"=DATO "Bloque File System:"=154
+2024/12/16 13:20:02 INFO ## "Acceso Bloque - Archivo:"=22_0_13:20:02:424 "Tipo Bloque:"=DATO "Bloque File System:"=155
+2024/12/16 13:20:02 INFO ## "Acceso Bloque - Archivo:"=22_0_13:20:02:424 "Tipo Bloque:"=DATO "Bloque File System:"=156
+2024/12/16 13:20:02 INFO ## "Acceso Bloque - Archivo:"=22_0_13:20:02:424 "Tipo Bloque:"=DATO "Bloque File System:"=157
+2024/12/16 13:20:02 INFO ## "Acceso Bloque - Archivo:"=22_0_13:20:02:424 "Tipo Bloque:"=DATO "Bloque File System:"=158
+2024/12/16 13:20:02 INFO ## "Acceso Bloque - Archivo:"=22_0_13:20:02:424 "Tipo Bloque:"=DATO "Bloque File System:"=159
+2024/12/16 13:20:02 INFO ## "Acceso Bloque - Archivo:"=22_0_13:20:02:424 "Tipo Bloque:"=DATO "Bloque File System:"=160
+2024/12/16 13:20:02 INFO ## "Fin de solicitud - Archivo:"=22_0_13:20:02:424
+2024/12/16 13:20:03 INFO Se recibió el archivo:  !BADKEY="{Pid:26 Tid:0 Tamanio:256 Contenido:[0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34 0 0 0 55 0 0 0 89 0 0 0 144 0 0 0 233 0 0 1 121 0 0 2 98 0 0 3 219 0 0 6 61 0 0 10 24 0 0 16 85 0 0 26 109 0 0 42 194 0 0 69 47 0 0 111 241 0 0 181 32 0 1 37 17 0 1 218 49 0 2 255 66 0 4 217 115 0 7 216 181 0 12 178 40 0 20 138 221 0 33 61 5 0 53 199 226 0 87 4 231 0 140 204 201 0 227 209 176 1 112 158 121 2 84 112 41 3 197 14 162 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]}"
+2024/12/16 13:20:03 nombreArchivo: 26_0_13:20:03:899
+2024/12/16 13:20:03 INFO ## "Bloque INDICE asignado:"=161 Archivo:=26_0_13:20:03:899 "Bloques Libres:"=38
+2024/12/16 13:20:03 INFO ## "Bloque DATOS asignado:"=162 Archivo:=26_0_13:20:03:899 "Bloques Libres:"=37
+2024/12/16 13:20:03 INFO ## "Bloque DATOS asignado:"=163 Archivo:=26_0_13:20:03:899 "Bloques Libres:"=36
+2024/12/16 13:20:03 INFO ## "Bloque DATOS asignado:"=164 Archivo:=26_0_13:20:03:899 "Bloques Libres:"=35
+2024/12/16 13:20:03 INFO ## "Bloque DATOS asignado:"=165 Archivo:=26_0_13:20:03:899 "Bloques Libres:"=34
+2024/12/16 13:20:03 INFO ## "Bloque DATOS asignado:"=166 Archivo:=26_0_13:20:03:899 "Bloques Libres:"=33
+2024/12/16 13:20:03 INFO ## "Bloque DATOS asignado:"=167 Archivo:=26_0_13:20:03:899 "Bloques Libres:"=32
+2024/12/16 13:20:03 INFO ## "Bloque DATOS asignado:"=168 Archivo:=26_0_13:20:03:899 "Bloques Libres:"=31
+2024/12/16 13:20:03 INFO ## "Bloque DATOS asignado:"=169 Archivo:=26_0_13:20:03:899 "Bloques Libres:"=30
+2024/12/16 13:20:03 INFO ## "Acceso Bloque - Archivo:"=26_0_13:20:03:899 "Tipo Bloque:"=INDICE "Bloque File System:"=161
+2024/12/16 13:20:03 INFO ## "Acceso Bloque - Archivo:"=26_0_13:20:03:899 "Tipo Bloque:"=DATO "Bloque File System:"=162
+2024/12/16 13:20:03 INFO ## "Acceso Bloque - Archivo:"=26_0_13:20:03:899 "Tipo Bloque:"=DATO "Bloque File System:"=163
+2024/12/16 13:20:03 INFO ## "Acceso Bloque - Archivo:"=26_0_13:20:03:899 "Tipo Bloque:"=DATO "Bloque File System:"=164
+2024/12/16 13:20:04 INFO ## "Acceso Bloque - Archivo:"=26_0_13:20:03:899 "Tipo Bloque:"=DATO "Bloque File System:"=165
+2024/12/16 13:20:04 INFO ## "Acceso Bloque - Archivo:"=26_0_13:20:03:899 "Tipo Bloque:"=DATO "Bloque File System:"=166
+2024/12/16 13:20:04 INFO ## "Acceso Bloque - Archivo:"=26_0_13:20:03:899 "Tipo Bloque:"=DATO "Bloque File System:"=167
+2024/12/16 13:20:04 INFO ## "Acceso Bloque - Archivo:"=26_0_13:20:03:899 "Tipo Bloque:"=DATO "Bloque File System:"=168
+2024/12/16 13:20:04 INFO ## "Acceso Bloque - Archivo:"=26_0_13:20:03:899 "Tipo Bloque:"=DATO "Bloque File System:"=169
+2024/12/16 13:20:04 INFO ## "Fin de solicitud - Archivo:"=26_0_13:20:03:899
+2024/12/16 13:20:06 INFO Se recibió el archivo:  !BADKEY="{Pid:27 Tid:0 Tamanio:256 Contenido:[0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34 0 0 0 55 0 0 0 89 0 0 0 144 0 0 0 233 0 0 1 121 0 0 2 98 0 0 3 219 0 0 6 61 0 0 10 24 0 0 16 85 0 0 26 109 0 0 42 194 0 0 69 47 0 0 111 241 0 0 181 32 0 1 37 17 0 1 218 49 0 2 255 66 0 4 217 115 0 7 216 181 0 12 178 40 0 20 138 221 0 33 61 5 0 53 199 226 0 87 4 231 0 140 204 201 0 227 209 176 1 112 158 121 2 84 112 41 3 197 14 162 6 25 126 203 9 222 141 109 15 248 12 56 25 214 153 165 41 206 165 221 67 165 63 130 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]}"
+2024/12/16 13:20:06 nombreArchivo: 27_0_13:20:06:266
+2024/12/16 13:20:06 INFO ## "Bloque INDICE asignado:"=170 Archivo:=27_0_13:20:06:266 "Bloques Libres:"=29
+2024/12/16 13:20:06 INFO ## "Bloque DATOS asignado:"=171 Archivo:=27_0_13:20:06:266 "Bloques Libres:"=28
+2024/12/16 13:20:06 INFO ## "Bloque DATOS asignado:"=172 Archivo:=27_0_13:20:06:266 "Bloques Libres:"=27
+2024/12/16 13:20:06 INFO ## "Bloque DATOS asignado:"=173 Archivo:=27_0_13:20:06:266 "Bloques Libres:"=26
+2024/12/16 13:20:06 INFO ## "Bloque DATOS asignado:"=174 Archivo:=27_0_13:20:06:266 "Bloques Libres:"=25
+2024/12/16 13:20:06 INFO ## "Bloque DATOS asignado:"=175 Archivo:=27_0_13:20:06:266 "Bloques Libres:"=24
+2024/12/16 13:20:06 INFO ## "Bloque DATOS asignado:"=176 Archivo:=27_0_13:20:06:266 "Bloques Libres:"=23
+2024/12/16 13:20:06 INFO ## "Bloque DATOS asignado:"=177 Archivo:=27_0_13:20:06:266 "Bloques Libres:"=22
+2024/12/16 13:20:06 INFO ## "Bloque DATOS asignado:"=178 Archivo:=27_0_13:20:06:266 "Bloques Libres:"=21
+2024/12/16 13:20:06 INFO ## "Acceso Bloque - Archivo:"=27_0_13:20:06:266 "Tipo Bloque:"=INDICE "Bloque File System:"=170
+2024/12/16 13:20:06 INFO ## "Acceso Bloque - Archivo:"=27_0_13:20:06:266 "Tipo Bloque:"=DATO "Bloque File System:"=171
+2024/12/16 13:20:06 INFO ## "Acceso Bloque - Archivo:"=27_0_13:20:06:266 "Tipo Bloque:"=DATO "Bloque File System:"=172
+2024/12/16 13:20:06 INFO ## "Acceso Bloque - Archivo:"=27_0_13:20:06:266 "Tipo Bloque:"=DATO "Bloque File System:"=173
+2024/12/16 13:20:06 INFO ## "Acceso Bloque - Archivo:"=27_0_13:20:06:266 "Tipo Bloque:"=DATO "Bloque File System:"=174
+2024/12/16 13:20:06 INFO ## "Acceso Bloque - Archivo:"=27_0_13:20:06:266 "Tipo Bloque:"=DATO "Bloque File System:"=175
+2024/12/16 13:20:06 INFO ## "Acceso Bloque - Archivo:"=27_0_13:20:06:266 "Tipo Bloque:"=DATO "Bloque File System:"=176
+2024/12/16 13:20:06 INFO ## "Acceso Bloque - Archivo:"=27_0_13:20:06:266 "Tipo Bloque:"=DATO "Bloque File System:"=177
+2024/12/16 13:20:06 INFO ## "Acceso Bloque - Archivo:"=27_0_13:20:06:266 "Tipo Bloque:"=DATO "Bloque File System:"=178
+2024/12/16 13:20:06 INFO ## "Fin de solicitud - Archivo:"=27_0_13:20:06:266
+2024/12/16 13:20:55 INFO Se recibió el archivo:  !BADKEY="{Pid:2 Tid:0 Tamanio:96 Contenido:[0 0 0 72 0 0 0 69 0 0 0 65 0 0 0 86 0 0 0 89 0 0 0 32 0 0 0 73 0 0 0 83 0 0 0 32 0 0 0 84 0 0 0 72 0 0 0 69 0 0 0 32 0 0 0 67 0 0 0 82 0 0 0 79 0 0 0 87 0 0 0 78 0 0 0 33 0 0 42 194 0 0 69 47 0 0 111 241 0 0 181 32 0 1 37 17]}"
+2024/12/16 13:20:55 nombreArchivo: 2_0_13:20:55:645
+2024/12/16 13:20:55 INFO ## "Bloque INDICE asignado:"=179 Archivo:=2_0_13:20:55:645 "Bloques Libres:"=20
+2024/12/16 13:20:55 INFO ## "Bloque DATOS asignado:"=180 Archivo:=2_0_13:20:55:645 "Bloques Libres:"=19
+2024/12/16 13:20:55 INFO ## "Bloque DATOS asignado:"=181 Archivo:=2_0_13:20:55:645 "Bloques Libres:"=18
+2024/12/16 13:20:55 INFO ## "Bloque DATOS asignado:"=182 Archivo:=2_0_13:20:55:645 "Bloques Libres:"=17
+2024/12/16 13:20:55 INFO ## "Acceso Bloque - Archivo:"=2_0_13:20:55:645 "Tipo Bloque:"=INDICE "Bloque File System:"=179
+2024/12/16 13:20:55 INFO ## "Acceso Bloque - Archivo:"=2_0_13:20:55:645 "Tipo Bloque:"=DATO "Bloque File System:"=180
+2024/12/16 13:20:55 INFO ## "Acceso Bloque - Archivo:"=2_0_13:20:55:645 "Tipo Bloque:"=DATO "Bloque File System:"=181
+2024/12/16 13:20:55 INFO ## "Acceso Bloque - Archivo:"=2_0_13:20:55:645 "Tipo Bloque:"=DATO "Bloque File System:"=182
+2024/12/16 13:20:55 INFO ## "Fin de solicitud - Archivo:"=2_0_13:20:55:645
+2024/12/16 13:21:02 INFO Se recibió el archivo:  !BADKEY="{Pid:3 Tid:0 Tamanio:64 Contenido:[0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34 0 4 217 115 0 7 216 181 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]}"
+2024/12/16 13:21:02 nombreArchivo: 3_0_13:21:02:158
+2024/12/16 13:21:02 INFO ## "Bloque INDICE asignado:"=183 Archivo:=3_0_13:21:02:158 "Bloques Libres:"=16
+2024/12/16 13:21:02 INFO ## "Bloque DATOS asignado:"=184 Archivo:=3_0_13:21:02:158 "Bloques Libres:"=15
+2024/12/16 13:21:02 INFO ## "Bloque DATOS asignado:"=185 Archivo:=3_0_13:21:02:158 "Bloques Libres:"=14
+2024/12/16 13:21:02 INFO ## "Acceso Bloque - Archivo:"=3_0_13:21:02:158 "Tipo Bloque:"=INDICE "Bloque File System:"=183
+2024/12/16 13:21:02 INFO ## "Acceso Bloque - Archivo:"=3_0_13:21:02:158 "Tipo Bloque:"=DATO "Bloque File System:"=184
+2024/12/16 13:21:02 INFO ## "Acceso Bloque - Archivo:"=3_0_13:21:02:158 "Tipo Bloque:"=DATO "Bloque File System:"=185
+2024/12/16 13:21:02 INFO ## "Fin de solicitud - Archivo:"=3_0_13:21:02:158
+2024/12/16 13:21:10 INFO Se recibió el archivo:  !BADKEY="{Pid:4 Tid:0 Tamanio:128 Contenido:[0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34 0 0 0 55 0 0 0 89 0 0 0 144 0 0 0 233 0 0 1 121 0 0 2 98 0 0 3 219 0 0 6 61 0 0 10 24 0 0 16 85 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34]}"
+2024/12/16 13:21:10 nombreArchivo: 4_0_13:21:10:603
+2024/12/16 13:21:10 INFO ## "Bloque INDICE asignado:"=186 Archivo:=4_0_13:21:10:603 "Bloques Libres:"=13
+2024/12/16 13:21:10 INFO ## "Bloque DATOS asignado:"=187 Archivo:=4_0_13:21:10:603 "Bloques Libres:"=12
+2024/12/16 13:21:10 INFO ## "Bloque DATOS asignado:"=188 Archivo:=4_0_13:21:10:603 "Bloques Libres:"=11
+2024/12/16 13:21:10 INFO ## "Bloque DATOS asignado:"=189 Archivo:=4_0_13:21:10:603 "Bloques Libres:"=10
+2024/12/16 13:21:10 INFO ## "Bloque DATOS asignado:"=190 Archivo:=4_0_13:21:10:603 "Bloques Libres:"=9
+2024/12/16 13:21:10 INFO ## "Acceso Bloque - Archivo:"=4_0_13:21:10:603 "Tipo Bloque:"=INDICE "Bloque File System:"=186
+2024/12/16 13:21:10 INFO ## "Acceso Bloque - Archivo:"=4_0_13:21:10:603 "Tipo Bloque:"=DATO "Bloque File System:"=187
+2024/12/16 13:21:10 INFO ## "Acceso Bloque - Archivo:"=4_0_13:21:10:603 "Tipo Bloque:"=DATO "Bloque File System:"=188
+2024/12/16 13:21:10 INFO ## "Acceso Bloque - Archivo:"=4_0_13:21:10:603 "Tipo Bloque:"=DATO "Bloque File System:"=189
+2024/12/16 13:21:10 INFO ## "Acceso Bloque - Archivo:"=4_0_13:21:10:603 "Tipo Bloque:"=DATO "Bloque File System:"=190
+2024/12/16 13:21:10 INFO ## "Fin de solicitud - Archivo:"=4_0_13:21:10:603
+2024/12/16 13:21:16 INFO Se recibió el archivo:  !BADKEY="{Pid:8 Tid:0 Tamanio:64 Contenido:[0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34 0 0 0 72 0 0 0 69 0 0 0 32 0 0 0 67 0 0 0 82 0 0 0 79]}"
+2024/12/16 13:21:16 nombreArchivo: 8_0_13:21:16:139
+2024/12/16 13:21:16 INFO ## "Bloque INDICE asignado:"=191 Archivo:=8_0_13:21:16:139 "Bloques Libres:"=8
+2024/12/16 13:21:16 INFO ## "Bloque DATOS asignado:"=192 Archivo:=8_0_13:21:16:139 "Bloques Libres:"=7
+2024/12/16 13:21:16 INFO ## "Bloque DATOS asignado:"=193 Archivo:=8_0_13:21:16:139 "Bloques Libres:"=6
+2024/12/16 13:21:16 INFO ## "Acceso Bloque - Archivo:"=8_0_13:21:16:139 "Tipo Bloque:"=INDICE "Bloque File System:"=191
+2024/12/16 13:21:16 INFO ## "Acceso Bloque - Archivo:"=8_0_13:21:16:139 "Tipo Bloque:"=DATO "Bloque File System:"=192
+2024/12/16 13:21:16 INFO ## "Acceso Bloque - Archivo:"=8_0_13:21:16:139 "Tipo Bloque:"=DATO "Bloque File System:"=193
+2024/12/16 13:21:16 INFO ## "Fin de solicitud - Archivo:"=8_0_13:21:16:139
+2024/12/16 13:21:21 INFO Se recibió el archivo:  !BADKEY="{Pid:5 Tid:0 Tamanio:256 Contenido:[0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34 0 0 0 55 0 0 0 89 0 0 0 144 0 0 0 233 0 0 1 121 0 0 2 98 0 0 3 219 0 0 6 61 0 0 10 24 0 0 16 85 0 0 26 109 0 0 42 194 0 0 69 47 0 0 111 241 0 0 181 32 0 1 37 17 0 1 218 49 0 2 255 66 0 4 217 115 0 7 216 181 6 25 126 203 9 222 141 109 15 248 12 56 25 214 153 165 41 206 165 221 67 165 63 130 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34]}"
+2024/12/16 13:21:21 nombreArchivo: 5_0_13:21:21:361
+2024/12/16 13:21:21 INFO NO HAY ESPACIO DISPONIBLE
+2024/12/16 13:21:21 INFO ## "Fin de solicitud - Archivo:"=5_0_13:21:21:361
+2024/12/16 13:21:26 INFO Se recibió el archivo:  !BADKEY="{Pid:13 Tid:0 Tamanio:64 Contenido:[0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13]}"
+2024/12/16 13:21:26 nombreArchivo: 13_0_13:21:26:940
+2024/12/16 13:21:26 INFO ## "Bloque INDICE asignado:"=194 Archivo:=13_0_13:21:26:940 "Bloques Libres:"=5
+2024/12/16 13:21:26 INFO ## "Bloque DATOS asignado:"=195 Archivo:=13_0_13:21:26:940 "Bloques Libres:"=4
+2024/12/16 13:21:26 INFO ## "Bloque DATOS asignado:"=196 Archivo:=13_0_13:21:26:940 "Bloques Libres:"=3
+2024/12/16 13:21:26 INFO ## "Acceso Bloque - Archivo:"=13_0_13:21:26:940 "Tipo Bloque:"=INDICE "Bloque File System:"=194
+2024/12/16 13:21:26 INFO ## "Acceso Bloque - Archivo:"=13_0_13:21:26:940 "Tipo Bloque:"=DATO "Bloque File System:"=195
+2024/12/16 13:21:26 INFO ## "Acceso Bloque - Archivo:"=13_0_13:21:26:940 "Tipo Bloque:"=DATO "Bloque File System:"=196
+2024/12/16 13:21:27 INFO ## "Fin de solicitud - Archivo:"=13_0_13:21:26:940
+2024/12/16 13:21:27 INFO Se recibió el archivo:  !BADKEY="{Pid:9 Tid:0 Tamanio:128 Contenido:[0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34 0 0 0 55 0 0 0 89 0 0 0 144 0 0 0 233 0 0 1 121 0 0 2 98 0 0 3 219 0 0 6 61 0 0 10 24 0 0 16 85 0 12 178 40 0 20 138 221 0 33 61 5 0 53 199 226 0 87 4 231 0 140 204 201 0 227 209 176 1 112 158 121 2 84 112 41 3 197 14 162 6 25 126 203 9 222 141 109]}"
+2024/12/16 13:21:27 nombreArchivo: 9_0_13:21:27:246
+2024/12/16 13:21:27 INFO NO HAY ESPACIO DISPONIBLE
+2024/12/16 13:21:27 INFO ## "Fin de solicitud - Archivo:"=9_0_13:21:27:246
+2024/12/16 13:21:31 INFO Se recibió el archivo:  !BADKEY="{Pid:6 Tid:0 Tamanio:256 Contenido:[0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34 0 0 0 55 0 0 0 89 0 0 0 144 0 0 0 233 0 0 1 121 0 0 2 98 0 0 3 219 0 0 6 61 0 0 10 24 0 0 16 85 0 0 26 109 0 0 42 194 0 0 69 47 0 0 111 241 0 0 181 32 0 1 37 17 0 1 218 49 0 2 255 66 0 4 217 115 0 7 216 181 0 12 178 40 0 20 138 221 0 33 61 5 0 53 199 226 0 87 4 231 0 140 204 201 0 227 209 176 1 112 158 121 2 84 112 41 3 197 14 162 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34]}"
+2024/12/16 13:21:31 nombreArchivo: 6_0_13:21:31:856
+2024/12/16 13:21:31 INFO NO HAY ESPACIO DISPONIBLE
+2024/12/16 13:21:31 INFO ## "Fin de solicitud - Archivo:"=6_0_13:21:31:856
+2024/12/16 13:21:37 INFO Se recibió el archivo:  !BADKEY="{Pid:14 Tid:0 Tamanio:128 Contenido:[0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34 0 0 0 55 0 0 0 89 0 0 0 144 0 0 0 233 0 0 1 121 0 0 2 98 0 0 3 219 0 0 6 61 0 0 10 24 0 0 16 85 0 0 0 144 0 0 0 233 0 0 1 121 0 0 2 98 0 0 3 219 0 0 6 61 0 0 10 24 0 0 16 85 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1]}"
+2024/12/16 13:21:37 nombreArchivo: 14_0_13:21:37:199
+2024/12/16 13:21:37 INFO NO HAY ESPACIO DISPONIBLE
+2024/12/16 13:21:37 INFO ## "Fin de solicitud - Archivo:"=14_0_13:21:37:199
+2024/12/16 13:21:37 INFO Se recibió el archivo:  !BADKEY="{Pid:10 Tid:0 Tamanio:256 Contenido:[0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34 0 0 0 55 0 0 0 89 0 0 0 144 0 0 0 233 0 0 1 121 0 0 2 98 0 0 3 219 0 0 6 61 0 0 10 24 0 0 16 85 0 0 26 109 0 0 42 194 0 0 69 47 0 0 111 241 0 0 181 32 0 1 37 17 0 1 218 49 0 2 255 66 0 4 217 115 0 7 216 181 0 0 0 21 0 0 0 34 0 0 0 55 0 0 0 89 0 0 0 144 0 0 0 233 0 0 1 121 0 0 2 98 0 0 3 219 0 0 6 61 0 0 10 24 0 0 16 85 0 0 26 109 0 0 42 194 0 0 69 47 0 0 111 241 0 0 181 32 0 1 37 17 0 1 218 49 0 2 255 66 0 4 217 115 0 7 216 181 0 12 178 40 0 20 138 221 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34]}"
+2024/12/16 13:21:37 nombreArchivo: 10_0_13:21:37:476
+2024/12/16 13:21:37 INFO NO HAY ESPACIO DISPONIBLE
+2024/12/16 13:21:37 INFO ## "Fin de solicitud - Archivo:"=10_0_13:21:37:476
+2024/12/16 13:21:38 INFO Se recibió el archivo:  !BADKEY="{Pid:7 Tid:0 Tamanio:256 Contenido:[0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34 0 0 0 55 0 0 0 89 0 0 0 144 0 0 0 233 0 0 1 121 0 0 2 98 0 0 3 219 0 0 6 61 0 0 10 24 0 0 16 85 0 0 26 109 0 0 42 194 0 0 69 47 0 0 111 241 0 0 181 32 0 1 37 17 0 1 218 49 0 2 255 66 0 4 217 115 0 7 216 181 0 12 178 40 0 20 138 221 0 33 61 5 0 53 199 226 0 87 4 231 0 140 204 201 0 227 209 176 1 112 158 121 2 84 112 41 3 197 14 162 6 25 126 203 9 222 141 109 15 248 12 56 25 214 153 165 41 206 165 221 67 165 63 130 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34]}"
+2024/12/16 13:21:38 nombreArchivo: 7_0_13:21:38:386
+2024/12/16 13:21:38 INFO NO HAY ESPACIO DISPONIBLE
+2024/12/16 13:21:38 INFO ## "Fin de solicitud - Archivo:"=7_0_13:21:38:386
+2024/12/16 13:21:43 INFO Se recibió el archivo:  !BADKEY="{Pid:18 Tid:0 Tamanio:64 Contenido:[0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13]}"
+2024/12/16 13:21:43 nombreArchivo: 18_0_13:21:43:631
+2024/12/16 13:21:43 INFO ## "Bloque INDICE asignado:"=197 Archivo:=18_0_13:21:43:631 "Bloques Libres:"=2
+2024/12/16 13:21:43 INFO ## "Bloque DATOS asignado:"=198 Archivo:=18_0_13:21:43:631 "Bloques Libres:"=1
+2024/12/16 13:21:43 INFO ## "Bloque DATOS asignado:"=199 Archivo:=18_0_13:21:43:631 "Bloques Libres:"=0
+2024/12/16 13:21:43 INFO ## "Acceso Bloque - Archivo:"=18_0_13:21:43:631 "Tipo Bloque:"=INDICE "Bloque File System:"=197
+2024/12/16 13:21:43 INFO ## "Acceso Bloque - Archivo:"=18_0_13:21:43:631 "Tipo Bloque:"=DATO "Bloque File System:"=198
+2024/12/16 13:21:43 INFO ## "Acceso Bloque - Archivo:"=18_0_13:21:43:631 "Tipo Bloque:"=DATO "Bloque File System:"=199
+2024/12/16 13:21:43 INFO ## "Fin de solicitud - Archivo:"=18_0_13:21:43:631
+2024/12/16 13:21:47 INFO Se recibió el archivo:  !BADKEY="{Pid:11 Tid:0 Tamanio:256 Contenido:[0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34 0 0 0 55 0 0 0 89 0 0 0 144 0 0 0 233 0 0 1 121 0 0 2 98 0 0 3 219 0 0 6 61 0 0 10 24 0 0 16 85 0 0 26 109 0 0 42 194 0 0 69 47 0 0 111 241 0 0 181 32 0 1 37 17 0 1 218 49 0 2 255 66 0 4 217 115 0 7 216 181 0 12 178 40 0 20 138 221 0 33 61 5 0 53 199 226 0 87 4 231 0 140 204 201 0 227 209 176 1 112 158 121 2 84 112 41 3 197 14 162 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34]}"
+2024/12/16 13:21:47 nombreArchivo: 11_0_13:21:47:711
+2024/12/16 13:21:47 INFO NO HAY ESPACIO DISPONIBLE
+2024/12/16 13:21:47 INFO ## "Fin de solicitud - Archivo:"=11_0_13:21:47:711
+2024/12/16 13:21:53 INFO Se recibió el archivo:  !BADKEY="{Pid:15 Tid:0 Tamanio:256 Contenido:[0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34 0 0 0 55 0 0 0 89 0 0 0 144 0 0 0 233 0 0 1 121 0 0 2 98 0 0 3 219 0 0 6 61 0 0 10 24 0 0 16 85 0 0 26 109 0 0 42 194 0 0 69 47 0 0 111 241 0 0 181 32 0 1 37 17 0 1 218 49 0 2 255 66 0 4 217 115 0 7 216 181 0 0 69 47 0 0 111 241 0 0 181 32 0 1 37 17 0 1 218 49 0 2 255 66 0 4 217 115 0 7 216 181 6 25 126 203 9 222 141 109 15 248 12 56 25 214 153 165 41 206 165 221 67 165 63 130 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1]}"
+2024/12/16 13:21:53 nombreArchivo: 15_0_13:21:53:751
+2024/12/16 13:21:53 INFO NO HAY ESPACIO DISPONIBLE
+2024/12/16 13:21:53 INFO ## "Fin de solicitud - Archivo:"=15_0_13:21:53:751
+2024/12/16 13:21:54 INFO Se recibió el archivo:  !BADKEY="{Pid:12 Tid:0 Tamanio:256 Contenido:[0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34 0 0 0 55 0 0 0 89 0 0 0 144 0 0 0 233 0 0 1 121 0 0 2 98 0 0 3 219 0 0 6 61 0 0 10 24 0 0 16 85 0 0 26 109 0 0 42 194 0 0 69 47 0 0 111 241 0 0 181 32 0 1 37 17 0 1 218 49 0 2 255 66 0 4 217 115 0 7 216 181 0 12 178 40 0 20 138 221 0 33 61 5 0 53 199 226 0 87 4 231 0 140 204 201 0 227 209 176 1 112 158 121 2 84 112 41 3 197 14 162 6 25 126 203 9 222 141 109 15 248 12 56 25 214 153 165 41 206 165 221 67 165 63 130 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13]}"
+2024/12/16 13:21:54 nombreArchivo: 12_0_13:21:54:207
+2024/12/16 13:21:54 INFO NO HAY ESPACIO DISPONIBLE
+2024/12/16 13:21:54 INFO ## "Fin de solicitud - Archivo:"=12_0_13:21:54:207
+2024/12/16 13:21:59 INFO Se recibió el archivo:  !BADKEY="{Pid:19 Tid:0 Tamanio:128 Contenido:[0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34 0 0 0 55 0 0 0 89 0 0 0 144 0 0 0 233 0 0 1 121 0 0 2 98 0 0 3 219 0 0 6 61 0 0 10 24 0 0 16 85 0 0 0 144 0 0 0 233 0 0 1 121 0 0 2 98 0 0 3 219 0 0 6 61 0 0 10 24 0 0 16 85 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1]}"
+2024/12/16 13:21:59 nombreArchivo: 19_0_13:21:59:109
+2024/12/16 13:21:59 INFO NO HAY ESPACIO DISPONIBLE
+2024/12/16 13:21:59 INFO ## "Fin de solicitud - Archivo:"=19_0_13:21:59:109
+2024/12/16 13:21:59 INFO Se recibió el archivo:  !BADKEY="{Pid:23 Tid:0 Tamanio:64 Contenido:[0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34 0 0 0 21 0 0 0 34 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5]}"
+2024/12/16 13:21:59 nombreArchivo: 23_0_13:21:59:452
+2024/12/16 13:21:59 INFO NO HAY ESPACIO DISPONIBLE
+2024/12/16 13:21:59 INFO ## "Fin de solicitud - Archivo:"=23_0_13:21:59:452
+2024/12/16 13:22:08 INFO Se recibió el archivo:  !BADKEY="{Pid:16 Tid:0 Tamanio:256 Contenido:[0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34 0 0 0 55 0 0 0 89 0 0 0 144 0 0 0 233 0 0 1 121 0 0 2 98 0 0 3 219 0 0 6 61 0 0 10 24 0 0 16 85 0 0 26 109 0 0 42 194 0 0 69 47 0 0 111 241 0 0 181 32 0 1 37 17 0 1 218 49 0 2 255 66 0 4 217 115 0 7 216 181 0 12 178 40 0 20 138 221 0 33 61 5 0 53 199 226 0 87 4 231 0 140 204 201 0 227 209 176 1 112 158 121 2 84 112 41 3 197 14 162 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]}"
+2024/12/16 13:22:08 nombreArchivo: 16_0_13:22:08:614
+2024/12/16 13:22:08 INFO NO HAY ESPACIO DISPONIBLE
+2024/12/16 13:22:08 INFO ## "Fin de solicitud - Archivo:"=16_0_13:22:08:614
+2024/12/16 13:22:08 INFO Se recibió el archivo:  !BADKEY="{Pid:20 Tid:0 Tamanio:256 Contenido:[0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34 0 0 0 55 0 0 0 89 0 0 0 144 0 0 0 233 0 0 1 121 0 0 2 98 0 0 3 219 0 0 6 61 0 0 10 24 0 0 16 85 0 0 26 109 0 0 42 194 0 0 69 47 0 0 111 241 0 0 181 32 0 1 37 17 0 1 218 49 0 2 255 66 0 4 217 115 0 7 216 181 0 0 0 21 0 0 0 34 0 0 0 55 0 0 0 89 0 0 0 144 0 0 0 233 0 0 1 121 0 0 2 98 0 0 3 219 0 0 6 61 0 0 10 24 0 0 16 85 0 0 26 109 0 0 42 194 0 0 69 47 0 0 111 241 0 0 181 32 0 1 37 17 0 1 218 49 0 2 255 66 0 4 217 115 0 7 216 181 0 12 178 40 0 20 138 221 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34]}"
+2024/12/16 13:22:08 nombreArchivo: 20_0_13:22:08:665
+2024/12/16 13:22:08 INFO NO HAY ESPACIO DISPONIBLE
+2024/12/16 13:22:08 INFO ## "Fin de solicitud - Archivo:"=20_0_13:22:08:665
+2024/12/16 13:22:13 INFO Se recibió el archivo:  !BADKEY="{Pid:24 Tid:0 Tamanio:128 Contenido:[0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34 0 0 0 55 0 0 0 89 0 0 0 144 0 0 0 233 0 0 1 121 0 0 2 98 0 0 3 219 0 0 6 61 0 0 10 24 0 0 16 85 0 0 26 109 0 0 42 194 0 0 69 47 0 0 111 241 0 0 181 32 0 1 37 17 0 1 218 49 0 2 255 66 0 4 217 115 0 7 216 181 0 0 69 47 0 0 111 241]}"
+2024/12/16 13:22:13 nombreArchivo: 24_0_13:22:13:327
+2024/12/16 13:22:13 INFO NO HAY ESPACIO DISPONIBLE
+2024/12/16 13:22:13 INFO ## "Fin de solicitud - Archivo:"=24_0_13:22:13:327
+2024/12/16 13:22:16 INFO Se recibió el archivo:  !BADKEY="{Pid:17 Tid:0 Tamanio:256 Contenido:[0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34 0 0 0 55 0 0 0 89 0 0 0 144 0 0 0 233 0 0 1 121 0 0 2 98 0 0 3 219 0 0 6 61 0 0 10 24 0 0 16 85 0 0 26 109 0 0 42 194 0 0 69 47 0 0 111 241 0 0 181 32 0 1 37 17 0 1 218 49 0 2 255 66 0 4 217 115 0 7 216 181 0 12 178 40 0 20 138 221 0 33 61 5 0 53 199 226 0 87 4 231 0 140 204 201 0 227 209 176 1 112 158 121 2 84 112 41 3 197 14 162 6 25 126 203 9 222 141 109 15 248 12 56 25 214 153 165 41 206 165 221 67 165 63 130 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34]}"
+2024/12/16 13:22:16 nombreArchivo: 17_0_13:22:16:906
+2024/12/16 13:22:16 INFO NO HAY ESPACIO DISPONIBLE
+2024/12/16 13:22:16 INFO ## "Fin de solicitud - Archivo:"=17_0_13:22:16:906
+2024/12/16 13:22:16 INFO Se recibió el archivo:  !BADKEY="{Pid:21 Tid:0 Tamanio:256 Contenido:[0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34 0 0 0 55 0 0 0 89 0 0 0 144 0 0 0 233 0 0 1 121 0 0 2 98 0 0 3 219 0 0 6 61 0 0 10 24 0 0 16 85 0 0 26 109 0 0 42 194 0 0 69 47 0 0 111 241 0 0 181 32 0 1 37 17 0 1 218 49 0 2 255 66 0 4 217 115 0 7 216 181 0 12 178 40 0 20 138 221 0 33 61 5 0 53 199 226 0 87 4 231 0 140 204 201 0 227 209 176 1 112 158 121 2 84 112 41 3 197 14 162 6 25 126 203 9 222 141 109 15 248 12 56 25 214 153 165 41 206 165 221 67 165 63 130 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34]}"
+2024/12/16 13:22:16 nombreArchivo: 21_0_13:22:16:956
+2024/12/16 13:22:16 INFO NO HAY ESPACIO DISPONIBLE
+2024/12/16 13:22:16 INFO ## "Fin de solicitud - Archivo:"=21_0_13:22:16:956
+2024/12/16 13:22:19 INFO Se recibió el archivo:  !BADKEY="{Pid:25 Tid:0 Tamanio:256 Contenido:[0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34 0 0 0 55 0 0 0 89 0 0 0 144 0 0 0 233 0 0 1 121 0 0 2 98 0 0 3 219 0 0 6 61 0 0 10 24 0 0 16 85 0 0 26 109 0 0 42 194 0 0 69 47 0 0 111 241 0 0 181 32 0 1 37 17 0 1 218 49 0 2 255 66 0 4 217 115 0 7 216 181 0 12 178 40 0 20 138 221 0 33 61 5 0 53 199 226 0 87 4 231 0 140 204 201 0 227 209 176 1 112 158 121 2 84 112 41 3 197 14 162 6 25 126 203 9 222 141 109 15 248 12 56 25 214 153 165 41 206 165 221 67 165 63 130 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13]}"
+2024/12/16 13:22:19 nombreArchivo: 25_0_13:22:19:544
+2024/12/16 13:22:19 INFO NO HAY ESPACIO DISPONIBLE
+2024/12/16 13:22:19 INFO ## "Fin de solicitud - Archivo:"=25_0_13:22:19:544
+2024/12/16 13:22:23 INFO Se recibió el archivo:  !BADKEY="{Pid:22 Tid:0 Tamanio:256 Contenido:[0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34 0 0 0 55 0 0 0 89 0 0 0 144 0 0 0 233 0 0 1 121 0 0 2 98 0 0 3 219 0 0 6 61 0 0 10 24 0 0 16 85 0 0 26 109 0 0 42 194 0 0 69 47 0 0 111 241 0 0 181 32 0 1 37 17 0 1 218 49 0 2 255 66 0 4 217 115 0 7 216 181 0 12 178 40 0 20 138 221 0 33 61 5 0 53 199 226 0 87 4 231 0 140 204 201 0 227 209 176 1 112 158 121 2 84 112 41 3 197 14 162 6 25 126 203 9 222 141 109 15 248 12 56 25 214 153 165 41 206 165 221 67 165 63 130 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34]}"
+2024/12/16 13:22:23 nombreArchivo: 22_0_13:22:23:723
+2024/12/16 13:22:23 INFO NO HAY ESPACIO DISPONIBLE
+2024/12/16 13:22:23 INFO ## "Fin de solicitud - Archivo:"=22_0_13:22:23:723
+2024/12/16 13:22:24 INFO Se recibió el archivo:  !BADKEY="{Pid:26 Tid:0 Tamanio:256 Contenido:[0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34 0 0 0 55 0 0 0 89 0 0 0 144 0 0 0 233 0 0 1 121 0 0 2 98 0 0 3 219 0 0 6 61 0 0 10 24 0 0 16 85 0 0 26 109 0 0 42 194 0 0 69 47 0 0 111 241 0 0 181 32 0 1 37 17 0 1 218 49 0 2 255 66 0 4 217 115 0 7 216 181 0 12 178 40 0 20 138 221 0 33 61 5 0 53 199 226 0 87 4 231 0 140 204 201 0 227 209 176 1 112 158 121 2 84 112 41 3 197 14 162 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]}"
+2024/12/16 13:22:24 nombreArchivo: 26_0_13:22:24:671
+2024/12/16 13:22:24 INFO NO HAY ESPACIO DISPONIBLE
+2024/12/16 13:22:24 INFO ## "Fin de solicitud - Archivo:"=26_0_13:22:24:671
+2024/12/16 13:22:26 INFO Se recibió el archivo:  !BADKEY="{Pid:27 Tid:0 Tamanio:256 Contenido:[0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34 0 0 0 55 0 0 0 89 0 0 0 144 0 0 0 233 0 0 1 121 0 0 2 98 0 0 3 219 0 0 6 61 0 0 10 24 0 0 16 85 0 0 26 109 0 0 42 194 0 0 69 47 0 0 111 241 0 0 181 32 0 1 37 17 0 1 218 49 0 2 255 66 0 4 217 115 0 7 216 181 0 12 178 40 0 20 138 221 0 33 61 5 0 53 199 226 0 87 4 231 0 140 204 201 0 227 209 176 1 112 158 121 2 84 112 41 3 197 14 162 6 25 126 203 9 222 141 109 15 248 12 56 25 214 153 165 41 206 165 221 67 165 63 130 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 2 0 0 0 3 0 0 0 5 0 0 0 8 0 0 0 13 0 0 0 21 0 0 0 34 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]}"
+2024/12/16 13:22:26 nombreArchivo: 27_0_13:22:26:847
+2024/12/16 13:22:26 INFO NO HAY ESPACIO DISPONIBLE
+2024/12/16 13:22:26 INFO ## "Fin de solicitud - Archivo:"=27_0_13:22:26:847
+2024/12/16 13:26:18 INFO creando bitmap.dat
+2024/12/16 13:26:18 INFO creando bloques.dat
+2024/12/16 13:26:18 Inicialización del File System completada.
+2024/12/16 13:26:18 El módulo filesystem está a la escucha en el puerto :8003
+2024/12/16 13:29:00 INFO Se recibió el archivo:  !BADKEY="{Pid:20 Tid:0 Tamanio:96 Contenido:[0 0 0 72 0 0 0 69 0 0 0 65 0 0 0 86 0 0 0 89 0 0 0 32 0 0 0 73 0 0 0 83 0 0 0 32 0 0 0 84 0 0 0 72 0 0 0 69 0 0 0 32 0 0 0 67 0 0 0 82 0 0 0 79 0 0 0 87 0 0 0 78 0 0 0 33 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]}"
+2024/12/16 13:29:00 nombreArchivo: 20_0_13:29:00:253
+2024/12/16 13:29:00 INFO ## "Bloque INDICE asignado:"=0 Archivo:=20_0_13:29:00:253 "Bloques Libres:"=1023
+2024/12/16 13:29:00 INFO ## "Bloque DATOS asignado:"=1 Archivo:=20_0_13:29:00:253 "Bloques Libres:"=1022
+2024/12/16 13:29:00 INFO ## "Bloque DATOS asignado:"=2 Archivo:=20_0_13:29:00:253 "Bloques Libres:"=1021
+2024/12/16 13:29:00 INFO ## "Acceso Bloque - Archivo:"=20_0_13:29:00:253 "Tipo Bloque:"=INDICE "Bloque File System:"=0
+2024/12/16 13:29:00 INFO ## "Acceso Bloque - Archivo:"=20_0_13:29:00:253 "Tipo Bloque:"=DATO "Bloque File System:"=1
+2024/12/16 13:29:00 INFO ## "Acceso Bloque - Archivo:"=20_0_13:29:00:253 "Tipo Bloque:"=DATO "Bloque File System:"=2
+2024/12/16 13:29:00 INFO ## "Fin de solicitud - Archivo:"=20_0_13:29:00:253
+2024/12/16 13:29:13 INFO Se recibió el archivo:  !BADKEY="{Pid:45 Tid:0 Tamanio:96 Contenido:[0 0 0 72 0 0 0 69 0 0 0 65 0 0 0 86 0 0 0 89 0 0 0 32 0 0 0 73 0 0 0 83 0 0 0 32 0 0 0 84 0 0 0 72 0 0 0 69 0 0 0 32 0 0 0 67 0 0 0 82 0 0 0 79 0 0 0 87 0 0 0 78 0 0 0 33 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]}"
+2024/12/16 13:29:13 nombreArchivo: 45_0_13:29:13:529
+2024/12/16 13:29:13 INFO ## "Bloque INDICE asignado:"=3 Archivo:=45_0_13:29:13:529 "Bloques Libres:"=1020
+2024/12/16 13:29:13 INFO ## "Bloque DATOS asignado:"=4 Archivo:=45_0_13:29:13:529 "Bloques Libres:"=1019
+2024/12/16 13:29:13 INFO ## "Bloque DATOS asignado:"=5 Archivo:=45_0_13:29:13:529 "Bloques Libres:"=1018
+2024/12/16 13:29:13 INFO ## "Acceso Bloque - Archivo:"=45_0_13:29:13:529 "Tipo Bloque:"=INDICE "Bloque File System:"=3
+2024/12/16 13:29:13 INFO ## "Acceso Bloque - Archivo:"=45_0_13:29:13:529 "Tipo Bloque:"=DATO "Bloque File System:"=4
+2024/12/16 13:29:13 INFO ## "Acceso Bloque - Archivo:"=45_0_13:29:13:529 "Tipo Bloque:"=DATO "Bloque File System:"=5
+2024/12/16 13:29:13 INFO ## "Fin de solicitud - Archivo:"=45_0_13:29:13:529
+2024/12/16 13:29:26 INFO Se recibió el archivo:  !BADKEY="{Pid:72 Tid:0 Tamanio:96 Contenido:[0 0 0 72 0 0 0 69 0 0 0 65 0 0 0 86 0 0 0 89 0 0 0 32 0 0 0 73 0 0 0 83 0 0 0 32 0 0 0 84 0 0 0 72 0 0 0 69 0 0 0 32 0 0 0 67 0 0 0 82 0 0 0 79 0 0 0 87 0 0 0 78 0 0 0 33 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]}"
+2024/12/16 13:29:26 nombreArchivo: 72_0_13:29:26:146
+2024/12/16 13:29:26 INFO ## "Bloque INDICE asignado:"=6 Archivo:=72_0_13:29:26:146 "Bloques Libres:"=1017
+2024/12/16 13:29:26 INFO ## "Bloque DATOS asignado:"=7 Archivo:=72_0_13:29:26:146 "Bloques Libres:"=1016
+2024/12/16 13:29:26 INFO ## "Bloque DATOS asignado:"=8 Archivo:=72_0_13:29:26:146 "Bloques Libres:"=1015
+2024/12/16 13:29:26 INFO ## "Acceso Bloque - Archivo:"=72_0_13:29:26:146 "Tipo Bloque:"=INDICE "Bloque File System:"=6
+2024/12/16 13:29:26 INFO ## "Acceso Bloque - Archivo:"=72_0_13:29:26:146 "Tipo Bloque:"=DATO "Bloque File System:"=7
+2024/12/16 13:29:26 INFO ## "Acceso Bloque - Archivo:"=72_0_13:29:26:146 "Tipo Bloque:"=DATO "Bloque File System:"=8
+2024/12/16 13:29:26 INFO ## "Fin de solicitud - Archivo:"=72_0_13:29:26:146
