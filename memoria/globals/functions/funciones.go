@@ -66,7 +66,7 @@ func ObtenerInstruccion(pid int, tid int, pc int) (requests.ResponseObtenerInstr
 }
 
 func ObtenerTamanioMemoria(pid int) int {
-	return globals.MemoriaSistema.TablaProcesos[pid].Limite - globals.MemoriaSistema.TablaProcesos[pid].Base + 1
+	return globals.MemoriaSistema.TablaProcesos[pid].Limite - globals.MemoriaSistema.TablaProcesos[pid].Base
 }
 
 func LeerMemoria(direccion int, pid int) ([]byte, error) {
