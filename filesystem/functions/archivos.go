@@ -103,7 +103,7 @@ func crearMetadata(nombreArchivo string, pos int, tamanio int) {
 	// escribe en texto el index_block y el tamaño del archivo
 	_, err = archivo.WriteString("index_block:" + strconv.Itoa(pos) + "\n" + "size:" + strconv.Itoa(tamanio))
 
-	//slog.Info("##", "Archivo Creado:", nombreArchivo, "Tamaño:", tamanio)
+	slog.Info("##", "Archivo Creado:", nombreArchivo, "Tamaño:", tamanio)
 }
 
 func CrearArchivoBloques(pathBloques string, tamanio int) {

@@ -28,7 +28,7 @@ func HandleProcessCreate(w http.ResponseWriter, r *http.Request) {
 
 	statusCode := processes.CrearProceso(req.Pseudocodigo, req.TamanioMemoria, req.Prioridad)
 
-	log.Println("Respuesta de la creación de proceso: ", statusCode)
+	//log.Println("Respuesta de la creación de proceso: ", statusCode)
 
 	w.WriteHeader(statusCode)
 }
@@ -233,7 +233,7 @@ func HandleDesalojoCpu(w http.ResponseWriter, r *http.Request) {
 
 		log.Printf("## (PID:TID) - (%d:%d) - Hilo recibido de CPU - Razon: %s", req.Pid, req.Tid, req.Razon)
 	} else {
-		if req.Razon == "SYSCALL" || req.Razon == "INTERRUPCION" || (req.Razon == "MEMORY_DUMP" && !queues.ConsultaExit(req.Pid, req.Tid)) {
+		if req.Razon == "SYSCALL" || req.Razon == "INTERRUPCION" || (req.Razon == "MEMORY_DUMP" && !queues.ConsultaExit(req.Pid, req.Tid) || req.Razon == "END_OF_QUANTUM") {
 			globals.Estructura.MtxReady.Lock()
 			if !queues.ConsultaBloqueado(req.Pid, req.Tid) {
 				tcb := threads.BuscarHiloEnPCB(req.Pid, req.Tid)

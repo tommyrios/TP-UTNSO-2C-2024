@@ -3,7 +3,6 @@ package functions
 import (
 	"encoding/binary"
 	"encoding/hex"
-	"fmt"
 	"github.com/sisoputnfrba/tp-golang/filesystem/globals"
 	"log"
 	"log/slog"
@@ -112,12 +111,10 @@ func VerContenidoBitmapHexa() {
 	}
 
 	// Imprimir el contenido en formato hexadecimal
-	fmt.Printf("Contenido de bitmap.dat:\n%s\n", strings.TrimSpace(formattedHex.String()))
-
+	//fmt.Printf("Contenido de bitmap.dat:\n%s\n", strings.TrimSpace(formattedHex.String()))
 }
 
 func escribirEnBloqueIndice(path *os.File, posicionBloqueIndice int, bloquesAsignados []int, nombreArchivo string) {
-	// [0] [1,2,3]
 	offset := int64(posicionBloqueIndice * globals.FSConfig.BlockSize)
 
 	_, errOffset := path.Seek(offset, 0)
@@ -142,7 +139,7 @@ func escribirEnBloqueIndice(path *os.File, posicionBloqueIndice int, bloquesAsig
 		return
 	}
 
-	slog.Info("##", "Acceso Bloque - Archivo:", nombreArchivo, "Tipo Bloque:", "INDICE", "Bloque File System:", posicionBloqueIndice)
+	slog.Info("##", "Acceso Bloque - Archivo: ", nombreArchivo, "Tipo Bloque: ", "INDICE", "Bloque File System: ", posicionBloqueIndice)
 
 	// hay que esperar el tiempo delayBlock en milisegundos ante cada acceso
 	time.Sleep(time.Duration(globals.FSConfig.BlockAccessDelay) * time.Millisecond)
@@ -150,15 +147,11 @@ func escribirEnBloqueIndice(path *os.File, posicionBloqueIndice int, bloquesAsig
 }
 
 func escribirEnBloquesDatos(path *os.File, contenido []byte, bloquesAsignados []int, nombreArchivo string) {
-
 	// divide el contenido en subarrays del tamaño  block_size
-	//4 bytes
-	//[12,23,64,25,84,35]
-	//[[12,23,64,25], [84,35]]
 	contenidoSubArrays := DividirContenido(contenido)
+
 	i := 0
-	// [4,5]
-	// [ [0,1,2,3,4,5,6,7] , [8,9,10,11,12,13,14,15] , [16,17,18,19,20,21] ]
+
 	for _, bloque := range bloquesAsignados {
 
 		offset := int64(bloque * globals.FSConfig.BlockSize)
@@ -177,24 +170,9 @@ func escribirEnBloquesDatos(path *os.File, contenido []byte, bloquesAsignados []
 		slog.Info("##", "Acceso Bloque - Archivo:", nombreArchivo, "Tipo Bloque:", "DATO", "Bloque File System:", bloque)
 		time.Sleep(time.Duration(globals.FSConfig.BlockAccessDelay) * time.Millisecond)
 	}
-
 }
+
 func DividirContenido(contenido []byte) [][]byte {
-	/*
-		tamañoBloque = 8
-		i = 0
-		contenido = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21] bytes
-		append(arrayDeSubArrays, contenido[0:8]) // devuelve desde la posicion 0 hasta la 7 ya que el 8 no lo incluye
-		arrayDeSubArrays = [[0,1,2,3,4,5,6,7]]
-		i = 8
-		append(arrayDeSubArrays, contenido[8:16])
-		arrayDeSubArrays = [[0,1,2,3,4,5,6,7], [8,9,10,11,12,13,14,15]]
-		i = 16
-		16+8 < 21? NO -> else -> rrayDeSubArrays = append(arrayDeSubArrays, contenido[i:])
-		append(arrayDeSubArrays, contenido[16:] // toma a partir de la posicion 16 hasta el final
-		arrayDeSubArrays = [[0,1,2,3,4,5,6,7], [8,9,10,11,12,13,14,15], [16,17,18,19,20,21]]
-		arrayDeSubArrays tamaño = [ [8] [8] [6] ]
-	*/
 	arrayDeSubArrays := make([][]byte, 0)
 	for i := 0; i < len(contenido); i += globals.FSConfig.BlockSize {
 		if i+globals.FSConfig.BlockSize < len(contenido) {

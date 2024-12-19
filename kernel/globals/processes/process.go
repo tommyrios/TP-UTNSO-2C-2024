@@ -47,7 +47,7 @@ func CrearProceso(pseudocodigo string, tamanioMemoria int, prioridad int) int {
 			return http.StatusBadRequest
 		}
 	} else {
-		log.Println("Cola NEW no está vacía, proceso se encola en NEW.")
+		log.Printf("Cola NEW no está vacía, proceso %d se encola en NEW.", pcb.Pid)
 
 		queues.AgregarProcesoACola(pcb, &globals.Estructura.ColaNew)
 

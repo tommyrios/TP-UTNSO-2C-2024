@@ -71,14 +71,14 @@ func ManejarHiloRunning() {
 		} else {
 			globals.Estructura.ColaReady = []*commons.TCB{}
 		}
-		PrintColaReady()
+		//PrintColas() // Descomentar para ver el estado de las colas
 		mu.Unlock()
 
 		ExecuteThread(hiloAEjecutar.Pid, hiloAEjecutar.Tid)
 	}
 }
 
-func PrintColaReady() {
+func PrintColas() {
 	fmt.Println("Estado actual de ColaReady:")
 	if len(globals.Estructura.ColaReady) != 0 {
 		for _, hilo := range globals.Estructura.ColaReady {

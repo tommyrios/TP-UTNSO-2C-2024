@@ -22,6 +22,7 @@ func AsignarParticion(pid int, tamanioProceso int) error {
 
 	if globals.MConfig.Scheme == "FIJAS" {
 		globals.MemoriaSistema.TablaProcesos[pid] = &globals.ContextoProceso{Base: particion.Base, Limite: particion.Limite}
+		printParticiones() // DEBUG
 	}
 
 	if globals.MConfig.Scheme == "DINAMICAS" {
@@ -35,7 +36,6 @@ func AsignarParticion(pid int, tamanioProceso int) error {
 			}
 			particion.Limite = particion.Base + tamanioProceso - 1
 			globals.MemoriaUsuario.Particiones = append(globals.MemoriaUsuario.Particiones[:indice+1], append([]*globals.Particion{&nuevaParticion}, globals.MemoriaUsuario.Particiones[indice+1:]...)...)
-			log.Println(functions.EspacioLibreTotal())
 		}
 		globals.MemoriaSistema.TablaProcesos[pid] = &globals.ContextoProceso{Base: particion.Base, Limite: particion.Limite}
 	}
@@ -59,13 +59,11 @@ func buscarIndiceParticion(tamanioProceso int) (int, error) {
 				if espacioLibre < mejorValor {
 					mejorValor = espacioLibre
 					mejorIndice = i
-					return mejorIndice, nil
 				}
 			case "WORST":
 				if espacioLibre > peorValor {
 					peorValor = espacioLibre
 					mejorIndice = i
-					return mejorIndice, nil
 				}
 			}
 		}
@@ -139,4 +137,10 @@ func compactarMemoria() {
 	globals.MemoriaUsuario.Particiones = nuevasParticiones
 
 	log.Println("Compactacion finalizada.")
+}
+
+func printParticiones() {
+	for _, particion := range globals.MemoriaUsuario.Particiones {
+		log.Printf("Particion - Base: %d, Limite: %d, Libre: %t, Pid: %d\n", particion.Base, particion.Limite, particion.Libre, particion.Pid)
+	}
 }

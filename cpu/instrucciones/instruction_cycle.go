@@ -182,7 +182,7 @@ func checkQuantum(pid int, tid int, scheduler string, quantum int, tiempo int) b
 	if scheduler == "CMN" {
 		if tiempo > quantum {
 			log.Printf("END OF QUANTUM - (PID:TID) - (%d:%d)", pid, tid)
-			globals.DevolverPCB(pid, tid, "INTERRUPCION")
+			globals.DevolverPCB(pid, tid, "END_OF_QUANTUM")
 			return true
 		}
 	}
