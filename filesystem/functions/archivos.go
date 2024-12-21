@@ -68,7 +68,7 @@ func CrearArchivo(pid uint32, tid uint32, timestamp string, tamanio int, conteni
 		return 1
 	} else {
 		//ERROR
-		slog.Info("NO HAY ESPACIO DISPONIBLE")
+		slog.Info("## No hay espacio disponible")
 		slog.Info("##", "Fin de solicitud - Archivo:", nombreArchivo)
 		return 0
 	}

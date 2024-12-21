@@ -178,13 +178,13 @@ func HandleMutexUnlock(w http.ResponseWriter, r *http.Request) {
 func HandleDumpMemory(w http.ResponseWriter, r *http.Request) {
 	var req request.RequestDumpMemory
 
-	slog.Info(fmt.Sprintf("## (%d:%d) - Solicitó syscall: DUMP_MEMORY", req.Pid, req.Tid))
-
 	err := commons.DecodificarJSON(r.Body, &req)
 	if err != nil {
 		http.Error(w, "Error al decodificar el JSON", http.StatusBadRequest)
 		return
 	}
+
+	slog.Info(fmt.Sprintf("## (%d:%d) - Solicitó syscall: DUMP_MEMORY", req.Pid, req.Tid))
 
 	tcb := threads.BuscarHiloEnPCB(req.Pid, req.Tid)
 	if tcb == nil {
