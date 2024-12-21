@@ -37,7 +37,7 @@ func ManejarColaReadyPriority() {
 			})
 			if globals.Estructura.HiloExecute != nil {
 				if globals.Estructura.ColaReady[0].Prioridad < globals.Estructura.HiloExecute.Prioridad {
-					handlers.Interrupt("INTERRUPCION", globals.Estructura.HiloExecute.Pid, globals.Estructura.HiloExecute.Tid)
+					threads.Interrupt("INTERRUPCION", globals.Estructura.HiloExecute.Pid, globals.Estructura.HiloExecute.Tid)
 				}
 			} else {
 				globals.Estructura.HiloExecute = globals.Estructura.ColaReady[0]

@@ -40,6 +40,7 @@ func CrearProceso(pseudocodigo string, tamanioMemoria int, prioridad int) int {
 		if respuestaMemoria.StatusCode == http.StatusOK {
 
 			threads.CrearHilo(pcb.Pid, prioridad, pseudocodigo)
+
 		} else {
 			slog.Debug(fmt.Sprintf("Memoria no tiene suficiente espacio. Proceso en espera."))
 

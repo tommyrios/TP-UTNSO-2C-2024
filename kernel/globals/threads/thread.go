@@ -45,6 +45,7 @@ func CrearHilo(pid int, prioridad int, pseudocodigo string) {
 	}
 
 	queues.AgregarHiloACola(&tcb, &globals.Estructura.ColaReady)
+
 	slog.Info(fmt.Sprintf("## (%d:%d) Se crea el Hilo - Estado: READY", pcb.Pid, tcb.Tid))
 }
 
@@ -116,4 +117,15 @@ func BloquearHilo(tcb *commons.TCB) {
 	globals.Estructura.HiloExecute = nil
 
 	queues.AgregarHiloACola(tcb, &globals.Estructura.ColaBloqueados)
+}
+
+func Interrupt(interruption string, pid int, tid int) *http.Response {
+	interrupcion := request.RequestInterrupcion{Pid: pid, Tid: tid, Razon: interruption}
+	requestBody, err := commons.CodificarJSON(interrupcion)
+	if err != nil {
+		slog.Debug(fmt.Sprintf("Error al codificar el JSON en Interrupt"))
+		return nil
+	}
+
+	return cliente.Post(globals.KConfig.IpCpu, globals.KConfig.PortCpu, "interrupt", requestBody)
 }

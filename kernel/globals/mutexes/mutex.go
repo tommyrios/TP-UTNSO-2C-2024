@@ -34,7 +34,7 @@ func BloquearMutex(nombre string, pid int, tid int) {
 				return
 			} else {
 				pcb.Mutex[i].HilosBloqueados = append(pcb.Mutex[i].HilosBloqueados, tcb)
-				slog.Info(fmt.Sprintf("## (<%d>:<%d>) - Bloqueado por: MUTEX", pid, tid))
+				slog.Info(fmt.Sprintf("## (%d:%d) - Bloqueado por: MUTEX", pid, tid))
 				threads.BloquearHilo(tcb)
 				return
 			}

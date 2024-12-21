@@ -90,7 +90,7 @@ func HandleThreadJoin(w http.ResponseWriter, r *http.Request) {
 
 	tcbParametro.TcbADesbloquear = append(tcbParametro.TcbADesbloquear, tcbExecute)
 
-	slog.Debug(fmt.Sprintf("## (<%d>:<%d>) - Bloqueado por: THREAD_JOIN", tcbExecute.Pid, tcbExecute.Tid))
+	slog.Info(fmt.Sprintf("## (%d:%d) - Bloqueado por: THREAD_JOIN", tcbExecute.Pid, tcbExecute.Tid))
 
 	w.WriteHeader(http.StatusOK)
 }
@@ -331,17 +331,6 @@ func Dispatch(pid int, tid int) (*http.Response, error) {
 	}
 
 	return cliente.Post(globals.KConfig.IpCpu, globals.KConfig.PortCpu, "dispatch", requestBody), err
-}
-
-func Interrupt(interruption string, pid int, tid int) *http.Response {
-	interrupcion := request.RequestInterrupcion{Pid: pid, Tid: tid, Razon: interruption}
-	requestBody, err := commons.CodificarJSON(interrupcion)
-	if err != nil {
-		slog.Debug(fmt.Sprintf("Error al codificar el JSON en Interrupt"))
-		return nil
-	}
-
-	return cliente.Post(globals.KConfig.IpCpu, globals.KConfig.PortCpu, "interrupt", requestBody)
 }
 
 func PausarPlanificacion() {

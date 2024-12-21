@@ -64,6 +64,7 @@ func EjecutarInstruccion(pid int, tid int, quantum int, scheduler string) error 
 		if checkQuantum(pid, tid, scheduler, quantum, tiempo) {
 			break
 		}
+
 	}
 
 	if ultimaInstruccion == "THREAD_EXIT" || ultimaInstruccion == "PROCESS_EXIT" {
@@ -182,7 +183,7 @@ func Execute(instruccion globals.InstruccionStruct, registros *commons.Registros
 func checkQuantum(pid int, tid int, scheduler string, quantum int, tiempo int) bool {
 	if scheduler == "CMN" {
 		if tiempo > quantum {
-			slog.Debug(fmt.Sprintf("END OF QUANTUM - (PID:TID) - (%d:%d)", pid, tid))
+			slog.Info(fmt.Sprintf("## Llega interrupcion al puerto Interrupt"))
 			globals.DevolverPCB(pid, tid, "END_OF_QUANTUM")
 			return true
 		}
