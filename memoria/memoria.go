@@ -26,7 +26,7 @@ func main() {
 	}
 
 	//// Logger ////
-	configs.ConfigurarLogger("memoria")
+	configs.ConfigurarLogger("memoria", globals.MConfig.LogLevel)
 
 	//// Inicialización ////
 	globals.InicializarMemoriaUsuario()

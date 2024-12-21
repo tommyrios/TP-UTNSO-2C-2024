@@ -6,5 +6,5 @@
   "block_size": 64,
   "block_count": 1024,
   "block_access_delay": 100,
-  "log_level": "DEBUG"
+  "log_level": "INFO"
 }

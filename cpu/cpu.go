@@ -27,7 +27,7 @@ func main() {
 	}
 
 	//// Logger ////
-	configs.ConfigurarLogger("cpu")
+	configs.ConfigurarLogger("cpu", globals.CConfig.LogLevel)
 
 	//// Conexiones ////
 	mux := http.NewServeMux()

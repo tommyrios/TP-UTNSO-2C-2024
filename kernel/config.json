@@ -6,5 +6,5 @@
   "port_cpu": 8004,
   "scheduler_algorithm": "FIFO",
   "quantum": 875,
-  "log_level": "DEBUG"
+  "log_level": "INFO"
 }

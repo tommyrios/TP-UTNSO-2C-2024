@@ -30,7 +30,7 @@ func main() {
 	}
 
 	//// Logger ////
-	configs.ConfigurarLogger("filesystem")
+	configs.ConfigurarLogger("filesystem", globals.FSConfig.LogLevel)
 
 	//// Inicialización ////
 

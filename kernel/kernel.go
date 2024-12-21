@@ -29,7 +29,7 @@ func main() {
 	}
 
 	//// Logger ////
-	configs.ConfigurarLogger("kernel")
+	configs.ConfigurarLogger("kernel", globals.KConfig.LogLevel)
 
 	//// Cola Ready ////
 	schedulers.ManejarColaReady()

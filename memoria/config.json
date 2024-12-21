@@ -11,6 +11,6 @@
   "port_filesystem": 8003,
   "scheme": "FIJAS",
   "search_algorithm": "FIRST",
-  "log_level": "TRACE",
+  "log_level": "INFO",
   "partitions": [32,32,32,32,32,32,32,32]
 }
