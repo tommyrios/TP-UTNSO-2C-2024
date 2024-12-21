@@ -40,7 +40,7 @@ func Jnz(operandos []string, registros *commons.Registros) {
 }
 
 func Log(operandos []string, registros *commons.Registros) {
-	slog.Debug(fmt.Sprintf("## Valor del registro %s: %d\n", operandos[0], globals.ValorRegistros(operandos[0], registros)))
+	slog.Info(fmt.Sprintf("## Valor del registro %s: %d\n", operandos[0], globals.ValorRegistros(operandos[0], registros)))
 }
 
 func ReadMem(operandos []string, registros *commons.Registros, base int, limite int, pid int, tid int) int {
