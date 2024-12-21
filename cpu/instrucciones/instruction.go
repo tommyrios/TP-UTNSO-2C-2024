@@ -2,11 +2,12 @@ package instrucciones
 
 import (
 	"encoding/binary"
+	"fmt"
 	"github.com/sisoputnfrba/tp-golang/cpu/globals"
 	"github.com/sisoputnfrba/tp-golang/cpu/globals/requests"
 	"github.com/sisoputnfrba/tp-golang/utils/cliente"
 	"github.com/sisoputnfrba/tp-golang/utils/commons"
-	"log"
+	"log/slog"
 	"strconv"
 )
 
@@ -39,17 +40,17 @@ func Jnz(operandos []string, registros *commons.Registros) {
 }
 
 func Log(operandos []string, registros *commons.Registros) {
-	log.Printf("## Valor del registro %s: %d\n", operandos[0], globals.ValorRegistros(operandos[0], registros))
+	slog.Debug(fmt.Sprintf("## Valor del registro %s: %d\n", operandos[0], globals.ValorRegistros(operandos[0], registros)))
 }
 
 func ReadMem(operandos []string, registros *commons.Registros, base int, limite int, pid int, tid int) int {
 	registroDireccion := globals.ValorRegistros(operandos[1], registros)
 
-	log.Println("## Registro Direccion: ", registroDireccion)
+	slog.Debug(fmt.Sprintf("## Registro Direccion: ", registroDireccion))
 
 	direccionFísica, err := globals.Mmu(int(registroDireccion), base, limite)
 
-	log.Println("## Direccion Fisica: ", direccionFísica)
+	slog.Debug(fmt.Sprintf("## Direccion Fisica: ", direccionFísica))
 
 	if err == 1 {
 		globals.DevolverPCB(pid, tid, "SEGMENTATION FAULT")
@@ -71,7 +72,7 @@ func ReadMem(operandos []string, registros *commons.Registros, base int, limite 
 		globals.CambiarValorRegistros(operandos[0], nuevoValor, registros)
 	}
 
-	log.Printf("## PID: %d TID: %d - Acción: LEER - Dirección Física: %d.", pid, tid, direccionFísica)
+	slog.Info(fmt.Sprintf("## PID: %d TID: %d - Acción: LEER - Dirección Física: %d.", pid, tid, direccionFísica))
 
 	return 0
 }
@@ -99,9 +100,9 @@ func WriteMem(operandos []string, registros *commons.Registros, base int, limite
 
 	defer response.Body.Close()
 
-	log.Printf("Respuesta de memoria a escribir memoria: %s\n", string(mensaje))
+	slog.Info(fmt.Sprintf("## PID: %d -TID: %d - Acción: ESCRIBIR - Dirección Física: %d.", pid, tid, direccionFísica))
 
-	log.Printf("## PID: %d -TID: %d - Acción: ESCRIBIR - Dirección Física: %d.", pid, tid, direccionFísica)
+	slog.Debug(fmt.Sprintf("Respuesta de memoria a escribir memoria: %s\n", string(mensaje)))
 
 	return 0
 }
@@ -234,5 +235,5 @@ func EnviarRegistrosActualizados(registros *commons.Registros, pid int, tid int)
 
 	cliente.Post(globals.CConfig.IpMemory, globals.CConfig.PortMemory, "actualizar_contexto", reqCodificada)
 
-	log.Printf("## PID: %d TID: %d - Actualizo Contexto Ejecución.", pid, tid)
+	slog.Info(fmt.Sprintf("## PID: %d TID: %d - Actualizo Contexto Ejecución.", pid, tid))
 }

@@ -14,20 +14,20 @@ func IniciarFS(ruta string) error {
 
 	// BITMAP
 	if !functions.ExisteArchivo(ruta + "/bitmap.dat") {
-		slog.Info("creando bitmap.dat")
+		slog.Debug("Creando bitmap.dat")
 		functions.CrearArchivoBitmap(ruta+"/bitmap.dat", globals.FSConfig.BlockCount)
 	} else {
-		slog.Info("bitmap.dat ya creado")
-		slog.Info("cargando bitmap.dat")
+		slog.Debug("bitmap.dat ya creado")
+		slog.Debug("cargando bitmap.dat")
 		functions.CargarBitmap(ruta+"/bitmap.dat", globals.FSConfig.BlockCount)
 	}
 
 	// BLOQUES
 	if !functions.ExisteArchivo(ruta + "/bloques.dat") {
-		slog.Info("creando bloques.dat")
+		slog.Debug("creando bloques.dat")
 		functions.CrearArchivoBloques(ruta+"/bloques.dat", globals.FSConfig.BlockCount*globals.FSConfig.BlockSize)
 	} else {
-		slog.Info("bloques.dat ya creado")
+		slog.Debug("bloques.dat ya creado")
 	}
 
 	return nil

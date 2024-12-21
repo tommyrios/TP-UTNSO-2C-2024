@@ -5,7 +5,7 @@ import (
 	"github.com/sisoputnfrba/tp-golang/memoria/globals"
 	"github.com/sisoputnfrba/tp-golang/memoria/handlers"
 	configs "github.com/sisoputnfrba/tp-golang/utils/config"
-	"log"
+	"log/slog"
 	"net/http"
 	"os"
 	"path/filepath"
@@ -22,7 +22,7 @@ func main() {
 	globals.MConfig = configs.IniciarConfiguracion(filepath.Join(path, "config.json"), &globals.Config{}).(*globals.Config)
 
 	if globals.MConfig == nil {
-		log.Fatalln("Error al cargar la configuración")
+		slog.Debug(fmt.Sprintf("Error al cargar la configuración"))
 	}
 
 	//// Logger ////
@@ -47,7 +47,7 @@ func main() {
 
 	port := fmt.Sprintf(":%d", globals.MConfig.Port)
 
-	log.Printf("El módulo memoria está a la escucha en el puerto %s", port)
+	slog.Info(fmt.Sprintf("El módulo memoria está a la escucha en el puerto %s", port))
 
 	err = http.ListenAndServe(port, mux)
 	if err != nil {

@@ -6,7 +6,7 @@ import (
 	"github.com/sisoputnfrba/tp-golang/kernel/globals/threads"
 	"github.com/sisoputnfrba/tp-golang/kernel/handlers"
 	"github.com/sisoputnfrba/tp-golang/utils/commons"
-	"log"
+	"log/slog"
 	"sort"
 )
 
@@ -117,7 +117,7 @@ func PrintColas() {
 
 func ExecuteThread(pid int, tid int) {
 	if _, err := handlers.Dispatch(pid, tid); err != nil {
-		log.Printf("Error al enviar el PID y TID %d al CPU.", pid)
+		slog.Debug(fmt.Sprintf("Error al enviar el PID y TID %d al CPU.", pid))
 		threads.FinalizarHilo(pid, tid)
 	}
 }

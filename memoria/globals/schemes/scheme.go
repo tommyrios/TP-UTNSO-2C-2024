@@ -2,10 +2,12 @@ package schemes
 
 import (
 	"errors"
+	"fmt"
 	_ "github.com/sisoputnfrba/tp-golang/kernel/globals"
 	"github.com/sisoputnfrba/tp-golang/memoria/globals"
 	"github.com/sisoputnfrba/tp-golang/memoria/globals/functions"
 	"log"
+	"log/slog"
 	"math"
 )
 
@@ -38,7 +40,7 @@ func AsignarParticion(pid int, tamanioProceso int) error {
 			globals.MemoriaUsuario.Particiones = append(globals.MemoriaUsuario.Particiones[:indice+1], append([]*globals.Particion{&nuevaParticion}, globals.MemoriaUsuario.Particiones[indice+1:]...)...)
 		}
 		globals.MemoriaSistema.TablaProcesos[pid] = &globals.ContextoProceso{Base: particion.Base, Limite: particion.Limite}
-		// printParticiones // DEBUG	
+		// printParticiones // DEBUG
 	}
 
 	return nil
@@ -137,7 +139,7 @@ func compactarMemoria() {
 
 	globals.MemoriaUsuario.Particiones = nuevasParticiones
 
-	log.Println("Compactacion finalizada.")
+	slog.Debug(fmt.Sprintf("Compactacion finalizada."))
 }
 
 func printParticiones() {

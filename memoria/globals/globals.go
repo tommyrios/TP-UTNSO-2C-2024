@@ -4,7 +4,7 @@ import (
 	"errors"
 	"fmt"
 	"github.com/sisoputnfrba/tp-golang/utils/commons"
-	"log"
+	"log/slog"
 	"sync"
 )
 
@@ -108,5 +108,5 @@ func InicializarMemoria() {
 		MemoriaUsuario.Particiones = append(MemoriaUsuario.Particiones, &nuevaParticion)
 	}
 
-	log.Println("Memoria inicializada con éxito.")
+	slog.Debug(fmt.Sprintf("Memoria inicializada con éxito."))
 }

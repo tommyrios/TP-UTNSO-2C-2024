@@ -8,7 +8,7 @@ import (
 	"github.com/sisoputnfrba/tp-golang/memoria/handlers/requests"
 	"github.com/sisoputnfrba/tp-golang/utils/cliente"
 	"github.com/sisoputnfrba/tp-golang/utils/commons"
-	"log"
+	"log/slog"
 	"net/http"
 	"time"
 )
@@ -51,7 +51,7 @@ func HandleDevolverContexto(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		return
 	}
-	log.Printf("## Contexto solicitado - (PID:TID) - (%d:%d)\n", request.Pid, request.Tid)
+	slog.Info(fmt.Sprintf("## Contexto solicitado - (PID:TID) - (%d:%d)\n", request.Pid, request.Tid))
 
 }
 
@@ -71,7 +71,7 @@ func HandleActualizarContexto(w http.ResponseWriter, r *http.Request) {
 
 	if err != nil {
 		http.Error(w, "Error actualizando los registros", http.StatusInternalServerError)
-		log.Printf("Error al actualizar los registros - (PID:TID) - (%d:%d)\n", request.Pid, request.Tid)
+		slog.Debug(fmt.Sprintf("Error al actualizar los registros - (PID:TID) - (%d:%d)\n", request.Pid, request.Tid))
 		return
 	}
 
@@ -81,7 +81,7 @@ func HandleActualizarContexto(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		return
 	}
-	log.Printf("## Contexto actualizado - (PID:TID) - (%d:%d)\n", request.Pid, request.Tid)
+	slog.Info(fmt.Sprintf("## Contexto actualizado - (PID:TID) - (%d:%d)\n", request.Pid, request.Tid))
 }
 
 func HandleEnviarInstruccion(w http.ResponseWriter, r *http.Request) {
@@ -100,7 +100,7 @@ func HandleEnviarInstruccion(w http.ResponseWriter, r *http.Request) {
 
 	if err != nil {
 		http.Error(w, fmt.Sprintf("Error al obtener la instrucción: %s", err.Error()), http.StatusInternalServerError)
-		log.Printf("Error al obtener la instrucción - (PID:TID) - (%d:%d)\n", request.Pid, request.Tid)
+		slog.Debug(fmt.Sprintf("Error al obtener la instrucción - (PID:TID) - (%d:%d)\n", request.Pid, request.Tid))
 		return
 	}
 
@@ -109,7 +109,7 @@ func HandleEnviarInstruccion(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		return
 	}
-	log.Printf("## Obtener instrucción - (PID:TID) - (%d:%d) - Instrucción: %s\n", request.Pid, request.Tid, instruccion)
+	slog.Info(fmt.Sprintf("## Obtener instrucción - (PID:TID) - (%d:%d) - Instrucción: %s\n", request.Pid, request.Tid, instruccion))
 }
 
 func HandleReadMemory(w http.ResponseWriter, r *http.Request) {
@@ -128,7 +128,7 @@ func HandleReadMemory(w http.ResponseWriter, r *http.Request) {
 
 	if err != nil {
 		http.Error(w, fmt.Sprintf("Error al leer la memoria: %s", err.Error()), http.StatusInternalServerError)
-		log.Printf("Error al leer la memoria - (PID:TID) - (%d:%d)\n", request.Pid, request.Tid)
+		slog.Debug(fmt.Sprintf("Error al leer la memoria - (PID:TID) - (%d:%d)\n", request.Pid, request.Tid))
 		w.WriteHeader(http.StatusInternalServerError)
 		return
 	}
@@ -138,7 +138,7 @@ func HandleReadMemory(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		return
 	}
-	log.Printf("## Lectura - (PID:TID) - (%d:%d) - Dir. Física: %d", request.Pid, request.Tid, request.Direccion)
+	slog.Info(fmt.Sprintf("## Lectura - (PID:TID) - (%d:%d) - Dir. Física: %d", request.Pid, request.Tid, request.Direccion))
 }
 
 func HandleWriteMemory(w http.ResponseWriter, r *http.Request) {
@@ -150,7 +150,7 @@ func HandleWriteMemory(w http.ResponseWriter, r *http.Request) {
 
 	if err != nil {
 		http.Error(w, "Error al decodificar el JSON", http.StatusBadRequest)
-		log.Printf("Error al escribir la memoria - (PID:TID) - (%d:%d)\n", request.Pid, request.Tid)
+		slog.Debug(fmt.Sprintf("Error al escribir la memoria - (PID:TID) - (%d:%d)\n", request.Pid, request.Tid))
 		return
 	}
 
@@ -166,7 +166,7 @@ func HandleWriteMemory(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		return
 	}
-	log.Printf("## Escritura - (PID:TID) - (%d:%d) - Dir. Física: %d", request.Pid, request.Tid, request.Direccion)
+	slog.Info(fmt.Sprintf("## Escritura - (PID:TID) - (%d:%d) - Dir. Física: %d", request.Pid, request.Tid, request.Direccion))
 }
 
 // ¡¡¡¡¡HANDLERS KERNEL!!!!!
@@ -187,14 +187,14 @@ func HandleCrearProceso(w http.ResponseWriter, r *http.Request) {
 
 		if err != nil {
 			w.WriteHeader(http.StatusInternalServerError)
-			log.Printf("El proceso %d no pudo ser inicializado por falta de particion\n", procesoRequest.Pid)
+			slog.Debug(fmt.Sprintf("El proceso %d no pudo ser inicializado por falta de particion\n", procesoRequest.Pid))
 			return
 		}
 
 		w.WriteHeader(http.StatusOK)
-		log.Printf("## Proceso creado -  PID: %d - Tamaño: %d", procesoRequest.Pid, procesoRequest.TamanioMemoria)
+		slog.Info(fmt.Sprintf("## Proceso creado -  PID: %d - Tamaño: %d", procesoRequest.Pid, procesoRequest.TamanioMemoria))
 	} else {
-		log.Printf("El proceso %d no pudo ser inicializado porque la cola new no está vacía\n", procesoRequest.Pid)
+		slog.Debug(fmt.Sprintf("El proceso %d no pudo ser inicializado porque la cola new no está vacía\n", procesoRequest.Pid))
 	}
 }
 
@@ -212,7 +212,7 @@ func HandleFinalizarProceso(w http.ResponseWriter, r *http.Request) {
 
 	if err != nil {
 		http.Error(w, "Error al liberar la partición", http.StatusInternalServerError)
-		log.Printf("El proceso %d no pudo ser destruido\n", req.Pid)
+		slog.Debug(fmt.Sprintf("El proceso %d no pudo ser destruido\n", req.Pid))
 		return
 	}
 
@@ -239,7 +239,7 @@ func HandleFinalizarProceso(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		return
 	}
-	log.Printf("## Proceso destruido -  PID: %d - Tamaño: %d", req.Pid, tamanioProceso)
+	slog.Info(fmt.Sprintf("## Proceso destruido -  PID: %d - Tamaño: %d", req.Pid, tamanioProceso))
 }
 
 func HandleCrearHilo(w http.ResponseWriter, r *http.Request) {
@@ -256,12 +256,12 @@ func HandleCrearHilo(w http.ResponseWriter, r *http.Request) {
 
 	if err != nil {
 		http.Error(w, "Error al crear el hilo", http.StatusInternalServerError)
-		log.Printf("El hilo %d no pudo ser creado\n", req.Tid)
+		slog.Debug(fmt.Sprintf("El hilo %d no pudo ser creado\n", req.Tid))
 		return
 	}
 
 	w.WriteHeader(http.StatusOK)
-	log.Printf("## Hilo creado - (PID:TID) - (%d:%d)", req.Pid, req.Tid)
+	slog.Info(fmt.Sprintf("## Hilo creado - (PID:TID) - (%d:%d)", req.Pid, req.Tid))
 }
 
 func HandleFinalizarHilo(w http.ResponseWriter, r *http.Request) {
@@ -276,7 +276,7 @@ func HandleFinalizarHilo(w http.ResponseWriter, r *http.Request) {
 	_, existe := globals.MemoriaSistema.TablaHilos[req.Pid][req.Tid]
 	if !existe {
 		http.Error(w, "Hilo no encontrado", http.StatusNotFound)
-		log.Printf("El hilo %d no pudo ser destruido\n", req.Tid)
+		slog.Debug(fmt.Sprintf("El hilo %d no pudo ser destruido\n", req.Tid))
 		return
 	}
 
@@ -289,7 +289,7 @@ func HandleFinalizarHilo(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		return
 	}
-	log.Printf("## Hilo destruido - (PID:TID) - (%d:%d)", req.Pid, req.Tid)
+	slog.Info(fmt.Sprintf("## Hilo destruido - (PID:TID) - (%d:%d)", req.Pid, req.Tid))
 }
 
 func HandleMemoryDump(w http.ResponseWriter, r *http.Request) {
@@ -324,7 +324,7 @@ func HandleMemoryDump(w http.ResponseWriter, r *http.Request) {
 
 	defer response.Body.Close()
 
-	log.Printf("## Memory Dump solicitado - (PID:TID) - (%d:%d)", req.Pid, req.Tid)
+	slog.Info(fmt.Sprintf("## Memory Dump solicitado - (PID:TID) - (%d:%d)", req.Pid, req.Tid))
 
 	if response != nil && response.StatusCode == http.StatusOK {
 		w.WriteHeader(http.StatusOK)
@@ -344,6 +344,6 @@ func HandleMemoryDump(w http.ResponseWriter, r *http.Request) {
 			return
 		}
 
-		log.Printf("Error al realizar el dump de memoria - (PID:TID) - (%d:%d)", req.Pid, req.Tid)
+		slog.Debug(fmt.Sprintf("Error al realizar el dump de memoria - (PID:TID) - (%d:%d)", req.Pid, req.Tid))
 	}
 }

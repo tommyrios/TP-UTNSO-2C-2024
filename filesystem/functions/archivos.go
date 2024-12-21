@@ -13,7 +13,7 @@ import (
 func CrearArchivo(pid uint32, tid uint32, timestamp string, tamanio int, contenido []byte) int {
 
 	nombreArchivo := strconv.Itoa(int(pid)) + "_" + strconv.Itoa(int(tid)) + "_" + timestamp
-	log.Printf("nombreArchivo: %s", nombreArchivo)
+	slog.Debug(fmt.Sprintf("nombreArchivo: %s", nombreArchivo))
 	err := CrearDirectorio(globals.FSConfig.MountDir + "/files")
 	if err != nil {
 		return -1

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"github.com/sisoputnfrba/tp-golang/kernel/globals/processes"
 	"github.com/sisoputnfrba/tp-golang/kernel/globals/schedulers"
-	"log"
+	"log/slog"
 	"net/http"
 	"os"
 	"path/filepath"
@@ -25,7 +25,7 @@ func main() {
 	globals.KConfig = configs.IniciarConfiguracion(filepath.Join(path, "config.json"), &globals.Config{}).(*globals.Config)
 
 	if globals.KConfig == nil {
-		log.Fatalln("Error al cargar la configuración")
+		slog.Debug(fmt.Sprintf("Error al cargar la configuración"))
 	}
 
 	//// Logger ////
@@ -61,7 +61,7 @@ func main() {
 
 	port := fmt.Sprintf(":%d", globals.KConfig.Port)
 
-	log.Printf("El módulo kernel está a la escucha en el puerto %s", port)
+	slog.Info(fmt.Sprintf("El módulo kernel está a la escucha en el puerto %s", port))
 
 	globals.CpuLibre <- true
 

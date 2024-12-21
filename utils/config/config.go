@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"io"
 	"log"
+	"log/slog"
 	"os"
 )
 
@@ -30,6 +31,7 @@ func ConfigurarLogger(modulo string) {
 	if err != nil {
 		panic(err)
 	}
+	slog.SetLogLoggerLevel(slog.LevelDebug)
 	mw := io.MultiWriter(os.Stdout, logFile)
 	log.SetOutput(mw)
 }

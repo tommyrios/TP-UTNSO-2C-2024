@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"log"
+	"log/slog"
 	"net/http"
 	"os"
 	"path/filepath"
@@ -25,7 +26,7 @@ func main() {
 	globals.FSConfig = configs.IniciarConfiguracion(filepath.Join(path, "config.json"), &globals.Config{}).(*globals.Config)
 
 	if globals.FSConfig == nil {
-		log.Fatalln("Error al cargar la configuración")
+		slog.Debug(fmt.Sprintf("Error al cargar la configuración"))
 	}
 
 	//// Logger ////
@@ -38,7 +39,7 @@ func main() {
 	if err != nil {
 		log.Fatalf("Error al inicializar el File System: %v", err)
 	}
-	log.Println("Inicialización del File System completada.")
+	slog.Debug(fmt.Sprintf("Inicialización del File System completada."))
 
 	//// Conexión ////
 	mux := http.NewServeMux()
@@ -46,7 +47,7 @@ func main() {
 
 	port := fmt.Sprintf(":%d", globals.FSConfig.Port)
 
-	log.Printf("El módulo filesystem está a la escucha en el puerto %s", port)
+	slog.Info(fmt.Sprintf("El módulo filesystem está a la escucha en el puerto %s", port))
 
 	err = http.ListenAndServe(port, mux)
 	if err != nil {

@@ -1,6 +1,7 @@
 package handlers
 
 import (
+	"fmt"
 	"github.com/sisoputnfrba/tp-golang/kernel/globals"
 	"github.com/sisoputnfrba/tp-golang/kernel/globals/mutexes"
 	"github.com/sisoputnfrba/tp-golang/kernel/globals/processes"
@@ -9,7 +10,7 @@ import (
 	"github.com/sisoputnfrba/tp-golang/kernel/handlers/request"
 	"github.com/sisoputnfrba/tp-golang/utils/cliente"
 	"github.com/sisoputnfrba/tp-golang/utils/commons"
-	"log"
+	"log/slog"
 	"net/http"
 	"time"
 )
@@ -19,7 +20,7 @@ func HandleProcessCreate(w http.ResponseWriter, r *http.Request) {
 
 	err := commons.DecodificarJSON(r.Body, &req)
 
-	log.Printf("## (%d:%d) - Solicitó syscall: PROCESS_CREATE", req.Pid, req.Tid)
+	slog.Info(fmt.Sprintf("## (%d:%d) - Solicitó syscall: PROCESS_CREATE", req.Pid, req.Tid))
 
 	if err != nil {
 		http.Error(w, "Error al decodificar el JSON", http.StatusBadRequest)
@@ -37,7 +38,7 @@ func HandleProcessExit(w http.ResponseWriter, r *http.Request) {
 	var req request.RequestProcessExit
 	err := commons.DecodificarJSON(r.Body, &req)
 
-	log.Printf("## (%d:%d) - Solicitó syscall: PROCESS_EXIT", req.Pid, req.Tid)
+	slog.Info(fmt.Sprintf("## (%d:%d) - Solicitó syscall: PROCESS_EXIT", req.Pid, req.Tid))
 
 	if err != nil {
 		http.Error(w, "Error al decodificar el JSON", http.StatusBadRequest)
@@ -56,7 +57,7 @@ func HandleThreadCreate(w http.ResponseWriter, r *http.Request) {
 	var req request.RequestThreadCreate
 	err := commons.DecodificarJSON(r.Body, &req)
 
-	log.Printf("## (%d:%d) - Solicitó syscall: THREAD_CREATE", req.Pid, req.Tid)
+	slog.Info(fmt.Sprintf("## (%d:%d) - Solicitó syscall: THREAD_CREATE", req.Pid, req.Tid))
 
 	if err != nil {
 		http.Error(w, "Error al decodificar el JSON", http.StatusBadRequest)
@@ -71,7 +72,7 @@ func HandleThreadJoin(w http.ResponseWriter, r *http.Request) {
 	var req request.RequestThreadJoin
 	err := commons.DecodificarJSON(r.Body, &req)
 
-	log.Printf("## (%d:%d) - Solicitó syscall: THREAD_JOIN", req.Pid, req.Tid)
+	slog.Info(fmt.Sprintf("## (%d:%d) - Solicitó syscall: THREAD_JOIN", req.Pid, req.Tid))
 
 	if err != nil {
 		http.Error(w, "Error al decodificar el JSON", http.StatusBadRequest)
@@ -89,7 +90,7 @@ func HandleThreadJoin(w http.ResponseWriter, r *http.Request) {
 
 	tcbParametro.TcbADesbloquear = append(tcbParametro.TcbADesbloquear, tcbExecute)
 
-	log.Printf("## Proceso %d - Hilo %d esperando por el hilo %d", tcbExecute.Pid, tcbExecute.Tid, tcbParametro.Tid)
+	slog.Debug(fmt.Sprintf("## (<%d>:<%d>) - Bloqueado por: THREAD_JOIN", tcbExecute.Pid, tcbExecute.Tid))
 
 	w.WriteHeader(http.StatusOK)
 }
@@ -98,7 +99,7 @@ func HandleThreadCancel(w http.ResponseWriter, r *http.Request) {
 	var req request.RequestThreadCancel
 	err := commons.DecodificarJSON(r.Body, &req)
 
-	log.Printf("## (%d:%d) - Solicitó syscall: THREAD_CANCEL", req.Pid, req.Tid)
+	slog.Info(fmt.Sprintf("## (%d:%d) - Solicitó syscall: THREAD_CANCEL", req.Pid, req.Tid))
 
 	if err != nil {
 		http.Error(w, "Error al decodificar el JSON", http.StatusBadRequest)
@@ -115,7 +116,7 @@ func HandleThreadExit(w http.ResponseWriter, r *http.Request) {
 	var req request.RequestThreadExit
 	err := commons.DecodificarJSON(r.Body, &req)
 
-	log.Printf("## (%d:%d) - Solicitó syscall: THREAD_EXIT", req.Pid, req.Tid)
+	slog.Info(fmt.Sprintf("## (%d:%d) - Solicitó syscall: THREAD_EXIT", req.Pid, req.Tid))
 
 	if err != nil {
 		http.Error(w, "Error al decodificar el JSON", http.StatusBadRequest)
@@ -137,7 +138,7 @@ func HandleMutexCreate(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	log.Printf("## (%d:%d) - Solicitó syscall: MUTEX_CREATE", req.Pid, req.Tid)
+	slog.Info(fmt.Sprintf("## (%d:%d) - Solicitó syscall: MUTEX_CREATE", req.Pid, req.Tid))
 
 	mutexes.CrearMutex(req.Nombre, req.Pid)
 
@@ -154,7 +155,7 @@ func HandleMutexLock(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	log.Printf("## (%d:%d) - Solicitó syscall: MUTEX_LOCK", req.Pid, req.Tid)
+	slog.Info(fmt.Sprintf("## (%d:%d) - Solicitó syscall: MUTEX_LOCK", req.Pid, req.Tid))
 
 	mutexes.BloquearMutex(req.Nombre, req.Pid, req.Tid)
 }
@@ -169,7 +170,7 @@ func HandleMutexUnlock(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	log.Printf("## (%d:%d) - Solicitó syscall: MUTEX_UNLOCK", req.Pid, req.Tid)
+	slog.Info(fmt.Sprintf("## (%d:%d) - Solicitó syscall: MUTEX_UNLOCK", req.Pid, req.Tid))
 
 	mutexes.DesbloquearMutex(req.Nombre, req.Pid, req.Tid)
 }
@@ -177,7 +178,7 @@ func HandleMutexUnlock(w http.ResponseWriter, r *http.Request) {
 func HandleDumpMemory(w http.ResponseWriter, r *http.Request) {
 	var req request.RequestDumpMemory
 
-	log.Printf("## (%d:%d) - Solicitó syscall: DUMP_MEMORY", req.Pid, req.Tid)
+	slog.Info(fmt.Sprintf("## (%d:%d) - Solicitó syscall: DUMP_MEMORY", req.Pid, req.Tid))
 
 	err := commons.DecodificarJSON(r.Body, &req)
 	if err != nil {
@@ -193,7 +194,7 @@ func HandleDumpMemory(w http.ResponseWriter, r *http.Request) {
 	threads.BloquearHilo(tcb)
 	statusCode, _, mensaje := SolicitarDumpMemory(req.Pid, req.Tid)
 
-	log.Printf("Respuesta al solicitar el dump de memoria: %s", mensaje)
+	slog.Debug(fmt.Sprintf("Respuesta al solicitar el dump de memoria: %s", mensaje))
 
 	if statusCode != http.StatusOK {
 		processes.FinalizarProceso(req.Pid)
@@ -208,7 +209,7 @@ func HandleCompactacion(w http.ResponseWriter, r *http.Request) {
 
 	w.WriteHeader(http.StatusOK)
 
-	log.Println("Compactación aceptada")
+	slog.Debug(fmt.Sprintf("Compactación aceptada"))
 }
 
 func HandleCompactacionFinalizada(w http.ResponseWriter, r *http.Request) {
@@ -231,7 +232,7 @@ func HandleDesalojoCpu(w http.ResponseWriter, r *http.Request) {
 	if req.Razon == "SEGMENTATION FAULT" {
 		processes.FinalizarProceso(req.Pid)
 
-		log.Printf("## (PID:TID) - (%d:%d) - Hilo recibido de CPU - Razon: %s", req.Pid, req.Tid, req.Razon)
+		slog.Debug(fmt.Sprintf("## (PID:TID) - (%d:%d) - Hilo recibido de CPU - Razon: %s", req.Pid, req.Tid, req.Razon))
 	} else {
 		if req.Razon == "SYSCALL" || req.Razon == "INTERRUPCION" || (req.Razon == "MEMORY_DUMP" && !queues.ConsultaExit(req.Pid, req.Tid) || req.Razon == "END_OF_QUANTUM") {
 			globals.Estructura.MtxReady.Lock()
@@ -241,8 +242,11 @@ func HandleDesalojoCpu(w http.ResponseWriter, r *http.Request) {
 				tcb.Estado = "READY"
 
 				queues.AgregarHiloACola(threads.BuscarHiloEnPCB(req.Pid, req.Tid), &globals.Estructura.ColaReady)
-
-				log.Printf("## (PID:TID) - (%d:%d) - Hilo recibido de CPU - Razon: %s", req.Pid, req.Tid, req.Razon)
+				if req.Razon != "END_OF_QUANTUM" {
+					slog.Debug(fmt.Sprintf("## (PID:TID) - (%d:%d) - Hilo recibido de CPU - Razon: %s", req.Pid, req.Tid, req.Razon))
+				} else {
+					slog.Info(fmt.Sprintf("## (%d:%d) - Desalojado por fin de Quantum", req.Pid, req.Tid))
+				}
 			}
 			globals.Estructura.MtxReady.Unlock()
 		}
@@ -266,7 +270,7 @@ func HandleIO(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	log.Printf("## (%d:%d) - Solicitó syscall: IO por %d ms", req.Pid, req.Tid, req.Tiempo)
+	slog.Info(fmt.Sprintf("## (%d:%d) - Solicitó syscall: IO por %d ms", req.Pid, req.Tid, req.Tiempo))
 
 	tcb := threads.BuscarHiloEnPCB(req.Pid, req.Tid)
 
@@ -274,10 +278,12 @@ func HandleIO(w http.ResponseWriter, r *http.Request) {
 
 	if len(globals.Estructura.ColaIO) == 0 {
 		threads.BloquearHilo(tcb)
+		slog.Info(fmt.Sprintf("## (%d:%d) - Bloqueado por: IO", req.Pid, req.Tid))
 		globals.Estructura.ColaIO = append(globals.Estructura.ColaIO, &IO)
 		go ejecutarIO()
 	} else {
 		threads.BloquearHilo(tcb)
+		slog.Info(fmt.Sprintf("## (%d:%d) - Bloqueado por: IO", req.Pid, req.Tid))
 		globals.Estructura.ColaIO = append(globals.Estructura.ColaIO, &IO)
 	}
 }
@@ -297,7 +303,7 @@ func ejecutarIO() {
 			threads.DesbloquearHilo(IO.Tcb)
 		}
 
-		log.Printf("## (%d:%d) - Finalizó IO y pasa a READY", IO.Tcb.Pid, IO.Tcb.Tid)
+		slog.Info(fmt.Sprintf("## (%d:%d) - Finalizó IO y pasa a READY", IO.Tcb.Pid, IO.Tcb.Tid))
 
 		globals.Estructura.ColaIO = globals.Estructura.ColaIO[1:]
 	}
@@ -331,7 +337,7 @@ func Interrupt(interruption string, pid int, tid int) *http.Response {
 	interrupcion := request.RequestInterrupcion{Pid: pid, Tid: tid, Razon: interruption}
 	requestBody, err := commons.CodificarJSON(interrupcion)
 	if err != nil {
-		log.Printf("Error al codificar el JSON en Interrupt")
+		slog.Debug(fmt.Sprintf("Error al codificar el JSON en Interrupt"))
 		return nil
 	}
 

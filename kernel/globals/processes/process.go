@@ -1,13 +1,14 @@
 package processes
 
 import (
+	"fmt"
 	"github.com/sisoputnfrba/tp-golang/kernel/globals"
 	"github.com/sisoputnfrba/tp-golang/kernel/globals/queues"
 	"github.com/sisoputnfrba/tp-golang/kernel/globals/threads"
 	"github.com/sisoputnfrba/tp-golang/kernel/handlers/request"
 	"github.com/sisoputnfrba/tp-golang/utils/cliente"
 	"github.com/sisoputnfrba/tp-golang/utils/commons"
-	"log"
+	"log/slog"
 	"net/http"
 	"strconv"
 )
@@ -25,29 +26,29 @@ func ProcesoInicial(argumentos []string) {
 func CrearProceso(pseudocodigo string, tamanioMemoria int, prioridad int) int {
 	pcb := CrearPCB(pseudocodigo, tamanioMemoria, prioridad)
 
-	log.Printf("## (%d:0) Se crea el proceso - Estado: NEW", pcb.Pid)
+	slog.Info(fmt.Sprintf("## (%d:0) Se crea el proceso - Estado: NEW", pcb.Pid))
 
 	if len(globals.Estructura.ColaNew) == 0 {
-		log.Println("Cola NEW está vacía, solicitando memoria.")
+		slog.Debug(fmt.Sprintf("Cola NEW está vacía, solicitando memoria."))
 
 		respuestaMemoria, err := SolicitarProcesoMemoria(pcb.Pid, pseudocodigo, tamanioMemoria)
 
 		if err != nil {
-			log.Println("Error al solicitar espacio en memoria.")
+			slog.Debug(fmt.Sprintf("Error al solicitar espacio en memoria."))
 		}
 
 		if respuestaMemoria.StatusCode == http.StatusOK {
 
 			threads.CrearHilo(pcb.Pid, prioridad, pseudocodigo)
 		} else {
-			log.Println("Memoria no tiene suficiente espacio. Proceso en espera.")
+			slog.Debug(fmt.Sprintf("Memoria no tiene suficiente espacio. Proceso en espera."))
 
 			queues.AgregarProcesoACola(pcb, &globals.Estructura.ColaNew)
 
 			return http.StatusBadRequest
 		}
 	} else {
-		log.Printf("Cola NEW no está vacía, proceso %d se encola en NEW.", pcb.Pid)
+		slog.Debug(fmt.Sprintf("Cola NEW no está vacía, proceso %d se encola en NEW.", pcb.Pid))
 
 		queues.AgregarProcesoACola(pcb, &globals.Estructura.ColaNew)
 
@@ -85,7 +86,7 @@ func FinalizarProceso(pid int) {
 	solicitudCodificada, err := commons.CodificarJSON(req)
 
 	if err != nil {
-		log.Println("Error al codificar la solicitud de finalización de proceso")
+		slog.Debug(fmt.Sprintf("Error al codificar la solicitud de finalización de proceso"))
 		return
 	}
 
@@ -102,7 +103,7 @@ func FinalizarProceso(pid int) {
 
 		pcb.Estado = "EXIT"
 
-		log.Printf("## Finaliza el proceso %d", pid)
+		slog.Info(fmt.Sprintf("## Finaliza el proceso %d", pid))
 
 		for len(globals.Estructura.ColaNew) != 0 {
 			procesoNuevo := globals.Estructura.ColaNew[0]
@@ -115,7 +116,7 @@ func FinalizarProceso(pid int) {
 			}
 		}
 	} else {
-		log.Printf("## Error al finalizar el proceso %d", pid)
+		slog.Debug(fmt.Sprintf("## Error al finalizar el proceso %d", pid))
 	}
 }
 
@@ -134,21 +135,3 @@ func SolicitarProcesoMemoria(pid int, pseudocodigo string, tamanio int) (*http.R
 
 	return cliente.Post(globals.KConfig.IpMemory, globals.KConfig.PortMemory, "crear_proceso", solicitudCodificada), nil
 }
-
-/*func CrearProcesoNew() {
-	<-globals.ProcesoEsperando
-
-	pcb := globals.Estructura.ColaNew[0]
-
-	_, err := SolicitarProcesoMemoria(pcb.Pid, pcb.PseudoCodigoHilo0, pcb.Tamanio)
-
-	if err != nil {
-		log.Println("Error al solicitar espacio en memoria.")
-	}
-
-	queues.SacarProcesoDeCola(pcb.Pid, &globals.Estructura.ColaNew)
-
-	threads.CrearHilo(pcb.Pid, pcb.PrioridadTID0, pcb.PseudoCodigoHilo0)
-
-	globals.Estructura.Procesos[pcb.Pid] = pcb
-}*/

@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"github.com/sisoputnfrba/tp-golang/cpu/instrucciones"
-	"log"
+	"log/slog"
 	"net/http"
 	"os"
 	"path/filepath"
@@ -23,7 +23,7 @@ func main() {
 	globals.CConfig = configs.IniciarConfiguracion(filepath.Join(path, "config.json"), &globals.Config{}).(*globals.Config)
 
 	if globals.CConfig == nil {
-		log.Fatalln("Error al cargar la configuración")
+		slog.Debug(fmt.Sprintf("Error al cargar la configuración"))
 	}
 
 	//// Logger ////
@@ -35,7 +35,7 @@ func main() {
 
 	port := fmt.Sprintf(":%d", globals.CConfig.Port)
 
-	log.Printf("El módulo CPU está a la escucha en el puerto %s", port)
+	slog.Info(fmt.Sprintf("El módulo CPU está a la escucha en el puerto %s", port))
 
 	err = http.ListenAndServe(port, mux)
 	if err != nil {

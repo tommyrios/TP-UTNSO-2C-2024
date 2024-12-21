@@ -2,11 +2,12 @@ package instrucciones
 
 import (
 	"encoding/json"
+	"fmt"
 	"github.com/sisoputnfrba/tp-golang/cpu/globals"
 	"github.com/sisoputnfrba/tp-golang/cpu/globals/requests"
 	"github.com/sisoputnfrba/tp-golang/utils/cliente"
 	"github.com/sisoputnfrba/tp-golang/utils/commons"
-	"log"
+	"log/slog"
 	"net/http"
 	"strings"
 	"time"
@@ -95,7 +96,7 @@ func solicitarContexto(pid int, tid int) (requests.ResponseContexto, error) {
 		return responseContexto, err
 	}
 
-	log.Printf("## PID %d - TID: %d - Solicito Contexto Ejecución.\n", pid, tid)
+	slog.Info(fmt.Sprintf("## PID %d - TID: %d - Solicito Contexto Ejecución.\n", pid, tid))
 
 	return responseContexto, nil
 }
@@ -111,7 +112,7 @@ func Fetch(pid int, tid int, pc int) string {
 
 	defer response.Body.Close()
 
-	log.Printf("## PID: %d TID: %d - FETCH - Program Counter: %d.", pid, tid, pc)
+	slog.Info(fmt.Sprintf("## PID: %d TID: %d - FETCH - Program Counter: %d.", pid, tid, pc))
 
 	return string(instruccion)
 }
@@ -126,7 +127,7 @@ func Decode(instruccion string) globals.InstruccionStruct {
 
 func Execute(instruccion globals.InstruccionStruct, registros *commons.Registros, base int, limite int, pid int, tid int) int {
 
-	log.Printf("## PID: %d TID: %d - Ejecutando: %s - %s.", pid, tid, instruccion.CodOperacion, instruccion.Operandos)
+	slog.Info(fmt.Sprintf("## PID: %d TID: %d - Ejecutando: %s - %s.", pid, tid, instruccion.CodOperacion, instruccion.Operandos))
 
 	switch instruccion.CodOperacion {
 	case "SET":
@@ -181,7 +182,7 @@ func Execute(instruccion globals.InstruccionStruct, registros *commons.Registros
 func checkQuantum(pid int, tid int, scheduler string, quantum int, tiempo int) bool {
 	if scheduler == "CMN" {
 		if tiempo > quantum {
-			log.Printf("END OF QUANTUM - (PID:TID) - (%d:%d)", pid, tid)
+			slog.Debug(fmt.Sprintf("END OF QUANTUM - (PID:TID) - (%d:%d)", pid, tid))
 			globals.DevolverPCB(pid, tid, "END_OF_QUANTUM")
 			return true
 		}

@@ -7,7 +7,7 @@ import (
 	"github.com/sisoputnfrba/tp-golang/memoria/globals"
 	"github.com/sisoputnfrba/tp-golang/memoria/handlers/requests"
 	"github.com/sisoputnfrba/tp-golang/utils/commons"
-	"log"
+	"log/slog"
 	"net/http"
 	"os"
 )
@@ -71,7 +71,7 @@ func ObtenerTamanioMemoria(pid int) int {
 
 func LeerMemoria(direccion int, pid int) ([]byte, error) {
 
-	log.Println("## Leer Memoria - Direccion: ", direccion)
+	slog.Debug(fmt.Sprintf("## Leer Memoria - Direccion: ", direccion))
 
 	if direccion < 0 || direccion+4 >= len(globals.MemoriaUsuario.Datos) {
 		return nil, fmt.Errorf("dirección de memoria inválida")
@@ -148,7 +148,7 @@ func CrearHiloMemoria(pid int, tid int, pseudocodigo string) error {
 	instrucciones, err := DesglosarPseudocodigo(pseudocodigo)
 
 	if err != nil {
-		log.Printf("Error al desglosar el pseudocódigo: %s\n", pseudocodigo)
+		slog.Debug(fmt.Sprintf("Error al desglosar el pseudocódigo: %s\n", pseudocodigo))
 		return err
 	}
 
@@ -220,7 +220,7 @@ func SolicitarCompactacion() bool {
 	if err != nil || response.StatusCode != http.StatusOK {
 		return false
 	}
-	log.Println("Compactacion solicitada.")
+	slog.Debug(fmt.Sprintf("Compactacion solicitada."))
 	return true
 }
 

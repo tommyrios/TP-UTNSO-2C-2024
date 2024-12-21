@@ -1,12 +1,13 @@
 package threads
 
 import (
+	"fmt"
 	"github.com/sisoputnfrba/tp-golang/kernel/globals"
 	"github.com/sisoputnfrba/tp-golang/kernel/globals/queues"
 	"github.com/sisoputnfrba/tp-golang/kernel/handlers/request"
 	"github.com/sisoputnfrba/tp-golang/utils/cliente"
 	"github.com/sisoputnfrba/tp-golang/utils/commons"
-	"log"
+	"log/slog"
 	"net/http"
 )
 
@@ -33,7 +34,7 @@ func CrearHilo(pid int, prioridad int, pseudocodigo string) {
 	solicitudCodificada, err := commons.CodificarJSON(req)
 
 	if err != nil {
-		log.Println("Error al codificar la solicitud de creación de hilo")
+		slog.Debug(fmt.Sprintf("Error al codificar la solicitud de creación de hilo"))
 		return
 	}
 
@@ -44,7 +45,7 @@ func CrearHilo(pid int, prioridad int, pseudocodigo string) {
 	}
 
 	queues.AgregarHiloACola(&tcb, &globals.Estructura.ColaReady)
-	log.Printf("## (%d:%d) Se crea el Hilo - Estado: READY", pcb.Pid, tcb.Tid)
+	slog.Info(fmt.Sprintf("## (%d:%d) Se crea el Hilo - Estado: READY", pcb.Pid, tcb.Tid))
 }
 
 func FinalizarHilo(pid int, tid int) {
@@ -56,7 +57,7 @@ func FinalizarHilo(pid int, tid int) {
 	solicitudCodificada, err := commons.CodificarJSON(req)
 
 	if err != nil {
-		log.Println("Error al codificar la solicitud de finalización de proceso")
+		slog.Debug(fmt.Sprintf("Error al codificar la solicitud de finalización de proceso"))
 		return
 	}
 
@@ -85,7 +86,7 @@ func FinalizarHilo(pid int, tid int) {
 		}
 	}
 
-	log.Printf("## (%d:%d) Finaliza el hilo", pid, tid)
+	slog.Info(fmt.Sprintf("## (%d:%d) Finaliza el hilo", pid, tid))
 
 }
 

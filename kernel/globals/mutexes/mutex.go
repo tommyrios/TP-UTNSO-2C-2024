@@ -1,11 +1,12 @@
 package mutexes
 
 import (
+	"fmt"
 	"github.com/sisoputnfrba/tp-golang/kernel/globals"
 	"github.com/sisoputnfrba/tp-golang/kernel/globals/queues"
 	"github.com/sisoputnfrba/tp-golang/kernel/globals/threads"
 	"github.com/sisoputnfrba/tp-golang/utils/commons"
-	"log"
+	"log/slog"
 )
 
 func CrearMutex(nombre string, pid int) {
@@ -33,13 +34,14 @@ func BloquearMutex(nombre string, pid int, tid int) {
 				return
 			} else {
 				pcb.Mutex[i].HilosBloqueados = append(pcb.Mutex[i].HilosBloqueados, tcb)
+				slog.Info(fmt.Sprintf("## (<%d>:<%d>) - Bloqueado por: MUTEX", pid, tid))
 				threads.BloquearHilo(tcb)
 				return
 			}
 		}
 	}
 
-	log.Printf("No existe el mutex solicitado con el nombre: %s\n", nombre)
+	slog.Debug(fmt.Sprintf("No existe el mutex solicitado con el nombre: %s\n", nombre))
 }
 
 func DesbloquearMutex(nombre string, pid int, tid int) {
@@ -60,11 +62,11 @@ func DesbloquearMutex(nombre string, pid int, tid int) {
 				tcb.Mutex = commons.Mutex{}
 				return
 			} else {
-				log.Printf("El hilo %d no tiene asignado el mutex %s\n", tid, nombre)
+				slog.Debug(fmt.Sprintf("El hilo %d no tiene asignado el mutex %s\n", tid, nombre))
 				return
 			}
 		}
 	}
 
-	log.Printf("No existe el mutex solicitado con el nombre: %s\n", nombre)
+	slog.Debug(fmt.Sprintf("No existe el mutex solicitado con el nombre: %s\n", nombre))
 }
